@@ -1,0 +1,75 @@
+.Header {
+  background: transparent;
+  width: 100%;
+  height: 100px;
+  z-index: 77777;
+  position: fixed;
+  top: 0;
+  mix-blend-mode: normal;
+  transition: all 0.3s;
+}
+.blend {
+  mix-blend-mode: difference;
+}
+.Header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+}
+.Header .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Header .logo:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 1px;
+  background: white;
+  transition: 0.3s;
+}
+
+.Header .logo:hover:after {
+  width: 100%;
+}
+.Header .headerLink {
+  color: white;
+  font-size: 16px;
+  letter-spacing: 1.92px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+}
+
+.headerLink:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 1px;
+  background: white;
+  transition: 0.3s;
+}
+.headerLink:hover:after {
+  width: 100%;
+}
+
+.leftNav a {
+  margin-right: 40px;
+}
+.rightNav a {
+  margin-left: 40px;
+}

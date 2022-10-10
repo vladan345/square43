@@ -1,0 +1,113 @@
+.ProjectHero {
+  background: #202020;
+}
+.ProjectHero p {
+  color: white;
+  line-height: 1.5;
+}
+.ProjectHero .hero-wrapper {
+  width: 1350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: #fff;
+  height: 100vh;
+}
+.hero-content {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+.hero-content .project-logo {
+  animation: 1s fadeInRight forwards ease-in-out;
+  margin: 0 0 70px 0;
+}
+.project-background .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(32, 32, 32, 0.75);
+}
+.services-tags {
+  margin-bottom: 80px;
+}
+.services-tags a {
+  margin: 0 10px;
+  display: inline-block;
+  color: #202020;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 400;
+  position: relative;
+  text-transform: capitalize;
+  padding: 16px 30px;
+  border-radius: 100px;
+  transition: all 0.3s;
+  transform: translateY(0);
+}
+.services-tags a:hover {
+  background-color: #4a4a4a !important;
+  color: #f8f8f8;
+  transform: translateY(-10px);
+}
+
+.hero-content .slogan {
+  opacity: 0;
+  font-size: 43px;
+  font-weight: 300;
+  line-height: 1.4;
+  text-align: center;
+  animation: 1s 1s fadeInUp forwards ease-in-out;
+}
+.northprim-color {
+  color: #ccff00;
+}
+.ownnew-color {
+  color: #f5ad52;
+}
+
+.mission-and-solution {
+  width: 100%;
+  height: 100%;
+  background: #202020;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ProjectHero .row {
+  display: flex;
+  margin-bottom: 50px;
+}
+.ProjectHero .col {
+  width: 50%;
+}
+
+.ProjectHero .col:first-of-type {
+  margin-right: 50px;
+}
+.ProjectHero .col:last-of-type {
+  margin-left: 50px;
+  display: flex;
+  align-items: flex-end;
+}
+.ProjectHero h2 {
+  font-size: 54px;
+  margin-bottom: 80px;
+  line-height: 1;
+  font-weight: 500;
+}
+.ProjectHero .background-split {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+}
+.ProjectHero .split-left,
+.ProjectHero .split-right {
+  width: 50%;
+  height: 100%;
+}

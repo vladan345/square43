@@ -1,0 +1,26 @@
+.ProjectModule {
+  padding: 30px;
+  background-color: rgb(231, 231, 231);
+  border-radius: 10px;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  color: #202020;
+}
+.ProjectModule h2 {
+  font-size: 32px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.ProjectModule p {
+  line-height: 1.5;
+  font-size: 16px;
+}
+.ProjectModule a {
+  color: #202020;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 30px;
+}
