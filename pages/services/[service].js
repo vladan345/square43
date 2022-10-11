@@ -28,8 +28,7 @@ function Service() {
             opacity: 0,
           }}
         >
-          {service.charAt(0).toUpperCase() +
-            service.slice(1).split("-").join(" ")}
+          {service}
         </h1>
         <section className="projects-section">
           {isLoading ? (
