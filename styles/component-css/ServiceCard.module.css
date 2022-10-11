@@ -1,4 +1,4 @@
-.ProjectModule {
+.ServiceModule {
   padding: 30px;
   background-color: rgb(231, 231, 231);
   border-radius: 10px;
@@ -6,19 +6,18 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 30px;
   color: #202020;
 }
-.ProjectModule h2 {
+.title {
   font-size: 32px;
   text-transform: capitalize;
   margin-bottom: 20px;
 }
-.ProjectModule p {
+.description {
   line-height: 1.5;
   font-size: 16px;
 }
-.ProjectModule a {
+.link {
   color: #202020;
   font-size: 18px;
   font-weight: bold;

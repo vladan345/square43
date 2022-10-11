@@ -20,7 +20,11 @@ a {
 * {
   box-sizing: border-box;
 }
-
+.wrapper {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 @keyframes fadeIn {
   from {
     opacity: 0;

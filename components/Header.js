@@ -1,21 +1,30 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import styles from "./Header.module.css";
-
+import styles from "../styles/component-css/Header.module.css";
 import Image from "next/image";
+
+//All comments are for page transition delay
+// import { useRouter } from "next/router";
 
 export default function Header() {
   const [blend, setBlend] = useState(false);
-
+  // const router = useRouter();
   useEffect(() => {
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", () => setBlend(window.scrollY > 200));
     }
   }, []);
-
+  //Add to onClick on the element you want to delay
+  // const handleClick = (e) => {
+  //   e.preventDefault();
+  //   console.log(e.target.attributes.href);
+  //   setTimeout(() => {
+  //     router.push("/services");
+  //   }, 3000);
+  // };
   return (
     <div className={`${styles.Header} ${blend ? styles.blend : ""}`}>
-      <div className={styles.wrapper}>
+      <div className={`wrapper ${styles.wrapper}`}>
         <div className={styles.leftNav}>
           <a className={styles.headerLink} href="?#">
             Work

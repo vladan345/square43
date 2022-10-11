@@ -11,14 +11,14 @@
   background-color: #202020;
   z-index: 11111;
 }
-.Spinner .spinner-square {
+.spinnerSquare {
   animation: spinner 3s infinite ease-in-out;
   width: 50px;
   height: 50px;
   border: 1px solid #f8f8f8;
   position: relative;
 }
-.Spinner .fill {
+.fill {
   width: 100%;
   background: #f8f8f8;
   height: 10px;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useLayoutEffect } from "react"; // eslint-disable-line no-unused-vars
 import { Link } from "react-router-dom";
-import "./ProjectHero.css";
-import { logoImages, heroVideos } from "../../utils/constants/projectImages";
+import styles from "../styles/component-css/ProjectHero.module.css";
+import { logoImages, heroVideos } from "../utils/constants/projectImages";
 import Spinner from "../Spinner/Spinner";
 
 import {
@@ -114,8 +114,9 @@ function ProjectHero(props) {
                       return (
                         <Link
                           style={{
-                            animation: `fadeIn 1s ${counter * key +
-                              500}ms forwards ease-in-out`,
+                            animation: `fadeIn 1s ${
+                              counter * key + 500
+                            }ms forwards ease-in-out`,
                             opacity: 0,
                             background: color,
                           }}

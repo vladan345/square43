@@ -11,22 +11,20 @@
 .blend {
   mix-blend-mode: difference;
 }
-.Header .wrapper {
+.wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  max-width: 1350px;
-  margin: 0 auto;
 }
-.Header .logo {
+.logo {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.Header .logo:after {
+.logo:after {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -38,10 +36,10 @@
   transition: 0.3s;
 }
 
-.Header .logo:hover:after {
+.logo:hover:after {
   width: 100%;
 }
-.Header .headerLink {
+.headerLink {
   color: white;
   font-size: 16px;
   letter-spacing: 1.92px;
