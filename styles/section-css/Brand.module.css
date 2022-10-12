@@ -1,0 +1,22 @@
+.Brand {
+  padding: 120px 0 100px 0;
+  background-color: #fff;
+}
+.logoScheme {
+  margin-left: -45px;
+  width: 600px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.paragraphs {
+  color: #202020;
+  max-width: 560px;
+}
+.paragraph {
+  margin-bottom: 20px;
+  font-size: 18px;
+}

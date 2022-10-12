@@ -23,10 +23,10 @@ export default function Home() {
             </h1>
             <div>
               <h2 className={styles.subtitle}>Shortcuts</h2>
-              <Link href="/services/design/northprim">
+              <Link href="/projects/northprim">
                 <a className={styles.link}>Northprim</a>
               </Link>
-              <Link className={styles.link} href="/services/design/ownnew">
+              <Link className={styles.link} href="/projects/ownnew">
                 <a className={styles.link}>Ownnew</a>
               </Link>
             </div>

@@ -16,7 +16,12 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
+h2 {
+  font-size: 54px;
+  margin-bottom: 80px;
+  line-height: 1;
+  font-weight: 500;
+}
 * {
   box-sizing: border-box;
 }
@@ -24,6 +29,33 @@ a {
   max-width: 1350px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.northprim-color {
+  color: #ccff00;
+}
+.ownnew-color {
+  color: #f5ad52;
+}
+
+h2 {
+  color: #202020;
+}
+#cursor-id:before {
+  background: transparent;
+  width: 25px;
+  height: 25px;
+  left: 0;
+  top: 0;
+  border-radius: 0;
+  border: 1px solid white;
+  transform: translate(-50%, -50%);
+}
+#cursor-id {
+  mix-blend-mode: difference;
+}
+.splide__slide img {
+  width: 100%;
 }
 @keyframes fadeIn {
   from {

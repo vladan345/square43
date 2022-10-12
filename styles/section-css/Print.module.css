@@ -1,0 +1,16 @@
+.Print {
+  background: #fff;
+  padding: 120px 0 0 0;
+}
+.paragraphs {
+  max-width: 560px;
+}
+.description {
+  color: #202020;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}

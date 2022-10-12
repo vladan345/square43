@@ -1,0 +1,13 @@
+.Slider {
+  background: #fff;
+  position: relative;
+}
+
+.stripe {
+  width: 100%;
+  background: #ececec;
+  height: 500px;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+}

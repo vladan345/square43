@@ -22,8 +22,6 @@ export const getProjectsByService = (serviceId) => {
   );
 };
 // //Needs to be deconstructed
-// export const getCurrentProject = () => {
-//   return getData.projects.filter(
-//     (project) => project.id === useParams().projectName
-//   );
-// };
+export const getCurrentProject = (projectId) => {
+  return getData.projects.filter((project) => project.id === projectId);
+};

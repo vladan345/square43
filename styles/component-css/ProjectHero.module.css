@@ -1,0 +1,105 @@
+.ProjectHero {
+  background: #202020;
+}
+.description {
+  color: white;
+  line-height: 1.5;
+}
+.heroWrapper {
+  width: 1350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: #fff;
+  height: 100vh;
+}
+.heroContent {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+.projectLogo {
+  margin: 0 0 70px 0;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(32, 32, 32, 0.75);
+}
+.servicesTags {
+  margin-bottom: 80px;
+}
+.serviceLink {
+  margin: 0 10px;
+  display: inline-block;
+  color: #202020;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 400;
+  position: relative;
+  text-transform: capitalize;
+  padding: 16px 30px;
+  border-radius: 100px;
+  transition: all 0.3s;
+  transform: translateY(0);
+}
+.serviceLink:hover {
+  background-color: #4a4a4a !important;
+  color: #f8f8f8;
+  transform: translateY(-10px);
+}
+
+.slogan {
+  opacity: 0;
+  font-size: 43px;
+  font-weight: 300;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.missionSolution {
+  width: 100%;
+  height: 100%;
+  background: #202020;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.backgroundSplit {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+}
+.splitLeft,
+.splitRight {
+  width: 50%;
+  height: 100%;
+}
+.row {
+  display: flex;
+  margin-bottom: 50px;
+}
+.col {
+  width: 50%;
+}
+
+.col:first-of-type {
+  margin-right: 50px;
+}
+.col:last-of-type {
+  margin-left: 50px;
+  display: flex;
+  align-items: flex-end;
+}
+.missionSolutionHeading {
+  font-size: 54px;
+  margin-bottom: 80px;
+  line-height: 1;
+  font-weight: 500;
+}
