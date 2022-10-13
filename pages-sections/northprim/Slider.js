@@ -17,7 +17,7 @@ function Slider() {
           speed: 2000,
           gap: 100,
           perPage: 3,
-          type: "loop",
+          type: "undefined",
           perMove: 1,
           focus: "center",
           arrows: false,
@@ -26,6 +26,8 @@ function Slider() {
           pauseOnHover: false,
           easing: "ease-in-out",
           pagination: false,
+          omitEnd: true,
+          trimSpace: "move",
         }}
       >
         <SplideSlide>

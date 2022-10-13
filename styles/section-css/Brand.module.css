@@ -4,6 +4,7 @@
 }
 .logoScheme {
   margin-left: -45px;
+  margin-right: 200px;
   width: 600px;
 }
 .row {
@@ -11,7 +12,9 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 80px;
+  justify-content: flex-start;
 }
+
 .paragraphs {
   color: #202020;
   max-width: 560px;
@@ -19,4 +22,7 @@
 .paragraph {
   margin-bottom: 20px;
   font-size: 18px;
+}
+.fonts {
+  margin-left: 190px;
 }

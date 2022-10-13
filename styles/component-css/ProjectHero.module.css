@@ -1,105 +1,121 @@
-.ProjectHero {
-  background: #202020;
-}
-.description {
-  color: white;
-  line-height: 1.5;
-}
-.heroWrapper {
-  width: 1350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  color: #fff;
+.hero {
+  padding: 160px 0 80px 0;
   height: 100vh;
 }
-.heroContent {
+.heroVideo {
   position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  left: 50%;
+  right: 0;
+  bottom: 0;
+  height: calc(100% - 80px);
 }
-.projectLogo {
-  margin: 0 0 70px 0;
+.projectName {
+  color: #2d2d2d;
+  font-weight: 600;
+  line-height: 1.2;
+  font-size: 28px;
+  margin-bottom: 20px;
 }
-.overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(32, 32, 32, 0.75);
-}
-.servicesTags {
+.slogan {
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 1.1;
+  color: #575757;
+  max-width: 760px;
   margin-bottom: 80px;
+  white-space: pre-wrap;
+}
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  max-width: 600px;
+}
+
+.serviceHead {
+  margin-bottom: 40px;
+  font-size: 16px;
+  color: #2d2d2d;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 0.8px;
 }
 .serviceLink {
-  margin: 0 10px;
-  display: inline-block;
-  color: #202020;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  color: #858585;
   font-size: 18px;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 500;
   position: relative;
-  text-transform: capitalize;
-  padding: 16px 30px;
-  border-radius: 100px;
   transition: all 0.3s;
   transform: translateY(0);
+  display: inline-block;
+}
+.serviceLink:first-of-type {
+  margin-left: 0;
+}
+.serviceLink:first-letter {
+  text-transform: uppercase;
+}
+.serviceLink:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 1px;
+  background: #2d2d2d;
+  transition: 0.3s;
 }
 .serviceLink:hover {
-  background-color: #4a4a4a !important;
-  color: #f8f8f8;
-  transform: translateY(-10px);
+  color: #2d2d2d;
 }
-
-.slogan {
-  opacity: 0;
-  font-size: 43px;
-  font-weight: 300;
-  line-height: 1.4;
-  text-align: center;
-}
-
-.missionSolution {
+.serviceLink:hover:after {
   width: 100%;
-  height: 100%;
-  background: #202020;
+}
+
+.arrow {
+  margin-top: 80px;
+  background: #cf0;
+  width: 40px;
+  height: 40px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: 0.3s;
+  overflow: hidden;
 }
-.backgroundSplit {
-  width: 100%;
-  height: 100%;
-  position: absolute;
+.arrow:hover {
+  background: white;
+  filter: invert();
+}
+.missionSolution {
+  padding: 120px 0;
+  background-color: #f8f8f8;
+}
+.missionWrap {
   display: flex;
 }
-.splitLeft,
-.splitRight {
-  width: 50%;
-  height: 100%;
+.content {
+  max-width: 560px;
 }
-.row {
-  display: flex;
-  margin-bottom: 50px;
+.content:first-of-type {
+  margin-right: 120px;
 }
-.col {
-  width: 50%;
+.heading {
+  color: #000;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 40px;
 }
-
-.col:first-of-type {
-  margin-right: 50px;
+.description {
+  line-height: 1.4;
+  margin-bottom: 20px;
 }
-.col:last-of-type {
-  margin-left: 50px;
-  display: flex;
-  align-items: flex-end;
-}
-.missionSolutionHeading {
-  font-size: 54px;
-  margin-bottom: 80px;
-  line-height: 1;
-  font-weight: 500;
+.description:first-of-type {
+  font-weight: 600;
 }

@@ -33,31 +33,27 @@ function Brand() {
             <Image
               src="/images/northprim/colors.svg"
               alt="Northprim color scheme"
-              width="550"
-              height="200"
+              width="280"
+              height="280"
             />
           </div>
 
           <div className={styles.row}>
             <div className={styles.paragraphs}>
               <p className={styles.paragraph}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
-                non sollicitudin arcu integer. Nulla cras pellentesque habitant
-                tortor donec bibendum volutpat.
-              </p>
-              <p className={styles.paragraph}>
-                Tincidunt leo sit interdum maecenas leo. Dolor amet convallis
-                senectus aliquet turpis amet ultrices sagittis, tincidunt. Sed
-                dignissim nulla nisl purus congue.
+                We kept the logo light and clear, with the letter representing
+                the tech side and the green underline representing the human
+                touch.
               </p>
             </div>
-            <Image
-              className="fonts"
-              src="/images/northprim/fonts.svg"
-              alt="Northprim font scheme"
-              width="507"
-              height="420"
-            />
+            <div className={styles.fonts}>
+              <Image
+                src="/images/northprim/fonts.svg"
+                alt="Northprim font scheme"
+                width="507"
+                height="343"
+              />
+            </div>
           </div>
         </div>
       </div>

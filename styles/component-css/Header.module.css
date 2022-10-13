@@ -1,12 +1,13 @@
 .Header {
   background: transparent;
   width: 100%;
-  height: 100px;
+  height: 80px;
   z-index: 77777;
   position: fixed;
   top: 0;
   mix-blend-mode: normal;
   transition: all 0.3s;
+  mix-blend-mode: difference;
 }
 .blend {
   mix-blend-mode: difference;
@@ -43,7 +44,7 @@
   color: white;
   font-size: 16px;
   letter-spacing: 1.92px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;

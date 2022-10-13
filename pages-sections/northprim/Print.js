@@ -10,14 +10,8 @@ function Print() {
           <h2>Print Design</h2>
           <div className={styles.paragraphs}>
             <p className={styles.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non
-              sollicitudin arcu integer. Nulla cras pellentesque habitant tortor
-              donec bibendum volutpat.
-            </p>
-            <p className={styles.description}>
-              Tincidunt leo sit interdum maecenas leo. Dolor amet convallis
-              senectus aliquet turpis amet ultrices sagittis, tincidunt. Sed
-              dignissim nulla nisl purus congue.
+              When a brand comes to life, getting you hands on its flawless
+              merch is what makes it even more real!
             </p>
           </div>
         </div>

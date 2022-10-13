@@ -9,7 +9,7 @@ function CoreThemes() {
     <div className={styles.CoreThemes}>
       <div className="wrapper">
         <div>
-          <h2>Core Themes</h2>
+          <h2 className={styles.heading}>Core Themes</h2>
           <div className={styles.row}>
             <div className={styles.list}>
               <div className={styles.listItem}>
@@ -17,17 +17,16 @@ function CoreThemes() {
                   <Image
                     src="/images/northprim/spray-icon.svg"
                     alt="Northprim icon spray"
-                    width="300"
-                    height="300"
-                    className={styles.listItemImage}
+                    width="200%"
+                    height="200%"
                   />
                 </div>
                 <div>
                   <h3 className={styles.title}>Cheeky approach</h3>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Amet non sollicitudin arcu integer. Nulla cras pellentesque
-                    habitant tortor donec bibendum volutpat.{" "}
+                    Why so serious? Even the largest of companies are made out
+                    of real people, plus there is no reason to keep work and fun
+                    apart!
                   </p>
                 </div>
               </div>
@@ -36,35 +35,34 @@ function CoreThemes() {
                   <Image
                     src="/images/northprim/bug-icon.svg"
                     alt="Northprim icon bug"
-                    width="300"
-                    height="300"
+                    width="210%"
+                    height="210%"
                   />
                 </div>
                 <div>
                   <h3 className={styles.title}>Expect the unexpected</h3>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Amet non sollicitudin arcu integer. Nulla cras pellentesque
-                    habitant tortor donec bibendum volutpat.{" "}
+                    Stereotypes exist and, yes, you would expect and IT company
+                    to keep things to the point and very technical. We offered
+                    quite a twist
                   </p>
                 </div>
               </div>
               <div className={styles.listItem}>
                 <div className={styles.listItemImage}>
                   <Image
-                    className={styles.listItemImage}
                     src="/images/northprim/arm-icon.svg"
                     alt="Northprim icon arm"
-                    width="300"
-                    height="300"
+                    width="240%"
+                    height="240%"
                   />
                 </div>
                 <div>
                   <h3 className={styles.title}>Undisputed skill</h3>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Amet non sollicitudin arcu integer. Nulla cras pellentesque
-                    habitant tortor donec bibendum volutpat.{" "}
+                    Adding a fun, casual twist to a company full of exceptional
+                    talent without underestimating their skill is a fine art.
+                    Luckily, we&apos;re all artists here in Square43.
                   </p>
                 </div>
               </div>

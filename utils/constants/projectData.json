@@ -3,21 +3,23 @@
     {
       "id": "northprim",
       "name": "Northprim",
-      "slogan": "Follow the <span class='northprim-color'>North Star!</span></span>",
+      "slogan": "A Glow up in Neon: \nReinventing Northprim.",
       "color": "#ccff00",
-      "backgroundColor": "#202020",
-      "heroOverlay": "rgba(32, 32, 32, 0.75)",
-      "heroVideo": "/images/northprim/S43_AuroraBorealis_Video.mp4",
-      "logoImage": "/images/northprim/northprimLogo.svg",
+      "heroImage": "/images/northprim/heroNorthprim.png",
+      "heroVideo": "/images/northprim/Northprim-hero.mp4",
       "missionShort": "Transforming just another outsourcing tech company into a unique, provocative brand brimming with energy, emotion and the ever-wanted X factor.",
       "missionLong": "Our client wanted to stand out in the sea of similar companies because they knew their squad had the swagger, expertise and chill that deserved to be showcased out of the box. We identified their true need; they didn't require just a visual revamp, they needed a brand new concept to carry them forward!  language was the first of the three pillars we propped our concept on.",
       "solutionShort": "Sure, Northprim was a part of a dull pool of IT companies, but why would we allow it to stay that way - the way we saw it, coding is an art and we needed to show its true colors: using neon.",
       "solutionLong": "IT terminology was employed in the advertising in an unsuspected form and the creative solution was wordplay like the world has never seen before. Secondly, we focused on the art that modern coding is and that's how the ancient and modern theme fully came to life! We gave praise and glory to the art of coding, because the modern digital world is unimaginable without it.",
-      "leftColor": "#202020",
-      "rightColor": "#202020",
-      "leftText": "#f8f8f8",
-      "rightText": "#f8f8f8",
-      "services": ["design", "web-development", "brand-design", "motion-design"]
+      "services": [
+        "branding",
+        "web-design",
+        "web-development",
+        "social-media",
+        "copywriting",
+        "motion-design",
+        "print-design"
+      ]
     },
     {
       "id": "ownnew",
@@ -44,8 +46,8 @@
   ],
   "services": [
     {
-      "id": "design",
-      "name": "Design",
+      "id": "web-design",
+      "name": "Web Design",
       "description": "We make beautiful websites for our clients. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus fugiat soluta quia voluptates.",
       "projects": ["northprim", "ownnew"]
     },
@@ -56,10 +58,10 @@
       "projects": ["northprim", "ownnew"]
     },
     {
-      "id": "product-design",
-      "name": "Product Design",
+      "id": "branding",
+      "name": "Branding",
       "description": "Designing packaging labels and products. Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-      "projects": []
+      "projects": ["northprim"]
     },
     {
       "id": "motion-design",
@@ -68,8 +70,20 @@
       "projects": ["northprim"]
     },
     {
-      "id": "brand-design",
-      "name": "Brand Design",
+      "id": "social-media",
+      "name": "Social Media",
+      "description": "Designing packaging labels and products. Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+      "projects": ["northprim"]
+    },
+    {
+      "id": "copywriting",
+      "name": "Copywriting",
+      "description": "Designing packaging labels and products. Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+      "projects": ["northprim"]
+    },
+    {
+      "id": "print-design",
+      "name": "Print Design",
       "description": "Designing packaging labels and products. Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
       "projects": ["northprim"]
     }

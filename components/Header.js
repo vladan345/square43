@@ -9,11 +9,17 @@ import Image from "next/image";
 export default function Header() {
   const [blend, setBlend] = useState(false);
   // const router = useRouter();
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", () => setBlend(window.scrollY > 200));
-    }
-  }, []);
+
+  //used for adding blend mode on scroll
+  //add this to header classname
+  //${blend ? styles.blend : ""}
+
+  // useEffect(() => {
+  //   if (typeof window !== "undefined") {
+  //     window.addEventListener("scroll", () => setBlend(window.scrollY > 200));
+  //   }
+  // }, []);
+
   //Add to onClick on the element you want to delay
   // const handleClick = (e) => {
   //   e.preventDefault();
@@ -23,7 +29,7 @@ export default function Header() {
   //   }, 3000);
   // };
   return (
-    <div className={`${styles.Header} ${blend ? styles.blend : ""}`}>
+    <div className={`${styles.Header}`}>
       <div className={`wrapper ${styles.wrapper}`}>
         <div className={styles.leftNav}>
           <a className={styles.headerLink} href="?#">

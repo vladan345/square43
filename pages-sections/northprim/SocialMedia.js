@@ -49,15 +49,11 @@ function SocialMedia() {
       </div>
       <div className={styles.socialSection}>
         <div className="wrapper">
+          <p className={styles.description}>They look even better online!</p>
           <p className={styles.description}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non
-            sollicitudin arcu integer. Nulla cras pellentesque habitant tortor
-            donec bibendum volutpat.
-          </p>
-          <p className={styles.description}>
-            Tincidunt leo sit interdum maecenas leo. Dolor amet convallis
-            senectus aliquet turpis amet ultrices sagittis, tincidunt. Sed
-            dignissim nulla nisl purus congue.
+            Take a look at how we handled Northprim&apos;s socials and feel free
+            to follow them or like and comment your impressions. We&apos;re all
+            ears (and eyes)!
           </p>
           <div className={styles.icons}>
             <a href="#?" className={styles.link}>

@@ -1,11 +1,12 @@
 .WebDevelopment {
   background: #202020;
+  color: white;
 }
 .col {
   width: 50%;
 }
 .title {
-  color: #ccff00;
+  color: #fff;
 }
 .description {
   max-width: 560px;

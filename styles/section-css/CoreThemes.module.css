@@ -1,8 +1,10 @@
 .CoreThemes {
   background-color: #fff;
   color: #202020;
-  border-top: 1px solid #202020;
-  padding: 120px 0 180px 0;
+  padding: 280px 0 180px 0;
+}
+.heading {
+  margin-bottom: 120px;
 }
 .row {
   display: flex;
@@ -26,7 +28,7 @@
 }
 
 .title {
-  font-size: 24px;
+  font-size: 28px;
   margin-bottom: 20px;
 }
 .imageWrap {

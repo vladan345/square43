@@ -37,14 +37,12 @@ function WenDesign() {
           <div className={styles.col}>
             <h2>Web Design</h2>
             <p className={styles.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non
-              sollicitudin arcu integer. Nulla cras pellentesque habitant tortor
-              donec bibendum volutpat.
+              We recognized that coding itself is an art, and so the ancient and
+              modern theme fully came to life!
             </p>
             <p className={styles.description}>
-              Tincidunt leo sit interdum maecenas leo. Dolor amet convallis
-              senectus aliquet turpis amet ultrices sagittis, tincidunt. Sed
-              dignissim nulla nisl purus congue.
+              We gave praise and glory to the art of coding, because the modern
+              digital world is unimaginable without it.
             </p>
           </div>
         </div>
@@ -98,14 +96,14 @@ function WenDesign() {
           </div>
           <div className={styles.col}>
             <p className={styles.description}>
-              Tincidunt leo sit interdum maecenas leo. Dolor amet convallis
-              senectus aliquet turpis amet ultrices sagittis, tincidunt. Sed
-              dignissim nulla nisl purus congue.
+              Athentic and funky, we wanted the company culture to shine as a
+              bright hallmark of what sets them apart from all the rest!
             </p>
             <p className={styles.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non
-              sollicitudin arcu integer. Nulla cras pellentesque habitant tortor
-              donec bibendum volutpat.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptatem voluptatum quas dolorem aspernatur voluptatibus non
+              iusto quis unde commodi ipsum. Debitis at placeat dolorem aliquam
+              suscipit blanditiis quae praesentium facere!
             </p>
           </div>
         </div>
