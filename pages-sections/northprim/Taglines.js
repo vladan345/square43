@@ -5,12 +5,15 @@ function Taglines() {
   return (
     <div style={{ padding: "120px 0" }}>
       <div className="wrapper">
-        <Image
+        <video autoPlay muted loop>
+          <source src="/images/northprim/taglines.mp4" type="video/mp4" />
+        </video>
+        {/* <Image
           src="/images/northprim/taglines.svg"
           alt="Tagline placeholder"
           width={1360}
           height={720}
-        />
+        /> */}
       </div>
     </div>
   );
