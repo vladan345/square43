@@ -1,0 +1,33 @@
+.Coffee {
+  background: #fff;
+  min-height: 800px;
+  padding-top: 200px;
+}
+.row {
+  display: flex;
+  align-items: center;
+}
+.merchImages {
+  position: relative;
+  width: 700px;
+  height: 150px;
+}
+.image {
+  width: 100%;
+  position: absolute;
+}
+.spill {
+  bottom: -200%;
+  width: 90%;
+  margin-left: 2%;
+}
+.coffeeContent {
+  margin-left: 40px;
+  margin-top: 40px;
+  width: 560px;
+}
+.description {
+  color: #202020;
+  max-width: 560px;
+  margin-bottom: 20px;
+}

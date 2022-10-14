@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { getCurrentProject } from "../../utils/data/getData";
+
 import Northprim from "./Northprim";
+import OwnNew from "./OwnNew";
 
 import ProjectHero from "../../components/ProjectHero";
 
@@ -20,7 +22,7 @@ function Project() {
       case "northprim":
         return <Northprim />;
       case "ownnew":
-        console.log("Ownnew");
+        return <OwnNew />;
       default:
         return null;
     }

@@ -3,7 +3,7 @@ import Lottie from "lottie-react";
 import Image from "next/image";
 
 import { useInView } from "react-intersection-observer";
-import styles from "../../styles/section-css/Brand.module.css";
+import styles from "../../styles/section-css/northprim/Brand.module.css";
 // import logoScheme from "./assets/logo-scheme.svg";
 import lottieFile from "../../public/images/northprim/NP_Lottie_Logo.json";
 

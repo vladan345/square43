@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
-import styles from "../../styles/section-css/Skate.module.css";
+import styles from "../../styles/section-css/northprim/Skate.module.css";
 
 import { useInView } from "react-intersection-observer";
 import { gsap } from "gsap";

@@ -5,7 +5,7 @@ function Taglines() {
   return (
     <div style={{ padding: "120px 0" }}>
       <div className="wrapper">
-        <video autoPlay muted loop>
+        <video style={{ width: "100%" }} autoPlay muted loop>
           <source src="/images/northprim/taglines.mp4" type="video/mp4" />
         </video>
         {/* <Image

@@ -1,7 +1,7 @@
 import React from "react";
 import { Parallax } from "react-scroll-parallax";
 import Image from "next/image";
-import styles from "../../styles/section-css/SocialMedia.module.css";
+import styles from "../../styles/section-css/northprim/SocialMedia.module.css";
 
 function SocialMedia() {
   return (

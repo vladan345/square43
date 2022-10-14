@@ -24,24 +24,15 @@
     {
       "id": "ownnew",
       "name": "Ownnew",
-      "slogan": "Your New Home, <span class='ownnew-color'>Built to Last!</span></span>",
-      "color": "#f5ad52",
-      "backgroundColor": "#33454f",
-      "heroOverlay": "rgba(51, 69, 79, 0.85)",
-      "heroImage": "heroOwnnew",
-      "heroVideo": "videoOwnnew",
-      "logoImage": "logoOwnnew",
-      "mission": "Beautiful Website",
-      "solution": "More than beautiful website",
+      "slogan": "Nascetur orci aliquam at enim et. Egestas tortor ut scelerisque enim. Auctor vitae sagittis.",
+      "color": "#f2cf9a",
+      "heroImage": "",
+      "heroVideo": "/images/ownnew/heroOwnnew.mp4",
       "missionShort": "Transforming just another outsourcing tech company into a unique, provocative brand brimming with energy, emotion and the ever-wanted X factor.",
       "missionLong": "Our client wanted to stand out in the sea of similar companies because they knew their squad had the swagger, expertise and chill that deserved to be showcased out of the box. We identified their true need; they didn't require just a visual revamp, they needed a brand new concept to carry them forward!  language was the first of the three pillars we propped our concept on.",
       "solutionShort": "Sure, Northprim was a part of a dull pool of IT companies, but why would we allow it to stay that way - the way we saw it, coding is an art and we needed to show its true colors: using neon.",
       "solutionLong": "IT terminology was employed in the advertising in an unsuspected form and the creative solution was wordplay like the world has never seen before. Secondly, we focused on the art that modern coding is and that's how the ancient and modern theme fully came to life! We gave praise and glory to the art of coding, because the modern digital world is unimaginable without it.",
-      "leftColor": "#33454f",
-      "rightColor": "#f7f5f2",
-      "leftText": "#f7f5f2",
-      "rightText": "#33454f",
-      "services": ["design", "web-development"]
+      "services": ["web-design", "web-development"]
     }
   ],
   "services": [

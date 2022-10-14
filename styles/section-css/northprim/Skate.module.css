@@ -1,0 +1,50 @@
+.Skate {
+  background: #202020;
+  padding: 120px 0;
+  color: #fff;
+}
+.row {
+  display: flex;
+}
+.col {
+  width: 50%;
+  margin-right: 80px;
+}
+.col:last-of-type {
+  margin: 0 0 0 80px;
+}
+.skaters {
+  position: relative;
+}
+.splash {
+  width: 100%;
+}
+.skateF {
+  position: absolute;
+  bottom: -280px;
+}
+.skateM {
+  position: absolute;
+  bottom: -200px;
+  right: 0;
+}
+
+.description {
+  margin-bottom: 40px;
+}
+.col:last-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.col:last-of-type .description {
+  max-width: 560px;
+  margin-top: 80px;
+}
+.statement {
+  width: 560px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #cf0;
+  margin-bottom: 120px;
+}

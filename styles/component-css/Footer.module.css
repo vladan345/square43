@@ -1,8 +1,9 @@
 .Footer {
-  background: transparent;
   width: 100%;
   height: 145px;
   background: #202020;
+  position: relative;
+  z-index: 3;
 }
 .wrapper,
 .nav {

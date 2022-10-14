@@ -1,6 +1,9 @@
 .hero {
   padding: 160px 0 80px 0;
   height: 100vh;
+  position: relative;
+  z-index: 3;
+  background: white;
 }
 .heroVideo {
   position: absolute;
@@ -78,7 +81,6 @@
 
 .arrow {
   margin-top: 80px;
-  background: #cf0;
   width: 40px;
   height: 40px;
   display: flex;
@@ -89,12 +91,13 @@
   overflow: hidden;
 }
 .arrow:hover {
-  background: white;
-  filter: invert();
+  background: black !important;
 }
 .missionSolution {
   padding: 120px 0;
   background-color: #f8f8f8;
+  z-index: 3;
+  position: relative;
 }
 .missionWrap {
   display: flex;

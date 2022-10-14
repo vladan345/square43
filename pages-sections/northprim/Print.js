@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import styles from "../../styles/section-css/Print.module.css";
+import styles from "../../styles/section-css/northprim/Print.module.css";
 
 function Print() {
   return (

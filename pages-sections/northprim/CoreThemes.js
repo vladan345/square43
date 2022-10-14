@@ -2,7 +2,7 @@ import React from "react";
 import { Parallax } from "react-scroll-parallax";
 import Image from "next/image";
 
-import styles from "../../styles/section-css/CoreThemes.module.css";
+import styles from "../../styles/section-css/northprim/CoreThemes.module.css";
 
 function CoreThemes() {
   return (

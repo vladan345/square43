@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 import { gsap } from "gsap";
 import Image from "next/image";
 
-import styles from "../../styles/section-css/WebDesign.module.css";
+import styles from "../../styles/section-css/northprim/WebDesign.module.css";
 
 function WenDesign() {
   const desktopMockup = useRef(null);

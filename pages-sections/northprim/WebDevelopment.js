@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-import styles from "../../styles/section-css/WebDevelopment.module.css";
+import styles from "../../styles/section-css/northprim/WebDevelopment.module.css";
 
 function WebDevelopment() {
   return (

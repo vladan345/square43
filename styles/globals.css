@@ -38,7 +38,15 @@ h2 {
 .ownnew-color {
   color: #f5ad52;
 }
-
+.inspect-code {
+  color: #000;
+  font-size: 16px;
+  font-family: "Lucida Grande";
+  line-height: 25.6px;
+}
+.inspect-code span {
+  color: #ed9223;
+}
 h2 {
   color: #202020;
 }

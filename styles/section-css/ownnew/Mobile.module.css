@@ -1,0 +1,27 @@
+.Mobile {
+  padding: 120px 0 240px;
+  position: relative;
+  z-index: 3;
+  background-color: white;
+}
+.phoneWrap {
+  display: flex;
+  justify-content: space-between;
+}
+.phones {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  margin-right: 60px;
+}
+.textWrap {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.description {
+  max-width: 560px;
+  margin-left: 60px;
+  margin-bottom: 40px;
+}

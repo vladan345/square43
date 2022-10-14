@@ -1,6 +1,8 @@
 .Outro {
   width: 100%;
   background: #d9d9d9;
+  position: relative;
+  z-index: 3;
 }
 .wrapper {
   display: flex;

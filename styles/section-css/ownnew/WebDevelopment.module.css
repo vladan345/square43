@@ -1,0 +1,62 @@
+.WebDevelopment {
+  background-color: #fff;
+  color: #33454f;
+  position: relative;
+  padding-bottom: 240px;
+  z-index: 3;
+}
+.wireframe {
+  padding-top: 180px;
+}
+.wireframeWrap {
+  display: flex;
+}
+.col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.left {
+  margin-right: 80px;
+}
+.right {
+  margin-left: 100px;
+}
+.title {
+  font-size: 54px;
+  margin-bottom: 80px;
+}
+.description {
+  margin-bottom: 40px;
+}
+
+.inspectWrap {
+  display: flex;
+  height: 768px;
+  margin-top: 160px;
+}
+.backgroundColor {
+  height: 33%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  background-color: #33454f;
+}
+.row {
+  margin-top: 120px;
+}
+.wrapper {
+  display: flex;
+}
+.bottomText {
+  margin-right: 100px;
+}
+.bottomDescription {
+  margin-bottom: 40px;
+  color: white;
+  z-index: 1;
+  position: relative;
+}

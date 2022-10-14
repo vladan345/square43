@@ -1,0 +1,200 @@
+@font-face {
+  font-family: "Lucida Grande";
+  src: url("/fonts/lucidagrande.ttf");
+}
+.screen {
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5);
+  width: 75%;
+  margin-right: 20px;
+  z-index: 999999;
+  background: white;
+}
+.screen .header {
+  width: 100%;
+  height: 65px;
+  background: #33454f;
+}
+.screen .inspect {
+  position: relative;
+}
+.screen .screenWrap {
+  max-width: 785px;
+  margin: 0 auto;
+}
+.screen .header .screenWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.screen .header .title {
+  font-size: 26px;
+  color: white;
+  font-family: "Libre Baskerville", serif;
+  cursor: pointer;
+  position: relative;
+}
+
+.screen .inspect:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 124, 225, 0.447);
+  opacity: 0;
+}
+.screen .inspect:hover:before {
+  opacity: 1;
+}
+.screen .header .links {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.screen .header .link {
+  display: inline-block;
+  color: white;
+  font-size: 9px;
+  padding: 0 22.1px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.screen .header .link:last-of-type {
+  padding-right: 0;
+  border-left: 1px solid white;
+}
+.screen .lending {
+  margin: 38px 0;
+  height: 250px;
+  position: relative;
+}
+.screen .lending .screenWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+}
+.screen .heading {
+  font-family: "Libre Baskerville", serif;
+  font-size: 19px;
+  max-width: 216px;
+  margin-bottom: 22px;
+}
+.screen .description {
+  max-width: 281px;
+  font-size: 9px;
+  margin-bottom: 20px;
+  line-height: 13.5px;
+}
+.screen .lending .list {
+  max-width: 300px;
+}
+.screen .lending .listItem {
+  font-size: 9px;
+  margin-bottom: 3px;
+  margin-left: 15px;
+}
+.screen .lending .firstImage {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 250px;
+}
+.firstImage.inspect:after,
+.secondImage.inspect:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 124, 225, 0.447);
+  opacity: 0;
+}
+.firstImage.inspect:before {
+  display: none;
+}
+.screen .inspect:hover:after,
+.secondImage.inspect:hover:after {
+  opacity: 1;
+}
+.how {
+  display: flex;
+  height: 290px;
+}
+.secondImage {
+  width: 50%;
+  margin-right: 20px;
+}
+
+.how .text {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.how .links .link {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0 16px;
+  margin-bottom: 0;
+  line-height: 9px;
+  font-size: 9px;
+}
+.screen .how .links .link:first-of-type {
+  padding-left: 0;
+  border-right: 1px solid #33454f;
+}
+.screen .footer {
+  width: 100%;
+  height: 50px;
+  background: #f5ad52;
+  margin-top: 37px;
+}
+.screen .footer:hover {
+  background: #838383;
+}
+.code {
+  width: 25%;
+  background-color: #fff;
+  margin-left: 20px;
+  border-radius: 10px;
+  border: 2px solid #33454f;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.code .topBar {
+  background-color: #33454f;
+  width: 100%;
+  height: 29px;
+  border-bottom: 1px solid #f5ad52;
+  border-radius: 7px 7px 0 0;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+.code .circle {
+  width: 14px;
+  height: 14px;
+  background-color: #f7f5f2;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.code .fill {
+  background: #f5ad52;
+}
+.code .body {
+  height: 100%;
+  padding: 30px;
+}
+.code .body .heading {
+  color: #000;
+  font-size: 16px;
+  font-family: "Lucida Grande";
+  margin-bottom: 30px;
+}

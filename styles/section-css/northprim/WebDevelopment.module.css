@@ -1,0 +1,22 @@
+.WebDevelopment {
+  background: #202020;
+  color: white;
+}
+.col {
+  width: 50%;
+}
+.title {
+  color: #fff;
+}
+.description {
+  max-width: 560px;
+  margin-bottom: 40px;
+}
+.webDevWrap {
+  display: flex;
+  padding: 120px 0 200px 0;
+}
+.right {
+  display: flex;
+  justify-content: flex-end;
+}

@@ -77,16 +77,16 @@ function ProjectHero(props) {
                 </Link>
               );
             })}
-            <div className={styles.arrow}>
-              <div className={styles.iconOverlay}></div>
-              <div className={styles.icon}>
-                <Image
-                  src="/images/arrow-down-solid.svg"
-                  width={30}
-                  height={30}
-                  alt="arrow down icon"
-                />
-              </div>
+          </div>
+          <div className={styles.arrow} style={{ background: color }}>
+            <div className={styles.iconOverlay}></div>
+            <div className={styles.icon}>
+              <Image
+                src="/images/arrow-down-solid.svg"
+                width={30}
+                height={30}
+                alt="arrow down icon"
+              />
             </div>
           </div>
         </div>
