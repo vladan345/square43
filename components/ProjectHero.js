@@ -59,7 +59,6 @@ function ProjectHero(props) {
         <div className="wrapper">
           <h1 className={styles.projectName}>{name}</h1>
           <h2
-            id="imMagnetic"
             onMouseEnter={() => CURSOR_COLOR("WHITE")}
             onMouseLeave={() => CURSOR_COLOR("END")}
             className={styles.slogan}

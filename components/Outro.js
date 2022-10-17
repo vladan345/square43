@@ -6,6 +6,8 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { getAllProjectsExcept } from "../utils/data/getData";
 
+import { CURSOR_COLOR } from "haspr-cursor";
+
 function Outro(props) {
   const [projects, setProjects] = useState([]);
   const [isLoading, setLoading] = useState(false);
@@ -32,6 +34,7 @@ function Outro(props) {
         easing: "ease-in-out",
         pagination: true,
       }}
+      id="outroSlider"
     >
       {isLoading
         ? null
@@ -47,7 +50,12 @@ function Outro(props) {
                     <h2 className={styles.name}>{project.name}</h2>
                     <p className={styles.slogan}>{project.slogan}</p>
 
-                    <a href={`/projects/${project.id}`}>
+                    <a
+                      className={styles.arrowLink}
+                      onMouseEnter={() => CURSOR_COLOR("WHITE")}
+                      onMouseLeave={() => CURSOR_COLOR("END")}
+                      href={`/projects/${project.id}`}
+                    >
                       <div className={styles.arrow}>
                         <Image
                           src="/images/arrow-down-solid.svg"

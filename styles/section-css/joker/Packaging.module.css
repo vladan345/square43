@@ -1,0 +1,35 @@
+.Packaging {
+  padding: 120px 0;
+  min-height: 1000px;
+  position: relative;
+}
+.jokic {
+  position: absolute;
+  bottom: -20%;
+}
+.contentWrap {
+  display: flex;
+}
+.col {
+  width: 50%;
+}
+.col:first-of-type {
+  height: 100%;
+}
+.description {
+  margin-bottom: 40px;
+  max-width: 560px;
+}
+.canWrap {
+  position: relative;
+  width: 100%;
+}
+.can {
+  position: absolute;
+}
+.left {
+  right: 400px;
+}
+.right {
+  right: 0;
+}

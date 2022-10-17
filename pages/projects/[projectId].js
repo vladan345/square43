@@ -4,6 +4,7 @@ import { getCurrentProject } from "../../utils/data/getData";
 
 import Northprim from "./Northprim";
 import OwnNew from "./OwnNew";
+import Joker from "./Joker";
 
 import ProjectHero from "../../components/ProjectHero";
 import Outro from "../../components/Outro";
@@ -22,6 +23,8 @@ function Project() {
         return <Northprim />;
       case "ownnew":
         return <OwnNew />;
+      case "joker":
+        return <Joker />;
       default:
         return null;
     }

@@ -34,9 +34,12 @@
   margin-bottom: 80px;
   white-space: pre-wrap;
 }
+.arrowLink {
+  display: inline-block;
+}
 .arrow {
   margin-top: 80px;
-
+  transform: rotate(-90deg);
   width: 40px;
   height: 40px;
   display: flex;
@@ -45,8 +48,4 @@
   position: relative;
   transition: 0.3s;
   overflow: hidden;
-}
-.arrow:hover {
-  background: white;
-  filter: invert();
 }
