@@ -16,7 +16,6 @@ function Project() {
   useEffect(() => {
     setProject(getCurrentProject(projectId));
   }, [projectId]);
-
   const renderPage = () => {
     switch (projectId) {
       case "northprim":
@@ -33,7 +32,7 @@ function Project() {
         <>
           <ProjectHero project={project} />
           {renderPage()}
-          <Outro />
+          <Outro projectId={projectId} />
         </>
       )}
     </div>

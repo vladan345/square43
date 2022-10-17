@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../../styles/section-css/ownnew/DesktopVideo.module.css";
 function DesktopVideo() {
   return (
-    <div class={styles.DesktopVideo}>
+    <div className={styles.DesktopVideo}>
       <div className={styles.background}></div>
       <div className="wrapper">
         <div className={styles.videoWrap}>

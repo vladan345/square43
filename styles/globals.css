@@ -67,6 +67,18 @@ h2 {
 .splide__slide img {
   width: 100%;
 }
+ul.splide__pagination li {
+  margin: 20px 7px;
+}
+ul.splide__pagination li button {
+  background: white;
+  width: 7px;
+  height: 7px;
+}
+ul.splide__pagination li .is-active {
+  background: black;
+  transform: scale(1);
+}
 @keyframes fadeIn {
   from {
     opacity: 0;

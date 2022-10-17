@@ -130,8 +130,6 @@ function WebDevelopment() {
                 <Image
                   src="/images/ownnew/screen1.webp"
                   alt="Ownnew Brokers page"
-                  width={512}
-                  height={250}
                   layout="fill"
                   objectFit="cover"
                 />
