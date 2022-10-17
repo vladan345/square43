@@ -1,0 +1,16 @@
+.WebDesign {
+  position: relative;
+  background: white;
+  padding: 120px 0;
+}
+.image {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.description {
+  margin-bottom: 40px;
+  max-width: 560px;
+}

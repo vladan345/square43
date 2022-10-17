@@ -10,12 +10,11 @@ export const getAllServices = () => {
 //   return getData.projects;
 // };
 
-// //Needs to be deconstructed
-// export const getCurrentService = () => {
-//   return getData.services.filter(
-//     (service) => service.id === useParams().serviceName
-//   );
-// };
+//Needs to be deconstructed
+export const getCurrentService = (serviceId) => {
+  let [data] = getData.services.filter((service) => service.id === serviceId);
+  return data;
+};
 export const getProjectsByService = (serviceId) => {
   return getData.projects.filter((project) =>
     project.services.includes(serviceId)
@@ -23,5 +22,6 @@ export const getProjectsByService = (serviceId) => {
 };
 // //Needs to be deconstructed
 export const getCurrentProject = (projectId) => {
-  return getData.projects.filter((project) => project.id === projectId);
+  let [data] = getData.projects.filter((project) => project.id === projectId);
+  return data;
 };

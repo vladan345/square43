@@ -21,7 +21,7 @@
   text-align: center;
 }
 .link {
-  color: white;
+  color: black;
   font-size: 24px;
   text-decoration: none;
   margin: 0 0 0 20px;
@@ -38,7 +38,7 @@
   transform: translateX(-50%);
   width: 0;
   height: 1px;
-  background: white;
+  background: black;
   transition: 0.3s;
 }
 .link:hover:after {

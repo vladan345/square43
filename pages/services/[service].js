@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import { getProjectsByService } from "../../utils/data/getData";
+import {
+  getProjectsByService,
+  getCurrentService,
+} from "../../utils/data/getData";
 import Spinner from "../../components/Spinner";
 import ProjectCard from "../../components/ProjectCard";
 import styles from "../../styles/Service.module.css";
@@ -8,16 +11,19 @@ import styles from "../../styles/Service.module.css";
 function Service() {
   const router = useRouter();
   const [projects, setProjects] = useState([]);
+  const [currentService, setCurrentService] = useState();
   const [isLoading, setLoading] = useState(false);
   const { service } = router.query;
 
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
+      setCurrentService(getCurrentService(service));
       setProjects(getProjectsByService(service));
       setLoading(false);
     }, 1000);
   }, [service]);
+
   return (
     <div className="Service">
       <div className="wrapper">
@@ -28,7 +34,7 @@ function Service() {
             opacity: 0,
           }}
         >
-          {service}
+          {currentService?.name}
         </h1>
         <section className="projects-section">
           {isLoading ? (

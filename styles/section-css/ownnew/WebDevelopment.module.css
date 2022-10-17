@@ -3,7 +3,6 @@
   color: #33454f;
   position: relative;
   padding-bottom: 240px;
-  z-index: 3;
 }
 .wireframe {
   padding-top: 180px;
@@ -24,7 +23,6 @@
   margin-left: 100px;
 }
 .title {
-  font-size: 54px;
   margin-bottom: 80px;
 }
 .description {

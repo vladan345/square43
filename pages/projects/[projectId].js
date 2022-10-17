@@ -6,6 +6,7 @@ import Northprim from "./Northprim";
 import OwnNew from "./OwnNew";
 
 import ProjectHero from "../../components/ProjectHero";
+import Outro from "../../components/Outro";
 
 function Project() {
   const router = useRouter();
@@ -13,8 +14,7 @@ function Project() {
   const [project, setProject] = useState();
 
   useEffect(() => {
-    let [temp] = getCurrentProject(projectId);
-    setProject(temp);
+    setProject(getCurrentProject(projectId));
   }, [projectId]);
 
   const renderPage = () => {
@@ -33,6 +33,7 @@ function Project() {
         <>
           <ProjectHero project={project} />
           {renderPage()}
+          <Outro />
         </>
       )}
     </div>

@@ -8,19 +8,9 @@ function Parallax() {
       style={{
         height: 600,
         width: "100%",
-        overflow: "hidden",
-        position: "relative",
-        zIndex: 0,
       }}
     >
-      <div className={styles.image}>
-        <Image
-          src="/images/ownnew/parallax2.png"
-          alt="Own new building"
-          width={1920}
-          height={1080}
-        />
-      </div>
+      <div className={styles.image}></div>
     </div>
   );
 }

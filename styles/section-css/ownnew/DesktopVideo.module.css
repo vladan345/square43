@@ -1,0 +1,45 @@
+.DesktopVideo {
+  background-color: white;
+  padding: 180px 0;
+}
+.background {
+  position: absolute;
+  top: 0;
+  background: #ffd099;
+  width: 100%;
+  height: 570px;
+}
+.videoWrap {
+  border: 1px solid #33454f;
+  border-radius: 11px;
+  overflow: hidden;
+  max-width: 1350px;
+  position: relative;
+  z-index: 3;
+}
+.topBar {
+  background-color: #33454f;
+  width: 100%;
+  height: 29px;
+  border-bottom: 1px solid #f5ad52;
+  border-radius: 7px 7px 0 0;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+.circle {
+  width: 14px;
+  height: 14px;
+  background-color: #f7f5f2;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.fill {
+  background: #f5ad52;
+}
+
+.video {
+  width: 100%;
+  margin-bottom: -8px;
+  object-fit: cover;
+}

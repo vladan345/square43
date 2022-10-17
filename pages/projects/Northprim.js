@@ -16,7 +16,6 @@ import SocialMedia from "../../pages-sections/northprim/SocialMedia";
 import Print from "../../pages-sections/northprim/Print";
 import Slider from "../../pages-sections/northprim/Slider";
 import Coffee from "../../pages-sections/northprim/Coffee";
-import Outro from "../../components/Outro";
 
 function Northprim() {
   return (
@@ -36,7 +35,6 @@ function Northprim() {
         <Print />
         <Slider />
         <Coffee />
-        <Outro />
       </ParallaxProvider>
     </div>
   );

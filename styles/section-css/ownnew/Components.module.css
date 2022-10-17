@@ -1,0 +1,28 @@
+.Components {
+  background: white;
+  padding: 60px 0 0 0;
+}
+.contentWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.buttons {
+  width: 230px;
+}
+.button {
+  margin-bottom: 40px;
+}
+.menuIcons {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.menuImage {
+  display: inline-block;
+  margin-right: 40px;
+}
+.description {
+  margin-bottom: 40px;
+  max-width: 560px;
+}
