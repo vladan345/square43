@@ -1,11 +1,10 @@
 import React, { useEffect, useRef } from "react";
 // import { ScrollContainer, SequenceSection } from "react-nice-scroll";
-import "react-nice-scroll/dist/styles.css";
-import fallBack from "./assets/1.jpg"; // eslint-disable-line no-unused-vars
-import { imagesSeq } from "../../../../../utils/constants/northprimSeq";
-import "./ScrollSequence.css";
+// import "react-nice-scroll/dist/styles.css";
+
+import "../../styles/section-css/northprim/ScrollSequence.module.css";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -18,7 +17,10 @@ function ScrollSequence() {
     canvas.current.height = 1080;
 
     const frameCount = 300;
-
+    const currentFrame = (index) =>
+      `/images/northprim/image-seq/${(index + 1)
+        .toString()
+        .padStart(4, "0")}.jpg`;
     const images = [];
     const airpods = {
       target: canvas.current,

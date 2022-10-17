@@ -9,14 +9,14 @@ function Components() {
         <div className={styles.contentWrap}>
           <div className={styles.paragraphs}>
             <p className={styles.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non
-              sollicitudin arcu integer. Nulla cras pellentesque habitant tortor
-              donec bibendum volutpat.
+              Pastel colors are hardly revolutionary, but it&apos;s their right
+              combination that hits the sweet spot. This was our basic color
+              palette that paints the perfect picture of coziness and security!
             </p>
             <p className={styles.description}>
-              Tincidunt leo sit interdum maecenas leo. Dolor amet convallis
-              senectus aliquet turpis amet ultrices sagittis, tincidunt. Sed
-              dignissim nulla nisl purus congue.
+              Just to add a special touch to our web design, we transformed the
+              classic burger menu symbol into a roof that pops up every time you
+              click to expand the menu. Yes, we go into the tiniest details!
             </p>
           </div>
           <div className={styles.buttons}>

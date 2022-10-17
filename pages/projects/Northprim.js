@@ -29,7 +29,7 @@ function Northprim() {
         <CoreThemes />
         <Parallax />
         <WebDesign />
-        {/* <ScrollSequence />*/}
+        {/* <ScrollSequence /> */}
         <WebDevelopment />
         <SocialMedia />
         <Print />

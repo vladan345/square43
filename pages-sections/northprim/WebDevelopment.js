@@ -11,14 +11,13 @@ function WebDevelopment() {
           <div className={styles.col}>
             <h2 className={styles.title}>Web Development</h2>
             <p className={styles.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non
-              sollicitudin arcu integer. Nulla cras pellentesque habitant tortor
-              donec bibendum volutpat.
+              Keeping things simple and intuitive in terms of web structure is
+              how we roll. We made sure to make it set up all key sections an IT
+              company&apos;s website should have
             </p>
             <p className={styles.description}>
-              Tincidunt leo sit interdum maecenas leo. Dolor amet convallis
-              senectus aliquet turpis amet ultrices sagittis, tincidunt. Sed
-              dignissim nulla nisl purus congue.
+              This was crucial so that both new job applicants and potential
+              clients could see everything they needed in one place.
             </p>
           </div>
           <div className={`${styles.col} ${styles.right}`}>

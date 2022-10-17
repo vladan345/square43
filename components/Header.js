@@ -2,11 +2,12 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "../styles/component-css/Header.module.css";
 import Image from "next/image";
-
+import { DispatchCursor, CURSOR_COLOR } from "haspr-cursor";
 //All comments are for page transition delay
 // import { useRouter } from "next/router";
 
 export default function Header() {
+  const dispatch = DispatchCursor();
   const [blend, setBlend] = useState(false);
   // const router = useRouter();
 
@@ -32,27 +33,58 @@ export default function Header() {
     <div className={`${styles.Header}`}>
       <div className={`wrapper ${styles.wrapper}`}>
         <div className={styles.leftNav}>
-          <a className={styles.headerLink} href="?#">
+          <a
+            onMouseEnter={() => CURSOR_COLOR("WHITE")}
+            onMouseLeave={() => CURSOR_COLOR("END")}
+            className={styles.headerLink}
+            href="?#"
+          >
             Work
           </a>
           <Link href="/services">
-            <a className={styles.headerLink}>Services</a>
+            <a
+              onMouseEnter={() => CURSOR_COLOR("WHITE")}
+              onMouseLeave={() => CURSOR_COLOR("END")}
+              className={styles.headerLink}
+            >
+              Services
+            </a>
           </Link>
         </div>
         <Link href="/">
-          <a className={styles.logo}>
+          <a
+            onMouseEnter={() => CURSOR_COLOR("WHITE")}
+            onMouseLeave={() => CURSOR_COLOR("END")}
+            className={styles.logo}
+          >
             <Image src="/logo.svg" alt="square43 logo" width="45" height="45" />
           </a>
         </Link>
         <div className={styles.rightNav}>
-          <a className={styles.headerLink} href="?#">
+          <a
+            onMouseEnter={() => CURSOR_COLOR("WHITE")}
+            onMouseLeave={() => CURSOR_COLOR("END")}
+            className={styles.headerLink}
+            href="?#"
+          >
             Contact
           </a>
-          <a className={styles.headerLink} href="?#">
+          <a
+            onMouseEnter={() => CURSOR_COLOR("WHITE")}
+            onMouseLeave={() => CURSOR_COLOR("END")}
+            className={styles.headerLink}
+            href="?#"
+          >
             News
           </a>
           <Link className={styles.headerLink} href="/about">
-            <a className={styles.headerLink}>About</a>
+            <a
+              onMouseEnter={() => CURSOR_COLOR("WHITE")}
+              onMouseLeave={() => CURSOR_COLOR("END")}
+              className={styles.headerLink}
+            >
+              About
+            </a>
           </Link>
         </div>
       </div>

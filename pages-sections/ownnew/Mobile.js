@@ -28,14 +28,13 @@ function Mobile() {
           </div>
           <div className={styles.textWrap}>
             <p className={styles.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non
-              sollicitudin arcu integer. Nulla cras pellentesque habitant tortor
-              donec bibendum volutpat.
+              A mobile-first website design was a priority among all other
+              requests!
             </p>
             <p className={styles.description}>
-              Tincidunt leo sit interdum maecenas leo. Dolor amet convallis
-              senectus aliquet turpis amet ultrices sagittis, tincidunt. Sed
-              dignissim nulla nisl purus congue.
+              At the age when most websites are accessed via smartphones, it is
+              essential for your website to be fully adapted for this format too
+              - ideally without sacrificing anything from the original design.
             </p>
           </div>
         </div>

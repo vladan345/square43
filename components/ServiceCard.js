@@ -14,6 +14,13 @@ function ServiceModule(props) {
       <div className="top">
         <h2 className={styles.title}>{props.service.name}</h2>
         <p className={styles.description}>{props.service.description}</p>
+        <ul>
+          {props.service.list.map((listItem, key) => (
+            <li className={styles.listItem} key={key}>
+              {listItem}
+            </li>
+          ))}
+        </ul>
       </div>
       <Link href={"/services/" + props.service.id}>
         <a className={styles.link} onClick={styleTarget}>

@@ -8,14 +8,13 @@ function WebDesign() {
       <div className="wrapper">
         <h2>Web Design</h2>
         <p className={styles.description}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non
-          sollicitudin arcu integer. Nulla cras pellentesque habitant tortor
-          donec bibendum volutpat.{" "}
+          Beauty might be in the eye of the beholder, but the art of creating
+          that beauty was in the eyes - and hands - of our designer.
         </p>
         <p className={styles.description}>
-          Tincidunt leo sit interdum maecenas leo. Dolor amet convallis senectus
-          aliquet turpis amet ultrices sagittis, tincidunt. Sed dignissim nulla
-          nisl purus congue.
+          The aim was to combine the following key concepts: minimalism,
+          coziness and an intuitive design without making it look too plain. Our
+          secret, however, was visual narration.
         </p>
       </div>
       <div className={styles.image}>

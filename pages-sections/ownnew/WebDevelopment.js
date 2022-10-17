@@ -26,14 +26,14 @@ function WebDevelopment() {
             <div className={`${styles.col} ${styles.left}`}>
               <h2 className={styles.title}>Web Development</h2>
               <p className={styles.description}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
-                non sollicitudin arcu integer. Nulla cras pellentesque habitant
-                tortor donec bibendum volutpat.
+                Simple structure to keep it intuitive is extremely important,
+                but the flow is key.
               </p>
               <p>
-                Tincidunt leo sit interdum maecenas leo. Dolor amet convallis
-                senectus aliquet turpis amet ultrices sagittis, tincidunt. Sed
-                dignissim nulla nisl purus congue.
+                The website structure needed to accommodate different types of
+                visitors, depending on whether they are a broker, buyer or a
+                builder. This is why we made it so easy to navigate and find
+                just the right sections.
               </p>
             </div>
             <div className={`${styles.col} ${styles.right}`}>
@@ -238,26 +238,20 @@ function WebDevelopment() {
           <div className={styles.wrapper}>
             <div className={styles.bottomText}>
               <p className={styles.bottomDescription}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
-                non sollicitudin arcu integer. Nulla cras pellentesque habitant
-                tortor donec bibendum volutpat.
-              </p>
-              <p className={styles.bottomDescription}>
-                Tincidunt leo sit interdum maecenas leo. Dolor amet convallis
-                senectus aliquet turpis amet ultrices sagittis, tincidunt. Sed
-                dignissim nulla nisl purus congue.
+                We keep it fair and square: hover over every section to see the
+                code used for that specific part!
               </p>
             </div>
             <div className={styles.bottomText}>
               <p className={styles.bottomDescription}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
-                non sollicitudin arcu integer. Nulla cras pellentesque habitant
-                tortor donec bibendum volutpat.
+                Our finished product is more than a well-designed facade,
+                though.
               </p>
               <p className={styles.bottomDescription}>
-                Tincidunt leo sit interdum maecenas leo. Dolor amet convallis
-                senectus aliquet turpis amet ultrices sagittis, tincidunt. Sed
-                dignissim nulla nisl purus congue.
+                Every website that we build with our bare hands (and mouses and
+                keyboards) is also configured with state-of-the-art analytics
+                that enable it to appear right before the people who are looking
+                it up!
               </p>
             </div>
           </div>

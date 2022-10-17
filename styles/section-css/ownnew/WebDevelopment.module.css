@@ -53,6 +53,7 @@
   margin-right: 100px;
 }
 .bottomDescription {
+  max-width: 560px;
   margin-bottom: 40px;
   color: white;
   z-index: 1;

@@ -10,15 +10,11 @@ function SocialMedia() {
         <div className={styles.col}>
           <h2>Social Media</h2>
           <p className={styles.description}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non
-            sollicitudin arcu integer. Nulla cras pellentesque habitant tortor
-            donec bibendum volutpat.
+            Funny, eye-catching and pun-filled, we keep it tight on the socials,
+            letting everyone know what our client Northprim is up to with fresh
+            posts regularly.
           </p>
-          <p className={styles.description}>
-            Tincidunt leo sit interdum maecenas leo. Dolor amet convallis
-            senectus aliquet turpis amet ultrices sagittis, tincidunt. Sed
-            dignissim nulla nisl purus congue.
-          </p>
+
           <div style={{ marginTop: 120 }}>
             <Image
               src="/images/northprim/northprim-phone.webp"

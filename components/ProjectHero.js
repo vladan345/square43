@@ -5,9 +5,12 @@ import styles from "../styles/component-css/ProjectHero.module.css";
 import Spinner from "../components/Spinner";
 import Image from "next/image";
 
+import { DispatchCursor, CURSOR_COLOR } from "haspr-cursor";
+
 function ProjectHero(props) {
   const [isLoading, setLoading] = useState(false); // eslint-disable-line no-unused-vars
 
+  const dispatch = DispatchCursor();
   // useEffect(() => {
   //   setLoading(true);
   //   setTimeout(() => {
@@ -55,7 +58,14 @@ function ProjectHero(props) {
         </video>
         <div className="wrapper">
           <h1 className={styles.projectName}>{name}</h1>
-          <h2 className={styles.slogan}>{slogan}</h2>
+          <h2
+            id="imMagnetic"
+            onMouseEnter={() => CURSOR_COLOR("WHITE")}
+            onMouseLeave={() => CURSOR_COLOR("END")}
+            className={styles.slogan}
+          >
+            {slogan}
+          </h2>
 
           <p className={styles.serviceHead}>What we&apos;ve done </p>
           <div className={styles.services}>
