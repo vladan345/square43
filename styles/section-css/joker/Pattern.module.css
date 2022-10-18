@@ -1,0 +1,38 @@
+.patternFlex {
+  padding-bottom: 180px;
+  display: flex;
+}
+.patternWrap {
+  width: 66%;
+  display: flex;
+  justify-content: space-between;
+  height: 280px;
+  overflow: hidden;
+  background: #002856;
+  position: relative;
+}
+.pattern {
+  width: 120%;
+  position: absolute;
+  top: -50%;
+  left: -10%;
+}
+.content {
+  width: 33%;
+  padding-right: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #002856;
+  line-height: 0.9;
+  letter-spacing: 1.28px;
+  margin-bottom: 60px;
+}
+.description {
+  line-height: 1.5;
+  font-size: 16px;
+}

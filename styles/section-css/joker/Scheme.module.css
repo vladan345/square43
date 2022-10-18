@@ -1,0 +1,29 @@
+.schemeWrap {
+  padding-bottom: 180px;
+  display: flex;
+}
+.scheme {
+  width: 66%;
+}
+.video {
+  width: 700px;
+}
+.content {
+  width: 33%;
+  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #002856;
+  line-height: 0.9;
+  letter-spacing: 1.28px;
+  margin-bottom: 60px;
+}
+.description {
+  line-height: 1.5;
+  font-size: 16px;
+}

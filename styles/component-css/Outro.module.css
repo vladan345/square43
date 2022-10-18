@@ -6,7 +6,6 @@
 }
 .wrapper {
   display: flex;
-  align-items: center;
   padding: 80px 0;
 }
 .video {

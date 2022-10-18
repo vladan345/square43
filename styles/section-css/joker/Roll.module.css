@@ -1,0 +1,51 @@
+.rollWrap {
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 300px 0;
+  width: 66%;
+}
+.rollingWrap {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  transform: translateX(-300px);
+}
+.rollFlex {
+  display: flex;
+}
+.shadow {
+  position: absolute;
+  bottom: -25px;
+  width: 100%;
+}
+.can {
+  position: absolute;
+  bottom: -4px;
+}
+.mid {
+  margin-bottom: -70px;
+}
+.large {
+  margin-bottom: -70px;
+  margin-left: -180px;
+}
+
+.content {
+  width: 33%;
+  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #002856;
+  line-height: 0.9;
+  letter-spacing: 1.28px;
+  margin-bottom: 60px;
+}
+.description {
+  line-height: 1.5;
+  font-size: 16px;
+}

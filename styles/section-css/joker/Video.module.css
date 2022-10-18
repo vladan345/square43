@@ -1,0 +1,12 @@
+.Video {
+  background: white;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+.video {
+  width: 100%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}

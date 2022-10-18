@@ -1,0 +1,25 @@
+<svg width="201" height="53" viewBox="0 0 201 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g opacity=".8" filter="url(#3vuvgpjnea)">
+        <ellipse cx="100.5" cy="26.5" rx="84.5" ry="10.5" fill="url(#czwiouovcb)"/>
+    </g>
+    <g opacity=".2" filter="url(#kxdkeaupdc)">
+        <ellipse cx="101" cy="26.5" rx="45" ry="10.5" fill="#000"/>
+    </g>
+    <defs>
+        <filter id="3vuvgpjnea" x="0" y="0" width="201" height="53" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+            <feGaussianBlur stdDeviation="8" result="effect1_foregroundBlur_372_9968"/>
+        </filter>
+        <filter id="kxdkeaupdc" x="47" y="7" width="108" height="39" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+            <feGaussianBlur stdDeviation="4.5" result="effect1_foregroundBlur_372_9968"/>
+        </filter>
+        <linearGradient id="czwiouovcb" x1="16" y1="27" x2="185" y2="27" gradientUnits="userSpaceOnUse">
+            <stop stop-opacity="0"/>
+            <stop offset=".545"/>
+            <stop offset="1" stop-opacity="0"/>
+        </linearGradient>
+    </defs>
+</svg>

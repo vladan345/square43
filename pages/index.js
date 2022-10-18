@@ -29,6 +29,9 @@ export default function Home() {
               <Link className={styles.link} href="/projects/ownnew">
                 <a className={styles.link}>Ownnew</a>
               </Link>
+              <Link className={styles.link} href="/projects/joker">
+                <a className={styles.link}>Joker</a>
+              </Link>
             </div>
           </div>
         </div>
