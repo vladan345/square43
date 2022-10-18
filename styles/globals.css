@@ -1,3 +1,11 @@
+@font-face {
+  font-family: MatterBold;
+  src: url("../public/fonts/Matter-Bold.otf");
+}
+@font-face {
+  font-family: MatterLight;
+  src: url("../public/fonts/Matter-Light.otf");
+}
 * {
   margin: 0;
   padding: 0;
@@ -85,9 +93,23 @@ ul.splide__pagination li .is-active {
   background: black;
   transform: scale(1);
 }
+.word {
+  transform: translateY(50%);
+  display: inline-block;
+}
 #outroSlider ul.splide__list li {
   background-color: #d9d9d9;
 }
+
+#gradient-canvas {
+  width: 100vw;
+  height: 100vh;
+  --gradient-color-1: #449ce4;
+  --gradient-color-2: #2f8bc1;
+  --gradient-color-3: #ccbeee;
+  --gradient-color-4: #000000;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -115,5 +137,13 @@ ul.splide__pagination li .is-active {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+@keyframes translateUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
   }
 }

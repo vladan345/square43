@@ -1,0 +1,7 @@
+.square {
+  position: fixed;
+  right: 14.6%;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 3;
+}

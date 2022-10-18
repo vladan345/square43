@@ -5,42 +5,30 @@
   height: 100vh;
 }
 .wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  max-width: 1350px;
+  width: 1350px;
   margin: 0 auto;
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .title {
-  font-size: 8.27vw;
-  margin: 100px 0 50px 0;
-}
-.subtitle {
-  font-size: 32px;
-  text-align: center;
-}
-.link {
-  color: black;
-  font-size: 24px;
-  text-decoration: none;
-  margin: 0 0 0 20px;
+  font-size: 80px;
+  letter-spacing: -2.4px;
+  font-family: MatterLight;
+  text-transform: uppercase;
   position: relative;
+  z-index: 3;
+  overflow: hidden;
+  max-width: 1000px;
 }
-.link:first-of-type {
-  margin: 0 20px 0 0;
-}
-.link:after {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 1px;
-  background: black;
-  transition: 0.3s;
-}
-.link:hover:after {
-  width: 100%;
+.stamp {
+  font-size: 100px;
+  font-family: MatterBold;
+  position: relative;
+  z-index: 3;
+  overflow: hidden;
+  line-height: 100px;
 }

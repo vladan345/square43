@@ -1,8 +1,14 @@
+import React, { useState } from "react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
+import Square from "../components/Square";
 
 export default function Home() {
+  const [count, setCount] = useState(0);
+  const stamps = ["Digital", "Creative", "Studio."];
+  const stamps2 = ["Modern", "experience", "for", "tomorrow", "brands."];
+
   return (
     <div>
       <Head>
@@ -12,27 +18,24 @@ export default function Home() {
       <main>
         <div className={styles.Home}>
           <div className={styles.wrapper}>
-            <h1
-              className={styles.title}
-              style={{
-                animation: "fadeInUp 1s forwards ease-in-out",
-                opacity: 0,
-              }}
-            >
-              Square43 Studio
-            </h1>
-            <div>
-              <h2 className={styles.subtitle}>Shortcuts</h2>
-              <Link href="/projects/northprim">
-                <a className={styles.link}>Northprim</a>
-              </Link>
-              <Link className={styles.link} href="/projects/ownnew">
-                <a className={styles.link}>Ownnew</a>
-              </Link>
-              <Link className={styles.link} href="/projects/joker">
-                <a className={styles.link}>Joker</a>
-              </Link>
-            </div>
+            <Square />
+            <h1 className={styles.title}>Square43</h1>
+            <p className={styles.stamp}>
+              {stamps2.map((stamp, key) => {
+                let counter = 300;
+                const style = {
+                  animation: `translateUp 1s ${
+                    counter * key
+                  }ms forwards ease-in-out`,
+                  transform: "translateY(100%)",
+                };
+                return (
+                  <span key={key} style={style} className="word">
+                    {stamp}&nbsp;
+                  </span>
+                );
+              })}
+            </p>
           </div>
         </div>
       </main>
