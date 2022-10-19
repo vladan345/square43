@@ -1,0 +1,50 @@
+.Services {
+  background: #f8f8f8;
+  padding-top: 180px;
+  padding-bottom: 120px;
+}
+.section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: radial-gradient(circle at 0 0, #7000ff, #0ff);
+  margin: 0 -20px;
+}
+
+.helper {
+  background: white;
+  display: none;
+}
+.title {
+  font-size: 100px;
+  margin: 0 0 25px 0;
+  font-family: MatterBold, sans-serif;
+}
+.subheading {
+  font-size: 28px;
+  font-family: MatterRegular, sans-serif;
+  line-height: 1.2;
+  max-width: 520px;
+  margin-bottom: 80px;
+}
+.wrapper {
+  max-width: 1350px;
+  position: static;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media (max-width: 1250px) {
+  .section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .helper {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .helper {
+    display: none;
+  }
+}

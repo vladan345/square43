@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #f8f8f8;
+  background: linear-gradient(#fff 75%, #f8f8f8 100%);
 }
 .wrapper {
   width: 1350px;

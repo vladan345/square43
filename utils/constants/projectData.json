@@ -50,6 +50,13 @@
   ],
   "services": [
     {
+      "id": "branding",
+      "name": "Branding",
+      "description": "Your true self - by us",
+      "list": ["Brand strategy", "Logo design", "Brand book design"],
+      "projects": ["northprim"]
+    },
+    {
       "id": "web-design",
       "name": "Web Design",
       "description": "Seeing is believing - and we see a bright future in front of you.",
@@ -63,7 +70,7 @@
     },
     {
       "id": "web-development",
-      "name": "Web Development",
+      "name": "Web Dev",
       "description": "From web scratch",
       "list": [
         "Scroll sequences",
@@ -72,13 +79,6 @@
         "Mobile optimization"
       ],
       "projects": ["northprim", "ownnew"]
-    },
-    {
-      "id": "branding",
-      "name": "Branding",
-      "description": "Your true self - by us",
-      "list": ["Brand strategy", "Logo design", "Brand book design"],
-      "projects": ["northprim"]
     },
     {
       "id": "social-media",
@@ -94,8 +94,29 @@
       "projects": ["northprim"]
     },
     {
+      "id": "copywriting",
+      "name": "Copywriting",
+      "description": "Word it well",
+      "list": ["Website copy", "Social Media copy"],
+      "projects": ["northprim"]
+    },
+    {
+      "id": "e-commerce",
+      "name": "E-Commerce",
+      "description": "Get your store online -  everyone's there already",
+      "list": [
+        "Web Shop development",
+        "Payment integration",
+        "Store setup",
+        "SEO optimization",
+        "Email automation",
+        "Shipping integration"
+      ],
+      "projects": ["northprim"]
+    },
+    {
       "id": "package-design",
-      "name": "Package Design",
+      "name": "Packaging",
       "description": "Packaging too speaks a thousand words",
       "list": ["Package design", "Product label"],
       "projects": ["joker"]
@@ -105,27 +126,6 @@
       "name": "Motion Design",
       "description": "We like to move it move it",
       "list": ["Multipurpose animations", "Video templates"],
-      "projects": ["northprim"]
-    },
-    {
-      "id": "e-commerce",
-      "name": "E-Commerce",
-      "description": "Get your store online -  everyone's there already",
-      "list": [
-        "Payment integration",
-        "Store setup",
-        "SEO optimization",
-        "Email automation",
-        "Stock management integration",
-        "Shipping calculation & integration"
-      ],
-      "projects": ["northprim"]
-    },
-    {
-      "id": "copywriting",
-      "name": "Copywriting",
-      "description": "Word it well",
-      "list": ["Website copy", "Social Media copy"],
       "projects": ["northprim"]
     },
     {

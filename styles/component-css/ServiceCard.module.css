@@ -1,30 +1,43 @@
 .ServiceModule {
-  padding: 30px;
-  background-color: rgb(240, 240, 240);
-  border-radius: 10px;
-  min-height: 250px;
+  padding: 40px;
+  background-color: transparent;
+  min-height: 430px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: #202020;
+  color: white;
+  border: 20px #f8f8f8 solid;
 }
 .title {
-  font-size: 32px;
+  font-size: 42px;
   text-transform: capitalize;
+  font-family: MatterBold;
   margin-bottom: 20px;
+  color: white;
 }
 .description {
   line-height: 1.5;
   font-size: 16px;
   margin-bottom: 20px;
 }
+.list {
+  list-style: none;
+}
 .listItem {
-  margin-bottom: 10px;
-  margin-left: 15px;
+  line-height: 1.7;
+  font-size: 22px;
+  font-family: MatterRegular;
 }
 .link {
   color: #202020;
-  font-size: 18px;
+  letter-spacing: 0.8px;
+  font-family: MatterBold;
+  text-transform: uppercase;
+  font-size: 16px;
   font-weight: bold;
   margin-top: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

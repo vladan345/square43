@@ -1,0 +1,14 @@
+.Achievements {
+  padding: 120px 0 200px 0;
+}
+.tag {
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-family: MatterBold;
+  margin-bottom: 40px;
+}
+.tagline {
+  font-size: 42px;
+  font-family: MatterBold;
+  line-height: 1.2;
+}

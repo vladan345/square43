@@ -55,6 +55,7 @@ h2 {
   display: flex;
   align-items: center;
 }
+
 .icon {
   transition: 0.3s;
   margin-left: 20px;

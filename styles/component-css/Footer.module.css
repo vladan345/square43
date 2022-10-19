@@ -6,6 +6,7 @@
   bottom: 0;
   left: 0;
   z-index: 3;
+  mix-blend-mode: difference;
 }
 .wrapper,
 .nav {
