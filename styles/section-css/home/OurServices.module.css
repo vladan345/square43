@@ -1,0 +1,30 @@
+.OurServices {
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  background: #202020;
+  color: white;
+}
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+.ourServicesWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.statement {
+  font-size: 42px;
+  font-family: MatterBold;
+  max-width: 600px;
+  line-height: 1.2;
+  color: white;
+}

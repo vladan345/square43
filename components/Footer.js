@@ -9,27 +9,20 @@ function Footer() {
     <div className={styles.Footer}>
       <div className={`wrapper ${styles.wrapper}`}>
         <Link href="/">
-          <a className={styles.logo}>
-            <Image src="/logo.svg" width="45" height="45" alt="square43 logo" />
-          </a>
+          <a className={styles.logo}>square43</a>
         </Link>
         <nav className={styles.nav}>
           <a className={styles.footerLink} href="?#">
-            Work
+            Instagram
           </a>
-          <Link href="/services">
-            <a className={styles.footerLink}>Services</a>
-          </Link>
           <a className={styles.footerLink} href="?#">
-            News
+            Facebook
           </a>
-          <Link href="/about">
-            <a className={styles.footerLink}>About</a>
-          </Link>
           <a className={styles.footerLink} href="?#">
-            Contact
+            Linked In
           </a>
         </nav>
+        <p className={styles.copy}>&copy; 2022 Square43</p>
       </div>
     </div>
   );

@@ -1,0 +1,29 @@
+.Project {
+  overflow: hidden;
+  height: 120vh;
+  position: relative;
+  z-index: 1;
+  background: white;
+}
+.projectWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.tag {
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-family: MatterBold;
+  margin-bottom: 40px;
+}
+.title {
+  font-family: MatterBold;
+  font-size: 100px;
+  margin-bottom: 10px;
+}
+.subheading {
+  font-size: 28px;
+  margin-bottom: 60px;
+  max-width: 600px;
+}

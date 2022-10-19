@@ -1,0 +1,31 @@
+.Philosophy {
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  background: white;
+}
+.philosophyWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.tag {
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-family: MatterBold;
+  margin-bottom: 40px;
+}
+.statement {
+  font-size: 42px;
+  font-family: MatterBold;
+  max-width: 600px;
+  line-height: 1.2;
+}
+.subheading {
+  font-size: 28px;
+  line-height: 1.2;
+  max-width: 600px;
+  margin-bottom: 80px;
+}
