@@ -5,3 +5,22 @@
   transform: translate(0, -50%);
   z-index: -1;
 }
+@media (max-width: 1190px) {
+  .square {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 900px) {
+  .square {
+    position: static;
+    transform: translate(0, 0);
+    display: inline-block;
+  }
+}
+@media (max-width: 530px) {
+  .square {
+    width: 100%;
+  }
+}

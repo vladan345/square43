@@ -10,7 +10,6 @@ export default function Hero() {
   return (
     <div className={styles.Hero}>
       <div className={styles.wrapper}>
-        <Square image="/square-temp.webp" height={560} />
         <h1 className={styles.title}>Square43</h1>
         <p className={styles.stamp}>
           {stamps2.map((stamp, key) => {
@@ -28,6 +27,7 @@ export default function Hero() {
             );
           })}
         </p>
+        <Square image="/square-temp.webp" height={560} />
       </div>
     </div>
   );

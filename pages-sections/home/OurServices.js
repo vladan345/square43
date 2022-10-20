@@ -15,12 +15,8 @@ function OurServices() {
           objectFit="cover"
         />
       </div>
-      <div className="wrapper">
-        <Square image="/images/square2.webp" height={480} />
-        <div className={styles.ourServicesWrap}>
-          <h2 className={styles.statement}>
-            We think outside the Square, so should you!
-          </h2>
+      <div className={styles.wrapper}>
+        <div className={styles.linkWrapMobile}>
           <Link href="/services">
             <a className="readMore">
               Our services
@@ -34,6 +30,27 @@ function OurServices() {
               </div>
             </a>
           </Link>
+        </div>
+        <Square image="/images/square2.webp" height={480} />
+        <div className={styles.ourServicesWrap}>
+          <h2 className={styles.statement}>
+            We think outside the Square, so should you!
+          </h2>
+          <div className={styles.linkWrap}>
+            <Link href="/services">
+              <a className="readMore">
+                Our services
+                <div className="icon">
+                  <Image
+                    src="/images/arrow.svg"
+                    alt="Arrow icon"
+                    width={40}
+                    height={40}
+                  />
+                </div>
+              </a>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

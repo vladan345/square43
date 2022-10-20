@@ -10,6 +10,15 @@
   flex-direction: column;
   justify-content: center;
   height: 100%;
+  position: relative;
+}
+.wrapper {
+  padding: 0 20px;
+  max-width: 1360px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+  height: 100%;
 }
 .tag {
   text-transform: uppercase;
@@ -28,4 +37,39 @@
   line-height: 1.2;
   max-width: 600px;
   margin-bottom: 80px;
+}
+.linkWrapMobile {
+  display: none;
+}
+@media (max-width: 900px) {
+  .Philosophy {
+    height: auto;
+    padding-bottom: 40px;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+  }
+  .philosophyWrap {
+    height: auto;
+    width: 100%;
+  }
+  .statement {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  .subheading {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .linkWrap {
+    display: none;
+  }
+  .linkWrapMobile {
+    display: block;
+    margin-top: 80px;
+  }
 }

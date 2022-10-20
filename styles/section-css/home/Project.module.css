@@ -5,6 +5,14 @@
   z-index: 1;
   background: white;
 }
+.wrapper {
+  padding: 0 20px;
+  max-width: 1360px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+  height: 100%;
+}
 .projectWrap {
   display: flex;
   flex-direction: column;
@@ -26,4 +34,37 @@
   font-size: 28px;
   margin-bottom: 60px;
   max-width: 600px;
+}
+.linkWrapMobile {
+  display: none;
+}
+@media (max-width: 900px) {
+  .Project {
+    height: auto;
+    padding-bottom: 40px;
+    padding-top: 120px;
+  }
+  .projectWrap {
+    width: 100%;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .title {
+    font-size: 54px;
+    line-height: 1;
+  }
+  .subheading {
+    font-size: 20px;
+  }
+  .linkWrap {
+    display: none;
+  }
+  .linkWrapMobile {
+    display: block;
+    margin-top: 80px;
+  }
 }

@@ -15,6 +15,14 @@
   z-index: -1;
   opacity: 0.4;
 }
+.wrapper {
+  padding: 0 20px;
+  max-width: 1360px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+  height: 100%;
+}
 .contactWrap {
   display: flex;
   flex-direction: column;
@@ -34,4 +42,37 @@
   color: white;
   max-width: 800px;
   line-height: 1;
+}
+.linkWrapMobile {
+  display: none;
+}
+@media (max-width: 900px) {
+  .Contact {
+    height: auto;
+    padding-bottom: 240px;
+    padding-top: 120px;
+  }
+  .contactWrap {
+    width: 100%;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .title {
+    font-size: 54px;
+    line-height: 1;
+  }
+  .subheading {
+    font-size: 20px;
+  }
+  .linkWrap {
+    display: none;
+  }
+  .linkWrapMobile {
+    display: block;
+    margin-top: 80px;
+  }
 }

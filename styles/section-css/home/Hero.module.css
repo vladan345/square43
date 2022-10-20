@@ -6,7 +6,8 @@
   background: linear-gradient(#fff 75%, #f8f8f8 100%);
 }
 .wrapper {
-  width: 1360px;
+  padding: 0 20px;
+  max-width: 1360px;
   margin: 0 auto;
   position: relative;
   z-index: 3;
@@ -17,6 +18,7 @@
   height: 100%;
 }
 .title {
+  width: 100%;
   font-size: 80px;
   letter-spacing: -2.4px;
   font-family: MatterLight;
@@ -33,4 +35,33 @@
   z-index: 3;
   overflow: hidden;
   line-height: 100px;
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 160px;
+  }
+  .Hero {
+    padding-bottom: 120px;
+    height: auto;
+  }
+  .title {
+    font-size: 50px;
+  }
+  .stamp {
+    font-size: 72px;
+    line-height: 1;
+    margin-bottom: -40px;
+  }
+}
+@media (max-width: 500px) {
+  .title {
+    font-size: 32px;
+  }
+  .stamp {
+    font-size: 54px;
+    line-height: 1;
+  }
 }

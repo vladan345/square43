@@ -82,6 +82,14 @@ export default function Header() {
             </a>
           </Link>
         </div>
+        <div className={styles.hamNav}>
+          <Image
+            src="/images/hamIcon.svg"
+            alt="Ham icon"
+            width={40}
+            height={8}
+          />
+        </div>
       </div>
     </div>
   );

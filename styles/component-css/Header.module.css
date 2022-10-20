@@ -72,3 +72,20 @@
 .rightNav a {
   margin-left: 40px;
 }
+.hamNav {
+  display: none;
+  filter: invert();
+}
+
+@media (max-width: 900px) {
+  .leftNav,
+  .rightNav {
+    display: none;
+  }
+  .hamNav {
+    display: block;
+  }
+  .wrapper {
+    justify-content: flex-end;
+  }
+}
