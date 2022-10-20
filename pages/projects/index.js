@@ -25,8 +25,7 @@ function Projects() {
         <div className={styles.projectsWrap}>
           <h1 className={styles.title}>Not a portfolio - an exhibition</h1>
           <p className={styles.subheading}>
-            Pretium, malesuada nullam non urna eu pellentesque amet enim
-            consectetur.
+            Reliable and totally unbiased sources claim we got MOMA jealous.
           </p>
           <section className={styles.projectGrid}>
             {isLoading ? (
