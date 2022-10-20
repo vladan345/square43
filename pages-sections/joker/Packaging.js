@@ -5,7 +5,7 @@ import { Parallax } from "react-scroll-parallax";
 function Packaging() {
   return (
     <div className={styles.Packaging}>
-      <div className="wrapper">
+      <div className={styles.wrapper}>
         <Parallax className={styles.jokic} speed={15}>
           <Image
             src="/images/joker/nikola-jokic.png"

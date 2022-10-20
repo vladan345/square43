@@ -33,14 +33,15 @@ export default function Header() {
     <div className={`${styles.Header}`}>
       <div className={`wrapper ${styles.wrapper}`}>
         <div className={styles.leftNav}>
-          <a
-            onMouseEnter={() => CURSOR_COLOR("WHITE")}
-            onMouseLeave={() => CURSOR_COLOR("END")}
-            className={styles.headerLink}
-            href="?#"
-          >
-            Work
-          </a>
+          <Link href="/projects">
+            <a
+              onMouseEnter={() => CURSOR_COLOR("WHITE")}
+              onMouseLeave={() => CURSOR_COLOR("END")}
+              className={styles.headerLink}
+            >
+              Work
+            </a>
+          </Link>
           <Link href="/services">
             <a
               onMouseEnter={() => CURSOR_COLOR("WHITE")}
@@ -69,14 +70,7 @@ export default function Header() {
           >
             Contact
           </a>
-          <a
-            onMouseEnter={() => CURSOR_COLOR("WHITE")}
-            onMouseLeave={() => CURSOR_COLOR("END")}
-            className={styles.headerLink}
-            href="?#"
-          >
-            News
-          </a>
+
           <Link className={styles.headerLink} href="/about">
             <a
               onMouseEnter={() => CURSOR_COLOR("WHITE")}

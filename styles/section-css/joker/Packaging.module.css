@@ -3,6 +3,11 @@
   min-height: 1000px;
   position: relative;
 }
+.wrapper {
+  max-width: 1360px;
+  margin: 0 auto;
+  height: 100%;
+}
 .jokic {
   position: absolute;
   bottom: -20%;

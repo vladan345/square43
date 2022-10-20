@@ -20,7 +20,7 @@ function Accordion(props) {
         <div
           className="image-wrap"
           style={{
-            transform: opened ? "rotateZ(-90deg)" : "rotateZ(0)",
+            transform: opened ? "rotateZ(90deg)" : "rotateZ(0)",
             transition: "0.3s",
           }}
         >

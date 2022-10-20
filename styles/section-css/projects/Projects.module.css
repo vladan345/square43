@@ -1,0 +1,75 @@
+.title {
+  font-size: 100px;
+  line-height: 1;
+  margin-bottom: 20px;
+  font-family: MatterBold;
+  width: 1380px;
+}
+.subheading {
+  font-size: 28px;
+  font-family: Matterregular;
+  margin-bottom: 80px;
+  max-width: 560px;
+}
+.projectsWrap {
+  padding: 160px 0 280px 0;
+}
+.wrapper {
+  max-width: 1360px;
+  position: static;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+.projectCard {
+  height: 640px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 40px 60px;
+}
+.heroImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(#00000000 70%, #00000099 100%);
+}
+.projectName {
+  position: relative;
+  z-index: 3;
+  color: white;
+  font-size: 42px;
+  font-family: MatterBold;
+  margin-bottom: 0;
+}
+.link {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lastitem {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 60px;
+}
+.lastitem .projectName {
+  color: #202020;
+}
+.lastitem .subheading {
+  margin-top: 20px;
+}
