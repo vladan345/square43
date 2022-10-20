@@ -3,6 +3,7 @@ import styles from "../../styles/section-css/projects/Projects.module.css";
 import Spinner from "../../components/Spinner";
 import Image from "next/image";
 import Link from "next/link";
+import ProjectCard from "../../components/ProjectCard";
 
 import { getAllProjects } from "../../utils/data/getData";
 
@@ -32,30 +33,7 @@ function Projects() {
               <Spinner />
             ) : (
               projects.map((project, key) => {
-                return (
-                  <div key={key} className={styles.projectCard}>
-                    <div className={styles.heroImage}>
-                      <Image
-                        src={project.heroImage}
-                        alt={`${project.name} hero`}
-                        layout="fill"
-                        objectFit="cover"
-                      />
-                      <div className={styles.overlay}></div>
-                    </div>
-                    <Link href={`/projects/${project.id}`}>
-                      <a className={styles.link}>
-                        <h2 className={styles.projectName}>{project.name}</h2>
-                        <Image
-                          src="/images/arrow-white-r.svg"
-                          alt="Arrow white right"
-                          width={40}
-                          height={40}
-                        />
-                      </a>
-                    </Link>
-                  </div>
-                );
+                return <ProjectCard key={key} project={project} />;
               })
             )}
             <div className={styles.lastitem}>

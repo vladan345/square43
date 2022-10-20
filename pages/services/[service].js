@@ -6,7 +6,9 @@ import {
 } from "../../utils/data/getData";
 import Spinner from "../../components/Spinner";
 import ProjectCard from "../../components/ProjectCard";
-import styles from "../../styles/Service.module.css";
+import styles from "../../styles//section-css/single-service/Service.module.css";
+import Link from "next/link";
+import Image from "next/image";
 
 function Service() {
   const router = useRouter();
@@ -25,18 +27,12 @@ function Service() {
   }, [service]);
 
   return (
-    <div className="Service">
-      <div className="wrapper">
-        <h1
-          className={styles.title}
-          style={{
-            animation: `fadeInRight 1s forwards ease-in-out`,
-            opacity: 0,
-          }}
-        >
-          {currentService?.name}
-        </h1>
-        <section className="projects-section">
+    <div className={styles.Service}>
+      <div className={styles.wrapper}>
+        <h1 className={styles.title}> {currentService?.name}</h1>
+        <p className={styles.subheading}>{currentService?.description}</p>
+
+        <section className={styles.projectGrid}>
           {isLoading ? (
             <Spinner />
           ) : (
@@ -51,6 +47,28 @@ function Service() {
               return <ProjectCard style={style} key={key} project={project} />;
             })
           )}
+          <div className={styles.lastitem}>
+            <h2 className={styles.projectName}>
+              Well... this is awkward... You&apos;ve reached the end!
+            </h2>
+            <p className={styles.subheading}>
+              If you like what you see, contact us and enter our project hall of
+              fame!
+            </p>
+            <Link href="/">
+              <a className="readMore">
+                Contact us
+                <div className="icon">
+                  <Image
+                    src="/images/arrow.svg"
+                    alt="Arrow icon"
+                    width={40}
+                    height={40}
+                  />
+                </div>
+              </a>
+            </Link>
+          </div>
         </section>
       </div>
     </div>
