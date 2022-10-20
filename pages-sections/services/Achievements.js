@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../../styles/section-css/services/Achievements.module.css";
 import Accordion from "../../components/Accordion";
+import Image from "next/image";
 
 function Achievements() {
   return (
@@ -12,6 +13,14 @@ function Achievements() {
           recommendations. We developed over 40 websites from scratch. Authored
           over 70 blog posts. All done by using 0 shortcuts.
         </h2>
+        <div className={styles.image}>
+          <Image
+            src="/images/service-image.png"
+            alt="gradient background"
+            width={1360}
+            height={480}
+          />
+        </div>
         <h2 className={styles.tagline}>
           We are superskiled in different industries
         </h2>

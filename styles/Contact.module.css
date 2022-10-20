@@ -1,0 +1,22 @@
+.Contact {
+  padding: 160px 0;
+}
+.title {
+  font-size: 100px;
+  font-family: MatterBold;
+  margin-bottom: 20px;
+}
+.subheading {
+  font-size: 28px;
+  font-family: MatterRegular;
+  margin-bottom: 10px;
+}
+.imageRow {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+.image {
+  background: radial-gradient(circle at 0 0, #7000ff, #0ff);
+  padding: 40px;
+}
