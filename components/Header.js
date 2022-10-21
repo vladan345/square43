@@ -33,7 +33,7 @@ export default function Header() {
   // };
   const openedStyle = {
     height: "100vh",
-    padding: "30px 20px 40px 20px",
+    padding: "30px 20px 80px 20px",
   };
   const closedStyle = {
     height: "0",
