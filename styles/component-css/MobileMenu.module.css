@@ -46,7 +46,7 @@
 }
 .socials {
   position: absolute;
-  bottom: 40px;
+  bottom: 80px;
   min-width: 316px;
   display: flex;
   justify-content: space-between;
