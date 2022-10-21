@@ -25,36 +25,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
 }
-.projectCard {
-  height: 640px;
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  padding: 40px 60px;
-}
-.heroImage {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: linear-gradient(#00000000 70%, #00000099 100%);
-}
-.projectName {
-  position: relative;
-  z-index: 3;
-  color: white;
-  font-size: 42px;
-  font-family: MatterBold;
-  margin-bottom: 0;
-}
+
 .link {
   width: 100%;
   display: flex;
@@ -69,7 +40,42 @@
 }
 .lastitem .projectName {
   color: #202020;
+  margin-bottom: 0;
 }
 .lastitem .subheading {
   margin-top: 20px;
+}
+@media (max-width: 1460px) {
+  .title {
+    max-width: 750px;
+  }
+}
+@media (max-width: 900px) {
+  .title {
+    max-width: 100%;
+    font-size: 54px;
+  }
+  .projectGrid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .subheading {
+    font-size: 20px;
+    max-width: 400px;
+  }
+  .projectsWrap {
+    padding: 120px 0 220px 0;
+  }
+  .lastitem {
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0;
+  }
+  .lastitem .projectName {
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+  .lastitem .subheading {
+    margin-bottom: 40px;
+  }
 }

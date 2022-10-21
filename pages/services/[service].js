@@ -6,7 +6,7 @@ import {
 } from "../../utils/data/getData";
 import Spinner from "../../components/Spinner";
 import ProjectCard from "../../components/ProjectCard";
-import styles from "../../styles//section-css/single-service/Service.module.css";
+import styles from "../../styles/section-css/projects/Projects.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -27,49 +27,53 @@ function Service() {
   }, [service]);
 
   return (
-    <div className={styles.Service}>
+    <div className={styles.Projects}>
       <div className={styles.wrapper}>
-        <h1 className={styles.title}> {currentService?.name}</h1>
-        <p className={styles.subheading}>{currentService?.description}</p>
+        <div className={styles.projectsWrap}>
+          <h1 className={styles.title}> {currentService?.name}</h1>
+          <p className={styles.subheading}>{currentService?.description}</p>
 
-        <section className={styles.projectGrid}>
-          {isLoading ? (
-            <Spinner />
-          ) : (
-            projects.map((project, key) => {
-              let counter = 500;
-              const style = {
-                animation: `fadeInUp 1s ${
-                  counter * key
-                }ms forwards ease-in-out`,
-                opacity: 0,
-              };
-              return <ProjectCard style={style} key={key} project={project} />;
-            })
-          )}
-          <div className={styles.lastitem}>
-            <h2 className={styles.projectName}>
-              Well... this is awkward... You&apos;ve reached the end!
-            </h2>
-            <p className={styles.subheading}>
-              If you like what you see, contact us and enter our project hall of
-              fame!
-            </p>
-            <Link href="/">
-              <a className="readMore">
-                Contact us
-                <div className="icon">
-                  <Image
-                    src="/images/arrow.svg"
-                    alt="Arrow icon"
-                    width={40}
-                    height={40}
-                  />
-                </div>
-              </a>
-            </Link>
-          </div>
-        </section>
+          <section className={styles.projectGrid}>
+            {isLoading ? (
+              <Spinner />
+            ) : (
+              projects.map((project, key) => {
+                let counter = 500;
+                const style = {
+                  animation: `fadeInUp 1s ${
+                    counter * key
+                  }ms forwards ease-in-out`,
+                  opacity: 0,
+                };
+                return (
+                  <ProjectCard style={style} key={key} project={project} />
+                );
+              })
+            )}
+            <div className={styles.lastitem}>
+              <h2 className={styles.projectName}>
+                Well... this is awkward... You&apos;ve reached the end!
+              </h2>
+              <p className={styles.subheading}>
+                If you like what you see, contact us and enter our project hall
+                of fame!
+              </p>
+              <Link href="/">
+                <a className="readMore">
+                  Contact us
+                  <div className="icon">
+                    <Image
+                      src="/images/arrow.svg"
+                      alt="Arrow icon"
+                      width={40}
+                      height={40}
+                    />
+                  </div>
+                </a>
+              </Link>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
   );

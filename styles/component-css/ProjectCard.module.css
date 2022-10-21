@@ -46,3 +46,12 @@
 .lastitem .subheading {
   margin-top: 20px;
 }
+@media (max-width: 640px) {
+  .projectCard {
+    height: 100vw;
+    padding: 20px;
+  }
+  .projectName {
+    font-size: 38px;
+  }
+}
