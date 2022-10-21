@@ -41,3 +41,8 @@
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 900px) {
+  .ServiceModule {
+    border: 10px #f8f8f8 solid;
+  }
+}

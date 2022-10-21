@@ -9,7 +9,7 @@ function Project() {
     <div className={styles.Project}>
       <div className={styles.wrapper}>
         <div className={styles.linkWrapMobile}>
-          <Link href="/">
+          <Link href="/projects">
             <a className="readMore">
               Our work
               <div className="icon">
@@ -32,7 +32,7 @@ function Project() {
             competitive IT industry.
           </p>
           <div className={styles.linkWrap}>
-            <Link href="/">
+            <Link href="/projects">
               <a className="readMore">
                 Our work
                 <div className="icon">

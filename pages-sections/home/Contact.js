@@ -17,7 +17,7 @@ function Contact() {
       </div>
       <div className={styles.wrapper}>
         <div className={styles.linkWrapMobile}>
-          <Link href="/">
+          <Link href="/contact">
             <a className="readMore">
               CONTACT US
               <div className="icon">
@@ -38,7 +38,7 @@ function Contact() {
             We accept cash, cards, emails, phone calls...
           </h2>
           <div className={styles.linkWrap}>
-            <Link href="/">
+            <Link href="/contact">
               <a className="readMore">
                 CONTACT US
                 <div className="icon">

@@ -17,8 +17,8 @@ function Achievements() {
           <Image
             src="/images/service-image.png"
             alt="gradient background"
-            width={1360}
-            height={480}
+            layout="fill"
+            objectFit="cover"
           />
         </div>
         <h2 className={styles.tagline}>

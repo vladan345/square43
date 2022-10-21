@@ -11,7 +11,7 @@
 }
 
 .helper {
-  background: white;
+  background: #f8f8f8;
   display: none;
 }
 .title {
@@ -40,9 +40,26 @@
     display: block;
   }
 }
+@media (max-width: 900px) {
+  .Services {
+    padding-top: 120px;
+  }
+  .title {
+    font-size: 54px;
+  }
+  .subheading {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  .section {
+    margin: 0 -10px;
+  }
+}
+
 @media (max-width: 767px) {
   .section {
     grid-template-columns: repeat(1, 1fr);
+    width: calc(100% + 30px);
   }
   .helper {
     display: none;

@@ -7,13 +7,12 @@ function Accordion(props) {
   const handleClick = (e) => {
     e.preventDefault();
     !opened ? setOpened(!opened) : setOpened(!opened);
-    console.log(opened);
   };
   return (
     <div
       className={styles.Accordion}
       onClick={handleClick}
-      style={{ height: opened ? "240px" : "125px" }}
+      style={{ maxHeight: opened ? "500px" : "125px" }}
     >
       <div className={styles.header}>
         <h3 className={styles.title}>{props.title}</h3>

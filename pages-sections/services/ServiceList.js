@@ -37,16 +37,7 @@ function ServiceList() {
             <Spinner />
           ) : (
             services.map((service, key) => {
-              let counter = 300;
-              const style = {
-                animation: `fadeInUp 1s ${
-                  counter * key
-                }ms forwards ease-in-out`,
-                opacity: 0,
-              };
-              return (
-                <ServiceModule key={key} service={service} style={style} />
-              );
+              return <ServiceModule key={key} service={service} />;
             })
           )}
           <div className={styles.helper}></div>

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 function ServiceModule(props) {
   return (
-    <div className={styles.ServiceModule} style={props.style}>
+    <div className={styles.ServiceModule}>
       <div className="top">
         <h2 className={styles.title}>{props.service.name}</h2>
         {/* <p className={styles.description}>{props.service.description}</p> */}

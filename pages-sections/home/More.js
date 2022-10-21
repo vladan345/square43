@@ -9,7 +9,7 @@ function More() {
     <div className={styles.More}>
       <div className={styles.wrapper}>
         <div className={styles.linkWrapMobile}>
-          <Link href="/">
+          <Link href="/services">
             <a className="readMore">
               Read more
               <div className="icon">
@@ -36,7 +36,7 @@ function More() {
             You respect our time and we respect yours.
           </p>
           <div className={styles.linkWrap}>
-            <Link href="/">
+            <Link href="/services">
               <a className="readMore">
                 Read more
                 <div className="icon">

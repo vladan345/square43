@@ -18,7 +18,7 @@ function Philosophy() {
             We put ourselves in your shoes - and then we upgrade them.
           </p>
           <div className={styles.linkWrap}>
-            <Link href="/">
+            <Link href="/about">
               <a className="readMore">
                 Read more
                 <div className="icon">
@@ -35,7 +35,7 @@ function Philosophy() {
         </div>
         <Square image="/images/square1.webp" height={560} />
         <div className={styles.linkWrapMobile}>
-          <Link href="/">
+          <Link href="/about">
             <a className="readMore">
               Read more
               <div className="icon">
