@@ -8,48 +8,27 @@ function contact() {
       <div className="wrapper">
         <h1 className={styles.title}>We can&apos;t wait to meet you.</h1>
         <p className={styles.subheading}>
-          Meet us over email, live meeting, food or drink - it&apos;s your
+          Meet us over email, live{" "}
+          <span className={styles.gradientText}>meeting</span> 🤝,{" "}
+          <span className={styles.gradientText}>food</span> 🍔 or{" "}
+          <span className={styles.gradientText}>drink</span> 🍸– it&apos;s your
           choice.
+          <br />
+          <br />
+          Let&apos;s get in touch 👉👈.
         </p>
-        <div className={styles.imageRow}>
-          <div className={styles.image}>
-            <Image
-              src="/images/pen.svg"
-              alt="pen icon"
-              width={200}
-              height={200}
-            />
+        <div className={styles.row}>
+          <div className={styles.col}>
+            <p className={styles.preheading}>Drup us a line</p>
+            <a className={styles.titleLink} href="mailto:info@square43.com">
+              43@square43.com
+            </a>
           </div>
-          <div className={styles.image}>
-            <Image
-              src="/images/meet.svg"
-              alt="meeting icon"
-              width={200}
-              height={200}
-            />
-          </div>
-          <div className={styles.image}>
-            <Image
-              src="/images/pizza.svg"
-              alt="pizza icon"
-              width={200}
-              height={200}
-            />
-          </div>
-          <div className={styles.image}>
-            <Image
-              src="/images/drink.svg"
-              alt="drink icon"
-              width={200}
-              height={200}
-            />
+          <div className={styles.col}>
+            <p className={styles.preheading}>Or visit</p>
+            <p className={styles.titleLink}>Belgrade, Serbia</p>
           </div>
         </div>
-        <p className={styles.subheading}>Drup us a line</p>
-
-        <a className={styles.titleLink} href="mailto:info@square43.com">
-          info@square43.com
-        </a>
       </div>
     </div>
   );

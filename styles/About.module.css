@@ -1,0 +1,37 @@
+.About {
+  padding: 160px 0 400px 0;
+}
+
+.statement {
+  font-size: 80px;
+  font-family: MatterBold;
+  margin-bottom: 80px;
+  letter-spacing: -3.2px;
+  background: radial-gradient(circle at 0 0, #7000ff, #0ff);
+  background-attachment: fixed;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.statement .gradientText {
+  -webkit-text-fill-color: transparent;
+}
+.lineThrough {
+  position: relative;
+}
+.lineThrough:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url("/images/stroke.svg") no-repeat 0 10px;
+  background-size: 99% 100%;
+}
+@media (max-width: 985px) {
+  .about {
+    padding: 120px 0 210px 0;
+  }
+}
