@@ -1,22 +1,32 @@
 .Achievements {
-  padding: 120px 0 200px 0;
+  padding: 120px 0 400px 0;
 }
-.tag {
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
-  font-family: MatterBold;
-  margin-bottom: 40px;
-}
+
 .tagline {
-  font-size: 42px;
+  font-size: 80px;
   font-family: MatterBold;
-  line-height: 1.2;
+  line-height: 1.05;
+  letter-spacing: -3.2px;
+  background: radial-gradient(circle at 0 0, #7000ff, #0ff);
+  background-attachment: fixed;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.tagline .gradientText {
+  -webkit-text-fill-color: transparent;
 }
 .image {
   margin-bottom: 120px;
   width: 100%;
   height: 480px;
   position: relative;
+}
+.tagline2 {
+  font-size: 120px;
+  line-height: 1;
+  font-family: MatterBold, sans-serif;
+  letter-spacing: -4.8px;
 }
 @media (max-width: 900px) {
   .Achievements {

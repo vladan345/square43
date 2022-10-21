@@ -1,6 +1,6 @@
 .Contact {
   overflow: hidden;
-  height: 120vh;
+  padding: 280px 0 480px 0;
   position: relative;
   z-index: 1;
   background: black;
@@ -37,11 +37,12 @@
 }
 .title {
   font-family: MatterBold;
-  font-size: 100px;
-  margin-bottom: 40px;
+  font-size: 120px;
+  margin-bottom: 80px;
   color: white;
-  max-width: 800px;
+  max-width: 880px;
   line-height: 1;
+  letter-spacing: -4.8px;
 }
 .linkWrapMobile {
   display: none;

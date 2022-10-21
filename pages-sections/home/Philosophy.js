@@ -11,11 +11,11 @@ function Philosophy() {
         <div className={styles.philosophyWrap}>
           <p className={styles.tag}>Philosophy</p>
           <h2 className={styles.statement}>
-            Square43 is a group of insanely talented individuals that share the
-            same approach to their work.
+            Square43 is a team of insanely talented individuals that share the
+            same idea of perfection.
           </h2>
           <p className={styles.subheading}>
-            We put ourselves in your shoes - and then we upgrade them.
+            We put ourselves in your shoes - and then we perfect them.
           </p>
           <div className={styles.linkWrap}>
             <Link href="/about">

@@ -88,7 +88,7 @@ export default function Header() {
               className={styles.logo}
             >
               <Image
-                src="/logo2.svg"
+                src="/logo.svg"
                 alt="square43 logo"
                 width="45"
                 height="45"

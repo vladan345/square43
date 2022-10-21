@@ -27,8 +27,9 @@
 }
 .title {
   font-family: MatterBold;
-  font-size: 100px;
-  margin-bottom: 10px;
+  font-size: 80px;
+  letter-spacing: -3.2px;
+  margin-bottom: 40px;
 }
 .subheading {
   font-size: 28px;

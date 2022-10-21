@@ -1,7 +1,7 @@
 .Accordion {
   width: 100%;
-  padding: 40px 0;
-  max-height: 125px;
+  padding: 20px 0;
+  max-height: 90px;
   overflow: hidden;
   transition: all 0.7s;
   border-top: 1px solid #b5b5b5;
@@ -12,16 +12,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .title {
-  font-size: 42px;
+  font-size: 48px;
   font-family: MatterBold;
   color: black;
 }
 .content {
   font-size: 28px;
   max-width: 960px;
+  margin-bottom: 10px;
 }
 .Accordion:last-of-type {
   border-bottom: 1px solid #b5b5b5;

@@ -8,21 +8,6 @@ function More() {
   return (
     <div className={styles.More}>
       <div className={styles.wrapper}>
-        <div className={styles.linkWrapMobile}>
-          <Link href="/services">
-            <a className="readMore">
-              Read more
-              <div className="icon">
-                <Image
-                  src="/images/arrow.svg"
-                  alt="Arrow icon"
-                  width={40}
-                  height={40}
-                />
-              </div>
-            </a>
-          </Link>
-        </div>
         <Square image="/images/square3.webp" height={560} />
         <div className={styles.moreWrap}>
           <p className={styles.tag}>Behind our Drive</p>
@@ -35,21 +20,6 @@ function More() {
             We operate on a a five-day-working-week basis and plan accordingly.
             You respect our time and we respect yours.
           </p>
-          <div className={styles.linkWrap}>
-            <Link href="/services">
-              <a className="readMore">
-                Read more
-                <div className="icon">
-                  <Image
-                    src="/images/arrow.svg"
-                    alt="Arrow icon"
-                    width={40}
-                    height={40}
-                  />
-                </div>
-              </a>
-            </Link>
-          </div>
         </div>
       </div>
     </div>

@@ -1,12 +1,28 @@
 .Footer {
   width: 100%;
-  height: 145px;
-  background: transparent;
+  min-height: 288px;
+  background: #202020;
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: 3;
-  mix-blend-mode: difference;
+  padding-bottom: 40px;
+}
+.row {
+  padding: 80px 0 60px 0;
+}
+.contactLink {
+  font-size: 80px;
+  color: white;
+  font-family: MatterBold;
+  line-height: 1;
+}
+.contactLink:hover .icon {
+  margin-left: 60px;
+}
+.icon {
+  margin-left: 40px;
+  transition: 0.3s;
 }
 .wrapper,
 .nav {

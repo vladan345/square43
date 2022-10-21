@@ -29,12 +29,13 @@
   max-width: 1000px;
 }
 .stamp {
-  font-size: 100px;
+  font-size: 120px;
   font-family: MatterBold;
   position: relative;
   z-index: 3;
   overflow: hidden;
-  line-height: 100px;
+  line-height: 1;
+  letter-spacing: -4.8px;
 }
 
 @media (max-width: 900px) {

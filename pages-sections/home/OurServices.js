@@ -31,10 +31,10 @@ function OurServices() {
             </a>
           </Link>
         </div>
-        <Square image="/images/square2.webp" height={480} />
+        <Square image="/images/square2.webp" height={560} />
         <div className={styles.ourServicesWrap}>
           <h2 className={styles.statement}>
-            We think outside the Square, so should you!
+            We think outside the square. With us - you will to.
           </h2>
           <div className={styles.linkWrap}>
             <Link href="/services">

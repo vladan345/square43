@@ -12,7 +12,7 @@ function Accordion(props) {
     <div
       className={styles.Accordion}
       onClick={handleClick}
-      style={{ maxHeight: opened ? "500px" : "125px" }}
+      style={{ maxHeight: opened ? "500px" : "90px" }}
     >
       <div className={styles.header}>
         <h3 className={styles.title}>{props.title}</h3>
@@ -31,7 +31,13 @@ function Accordion(props) {
           />
         </div>
       </div>
-      <p className={styles.content}>{props.content}</p>
+      <ul>
+        {props.content.map((company, key) => (
+          <li className={styles.content} key={key}>
+            {company}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

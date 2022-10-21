@@ -30,10 +30,11 @@
 }
 
 .statement {
-  font-size: 42px;
+  font-size: 80px;
   font-family: MatterBold;
-  max-width: 600px;
-  line-height: 1.2;
+  max-width: 786px;
+  line-height: 1.05;
+  letter-spacing: -3.2px;
   color: white;
 }
 .linkWrapMobile {
