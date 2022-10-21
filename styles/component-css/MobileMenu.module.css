@@ -1,0 +1,59 @@
+.MobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: #202020;
+  z-index: 11111;
+  transition: 0.6s;
+  overflow: hidden;
+  padding: 30px 20px 40px 20px;
+}
+.name {
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+  letter-spacing: 0.8px;
+  font-family: MatterBold;
+}
+.listItem {
+  margin-bottom: 60px;
+}
+.link {
+  font-size: 50px;
+  font-family: MatterLight;
+  letter-spacing: -1.5px;
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+}
+.link:after,
+.socialLink:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 1px;
+  background: white;
+  transition: 0.3s;
+}
+.link:hover:after,
+.socialLink:hover:after {
+  width: 100%;
+}
+.socials {
+  position: absolute;
+  bottom: 40px;
+  min-width: 316px;
+  display: flex;
+  justify-content: space-between;
+  transform: translateX(-50%);
+  left: 50%;
+}
+.socialLink {
+  color: white;
+  position: relative;
+}
