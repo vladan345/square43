@@ -6,17 +6,51 @@
   font-family: MatterBold;
   margin-bottom: 20px;
 }
+.titleLink {
+  font-size: 100px;
+  font-family: MatterBold;
+  margin-bottom: 20px;
+}
 .subheading {
   font-size: 28px;
   font-family: MatterRegular;
   margin-bottom: 10px;
 }
 .imageRow {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
   margin: 40px 0;
 }
 .image {
   background: radial-gradient(circle at 0 0, #7000ff, #0ff);
   padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 985px) {
+  .Contact {
+    padding: 120px 0 210px 0;
+  }
+  .title {
+    font-size: 54px;
+  }
+  .subheading {
+    font-size: 20px;
+    font-family: MatterRegular;
+    margin-bottom: 10px;
+  }
+  .imageRow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    margin: 40px 0;
+  }
+  .titleLink {
+    font-size: 8vw;
+    font-family: MatterBold;
+    margin-bottom: 20px;
+  }
 }

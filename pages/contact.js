@@ -46,9 +46,10 @@ function contact() {
           </div>
         </div>
         <p className={styles.subheading}>Drup us a line</p>
-        <h2 className={styles.title}>
-          <a href="mailto:info@square43.com">info@square43.com</a>
-        </h2>
+
+        <a className={styles.titleLink} href="mailto:info@square43.com">
+          info@square43.com
+        </a>
       </div>
     </div>
   );
