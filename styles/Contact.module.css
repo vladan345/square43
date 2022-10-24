@@ -40,12 +40,43 @@
 .col:last-of-type {
   margin-left: 80px;
 }
-
+@media (max-width: 1440px) {
+  .title {
+    font-size: 8.3vw;
+    width: auto;
+  }
+  .col .titleLink {
+    font-size: 54px;
+    letter-spacing: normal;
+  }
+}
 @media (max-width: 985px) {
   .Contact {
-    padding: 120px 0 210px 0;
+    padding: 120px 0 360px 0;
   }
   .title {
     font-size: 54px;
+    letter-spacing: normal;
+    width: auto;
+    margin-bottom: 40px;
+  }
+  .subheading {
+    font-size: 30px;
+    letter-spacing: normal;
+    margin-bottom: 40px;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .col:last-of-type {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+  .preheading {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .col .titleLink {
+    font-size: 30px;
   }
 }

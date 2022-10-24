@@ -31,7 +31,12 @@
   background-size: 99% 100%;
 }
 @media (max-width: 985px) {
+  .statement {
+    font-size: 30px;
+    letter-spacing: normal;
+    margin-bottom: 40px;
+  }
   .about {
-    padding: 120px 0 210px 0;
+    padding: 120px 0 120px 0;
   }
 }

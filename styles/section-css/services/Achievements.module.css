@@ -34,8 +34,9 @@
     padding-top: 0;
   }
   .tagline {
-    font-size: 26px;
+    font-size: 30px;
     margin-bottom: 40px;
+    letter-spacing: normal;
   }
   .image {
     height: 480px;
@@ -43,5 +44,9 @@
     width: calc(100% + 40px);
     margin-bottom: 80px;
     margin-top: 80px;
+  }
+  .tagline2 {
+    font-size: 60px;
+    letter-spacing: normal;
   }
 }

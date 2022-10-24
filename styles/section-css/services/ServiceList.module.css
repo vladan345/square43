@@ -44,12 +44,14 @@
 @media (max-width: 900px) {
   .Services {
     padding-top: 120px;
+    padding-bottom: 60px;
   }
   .title {
     font-size: 54px;
+    letter-spacing: normal;
   }
   .subheading {
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 40px;
   }
   .section {
@@ -60,7 +62,7 @@
 @media (max-width: 767px) {
   .section {
     grid-template-columns: repeat(1, 1fr);
-    width: calc(100% + 30px);
+    width: calc(100% + 20px);
   }
   .helper {
     display: none;
