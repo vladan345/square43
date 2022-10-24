@@ -18,9 +18,8 @@
     transform: translate(0, 0);
     display: inline-block;
   }
-}
-@media (max-width: 530px) {
   .square {
-    width: 100%;
+    width: 270px;
+    height: 270px;
   }
 }

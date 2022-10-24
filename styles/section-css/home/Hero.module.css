@@ -45,24 +45,17 @@
     padding-top: 160px;
   }
   .Hero {
-    padding-bottom: 120px;
+    padding-bottom: 90px;
     height: auto;
   }
   .title {
     font-size: 50px;
-  }
-  .stamp {
-    font-size: 72px;
-    line-height: 1;
-    margin-bottom: -40px;
-  }
-}
-@media (max-width: 500px) {
-  .title {
-    font-size: 32px;
+    letter-spacing: -1.5px;
   }
   .stamp {
     font-size: 54px;
     line-height: 1;
+    margin-bottom: -40px;
+    letter-spacing: normal;
   }
 }

@@ -57,9 +57,11 @@
   .title {
     font-size: 54px;
     line-height: 1;
+    letter-spacing: normal;
   }
   .subheading {
-    font-size: 20px;
+    font-size: 22px;
+    letter-spacing: normal;
   }
   .linkWrap {
     display: none;

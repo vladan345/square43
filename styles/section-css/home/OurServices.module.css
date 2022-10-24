@@ -53,10 +53,9 @@
     align-items: center;
   }
   .statement {
-    font-size: 26px;
-    margin-bottom: 120px;
-    max-width: 300px;
-    text-align: center;
+    font-size: 30px;
+    margin-bottom: 90px;
+    letter-spacing: normal;
   }
   .linkWrap {
     display: none;

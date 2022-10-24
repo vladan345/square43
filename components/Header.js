@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import styles from "../styles/component-css/Header.module.css";
 import Image from "next/image";
@@ -31,6 +31,14 @@ export default function Header() {
   //     router.push("/services");
   //   }, 3000);
   // };
+  const elem = useRef();
+  useEffect(() => {
+    elem.current.classList.toggle(`${styles.opened}`);
+    opened
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "auto");
+  }, [opened]);
+
   const openedStyle = {
     height: "100vh",
     padding: "30px 20px 80px 20px",
@@ -42,12 +50,8 @@ export default function Header() {
   const handleToggle = (e) => {
     e.preventDefault();
     const element = e.currentTarget;
-    element.style.pointerEvents = "none";
-    e.currentTarget.classList.toggle(`${styles.opened}`);
+    elem.current.style.pointerEvents = "none";
     setOpened(!opened);
-    !opened
-      ? (document.body.style.overflow = "hidden")
-      : (document.body.style.overflow = "auto");
     setTimeout(() => {
       element.style.pointerEvents = "auto";
     }, 600);
@@ -55,7 +59,7 @@ export default function Header() {
   return (
     <div className={styles.HeaderWrap}>
       {opened ? (
-        <MobileMenu style={openedStyle} />
+        <MobileMenu style={openedStyle} stateChange={setOpened} />
       ) : (
         <MobileMenu style={closedStyle} />
       )}
@@ -86,6 +90,7 @@ export default function Header() {
               onMouseEnter={() => CURSOR_COLOR("WHITE")}
               onMouseLeave={() => CURSOR_COLOR("END")}
               className={styles.logo}
+              onClick={() => setOpened(false)}
             >
               <Image
                 src="/logo.svg"
@@ -116,7 +121,7 @@ export default function Header() {
               </a>
             </Link>
           </div>
-          <div className={styles.hamNav} onClick={handleToggle}>
+          <div className={styles.hamNav} onClick={handleToggle} ref={elem}>
             <span className={`${styles.leftDotEx} ${styles.dot}`}></span>
             <span className={`${styles.leftDot} ${styles.dot}`}></span>
             <span className={`${styles.center} ${styles.dot}`}></span>

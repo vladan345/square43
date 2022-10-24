@@ -50,7 +50,7 @@
 @media (max-width: 900px) {
   .Contact {
     height: auto;
-    padding-bottom: 240px;
+    padding-bottom: 400px;
     padding-top: 120px;
   }
   .contactWrap {
@@ -65,6 +65,7 @@
   .title {
     font-size: 54px;
     line-height: 1;
+    letter-spacing: normal;
   }
   .subheading {
     font-size: 20px;

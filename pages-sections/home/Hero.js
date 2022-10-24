@@ -5,7 +5,7 @@ import Square from "../../components/Square";
 export default function Hero() {
   const [count, setCount] = useState(0);
   const stamps = ["Digital", "Creative", "Studio."];
-  const stamps2 = ["Modern", "experience", "for", "tomorrow", "brands."];
+  const stamps2 = ["Modern", "experience", "for", "tomorrow's", "brands."];
 
   return (
     <div className={styles.Hero}>

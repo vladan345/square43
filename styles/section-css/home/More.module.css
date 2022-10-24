@@ -56,17 +56,16 @@
     align-items: center;
   }
   .title {
-    font-size: 54px;
+    font-size: 60px;
     line-height: 1;
-  }
-  .title:last-of-type {
-    display: none;
+    letter-spacing: normal;
   }
   .subheading {
-    font-size: 20px;
+    font-size: 22px;
+    letter-spacing: normal;
   }
   .subheading:last-of-type {
-    display: none;
+    margin-bottom: -40px;
   }
   .linkWrap {
     display: none;

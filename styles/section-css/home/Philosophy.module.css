@@ -59,8 +59,9 @@
     width: 100%;
   }
   .statement {
-    font-size: 26px;
+    font-size: 30px;
     margin-bottom: 20px;
+    letter-spacing: normal;
   }
   .subheading {
     font-size: 20px;
