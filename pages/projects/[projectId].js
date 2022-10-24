@@ -5,6 +5,7 @@ import { getCurrentProject } from "../../utils/data/getData";
 import Northprim from "./Northprim";
 import OwnNew from "./OwnNew";
 import Joker from "./Joker";
+import DibTravel from "./DibTravel";
 
 import ProjectHero from "../../components/ProjectHero";
 import Outro from "../../components/Outro";
@@ -25,6 +26,8 @@ function Project() {
         return <OwnNew />;
       case "joker":
         return <Joker />;
+      case "dib-travel":
+        return <DibTravel />;
       default:
         return null;
     }

@@ -1,0 +1,24 @@
+.scooterWrap {
+  display: flex;
+  padding: 120px 0;
+  height: 640px;
+  align-items: center;
+}
+.col {
+  width: 50%;
+}
+.description {
+  max-width: 560px;
+}
+.slideWrap {
+  width: 640px;
+  height: 640px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.scooterImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
