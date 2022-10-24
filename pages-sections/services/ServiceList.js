@@ -34,11 +34,14 @@ function ServiceList() {
         </p>
         <section className={styles.section}>
           {isLoading ? (
-            <Spinner />
+            <Spinner visible={true} />
           ) : (
-            services.map((service, key) => {
-              return <ServiceModule key={key} service={service} />;
-            })
+            <>
+              <Spinner visible={false} />
+              {services.map((service, key) => {
+                return <ServiceModule key={key} service={service} />;
+              })}
+            </>
           )}
           <div className={styles.helper}></div>
         </section>

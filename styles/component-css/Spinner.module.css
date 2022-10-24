@@ -1,5 +1,5 @@
 .Spinner {
-  height: 100vh;
+  height: 0;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -10,6 +10,8 @@
   transition: 0.3s;
   background-color: #202020;
   z-index: 11111;
+  animation: fadeIn 1s forwards;
+  overflow: hidden;
 }
 .spinnerSquare {
   animation: spinner 3s infinite ease-in-out;
@@ -29,7 +31,27 @@
   animation: filler 3s infinite ease-in-out;
 }
 .fadeout {
-  opacity: 0;
+  animation: fadeOut 1s forwards;
+}
+@keyframes fadeOut {
+  from {
+    height: 100vh;
+    pointer-events: all;
+  }
+  to {
+    height: 0;
+    pointer-events: none;
+  }
+}
+@keyframes fadeIn {
+  from {
+    pointer-events: none;
+    height: 0;
+  }
+  to {
+    height: 100vh;
+    pointer-events: all;
+  }
 }
 @keyframes spinner {
   0% {

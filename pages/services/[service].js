@@ -35,20 +35,23 @@ function Service() {
 
           <section className={styles.projectGrid}>
             {isLoading ? (
-              <Spinner />
+              <Spinner visible={true} />
             ) : (
-              projects.map((project, key) => {
-                let counter = 500;
-                const style = {
-                  animation: `fadeInUp 1s ${
-                    counter * key
-                  }ms forwards ease-in-out`,
-                  opacity: 0,
-                };
-                return (
-                  <ProjectCard style={style} key={key} project={project} />
-                );
-              })
+              <>
+                <Spinner visible={false} />
+                {projects.map((project, key) => {
+                  let counter = 500;
+                  const style = {
+                    animation: `fadeInUp 1s ${
+                      counter * key
+                    }ms forwards ease-in-out`,
+                    opacity: 0,
+                  };
+                  return (
+                    <ProjectCard style={style} key={key} project={project} />
+                  );
+                })}
+              </>
             )}
             <div className={styles.lastitem}>
               <h2 className={styles.projectName}>

@@ -29,11 +29,14 @@ function Projects() {
           </p>
           <section className={styles.projectGrid}>
             {isLoading ? (
-              <Spinner />
+              <Spinner visible={true} />
             ) : (
-              projects.map((project, key) => {
-                return <ProjectCard key={key} project={project} />;
-              })
+              <>
+                <Spinner visible={false} />
+                {projects.map((project, key) => {
+                  return <ProjectCard key={key} project={project} />;
+                })}
+              </>
             )}
             <div className={styles.lastitem}>
               <h2 className={styles.projectName}>
