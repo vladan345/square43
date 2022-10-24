@@ -3,6 +3,7 @@
   background: #d9d9d9;
   position: relative;
   z-index: 3;
+  padding-bottom: 240px;
 }
 .wrapper {
   display: flex;
@@ -30,7 +31,7 @@
   line-height: 1.1;
   color: #575757;
   max-width: 760px;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   white-space: pre-wrap;
 }
 .arrowLink {

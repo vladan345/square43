@@ -58,7 +58,7 @@ function Service() {
                 If you like what you see, contact us and enter our project hall
                 of fame!
               </p>
-              <Link href="/">
+              <Link href="/contact">
                 <a className="readMore">
                   Contact us
                   <div className="icon">

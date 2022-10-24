@@ -12,7 +12,7 @@
   max-width: 560px;
 }
 .projectsWrap {
-  padding: 160px 0 280px 0;
+  padding: 160px 0 380px 0;
 }
 .wrapper {
   max-width: 1360px;
@@ -41,6 +41,8 @@
 .lastitem .projectName {
   color: #202020;
   margin-bottom: 0;
+  font-family: MatterBold;
+  font-size: 48px;
 }
 .lastitem .subheading {
   margin-top: 20px;
@@ -64,7 +66,7 @@
     max-width: 400px;
   }
   .projectsWrap {
-    padding: 120px 0 220px 0;
+    padding: 120px 0 420px 0;
   }
   .lastitem {
     justify-content: flex-start;
@@ -72,10 +74,12 @@
     padding: 0;
   }
   .lastitem .projectName {
+    font-size: 30px;
     margin-bottom: 20px;
     margin-top: 40px;
   }
   .lastitem .subheading {
     margin-bottom: 40px;
+    font-size: 22px;
   }
 }

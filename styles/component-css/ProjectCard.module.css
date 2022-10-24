@@ -48,7 +48,7 @@
 }
 @media (max-width: 640px) {
   .projectCard {
-    height: 100vw;
+    height: calc(100vw - 40px);
     padding: 20px;
   }
   .projectName {

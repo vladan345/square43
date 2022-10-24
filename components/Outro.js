@@ -32,7 +32,7 @@ function Outro(props) {
         interval: 4000,
         pauseOnHover: true,
         easing: "ease-in-out",
-        pagination: true,
+        pagination: false,
       }}
       id="outroSlider"
     >

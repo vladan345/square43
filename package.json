@@ -11,7 +11,7 @@
   "dependencies": {
     "@splidejs/react-splide": "^0.7.12",
     "gsap": "^3.11.3",
-    "haspr-cursor": "^1.4.8",
+    "haspr-cursor": "^1.4.9",
     "lottie-react": "^2.3.1",
     "next": "12.3.1",
     "react": "18.2.0",
