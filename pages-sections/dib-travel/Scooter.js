@@ -7,7 +7,7 @@ import "@splidejs/react-splide/css/core";
 
 function Scooter() {
   return (
-    <div>
+    <div className={styles.Scooter}>
       <div className="wrapper">
         <div className={styles.scooterWrap}>
           <div className={styles.col}>

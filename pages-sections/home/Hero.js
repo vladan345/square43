@@ -45,7 +45,6 @@ export default function Hero() {
         ease: "power4",
       });
     }, 3000);
-    console.log(stamps[index].split(/(\s+)/));
   }
   return (
     <div className={styles.Hero}>
@@ -55,7 +54,7 @@ export default function Hero() {
           {stamps[index].split(/(\s+)/).map((word, key) => {
             return (
               <span key={key} className="word">
-                {word}
+                {word == " " ? "I" : word}
               </span>
             );
           })}

@@ -127,7 +127,10 @@ ul.splide__pagination li .is-active {
   display: inline-block;
   position: relative;
 }
-
+.word:nth-of-type(even) {
+  opacity: 0;
+  pointer-events: none;
+}
 #outroSlider ul.splide__list li {
   background-color: #d9d9d9;
 }
