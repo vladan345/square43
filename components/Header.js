@@ -33,7 +33,11 @@ export default function Header() {
   // };
   const elem = useRef();
   useEffect(() => {
-    elem.current.classList.toggle(`${styles.opened}`);
+    if (opened) {
+      elem.current.classList.add(`${styles.opened}`);
+    } else {
+      elem.current.classList.remove(`${styles.opened}`);
+    }
     opened
       ? (document.body.style.overflow = "hidden")
       : (document.body.style.overflow = "auto");
