@@ -2,7 +2,7 @@ import React from "react";
 
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
-import Image from "next/image";
+import Image from "next/future/image";
 import styles from "../../styles/section-css/northprim/Slider.module.css";
 
 function Slider() {
@@ -13,11 +13,10 @@ function Slider() {
         aria-label="Northprim Merch Slider"
         options={{
           fixedWidth: "35%",
-          rewind: true,
           speed: 2000,
           gap: 100,
           perPage: 3,
-          type: "undefined",
+          type: "loop",
           perMove: 1,
           focus: "center",
           arrows: false,

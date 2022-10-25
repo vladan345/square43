@@ -5,13 +5,13 @@ import Image from "next/image";
 import MobileMenu from "./MobileMenu";
 import { DispatchCursor, CURSOR_COLOR } from "haspr-cursor";
 //All comments are for page transition delay
-// import { useRouter } from "next/router";
+import { useRouter } from "next/router";
 
 export default function Header() {
   const dispatch = DispatchCursor();
   const [blend, setBlend] = useState(false);
   const [opened, setOpened] = useState(false);
-  // const router = useRouter();
+  const router = useRouter();
 
   //used for adding blend mode on scroll
   //add this to header classname
@@ -23,14 +23,13 @@ export default function Header() {
   //   }
   // }, []);
 
-  //Add to onClick on the element you want to delay
-  // const handleClick = (e) => {
-  //   e.preventDefault();
-  //   console.log(e.target.attributes.href);
-  //   setTimeout(() => {
-  //     router.push("/services");
-  //   }, 3000);
-  // };
+  // Add to onClick on the element you want to delay
+  const handleClick = (e) => {
+    e.preventDefault();
+    setTimeout(() => {
+      router.push("/services");
+    }, 1000);
+  };
   const elem = useRef();
   useEffect(() => {
     if (opened) {
@@ -81,6 +80,7 @@ export default function Header() {
             </Link>
             <Link href="/services">
               <a
+                onClick={handleClick}
                 onMouseEnter={() => CURSOR_COLOR("WHITE")}
                 onMouseLeave={() => CURSOR_COLOR("END")}
                 className={styles.headerLink}

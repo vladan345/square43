@@ -8,7 +8,7 @@ function More() {
   return (
     <div className={styles.More}>
       <div className={styles.wrapper}>
-        <Square image="/images/square3.webp" height={560} />
+        {/* <Square image="/images/square3.webp" height={560} /> */}
         <div className={styles.moreWrap}>
           <p className={styles.tag}>Behind our Drive</p>
           <h2 className={styles.title}>More than a team</h2>

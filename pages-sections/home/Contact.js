@@ -31,7 +31,7 @@ function Contact() {
             </a>
           </Link>
         </div>
-        <Square image="/images/square5.webp" height={560} />
+        {/* <Square image="/images/square5.webp" height={560} /> */}
         <div className={styles.contactWrap}>
           <p className={styles.tag}>Redy to SquareUP?</p>
           <h2 className={styles.title}>

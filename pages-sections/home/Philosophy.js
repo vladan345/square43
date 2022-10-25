@@ -33,7 +33,7 @@ function Philosophy() {
             </Link>
           </div>
         </div>
-        <Square image="/images/square1.webp" height={560} />
+        {/* <Square image="/images/square1.webp" height={560} /> */}
         <div className={styles.linkWrapMobile}>
           <Link href="/about">
             <a className="readMore">

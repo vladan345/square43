@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@splidejs/react-splide": "^0.7.12",
+    "framer-motion": "^7.6.1",
     "gsap": "^3.11.3",
     "haspr-cursor": "^1.4.9",
     "lottie-react": "^2.3.1",

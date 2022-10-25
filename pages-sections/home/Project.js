@@ -23,7 +23,7 @@ function Project() {
             </a>
           </Link>
         </div>
-        <Square image="/images/square4.webp" height={560} />
+        {/* <Square image="/images/square4.webp" height={560} /> */}
         <div className={styles.projectWrap}>
           <p className={styles.tag}>Projects</p>
           <h2 className={styles.title}>Northprim</h2>

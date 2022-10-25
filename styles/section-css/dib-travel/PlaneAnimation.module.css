@@ -1,0 +1,54 @@
+.planeWrap {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.background,
+.foreground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.plane {
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+  top: 0;
+  animation: planePass 15s infinite linear;
+  width: 100%;
+}
+.suitcaseWrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+}
+.suitcase {
+  width: 7000px;
+  height: 530px;
+  animation: suitcaseLoop 20s infinite linear;
+}
+
+@keyframes planePass {
+  0% {
+    transform: translateX(-100%);
+  }
+  30% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes suitcaseLoop {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
