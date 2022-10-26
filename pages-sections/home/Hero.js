@@ -53,8 +53,8 @@ export default function Hero() {
         <p className={styles.stamp}>
           {stamps[index].split(/(\s+)/).map((word, key) => {
             return (
-              <span key={key} className="word">
-                {word == " " ? "I" : word}
+              <span key={key} className="mask">
+                <span className="word">{word == " " ? "I" : word}</span>
               </span>
             );
           })}

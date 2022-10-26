@@ -9,18 +9,16 @@ function Project() {
     <div className={styles.Project}>
       <div className={styles.wrapper}>
         <div className={styles.linkWrapMobile}>
-          <Link href="/projects">
-            <a className="readMore">
-              Our work
-              <div className="icon">
-                <Image
-                  src="/images/arrow.svg"
-                  alt="Arrow icon"
-                  width={40}
-                  height={40}
-                />
-              </div>
-            </a>
+          <Link href="/projects" className="readMore">
+            Our work
+            <div className="icon">
+              <Image
+                src="/images/arrow.svg"
+                alt="Arrow icon"
+                width={40}
+                height={40}
+              />
+            </div>
           </Link>
         </div>
         {/* <Square image="/images/square4.webp" height={560} /> */}
@@ -32,18 +30,16 @@ function Project() {
             competitive IT industry.
           </p>
           <div className={styles.linkWrap}>
-            <Link href="/projects">
-              <a className="readMore">
-                Our work
-                <div className="icon">
-                  <Image
-                    src="/images/arrow.svg"
-                    alt="Arrow icon"
-                    width={40}
-                    height={40}
-                  />
-                </div>
-              </a>
+            <Link href="/projects" className="readMore">
+              Our work
+              <div className="icon">
+                <Image
+                  src="/images/arrow.svg"
+                  alt="Arrow icon"
+                  width={40}
+                  height={40}
+                />
+              </div>
             </Link>
           </div>
         </div>

@@ -102,9 +102,7 @@ h2 {
   height: 50px;
   background: white;
 }
-.splide__slide img {
-  width: 100%;
-}
+
 ul.splide__pagination li {
   margin: 20px 7px;
 }
@@ -123,11 +121,17 @@ ul.splide__pagination li .is-active {
 .loaded {
   animation: fadeOut 1s forwards;
 }
+.mask {
+  overflow: hidden;
+  display: inline-block;
+}
 .word {
   display: inline-block;
   position: relative;
+  padding: 2px;
 }
-.word:nth-of-type(even) {
+
+.mask:nth-of-type(even) .word {
   opacity: 0;
   pointer-events: none;
 }

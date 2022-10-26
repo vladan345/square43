@@ -2,6 +2,7 @@
   background: #fff;
   min-height: 800px;
   padding-top: 200px;
+  padding-bottom: 140px;
 }
 .row {
   display: flex;
@@ -9,17 +10,17 @@
 }
 .merchImages {
   position: relative;
-  width: 700px;
-  height: 150px;
+  width: 904px;
+  height: 720px;
+  margin-left: -136px;
 }
 .image {
   width: 100%;
   position: absolute;
 }
 .spill {
-  bottom: -200%;
+  bottom: 40%;
   width: 90%;
-  margin-left: 2%;
 }
 .coffeeContent {
   margin-left: 40px;

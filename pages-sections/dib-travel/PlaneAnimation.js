@@ -9,7 +9,8 @@ function PlaneAnimation() {
         <Image
           src="/images/dib-travel/airportBg.svg"
           alt="Airport Background"
-          layout="fill"
+          width={1920}
+          height={1080}
           objectFit="cover"
         />
       </div>
@@ -25,7 +26,8 @@ function PlaneAnimation() {
         <Image
           src="/images/dib-travel/airportFg.svg"
           alt="Airport Background"
-          layout="fill"
+          width={1920}
+          height={1080}
           objectFit="cover"
         />
       </div>

@@ -46,18 +46,16 @@ function Projects() {
                 If you like what you see, contact us and enter our project hall
                 of fame!
               </p>
-              <Link href="/contact">
-                <a className="readMore">
-                  Contact us
-                  <div className="icon">
-                    <Image
-                      src="/images/arrow.svg"
-                      alt="Arrow icon"
-                      width={40}
-                      height={40}
-                    />
-                  </div>
-                </a>
+              <Link href="/contact" className="readMore">
+                Contact us
+                <div className="icon">
+                  <Image
+                    src="/images/arrow.svg"
+                    alt="Arrow icon"
+                    width={40}
+                    height={40}
+                  />
+                </div>
               </Link>
             </div>
           </section>

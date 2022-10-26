@@ -19,9 +19,10 @@ function WebDesign() {
       </div>
       <div className={styles.image}>
         <Image
+          className={styles.image2}
           src="/images/ownnew/design-image.webp"
-          layout="fill"
-          objectFit="cover"
+          fill={true}
+          objectFit="contain"
           alt="Own new home"
         />
       </div>

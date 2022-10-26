@@ -26,7 +26,7 @@ function Achievements() {
           <Image
             src="/images/service-image.png"
             alt="gradient background"
-            layout="fill"
+            fill={true}
             objectFit="cover"
           />
         </div>

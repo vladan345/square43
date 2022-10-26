@@ -17,18 +17,16 @@ function ServiceModule(props) {
           ))}
         </ul>
       </div>
-      <Link href={"/services/" + props.service.id}>
-        <a className={styles.link}>
-          view projects{" "}
-          <div className={styles.icon}>
-            <Image
-              src="/images/arrow-white-r.svg"
-              alt="arrow icon right"
-              width={40}
-              height={40}
-            />
-          </div>
-        </a>
+      <Link href={"/services/" + props.service.id} className={styles.link}>
+        view projects{" "}
+        <div className={styles.icon}>
+          <Image
+            src="/images/arrow-white-r.svg"
+            alt="arrow icon right"
+            width={40}
+            height={40}
+          />
+        </div>
       </Link>
     </div>
   );

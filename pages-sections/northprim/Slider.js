@@ -2,7 +2,7 @@ import React from "react";
 
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
-import Image from "next/future/image";
+import Image from "next/image";
 import styles from "../../styles/section-css/northprim/Slider.module.css";
 
 function Slider() {
