@@ -25,20 +25,22 @@ export default function Hero() {
   });
   function fireAnimation() {
     gsap.from(".word", {
+      skewX: -30,
       duration: 1.5,
       yPercent: 100,
       ease: "power4",
-      stagger: 0.1,
+      stagger: 0.05,
     });
     gsap.to(".word", {
+      skewX: 0,
       duration: 1.5,
       yPercent: 0,
       ease: "power4",
-      stagger: 0.1,
+      stagger: 0.05,
     });
     setTimeout(() => {
       gsap.to(".word", {
-        duration: 0.5,
+        duration: 1.5,
         yPercent: 100,
         ease: "power4",
       });
