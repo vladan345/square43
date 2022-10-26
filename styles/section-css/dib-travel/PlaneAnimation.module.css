@@ -17,7 +17,7 @@
   position: absolute;
   left: 0;
   transform: translateX(-100%);
-  top: 0;
+  top: 100px;
   animation: planePass 15s infinite linear;
   width: 100%;
 }

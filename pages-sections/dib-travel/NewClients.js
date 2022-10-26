@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "../../styles/section-css/dib-travel/NewClients.module.css";
+import Image from "next/image";
+
 function NewClients() {
   return (
     <div className={styles.NewClients}>
@@ -20,6 +22,63 @@ function NewClients() {
           width={1360}
           height={720}
         /> */}
+        </div>
+        <div className={styles.textWrap}>
+          <p className={styles.description}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non
+            sollicitudin arcu integer. Nulla cras pellentesque habitant tortor
+            donec bibendum volutpat. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Amet non sollicitudin arcu integer. Nulla cras
+            pellentesque habitant tortor donec bibendum volutpat.
+          </p>
+          <p className={styles.description}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non
+            sollicitudin arcu integer. Nulla cras pellentesque habitant tortor
+            donec bibendum volutpat.
+          </p>
+        </div>
+        <div className={styles.mobiles}>
+          <Image
+            className={styles.mobileImage}
+            src="/images/dib-travel/mobile1.webp"
+            alt="mobile mockup DIB Travel"
+            width={539}
+            height={820}
+          />
+          <Image
+            className={styles.mobileImage}
+            src="/images/dib-travel/mobile2.webp"
+            alt="mobile mockup DIB Travel"
+            width={539}
+            height={820}
+          />
+          <Image
+            className={styles.mobileImage}
+            src="/images/dib-travel/mobile3.webp"
+            alt="mobile mockup DIB Travel"
+            width={539}
+            height={820}
+          />
+        </div>
+      </div>
+      <div className={styles.mobileDescription}>
+        <div className="wrapper">
+          <div className={styles.mobileWrap}>
+            <p className={styles.description}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non
+              sollicitudin arcu integer. Nulla cras pellentesque habitant tortor
+              donec bibendum volutpat. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Amet non sollicitudin arcu integer. Nulla cras
+              pellentesque habitant tortor donec bibendum volutpat.
+            </p>
+            <p className={styles.description}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non
+              sollicitudin arcu integer. Nulla cras pellentesque habitant tortor
+              donec bibendum volutpat. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Amet non sollicitudin arcu integer. Nulla cras
+              pellentesque habitant tortor donec bibendum volutpat.
+            </p>
+          </div>
         </div>
       </div>
     </div>

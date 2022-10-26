@@ -6,3 +6,13 @@
 .image {
   display: block;
 }
+.description {
+  max-width: 560px;
+}
+.description:first-of-type {
+  margin-right: 120px;
+}
+.textWrap {
+  margin-top: 120px;
+  display: flex;
+}

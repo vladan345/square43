@@ -22,6 +22,20 @@ function WebDesign() {
           height={720}
         /> */}
         </div>
+        <div className={styles.textWrap}>
+          <p className={styles.description}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non
+            sollicitudin arcu integer. Nulla cras pellentesque habitant tortor
+            donec bibendum volutpat. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Amet non sollicitudin arcu integer. Nulla cras
+            pellentesque habitant tortor donec bibendum volutpat.
+          </p>
+          <p className={styles.description}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non
+            sollicitudin arcu integer. Nulla cras pellentesque habitant tortor
+            donec bibendum volutpat.
+          </p>
+        </div>
       </div>
     </div>
   );

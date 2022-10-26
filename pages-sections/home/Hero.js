@@ -1,10 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "../../styles/section-css/home/Hero.module.css";
 import Square from "../../components/Square";
 import { gsap } from "gsap";
 
 export default function Hero() {
-  const word = useRef();
   const [index, setIndex] = useState(0);
   const stamps = [
     "Digital Creative Studio.",
@@ -13,7 +12,6 @@ export default function Hero() {
   ];
 
   useEffect(() => {
-    console.log(index);
     fireAnimation();
     const interval = setInterval(() => {
       if (index > 1) {
