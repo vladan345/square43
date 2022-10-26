@@ -18,25 +18,7 @@ function Philosophy() {
             We put ourselves in your shoes - and then we perfect them.
           </p>
           <div className={styles.linkWrap}>
-            <Link href="/about">
-              <a className="readMore">
-                Read more
-                <div className="icon">
-                  <Image
-                    src="/images/arrow.svg"
-                    alt="Arrow icon"
-                    width={40}
-                    height={40}
-                  />
-                </div>
-              </a>
-            </Link>
-          </div>
-        </div>
-        {/* <Square image="/images/square1.webp" height={560} /> */}
-        <div className={styles.linkWrapMobile}>
-          <Link href="/about">
-            <a className="readMore">
+            <Link href="/about" className="readMore">
               Read more
               <div className="icon">
                 <Image
@@ -46,7 +28,21 @@ function Philosophy() {
                   height={40}
                 />
               </div>
-            </a>
+            </Link>
+          </div>
+        </div>
+        {/* <Square image="/images/square1.webp" height={560} /> */}
+        <div className={styles.linkWrapMobile}>
+          <Link href="/about" className="readMore">
+            Read more
+            <div className="icon">
+              <Image
+                src="/images/arrow.svg"
+                alt="Arrow icon"
+                width={40}
+                height={40}
+              />
+            </div>
           </Link>
         </div>
       </div>

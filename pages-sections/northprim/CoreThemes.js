@@ -17,8 +17,8 @@ function CoreThemes() {
                   <Image
                     src="/images/northprim/spray-icon.svg"
                     alt="Northprim icon spray"
-                    width="200%"
-                    height="200%"
+                    width={160}
+                    height={160}
                   />
                 </div>
                 <div>
@@ -35,8 +35,8 @@ function CoreThemes() {
                   <Image
                     src="/images/northprim/bug-icon.svg"
                     alt="Northprim icon bug"
-                    width="210%"
-                    height="210%"
+                    width={160}
+                    height={160}
                   />
                 </div>
                 <div>
@@ -53,8 +53,8 @@ function CoreThemes() {
                   <Image
                     src="/images/northprim/arm-icon.svg"
                     alt="Northprim icon arm"
-                    width="240%"
-                    height="240%"
+                    width={160}
+                    height={160}
                   />
                 </div>
                 <div>

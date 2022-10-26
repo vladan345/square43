@@ -10,21 +10,25 @@ function ProjectCard(props) {
         <Image
           src={props.project.heroImage}
           alt={`${props.project.name} hero`}
-          layout="fill"
-          objectFit="cover"
+          fill={true}
+          sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+          priority
+          className={styles.image}
         />
         <div className={styles.overlay}></div>
       </div>
-      <Link href={`/projects/${props.project.id}`}>
-        <a className={styles.link}>
-          <h2 className={styles.projectName}>{props.project.name}</h2>
+      <Link href={`/projects/${props.project.id}`} className={styles.link}>
+        <h2 className={styles.projectName}>{props.project.name}</h2>
+        <div className={styles.iconWrap}>
           <Image
             src="/images/arrow-white-r.svg"
             alt="Arrow white right"
             width={40}
             height={40}
           />
-        </a>
+        </div>
       </Link>
     </div>
   );

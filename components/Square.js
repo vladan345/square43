@@ -10,6 +10,7 @@ function Square(props) {
         alt="Square 43 studio"
         width={560}
         height={props.height}
+        priority
       />
     </div>
   );

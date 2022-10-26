@@ -9,55 +9,51 @@ function MobileMenu({ stateChange, ...props }) {
       <nav className={styles.nav}>
         <ul>
           <li className={styles.listItem}>
-            <Link href="/projects">
-              <a
-                className={styles.link}
-                onClick={() => {
-                  document.body.style.overflow = "auto";
-                  return stateChange(false);
-                }}
-              >
-                Work
-              </a>
+            <Link
+              href="/projects"
+              className={styles.link}
+              onClick={() => {
+                document.body.style.overflow = "auto";
+                return stateChange(false);
+              }}
+            >
+              Work
             </Link>
           </li>
           <li className={styles.listItem}>
-            <Link href="/services">
-              <a
-                className={styles.link}
-                onClick={() => {
-                  document.body.style.overflow = "auto";
-                  return stateChange(false);
-                }}
-              >
-                Services
-              </a>
+            <Link
+              href="/services"
+              className={styles.link}
+              onClick={() => {
+                document.body.style.overflow = "auto";
+                return stateChange(false);
+              }}
+            >
+              Services
             </Link>
           </li>
           <li className={styles.listItem}>
-            <Link href="/contact">
-              <a
-                className={styles.link}
-                onClick={() => {
-                  document.body.style.overflow = "auto";
-                  return stateChange(false);
-                }}
-              >
-                Contact
-              </a>
+            <Link
+              href="/contact"
+              className={styles.link}
+              onClick={() => {
+                document.body.style.overflow = "auto";
+                return stateChange(false);
+              }}
+            >
+              Contact
             </Link>
           </li>
           <li className={styles.listItem}>
-            <Link href="/about">
-              <a
-                className={styles.link}
-                onClick={() => {
-                  document.body.style.overflow = "auto";
-                  return stateChange(false);
-                }}
-              >
-                About
-              </a>
+            <Link
+              href="/about"
+              className={styles.link}
+              onClick={() => {
+                document.body.style.overflow = "auto";
+                return stateChange(false);
+              }}
+            >
+              About
             </Link>
           </li>
         </ul>

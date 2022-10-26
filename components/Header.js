@@ -69,60 +69,56 @@ export default function Header() {
       <div className={`${styles.Header}`}>
         <div className={`wrapper ${styles.wrapper}`}>
           <div className={styles.leftNav}>
-            <Link href="/projects">
-              <a
-                onMouseEnter={() => CURSOR_COLOR("WHITE")}
-                onMouseLeave={() => CURSOR_COLOR("END")}
-                className={styles.headerLink}
-              >
-                Work
-              </a>
-            </Link>
-            <Link href="/services">
-              <a
-                onClick={handleClick}
-                onMouseEnter={() => CURSOR_COLOR("WHITE")}
-                onMouseLeave={() => CURSOR_COLOR("END")}
-                className={styles.headerLink}
-              >
-                Services
-              </a>
-            </Link>
-          </div>
-          <Link href="/">
-            <a
+            <Link
               onMouseEnter={() => CURSOR_COLOR("WHITE")}
               onMouseLeave={() => CURSOR_COLOR("END")}
-              className={styles.logo}
-              onClick={() => setOpened(false)}
+              className={styles.headerLink}
+              href="/projects"
             >
-              <Image
-                src="/logo.svg"
-                alt="square43 logo"
-                width="45"
-                height="45"
-              />
-            </a>
+              Work
+            </Link>
+            <Link
+              href="/services"
+              onClick={handleClick}
+              onMouseEnter={() => CURSOR_COLOR("WHITE")}
+              onMouseLeave={() => CURSOR_COLOR("END")}
+              className={styles.headerLink}
+            >
+              Services
+            </Link>
+          </div>
+          <Link
+            href="/"
+            onMouseEnter={() => CURSOR_COLOR("WHITE")}
+            onMouseLeave={() => CURSOR_COLOR("END")}
+            className={styles.logo}
+            onClick={() => setOpened(false)}
+          >
+            <Image
+              src="/logo.svg"
+              alt="square43 logo"
+              width="45"
+              height="45"
+              priority
+            />
           </Link>
           <div className={styles.rightNav}>
-            <Link href="/contact">
-              <a
-                onMouseEnter={() => CURSOR_COLOR("WHITE")}
-                onMouseLeave={() => CURSOR_COLOR("END")}
-                className={styles.headerLink}
-              >
-                Contact
-              </a>
+            <Link
+              href="/contact"
+              onMouseEnter={() => CURSOR_COLOR("WHITE")}
+              onMouseLeave={() => CURSOR_COLOR("END")}
+              className={styles.headerLink}
+            >
+              Contact
             </Link>
 
-            <Link className={styles.headerLink} href="/about">
-              <a
-                onMouseEnter={() => CURSOR_COLOR("WHITE")}
-                onMouseLeave={() => CURSOR_COLOR("END")}
-                className={styles.headerLink}
-              >
-                About
-              </a>
+            <Link
+              href="/about"
+              onMouseEnter={() => CURSOR_COLOR("WHITE")}
+              onMouseLeave={() => CURSOR_COLOR("END")}
+              className={styles.headerLink}
+            >
+              About
             </Link>
           </div>
           <div className={styles.hamNav} onClick={handleToggle} ref={elem}>

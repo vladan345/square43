@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import styles from "../../styles/section-css/ownnew/WebDevelopment.module.css";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import stylesScreen from "../../styles/section-css/ownnew/screen.module.css";
 
 import { inspectText } from "./inspectText";

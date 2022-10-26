@@ -10,6 +10,9 @@
   top: 0;
   right: 0;
 }
+.image2 {
+  object-fit: cover;
+}
 .description {
   margin-bottom: 40px;
   max-width: 560px;

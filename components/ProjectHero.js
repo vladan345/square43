@@ -71,18 +71,18 @@ function ProjectHero(props) {
             {services.map((service, key) => {
               let counter = 200;
               return (
-                <Link key={key} href={"/services/" + service}>
-                  <a
-                    style={{
-                      animation: `fadeIn 1s ${
-                        counter * key + 500
-                      }ms forwards ease-in-out`,
-                      opacity: 0,
-                    }}
-                    className={styles.serviceLink}
-                  >
-                    {service.split("-").join(" ")}
-                  </a>
+                <Link
+                  key={key}
+                  href={"/services/" + service}
+                  style={{
+                    animation: `fadeIn 1s ${
+                      counter * key + 500
+                    }ms forwards ease-in-out`,
+                    opacity: 0,
+                  }}
+                  className={styles.serviceLink}
+                >
+                  {service.split("-").join(" ")}
                 </Link>
               );
             })}

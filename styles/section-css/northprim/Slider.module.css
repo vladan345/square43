@@ -1,6 +1,7 @@
 .Slider {
   background: #fff;
   position: relative;
+  max-width: 1920px;
 }
 
 .stripe {

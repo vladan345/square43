@@ -19,9 +19,13 @@ function WebDesign() {
       </div>
       <div className={styles.image}>
         <Image
+          className={styles.image2}
           src="/images/ownnew/design-image.webp"
-          layout="fill"
-          objectFit="cover"
+          fill={true}
+          sizes="(max-width: 768px) 100vw,
+          (max-width: 1200px) 50vw,
+          33vw"
+          style={{ objectFit: "cover" }}
           alt="Own new home"
         />
       </div>

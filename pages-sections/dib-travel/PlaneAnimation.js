@@ -9,8 +9,9 @@ function PlaneAnimation() {
         <Image
           src="/images/dib-travel/airportBg.svg"
           alt="Airport Background"
-          layout="fill"
-          objectFit="cover"
+          width={1920}
+          height={1080}
+          style={{ objectFit: "cover" }}
         />
       </div>
       <div className={styles.plane}>
@@ -25,8 +26,9 @@ function PlaneAnimation() {
         <Image
           src="/images/dib-travel/airportFg.svg"
           alt="Airport Background"
-          layout="fill"
-          objectFit="cover"
+          width={1920}
+          height={1080}
+          style={{ objectFit: "cover" }}
         />
       </div>
       <div className={styles.suitcaseWrap}>
