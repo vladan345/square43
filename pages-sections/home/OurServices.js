@@ -12,7 +12,7 @@ function OurServices() {
           src="/images/ripple.webp"
           alt="Ripple background image"
           fill={true}
-          objectFit="cover"
+          style={{ objectFit: "cover" }}
         />
       </div>
       <div className={styles.wrapper}>

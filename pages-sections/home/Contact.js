@@ -12,7 +12,7 @@ function Contact() {
           src="/images/contact-background.webp"
           alt="Waves background image"
           fill={true}
-          objectFit="cover"
+          style={{ objectFit: "cover" }}
         />
       </div>
       <div className={styles.wrapper}>

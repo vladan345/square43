@@ -15,7 +15,8 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Libre+Baskerville&display=swap"
             rel="stylesheet"
           />
-          <link rel="preload" as="image" href="/logo.svg" />
+
+          <link rel="icon" as="image" href="/logo2.svg" />
         </Head>
         <body>
           <Main />

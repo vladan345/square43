@@ -14,12 +14,12 @@ function Roll() {
     if (inView && count === 0) {
       const el = rollingCan.current;
       gsap.to(el, {
-        x: 65,
+        x: 10,
         duration: 3,
         ease: "linear",
         onComplete: () => {
           gsap.to(el, {
-            x: 0,
+            x: -100,
             duration: 5,
             ease: "power2",
           });

@@ -12,7 +12,7 @@ function Paralax() {
           alt="Northprim wave art parallax"
           width={1920}
           height={700}
-          objectFit="cover"
+          style={{ objectFir: "cover" }}
         />
       </Parallax>
       <Parallax scale={[1, 0.7]} rotate={[0, 15]} className={styles.wave}>

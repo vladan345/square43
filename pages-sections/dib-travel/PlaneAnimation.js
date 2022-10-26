@@ -11,7 +11,7 @@ function PlaneAnimation() {
           alt="Airport Background"
           width={1920}
           height={1080}
-          objectFit="cover"
+          style={{ objectFit: "cover" }}
         />
       </div>
       <div className={styles.plane}>
@@ -28,7 +28,7 @@ function PlaneAnimation() {
           alt="Airport Background"
           width={1920}
           height={1080}
-          objectFit="cover"
+          style={{ objectFit: "cover" }}
         />
       </div>
       <div className={styles.suitcaseWrap}>

@@ -22,7 +22,10 @@ function WebDesign() {
           className={styles.image2}
           src="/images/ownnew/design-image.webp"
           fill={true}
-          objectFit="contain"
+          sizes="(max-width: 768px) 100vw,
+          (max-width: 1200px) 50vw,
+          33vw"
+          style={{ objectFit: "cover" }}
           alt="Own new home"
         />
       </div>

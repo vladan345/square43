@@ -21,12 +21,14 @@ function ProjectCard(props) {
       </div>
       <Link href={`/projects/${props.project.id}`} className={styles.link}>
         <h2 className={styles.projectName}>{props.project.name}</h2>
-        <Image
-          src="/images/arrow-white-r.svg"
-          alt="Arrow white right"
-          width={40}
-          height={40}
-        />
+        <div className={styles.iconWrap}>
+          <Image
+            src="/images/arrow-white-r.svg"
+            alt="Arrow white right"
+            width={40}
+            height={40}
+          />
+        </div>
       </Link>
     </div>
   );

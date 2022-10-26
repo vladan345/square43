@@ -27,7 +27,7 @@ function Achievements() {
             src="/images/service-image.png"
             alt="gradient background"
             fill={true}
-            objectFit="cover"
+            style={{ objectFit: "cover" }}
           />
         </div>
         <h2 className={styles.tagline2}>

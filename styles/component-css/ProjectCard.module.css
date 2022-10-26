@@ -23,6 +23,9 @@
   left: 0;
   background: linear-gradient(#00000000 70%, #00000099 100%);
 }
+.iconWrap {
+  position: relative;
+}
 .projectName {
   position: relative;
   z-index: 3;
