@@ -6,6 +6,7 @@ import Northprim from "./Northprim";
 import OwnNew from "./OwnNew";
 import Joker from "./Joker";
 import DibTravel from "./DibTravel";
+import Imunoshop from "./Imunoshop";
 
 import ProjectHero from "../../components/ProjectHero";
 import Outro from "../../components/Outro";
@@ -28,6 +29,8 @@ function Project() {
         return <Joker />;
       case "dib-travel":
         return <DibTravel />;
+      case "imunoshop":
+        return <Imunoshop />;
       default:
         return null;
     }

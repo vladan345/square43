@@ -1,0 +1,15 @@
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.paragraphs {
+  max-width: 485px;
+}
+.description:first-of-type {
+  margin-bottom: 40px;
+}
+.row:last-of-type {
+  flex-direction: row-reverse;
+  margin-top: 80px;
+}

@@ -1,0 +1,37 @@
+.Social {
+  margin-bottom: 160px;
+  position: relative;
+}
+.socialWrap {
+  position: relative;
+  height: 713px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mobiles {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-right: 100px;
+}
+.phone {
+  display: inline-block;
+  margin-right: -100px;
+}
+.description {
+  max-width: 485px;
+  margin-bottom: 40px;
+}
+.stripe {
+  position: absolute;
+  height: 500px;
+  width: 100%;
+  transform: translateY(-50%);
+  top: 50%;
+  background: #f0e6bd;
+}

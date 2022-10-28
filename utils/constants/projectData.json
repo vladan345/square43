@@ -65,6 +65,26 @@
         "copywriting",
         "motion-design"
       ]
+    },
+    {
+      "id": "imunoshop",
+      "name": "Imunoshop",
+      "slogan": "Nascetur orci aliquam at enim et. Egestas tortor ut scelerisque enim. Auctor vitae sagittis.",
+      "color": "#91ae6d",
+      "heroImage": "/images/imunoshop/heroImunoshop.webp",
+      "heroVideo": "/images/imunoshop/heroImunoshop.mp4",
+      "missionShort": "Transforming just another outsourcing tech company into a unique, provocative brand brimming with energy, emotion and the ever-wanted X factor.",
+      "missionLong": "Our client wanted to stand out in the sea of similar companies because they knew their squad had the swagger, expertise and chill that deserved to be showcased out of the box. We identified their true need; they didn't require just a visual revamp, they needed a brand new concept to carry them forward!  language was the first of the three pillars we propped our concept on.",
+      "solutionShort": "Sure, Northprim was a part of a dull pool of IT companies, but why would we allow it to stay that way - the way we saw it, coding is an art and we needed to show its true colors: using neon.",
+      "solutionLong": "IT terminology was employed in the advertising in an unsuspected form and the creative solution was wordplay like the world has never seen before. Secondly, we focused on the art that modern coding is and that's how the ancient and modern theme fully came to life! We gave praise and glory to the art of coding, because the modern digital world is unimaginable without it.",
+      "services": [
+        "branding",
+        "web-design",
+        "web-development",
+        "social-media",
+        "copywriting",
+        "motion-design"
+      ]
     }
   ],
   "services": [
@@ -73,7 +93,7 @@
       "name": "Branding",
       "description": "Your true self - by us",
       "list": ["Brand strategy", "Logo design", "Brand book design"],
-      "projects": ["northprim"]
+      "projects": ["northprim", "imunoshop"]
     },
     {
       "id": "web-design",
@@ -85,7 +105,7 @@
         "Copywriting",
         "A/B testing"
       ],
-      "projects": ["northprim", "ownnew", "dib-travel"]
+      "projects": ["northprim", "ownnew", "dib-travel", "imunoshop"]
     },
     {
       "id": "web-development",
@@ -97,7 +117,7 @@
         "Multilanguage",
         "Mobile optimization"
       ],
-      "projects": ["northprim", "ownnew", "dib-travel"]
+      "projects": ["northprim", "ownnew", "dib-travel", "imunoshop"]
     },
     {
       "id": "social-media",
@@ -110,14 +130,14 @@
         "Blog posts",
         "Communication management"
       ],
-      "projects": ["northprim", "dib-travel"]
+      "projects": ["northprim", "dib-travel", "imunoshop"]
     },
     {
       "id": "copywriting",
       "name": "Copywriting",
       "description": "Word it well",
       "list": ["Website copy", "Social Media copy"],
-      "projects": ["northprim", "dib-travel"]
+      "projects": ["northprim", "dib-travel", "imunoshop"]
     },
     {
       "id": "e-commerce",
@@ -131,7 +151,7 @@
         "Email automation",
         "Shipping integration"
       ],
-      "projects": ["northprim"]
+      "projects": ["northprim", "imunoshop"]
     },
     {
       "id": "package-design",
@@ -145,7 +165,7 @@
       "name": "Motion Design",
       "description": "We like to move it move it",
       "list": ["Multipurpose animations", "Video templates"],
-      "projects": ["northprim", "dib-travel"]
+      "projects": ["northprim", "dib-travel", "imunoshop"]
     },
     {
       "id": "print-design",

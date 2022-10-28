@@ -1,0 +1,33 @@
+.DesignDev {
+  padding-bottom: 200px;
+}
+.wrapper {
+  max-width: 1035px;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.col {
+  width: 50%;
+}
+.col:last-of-type {
+  text-align: right;
+}
+.category {
+  font-size: 16px;
+  color: #323232;
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+  font-family: MatterLight;
+}
+.description {
+  margin-bottom: 40px;
+  text-align: left;
+}
+.video {
+  width: 100%;
+  border-radius: 25px;
+}

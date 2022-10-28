@@ -1,0 +1,25 @@
+.Brand {
+  padding: 120px 0 160px 0;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.col {
+  width: 50%;
+}
+.category {
+  font-size: 16px;
+  color: #323232;
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  font-family: MatterLight;
+}
+.col:last-of-type {
+  text-align: right;
+}
+.description {
+  margin-bottom: 40px;
+  max-width: 550px;
+}
