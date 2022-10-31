@@ -6,36 +6,40 @@ function Square(props) {
   const square = useRef();
   useEffect(() => {
     const element = square.current;
+    console.log(element);
     switch (props.state) {
       case 1:
-        element.style.background = "red";
+        {
+          element.id = "step1";
+        }
         break;
       case 2:
-        element.style.background = "green";
+        element.id = "step2";
         break;
       case 3:
-        element.style.background = "yellow";
+        element.id = "step3";
         break;
       case 4:
-        element.style.background = "blue";
+        element.id = "step4";
         break;
       case 5:
-        element.style.background = "pink";
+        element.id = "step5";
         break;
       case 6:
-        element.style.background = "orange";
+        element.id = "step6";
         break;
     }
   }, [props.state]);
   return (
     <div className={styles.square} ref={square}>
-      {/* <Image
-        src={props.image}
-        alt="Square 43 studio"
-        width={560}
-        height={props.height}
-        priority
-      /> */}
+      <div className="imageWrap">
+        <Image
+          alt="Square 43 studio"
+          src="/images/square4.webp"
+          fill
+          priority
+        />
+      </div>
     </div>
   );
 }
