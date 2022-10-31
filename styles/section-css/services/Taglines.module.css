@@ -1,0 +1,18 @@
+.Taglines {
+  padding-top: 160px;
+}
+.tagline {
+  font-size: 80px;
+  font-family: MatterBold;
+  line-height: 1.05;
+  letter-spacing: -3.2px;
+  background: radial-gradient(circle at 0 0, #7000ff, #0ff);
+  background-attachment: fixed;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  width: 1350px;
+}
+.tagline .gradientText {
+  -webkit-text-fill-color: transparent;
+}

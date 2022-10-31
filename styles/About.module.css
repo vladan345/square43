@@ -12,6 +12,7 @@
   background-position: center;
   background-clip: text;
   -webkit-background-clip: text;
+  width: 1350px;
 }
 .statement .gradientText {
   -webkit-text-fill-color: transparent;

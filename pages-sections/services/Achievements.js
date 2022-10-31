@@ -7,21 +7,6 @@ function Achievements() {
   return (
     <div className={styles.Achievements}>
       <div className="wrapper">
-        <h2 className={styles.tagline}>
-          <span className={styles.gradientText}>99.9%</span> of our clients came
-          through recommendations. We developed over
-          <span className={styles.gradientText}>400 websites</span> from
-          scratch. Authored over{" "}
-          <span className={styles.gradientText}>700 blog</span> posts. Make up
-          to <span className={styles.gradientText}>3 brandbooks</span> per
-          month.
-          <br />
-          Digitally transformed over
-          <br />
-          <span className={styles.gradientText}>60 companies</span> across
-          Europe. All done by using{" "}
-          <span className={styles.gradientText}>0 shortcuts.</span>
-        </h2>
         <div className={styles.image}>
           <Image
             src="/images/service-image.png"
