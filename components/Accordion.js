@@ -15,11 +15,16 @@ function Accordion(props) {
       style={{ maxHeight: opened ? "500px" : "90px" }}
     >
       <div className={styles.header}>
-        <h3 className={styles.title}>{props.title}</h3>
+        <h3
+          className={`${styles.title}`}
+          id={`${opened ? styles.opened : null}`}
+        >
+          {props.title}
+        </h3>
         <div
           className="image-wrap"
           style={{
-            transform: opened ? "rotateZ(90deg)" : "rotateZ(0)",
+            transform: opened ? "rotateZ(-90deg)" : "rotateZ(0)",
             transition: "0.3s",
           }}
         >

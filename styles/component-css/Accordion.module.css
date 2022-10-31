@@ -14,10 +14,18 @@
   justify-content: space-between;
   margin-bottom: 20px;
 }
+#opened {
+  -webkit-text-fill-color: transparent;
+}
 .title {
   font-size: 48px;
   font-family: MatterBold;
   color: black;
+  background: radial-gradient(circle at 0 0, #7000ff, #0ff);
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: black;
 }
 .content {
   font-size: 28px;

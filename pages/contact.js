@@ -9,13 +9,13 @@ function contact() {
         <h1 className={styles.title}>We can&apos;t wait to meet you.</h1>
         <p className={styles.subheading}>
           Meet us over email, live{" "}
-          <span className={styles.gradientText}>meeting</span> 🤝,{" "}
-          <span className={styles.gradientText}>food</span> 🍔 or{" "}
-          <span className={styles.gradientText}>drink</span> 🍸– it&apos;s your
+          <span className={styles.gradientText}>meeting</span>,{" "}
+          <span className={styles.gradientText}>food</span> or{" "}
+          <span className={styles.gradientText}>drink</span> - it&apos;s your
           choice.
           <br />
           <br />
-          Let&apos;s get in touch 👉👈.
+          Let&apos;s get in touch.
         </p>
         <div className={styles.row}>
           <div className={styles.col}>

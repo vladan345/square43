@@ -6,7 +6,7 @@ function Square(props) {
   const square = useRef();
   useEffect(() => {
     const element = square.current;
-    console.log(element);
+
     switch (props.state) {
       case 1:
         {
@@ -37,7 +37,10 @@ function Square(props) {
           alt="Square 43 studio"
           src="/images/square4.webp"
           fill
-          priority
+          sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+          as="image"
         />
       </div>
     </div>

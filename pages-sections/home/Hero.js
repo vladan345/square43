@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import styles from "../../styles/section-css/home/Hero.module.css";
-import Square from "../../components/Square";
 import { gsap } from "gsap";
 
 export default function Hero() {
