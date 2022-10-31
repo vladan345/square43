@@ -1,8 +1,7 @@
 .OurServices {
   overflow: hidden;
   height: 100vh;
-  position: relative;
-  z-index: 1;
+
   background: #202020;
   color: white;
 }

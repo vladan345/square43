@@ -1,8 +1,7 @@
 .Philosophy {
   overflow: hidden;
   height: 100vh;
-  position: relative;
-  z-index: 1;
+
   background: white;
 }
 .philosophyWrap {
@@ -32,6 +31,8 @@
   max-width: 1050px;
   line-height: 1.05;
   letter-spacing: -3.2px;
+  position: relative;
+  z-index: 111111;
 }
 .subheading {
   font-size: 28px;

@@ -1,8 +1,7 @@
 .Contact {
   overflow: hidden;
   padding: 280px 0 480px 0;
-  position: relative;
-  z-index: 1;
+
   background: black;
   color: white;
 }

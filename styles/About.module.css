@@ -3,7 +3,10 @@
 }
 
 .statement {
-  font-size: 80px;
+  position: sticky;
+  top: 50%;
+  font-size: 120px;
+  transform: translateY(-50%);
   font-family: MatterBold;
   margin-bottom: 80px;
   letter-spacing: -3.2px;

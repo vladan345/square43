@@ -1,11 +1,17 @@
 .square {
   position: fixed;
-  right: 20px;
+  right: 10vw;
   top: 50%;
   transform: translate(0, -50%);
-  z-index: 2;
-  mix-blend-mode: difference;
-  filter: invert();
+  width: 520px;
+  height: 520px;
+  transition: 0.7s;
+}
+@media (max-width: 1350px) {
+  .square {
+    left: auto;
+    right: 20px;
+  }
 }
 @media (max-width: 1190px) {
   .square {

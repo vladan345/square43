@@ -1,8 +1,7 @@
 .Project {
   overflow: hidden;
   height: 120vh;
-  position: relative;
-  z-index: 1;
+
   background: white;
 }
 .wrapper {

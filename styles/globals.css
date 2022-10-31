@@ -124,6 +124,7 @@ ul.splide__pagination li .is-active {
 .mask {
   overflow: hidden;
   display: inline-block;
+  line-height: 1;
 }
 .word {
   display: inline-block;
@@ -146,6 +147,12 @@ ul.splide__pagination li .is-active {
   --gradient-color-2: #2f8bc1;
   --gradient-color-3: #ccbeee;
   --gradient-color-4: #000000;
+}
+
+.red {
+  width: 300px;
+  height: 300px;
+  background: red;
 }
 
 @keyframes fadeIn {
