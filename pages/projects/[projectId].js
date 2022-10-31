@@ -8,6 +8,7 @@ import Joker from "./Joker";
 import DibTravel from "./DibTravel";
 import Imunoshop from "./Imunoshop";
 
+import Head from "next/head";
 import ProjectHero from "../../components/ProjectHero";
 import Outro from "../../components/Outro";
 
@@ -36,15 +37,20 @@ function Project() {
     }
   };
   return (
-    <div>
-      {project && (
-        <>
-          <ProjectHero project={project} />
-          {renderPage()}
-          <Outro projectId={projectId} />
-        </>
-      )}
-    </div>
+    <>
+      <Head>
+        <title>Square43 Studio | {project?.name}</title>
+      </Head>
+      <div>
+        {project && (
+          <>
+            <ProjectHero project={project} />
+            {renderPage()}
+            <Outro projectId={projectId} />
+          </>
+        )}
+      </div>
+    </>
   );
 }
 
