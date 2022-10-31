@@ -2,7 +2,10 @@
   padding-top: 160px;
 }
 .tagline {
-  font-size: 80px;
+  position: sticky;
+  top: 50%;
+  font-size: 120px;
+  transform: translateY(-50%);
   font-family: MatterBold;
   line-height: 1.05;
   letter-spacing: -3.2px;

@@ -18,6 +18,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-intersection-observer": "^9.4.0",
+    "react-motion-animate": "^1.0.5",
     "react-scroll-motion": "^0.3.0",
     "react-scroll-parallax": "^3.3.1",
     "splide-nextjs": "^2.4.23"
