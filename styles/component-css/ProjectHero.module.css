@@ -1,5 +1,5 @@
 .hero {
-  padding: 160px 0 80px 0;
+  padding: 200px 0 80px 0;
   height: 100vh;
   position: relative;
   z-index: 3;
@@ -13,16 +13,16 @@
 }
 .projectName {
   color: #2d2d2d;
-  font-weight: 600;
-  line-height: 1.2;
-  font-size: 28px;
+  line-height: 1.1;
+  font-size: 48px;
   margin-bottom: 20px;
+  font-family: MatterBold;
 }
 .slogan {
   font-size: 48px;
-  font-weight: 300;
   line-height: 1.1;
-  color: #575757;
+  color: #202020;
+  font-family: MatterLight;
   max-width: 760px;
   margin-bottom: 80px;
   white-space: pre-wrap;
@@ -37,8 +37,8 @@
 .serviceHead {
   margin-bottom: 40px;
   font-size: 16px;
-  color: #2d2d2d;
-  font-weight: bold;
+  color: #202020;
+  font-family: MatterBold;
   text-transform: uppercase;
   line-height: 1.2;
   letter-spacing: 0.8px;

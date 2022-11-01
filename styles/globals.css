@@ -35,7 +35,11 @@ h2 {
   font-size: 28px;
   margin-bottom: 80px;
   line-height: 1.2;
-  font-weight: 600;
+  font-family: MatterRegular;
+  color: #202020;
+}
+p {
+  line-height: 1.4;
 }
 .listItemImage span {
   width: 100%;
@@ -79,9 +83,7 @@ h2 {
 .inspect-code span {
   color: #ed9223;
 }
-h2 {
-  color: #202020;
-}
+
 #cursor-id:before {
   background: transparent;
   width: 25px;

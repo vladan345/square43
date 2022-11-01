@@ -4,25 +4,30 @@
 }
 .logoScheme {
   margin-left: -45px;
-  margin-right: 200px;
   width: 600px;
+  margin-bottom: 200px;
 }
 .row {
   display: flex;
-  align-items: center;
+
   justify-content: space-between;
   margin-bottom: 80px;
-  justify-content: flex-start;
 }
-
+.col {
+  width: 50%;
+}
+.col:last-of-type {
+  margin-left: 60px;
+}
 .paragraphs {
   color: #202020;
-  max-width: 560px;
+  max-width: 400px;
+  line-height: 1.4;
 }
 .paragraph {
   margin-bottom: 20px;
   font-size: 18px;
 }
 .fonts {
-  margin-left: 190px;
+  margin-top: 120px;
 }

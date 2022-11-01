@@ -36,10 +36,11 @@ function Project() {
         return null;
     }
   };
+  let title = `Square43 Studio | ${project?.name}`;
   return (
     <>
       <Head>
-        <title>Square43 Studio | {project?.name}</title>
+        <title>{title}</title>
       </Head>
       <div>
         {project && (

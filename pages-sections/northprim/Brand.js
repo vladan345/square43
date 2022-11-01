@@ -19,40 +19,41 @@ function Brand() {
   return (
     <div className={styles.Brand}>
       <div className="wrapper">
-        <h2>Brand Identity</h2>
+        <h2>Brand Elements</h2>
         <div>
           <div className={styles.row} ref={ref}>
-            <Lottie
-              className={styles.logoScheme}
-              animationData={lottieFile}
-              lottieRef={lottieRef}
-              loop={false}
-              autoplay={false}
-            />
-            <h2>{inView}</h2>
-            <Image
-              src="/images/northprim/colors.svg"
-              alt="Northprim color scheme"
-              width="280"
-              height="280"
-            />
-          </div>
-
-          <div className={styles.row}>
-            <div className={styles.paragraphs}>
-              <p className={styles.paragraph}>
-                We kept the logo light and clear, with the letter representing
-                the tech side and the green underline representing the human
-                touch.
-              </p>
-            </div>
-            <div className={styles.fonts}>
-              <Image
-                src="/images/northprim/fonts.svg"
-                alt="Northprim font scheme"
-                width="507"
-                height="343"
+            <div className={styles.col}>
+              <Lottie
+                className={styles.logoScheme}
+                animationData={lottieFile}
+                lottieRef={lottieRef}
+                loop={false}
+                autoplay={false}
               />
+              <div className={styles.paragraphs}>
+                <p className={styles.paragraph}>
+                  We kept the logo light and clear, with the letter representing
+                  the tech side and the green underline representing the human
+                  touch.
+                </p>
+              </div>
+            </div>
+            <div className={styles.col}>
+              {" "}
+              <Image
+                src="/images/northprim/colors.svg"
+                alt="Northprim color scheme"
+                width="280"
+                height="280"
+              />
+              <div className={styles.fonts}>
+                <Image
+                  src="/images/northprim/fonts.svg"
+                  alt="Northprim font scheme"
+                  width="362"
+                  height="341"
+                />
+              </div>
             </div>
           </div>
         </div>

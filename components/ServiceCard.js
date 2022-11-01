@@ -5,7 +5,10 @@ import Image from "next/image";
 
 function ServiceModule(props) {
   return (
-    <div className={styles.ServiceModule}>
+    <Link
+      href={"/services/" + props.service.id}
+      className={styles.ServiceModule}
+    >
       <div className="top">
         <h2 className={styles.title}>{props.service.name}</h2>
         {/* <p className={styles.description}>{props.service.description}</p> */}
@@ -17,7 +20,7 @@ function ServiceModule(props) {
           ))}
         </ul>
       </div>
-      <Link href={"/services/" + props.service.id} className={styles.link}>
+      <div className={styles.link}>
         view projects{" "}
         <div className={styles.icon}>
           <Image
@@ -27,8 +30,8 @@ function ServiceModule(props) {
             height={40}
           />
         </div>
-      </Link>
-    </div>
+      </div>
+    </Link>
   );
 }
 
