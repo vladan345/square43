@@ -29,7 +29,7 @@ function WebDevelopment() {
                 Simple structure to keep it intuitive is extremely important,
                 but the flow is key.
               </p>
-              <p>
+              <p className={styles.description}>
                 The website structure needed to accommodate different types of
                 visitors, depending on whether they are a broker, buyer or a
                 builder. This is why we made it so easy to navigate and find

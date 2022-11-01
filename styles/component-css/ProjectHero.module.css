@@ -8,7 +8,7 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  height: calc(100% - 120px);
+  height: 720px;
 }
 .projectName {
   color: #2d2d2d;
@@ -88,10 +88,9 @@
   position: relative;
   transition: 0.3s;
   overflow: hidden;
+  cursor: pointer;
 }
-.arrow:hover {
-  background: black !important;
-}
+
 .missionSolution {
   padding: 120px 0;
   background-color: #f8f8f8;

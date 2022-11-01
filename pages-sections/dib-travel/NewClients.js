@@ -8,14 +8,14 @@ function NewClients() {
       <div className="wrapper">
         <h2 className={styles.title}>Welcoming new clients</h2>
         <div className={styles.videoWrap}>
-          <video
-            style={{ width: "100%", margin: "0 auto" }}
-            autoPlay
-            muted
-            loop
-          >
+          <video autoPlay muted loop className={styles.video}>
             <source src="/images/dib-travel/welcome.mp4" type="video/mp4" />
           </video>
+          <Image
+            src="/images/dib-travel/dib-laptop.png"
+            alt="Laptop frame with video in it"
+            fill
+          />
           {/* <Image
           src="/images/northprim/taglines.svg"
           alt="Tagline placeholder"

@@ -1,6 +1,7 @@
 .DesktopVideo {
   background-color: white;
   padding: 180px 0;
+  position: relative;
 }
 .background {
   position: absolute;

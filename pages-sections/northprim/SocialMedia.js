@@ -27,7 +27,7 @@ function SocialMedia() {
         <div className={styles.col}>
           <Parallax speed={10} className={styles.secondSlide}>
             <Image
-              src="/images/northprim/social-mobile1.webp"
+              src="/images/northprim/social-media-slide1.webp"
               alt="instagram feed northprim slide"
               width={289}
               height={1906}
@@ -35,7 +35,7 @@ function SocialMedia() {
           </Parallax>
           <Parallax speed={-10} className={styles.secondSlide}>
             <Image
-              src="/images/northprim/social-mobile2.webp"
+              src="/images/northprim/social-media-slide2.webp"
               alt="instagram feed northprim slide"
               width={289}
               height={1906}

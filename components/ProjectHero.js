@@ -41,6 +41,7 @@ function ProjectHero(props) {
     color,
     heroImage,
     heroVideo,
+    heroArrow,
     missionShort,
     solutionShort,
     missionLong,
@@ -89,13 +90,17 @@ function ProjectHero(props) {
               );
             })}
           </div>
-          <div className={styles.arrow} style={{ background: color }}>
+          <div className={styles.arrow}>
             <div className={styles.iconOverlay}></div>
-            <div className={styles.icon}>
+            <div
+              className={styles.icon}
+              onMouseEnter={() => CURSOR_COLOR("WHITE")}
+              onMouseLeave={() => CURSOR_COLOR("END")}
+            >
               <Image
-                src="/images/arrow-down-solid.svg"
-                width={30}
-                height={30}
+                src={heroArrow}
+                width={40}
+                height={40}
                 alt="arrow down icon"
               />
             </div>

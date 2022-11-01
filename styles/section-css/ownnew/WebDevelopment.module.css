@@ -27,6 +27,7 @@
 }
 .description {
   margin-bottom: 40px;
+  max-width: 400px;
 }
 
 .inspectWrap {
@@ -48,12 +49,16 @@
 }
 .wrapper {
   display: flex;
+  justify-content: center;
 }
 .bottomText {
   margin-right: 100px;
 }
+.bottomText:last-of-type {
+  margin-right: 0;
+}
 .bottomDescription {
-  max-width: 560px;
+  max-width: 400px;
   margin-bottom: 40px;
   color: white;
   z-index: 1;

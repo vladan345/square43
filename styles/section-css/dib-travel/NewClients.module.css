@@ -1,9 +1,20 @@
 .NewClients {
   padding-top: 160px;
 }
+
 .videoWrap {
-  width: 760px;
+  width: 1000px;
+  height: 681px;
+  position: relative;
   margin: 0 auto;
+}
+.video {
+  width: 70%;
+  object-fit: cover;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 45%;
+  left: 50%;
 }
 .description {
   max-width: 560px;
