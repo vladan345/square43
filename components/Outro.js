@@ -41,10 +41,10 @@ function Outro(props) {
               >
                 <div className={styles.arrow}>
                   <Image
-                    src="/images/arrow-down-solid.svg"
+                    src="/images/outro-arrow.svg"
                     alt="arrow icon"
-                    width={30}
-                    height={30}
+                    width={40}
+                    height={40}
                   />
                 </div>
               </a>

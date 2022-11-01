@@ -19,7 +19,7 @@
   position: absolute;
 }
 .spill {
-  bottom: 40%;
+  bottom: 30%;
   width: 90%;
 }
 .coffeeContent {
@@ -29,6 +29,7 @@
 }
 .description {
   color: #202020;
-  max-width: 560px;
+  max-width: 440px;
   margin-bottom: 20px;
+  font-size: 18px;
 }

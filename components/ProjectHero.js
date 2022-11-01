@@ -45,6 +45,8 @@ function ProjectHero(props) {
     solutionShort,
     missionLong,
     solutionLong,
+    resultShort,
+    resultLong,
   } = props.project;
 
   return (
@@ -113,6 +115,11 @@ function ProjectHero(props) {
               <h3 className={styles.heading}>Solution</h3>
               <p className={styles.description}>{solutionShort}</p>
               <p className={styles.description}>{solutionLong}</p>
+            </div>
+            <div className={styles.content}>
+              <h3 className={styles.heading}>Result</h3>
+              <p className={styles.description}>{resultShort}</p>
+              <p className={styles.description}>{resultLong}</p>
             </div>
           </div>
         </div>

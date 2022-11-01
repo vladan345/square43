@@ -23,7 +23,7 @@ function CoreThemes() {
                 </div>
                 <div>
                   <h3 className={styles.title}>Cheeky approach</h3>
-                  <p>
+                  <p className={styles.description}>
                     Why so serious? Even the largest of companies are made out
                     of real people, plus there is no reason to keep work and fun
                     apart!
@@ -41,7 +41,7 @@ function CoreThemes() {
                 </div>
                 <div>
                   <h3 className={styles.title}>Expect the unexpected</h3>
-                  <p>
+                  <p className={styles.description}>
                     Stereotypes exist and, yes, you would expect and IT company
                     to keep things to the point and very technical. We offered
                     quite a twist
@@ -59,7 +59,7 @@ function CoreThemes() {
                 </div>
                 <div>
                   <h3 className={styles.title}>Undisputed skill</h3>
-                  <p>
+                  <p className={styles.description}>
                     Adding a fun, casual twist to a company full of exceptional
                     talent without underestimating their skill is a fine art.
                     Luckily, we&apos;re all artists here in Square43.
@@ -80,7 +80,7 @@ function CoreThemes() {
                 <Image
                   src="/images/northprim/picture_frame.png"
                   alt="frame Northprim"
-                  width="550"
+                  width="560"
                   height="685"
                 />
               </div>

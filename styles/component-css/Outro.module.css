@@ -13,24 +13,26 @@
   margin-right: 80px;
 }
 .next {
-  color: #2d2d2d;
-  line-height: 1.2;
+  margin-bottom: 40px;
   font-size: 16px;
-  letter-spacing: 0.8px;
+  color: #202020;
+  font-family: MatterBold;
   text-transform: uppercase;
-  font-weight: bold;
-  margin-bottom: 80px;
+  line-height: 1.2;
+  letter-spacing: 0.8px;
 }
 .name {
   margin-bottom: 40px;
+  font-size: 48px;
+  font-family: MatterBold;
 }
 .slogan {
   font-size: 48px;
-  font-weight: 300;
   line-height: 1.1;
-  color: #575757;
+  font-family: MatterLight;
+  color: #202020;
   max-width: 760px;
-  margin-bottom: 40px;
+
   white-space: pre-wrap;
 }
 .arrowLink {
@@ -38,7 +40,7 @@
 }
 .arrow {
   margin-top: 80px;
-  transform: rotate(-90deg);
+
   width: 40px;
   height: 40px;
   display: flex;

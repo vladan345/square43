@@ -5,16 +5,21 @@
 .col {
   width: 50%;
 }
+.col:first-of-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .title {
   color: #fff;
 }
 .description {
-  max-width: 560px;
+  max-width: 360px;
   margin-bottom: 40px;
 }
 .webDevWrap {
   display: flex;
-  padding: 120px 0 200px 0;
+  padding: 120px 0 160px 0;
 }
 .right {
   display: flex;

@@ -48,9 +48,9 @@ function SocialMedia() {
           <p className={styles.description}>They look even better online!</p>
           <p className={styles.description}>
             Take a look at how we handled Northprim&apos;s socials and feel free
-            to follow them or like and comment your impressions. We&apos;re all
-            ears (and eyes)!
+            to follow them or like and comment your impressions.
           </p>
+          <p className={styles.description}>We&apos;re all ears (and eyes)!</p>
           <div className={styles.icons}>
             <a href="#?" className={styles.link}>
               <div className={styles.icon}>

@@ -13,7 +13,7 @@
 .description {
   color: #202020;
   margin-bottom: 40px;
-  max-width: 560px;
+  max-width: 380px;
 }
 .wrapper .col:last-of-type {
   display: flex;
@@ -33,8 +33,9 @@
 }
 .socialSection .description {
   color: #f8f8f8;
-  max-width: 560px;
+  max-width: 440px;
   margin-bottom: 40px;
+  font-size: 22px;
 }
 .icons {
   margin-top: 80px;

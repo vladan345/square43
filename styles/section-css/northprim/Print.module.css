@@ -9,6 +9,7 @@
   color: #202020;
   font-size: 18px;
   margin-bottom: 40px;
+  max-width: 360px;
 }
 .wrapper {
   display: flex;

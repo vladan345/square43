@@ -10,9 +10,8 @@ function Paralax() {
         <Image
           src="/images/northprim/NP_Wave_Background.png"
           alt="Northprim wave art parallax"
-          width={1920}
-          height={700}
-          style={{ objectFir: "cover" }}
+          fill
+          style={{ objectFit: "cover" }}
         />
       </Parallax>
       <Parallax scale={[1, 0.7]} rotate={[0, 15]} className={styles.wave}>

@@ -31,6 +31,8 @@
 
 .description {
   margin-bottom: 40px;
+  max-width: 400px;
+  font-size: 18px;
 }
 .col:last-of-type {
   display: flex;
@@ -38,11 +40,11 @@
   align-items: center;
 }
 .col:last-of-type .description {
-  max-width: 560px;
+  max-width: 480px;
   margin-top: 80px;
 }
 .statement {
-  width: 560px;
+  width: 300px;
   font-size: 22px;
   font-weight: 600;
   color: #cf0;

@@ -1,6 +1,5 @@
 .hero {
   padding: 200px 0 80px 0;
-  height: 100vh;
   position: relative;
   z-index: 3;
   background: white;
@@ -9,7 +8,7 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  height: calc(100% - 80px);
+  height: calc(100% - 120px);
 }
 .projectName {
   color: #2d2d2d;
@@ -24,7 +23,7 @@
   color: #202020;
   font-family: MatterLight;
   max-width: 760px;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
   white-space: pre-wrap;
 }
 .services {
@@ -101,13 +100,12 @@
 }
 .missionWrap {
   display: flex;
+  justify-content: space-between;
 }
 .content {
-  max-width: 560px;
+  width: calc(30%);
 }
-.content:first-of-type {
-  margin-right: 120px;
-}
+
 .heading {
   color: #000;
   font-size: 28px;

@@ -8,7 +8,7 @@
 }
 .description {
   color: #202020;
-  max-width: 560px;
+  max-width: 480px;
   margin-bottom: 40px;
 }
 
@@ -39,12 +39,15 @@
 .mobile {
   background: #ececec;
   display: flex;
-  padding: 80px 0 120px 0;
+  padding: 160px 0 120px 0;
+  height: 570px;
 }
-
+.mobile .description {
+  max-width: 360px;
+}
 .mobileImage {
   position: absolute;
-  top: -135%;
+  top: -70%;
   left: 0;
 }
 .colImage {
