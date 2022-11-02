@@ -7,12 +7,17 @@ function Motions() {
     <div>
       <div className="wrapper">
         <h2 className={styles.title}>Promotional motion graphics</h2>
-        <Image
-          src="/images/imunoshop/motion1.webp"
-          alt="Motion graphic examples Imunoshop"
-          width={1360}
-          height={760}
-        />
+        <div className={styles.row}>
+          <video autoPlay muted loop className={styles.video}>
+            <source src="/images/imunoshop/motion1.mp4" type="video/mp4" />
+          </video>
+          <video autoPlay muted loop className={styles.video}>
+            <source src="/images/imunoshop/motion2.mp4" type="video/mp4" />
+          </video>
+          <video autoPlay muted loop className={styles.video}>
+            <source src="/images/imunoshop/motion2.mp4" type="video/mp4" />
+          </video>
+        </div>
       </div>
     </div>
   );

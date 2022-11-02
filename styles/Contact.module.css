@@ -20,7 +20,9 @@
   font-size: 28px;
   font-family: MatterRegular;
   line-height: 1.2;
+  margin-bottom: 10px;
 }
+
 .subheading {
   font-size: 80px;
   font-family: MatterBold;
@@ -36,12 +38,14 @@
 .subheading .gradientText {
   -webkit-text-fill-color: transparent;
 }
+.col:first-of-type .titleLink:first-of-type {
+  margin-bottom: 80px;
+}
 .row {
   display: flex;
+  width: 1375px;
 }
-.col:last-of-type {
-  margin-left: 80px;
-}
+
 @media (max-width: 1440px) {
   .title {
     font-size: 8.3vw;
