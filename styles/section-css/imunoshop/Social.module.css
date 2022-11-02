@@ -17,14 +17,13 @@
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  margin-right: 100px;
 }
 .phone {
   display: inline-block;
-  margin-right: -100px;
+  margin-right: -360px;
 }
 .description {
-  max-width: 485px;
+  max-width: 440px;
   margin-bottom: 40px;
 }
 .stripe {

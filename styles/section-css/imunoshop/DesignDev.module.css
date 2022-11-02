@@ -10,22 +10,28 @@
   justify-content: space-between;
 }
 .col {
-  width: 50%;
+  width: 60%;
 }
 .col:last-of-type {
-  text-align: right;
+  text-align: left;
+  width: 40%;
 }
+.col:last-of-type .category {
+  margin-bottom: 30px;
+}
+
 .category {
   font-size: 16px;
   color: #323232;
   letter-spacing: 1.28px;
   text-transform: uppercase;
-  margin-bottom: 80px;
-  font-family: MatterLight;
+  margin-bottom: 40px;
+  font-family: MatterBold;
 }
 .description {
   margin-bottom: 40px;
   text-align: left;
+  max-width: 440px;
 }
 .video {
   width: 100%;

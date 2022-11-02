@@ -27,8 +27,8 @@ function Banner() {
         <Image
           src="/images/imunoshop/bannerText.svg"
           alt="Decorative banner text Imunoshop"
-          width={915}
-          height={232}
+          width={645}
+          height={202}
           className={styles.text}
         />
       </div>

@@ -8,7 +8,7 @@ function Laptop() {
       <div className={styles.stripe}></div>
       <div className={styles.videoWrap}>
         <video autoPlay muted loop className={styles.video}>
-          <source src="/images/dib-travel/welcome.mp4" type="video/mp4" />
+          <source src="/images/imunoshop/imunoLaptop.mp4" type="video/mp4" />
         </video>
         <Image
           src="/images/imunoshop/laptop-mockup.webp"

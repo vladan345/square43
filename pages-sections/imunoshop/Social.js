@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import styles from "../../styles/section-css/imunoshop/Social.module.css";
 import Image from "next/image";
 
@@ -6,34 +6,14 @@ import { useInView } from "react-intersection-observer";
 import { gsap } from "gsap";
 
 function Social() {
-  const mobile1 = useRef(null);
-  const mobile2 = useRef(null);
-  const mobile3 = useRef(null);
   const { ref, inView } = useInView({ threshold: 0 });
 
   useEffect(() => {
-    console.log(mobile1);
     if (inView) {
-      const el = mobile1.current;
-      gsap.to(el, {
-        x: 0,
-        y: 0,
-        duration: 1,
-        ease: "power1",
-      });
-      const el2 = mobile2.current;
-      gsap.to(el2, {
-        x: 0,
-        y: 0,
-        duration: 1,
-        ease: "power1",
-      });
-      const el3 = mobile3.current;
-      gsap.to(el3, {
-        x: 0,
-        y: 0,
-        duration: 1,
-        ease: "power1",
+      gsap.to(".phoneImage", {
+        marginRight: -60,
+        duration: 2,
+        ease: "power4",
       });
     }
   }, [inView]);
@@ -44,17 +24,17 @@ function Social() {
         <div className={styles.socialWrap}>
           <h2>Social Media</h2>
           <p className={styles.description}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non
-            sollicitudin arcu integer. Nulla cras pellentesque habitant tortor
-            donec bibendum volutpat.
+            Promoting your online shop on various channels is essential for
+            raising brand awareness and generating leads and, eventually, sales.
           </p>
           <p className={styles.description}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non
-            sollicitudin arcu integer. Nulla cras pellentesque habitant tortor
-            donec bibendum volutpat.
+            Custom content, detailed social media plans on a monthly basis,
+            targeted paid campaigns: this is our winning combo. Imuno shop now
+            has a carefully crafted feed that generates visits to their website
+            every day!
           </p>
           <div className={styles.mobiles} ref={ref}>
-            <div className={`${styles.phone} ${styles.third}`} ref={mobile3}>
+            <div className={`${styles.phone} phoneImage`}>
               <Image
                 src="/images/imunoshop/Phone3.webp"
                 alt="Phone mockup 3"
@@ -62,7 +42,7 @@ function Social() {
                 height={625}
               />
             </div>
-            <div className={`${styles.phone} ${styles.second}`} ref={mobile2}>
+            <div className={`${styles.phone} phoneImage`}>
               <Image
                 src="/images/imunoshop/Phone2.webp"
                 alt="Phone mockup 2"
@@ -70,7 +50,7 @@ function Social() {
                 height={673}
               />
             </div>
-            <div className={`${styles.phone} ${styles.first}`} ref={mobile1}>
+            <div className={`${styles.phone} phoneImage`}>
               <Image
                 src="/images/imunoshop/Phone1.webp"
                 alt="Phone mockup 1"

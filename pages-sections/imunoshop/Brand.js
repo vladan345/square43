@@ -18,14 +18,14 @@ function Brand() {
               style={{ marginBottom: 140 }}
             />
             <p className={styles.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non
-              sollicitudin arcu integer. Nulla cras pellentesque habitant tortor
-              donec bibendum volutpat.
+              Our color palette was carefully selected to follow the entire
+              concept of natural, high quality supplements, so it combines light
+              greens with darker contrast colors for the logo.
             </p>
             <p className={styles.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non
-              sollicitudin arcu integer. Nulla cras pellentesque habitant tortor
-              donec bibendum volutpat.
+              The serif font was selected to provide the feeling of a highend
+              brand that fulfills its promise of impeccable quality to its
+              customers.
             </p>
           </div>
           <div className={styles.col}>

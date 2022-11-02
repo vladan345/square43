@@ -32,19 +32,23 @@ function DesignDev() {
               <Image
                 src="/images/imunoshop/fonts2.svg"
                 alt="Imunoshop fonts from website"
-                width={345}
-                height={378}
-                style={{ marginBottom: 140 }}
+                width={360}
+                height={233}
+                style={{ marginBottom: 200 }}
               />
               <p className={styles.description}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
-                non sollicitudin arcu integer. Nulla cras pellentesque habitant
-                tortor donec bibendum volutpat.
+                Large sections without any congested paragraphs, only short,
+                to-the-point copy and optimized UX layout – that's how we
+                approached web design for Imuno Shop.
               </p>
               <p className={styles.description}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
-                non sollicitudin arcu integer. Nulla cras pellentesque habitant
-                tortor donec bibendum volutpat.
+                We made sure to keep the website informative without an
+                overwhleming amount of information, keeping in mind that it is
+                also an online shop! E-commerce is our forté, so there were no
+                doubts about the optimal way of setting it up: all products were
+                neatly arranged, filters included, all wrapped with an intuitive
+                shopping process that keeps the customer on track until
+                checkout.
               </p>
             </div>
           </div>

@@ -10,11 +10,11 @@
 }
 .video {
   width: 860px;
-  height: 580px;
+  height: 570px;
   object-fit: cover;
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 50%;
+  top: 49%;
   left: 50%;
 }
 .stripe {

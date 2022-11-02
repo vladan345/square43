@@ -13,3 +13,7 @@
   flex-direction: row-reverse;
   margin-top: 80px;
 }
+.postImage {
+  opacity: 0;
+  transform: translateY(150px);
+}
