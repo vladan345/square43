@@ -43,14 +43,17 @@
     {
       "id": "joker",
       "name": "Guarana Joker",
-      "slogan": "Nascetur orci aliquam at enim et. Egestas tortor ut scelerisque enim. Auctor vitae sagittis.",
+      "slogan": "Designing the MVP of energy drinks: our ultimate success story.",
       "color": "#ffd800",
       "heroImage": "/images/joker/heroJoker.png",
       "heroVideo": "/images/joker/heroJoker.mp4",
-      "missionShort": "Transforming just another outsourcing tech company into a unique, provocative brand brimming with energy, emotion and the ever-wanted X factor.",
-      "missionLong": "Our client wanted to stand out in the sea of similar companies because they knew their squad had the swagger, expertise and chill that deserved to be showcased out of the box. We identified their true need; they didn't require just a visual revamp, they needed a brand new concept to carry them forward!  language was the first of the three pillars we propped our concept on.",
-      "solutionShort": "Sure, Northprim was a part of a dull pool of IT companies, but why would we allow it to stay that way - the way we saw it, coding is an art and we needed to show its true colors: using neon.",
-      "solutionLong": "IT terminology was employed in the advertising in an unsuspected form and the creative solution was wordplay like the world has never seen before. Secondly, we focused on the art that modern coding is and that's how the ancient and modern theme fully came to life! We gave praise and glory to the art of coding, because the modern digital world is unimaginable without it.",
+      "heroArrow": "/images/joker/guaranaArrow.svg",
+      "missionShort": "A well-established brand needed a product that stands out like no other but stays true to their core identity.",
+      "missionLong": "Guarana needed monumental package design to mark their iconic collaboration with Nikola Jokic, the Joker. Our main task: emphasise greatness while keeping Guarana's key design elements - the owl.",
+      "solutionShort": "Visual association was key and the imagery needed to combine both the old and the new.",
+      "solutionLong": "We started with the basics: what makes this colab unique is Nikola Jokić, the NBA superstar, who's known by many as the Joker - this became our heading, while a more subtle touch was a custom logo that was seamlessly blended into the background, only to highlight the MVP's name and original signature on the can itself.",
+      "resultShort": "Stunning packaging design for two distinct sizes, 0.33l and 0.5l. We adjusted the visuals to match the size and made sure not to overload the smaller can with too many details.",
+      "resultLong": "More than X cans sold in X stores across Serbia!",
       "services": ["package-design"]
     },
     {

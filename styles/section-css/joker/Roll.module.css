@@ -1,7 +1,6 @@
 .rollWrap {
   display: flex;
   align-items: flex-end;
-
   width: 66%;
 }
 .rollingWrap {
@@ -12,7 +11,7 @@
 }
 .rollFlex {
   display: flex;
-  padding: 0 0 300px 0;
+  padding: 0 0 160px 0;
 }
 .shadow {
   position: absolute;

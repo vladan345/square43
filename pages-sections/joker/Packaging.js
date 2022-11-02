@@ -18,14 +18,17 @@ function Packaging() {
           <div className={styles.col}>
             <h2>Packaging Design</h2>
             <p className={styles.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non
-              sollicitudin arcu integer. Nulla cras pellentesque habitant tortor
-              donec bibendum volutpat.
+              Guarana is a well-known brand of energy drinks in the Balkans with
+              a wide range of products that each represents a different flavor
+              and different approach. What every energy drink by Guarana has in
+              common is the daring and direct tone of voice that is usually
+              embodied in the product name.
             </p>
             <p className={styles.description}>
-              Tincidunt leo sit interdum maecenas leo. Dolor amet convallis
-              senectus aliquet turpis amet ultrices sagittis, tincidunt. Sed
-              dignissim nulla nisl purus congue.
+              Guarana set a challenge for all willing to participate: come up
+              with an origina concept for packaging design that would showcase
+              their newly signed collab with none other than the iconic Nikola
+              Jokic, the Joker. Spoiler: we won the challenge.
             </p>
           </div>
           <div className={styles.col}>
@@ -33,6 +36,7 @@ function Packaging() {
               <Parallax
                 className={`${styles.can} ${styles.left}`}
                 translateX={["0px", "100px"]}
+                speed={5}
               >
                 <Image
                   src="/images/joker/leva.webp"

@@ -8,11 +8,10 @@ function Pattern() {
       <div className="wrapper">
         <div className={styles.patternFlex}>
           <div className={styles.content}>
-            <h2 className={styles.title}>print layout</h2>
             <p className={styles.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non
-              sollicitudin arcu integer. Nulla cras pellentesque habitant tortor
-              donec bibendum volutpat.
+              A champion deserves his own logo. This is why we created one
+              especially for this purpose and discreetly included it as a
+              patterned background on the can.
             </p>
           </div>
           <div className={styles.patternWrap}>

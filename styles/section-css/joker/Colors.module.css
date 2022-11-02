@@ -7,6 +7,10 @@
   display: flex;
   justify-content: space-between;
 }
+.color {
+  opacity: 0;
+  transform: translateY(150px);
+}
 .content {
   width: 33%;
   padding-right: 80px;

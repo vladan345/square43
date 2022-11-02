@@ -83,11 +83,10 @@ function Roll() {
             </div>
           </div>
           <div className={styles.content}>
-            <h2 className={styles.title}>print layout</h2>
             <p className={styles.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non
-              sollicitudin arcu integer. Nulla cras pellentesque habitant tortor
-              donec bibendum volutpat.
+              Our winning packaging design comes in two distinct sizes, 0.33l
+              and 0.5l. We adjusted the visuals to match the size and made sure
+              not to overload the smaller can with too many details.
             </p>
           </div>
         </div>
