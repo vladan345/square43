@@ -13,14 +13,13 @@ function Scooter() {
           <div className={styles.col}>
             <h2 className={styles.title}>Brand communication</h2>
             <p className={styles.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non
-              sollicitudin arcu integer. Nulla cras pellentesque habitant tortor
-              donec bibendum volutpat.
+              Approaching corporate travel with a clichéd formal tone can hardly
+              set you apart. More importantly, business professionals are real
+              people who know how to have fun!
               <br />
               <br />
-              Tincidunt leo sit interdum maecenas leo. Dolor amet convallis
-              senectus aliquet turpis amet ultrices sagittis, tincidunt. Sed
-              dignissim nulla nisl purus congue.
+              This is why we opted for a more approachable image, witty copy and
+              out-of-the box visuals.
             </p>
           </div>
           <div className={styles.col}></div>

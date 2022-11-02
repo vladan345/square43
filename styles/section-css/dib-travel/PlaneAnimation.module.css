@@ -18,7 +18,7 @@
   left: 0;
   transform: translateX(-100%);
   top: 100px;
-  animation: planePass 15s infinite linear;
+  animation: planePass 7s infinite linear;
   width: 100%;
 }
 .suitcaseWrap {
@@ -37,7 +37,7 @@
   0% {
     transform: translateX(-100%);
   }
-  30% {
+  70% {
     transform: translateX(100%);
   }
   100% {

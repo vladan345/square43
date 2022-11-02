@@ -5,12 +5,14 @@
 }
 .image {
   display: block;
+  opacity: 0;
+  transform: translateY(150px);
 }
 .description {
-  max-width: 560px;
+  max-width: 440px;
 }
 .description:first-of-type {
-  margin-right: 120px;
+  margin-right: 80px;
 }
 .textWrap {
   margin-top: 120px;

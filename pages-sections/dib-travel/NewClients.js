@@ -1,8 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "../../styles/section-css/dib-travel/NewClients.module.css";
 import Image from "next/image";
 
+import { useInView } from "react-intersection-observer";
+import { gsap } from "gsap";
 function NewClients() {
+  const { ref, inView } = useInView({ threshold: [0.3, 0.7] });
+
+  useEffect(() => {
+    if (inView) {
+      gsap.to(".mobileMockup", {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power1",
+        stagger: 0.2,
+      });
+    }
+  }, [inView]);
   return (
     <div className={styles.NewClients}>
       <div className="wrapper">
@@ -25,35 +40,36 @@ function NewClients() {
         </div>
         <div className={styles.textWrap}>
           <p className={styles.description}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non
-            sollicitudin arcu integer. Nulla cras pellentesque habitant tortor
-            donec bibendum volutpat. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Amet non sollicitudin arcu integer. Nulla cras
-            pellentesque habitant tortor donec bibendum volutpat.
+            New partnerships are one of the key driving forces when it comes to
+            growing your brand.
+            <br />
+            <br />
+            Being aware of this, we introduced a new post type for DIB Travel:
+            each Friday, DIB Travel celebrates their new partnerships.
           </p>
           <p className={styles.description}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non
-            sollicitudin arcu integer. Nulla cras pellentesque habitant tortor
-            donec bibendum volutpat.
+            Each partner company is presented in a dedicated post with fully
+            customized visual and caption done in the usual DIB Travel tone and
+            manner!
           </p>
         </div>
-        <div className={styles.mobiles}>
+        <div className={styles.mobiles} ref={ref}>
           <Image
-            className={styles.mobileImage}
+            className={`${styles.mobileImage} mobileMockup`}
             src="/images/dib-travel/mobile1.webp"
             alt="mobile mockup DIB Travel"
             width={539}
             height={820}
           />
           <Image
-            className={styles.mobileImage}
+            className={`${styles.mobileImage} mobileMockup`}
             src="/images/dib-travel/mobile2.webp"
             alt="mobile mockup DIB Travel"
             width={539}
             height={820}
           />
           <Image
-            className={styles.mobileImage}
+            className={`${styles.mobileImage} mobileMockup`}
             src="/images/dib-travel/mobile3.webp"
             alt="mobile mockup DIB Travel"
             width={539}
@@ -65,18 +81,22 @@ function NewClients() {
         <div className="wrapper">
           <div className={styles.mobileWrap}>
             <p className={styles.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non
-              sollicitudin arcu integer. Nulla cras pellentesque habitant tortor
-              donec bibendum volutpat. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Amet non sollicitudin arcu integer. Nulla cras
-              pellentesque habitant tortor donec bibendum volutpat.
+              Above and beyond!
+              <br />
+              <br />
+              DIB Travel's social media channels include Instagram, Facebook and
+              LinkedIn, all with very different types of audiences.
+              <br />
+              <br />
+              In order to accomodate these differences, we approach social media
+              planning with great attention when it comes to relevant content
+              suitable for a particular type of audience.
             </p>
             <p className={styles.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non
-              sollicitudin arcu integer. Nulla cras pellentesque habitant tortor
-              donec bibendum volutpat. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Amet non sollicitudin arcu integer. Nulla cras
-              pellentesque habitant tortor donec bibendum volutpat.
+              Our social media content ranges from static visuals and
+              eye-catching headliners to top tier animations and insightful blog
+              posts that address relevant topics in respective industries - we
+              do our own research too!
             </p>
           </div>
         </div>

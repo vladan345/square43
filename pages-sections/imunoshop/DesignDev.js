@@ -49,7 +49,7 @@ function DesignDev() {
             </div>
           </div>
         </div>
-        <video autoPlay muted className={styles.video}>
+        <video autoPlay muted loop className={styles.video}>
           <source src="/images/imunoshop/imuno-phones.mp4" type="video/mp4" />
         </video>
       </div>

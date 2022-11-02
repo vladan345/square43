@@ -12,8 +12,8 @@
       "missionLong": "Our client wanted to stand out in the sea of similar companies because they knew their squad had the swagger, expertise and chill that deserved to be showcased out of the box. We identified their true need; they didn't require just a visual revamp, they needed a brand new concept to carry them forward!  language was the first of the three pillars we propped our concept on.",
       "solutionShort": "Sure, Northprim was a part of a dull pool of IT companies, but why would we allow it to stay that way - the way we saw it, coding is an art and we needed to show its true colors: using neon.",
       "solutionLong": "IT terminology was employed in the advertising in an unsuspected form and the creative solution was wordplay like the world has never seen before. Secondly, we focused on the art that modern coding is and that's how the ancient and modern theme fully came to life! We gave praise and glory to the art of coding, because the modern digital world is unimaginable without it.",
-      "resultShort": "Over 100 job applications sent from developers across Europe shortly after Northprim's new website went live",
-      "resultLong": "10+ new partnerships signed with Northprim",
+      "resultShort": "Over 100 job applications sent from developers across Europe shortly after Northprim's new website went live.",
+      "resultLong": "10+ new partnerships signed with Northprim.",
       "services": [
         "branding",
         "web-design",
@@ -56,16 +56,19 @@
     {
       "id": "dib-travel",
       "name": "DIB Travel",
-      "slogan": "Nascetur orci aliquam at enim et. Egestas tortor ut scelerisque enim. Auctor vitae sagittis.",
+      "slogan": "Business travel made better: a comprehensive case study of DIB Travel.",
       "color": "#00b054",
       "heroImage": "/images/dib-travel/heroDib.webp",
       "heroVideo": "/images/dib-travel/heroDib.mp4",
-      "heroArrow": "/images/ownnew/ownnewArrow.svg",
-      "missionShort": "Transforming just another outsourcing tech company into a unique, provocative brand brimming with energy, emotion and the ever-wanted X factor.",
-      "missionLong": "Our client wanted to stand out in the sea of similar companies because they knew their squad had the swagger, expertise and chill that deserved to be showcased out of the box. We identified their true need; they didn't require just a visual revamp, they needed a brand new concept to carry them forward!  language was the first of the three pillars we propped our concept on.",
-      "solutionShort": "Sure, Northprim was a part of a dull pool of IT companies, but why would we allow it to stay that way - the way we saw it, coding is an art and we needed to show its true colors: using neon.",
-      "solutionLong": "IT terminology was employed in the advertising in an unsuspected form and the creative solution was wordplay like the world has never seen before. Secondly, we focused on the art that modern coding is and that's how the ancient and modern theme fully came to life! We gave praise and glory to the art of coding, because the modern digital world is unimaginable without it.",
+      "heroArrow": "/images/dib-travel/dibArrow.svg",
+      "missionShort": "A complete transformation from a suit-n-tie, corporate concept to a funky, contemporary business travel company that focuses on innovation, sustainability and travel support.",
+      "missionLong": "DIB Travel is a Swedish-Serbian startup that was founded with a clear mission: to revolutionize the business travel experience through digitalization. Our task was clear, but extremely complex: complete brand revamp on all fronts - web design, visual identity, social media channels.",
+      "solutionShort": "After discussing things with DIB Travel, we understood their need to Do It Better, and it inspired us to do our very best for them!",
+      "solutionLong": "We set off to redesign their platform and upgrade their campaign to communicate this fact through every channel available: their website is now adorned with funky visuals, witty copy and clearly communicated services - all of which is promoted regularly on their social media channels.",
+      "resultShort": "Ever since our revamp has been implemented, DIB Travel has received over X valuable leads, gathered new investors and gained over 6000 followers on LinkedIn!",
+      "resultLong": "",
       "services": [
+        "branding",
         "web-design",
         "web-development",
         "social-media",
@@ -100,7 +103,7 @@
       "name": "Branding",
       "description": "Your true self - by us",
       "list": ["Brand strategy", "Logo design", "Brand book design"],
-      "projects": ["northprim", "imunoshop"]
+      "projects": ["northprim", "imunoshop", "dib-travel"]
     },
     {
       "id": "web-design",
