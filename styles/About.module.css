@@ -9,13 +9,14 @@
   transform: translateY(-50%);
   font-family: MatterBold;
   margin-bottom: 80px;
-  letter-spacing: -3.2px;
+  letter-spacing: -4.8px;
   background: radial-gradient(circle at 0 0, #7000ff, #0ff);
   background-attachment: fixed;
   background-position: center;
   background-clip: text;
   -webkit-background-clip: text;
   width: 1350px;
+  line-height: 1;
 }
 .statement .gradientText {
   -webkit-text-fill-color: transparent;

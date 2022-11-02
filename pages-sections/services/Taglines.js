@@ -8,7 +8,7 @@ function Taglines() {
     <div className={styles.Taglines}>
       <div className="wrapper">
         <MotionAnimate speed={0.7} reset={true} animation="fadeInUp">
-          <div style={{ height: "100vh", paddingTop: "100px" }}>
+          <div style={{ height: "200vh", paddingTop: "100px" }}>
             <h2 className={styles.tagline}>
               <span className={styles.gradientText}>99.9%</span> of our clients
               came through recommendations.
@@ -16,7 +16,7 @@ function Taglines() {
           </div>
         </MotionAnimate>
         <MotionAnimate speed={0.7} reset={true} animation="fadeInUp">
-          <div style={{ height: "100vh" }}>
+          <div style={{ height: "200vh" }}>
             <h2 className={styles.tagline}>
               We developed over{" "}
               <span className={styles.gradientText}>400 websites</span> from
@@ -25,7 +25,7 @@ function Taglines() {
           </div>
         </MotionAnimate>
         <MotionAnimate speed={0.7} reset={true} animation="fadeInUp">
-          <div style={{ height: "100vh" }}>
+          <div style={{ height: "200vh" }}>
             <h2 className={styles.tagline}>
               Authored over{" "}
               <span className={styles.gradientText}>700 blog</span> posts.
@@ -33,7 +33,7 @@ function Taglines() {
           </div>
         </MotionAnimate>
         <MotionAnimate speed={0.7} reset={true} animation="fadeInUp">
-          <div style={{ height: "100vh" }}>
+          <div style={{ height: "200vh" }}>
             <h2 className={styles.tagline}>
               Make up to{" "}
               <span className={styles.gradientText}>3 brandbooks</span> per
@@ -42,7 +42,7 @@ function Taglines() {
           </div>
         </MotionAnimate>
         <MotionAnimate speed={0.7} reset={true} animation="fadeInUp">
-          <div style={{ height: "100vh" }}>
+          <div style={{ height: "200vh" }}>
             <h2 className={styles.tagline}>
               Digitally transformed over{" "}
               <span className={styles.gradientText}>60 companies</span> across
@@ -51,7 +51,7 @@ function Taglines() {
           </div>
         </MotionAnimate>
         <MotionAnimate speed={0.7} reset={true} animation="fadeInUp">
-          <div style={{ height: "100vh" }}>
+          <div style={{ height: "200vh" }}>
             <h2 className={styles.tagline}>
               All done by using{" "}
               <span className={styles.gradientText}>0 shortcuts.</span>
