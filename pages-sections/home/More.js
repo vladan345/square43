@@ -23,10 +23,10 @@ function More() {
       } else {
         setIndex(index + 1);
       }
-    }, 8000);
+    }, 6000);
     console.log("fired");
     return () => clearInterval(interval); //This is a cleanup function
-  });
+  }, [index]);
 
   function fireAnimation() {
     gsap.from(".more", {
@@ -34,14 +34,14 @@ function More() {
       duration: 1.5,
       yPercent: 100,
       ease: "power4",
-      stagger: 0.05,
+      stagger: 0.02,
     });
     gsap.to(".more", {
       skewX: 0,
       duration: 1.5,
       yPercent: 0,
       ease: "power4",
-      stagger: 0.05,
+      stagger: 0.02,
     });
     setTimeout(() => {
       gsap.to(".more", {
@@ -71,7 +71,7 @@ function More() {
             {descriptions1[index].split(/(\s+)/).map((word, key) => {
               return (
                 <span key={key} className="mask">
-                  <span className="more">{word == " " ? "I" : word}</span>
+                  <span className="more">{word == " " ? "." : word}</span>
                 </span>
               );
             })}
@@ -89,7 +89,7 @@ function More() {
             {descriptions2[index].split(/(\s+)/).map((word, key) => {
               return (
                 <span key={key} className="mask">
-                  <span className="more">{word == " " ? "I" : word}</span>
+                  <span className="more">{word == " " ? "." : word}</span>
                 </span>
               );
             })}

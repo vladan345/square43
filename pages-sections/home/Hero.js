@@ -21,7 +21,7 @@ export default function Hero() {
     }, 3500);
 
     return () => clearInterval(interval); //This is a cleanup function
-  });
+  }, [index]);
   function fireAnimation() {
     gsap.from(".word", {
       skewX: -30,

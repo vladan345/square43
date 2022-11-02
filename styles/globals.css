@@ -133,8 +133,11 @@ ul.splide__pagination li .is-active {
   display: inline-block;
   position: relative;
   padding: 2px;
+  transform: translateY(100%) skewX(-30px);
 }
-
+.more {
+  padding: 0;
+}
 .mask:nth-of-type(even) .word,
 .mask:nth-of-type(even) .more {
   opacity: 0;
