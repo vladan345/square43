@@ -4,7 +4,6 @@ import { useLoading } from "../utils/hooks/LoadingContext";
 
 function Spinner() {
   const { loading } = useLoading();
-
   return (
     <div
       className={`${styles.Spinner} ${

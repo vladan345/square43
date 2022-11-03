@@ -3,12 +3,13 @@ import Link from "next/link";
 import styles from "../styles/component-css/Header.module.css";
 import Image from "next/image";
 import MobileMenu from "./MobileMenu";
-import { CURSOR_COLOR } from "haspr-cursor";
+import { CURSOR_COLOR, DispatchCursor } from "haspr-cursor";
 import { useLoading } from "../utils/hooks/LoadingContext";
 //All comments are for page transition delay
 import { useRouter } from "next/router";
 
 export default function Header() {
+  const dispatch = DispatchCursor();
   const [opened, setOpened] = useState(false);
   const router = useRouter();
   const { setLoading } = useLoading();
