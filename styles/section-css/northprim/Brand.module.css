@@ -31,3 +31,41 @@
 .fonts {
   margin-top: 120px;
 }
+
+@media (max-width: 1150px) {
+  .col:last-of-type {
+    margin-left: 120px;
+  }
+}
+@media (max-width: 960px) {
+  .logoScheme {
+    width: 330px;
+    margin-left: 0;
+  }
+  .col:last-of-type {
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 900px) {
+  .Brand {
+    padding: 60px 0 80px 0;
+  }
+  .row {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .col {
+    width: 100%;
+  }
+  .col:last-of-type {
+    margin-left: 0;
+    margin-top: 80px;
+  }
+  .logoScheme {
+    margin-bottom: 80px;
+  }
+  .fonts {
+    margin-top: 80px;
+  }
+}

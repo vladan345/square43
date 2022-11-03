@@ -11,29 +11,7 @@ function ProjectHero(props) {
   const [isLoading, setLoading] = useState(false); // eslint-disable-line no-unused-vars
 
   const dispatch = DispatchCursor();
-  // useEffect(() => {
-  //   setLoading(true);
-  //   setTimeout(() => {
-  //     setLoading(false);
-  //   }, 5000);
-  // }, []);
-  // useLayoutEffect(() => {
-  //   if (isLoading) {
-  //     console.log("laoding");
-  //     document.body.setAttribute(
-  //       "style",
-  //       "overflow-y: hidden !important; height: 100vh !important"
-  //     );
-  //   }
 
-  //   if (!isLoading) {
-  //     console.log("not laoding");
-  //     document.body.setAttribute(
-  //       "style",
-  //       "overflow-y: auto !important; height: auto !important"
-  //     );
-  //   }
-  // }, [isLoading]);
   const {
     name,
     slogan,
@@ -120,11 +98,6 @@ function ProjectHero(props) {
               <h3 className={styles.heading}>Solution</h3>
               <p className={styles.description}>{solutionShort}</p>
               <p className={styles.description}>{solutionLong}</p>
-            </div>
-            <div className={styles.content}>
-              <h3 className={styles.heading}>Result</h3>
-              <p className={styles.description}>{resultShort}</p>
-              <p className={styles.description}>{resultLong}</p>
             </div>
           </div>
         </div>

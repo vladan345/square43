@@ -99,15 +99,15 @@
 }
 .missionWrap {
   display: flex;
-  justify-content: space-between;
 }
-.content {
-  width: calc(30%);
+.content:last-of-type {
+  margin-left: 120px;
 }
 
 .heading {
   color: #000;
-  font-size: 28px;
+  font-size: 48px;
+  font-family: MatterLight;
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 40px;
@@ -115,7 +115,73 @@
 .description {
   line-height: 1.4;
   margin-bottom: 20px;
+  max-width: 520px;
 }
-.description:first-of-type {
-  font-weight: 600;
+
+@media (max-width: 1365px) {
+  .heroVideo {
+    width: 40vw;
+    height: 40vw;
+    bottom: 0;
+  }
+}
+@media (max-width: 900px) {
+  .hero {
+    padding-top: 80px;
+  }
+  .heroVideo {
+    width: 500px;
+    height: 500px;
+    position: static;
+    margin: 0 auto 30px auto;
+    display: block;
+  }
+  .projectName {
+    font-size: 32px;
+  }
+  .slogan {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  .services {
+    justify-content: space-between;
+  }
+  .serviceLink {
+    width: 50%;
+    margin-bottom: 10px;
+    margin-right: 0;
+    line-height: 1.4;
+  }
+  .serviceLink:nth-of-type(even) {
+    width: calc(50% - 20px);
+    margin-left: 20px;
+  }
+  .arrow {
+    display: none;
+  }
+  .heading {
+    font-size: 32px;
+    margin-bottom: 25px;
+  }
+  .missionSolution {
+    padding: 60px 0 80px 0;
+  }
+  .missionWrap {
+    flex-direction: column;
+  }
+  .content:last-of-type {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .hero {
+    padding-top: 80px;
+  }
+  .heroVideo {
+    width: 100vw;
+    height: 100vw;
+    position: relative;
+    margin: 0 auto 30px auto;
+  }
 }

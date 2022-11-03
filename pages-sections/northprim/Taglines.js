@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "next/image";
+import styles from "../../styles/section-css/northprim/Taglines.module.css";
 
 function Taglines() {
   return (
-    <div style={{ padding: "120px 0" }}>
+    <div className={styles.Taglines}>
       <div className="wrapper">
         <video style={{ width: "100%" }} autoPlay muted loop>
           <source src="/images/northprim/taglines.mp4" type="video/mp4" />

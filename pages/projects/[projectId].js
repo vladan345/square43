@@ -11,6 +11,7 @@ import Imunoshop from "./Imunoshop";
 import Head from "next/head";
 import ProjectHero from "../../components/ProjectHero";
 import Outro from "../../components/Outro";
+import Result from "../../components/Result";
 import { useLoading } from "../../utils/hooks/LoadingContext";
 
 function Project() {
@@ -52,6 +53,7 @@ function Project() {
           <>
             <ProjectHero project={project} />
             {renderPage()}
+            <Result project={project} />
             <Outro projectId={projectId} />
           </>
         )}

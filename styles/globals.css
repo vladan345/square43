@@ -32,10 +32,10 @@ a {
   text-decoration: none;
 }
 h2 {
-  font-size: 28px;
+  font-size: 48px;
   margin-bottom: 80px;
   line-height: 1.2;
-  font-family: MatterRegular;
+  font-family: MatterLight;
   color: #202020;
 }
 p {
@@ -83,7 +83,14 @@ p {
 .inspect-code span {
   color: #ed9223;
 }
-
+i {
+  -webkit-text-fill-color: transparent;
+  font-style: normal;
+}
+.resultText {
+  transform: translateY(150px);
+  opacity: 0;
+}
 #cursor-id:before {
   background: transparent;
   width: 25px;
@@ -287,5 +294,13 @@ ul.splide__pagination li .is-active {
   }
   to {
     transform: translateY(0);
+  }
+}
+@media (max-width: 900px) {
+  h2 {
+    font-size: 32px;
+  }
+  .wrapper {
+    max-width: 500px;
   }
 }

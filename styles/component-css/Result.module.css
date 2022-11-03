@@ -1,0 +1,23 @@
+.Result {
+  padding: 180px 0;
+}
+.title {
+  margin-bottom: 40px;
+}
+.description {
+  font-family: MatterBold;
+  font-size: 80px;
+  line-height: 1;
+  margin-bottom: 80px;
+  background: radial-gradient(circle at 0 0, #7000ff, #0ff);
+  background-attachment: fixed;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.description:last-of-type {
+  margin-bottom: 0;
+}
+.gradientText {
+  -webkit-text-fill-color: transparent;
+}

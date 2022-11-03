@@ -1,17 +1,9 @@
 import React from "react";
-
+import styles from "../../styles/section-css/northprim/VideoSection.module.css";
 function VideoSection() {
   return (
-    <div
-      className="VideoSection"
-      style={{ height: 600, background: "#202020" }}
-    >
-      <video
-        width="1920"
-        autoPlay
-        muted
-        style={{ width: "100%", height: "100%", objectFit: "cover" }}
-      >
+    <div className={styles.videoWrap}>
+      <video width="1920" autoPlay muted className={styles.video}>
         <source src="/images/northprim/S43_Astro_Video.mp4" type="video/mp4" />
       </video>
     </div>

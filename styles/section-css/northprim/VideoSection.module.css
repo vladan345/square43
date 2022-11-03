@@ -1,0 +1,14 @@
+.videoWrap {
+  height: 600px;
+  background-color: #202020;
+}
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 900px) {
+  .videoWrap {
+    height: 300px;
+  }
+}

@@ -75,24 +75,24 @@ function Skate() {
                 <Image
                   src="/images/northprim/splash.svg"
                   alt="Spray splash Northprim"
-                  width={600}
-                  height={600}
+                  fill
+                  style={{ objectFit: "contain" }}
                 />
               </div>
               <div className={styles.skateF} ref={skateF}>
                 <Image
                   src="/images/northprim/skateboarder-f-1.webp"
                   alt="Skateboarder femaile Northprim"
-                  width={317}
-                  height={680}
+                  fill
+                  style={{ objectFit: "contain" }}
                 />
               </div>
               <div className={styles.skateM} ref={skateM}>
                 <Image
                   src="/images/northprim/skateboarder-m-1.webp"
                   alt="Skateboarder male Northprim"
-                  width={260}
-                  height={670}
+                  fill
+                  style={{ objectFit: "contain" }}
                 />
               </div>
             </div>
@@ -103,6 +103,7 @@ function Skate() {
               alt="Spray splash Northprim"
               width={600}
               height={600}
+              className={styles.david}
             />
             <p className={styles.description}>
               In terms of imagery, we focused on the art that modern coding is
