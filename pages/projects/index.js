@@ -6,19 +6,19 @@ import Link from "next/link";
 import ProjectCard from "../../components/ProjectCard";
 import Head from "next/head";
 
+import { useLoading } from "../../utils/hooks/LoadingContext";
 import { getAllProjects } from "../../utils/data/getData";
 
 function Projects() {
   const [projects, setProjects] = useState([]);
-  const [isLoading, setLoading] = useState(false);
-
+  const { setLoading } = useLoading();
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
       setProjects(getAllProjects());
       setLoading(false);
-    }, 1000);
-  }, [projects]);
+    }, 3000);
+  }, []);
 
   return (
     <>
@@ -34,11 +34,8 @@ function Projects() {
                 Reliable and totally unbiased sources claim we got MOMA jealous.
               </p>
               <section className={styles.projectGrid}>
-                {isLoading ? (
-                  <Spinner visible={true} />
-                ) : (
+                {projects && (
                   <>
-                    <Spinner visible={false} />
                     {projects.map((project, key) => {
                       return <ProjectCard key={key} project={project} />;
                     })}

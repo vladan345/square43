@@ -1,8 +1,33 @@
 import React from "react";
 import styles from "../styles/component-css/MobileMenu.module.css";
 import Link from "next/link";
+import { useLoading } from "../utils/hooks/LoadingContext";
+import { useRouter } from "next/router";
 
 function MobileMenu({ stateChange, ...props }) {
+  const { setLoading } = useLoading();
+  const router = useRouter();
+
+  const handleClick = (e) => {
+    document.body.style.overflow = "auto";
+    stateChange(false);
+    setLoading(true);
+    e.preventDefault();
+    let link = e.currentTarget.attributes[1].value;
+    setTimeout(() => {
+      if (link === "/services" || link === "/projects") {
+        router.push(link);
+      } else if (link === "/") {
+        router.push(link);
+        setOpened(false);
+        setLoading(false);
+      } else {
+        router.push(link);
+        setLoading(false);
+      }
+    }, 2000);
+  };
+
   return (
     <div style={props.style} className={styles.MobileMenu}>
       <p className={styles.name}>square43</p>
@@ -12,10 +37,7 @@ function MobileMenu({ stateChange, ...props }) {
             <Link
               href="/projects"
               className={styles.link}
-              onClick={() => {
-                document.body.style.overflow = "auto";
-                return stateChange(false);
-              }}
+              onClick={handleClick}
             >
               Work
             </Link>
@@ -24,35 +46,18 @@ function MobileMenu({ stateChange, ...props }) {
             <Link
               href="/services"
               className={styles.link}
-              onClick={() => {
-                document.body.style.overflow = "auto";
-                return stateChange(false);
-              }}
+              onClick={handleClick}
             >
               Services
             </Link>
           </li>
           <li className={styles.listItem}>
-            <Link
-              href="/contact"
-              className={styles.link}
-              onClick={() => {
-                document.body.style.overflow = "auto";
-                return stateChange(false);
-              }}
-            >
+            <Link href="/contact" className={styles.link} onClick={handleClick}>
               Contact
             </Link>
           </li>
           <li className={styles.listItem}>
-            <Link
-              href="/about"
-              className={styles.link}
-              onClick={() => {
-                document.body.style.overflow = "auto";
-                return stateChange(false);
-              }}
-            >
+            <Link href="/about" className={styles.link} onClick={handleClick}>
               About
             </Link>
           </li>

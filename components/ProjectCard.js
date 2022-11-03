@@ -2,11 +2,29 @@ import React from "react";
 import Link from "next/link";
 import styles from "../styles/component-css/ProjectCard.module.css";
 import Image from "next/image";
+import { useRouter } from "next/router";
+import { useLoading } from "../utils/hooks/LoadingContext";
 
 function ProjectCard(props) {
+  const router = useRouter();
+  const { setLoading } = useLoading();
+
+  const handleClick = (e) => {
+    setLoading(true);
+    e.preventDefault();
+    let link = e.currentTarget.attributes[1].value;
+    setTimeout(() => {
+      router.push(link);
+    }, 1000);
+  };
+
   return (
     <div className={styles.projectCard}>
-      <Link href={`/projects/${props.project.id}`} className={styles.link}>
+      <Link
+        onClick={handleClick}
+        href={`/projects/${props.project.id}`}
+        className={styles.link}
+      >
         <div className={styles.heroImage}>
           <Image
             src={props.project.heroImage}
