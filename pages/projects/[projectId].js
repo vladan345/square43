@@ -11,14 +11,19 @@ import Imunoshop from "./Imunoshop";
 import Head from "next/head";
 import ProjectHero from "../../components/ProjectHero";
 import Outro from "../../components/Outro";
+import { useLoading } from "../../utils/hooks/LoadingContext";
 
 function Project() {
   const router = useRouter();
+  const { setLoading } = useLoading();
   const { projectId } = router.query;
   const [project, setProject] = useState();
 
   useEffect(() => {
     setProject(getCurrentProject(projectId));
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
   }, [projectId]);
   const renderPage = () => {
     switch (projectId) {

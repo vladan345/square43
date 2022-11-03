@@ -3,34 +3,18 @@ import Link from "next/link";
 import styles from "../styles/component-css/Header.module.css";
 import Image from "next/image";
 import MobileMenu from "./MobileMenu";
-import { DispatchCursor, CURSOR_COLOR } from "haspr-cursor";
+import { CURSOR_COLOR } from "haspr-cursor";
+import { useLoading } from "../utils/hooks/LoadingContext";
 //All comments are for page transition delay
 import { useRouter } from "next/router";
 
 export default function Header() {
-  const dispatch = DispatchCursor();
-  const [blend, setBlend] = useState(false);
   const [opened, setOpened] = useState(false);
   const router = useRouter();
-
-  //used for adding blend mode on scroll
-  //add this to header classname
-  //${blend ? styles.blend : ""}
-
-  // useEffect(() => {
-  //   if (typeof window !== "undefined") {
-  //     window.addEventListener("scroll", () => setBlend(window.scrollY > 200));
-  //   }
-  // }, []);
-
-  // Add to onClick on the element you want to delay
-  const handleClick = (e) => {
-    e.preventDefault();
-    setTimeout(() => {
-      router.push("/services");
-    }, 1000);
-  };
+  const { setLoading } = useLoading();
   const elem = useRef();
+
+  //Mobile menu
   useEffect(() => {
     if (opened) {
       elem.current.classList.add(`${styles.opened}`);
@@ -41,7 +25,28 @@ export default function Header() {
       ? (document.body.style.overflow = "hidden")
       : (document.body.style.overflow = "auto");
   }, [opened]);
+  //***************************** */
 
+  //Link delay & page transition
+  const handleClick = (e) => {
+    setLoading(true);
+    e.preventDefault();
+    let link = e.currentTarget.attributes[1].value;
+    setTimeout(() => {
+      if (link === "/services" || link === "/projects") {
+        router.push(link);
+      } else if (link === "/") {
+        router.push(link);
+        setOpened(false);
+        setLoading(false);
+      } else {
+        router.push(link);
+        setLoading(false);
+      }
+    }, 2000);
+  };
+
+  //Mobile menu
   const openedStyle = {
     height: "100vh",
     padding: "30px 20px 80px 20px",
@@ -59,6 +64,7 @@ export default function Header() {
       element.style.pointerEvents = "auto";
     }, 600);
   };
+  //********************* */
   return (
     <div className={styles.HeaderWrap}>
       {opened ? (
@@ -70,6 +76,7 @@ export default function Header() {
         <div className={`wrapper ${styles.wrapper}`}>
           <div className={styles.leftNav}>
             <Link
+              onClick={handleClick}
               onMouseEnter={() => CURSOR_COLOR("WHITE")}
               onMouseLeave={() => CURSOR_COLOR("END")}
               className={styles.headerLink}
@@ -92,18 +99,19 @@ export default function Header() {
             onMouseEnter={() => CURSOR_COLOR("WHITE")}
             onMouseLeave={() => CURSOR_COLOR("END")}
             className={styles.logo}
-            onClick={() => setOpened(false)}
+            onClick={handleClick}
           >
             <Image
               src="/logo.svg"
               alt="square43 logo"
-              width="45"
-              height="45"
+              width="40"
+              height="40"
               priority
             />
           </Link>
           <div className={styles.rightNav}>
             <Link
+              onClick={handleClick}
               href="/contact"
               onMouseEnter={() => CURSOR_COLOR("WHITE")}
               onMouseLeave={() => CURSOR_COLOR("END")}
@@ -113,6 +121,7 @@ export default function Header() {
             </Link>
 
             <Link
+              onClick={handleClick}
               href="/about"
               onMouseEnter={() => CURSOR_COLOR("WHITE")}
               onMouseLeave={() => CURSOR_COLOR("END")}

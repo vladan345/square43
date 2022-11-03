@@ -1,10 +1,14 @@
+import React from "react";
 import styles from "../styles/component-css/Spinner.module.css";
+import { useLoading } from "../utils/hooks/LoadingContext";
 
-function Spinner(props) {
+function Spinner() {
+  const { loading } = useLoading();
+
   return (
     <div
       className={`${styles.Spinner} ${
-        props.visible ? styles.isOpen : styles.fadeout
+        loading ? styles.isOpen : styles.fadeout
       }`}
     >
       <div className={styles.spinnerSquare}>

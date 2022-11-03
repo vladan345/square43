@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from "react";
 import ServiceModule from "../../components/ServiceCard";
-import Spinner from "../../components/Spinner";
 import { getAllServices } from "../../utils/data/getData";
-
+import { useLoading } from "../../utils/hooks/LoadingContext";
 import styles from "../../styles/section-css/services/ServiceList.module.css";
 
 function ServiceList() {
   const [services, setServices] = useState([]);
-  const [isLoading, setLoading] = useState(false);
-
+  const { setLoading } = useLoading();
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
@@ -33,11 +31,8 @@ function ServiceList() {
           Our services range from all things digital to artistry you can feel.
         </p>
         <section className={styles.section}>
-          {isLoading ? (
-            <Spinner visible={true} />
-          ) : (
+          {services && (
             <>
-              <Spinner visible={false} />
               {services.map((service, key) => {
                 return <ServiceModule key={key} service={service} />;
               })}

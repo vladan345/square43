@@ -24,7 +24,6 @@ function More() {
         setIndex(index + 1);
       }
     }, 6000);
-    console.log("fired");
     return () => clearInterval(interval); //This is a cleanup function
   }, [index]);
 

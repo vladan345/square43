@@ -4,22 +4,23 @@ import {
   getProjectsByService,
   getCurrentService,
 } from "../../utils/data/getData";
-import Spinner from "../../components/Spinner";
+
 import ProjectCard from "../../components/ProjectCard";
 import styles from "../../styles/section-css/projects/Projects.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 
+import { useLoading } from "../../utils/hooks/LoadingContext";
+
 function Service() {
   const router = useRouter();
   const [projects, setProjects] = useState([]);
   const [currentService, setCurrentService] = useState();
-  const [isLoading, setLoading] = useState(false);
+  const { setLoading } = useLoading();
   const { service } = router.query;
 
   useEffect(() => {
-    setLoading(true);
     setTimeout(() => {
       setCurrentService(getCurrentService(service));
       setProjects(getProjectsByService(service));
@@ -40,11 +41,8 @@ function Service() {
               <p className={styles.subheading}>{currentService?.description}</p>
 
               <section className={styles.projectGrid}>
-                {isLoading ? (
-                  <Spinner visible={true} />
-                ) : (
+                {projects && (
                   <>
-                    <Spinner visible={false} />
                     {projects.map((project, key) => {
                       let counter = 500;
                       const style = {
