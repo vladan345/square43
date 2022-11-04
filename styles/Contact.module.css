@@ -65,6 +65,7 @@
     letter-spacing: normal;
     width: auto;
     margin-bottom: 40px;
+    line-height: 1;
   }
   .subheading {
     font-size: 30px;
@@ -73,6 +74,7 @@
   }
   .row {
     flex-direction: column;
+    width: 100%;
   }
   .col:last-of-type {
     margin-left: 0;

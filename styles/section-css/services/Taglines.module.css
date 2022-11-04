@@ -19,3 +19,18 @@
 .tagline .gradientText {
   -webkit-text-fill-color: transparent;
 }
+@media (max-width: 1350px) {
+  .tagline {
+    width: 100%;
+    font-size: 60px;
+  }
+  .tagline br {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .tagline {
+    font-size: 32px;
+    letter-spacing: 0px;
+  }
+}

@@ -35,6 +35,11 @@
   background: url("/images/stroke.svg") no-repeat 0 10px;
   background-size: 99% 100%;
 }
+@media (max-width: 1350px) {
+  .statement {
+    width: 100%;
+  }
+}
 @media (max-width: 985px) {
   .statement {
     font-size: 30px;
