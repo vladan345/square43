@@ -15,7 +15,7 @@ function SocialMedia() {
             posts regularly.
           </p>
 
-          <div style={{ marginTop: 120 }}>
+          <div className={styles.mobileImageWrap}>
             <Image
               src="/images/northprim/northprim-phone.webp"
               alt="instagram mockup Northprim feed"

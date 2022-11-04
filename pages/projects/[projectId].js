@@ -50,12 +50,12 @@ function Project() {
       </Head>
       <div>
         {project && (
-          <>
+          <div style={{ overflow: "hidden" }}>
             <ProjectHero project={project} />
             {renderPage()}
             <Result project={project} />
             <Outro projectId={projectId} />
-          </>
+          </div>
         )}
       </div>
     </>

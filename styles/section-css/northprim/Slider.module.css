@@ -12,3 +12,12 @@
   transform: translateY(-50%);
   top: 50%;
 }
+@media (max-width: 1500px) {
+  .shirt {
+    width: 450px;
+    height: 550px;
+  }
+  .stripe {
+    height: 300px;
+  }
+}

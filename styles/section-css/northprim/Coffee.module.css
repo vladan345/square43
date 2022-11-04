@@ -3,6 +3,7 @@
   min-height: 800px;
   padding-top: 200px;
   padding-bottom: 140px;
+  overflow: hidden;
 }
 .row {
   display: flex;
@@ -32,4 +33,32 @@
   max-width: 440px;
   margin-bottom: 20px;
   font-size: 18px;
+}
+@media (max-width: 1350px) {
+  .merchImages {
+    transform: scale(0.65);
+  }
+}
+@media (max-width: 900px) {
+  .Coffee {
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
+  .coffeeContent {
+    margin: 0;
+    width: auto;
+  }
+  .description {
+    margin: 0;
+    max-width: 450px;
+  }
+  .row {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 515px) {
+  .merchImages {
+    transform: scale(0.5);
+    margin-left: 0;
+  }
 }

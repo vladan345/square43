@@ -3,10 +3,12 @@
   background: #d9d9d9;
   position: relative;
   z-index: 3;
+  overflow: hidden;
 }
 .wrapper {
   display: flex;
   padding: 80px 0;
+  max-width: 1360px;
 }
 .video {
   width: 520px;
@@ -49,4 +51,42 @@
   position: relative;
   transition: 0.3s;
   overflow: hidden;
+}
+@media (max-width: 1410px) {
+  .video {
+    width: 400px;
+  }
+  .wrapper {
+    width: 100%;
+    max-width: none;
+    padding: 80px 20px;
+  }
+}
+@media (max-width: 1100px) {
+  .video {
+    width: 300px;
+  }
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    max-width: 500px;
+    flex-direction: column-reverse;
+  }
+  .name {
+    font-size: 32px;
+  }
+  .slogan {
+    font-size: 32px;
+  }
+  .video {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper {
+    max-width: none;
+    width: 100%;
+  }
 }

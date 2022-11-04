@@ -68,12 +68,7 @@ p {
 .readMore:hover .icon {
   margin-left: 30px;
 }
-.northprim-color {
-  color: #ccff00;
-}
-.ownnew-color {
-  color: #f5ad52;
-}
+
 .inspect-code {
   color: #000;
   font-size: 16px;
@@ -111,18 +106,8 @@ i {
   height: 50px;
   background: white;
 }
-
-ul.splide__pagination li {
-  margin: 20px 7px;
-}
-ul.splide__pagination li button {
-  background: white;
-  width: 7px;
-  height: 7px;
-}
-ul.splide__pagination li .is-active {
-  background: black;
-  transform: scale(1);
+.splide__slide {
+  text-align: center;
 }
 .loading {
   animation: heightIn 1s forwards;

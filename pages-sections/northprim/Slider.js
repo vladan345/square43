@@ -6,35 +6,58 @@ import Image from "next/image";
 import styles from "../../styles/section-css/northprim/Slider.module.css";
 
 function Slider() {
+  const checkResponsive = () => {
+    if (window.innerWidth <= 900) {
+      console.log("yes");
+      return {
+        fixedWidth: "100%",
+        speed: 2000,
+        gap: 100,
+        perPage: 1,
+        type: "loop",
+        perMove: 1,
+        focus: "center",
+        arrows: false,
+        autoplay: true,
+        interval: 4000,
+        pauseOnHover: false,
+        easing: "ease-in-out",
+        pagination: false,
+        omitEnd: true,
+        trimSpace: "move",
+      };
+    } else {
+      return {
+        fixedWidth: "35%",
+        speed: 2000,
+        gap: 100,
+        perPage: 3,
+        type: "loop",
+        perMove: 1,
+        focus: "center",
+        arrows: false,
+        autoplay: true,
+        interval: 4000,
+        pauseOnHover: false,
+        easing: "ease-in-out",
+        pagination: false,
+        omitEnd: true,
+        trimSpace: "move",
+      };
+    }
+  };
+
   return (
     <div className={styles.Slider}>
       <div className={styles.stripe}></div>
-      <Splide
-        aria-label="Northprim Merch Slider"
-        options={{
-          fixedWidth: "35%",
-          speed: 2000,
-          gap: 100,
-          perPage: 3,
-          type: "loop",
-          perMove: 1,
-          focus: "center",
-          arrows: false,
-          autoplay: true,
-          interval: 4000,
-          pauseOnHover: false,
-          easing: "ease-in-out",
-          pagination: false,
-          omitEnd: true,
-          trimSpace: "move",
-        }}
-      >
+      <Splide aria-label="Northprim Merch Slider" options={checkResponsive()}>
         <SplideSlide>
           <Image
             width={650}
             height={800}
             src="/images/northprim/1.png"
             alt="Shirt 1"
+            className={styles.shirt}
           />
         </SplideSlide>
         <SplideSlide>
@@ -43,6 +66,7 @@ function Slider() {
             height={800}
             src="/images/northprim/2.png"
             alt="Shirt 2"
+            className={styles.shirt}
           />
         </SplideSlide>
         <SplideSlide>
@@ -51,6 +75,7 @@ function Slider() {
             height={800}
             src="/images/northprim/3.png"
             alt="Shirt 3"
+            className={styles.shirt}
           />
         </SplideSlide>
         <SplideSlide>
@@ -59,6 +84,7 @@ function Slider() {
             height={800}
             src="/images/northprim/4.png"
             alt="Shirt 4"
+            className={styles.shirt}
           />
         </SplideSlide>
         <SplideSlide>
@@ -66,7 +92,8 @@ function Slider() {
             width={650}
             height={800}
             src="/images/northprim/5.png"
-            alt="Shirt 2"
+            alt="Shirt 5"
+            className={styles.shirt}
           />
         </SplideSlide>
         <SplideSlide>
@@ -74,7 +101,8 @@ function Slider() {
             width={650}
             height={800}
             src="/images/northprim/6.png"
-            alt="Shirt 2"
+            alt="Shirt 6"
+            className={styles.shirt}
           />
         </SplideSlide>
         <SplideSlide>
@@ -82,7 +110,8 @@ function Slider() {
             width={650}
             height={800}
             src="/images/northprim/7.png"
-            alt="Shirt 2"
+            alt="Shirt 7"
+            className={styles.shirt}
           />
         </SplideSlide>
       </Splide>

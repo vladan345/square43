@@ -21,3 +21,11 @@
 .gradientText {
   -webkit-text-fill-color: transparent;
 }
+@media (max-width: 900px) {
+  .Result {
+    padding: 0 0 80px 0;
+  }
+  .description {
+    font-size: 30px;
+  }
+}

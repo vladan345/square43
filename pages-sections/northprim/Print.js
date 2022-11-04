@@ -20,6 +20,7 @@ function Print() {
           alt="Northprim Code or die sticker print"
           width={562}
           height={550}
+          className={styles.sticker}
         />
       </div>
     </div>
