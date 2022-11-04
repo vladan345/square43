@@ -19,7 +19,7 @@
 .bannerImage {
   position: absolute;
   right: 0;
-  bottom: -100px;
+  bottom: 0;
 }
 .text {
   position: absolute;

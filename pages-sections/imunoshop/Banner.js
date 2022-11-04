@@ -15,14 +15,14 @@ function Banner() {
         className={styles.splash}
       />
 
-      <Parallax speed={10} className={styles.bannerImage}>
-        <Image
-          src="/images/imunoshop/banner.png"
-          alt="Imunoshop Banner female"
-          width={981}
-          height={927}
-        />
-      </Parallax>
+      <Image
+        className={styles.bannerImage}
+        src="/images/imunoshop/banner.png"
+        alt="Imunoshop Banner female"
+        width={981}
+        height={927}
+      />
+
       <div className={styles.wrapper}>
         <Image
           src="/images/imunoshop/bannerText.svg"

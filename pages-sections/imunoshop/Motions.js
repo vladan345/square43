@@ -15,7 +15,7 @@ function Motions() {
             <source src="/images/imunoshop/motion2.mp4" type="video/mp4" />
           </video>
           <video autoPlay muted loop className={styles.video}>
-            <source src="/images/imunoshop/motion2.mp4" type="video/mp4" />
+            <source src="/images/imunoshop/motion3.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
