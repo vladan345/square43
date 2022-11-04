@@ -72,16 +72,16 @@ function CoreThemes() {
                 <Image
                   src="/images/northprim/S43_NP_Keyboard.png"
                   alt="Northprim woman with a keyboard"
-                  width="560"
-                  height="728"
+                  fill
+                  style={{ objectFit: "contain" }}
                 />
               </Parallax>
               <div className={styles.frame}>
                 <Image
                   src="/images/northprim/picture_frame.png"
                   alt="frame Northprim"
-                  width="560"
-                  height="685"
+                  fill
+                  className={styles.frameImage}
                 />
               </div>
             </div>

@@ -16,7 +16,7 @@ function Print() {
           </div>
         </div>
         <Image
-          src="/images/northprim/print-sticker.webp"
+          src="/images/northprim/print-sticker.png"
           alt="Northprim Code or die sticker print"
           width={562}
           height={550}

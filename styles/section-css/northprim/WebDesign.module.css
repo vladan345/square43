@@ -47,9 +47,76 @@
 }
 .mobileImage {
   position: absolute;
-  top: -70%;
+  top: -140%;
   left: 0;
 }
 .colImage {
   position: relative;
+}
+@media (max-width: 1530px) {
+  .desktopMockupImage {
+    height: 700px;
+    right: -30%;
+  }
+  .desktopMockupImage img {
+    object-fit: contain;
+    height: 700px;
+  }
+}
+@media (max-width: 1090px) {
+  .desktopMockupImage {
+    height: 600px;
+  }
+  .desktopMockupImage img {
+    height: 600px;
+  }
+  .mobile {
+    padding-bottom: 200px;
+    height: auto;
+  }
+  .mobileImage {
+    top: -300%;
+  }
+  .mobileImage img {
+    width: 300px;
+    object-fit: contain;
+  }
+}
+@media (max-width: 900px) {
+  .wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+  .desktopMockupImage {
+    right: -20%;
+    top: 17%;
+  }
+  .col {
+    width: 100%;
+  }
+  .desktop .col:first-of-type {
+    padding-bottom: 400px;
+  }
+  .mobile {
+    height: 500px;
+    padding: 240px 0 80px 0;
+  }
+  .colImage {
+    top: -200%;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+  .mobileImage img {
+    width: 220px;
+    height: 362px;
+  }
+  .mobile .col:last-of-type {
+    margin-top: 80px;
+  }
+  .mobile .description {
+    margin-bottom: 0;
+    margin-right: 0;
+    max-width: 500px;
+    width: 100%;
+  }
 }

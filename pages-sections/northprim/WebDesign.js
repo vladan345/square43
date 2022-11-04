@@ -45,14 +45,6 @@ function WenDesign() {
           </div>
         </div>
         <div className={styles.desktopWrap} ref={ref}>
-          {/*THIS IS MOVING WHILE SCROLLING*/}
-          {/* <Parallax
-              translateX={["0px", "-300px"]}
-              translateY={["0px", "-300px"]}
-              className="desktop-image"
-            >
-              <img src={desktopSlide} alt="Desktop mockup slides" />
-            </Parallax> */}
           <div
             className={`${styles.desktopImage} ${styles.desktopMockupImage}`}
             ref={desktopMockup}

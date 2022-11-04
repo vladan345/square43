@@ -12,13 +12,34 @@
   height: 100%;
 }
 .wave {
-  width: 100%;
+  width: 1920px;
+  height: 995px;
   position: absolute;
   bottom: -50%;
-  left: -10%;
+  left: -20%;
 }
 .star {
   position: absolute;
   top: 50px;
   right: 10%;
+}
+@media (max-width: 900px) {
+  .Parallax {
+    height: 390px;
+  }
+  .wave {
+    width: 1000px;
+    height: 600px;
+    left: -300px;
+  }
+  .wave img {
+    object-fit: contain;
+  }
+  .star {
+    right: 20px;
+  }
+  .star img {
+    width: 150px;
+    height: 150px;
+  }
 }

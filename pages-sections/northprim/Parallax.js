@@ -18,8 +18,9 @@ function Paralax() {
         <Image
           src="/images/northprim/NP_The_Wave.png"
           alt="Northprim wave art parallax"
-          width={1920}
-          height={995}
+          // width={1920}
+          // height={995}
+          fill
         />
       </Parallax>
 
