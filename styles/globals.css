@@ -178,10 +178,11 @@ i {
   opacity: 0;
 }
 #step6 {
-  opacity: 0;
+  opacity: 1;
   width: 400px;
   height: 400px;
   right: 100px;
+  background: orange;
   transform: translate(0, -50%) rotateZ(0);
 }
 @keyframes moreLess {
