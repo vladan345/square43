@@ -123,7 +123,7 @@ export default function Header() {
 
             <Link
               onClick={handleClick}
-              href="/about"
+              href="/inside"
               onMouseEnter={() => CURSOR_COLOR("WHITE")}
               onMouseLeave={() => CURSOR_COLOR("END")}
               className={styles.headerLink}
