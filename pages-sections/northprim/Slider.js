@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
@@ -6,11 +6,12 @@ import Image from "next/image";
 import styles from "../../styles/section-css/northprim/Slider.module.css";
 
 function Slider() {
-  const checkResponsive = () => {
+  const [options, setOptions] = useState({});
+  useEffect(() => {
     if (typeof window !== "undefined") {
       if (window.innerWidth <= 900) {
         console.log("yes");
-        return {
+        setOptions({
           fixedWidth: "100%",
           speed: 2000,
           gap: 100,
@@ -26,9 +27,9 @@ function Slider() {
           pagination: false,
           omitEnd: true,
           trimSpace: "move",
-        };
+        });
       } else {
-        return {
+        setOptions({
           fixedWidth: "35%",
           speed: 2000,
           gap: 100,
@@ -44,15 +45,15 @@ function Slider() {
           pagination: false,
           omitEnd: true,
           trimSpace: "move",
-        };
+        });
       }
     }
-  };
+  }, []);
 
   return (
     <div className={styles.Slider}>
       <div className={styles.stripe}></div>
-      <Splide aria-label="Northprim Merch Slider" options={checkResponsive()}>
+      <Splide aria-label="Northprim Merch Slider" options={options}>
         <SplideSlide>
           <Image
             width={650}
