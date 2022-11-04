@@ -128,7 +128,7 @@ export default function Header() {
               onMouseLeave={() => CURSOR_COLOR("END")}
               className={styles.headerLink}
             >
-              About
+              Inside
             </Link>
           </div>
           <div className={styles.hamNav} onClick={handleToggle} ref={elem}>
