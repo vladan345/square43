@@ -7,43 +7,45 @@ import styles from "../../styles/section-css/northprim/Slider.module.css";
 
 function Slider() {
   const checkResponsive = () => {
-    if (window.innerWidth <= 900) {
-      console.log("yes");
-      return {
-        fixedWidth: "100%",
-        speed: 2000,
-        gap: 100,
-        perPage: 1,
-        type: "loop",
-        perMove: 1,
-        focus: "center",
-        arrows: false,
-        autoplay: true,
-        interval: 4000,
-        pauseOnHover: false,
-        easing: "ease-in-out",
-        pagination: false,
-        omitEnd: true,
-        trimSpace: "move",
-      };
-    } else {
-      return {
-        fixedWidth: "35%",
-        speed: 2000,
-        gap: 100,
-        perPage: 3,
-        type: "loop",
-        perMove: 1,
-        focus: "center",
-        arrows: false,
-        autoplay: true,
-        interval: 4000,
-        pauseOnHover: false,
-        easing: "ease-in-out",
-        pagination: false,
-        omitEnd: true,
-        trimSpace: "move",
-      };
+    if (typeof window !== "undefined") {
+      if (window.innerWidth <= 900) {
+        console.log("yes");
+        return {
+          fixedWidth: "100%",
+          speed: 2000,
+          gap: 100,
+          perPage: 1,
+          type: "loop",
+          perMove: 1,
+          focus: "center",
+          arrows: false,
+          autoplay: true,
+          interval: 4000,
+          pauseOnHover: false,
+          easing: "ease-in-out",
+          pagination: false,
+          omitEnd: true,
+          trimSpace: "move",
+        };
+      } else {
+        return {
+          fixedWidth: "35%",
+          speed: 2000,
+          gap: 100,
+          perPage: 3,
+          type: "loop",
+          perMove: 1,
+          focus: "center",
+          arrows: false,
+          autoplay: true,
+          interval: 4000,
+          pauseOnHover: false,
+          easing: "ease-in-out",
+          pagination: false,
+          omitEnd: true,
+          trimSpace: "move",
+        };
+      }
     }
   };
 
