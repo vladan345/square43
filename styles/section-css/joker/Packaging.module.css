@@ -7,10 +7,11 @@
   max-width: 1360px;
   margin: 0 auto;
   height: 100%;
+  padding: 0 20px;
 }
 .jokic {
   position: absolute;
-  bottom: -20%;
+  bottom: -30%;
 }
 .contentWrap {
   display: flex;
@@ -39,4 +40,60 @@
 }
 .right {
   right: 0;
+}
+@media (max-width: 1170px) {
+  .can img {
+    transform: scale(0.6);
+  }
+  .left {
+    right: 45%;
+  }
+  .right {
+    right: -10%;
+  }
+}
+@media (max-width: 900px) {
+  .jokic {
+    display: none;
+  }
+  .contentWrap {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 460px;
+  }
+  .col {
+    width: 100%;
+  }
+  .col:first-of-type {
+    margin-bottom: 80px;
+  }
+  .canWrap {
+    margin-top: -100px;
+  }
+  .left {
+    top: -40px;
+  }
+  .Packaging {
+    padding-bottom: 520px;
+  }
+}
+@media (max-width: 500px) {
+  .Packaging {
+    padding-bottom: 520px;
+  }
+  .contentWrap {
+    max-width: 500px;
+    width: auto;
+  }
+  .can {
+    transform: translateX(-50%);
+  }
+  .left {
+    left: -30%;
+    right: auto;
+  }
+  .right {
+    right: auto;
+    left: 10%;
+  }
 }

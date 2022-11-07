@@ -31,7 +31,10 @@ function contact() {
                   +381 60 333 94 93
                 </a>
                 <p className={styles.preheading}>Maybe drup us a line</p>
-                <a className={styles.titleLink} href="mailto:info@square43.com">
+                <a
+                  className={styles.titleLink}
+                  href="mailto:studio@square43.com"
+                >
                   studio@square43.com
                 </a>
               </div>

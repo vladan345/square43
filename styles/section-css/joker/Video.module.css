@@ -11,3 +11,27 @@
   transform: translate(-50%, -50%);
   left: 50%;
 }
+
+@media (max-width: 900px) {
+  .wrapper {
+    width: 100%;
+    padding: 0;
+    max-width: none;
+  }
+  .video {
+    padding: 0;
+  }
+  .Video {
+    height: 400px;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper {
+    width: 100%;
+    padding: 0;
+    max-width: none;
+  }
+  .video {
+    width: 150%;
+  }
+}

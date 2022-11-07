@@ -10,7 +10,7 @@ import Skate from "../../pages-sections/northprim/Skate";
 import CoreThemes from "../../pages-sections/northprim/CoreThemes";
 import Parallax from "../../pages-sections/northprim/Parallax";
 import WebDesign from "../../pages-sections/northprim/WebDesign";
-// import ScrollSequence from "../../pages-sections/northprim/ScrollSequence";
+import ScrollSequence from "../../pages-sections/northprim/ScrollSequence";
 import WebDevelopment from "../../pages-sections/northprim/WebDevelopment";
 import SocialMedia from "../../pages-sections/northprim/SocialMedia";
 import Print from "../../pages-sections/northprim/Print";
@@ -29,7 +29,7 @@ function Northprim() {
         <CoreThemes />
         <Parallax />
         <WebDesign />
-        {/* <ScrollSequence /> */}
+        <ScrollSequence />
         <WebDevelopment />
         <SocialMedia />
         <Print />

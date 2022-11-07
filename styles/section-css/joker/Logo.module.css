@@ -25,3 +25,47 @@
   line-height: 1.5;
   font-size: 16px;
 }
+@media (max-width: 1360px) {
+  .logo img {
+    width: 100%;
+    height: auto;
+  }
+  .content {
+    padding-left: 40px;
+  }
+  .logoWrap {
+    padding-top: 10%;
+  }
+}
+@media (max-width: 1040px) {
+  .logoWrap {
+    padding-top: 5%;
+  }
+}
+@media (max-width: 900px) {
+  .wrapper {
+    max-width: none;
+    width: 100%;
+    padding: 0 20px;
+  }
+  .logoWrap {
+    flex-direction: column-reverse;
+    padding-top: 80px;
+  }
+  .logo {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    padding-left: 0;
+  }
+  .content {
+    margin-bottom: 40px;
+    width: 460px;
+    margin: 0 auto 80px auto;
+    padding-left: 0;
+  }
+}
+@media (max-width: 500px) {
+  .content {
+    width: auto;
+  }
+}

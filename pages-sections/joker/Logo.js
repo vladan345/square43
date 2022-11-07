@@ -6,7 +6,7 @@ import { InView } from "react-intersection-observer";
 function Logo() {
   return (
     <div>
-      <div className="wrapper">
+      <div className={`${styles.wrapper} wrapper`}>
         <div className={styles.logoWrap}>
           <InView
             as="div"

@@ -73,6 +73,9 @@ function CoreThemes() {
                   src="/images/northprim/S43_NP_Keyboard.png"
                   alt="Northprim woman with a keyboard"
                   fill
+                  sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
                   style={{ objectFit: "contain" }}
                 />
               </Parallax>
@@ -81,6 +84,9 @@ function CoreThemes() {
                   src="/images/northprim/picture_frame.png"
                   alt="frame Northprim"
                   fill
+                  sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
                   className={styles.frameImage}
                 />
               </div>
