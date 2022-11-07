@@ -63,6 +63,9 @@
     margin: 0 auto 80px auto;
     padding-left: 0;
   }
+  .logoWrap {
+    padding-bottom: 80px;
+  }
 }
 @media (max-width: 500px) {
   .content {

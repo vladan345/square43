@@ -5,7 +5,7 @@ import { Parallax } from "react-scroll-parallax";
 function Pattern() {
   return (
     <div>
-      <div className="wrapper">
+      <div className={`${styles.wrapper} wrapper`}>
         <div className={styles.patternFlex}>
           <div className={styles.content}>
             <p className={styles.description}>

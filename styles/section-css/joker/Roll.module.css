@@ -1,7 +1,6 @@
-.rollWrap {
+.rollFlex {
   display: flex;
-  align-items: flex-end;
-  width: 66%;
+  padding: 0 0 160px 0;
 }
 .rollingWrap {
   position: relative;
@@ -9,9 +8,10 @@
   width: 200px;
   transform: translateX(-300px);
 }
-.rollFlex {
+.rollWrap {
   display: flex;
-  padding: 0 0 160px 0;
+  align-items: flex-end;
+  width: 66%;
 }
 .shadow {
   position: absolute;
@@ -48,4 +48,36 @@
 .description {
   line-height: 1.5;
   font-size: 16px;
+}
+@media (max-width: 1360px) {
+  .rollingWrap {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .rollFlex {
+    flex-direction: column-reverse;
+  }
+  .content {
+    width: 100%;
+    padding-left: 0;
+  }
+  .rollWrap {
+    width: 100%;
+    margin-top: 80px;
+    margin-left: -20%;
+  }
+}
+@media (max-width: 500px) {
+  .rollWrap {
+    margin-left: -15%;
+  }
+  .large img {
+    width: 400px;
+    height: auto;
+  }
+  .mid img {
+    width: 300px;
+    height: auto;
+  }
 }

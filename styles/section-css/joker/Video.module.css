@@ -20,6 +20,8 @@
   }
   .video {
     padding: 0;
+    position: static;
+    transform: translate(0, 0);
   }
   .Video {
     height: 400px;
@@ -32,6 +34,6 @@
     max-width: none;
   }
   .video {
-    width: 150%;
+    width: 100%;
   }
 }

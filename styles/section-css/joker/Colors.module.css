@@ -30,3 +30,55 @@
   line-height: 1.5;
   font-size: 16px;
 }
+@media (max-width: 1270px) {
+  .colors {
+    flex-wrap: wrap;
+    align-items: center;
+    padding-right: 40px;
+  }
+  .color {
+    width: 25%;
+  }
+  .color:nth-of-type(odd) {
+    text-align: right;
+    width: 75%;
+  }
+  .color:nth-of-type(3),
+  .color:nth-of-type(4) {
+    margin-top: -15px;
+  }
+  .content {
+    padding-right: 0;
+  }
+}
+@media (max-width: 900px) {
+  .colorsWrap {
+    flex-direction: column;
+    padding-bottom: 80px;
+  }
+  .content {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  .colors {
+    width: 100%;
+    padding-right: 0;
+  }
+  .color {
+    width: 50%;
+  }
+  .color:nth-of-type(odd) {
+    text-align: center;
+    width: 50%;
+  }
+  .color:nth-of-type(3),
+  .color:nth-of-type(4) {
+    margin-top: 0;
+  }
+}
+@media (max-width: 500px) {
+  .color img {
+    width: 100%;
+    height: auto;
+  }
+}
