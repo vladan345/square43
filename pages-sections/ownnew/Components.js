@@ -33,6 +33,7 @@ function Components() {
               width={230}
               height={51}
               alt="button state Own new"
+              className={styles.button2}
             />
             <div className={styles.menuIcons}>
               <div className={styles.menuImage}>
@@ -56,6 +57,7 @@ function Components() {
             width={320}
             height={320}
             alt="Own new color scheme pallette"
+            className={styles.colors}
           />
         </div>
       </div>

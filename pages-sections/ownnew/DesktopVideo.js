@@ -4,7 +4,7 @@ function DesktopVideo() {
   return (
     <div className={styles.DesktopVideo}>
       <div className={styles.background}></div>
-      <div className="wrapper">
+      <div className={`${styles.wrapper} wrapper`}>
         <div className={styles.videoWrap}>
           <div className={styles.topBar}>
             <div className={`${styles.circle} ${styles.fill}`}></div>

@@ -23,3 +23,45 @@
   margin-left: 60px;
   margin-bottom: 40px;
 }
+@media (max-width: 1310px) {
+  .phones {
+    justify-content: flex-start;
+  }
+  .phone1 img {
+    width: 200px;
+    height: auto;
+  }
+  .phone1:first-of-type {
+    margin-right: 40px;
+  }
+}
+@media (max-width: 900px) {
+  .Mobile {
+    padding: 80px 0;
+  }
+  .phoneWrap {
+    flex-direction: column-reverse;
+  }
+  .textWrap {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  .description {
+    margin-left: 0;
+    width: 100%;
+    max-width: none;
+  }
+  .phones {
+    width: 100%;
+    margin-right: 0;
+    justify-content: center;
+  }
+}
+@media (max-width: 900px) {
+  .phone1 img {
+    width: 150px;
+  }
+  .phone1:first-of-type {
+    margin-right: 20px;
+  }
+}

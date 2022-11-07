@@ -44,3 +44,30 @@
   margin-bottom: -8px;
   object-fit: cover;
 }
+
+@media (max-width: 900px) {
+  .DesktopVideo {
+    padding: 0 0 80px 0;
+  }
+  .background {
+    display: none;
+  }
+  .wrapper {
+    max-width: none;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+  }
+  .topBar {
+    border-radius: 0;
+  }
+  .videoWrap {
+    border-radius: 0;
+    border: 0;
+  }
+}
+@media (max-width: 550px) {
+  .video {
+    width: 120%;
+    margin-left: -10%;
+  }
+}

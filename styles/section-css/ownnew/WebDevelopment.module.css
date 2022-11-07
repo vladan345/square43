@@ -64,3 +64,8 @@
   z-index: 1;
   position: relative;
 }
+@media (max-width: 1250px) {
+  .inspectWrap {
+    transform: scale(0.7);
+  }
+}
