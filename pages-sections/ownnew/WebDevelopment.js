@@ -234,6 +234,22 @@ function WebDevelopment() {
             </div>
           </div>
         </div>
+        <div className={styles.mobileScreen1}>
+          <Image
+            src="/images/ownnew/mobileScreen1.webp"
+            alt="Own new Home screen mobile"
+            width={350}
+            height={693}
+          />
+        </div>
+        <div className={styles.mobileScreen2}>
+          <Image
+            src="/images/ownnew/mobileScreen2.svg"
+            alt="Own new Home screen mobile"
+            width={360}
+            height={699}
+          />
+        </div>
         <div className={styles.row}>
           <div className={styles.wrapper}>
             <div className={styles.bottomText}>
