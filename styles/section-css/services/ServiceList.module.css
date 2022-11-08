@@ -6,7 +6,8 @@
 .section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background: radial-gradient(circle at 0 0, #7000ff, #0ff);
+  gap: 40px;
+  /* background: radial-gradient(circle at 0 0, #7000ff, #0ff); */
   margin: 0 -20px;
 }
 

@@ -23,7 +23,8 @@ function ServiceModule(props) {
       href={"/services/" + props.service.id}
       className={styles.ServiceModule}
     >
-      <div className="top">
+      <div className={styles.overlay}></div>
+      <div className={styles.top}>
         <h2 className={styles.title}>{props.service.name}</h2>
         <ul className={styles.list}>
           {props.service.list.map((listItem, key) => (

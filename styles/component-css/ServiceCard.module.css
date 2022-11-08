@@ -5,15 +5,34 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: white;
-  border: 20px #f8f8f8 solid;
+  color: #202020;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  width: 0;
+  height: 0;
+  border-radius: 0;
+  transition: all 0.5s;
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle at 0 0, #7000ff, #0ff);
+}
+.top {
+  position: relative;
+  z-index: 3;
 }
 .title {
   font-size: 48px;
   text-transform: capitalize;
   font-family: MatterBold;
   margin-bottom: 20px;
-  color: white;
+  color: #202020;
+  transition: all 0.5s;
 }
 .description {
   line-height: 1.5;
@@ -27,6 +46,7 @@
   line-height: 1.7;
   font-size: 22px;
   font-family: MatterRegular;
+  transition: 0.5s;
 }
 .link {
   color: #202020;
@@ -40,11 +60,28 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  transition: all 0.5s;
+}
+.icon {
+  filter: invert();
+  transition: 0.5s;
+}
+
+.ServiceModule:hover .overlay {
+  width: 145%;
+  height: 145%;
+  border-radius: 50%;
+}
+.ServiceModule:hover,
+.ServiceModule:hover .title,
+.ServiceModule:hover .link {
+  color: white;
+}
+.ServiceModule:hover .icon {
+  filter: none;
 }
 @media (max-width: 900px) {
-  .ServiceModule {
-    border: 10px #f8f8f8 solid;
-  }
   .title {
     font-size: 38px;
   }
