@@ -53,3 +53,39 @@
     transform: translateX(-100%);
   }
 }
+
+@media (max-width: 1350px) {
+  .planeWrap {
+    height: 700px;
+  }
+}
+@media (max-width: 900px) {
+  .planeWrap {
+    height: 390px;
+    margin-bottom: 80px;
+  }
+  .background img {
+    width: 900px;
+    height: auto;
+  }
+  .foreground img {
+    width: 900px;
+    height: auto;
+  }
+  .plane {
+    top: 80px;
+  }
+  .plane img {
+    width: 450px;
+    height: auto;
+  }
+  .suitcase {
+    width: 4900px;
+    height: auto;
+  }
+  .suitcase img {
+    width: 4900px;
+    height: auto;
+    margin-bottom: -10px;
+  }
+}

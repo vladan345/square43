@@ -3,3 +3,10 @@
   height: 100%;
   margin-bottom: 120px;
 }
+@media (max-width: 900px) {
+  .video {
+    width: 150%;
+    margin-left: -25%;
+    margin-bottom: 0;
+  }
+}

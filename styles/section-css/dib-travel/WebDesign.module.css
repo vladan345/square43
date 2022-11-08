@@ -1,3 +1,6 @@
+.title br {
+  display: none;
+}
 .WebDesign {
   padding: 120px 0 180px 0;
 }
@@ -10,4 +13,33 @@
 .textWrap {
   margin-top: 120px;
   display: flex;
+}
+@media (max-width: 900px) {
+  .WebDesign {
+    padding-bottom: 0;
+  }
+  .title br {
+    display: block;
+  }
+  .title {
+    width: 460px;
+    margin: 0 auto 60px auto;
+  }
+  .wrapper {
+    max-width: none;
+    width: 100%;
+  }
+  .videoWrap {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+  }
+  .textWrap {
+    margin: 80px auto;
+    max-width: 460px;
+    flex-direction: column;
+  }
+  .description:first-of-type {
+    margin-bottom: 40px;
+    margin-right: 0;
+  }
 }

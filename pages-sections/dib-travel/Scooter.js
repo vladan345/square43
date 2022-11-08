@@ -24,7 +24,7 @@ function Scooter() {
           </div>
           <div className={styles.col}></div>
         </div>
-        <div className={styles.slideWrap}>
+        <div className={styles.sliderWrap}>
           <Splide
             aria-label="Scooter location Slider"
             options={{
@@ -47,6 +47,7 @@ function Scooter() {
                 height={640}
                 src="/images/dib-travel/1.png"
                 alt="Location 1"
+                priority
               />
             </SplideSlide>
             <SplideSlide>
@@ -54,7 +55,8 @@ function Scooter() {
                 width={1920}
                 height={640}
                 src="/images/dib-travel/2.png"
-                alt="Location 1"
+                alt="Location 2"
+                priority
               />
             </SplideSlide>
             <SplideSlide>
@@ -62,7 +64,8 @@ function Scooter() {
                 width={1920}
                 height={640}
                 src="/images/dib-travel/3.png"
-                alt="Location 1"
+                alt="Location 3"
+                priority
               />
             </SplideSlide>
             <SplideSlide>
@@ -70,7 +73,8 @@ function Scooter() {
                 width={1920}
                 height={640}
                 src="/images/dib-travel/4.png"
-                alt="Location 1"
+                alt="Location 4"
+                priority
               />
             </SplideSlide>
           </Splide>

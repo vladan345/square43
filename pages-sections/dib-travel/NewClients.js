@@ -20,7 +20,7 @@ function NewClients() {
   }, [inView]);
   return (
     <div className={styles.NewClients}>
-      <div className="wrapper">
+      <div className={`${styles.wrapper} wrapper`}>
         <h2 className={styles.title}>Welcoming new clients</h2>
         <div className={styles.videoWrap}>
           <video autoPlay muted loop className={styles.video}>
@@ -30,13 +30,8 @@ function NewClients() {
             src="/images/dib-travel/dib-laptop.png"
             alt="Laptop frame with video in it"
             fill
+            className={styles.laptopImage}
           />
-          {/* <Image
-          src="/images/northprim/taglines.svg"
-          alt="Tagline placeholder"
-          width={1360}
-          height={720}
-        /> */}
         </div>
         <div className={styles.textWrap}>
           <p className={styles.description}>

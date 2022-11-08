@@ -65,10 +65,12 @@
   position: relative;
 }
 .mobileScreen1 {
+  display: none;
   text-align: center;
   margin-top: 80px;
 }
 .mobileScreen2 {
+  display: none;
   text-align: center;
   margin-top: 40px;
 }
@@ -100,7 +102,8 @@
   .inspectWrap {
     display: none;
   }
-  .mobileScreen1 {
+  .mobileScreen1,
+  .mobileScreen2 {
     display: block;
   }
   .WebDevelopment {
