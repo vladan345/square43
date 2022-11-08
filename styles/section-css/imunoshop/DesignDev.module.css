@@ -19,7 +19,9 @@
 .col:last-of-type .category {
   margin-bottom: 30px;
 }
-
+.color {
+  margin-bottom: 200px;
+}
 .category {
   font-size: 16px;
   color: #323232;
@@ -36,4 +38,63 @@
 .video {
   width: 100%;
   border-radius: 25px;
+}
+.colorMobile {
+  display: none;
+}
+.components {
+  margin-bottom: 200px;
+}
+.fonts {
+  margin-bottom: 200px;
+}
+@media (max-width: 900px) {
+  .DesignDev {
+    padding-bottom: 0;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .col {
+    width: 100%;
+  }
+  .col:last-of-type {
+    width: 100%;
+  }
+  .color {
+    margin-bottom: 80px;
+    display: none;
+  }
+  .description {
+    max-width: none;
+    width: 100%;
+  }
+  .colorMobile {
+    display: block;
+    margin-bottom: 80px;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+  }
+  .components {
+    margin-bottom: 80px;
+    width: 100%;
+    max-width: 330px;
+    height: auto;
+  }
+  .fonts {
+    margin-bottom: 80px;
+    width: 100%;
+    max-width: 330px;
+    height: auto;
+  }
+  .video {
+    border-radius: 0;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+  }
+  .videoWrapper {
+    width: 100%;
+    max-width: none;
+  }
 }

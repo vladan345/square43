@@ -19,7 +19,6 @@ function Posts() {
                   duration: 2,
                   ease: "power4",
                 });
-                console.log("Visible");
               }
             }}
           >
@@ -29,6 +28,13 @@ function Posts() {
               width={755}
               height={373}
               className={`${styles.postImage} post1`}
+            />
+            <Image
+              src="/images/imunoshop/mobilePost1.webp"
+              alt="Social media Imunoshop post 1"
+              width={370}
+              height={750}
+              className={`${styles.mobilePost1} post1`}
             />
           </InView>
           <div className={styles.paragraphs}>
@@ -65,6 +71,13 @@ function Posts() {
               width={755}
               height={373}
               className={`${styles.postImage} post2`}
+            />
+            <Image
+              src="/images/imunoshop/mobilePost2.webp"
+              alt="Social media Imunoshop post 2"
+              width={370}
+              height={750}
+              className={`${styles.mobilePost2} post2`}
             />
           </InView>
           <div className={styles.paragraphs}>

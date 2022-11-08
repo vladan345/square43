@@ -25,3 +25,31 @@
   position: absolute;
   top: 50%;
 }
+@media (max-width: 1035px) {
+  .videoWrap {
+    width: 700px;
+    height: 440px;
+  }
+  .video {
+    width: 581px;
+    height: 385px;
+  }
+}
+@media (max-width: 900px) {
+  .stripe {
+    display: none;
+  }
+  .videoWrap img {
+    display: none;
+  }
+  .videoWrap {
+    width: 100%;
+    height: auto;
+  }
+  .video {
+    width: 100%;
+    height: auto;
+    position: static;
+    transform: translate(0, 0);
+  }
+}

@@ -17,3 +17,43 @@
   opacity: 0;
   transform: translateY(150px);
 }
+.mobilePost1,
+.mobilePost2 {
+  opacity: 0;
+  transform: translateY(150px);
+  display: none;
+}
+@media (max-width: 1320px) {
+  .row {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .postImage {
+    width: 450px;
+    height: auto;
+  }
+  .paragraphs {
+    max-width: 400px;
+  }
+}
+@media (max-width: 900px) {
+  .row {
+    flex-direction: column-reverse;
+    margin-top: 100%;
+  }
+  .row:last-of-type {
+    flex-direction: column-reverse;
+    margin-top: 60px;
+  }
+  .postImage {
+    display: none;
+  }
+  .mobilePost1,
+  .mobilePost2 {
+    max-width: 370px;
+    height: auto;
+    width: 100%;
+    display: block;
+    margin-top: 80px;
+  }
+}

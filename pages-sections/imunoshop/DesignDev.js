@@ -16,7 +16,14 @@ function DesignDev() {
                 alt="Imunoshop color scheme"
                 width={500}
                 height={170}
-                style={{ marginBottom: 200 }}
+                className={styles.color}
+              />
+              <Image
+                src="/images/imunoshop/colorMobile2.svg"
+                alt="Imunoshop color scheme"
+                width={280}
+                height={390}
+                className={styles.colorMobile}
               />
               <h3 className={styles.category}>Components</h3>
               <Image
@@ -24,7 +31,7 @@ function DesignDev() {
                 alt="Imunoshop components from website"
                 width={337}
                 height={287}
-                style={{ marginBottom: 200 }}
+                className={styles.components}
               />
             </div>
             <div className={styles.col}>
@@ -34,11 +41,11 @@ function DesignDev() {
                 alt="Imunoshop fonts from website"
                 width={360}
                 height={233}
-                style={{ marginBottom: 200 }}
+                className={styles.fonts}
               />
               <p className={styles.description}>
                 Large sections without any congested paragraphs, only short,
-                to-the-point copy and optimized UX layout – that's how we
+                to-the-point copy and optimized UX layout - that's how we
                 approached web design for Imuno Shop.
               </p>
               <p className={styles.description}>
@@ -53,6 +60,8 @@ function DesignDev() {
             </div>
           </div>
         </div>
+      </div>
+      <div className={`${styles.videoWrapper} wrapper`}>
         <video autoPlay muted loop className={styles.video}>
           <source src="/images/imunoshop/imuno-phones.mp4" type="video/mp4" />
         </video>
