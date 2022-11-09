@@ -14,7 +14,7 @@
   width: 0;
   height: 0;
   border-radius: 0;
-  transition: all 0.5s;
+  transition: all 0.8s;
   position: absolute;
   z-index: 0;
   top: 50%;
@@ -46,7 +46,7 @@
   line-height: 1.7;
   font-size: 22px;
   font-family: MatterRegular;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 .link {
   color: #202020;
@@ -61,13 +61,25 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
-  transition: all 0.5s;
+  transition: all 0.8s;
 }
 .icon {
   filter: invert();
-  transition: 0.5s;
+  transition: 0.8s;
 }
-
+.open .overlay {
+  width: 145%;
+  height: 145%;
+  border-radius: 50%;
+}
+.open,
+.open .title,
+.open .link {
+  color: white;
+}
+.open .icon {
+  filter: none;
+}
 .ServiceModule:hover .overlay {
   width: 145%;
   height: 145%;

@@ -1,7 +1,7 @@
 .Services {
   background: #f8f8f8;
-  padding-top: 180px;
-  padding-bottom: 120px;
+
+  padding: 180px 20px 120px 20px;
 }
 .section {
   display: grid;
