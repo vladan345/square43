@@ -7,6 +7,20 @@
   height: 520px;
   transition: 0.7s;
 }
+.videoWrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  transition: 0.3s;
+}
+.video {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
 @media (max-width: 1350px) {
   .square {
     left: auto;

@@ -32,6 +32,11 @@ function Square(props) {
   }, [props.state]);
   return (
     <div className={styles.square} ref={square}>
+      <div className={`${styles.videoWrap} video1`}>
+        <video autoPlay muted loop className={styles.video}>
+          <source src="/images/square1.mp4" type="video/mp4" />
+        </video>
+      </div>
       <div className="imageWrap">
         <Image
           alt="Square 43 studio"

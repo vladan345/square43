@@ -140,10 +140,13 @@ i {
   background-color: rgb(119, 230, 255);
   right: 100px;
 }
+#step2 .video1 {
+  opacity: 0;
+}
 #step2 {
   background-color: rgb(222, 194, 255);
-  width: 300px !important;
-  height: 300px !important;
+  /* width: 300px !important;
+  height: 300px !important; */
   right: 10% !important;
   transform: translate(0, -50%) rotateZ(-180deg) !important;
 }
