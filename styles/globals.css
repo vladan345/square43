@@ -135,58 +135,79 @@ i {
 .mask:nth-of-type(even) .more {
   width: 20px;
 } */
-
+.video2 {
+  transform: rotate(180deg);
+}
+.video4 {
+  transform: rotate(180deg);
+}
+.video6 {
+  transform: rotate(-180deg);
+}
+.video1,
+.video2,
+.video3,
+.video4,
+.video5,
+.video6 {
+  opacity: 0;
+}
 #step1 {
   background-color: rgb(119, 230, 255);
   right: 100px;
 }
-#step2 .video1 {
-  opacity: 0;
+#step1 .video1 {
+  opacity: 1;
+}
+#step2 .video2 {
+  opacity: 1;
+}
+#step3 .video3 {
+  opacity: 1;
+}
+#step4 .video4 {
+  opacity: 1;
+}
+#step5 .video5 {
+  opacity: 1;
+}
+#step6 .video6 {
+  opacity: 1;
 }
 #step2 {
   background-color: rgb(222, 194, 255);
   /* width: 300px !important;
   height: 300px !important; */
   right: 10% !important;
+  width: 400px;
+  height: 400px;
   transform: translate(0, -50%) rotateZ(-180deg) !important;
 }
 #step3 {
   background-color: rgb(37, 45, 255);
-  width: 300px !important;
-  height: 300px !important;
-  right: 70% !important;
-  transform: translate(0, -50%) rotateZ(-180deg) !important;
+  /* width: 300px !important;
+  height: 300px !important; */
+  right: 100px !important;
+  transform: translate(0, -50%) rotateZ(0) !important;
 }
 #step4 {
   background-color: rgb(0, 191, 140);
   width: 400px;
   height: 400px;
   right: 100px;
-  transform: translate(0, -50%) rotateZ(0);
-}
-.imageWrap {
-  opacity: 0;
-  transition: 0.7s;
-  position: relative;
-  width: 100%;
-  height: 100%;
+  transform: translate(0, -50%) rotateZ(180deg);
 }
 #step5 {
   right: 200px;
 }
-#step5 .imageWrap {
-  opacity: 1;
-}
-#step6 .imageWrap {
-  opacity: 0;
-}
+
 #step6 {
   opacity: 1;
   width: 400px;
   height: 400px;
   right: 100px;
   background: orange;
-  transform: translate(0, -50%) rotateZ(0);
+  transform: translate(0, -50%) rotateZ(-180deg);
 }
 @keyframes moreLess {
   0% {

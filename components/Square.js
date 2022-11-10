@@ -37,16 +37,30 @@ function Square(props) {
           <source src="/images/square1.mp4" type="video/mp4" />
         </video>
       </div>
-      <div className="imageWrap">
-        <Image
-          alt="Square 43 studio"
-          src="/images/square4.webp"
-          fill
-          sizes="(max-width: 768px) 100vw,
-              (max-width: 1200px) 50vw,
-              33vw"
-          as="image"
-        />
+      <div className={`${styles.videoWrap} video2`}>
+        <video autoPlay muted loop className={styles.video}>
+          <source src="/images/square2.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div className={`${styles.videoWrap} video3`}>
+        <video autoPlay muted loop className={styles.video}>
+          <source src="/images/square3.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div className={`${styles.videoWrap} video4`}>
+        <video autoPlay muted loop className={styles.video}>
+          <source src="/images/square4.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div className={`${styles.videoWrap} video5`}>
+        <video autoPlay muted loop className={styles.video}>
+          <source src="/images/northprim/Northprim-hero.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div className={`${styles.videoWrap} video6`}>
+        <video autoPlay muted loop className={styles.video}>
+          <source src="/images/square6.mp4" type="video/mp4" />
+        </video>
       </div>
     </div>
   );

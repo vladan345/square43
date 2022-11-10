@@ -9,11 +9,11 @@ function OurServices() {
     <div className={styles.OurServices}>
       <div className={styles.bgImage}>
         <Image
-          src="/images/ripple.webp"
+          src="/images/starry-night.png"
           alt="Ripple background image"
-          fill={true}
-          style={{ objectFit: "cover" }}
+          fill
         />
+        <div className={styles.overlay}></div>
       </div>
       <div className={styles.wrapper}>
         <div className={styles.linkWrapMobile}>

@@ -3,18 +3,20 @@ import Image from "next/image";
 import Link from "next/link";
 import Square from "../../components/Square";
 import styles from "../../styles/section-css/home/Contact.module.css";
+import { Parallax } from "react-scroll-parallax";
 
 function Contact() {
   return (
     <div className={styles.Contact}>
-      <div className={styles.bgImage}>
-        <Image
-          src="/images/contact-background.webp"
-          alt="Waves background image"
-          fill={true}
-          style={{ objectFit: "cover" }}
-        />
-      </div>
+      <Parallax speed={20} className={styles.bgImage}>
+        <div>
+          <Image
+            src="/images/contact-background.jpg"
+            alt="Waves background image"
+            fill
+          />
+        </div>
+      </Parallax>
       <div className={styles.wrapper}>
         <div className={styles.linkWrapMobile}>
           <Link href="/contact" className="readMore">

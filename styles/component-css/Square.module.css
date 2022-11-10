@@ -20,6 +20,7 @@
   height: 100%;
   object-fit: cover;
   width: 100%;
+  transition: 0.3s;
 }
 @media (max-width: 1350px) {
   .square {
