@@ -45,13 +45,10 @@
   width: 100%;
 }
 .socials {
-  position: absolute;
-  bottom: 80px;
-  min-width: 316px;
+  max-width: 316px;
   display: flex;
   justify-content: space-between;
-  transform: translateX(-50%);
-  left: 50%;
+  margin: 80px auto 0 auto;
 }
 .socialLink {
   color: white;
