@@ -38,7 +38,6 @@ function ServiceList() {
               })}
             </>
           )}
-          <div className={styles.helper}></div>
         </section>
       </div>
     </div>

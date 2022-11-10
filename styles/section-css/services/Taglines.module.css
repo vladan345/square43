@@ -24,9 +24,6 @@
     width: 100%;
     font-size: 60px;
   }
-  .tagline br {
-    display: none;
-  }
 }
 @media (max-width: 900px) {
   .tagline {

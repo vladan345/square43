@@ -27,7 +27,7 @@ function ServiceModule(props) {
               onClick={handleClick}
               href={"/services/" + props.service.id}
               className={`${styles.ServiceModule} ${
-                inView ? styles.open : null
+                inView && window.innerWidth < 900 ? styles.open : null
               }`}
             >
               <div className={styles.overlay}></div>

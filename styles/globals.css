@@ -127,14 +127,14 @@ i {
   padding: 2px;
   transform: translateY(100%) skewX(-30px);
 }
+
 .more {
-  padding: 0;
+  padding: 2px;
 }
-.mask:nth-of-type(even) .word,
+/* .mask:nth-of-type(even) .word,
 .mask:nth-of-type(even) .more {
-  opacity: 0;
-  pointer-events: none;
-}
+  width: 20px;
+} */
 
 #step1 {
   background-color: rgb(119, 230, 255);

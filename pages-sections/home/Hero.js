@@ -51,11 +51,15 @@ export default function Hero() {
         <h1 className={styles.title}>Square43</h1>
         <p className={styles.stamp}>
           {stamps[index].split(/(\s+)/).map((word, key) => {
-            return (
-              <span key={key} className="mask">
-                <span className="word">{word == " " ? "I" : word}</span>
-              </span>
-            );
+            if (word == " ") {
+              return " ";
+            } else {
+              return (
+                <span key={key} className="mask">
+                  <span className="word">{word}</span>
+                </span>
+              );
+            }
           })}
         </p>
         {/* <Square image="/square-temp.webp" height={560} /> */}

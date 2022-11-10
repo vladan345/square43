@@ -1,6 +1,5 @@
 .Services {
-  background: #f8f8f8;
-
+  background: linear-gradient(#fff 0, #f8f8f8 40%);
   padding: 180px 20px 120px 20px;
 }
 .section {
@@ -11,10 +10,6 @@
   margin: 0 -20px;
 }
 
-.helper {
-  background: #f8f8f8;
-  display: none;
-}
 .title {
   font-size: 120px;
   margin: 0 0 25px 0;
@@ -39,9 +34,6 @@
   .section {
     grid-template-columns: repeat(2, 1fr);
   }
-  .helper {
-    display: block;
-  }
 }
 @media (max-width: 900px) {
   .Services {
@@ -65,8 +57,5 @@
   .section {
     grid-template-columns: repeat(1, 1fr);
     width: calc(100% + 20px);
-  }
-  .helper {
-    display: none;
   }
 }

@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: space-between;
   color: #202020;
-  background: white;
+  background: linear-gradient(#fff, #f8f8f8);
   position: relative;
   overflow: hidden;
 }
@@ -70,7 +70,6 @@
 .open .overlay {
   width: 145%;
   height: 145%;
-  border-radius: 50%;
 }
 .open,
 .open .title,
@@ -83,7 +82,6 @@
 .ServiceModule:hover .overlay {
   width: 145%;
   height: 145%;
-  border-radius: 50%;
 }
 .ServiceModule:hover,
 .ServiceModule:hover .title,

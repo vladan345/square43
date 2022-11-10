@@ -56,7 +56,8 @@ function Taglines() {
         <MotionAnimate speed={0.7} reset={true} animation="fadeInUp">
           <div style={{ height: "200vh" }}>
             <h2 className={styles.tagline}>
-              Authored over{" "}
+              Authored over
+              <br />
               <span className={styles.gradientText}>
                 <InView as="span">
                   {({ inView, ref }) => (
@@ -116,7 +117,8 @@ function Taglines() {
         <MotionAnimate speed={0.7} reset={true} animation="fadeInUp">
           <div style={{ height: "200vh" }}>
             <h2 className={styles.tagline}>
-              All done by using{" "}
+              All done by using
+              <br />
               <span className={styles.gradientText}>
                 <InView as="span">
                   {({ inView, ref }) => (

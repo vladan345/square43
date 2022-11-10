@@ -59,38 +59,54 @@ function More() {
           <p className={styles.tag}>Behind our Drive</p>
           <h2 className={styles.title}>
             {titles1[index].split(/(\s+)/).map((word, key) => {
-              return (
-                <span key={key} className="mask">
-                  <span className="more">{word == " " ? "I" : word}</span>
-                </span>
-              );
+              if (word == " ") {
+                return " ";
+              } else {
+                return (
+                  <span key={key} className="mask">
+                    <span className="more">{word}</span>
+                  </span>
+                );
+              }
             })}
           </h2>
           <p className={styles.subheading}>
             {descriptions1[index].split(/(\s+)/).map((word, key) => {
-              return (
-                <span key={key} className="mask">
-                  <span className="more">{word == " " ? "." : word}</span>
-                </span>
-              );
+              if (word == " ") {
+                return " ";
+              } else {
+                return (
+                  <span key={key} className="mask">
+                    <span className="more">{word}</span>
+                  </span>
+                );
+              }
             })}
           </p>
           <h2 className={styles.title}>
             {titles2[index].split(/(\s+)/).map((word, key) => {
-              return (
-                <span key={key} className="mask">
-                  <span className="more">{word == " " ? "I" : word}</span>
-                </span>
-              );
+              if (word == " ") {
+                return " ";
+              } else {
+                return (
+                  <span key={key} className="mask">
+                    <span className="more">{word}</span>
+                  </span>
+                );
+              }
             })}
           </h2>
           <p className={styles.subheading}>
             {descriptions2[index].split(/(\s+)/).map((word, key) => {
-              return (
-                <span key={key} className="mask">
-                  <span className="more">{word == " " ? "." : word}</span>
-                </span>
-              );
+              if (word == " ") {
+                return " ";
+              } else {
+                return (
+                  <span key={key} className="mask">
+                    <span className="more">{word}</span>
+                  </span>
+                );
+              }
             })}
           </p>
         </div>

@@ -1,8 +1,7 @@
 .More {
   overflow: hidden;
   height: 120vh;
-
-  background: #f8f8f8;
+  background: linear-gradient(#fff 75%, #f8f8f8 100%);
 }
 .wrapper {
   padding: 0 20px;
@@ -28,13 +27,14 @@
   font-family: MatterBold;
   font-size: 120px;
   letter-spacing: -4.8px;
-  line-height: 1;
+  line-height: 0.4;
   margin-bottom: 10px;
 }
 .subheading {
   font-size: 28px;
   margin-bottom: 60px;
   max-width: 600px;
+  line-height: 0.4;
 }
 .linkWrapMobile {
   display: none;
