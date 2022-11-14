@@ -2,17 +2,28 @@
   padding-bottom: 120px;
 }
 
-.image {
+.videoWrap {
   margin-bottom: 120px;
-  width: 100%;
+  width: 480px;
   height: 480px;
-  position: relative;
+  position: absolute;
+  right: 0;
+  z-index: 0;
+}
+.video {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  transition: 0.3s;
 }
 .tagline2 {
   font-size: 120px;
   line-height: 1;
   font-family: MatterBold, sans-serif;
   letter-spacing: -4.8px;
+  padding: 120px 0;
+  z-index: 1;
+  position: relative;
 }
 @media (max-width: 900px) {
   .Achievements {

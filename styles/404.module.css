@@ -1,0 +1,80 @@
+.NotFound {
+  padding: 220px 20px 150px 20px;
+}
+.titleWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 500px;
+  margin: 0 auto;
+}
+.four {
+  font-size: 263px;
+  line-height: 185px;
+  font-family: MatterBold;
+  display: inline-block;
+  position: absolute;
+  bottom: -11px;
+}
+.left {
+  z-index: 3;
+}
+.right {
+  z-index: 1;
+}
+.square {
+  display: inline-block;
+  margin: 0 30px;
+  position: relative;
+  z-index: 2;
+}
+.subheading {
+  font-size: 78px;
+  font-family: MatterBold;
+  text-align: center;
+  letter-spacing: -3.9px;
+  margin: 0;
+  opacity: 0;
+}
+.lost {
+  font-size: 46px;
+  letter-spacing: -1.36px;
+  font-family: MatterLight;
+  text-align: center;
+  margin-top: 15px;
+  margin: 0;
+  opacity: 0;
+}
+.notFoundButton {
+  justify-content: center;
+  margin-top: 40px;
+}
+@media (max-width: 900px) {
+  .wrapper {
+    width: 100% !important;
+  }
+  .subheading {
+    font-size: 48px;
+    letter-spacing: -2.3px;
+  }
+  .lost {
+    font-size: 28px;
+    letter-spacing: -0.84px;
+  }
+  .square {
+    width: 116px;
+    height: 116px;
+  }
+  .four {
+    font-size: 165px;
+    line-height: 116px;
+    bottom: -6%;
+  }
+  .titleWrap {
+    width: 100%;
+  }
+  .NotFound {
+    padding: 220px 0 150px 0;
+  }
+}

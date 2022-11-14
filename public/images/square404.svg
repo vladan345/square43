@@ -1,0 +1,14 @@
+<svg width="185" height="185" viewBox="0 0 185 185" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill="url(#f2w7uvijxa)" d="M0 0h185v185H0z"/>
+    <path fill="url(#laxclbvgdb)" d="M52.383 52.152h80v80h-80z"/>
+    <defs>
+        <radialGradient id="f2w7uvijxa" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(45) scale(261.63)">
+            <stop stop-color="#7000FF"/>
+            <stop offset="1" stop-color="#0FF"/>
+        </radialGradient>
+        <radialGradient id="laxclbvgdb" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(45.312 1.916 -1.09) scale(262.611)">
+            <stop stop-color="#0FF"/>
+            <stop offset="1" stop-color="#7000FF"/>
+        </radialGradient>
+    </defs>
+</svg>

@@ -7,13 +7,10 @@ function Achievements() {
   return (
     <div className={styles.Achievements}>
       <div className="wrapper">
-        <div className={styles.image}>
-          <Image
-            src="/images/service-image.png"
-            alt="gradient background"
-            fill={true}
-            style={{ objectFit: "cover" }}
-          />
+        <div className={styles.videoWrap}>
+          <video autoPlay playsInline muted loop className={styles.video}>
+            <source src="/images/square1.mp4" type="video/mp4" />
+          </video>
         </div>
         <h2 className={styles.tagline2}>
           We are superskiled in different industries
