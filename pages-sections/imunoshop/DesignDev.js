@@ -62,7 +62,7 @@ function DesignDev() {
         </div>
       </div>
       <div className={`${styles.videoWrapper} wrapper`}>
-        <video autoPlay muted loop className={styles.video}>
+        <video autoPlay playsInline muted loop className={styles.video}>
           <source src="/images/imunoshop/imuno-phones.mp4" type="video/mp4" />
         </video>
       </div>

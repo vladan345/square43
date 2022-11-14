@@ -34,7 +34,7 @@ function ProjectHero(props) {
       style={isLoading ? { height: "100vh" } : { height: "auto" }}
     >
       <div className={styles.hero}>
-        <video className={styles.heroVideo} autoPlay muted loop>
+        <video className={styles.heroVideo} playsInline autoPlay muted loop>
           <source src={heroVideo} type="video/mp4" />
         </video>
         <div className="wrapper">

@@ -25,7 +25,7 @@ function Outro(props) {
       {isLoading ? null : (
         <div className={styles.Outro}>
           <div className={`${styles.wrapper} wrapper`}>
-            <video className={styles.video} autoPlay muted loop>
+            <video className={styles.video} playsInline autoPlay muted loop>
               <source src={project.heroVideo} type="video/mp4" />
             </video>
             <div className={styles.content}>

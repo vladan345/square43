@@ -23,7 +23,7 @@ function NewClients() {
       <div className={`${styles.wrapper} wrapper`}>
         <h2 className={styles.title}>Welcoming new clients</h2>
         <div className={styles.videoWrap}>
-          <video autoPlay muted loop className={styles.video}>
+          <video autoPlay muted loop playsInline className={styles.video}>
             <source src="/images/dib-travel/welcome.mp4" type="video/mp4" />
           </video>
           <Image

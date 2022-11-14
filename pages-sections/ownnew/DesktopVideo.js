@@ -11,7 +11,7 @@ function DesktopVideo() {
             <div className={styles.circle}></div>
             <div className={styles.circle}></div>
           </div>
-          <video className={styles.video} autoPlay muted loop>
+          <video playsInline className={styles.video} autoPlay muted loop>
             <source
               src="/images/ownnew/desktop-video.mp4"
               type="video/mp4"

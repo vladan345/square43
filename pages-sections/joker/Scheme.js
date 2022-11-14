@@ -8,7 +8,7 @@ function Scheme() {
       <div className="wrapper">
         <div className={styles.schemeWrap}>
           <div className={styles.scheme}>
-            <video className={styles.video} autoPlay muted loop>
+            <video playsInline className={styles.video} autoPlay muted loop>
               <source
                 src="/images/joker/blueprint.mp4"
                 type="video/mp4"

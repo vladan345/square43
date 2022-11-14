@@ -15,6 +15,7 @@ function WebDesign() {
             autoPlay
             muted
             loop
+            playsInline
           >
             <source src="/images/dib-travel/webdesign.mp4" type="video/mp4" />
           </video>
