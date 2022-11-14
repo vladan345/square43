@@ -36,6 +36,10 @@ class MyDocument extends Document {
           />
 
           <link rel="icon" as="image" href="/logo2.svg" />
+          <meta
+            name="google-site-verification"
+            content="iEq0j0IvfilNY09Bl6kQTOCGA2dwNWHeTes-kOHkMRU"
+          />
         </Head>
         <body>
           <Main />
