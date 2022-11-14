@@ -33,32 +33,32 @@ function Square(props) {
   return (
     <div className={styles.square} ref={square}>
       <div className={`${styles.videoWrap} video1`}>
-        <video autoPlay muted loop className={styles.video}>
+        <video autoPlay playsinline muted loop className={styles.video}>
           <source src="/images/square1.mp4" type="video/mp4" />
         </video>
       </div>
       <div className={`${styles.videoWrap} video2`}>
-        <video autoPlay muted loop className={styles.video}>
+        <video autoPlay playsinline muted loop className={styles.video}>
           <source src="/images/square2.mp4" type="video/mp4" />
         </video>
       </div>
       <div className={`${styles.videoWrap} video3`}>
-        <video autoPlay muted loop className={styles.video}>
+        <video autoPlay playsinline muted loop className={styles.video}>
           <source src="/images/square3.mp4" type="video/mp4" />
         </video>
       </div>
       <div className={`${styles.videoWrap} video4`}>
-        <video autoPlay muted loop className={styles.video}>
+        <video autoPlay playsinline muted loop className={styles.video}>
           <source src="/images/square4.mp4" type="video/mp4" />
         </video>
       </div>
       <div className={`${styles.videoWrap} video5`}>
-        <video autoPlay muted loop className={styles.video}>
+        <video autoPlay playsinline muted loop className={styles.video}>
           <source src="/images/northprim/Northprim-hero.mp4" type="video/mp4" />
         </video>
       </div>
       <div className={`${styles.videoWrap} video6`}>
-        <video autoPlay muted loop className={styles.video}>
+        <video autoPlay playsinline muted loop className={styles.video}>
           <source src="/images/square6.mp4" type="video/mp4" />
         </video>
       </div>
