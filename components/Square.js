@@ -40,13 +40,14 @@ function Square(props) {
       console.log(loadedCount);
     } else {
       setLoading(false);
+      console.log("loaded");
     }
   };
   return (
     <div className={styles.square} ref={square}>
       <div className={`${styles.videoWrap} video1`}>
         <video
-          onLoadedData={checkLoaded}
+          onLoadedData={setLoading(false)}
           autoPlay
           playsInline
           muted
@@ -63,7 +64,7 @@ function Square(props) {
           muted
           loop
           className={styles.video}
-          onLoadedData={checkLoaded}
+          // onLoadedData={checkLoaded}
         >
           <source src="/images/square2.mp4" type="video/mp4" />
         </video>
@@ -75,7 +76,7 @@ function Square(props) {
           muted
           loop
           className={styles.video}
-          onLoadedData={checkLoaded}
+          // onLoadedData={checkLoaded}
         >
           <source src="/images/square3.mp4" type="video/mp4" />
         </video>
@@ -87,7 +88,7 @@ function Square(props) {
           muted
           loop
           className={styles.video}
-          onLoadedData={checkLoaded}
+          // onLoadedData={checkLoaded}
         >
           <source src="/images/square4.mp4" type="video/mp4" />
         </video>
@@ -99,7 +100,7 @@ function Square(props) {
           muted
           loop
           className={styles.video}
-          onLoadedData={checkLoaded}
+          // onLoadedData={checkLoaded}
         >
           <source src="/images/northprim/Northprim-hero.mp4" type="video/mp4" />
         </video>
@@ -111,7 +112,7 @@ function Square(props) {
           muted
           loop
           className={styles.video}
-          onLoadedData={checkLoaded}
+          // onLoadedData={checkLoaded}
         >
           <source src="/images/square6.mp4" type="video/mp4" />
         </video>
