@@ -6,12 +6,12 @@
   position: sticky;
   top: 50%;
   font-size: 120px;
-  transform: translateY(-50%);
+  transform: translateY(-33%);
   font-family: MatterBold;
   margin-bottom: 80px;
   letter-spacing: -4.8px;
   background: radial-gradient(circle at 0 0, #7000ff, #0ff);
-  background-attachment: fixed;
+  background-attachment: sticky;
   background-position: center;
   background-clip: text;
   -webkit-background-clip: text;
