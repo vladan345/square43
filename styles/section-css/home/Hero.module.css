@@ -43,11 +43,11 @@
 @media (max-width: 900px) {
   .wrapper {
     justify-content: flex-start;
-    padding-top: 160px;
+    padding-top: 0;
   }
   .Hero {
     padding-bottom: 90px;
-    height: auto;
+    padding-top: 120px;
   }
   .title {
     font-size: 50px;

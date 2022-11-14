@@ -1,7 +1,6 @@
 .Project {
   overflow: hidden;
   height: 120vh;
-
   background: white;
 }
 .wrapper {
@@ -40,12 +39,13 @@
 }
 @media (max-width: 900px) {
   .Project {
-    height: auto;
+    height: 100vh;
     padding-bottom: 40px;
     padding-top: 120px;
   }
   .projectWrap {
     width: 100%;
+    justify-content: flex-start;
   }
   .wrapper {
     display: flex;

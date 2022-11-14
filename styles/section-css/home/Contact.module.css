@@ -47,18 +47,20 @@
 }
 @media (max-width: 900px) {
   .Contact {
-    height: auto;
-    padding-bottom: 400px;
+    height: 100vh;
+
     padding-top: 120px;
   }
   .contactWrap {
     width: 100%;
+    justify-content: flex-start;
   }
   .wrapper {
     display: flex;
     justify-content: space-between;
     flex-direction: column-reverse;
     align-items: center;
+    height: 100%;
   }
   .title {
     font-size: 54px;

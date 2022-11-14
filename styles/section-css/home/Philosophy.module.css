@@ -1,7 +1,6 @@
 .Philosophy {
   overflow: hidden;
   height: 100vh;
-
   background: white;
 }
 .philosophyWrap {
@@ -45,7 +44,6 @@
 }
 @media (max-width: 900px) {
   .Philosophy {
-    height: auto;
     padding-bottom: 40px;
   }
   .wrapper {
@@ -56,7 +54,8 @@
     padding-top: 120px;
   }
   .philosophyWrap {
-    height: auto;
+    height: 100%;
+    justify-content: flex-start;
     width: 100%;
   }
   .statement {

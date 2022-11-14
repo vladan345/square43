@@ -41,12 +41,13 @@
 }
 @media (max-width: 900px) {
   .More {
-    height: auto;
+    height: 100vh;
     padding-bottom: 40px;
     padding-top: 120px;
   }
   .moreWrap {
     width: 100%;
+    justify-content: flex-start;
   }
   .wrapper {
     display: flex;

@@ -152,10 +152,7 @@ i {
 .video6 {
   opacity: 0;
 }
-#step1 {
-  background-color: rgb(119, 230, 255);
-  right: 100px;
-}
+
 #step1 .video1 {
   opacity: 1;
 }
@@ -173,6 +170,11 @@ i {
 }
 #step6 .video6 {
   opacity: 1;
+}
+
+#step1 {
+  background-color: rgb(119, 230, 255);
+  right: 100px;
 }
 #step2 {
   background-color: transparent;
@@ -199,6 +201,7 @@ i {
 }
 #step5 {
   right: 200px;
+  transform: translate(0, -50%) rotateZ(0);
 }
 
 #step6 {
@@ -270,5 +273,49 @@ i {
   }
   .wrapper {
     max-width: 500px;
+  }
+  #step1 {
+    background-color: rgb(119, 230, 255);
+    right: auto !important;
+    left: 50%;
+  }
+  #step2 {
+    background-color: transparent;
+    /* width: 300px !important;
+  height: 300px !important; */
+    right: auto !important;
+    left: 50%;
+    width: 270px;
+    height: 270px;
+    transform: translate(-50%, -50%) rotateZ(-180deg) !important;
+  }
+  #step3 {
+    background-color: transparent;
+    /* width: 300px !important;
+  height: 300px !important; */
+    right: auto !important;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateZ(0) !important;
+  }
+  #step4 {
+    background-color: transparent;
+    width: 270px;
+    height: 270px;
+    right: auto !important;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateZ(180deg);
+  }
+  #step5 {
+    right: auto !important;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateZ(0);
+  }
+
+  #step6 {
+    opacity: 1;
+    right: auto !important;
+    left: 50%;
+    background-color: transparent;
+    transform: translate(-50%, -50%) rotateZ(-180deg);
   }
 }

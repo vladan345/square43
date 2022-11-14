@@ -32,7 +32,7 @@ function OurServices() {
         {/* <Square image="/images/square2.webp" height={560} /> */}
         <div className={styles.ourServicesWrap}>
           <h2 className={styles.statement}>
-            We think outside the square. With us - you will to.
+            We think outside the square. With us - you will too.
           </h2>
           <div className={styles.linkWrap}>
             <Link href="/services" className="readMore">

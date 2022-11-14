@@ -47,7 +47,6 @@
 }
 @media (max-width: 900px) {
   .OurServices {
-    height: auto;
     padding-bottom: 40px;
     padding-top: 120px;
   }
@@ -56,6 +55,9 @@
     justify-content: flex-start;
     flex-direction: column-reverse;
     align-items: center;
+  }
+  .ourServicesWrap {
+    justify-content: flex-start;
   }
   .statement {
     font-size: 30px;
