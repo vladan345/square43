@@ -38,7 +38,7 @@ function Square(props) {
       setLoading(true);
       loadedCount += 1;
       console.log(loadedCount);
-    } else {
+    } else if (loadedCount === 7) {
       setLoading(false);
       console.log("loaded");
     }
