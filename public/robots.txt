@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://square43.com
+
+# Sitemaps
+Sitemap: https://square43.com/sitemap.xml
