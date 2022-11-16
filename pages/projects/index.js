@@ -17,7 +17,7 @@ function Projects() {
     setTimeout(() => {
       setProjects(getAllProjects());
       setLoading(false);
-    }, 3000);
+    }, 1000);
   }, []);
 
   return (

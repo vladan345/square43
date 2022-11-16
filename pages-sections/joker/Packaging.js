@@ -26,7 +26,7 @@ function Packaging() {
             </p>
             <p className={styles.description}>
               Guarana set a challenge for all willing to participate: come up
-              with an origina concept for packaging design that would showcase
+              with an original concept for packaging design that would showcase
               their newly signed collab with none other than the iconic Nikola
               Jokic, the Joker. Spoiler: we won the challenge.
             </p>

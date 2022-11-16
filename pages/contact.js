@@ -9,6 +9,18 @@ function contact() {
       <Head>
         <title>Square43 Studio | Contact</title>
         <meta name="description" content="We can't wait to meet you" />
+        <meta
+          property="og:image"
+          content="https://xaconi.dev/api/social-image/como-crear-thumbnails-dinamicos-en-next-js.jpg"
+        />
+        <meta
+          property="og:image:secure_url"
+          content="https://xaconi.dev/api/social-image/como-crear-thumbnails-dinamicos-en-next-js.jpg"
+        />
+        <meta
+          name="twitter:image:src"
+          content="https://xaconi.dev/api/social-image/como-crear-thumbnails-dinamicos-en-next-js.jpg"
+        />
       </Head>
       <main>
         <div className={styles.Contact}>
