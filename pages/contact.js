@@ -28,7 +28,7 @@ function contact() {
         />
         <meta
           property="og:image"
-          content="https://www.square43.com/_next/image?url=%2Fimages%2Fstarry-night.png&w=1080&q=75"
+          content="https://www.square43.com/images/starry-night.png"
         />
 
         <meta property="twitter:card" content="summary_large_image" />
@@ -43,7 +43,7 @@ function contact() {
         />
         <meta
           property="twitter:image"
-          content="https://www.square43.com/_next/image?url=%2Fimages%2Fstarry-night.png&w=1080&q=75"
+          content="https://www.square43.com/images/starry-night.png"
         />
       </Head>
       <main>
