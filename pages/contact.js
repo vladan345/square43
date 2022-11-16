@@ -26,7 +26,10 @@ function contact() {
           property="og:description"
           content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!"
         />
-        <meta property="og:image" content="/images/starry-night.png" />
+        <meta
+          property="og:image"
+          content="https://www.square43.com/_next/image?url=%2Fimages%2Fstarry-night.png&w=1080&q=75"
+        />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://square43.com/" />
@@ -38,7 +41,10 @@ function contact() {
           property="twitter:description"
           content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!"
         />
-        <meta property="twitter:image" content="/images/starry-night.png" />
+        <meta
+          property="twitter:image"
+          content="https://www.square43.com/_next/image?url=%2Fimages%2Fstarry-night.png&w=1080&q=75"
+        />
       </Head>
       <main>
         <div className={styles.Contact}>
