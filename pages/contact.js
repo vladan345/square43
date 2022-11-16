@@ -9,12 +9,36 @@ function contact() {
       <Head>
         <title>Square43 Studio | Contact</title>
         <meta name="description" content="We can't wait to meet you" />
-        <meta property="og:image" content="/images/starry-night.png" />
+
+        <meta name="title" content="Meta Tags — Preview, Edit and Generate" />
         <meta
-          property="og:image:secure_url"
-          content="/images/starry-night.png"
+          name="description"
+          content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!"
         />
-        <meta name="twitter:image:src" content="/images/starry-night.png" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://square43.com/" />
+        <meta
+          property="og:title"
+          content="Meta Tags — Preview, Edit and Generate"
+        />
+        <meta
+          property="og:description"
+          content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!"
+        />
+        <meta property="og:image" content="/images/starry-night.png" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://square43.com/" />
+        <meta
+          property="twitter:title"
+          content="Meta Tags — Preview, Edit and Generate"
+        />
+        <meta
+          property="twitter:description"
+          content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!"
+        />
+        <meta property="twitter:image" content="/images/starry-night.png" />
       </Head>
       <main>
         <div className={styles.Contact}>
