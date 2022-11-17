@@ -19,7 +19,32 @@ export default function Home() {
     <div>
       <Head>
         <title>Square43 Studio</title>
-        <meta name="description" content="Digital creative studio" />
+        <meta
+          name="description"
+          content="Everything we do is treated as art."
+        />
+
+        <meta name="title" content="Square43 Studio" />
+
+        <meta property="og:url" content="https://square43.com" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://www.square43.com/images/Home.png"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="square43.com" />
+        <meta property="twitter:url" content="https://square43.com" />
+        <meta name="twitter:title" content="Square43 Studio" />
+        <meta
+          name="twitter:description"
+          content="Everything we do is treated as art"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.square43.com/images/Home.png"
+        />
       </Head>
       <ParallaxProvider>
         <main>

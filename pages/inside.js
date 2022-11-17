@@ -12,6 +12,28 @@ function About() {
           name="description"
           content="Building is believing - and we'll build a bright future in front of you."
         />
+
+        <meta name="title" content="Square43 Studio - About us" />
+
+        <meta property="og:url" content="https://square43.com/inside" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://www.square43.com/images/About.png"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="square43.com" />
+        <meta property="twitter:url" content="https://square43.com/inside" />
+        <meta name="twitter:title" content="Square43 Studio - About us" />
+        <meta
+          name="twitter:description"
+          content="Building is believing - and we'll build a bright future in front of you."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.square43.com/images/About.png"
+        />
       </Head>
       <main>
         <div className={styles.About}>

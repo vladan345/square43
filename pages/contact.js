@@ -10,40 +10,29 @@ function contact() {
         <title>Square43 Studio | Contact</title>
         <meta name="description" content="We can't wait to meet you" />
 
-        <meta name="title" content="Meta Tags — Preview, Edit and Generate" />
+        <meta name="title" content="Square43 Studio - Contact us" />
         <meta
           name="description"
-          content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!"
+          content="We can't wait to meet you. Let's get in touch!"
         />
-
+        <meta property="og:url" content="https://square43.com/contact" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://square43.com/" />
-        <meta
-          property="og:title"
-          content="Meta Tags — Preview, Edit and Generate"
-        />
-        <meta
-          property="og:description"
-          content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!"
-        />
         <meta
           property="og:image"
-          content="https://www.square43.com/images/starry-night.png"
+          content="https://www.square43.com/images/Contact.png"
         />
 
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://square43.com/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="square43.com" />
+        <meta property="twitter:url" content="https://square43.com/contact" />
+        <meta name="twitter:title" content="Square43 Studio - Contact us" />
         <meta
-          property="twitter:title"
-          content="Meta Tags — Preview, Edit and Generate"
+          name="twitter:description"
+          content="We can't wait to meet you. Let's get in touch!"
         />
         <meta
-          property="twitter:description"
-          content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!"
-        />
-        <meta
-          property="twitter:image"
-          content="https://www.square43.com/images/starry-night.png"
+          name="twitter:image"
+          content="https://www.square43.com/images/Contact.png"
         />
       </Head>
       <main>
