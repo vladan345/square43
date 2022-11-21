@@ -64,15 +64,27 @@ function MobileMenu({ stateChange, ...props }) {
         </ul>
       </nav>
       <div className={styles.socials}>
-        <a className={styles.socialLink} href="#?">
+        <a
+          className={styles.socialLink}
+          target="_blank"
+          href="https://www.instagram.com/square43studio/"
+        >
           Instagram
         </a>
 
-        <a className={styles.socialLink} href="#?">
+        <a
+          className={styles.socialLink}
+          target="_blank"
+          href="https://www.facebook.com/Square43-Studio-110282941905781/"
+        >
           Facebook
         </a>
 
-        <a className={styles.socialLink} href="#?">
+        <a
+          className={styles.socialLink}
+          target="_blank"
+          href="https://www.linkedin.com/company/square43"
+        >
           Linked In
         </a>
       </div>

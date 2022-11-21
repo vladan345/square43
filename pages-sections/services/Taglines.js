@@ -29,7 +29,7 @@ function Taglines() {
               </span>{" "}
               of our
               <br />
-              clients came through recommendations.
+              clients came through stellar reviews.
             </h2>
           </div>
         </MotionAnimate>

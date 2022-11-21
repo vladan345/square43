@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import styles from "../styles/component-css/Result.module.css";
 import { useInView } from "react-intersection-observer";
 import { gsap } from "gsap";
+import Image from "next/image";
+import Link from "next/link";
 
 function Result(props) {
   const { ref, inView } = useInView();
@@ -30,6 +32,23 @@ function Result(props) {
           className={`${styles.description} resultText`}
           dangerouslySetInnerHTML={{ __html: props.project.resultLong }}
         />
+        {props.project.liveProject != "" && (
+          <a
+            href={props.project.liveProject}
+            className={`readMore ${styles.liveProject}`}
+            target="_blank"
+          >
+            Live project
+            <div className="icon">
+              <Image
+                src="/images/arrow.svg"
+                alt="Arrow icon"
+                width={40}
+                height={40}
+              />
+            </div>
+          </a>
+        )}
       </div>
     </div>
   );

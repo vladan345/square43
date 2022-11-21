@@ -26,13 +26,25 @@ function Footer() {
             square43
           </Link>
           <nav className={styles.nav}>
-            <a className={styles.footerLink} href="?#">
+            <a
+              className={styles.footerLink}
+              target="_blank"
+              href="https://www.instagram.com/square43studio/"
+            >
               Instagram
             </a>
-            <a className={styles.footerLink} href="?#">
+            <a
+              className={styles.footerLink}
+              target="_blank"
+              href="https://www.facebook.com/Square43-Studio-110282941905781/"
+            >
               Facebook
             </a>
-            <a className={styles.footerLink} href="?#">
+            <a
+              className={styles.footerLink}
+              target="_blank"
+              href="https://www.linkedin.com/company/square43"
+            >
               Linked In
             </a>
           </nav>

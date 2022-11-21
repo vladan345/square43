@@ -92,6 +92,9 @@
   filter: none;
 }
 @media (max-width: 900px) {
+  .ServiceModule {
+    padding: 30px;
+  }
   .title {
     font-size: 38px;
   }

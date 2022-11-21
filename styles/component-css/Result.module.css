@@ -21,6 +21,14 @@
 .gradientText {
   -webkit-text-fill-color: transparent;
 }
+.liveProject {
+  margin-top: 80px;
+}
+.icon {
+  transform: translateX(0);
+  margin-left: 20px;
+  transition: 0.3s;
+}
 @media (max-width: 900px) {
   .Result {
     padding: 0 0 80px 0;

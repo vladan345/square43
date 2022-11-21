@@ -42,52 +42,17 @@ function Project() {
         return null;
     }
   };
-  let title = `Square43 Studio | ${project?.name}`;
   return (
-    <>
-      <Head>
-        <title>{title}</title>
-        <meta name="description" content={project?.missionShort} />
-
-        <meta name="title" content={`Square43 Studio - ${project?.name}`} />
-
-        <meta
-          property="og:url"
-          content={`https://square43.com/projects/${project?.id}`}
-        />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content={`https://www.square43.com${project?.heroImage}`}
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="square43.com" />
-        <meta
-          property="twitter:url"
-          content={`https://square43.com/projects/${project?.id}`}
-        />
-        <meta
-          name="twitter:title"
-          content={`Square43 Studio - ${project?.name}`}
-        />
-        <meta name="twitter:description" content={project?.missionShort} />
-        <meta
-          name="twitter:image"
-          content={`https://www.square43.com${project?.heroImage}`}
-        />
-      </Head>
-      <div>
-        {project && (
-          <div style={{ overflow: "hidden" }}>
-            <ProjectHero project={project} />
-            {renderPage()}
-            <Result project={project} />
-            <Outro projectId={projectId} />
-          </div>
-        )}
-      </div>
-    </>
+    <div>
+      {project && (
+        <div style={{ overflow: "hidden" }}>
+          <ProjectHero project={project} />
+          {renderPage()}
+          <Result project={project} />
+          <Outro projectId={projectId} />
+        </div>
+      )}
+    </div>
   );
 }
 
