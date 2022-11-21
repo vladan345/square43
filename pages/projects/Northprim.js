@@ -21,61 +21,24 @@ import Coffee from "../../pages-sections/northprim/Coffee";
 
 function Northprim() {
   return (
-    <>
-      <Head>
-        <title>Square43 Studio | Northprim</title>
-        <meta
-          name="description"
-          content="Transforming just another outsourcing tech company into a unique, provocative brand brimming with energy, emotion and the ever-wanted X factor."
-        />
-
-        <meta name="title" content="Square43 Studio - Northprim" />
-
-        <meta
-          property="og:url"
-          content="https://square43.com/projects/northprim"
-        />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content="https://www.square43.com/images/northprim/heroNorthprim.png"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="square43.com" />
-        <meta
-          property="twitter:url"
-          content="https://square43.com/projects/northprim"
-        />
-        <meta name="twitter:title" content="Square43 Studio - Northprim" />
-        <meta
-          name="twitter:description"
-          content="Transforming just another outsourcing tech company into a unique, provocative brand brimming with energy, emotion and the ever-wanted X factor."
-        />
-        <meta
-          name="twitter:image"
-          content="https://www.square43.com/images/northprim/heroNorthprim.png"
-        />
-      </Head>
-      <div className="Northprim">
-        <ParallaxProvider>
-          <VideoSection />
-          <Brand />
-          <Sprint />
-          <Taglines />
-          <Skate />
-          <CoreThemes />
-          <Parallax />
-          <WebDesign />
-          <ScrollSequence />
-          <WebDevelopment />
-          <SocialMedia />
-          <Print />
-          <Slider />
-          <Coffee />
-        </ParallaxProvider>
-      </div>
-    </>
+    <div className="Northprim">
+      <ParallaxProvider>
+        <VideoSection />
+        <Brand />
+        <Sprint />
+        <Taglines />
+        <Skate />
+        <CoreThemes />
+        <Parallax />
+        <WebDesign />
+        <ScrollSequence />
+        <WebDevelopment />
+        <SocialMedia />
+        <Print />
+        <Slider />
+        <Coffee />
+      </ParallaxProvider>
+    </div>
   );
 }
 
