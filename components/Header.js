@@ -113,22 +113,21 @@ export default function Header() {
           <div className={styles.rightNav}>
             <Link
               onClick={handleClick}
-              href="/contact"
-              onMouseEnter={() => CURSOR_COLOR("WHITE")}
-              onMouseLeave={() => CURSOR_COLOR("END")}
-              className={styles.headerLink}
-            >
-              Contact
-            </Link>
-
-            <Link
-              onClick={handleClick}
               href="/inside"
               onMouseEnter={() => CURSOR_COLOR("WHITE")}
               onMouseLeave={() => CURSOR_COLOR("END")}
               className={styles.headerLink}
             >
               Inside
+            </Link>
+            <Link
+              onClick={handleClick}
+              href="/contact"
+              onMouseEnter={() => CURSOR_COLOR("WHITE")}
+              onMouseLeave={() => CURSOR_COLOR("END")}
+              className={styles.headerLink}
+            >
+              Contact
             </Link>
           </div>
           <div className={styles.hamNav} onClick={handleToggle} ref={elem}>
