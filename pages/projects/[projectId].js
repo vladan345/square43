@@ -14,7 +14,7 @@ import Outro from "../../components/Outro";
 import Result from "../../components/Result";
 import { useLoading } from "../../utils/hooks/LoadingContext";
 
-function Project() {
+function Project({ meta }) {
   const router = useRouter();
   const { setLoading } = useLoading();
   const { projectId } = router.query;
@@ -26,6 +26,7 @@ function Project() {
       setLoading(false);
     }, 3000);
   }, [projectId]);
+
   const renderPage = () => {
     switch (projectId) {
       case "northprim":
@@ -42,51 +43,26 @@ function Project() {
         return null;
     }
   };
-  const renderHead = () => {
-    switch (projectId) {
-      case "northprim":
-        return (
-          <Head>
-            <title>Square43 Studio | Northprim</title>
-            <meta
-              name="description"
-              content="Transforming just another outsourcing tech company into a unique, provocative brand brimming with energy, emotion and the ever-wanted X factor."
-            />
 
-            <meta name="title" content="Square43 Studio - Northprim" />
-
-            <meta
-              property="og:url"
-              content="https://square43.com/projects/northprim"
-            />
-            <meta property="og:type" content="website" />
-            <meta
-              property="og:image"
-              content="https://www.square43.com/images/northprim/heroNorthprim.png"
-            />
-
-            <meta name="twitter:card" content="summary_large_image" />
-            <meta property="twitter:domain" content="square43.com" />
-            <meta
-              property="twitter:url"
-              content="https://square43.com/projects/northprim"
-            />
-            <meta name="twitter:title" content="Square43 Studio - Northprim" />
-            <meta
-              name="twitter:description"
-              content="Transforming just another outsourcing tech company into a unique, provocative brand brimming with energy, emotion and the ever-wanted X factor."
-            />
-            <meta
-              name="twitter:image"
-              content="https://www.square43.com/images/northprim/heroNorthprim.png"
-            />
-          </Head>
-        );
-    }
-  };
   return (
     <>
-      {renderHead()}
+      <Head>
+        <title>Square43 Studio | Northprim</title>
+        <meta name="description" content={meta.description} />
+
+        <meta name="title" content={meta.title} />
+
+        <meta property="og:url" content={meta.link} />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={meta.image} />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="square43.com" />
+        <meta property="twitter:url" content={meta.link} />
+        <meta name="twitter:title" content={meta.title} />
+        <meta name="twitter:description" content={meta.description} />
+        <meta name="twitter:image" content={meta.image} />
+      </Head>
       <div>
         {project && (
           <div style={{ overflow: "hidden" }}>
@@ -102,3 +78,24 @@ function Project() {
 }
 
 export default Project;
+
+export async function getServerSideProps({ params }) {
+  let users = {
+    northprim: {
+      description:
+        "Transforming just another outsourcing tech company into a unique, provocative brand brimming with energy, emotion and the ever-wanted X factor.",
+      title: "Square43 Studio - Northprim",
+      link: "https://square43.com/projects/northprim",
+      image: "https://www.square43.com/images/northprim/heroNorthprim.png",
+    },
+    ownnew: {
+      description: "Ownnew description",
+      title: "Square43 Studio - Own New",
+      link: "https://square43.com/projects/ownnew",
+      image: "https://www.square43.com/images/northprim/heroOwnnew.webp",
+    },
+  };
+  const meta = users[params.projectId];
+
+  return { props: { meta } };
+}
