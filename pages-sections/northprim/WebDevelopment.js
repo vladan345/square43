@@ -12,8 +12,8 @@ function WebDevelopment() {
             <h2 className={styles.title}>Web Development</h2>
             <p className={styles.description}>
               Keeping things simple and intuitive in terms of web structure is
-              how we roll. We made sure to make it set up all key sections an IT
-              company&apos;s website should have
+              how we roll. We made sure to set up all key sections an IT
+              company&apos;s website should have.
             </p>
             <p className={styles.description}>
               This was crucial so that both new job applicants and potential

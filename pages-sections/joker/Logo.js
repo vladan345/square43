@@ -32,7 +32,7 @@ function Logo() {
           <div className={styles.content}>
             <h2 className={styles.title}>Our vision</h2>
             <p className={styles.description}>
-              every can purchased becomes your own piece of signed merch! This
+              Every can purchased becomes your own piece of signed merch! This
               is why we simply had to include the Joker's original signature and
               create a bond between the product and the buyer.
             </p>

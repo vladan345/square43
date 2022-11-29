@@ -10,7 +10,7 @@ function Print() {
           <h2>Print Design</h2>
           <div className={styles.paragraphs}>
             <p className={styles.description}>
-              When a brand comes to life, getting you hands on its flawless
+              When a brand comes to life, getting your hands on its flawless
               merch is what makes it even more real!
             </p>
           </div>

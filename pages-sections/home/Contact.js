@@ -33,7 +33,7 @@ function Contact() {
         </div>
         {/* <Square image="/images/square5.webp" height={560} /> */}
         <div className={styles.contactWrap}>
-          <p className={styles.tag}>Ready to SquareUP?</p>
+          <p className={styles.tag}>Ready to Square UP?</p>
           <h2 className={styles.title}>
             We accept cash, cards, emails, phone calls...
           </h2>

@@ -32,9 +32,9 @@ function Brand() {
               />
               <div className={styles.paragraphs}>
                 <p className={styles.paragraph}>
-                  We kept the logo light and clear, with the letter representing
-                  the tech side and the green underline representing the human
-                  touch.
+                  We kept the logo light and clear, with the letters
+                  representing the tech side and the green underline
+                  representing the human touch.
                 </p>
               </div>
             </div>

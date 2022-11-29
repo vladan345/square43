@@ -42,9 +42,9 @@ function CoreThemes() {
                 <div>
                   <h3 className={styles.title}>Expect the unexpected</h3>
                   <p className={styles.description}>
-                    Stereotypes exist and, yes, you would expect and IT company
+                    Stereotypes exist and, yes, you would expect an IT company
                     to keep things to the point and very technical. We offered
-                    quite a twist
+                    quite a twist.
                   </p>
                 </div>
               </div>

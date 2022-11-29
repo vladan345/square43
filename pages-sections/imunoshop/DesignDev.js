@@ -50,7 +50,7 @@ function DesignDev() {
               </p>
               <p className={styles.description}>
                 We made sure to keep the website informative without an
-                overwhleming amount of information, keeping in mind that it is
+                overwhelming amount of information, keeping in mind that it is
                 also an online shop! E-commerce is our forté, so there were no
                 doubts about the optimal way of setting it up: all products were
                 neatly arranged, filters included, all wrapped with an intuitive
