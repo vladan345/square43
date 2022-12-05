@@ -35,6 +35,13 @@
     margin-bottom: 40px;
     letter-spacing: normal;
   }
+  .videoWrap {
+    width: 270px;
+    height: 270px;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 30%;
+  }
   .image {
     height: 480px;
     margin-left: -20px;
@@ -45,5 +52,6 @@
   .tagline2 {
     font-size: 60px;
     letter-spacing: normal;
+    padding-bottom: 240px;
   }
 }

@@ -13,7 +13,7 @@ function Achievements() {
           </video>
         </div>
         <h2 className={styles.tagline2}>
-          We are superskiled in different industries
+          We are superskilled in different industries
         </h2>
         <Accordion
           title="Startup"
