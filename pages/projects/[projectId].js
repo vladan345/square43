@@ -14,14 +14,14 @@ import Outro from "../../components/Outro";
 import Result from "../../components/Result";
 import { useLoading } from "../../utils/hooks/LoadingContext";
 
-function Project({ meta }) {
+function Project({ meta, project }) {
   const router = useRouter();
   const { setLoading } = useLoading();
   const { projectId } = router.query;
-  const [project, setProject] = useState();
+  // const [project, setProject] = useState();
 
   useEffect(() => {
-    setProject(getCurrentProject(projectId));
+    // setProject(getCurrentProject(projectId));
     setTimeout(() => {
       setLoading(false);
     }, 3000);
@@ -77,9 +77,20 @@ function Project({ meta }) {
   );
 }
 
-export default Project;
+export function getStaticPaths() {
+  return {
+    paths: [
+      { params: { projectId: "northprim" } },
+      { params: { projectId: "ownnew" } },
+      { params: { projectId: "joker" } },
+      { params: { projectId: "imuno-shop" } },
+      { params: { projectId: "dib-travel" } },
+    ],
+    fallback: true,
+  };
+}
 
-export async function getServerSideProps({ params }) {
+export async function getStaticProps({ params }) {
   let users = {
     northprim: {
       description:
@@ -124,5 +135,9 @@ export async function getServerSideProps({ params }) {
   };
   const meta = users[params.projectId];
 
-  return { props: { meta } };
+  const project = getCurrentProject(params.projectId);
+
+  return { props: { meta, project } };
 }
+
+export default Project;
