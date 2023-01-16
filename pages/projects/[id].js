@@ -13,9 +13,9 @@ import Outro from "../../components/Outro";
 import Result from "../../components/Result";
 import { useLoading } from "../../utils/hooks/LoadingContext";
 
-function Project({ meta, project }) {
+function Project({ meta, project, projectId }) {
+  console.log(projectId);
   const { setLoading } = useLoading();
-  console.log(project.id);
   // const [project, setProject] = useState();
 
   useEffect(() => {
@@ -23,10 +23,10 @@ function Project({ meta, project }) {
     setTimeout(() => {
       setLoading(false);
     }, 3000);
-  }, [project.id]);
+  }, [projectId]);
 
   const renderPage = () => {
-    switch (project.id) {
+    switch (projectId) {
       case "northprim":
         return <Northprim />;
       case "ownnew":
@@ -67,7 +67,7 @@ function Project({ meta, project }) {
             <ProjectHero project={project} />
             {renderPage()}
             <Result project={project} />
-            <Outro projectId={project.id} />
+            <Outro projectId={projectId} />
           </div>
         )}
       </div>
@@ -132,10 +132,11 @@ export async function getStaticProps({ params }) {
     },
   };
   const meta = users[params.id];
+  const projectId = params.id;
   console.log(meta);
   const project = getCurrentProject(params.id);
 
-  return { props: { meta, project } };
+  return { props: { meta, project, projectId } };
 }
 
 export default Project;
