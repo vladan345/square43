@@ -131,10 +131,10 @@ export async function getStaticProps({ params }) {
       image: "https://www.square43.com/images/imunoshop/heroImunoshop.webp",
     },
   };
-  const meta = users[params.id];
-  const projectId = params.id;
+  const meta = await users[params.id];
+  const projectId = await params.id;
   console.log(meta);
-  const project = getCurrentProject(params.id);
+  const project = await getCurrentProject(params.id);
 
   return { props: { meta, project, projectId } };
 }
