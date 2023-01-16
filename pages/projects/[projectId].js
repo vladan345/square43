@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { getCurrentProject } from "../../utils/data/getData";
 
-import Northprim from "./Northprim";
-import OwnNew from "./OwnNew";
-import Joker from "./Joker";
-import DibTravel from "./DibTravel";
-import Imunoshop from "./Imunoshop";
+import Northprim from "../../pages-sections/projectMain/Northprim";
+import OwnNew from "../../pages-sections/projectMain/OwnNew";
+import Joker from "../../pages-sections/projectMain/Joker";
+import DibTravel from "../../pages-sections/projectMain/DibTravel";
+import Imunoshop from "../../pages-sections/projectMain/Imunoshop";
 
 import Head from "next/head";
 import ProjectHero from "../../components/ProjectHero";
