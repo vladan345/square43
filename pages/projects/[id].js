@@ -17,7 +17,7 @@ import { useLoading } from "../../utils/hooks/LoadingContext";
 function Project({ meta, project }) {
   const router = useRouter();
   const { setLoading } = useLoading();
-  const { projectId } = router.query;
+  const { id } = router.query;
   // const [project, setProject] = useState();
 
   useEffect(() => {
@@ -25,10 +25,10 @@ function Project({ meta, project }) {
     setTimeout(() => {
       setLoading(false);
     }, 3000);
-  }, [projectId]);
+  }, [id]);
 
   const renderPage = () => {
-    switch (projectId) {
+    switch (id) {
       case "northprim":
         return <Northprim />;
       case "ownnew":
@@ -69,7 +69,7 @@ function Project({ meta, project }) {
             <ProjectHero project={project} />
             {renderPage()}
             <Result project={project} />
-            <Outro projectId={projectId} />
+            <Outro projectId={id} />
           </div>
         )}
       </div>
@@ -80,11 +80,11 @@ function Project({ meta, project }) {
 export function getStaticPaths() {
   return {
     paths: [
-      { params: { projectId: "northprim" } },
-      { params: { projectId: "ownnew" } },
-      { params: { projectId: "joker" } },
-      { params: { projectId: "imunoshop" } },
-      { params: { projectId: "dib-travel" } },
+      { params: { id: "northprim" } },
+      { params: { id: "ownnew" } },
+      { params: { id: "joker" } },
+      { params: { id: "imunoshop" } },
+      { params: { id: "dib-travel" } },
     ],
     fallback: true,
   };
@@ -133,9 +133,9 @@ export async function getStaticProps({ params }) {
       image: "https://www.square43.com/images/imunoshop/heroImunoshop.webp",
     },
   };
-  const meta = users[params.projectId];
-
-  const project = getCurrentProject(params.projectId);
+  const meta = users[params.id];
+  console.log(meta);
+  const project = getCurrentProject(params.id);
 
   return { props: { meta, project } };
 }
