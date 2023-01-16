@@ -83,7 +83,7 @@ export function getStaticPaths() {
       { params: { projectId: "northprim" } },
       { params: { projectId: "ownnew" } },
       { params: { projectId: "joker" } },
-      { params: { projectId: "imuno-shop" } },
+      { params: { projectId: "imunoshop" } },
       { params: { projectId: "dib-travel" } },
     ],
     fallback: true,
