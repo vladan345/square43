@@ -18,12 +18,12 @@ function Project({ meta, project, projectId }) {
   const { setLoading } = useLoading();
   // const [project, setProject] = useState();
 
-  useEffect(() => {
-    // setProject(getCurrentProject(projectId));
-    setTimeout(() => {
-      setLoading(false);
-    }, 3000);
-  }, [projectId]);
+  // useEffect(() => {
+  //   // setProject(getCurrentProject(projectId));
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //   }, 3000);
+  // }, [projectId]);
 
   const renderPage = () => {
     switch (projectId) {
