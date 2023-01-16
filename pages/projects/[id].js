@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { useRouter } from "next/router";
 import { getCurrentProject } from "../../utils/data/getData";
 
 import Northprim from "../../pages-sections/projectMain/Northprim";
@@ -15,9 +14,8 @@ import Result from "../../components/Result";
 import { useLoading } from "../../utils/hooks/LoadingContext";
 
 function Project({ meta, project }) {
-  const router = useRouter();
   const { setLoading } = useLoading();
-  const { id } = router.query;
+  console.log(project.id);
   // const [project, setProject] = useState();
 
   useEffect(() => {
@@ -25,10 +23,10 @@ function Project({ meta, project }) {
     setTimeout(() => {
       setLoading(false);
     }, 3000);
-  }, [id]);
+  }, [project.id]);
 
   const renderPage = () => {
-    switch (id) {
+    switch (project.id) {
       case "northprim":
         return <Northprim />;
       case "ownnew":
@@ -69,7 +67,7 @@ function Project({ meta, project }) {
             <ProjectHero project={project} />
             {renderPage()}
             <Result project={project} />
-            <Outro projectId={id} />
+            <Outro projectId={project.id} />
           </div>
         )}
       </div>
