@@ -14,6 +14,7 @@ import Result from "../../components/Result";
 import { useLoading } from "../../utils/hooks/LoadingContext";
 
 function Project({ meta, project, projectId }) {
+  console.log(meta.description);
   const { setLoading } = useLoading();
   // const [project, setProject] = useState();
   setLoading(false);
@@ -44,10 +45,10 @@ function Project({ meta, project, projectId }) {
   return (
     <>
       <Head>
-        <title>{meta.pageTitle}</title>
-        {/* <meta name="description" content={meta.description} />
+        {/* <title>{meta.pageTitle}</title> */}
+        <meta name="description" content={meta.description} />
 
-        <meta name="title" content={meta.title} />
+        {/* <meta name="title" content={meta.title} />
 
         <meta property="og:url" content={meta.link} />
         <meta property="og:type" content="website" />
