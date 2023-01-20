@@ -23,7 +23,14 @@
         "copywriting",
         "motion-design",
         "print-design"
-      ]
+      ],
+      "meta": {
+        "description": "Transforming just another outsourcing tech company into a unique, provocative brand brimming with energy, emotion and the ever-wanted X factor.",
+        "title": "Square43 Studio - Northprim",
+        "pageTitle": "Square43 Studio | Northprim",
+        "link": "https://square43.com/projects/northprim",
+        "image": "https://www.square43.com/images/northprim/heroNorthprim.png"
+      }
     },
     {
       "id": "ownnew",
@@ -40,7 +47,14 @@
       "resultShort": "After publishing their new website, Own New now receives <i>10+</i> new applications from builders, brokers and first time buyers on a daily basis!",
       "resultLong": "",
       "liveProject": "https://ownnew.co.uk/",
-      "services": ["web-design", "web-development"]
+      "services": ["web-design", "web-development"],
+      "meta": {
+        "description": "A Fresh Start-up Project straight from London. See how we helped OwnNew make their market debut across the UK.",
+        "title": "Square43 Studio - Own New",
+        "pageTitle": "Square43 Studio | Own New",
+        "link": "https://square43.com/projects/ownnew",
+        "image": "https://www.square43.com/images/ownnew/heroOwnnew.webp"
+      }
     },
     {
       "id": "joker",
@@ -57,7 +71,14 @@
       "resultShort": "Stunning packaging <i>design</i> for two distinct sizes, 0.33l and 0.5l. We adjusted the visuals to match the size and made sure not to overload the smaller can with too many details.",
       "resultLong": "Cans sold in more than <i>85.000</i> stores across <i>3</i> different countries.",
       "liveProject": "",
-      "services": ["package-design"]
+      "services": ["package-design"],
+      "meta": {
+        "description": "Designing the MVP of energy drinks: our ultimate success story.",
+        "title": "Square43 Studio - Joker",
+        "pageTitle": "Square43 Studio | Joker",
+        "link": "https://square43.com/projects/joker",
+        "image": "https://www.square43.com/images/joker/heroJoker.png"
+      }
     },
     {
       "id": "dib-travel",
@@ -81,7 +102,14 @@
         "social-media",
         "copywriting",
         "motion-design"
-      ]
+      ],
+      "meta": {
+        "description": "Business travel made better: a comprehensive case study of DIB Travel.",
+        "title": "Square43 Studio - DIB Travel",
+        "pageTitle": "Square43 Studio | DIB Travel",
+        "link": "https://square43.com/projects/dib-travel",
+        "image": "https://www.square43.com/images/dib-travel/heroDib.webp"
+      }
     },
     {
       "id": "imunoshop",
@@ -105,7 +133,14 @@
         "social-media",
         "copywriting",
         "motion-design"
-      ]
+      ],
+      "meta": {
+        "description": "How to develop a new brand and a seamless online shop from scratch - the story of Imuno shop.",
+        "title": "Square43 Studio - Imuno Shop",
+        "pageTitle": "Square43 Studio | Imuno Shop",
+        "link": "https://square43.com/projects/imunoshop",
+        "image": "https://www.square43.com/images/imunoshop/heroImunoshop.webp"
+      }
     }
   ],
   "services": [

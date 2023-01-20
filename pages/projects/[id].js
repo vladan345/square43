@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { getCurrentProject } from "../../utils/data/getData";
-import metaData from "../../utils/constants/metaData.json";
 import Northprim from "../../pages-sections/projectMain/Northprim";
 import OwnNew from "../../pages-sections/projectMain/OwnNew";
 import Joker from "../../pages-sections/projectMain/Joker";
@@ -13,8 +12,7 @@ import Outro from "../../components/Outro";
 import Result from "../../components/Result";
 import { useLoading } from "../../utils/hooks/LoadingContext";
 
-function Project({ singleMeta, project, projectId }) {
-  console.log(singleMeta);
+function Project({ project, projectId }) {
   const { setLoading } = useLoading();
   // const [project, setProject] = useState();
   setLoading(false);
@@ -45,7 +43,7 @@ function Project({ singleMeta, project, projectId }) {
   return (
     <>
       <Head>
-        <title>{singleMeta.pageTitle}</title>
+        <title>{project.meta.title}</title>
 
         {/* <meta name="description" content={singleMeta.description} />
 
@@ -91,11 +89,9 @@ export function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const projectId = await params.id;
-  const { meta } = metaData;
   const project = getCurrentProject(params.id);
-  const singleMeta = meta[projectId];
 
-  return { props: { singleMeta, project, projectId } };
+  return { props: { project, projectId } };
 }
 
 export default Project;
