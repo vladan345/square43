@@ -43,7 +43,7 @@ function Project({ project, projectId }) {
   return (
     <>
       <Head>
-        <title>{project.meta.title}</title>
+        <title>{project.meta?.title}</title>
 
         {/* <meta name="description" content={singleMeta.description} />
 
@@ -90,7 +90,7 @@ export function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const projectId = await params.id;
   const project = getCurrentProject(params.id);
-
+  console.log(project.meta);
   return { props: { project, projectId } };
 }
 
