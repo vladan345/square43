@@ -14,7 +14,7 @@ import Result from "../../components/Result";
 import { useLoading } from "../../utils/hooks/LoadingContext";
 
 function Project({ meta, project, projectId }) {
-  console.log(meta.description);
+  console.log(meta);
   const { setLoading } = useLoading();
   // const [project, setProject] = useState();
   setLoading(false);
@@ -131,9 +131,9 @@ export async function getStaticProps({ params }) {
       image: "https://www.square43.com/images/imunoshop/heroImunoshop.webp",
     },
   };
-  const meta = await users[params.id];
   const projectId = await params.id;
-  const project = await getCurrentProject(params.id);
+  const meta = users[projectId];
+  const project = getCurrentProject(params.id);
 
   return { props: { meta, project, projectId } };
 }
