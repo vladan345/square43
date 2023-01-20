@@ -22,6 +22,12 @@
   display: inline-block;
   margin-right: -360px;
 }
+.phone:nth-of-type(3) {
+  z-index: 3;
+}
+.phone:nth-of-type(2) {
+  z-index: 2;
+}
 .description {
   max-width: 440px;
   margin-bottom: 40px;

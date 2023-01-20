@@ -14,10 +14,9 @@ import Result from "../../components/Result";
 import { useLoading } from "../../utils/hooks/LoadingContext";
 
 function Project({ meta, project, projectId }) {
-  console.log(projectId);
   const { setLoading } = useLoading();
   // const [project, setProject] = useState();
-
+  setLoading(false);
   // useEffect(() => {
   //   // setProject(getCurrentProject(projectId));
   //   setTimeout(() => {
@@ -45,7 +44,7 @@ function Project({ meta, project, projectId }) {
   return (
     <>
       <Head>
-        <title>{meta.title}</title>
+        {/* <title>{meta.title}</title>
         <meta name="description" content={meta.description} />
 
         <meta name="title" content={meta.title} />
@@ -59,7 +58,7 @@ function Project({ meta, project, projectId }) {
         <meta property="twitter:url" content={meta.link} />
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
-        <meta name="twitter:image" content={meta.image} />
+        <meta name="twitter:image" content={meta.image} /> */}
       </Head>
       <div>
         {project && (
@@ -133,7 +132,6 @@ export async function getStaticProps({ params }) {
   };
   const meta = await users[params.id];
   const projectId = await params.id;
-  console.log(meta);
   const project = await getCurrentProject(params.id);
 
   return { props: { meta, project, projectId } };
