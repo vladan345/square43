@@ -44,8 +44,8 @@ function Project({ meta, project, projectId }) {
   return (
     <>
       <Head>
-        {/* <title>{meta.title}</title>
-        <meta name="description" content={meta.description} />
+        <title>{meta.title}</title>
+        {/* <meta name="description" content={meta.description} />
 
         <meta name="title" content={meta.title} />
 
