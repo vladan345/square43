@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { getCurrentProject } from "../../utils/data/getData";
-
+import metaData from "../../utils/constants/metaData.json";
 import Northprim from "../../pages-sections/projectMain/Northprim";
 import OwnNew from "../../pages-sections/projectMain/OwnNew";
 import Joker from "../../pages-sections/projectMain/Joker";
@@ -13,8 +13,8 @@ import Outro from "../../components/Outro";
 import Result from "../../components/Result";
 import { useLoading } from "../../utils/hooks/LoadingContext";
 
-function Project({ meta, project, projectId }) {
-  console.log(meta);
+function Project({ singleMeta, project, projectId }) {
+  console.log(singleMeta);
   const { setLoading } = useLoading();
   // const [project, setProject] = useState();
   setLoading(false);
@@ -45,10 +45,11 @@ function Project({ meta, project, projectId }) {
   return (
     <>
       <Head>
-        <title>{meta.pageTitle}</title>
-        <meta name="description" content={meta.description} />
+        <title>{singleMeta.pageTitle}</title>
 
-        {/* <meta name="title" content={meta.title} />
+        {/* <meta name="description" content={singleMeta.description} />
+
+ <meta name="title" content={meta.title} />
 
         <meta property="og:url" content={meta.link} />
         <meta property="og:type" content="website" />
@@ -89,53 +90,12 @@ export function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  let users = {
-    northprim: {
-      description:
-        "Transforming just another outsourcing tech company into a unique, provocative brand brimming with energy, emotion and the ever-wanted X factor.",
-      title: "Square43 Studio - Northprim",
-      pageTitle: "Square43 Studio | Northprim",
-      link: "https://square43.com/projects/northprim",
-      image: "https://www.square43.com/images/northprim/heroNorthprim.png",
-    },
-    ownnew: {
-      description:
-        "A Fresh Start-up Project straight from London. See how we helped OwnNew make their market debut across the UK.",
-      title: "Square43 Studio - Own New",
-      pageTitle: "Square43 Studio | Own New",
-      link: "https://square43.com/projects/ownnew",
-      image: "https://www.square43.com/images/ownnew/heroOwnnew.webp",
-    },
-    joker: {
-      description:
-        "Designing the MVP of energy drinks: our ultimate success story.",
-      title: "Square43 Studio - Joker",
-      pageTitle: "Square43 Studio | Joker",
-      link: "https://square43.com/projects/joker",
-      image: "https://www.square43.com/images/joker/heroJoker.png",
-    },
-    "dib-travel": {
-      description:
-        "Business travel made better: a comprehensive case study of DIB Travel.",
-      title: "Square43 Studio - DIB Travel",
-      pageTitle: "Square43 Studio | DIB Travel",
-      link: "https://square43.com/projects/dib-travel",
-      image: "https://www.square43.com/images/dib-travel/heroDib.webp",
-    },
-    imunoshop: {
-      description:
-        "How to develop a new brand and a seamless online shop from scratch - the story of Imuno shop.",
-      title: "Square43 Studio - Imuno Shop",
-      pageTitle: "Square43 Studio | Imuno Shop",
-      link: "https://square43.com/projects/imunoshop",
-      image: "https://www.square43.com/images/imunoshop/heroImunoshop.webp",
-    },
-  };
   const projectId = await params.id;
-  const meta = users.imunoshop;
+  const { meta } = metaData;
   const project = getCurrentProject(params.id);
+  const singleMeta = meta[projectId];
 
-  return { props: { meta, project, projectId } };
+  return { props: { singleMeta, project, projectId } };
 }
 
 export default Project;
