@@ -45,7 +45,7 @@ function Project({ meta, project, projectId }) {
   return (
     <>
       <Head>
-        {/* <title>{meta.pageTitle}</title> */}
+        <title>{meta.pageTitle}</title>
         <meta name="description" content={meta.description} />
 
         {/* <meta name="title" content={meta.title} />
@@ -132,7 +132,7 @@ export async function getStaticProps({ params }) {
     },
   };
   const projectId = await params.id;
-  const meta = users[projectId];
+  const meta = users.imunoshop;
   const project = getCurrentProject(params.id);
 
   return { props: { meta, project, projectId } };
