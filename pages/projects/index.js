@@ -9,13 +9,12 @@ import Head from "next/head";
 import { useLoading } from "../../utils/hooks/LoadingContext";
 import { getAllProjects } from "../../utils/data/getData";
 
-function Projects() {
-  const [projects, setProjects] = useState([]);
+function Projects({ projects }) {
+  // const [projects, setProjects] = useState([]);
   const { setLoading } = useLoading();
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
-      setProjects(getAllProjects());
       setLoading(false);
     }, 1000);
   }, []);
@@ -94,6 +93,15 @@ function Projects() {
       </main>
     </>
   );
+}
+
+export function getStaticProps() {
+  const projects = getAllProjects();
+  return {
+    props: {
+      projects,
+    },
+  };
 }
 
 export default Projects;
