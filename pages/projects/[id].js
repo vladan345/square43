@@ -45,20 +45,20 @@ function Project({ project, projectId }) {
       <Head>
         <title>{project?.meta.title}</title>
 
-        {/* <meta name="description" content={singleMeta.description} />
+        <meta name="description" content={project?.meta.description} />
 
- <meta name="title" content={meta.title} />
+        <meta name="title" content={project?.meta.title} />
 
-        <meta property="og:url" content={meta.link} />
+        <meta property="og:url" content={project?.meta.link} />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content={meta.image} />
+        <meta property="og:image" content={project?.meta.image} />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="square43.com" />
-        <meta property="twitter:url" content={meta.link} />
-        <meta name="twitter:title" content={meta.title} />
-        <meta name="twitter:description" content={meta.description} />
-        <meta name="twitter:image" content={meta.image} /> */}
+        <meta property="twitter:url" content={project?.meta.link} />
+        <meta name="twitter:title" content={project?.meta.title} />
+        <meta name="twitter:description" content={project?.meta.description} />
+        <meta name="twitter:image" content={project?.meta.image} />
       </Head>
       <div>
         {project && (
@@ -90,7 +90,6 @@ export function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const projectId = await params.id;
   const project = getCurrentProject(params.id);
-  console.log(project.meta);
   return { props: { project, projectId } };
 }
 
