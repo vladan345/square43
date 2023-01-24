@@ -43,7 +43,7 @@ function Project({ project, projectId }) {
   return (
     <>
       <Head>
-        <title>{project.meta?.title}</title>
+        <title>{project?.meta.title}</title>
 
         {/* <meta name="description" content={singleMeta.description} />
 
