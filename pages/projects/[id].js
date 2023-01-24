@@ -14,14 +14,12 @@ import { useLoading } from "../../utils/hooks/LoadingContext";
 
 function Project({ project, projectId }) {
   const { setLoading } = useLoading();
-  // const [project, setProject] = useState();
   setLoading(false);
-  // useEffect(() => {
-  //   // setProject(getCurrentProject(projectId));
-  //   setTimeout(() => {
-  //     setLoading(false);
-  //   }, 3000);
-  // }, [projectId]);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
 
   const renderPage = () => {
     switch (projectId) {
