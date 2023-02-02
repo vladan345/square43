@@ -5,6 +5,7 @@ import OwnNew from "../../pages-sections/projectMain/OwnNew";
 import Joker from "../../pages-sections/projectMain/Joker";
 import DibTravel from "../../pages-sections/projectMain/DibTravel";
 import Imunoshop from "../../pages-sections/projectMain/Imunoshop";
+import Keiko from "../../pages-sections/projectMain/Keiko";
 
 import Head from "next/head";
 import ProjectHero from "../../components/ProjectHero";
@@ -33,6 +34,8 @@ function Project({ project, projectId }) {
         return <DibTravel />;
       case "imunoshop":
         return <Imunoshop />;
+      case "keiko":
+        return <Keiko />;
       default:
         return null;
     }

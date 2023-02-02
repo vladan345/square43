@@ -1,0 +1,82 @@
+.Banner {
+  position: relative;
+  height: 600px;
+  margin-top: 250px;
+}
+.stripe {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #f3efec;
+  width: 100%;
+  height: 600px;
+}
+.splash {
+  position: absolute;
+  left: 100px;
+  bottom: 0;
+}
+.bannerImage {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.text {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.wrapper {
+  width: 1360px;
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 1560px) {
+  .Banner {
+    margin-top: 160px;
+  }
+  .bannerImage {
+    width: 700px;
+    height: auto;
+  }
+}
+@media (max-width: 1160px) {
+  .bannerImage {
+    width: 500px;
+    height: auto;
+  }
+  .Banner {
+    height: 400px;
+  }
+  .stripe {
+    height: 400px;
+  }
+  .splash {
+    width: 450px;
+    height: auto;
+  }
+  .text {
+    width: 500px;
+    height: auto;
+  }
+}
+@media (max-width: 900px) {
+  .splash {
+    left: -100px;
+  }
+  .text {
+    transform: translateY(100%);
+    top: auto;
+    bottom: -40px;
+    max-width: 500px;
+    width: 90vw;
+  }
+  .Banner {
+    margin-bottom: 300px;
+  }
+  .bannerImage {
+    right: -120px;
+  }
+}

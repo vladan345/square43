@@ -141,6 +141,35 @@
         "link": "https://square43.com/projects/imunoshop",
         "image": "https://www.square43.com/images/imunoshop/heroImunoshop.webp"
       }
+    },
+    {
+      "id": "keiko",
+      "name": "Keiko",
+      "slogan": "Sensations combined: feel the softness through visuals and copy.",
+      "color": "#d3e0e7",
+      "heroImage": "/images/keiko/heroKeiko.webp",
+      "heroVideo": "/images/keiko/heroKeiko.mp4",
+      "heroArrow": "/images/keiko/keikoArrow.svg",
+      "missionShort": "We like working with game-changers. That typically refers to people with a unique product and a vision. KEIKO approached us with a rich product background: baby clothing made of only the finest organic materials - specifically a combination of organic cotton and bamboo, which is fully biodegradable.",
+      "missionLong": "Their result: surreal softness and comfort for babies, with their future in mind.",
+      "solutionShort": "KEIKO provided us with high-quality images, as well as short video materials. With all the building blocks at our disposal, we adapted the imagery with pro-level editing, inserting key elements. We finished off with to-the-point copy that followed the tone of the brand: light, ethereal, with soft wording and angel-like, dreamy imagery behind every letter.",
+      "solutionLong": "Combining the perfected visuals with the appropriately-styled copy yielded heavenly results - and sales!",
+      "resultShort": "KEIKO's Instagram page gained followers, with new inquiries arriving every day.",
+      "resultLong": "Even though the brand had been present on the market for a month, its <i>profits</i> started increasing as soon as we put in our marketing efforts.",
+      "liveProject": "",
+      "services": [
+        "web-design",
+        "social-media",
+        "copywriting",
+        "motion-design"
+      ],
+      "meta": {
+        "description": "Sensations combined: feel the softness through visuals and copy.",
+        "title": "Square43 Studio - Keiko",
+        "pageTitle": "Square43 Studio | Keiko",
+        "link": "https://square43.com/projects/keiko",
+        "image": "https://www.square43.com/images/keiko/heroKeiko.webp"
+      }
     }
   ],
   "services": [
