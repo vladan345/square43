@@ -34,7 +34,7 @@ function Projects({ projects }) {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://www.square43.com/images/Projects.png"
+          content="https://square43.com/images/Projects.png"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -47,7 +47,7 @@ function Projects({ projects }) {
         />
         <meta
           name="twitter:image"
-          content="https://www.square43.com/images/Projects.png"
+          content="https://square43.com/images/Projects.png"
         />
       </Head>
       <main>

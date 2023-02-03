@@ -22,7 +22,7 @@ function Services() {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://www.square43.com/images/Services.png"
+          content="https://square43.com/images/Services.png"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -36,7 +36,7 @@ function Services() {
         />
         <meta
           name="twitter:image"
-          content="https://www.square43.com/images/Services.png"
+          content="https://square43.com/images/Services.png"
         />
       </Head>
       <main>

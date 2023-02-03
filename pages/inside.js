@@ -19,7 +19,7 @@ function About() {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://www.square43.com/images/About.png"
+          content="https://square43.com/images/About.png"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -32,7 +32,7 @@ function About() {
         />
         <meta
           name="twitter:image"
-          content="https://www.square43.com/images/About.png"
+          content="https://square43.com/images/About.png"
         />
       </Head>
       <main>
