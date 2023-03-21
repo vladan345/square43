@@ -3,13 +3,12 @@ import Link from "next/link";
 import styles from "../styles/component-css/Header.module.css";
 import Image from "next/image";
 import MobileMenu from "./MobileMenu";
-import { CURSOR_COLOR, DispatchCursor } from "haspr-cursor";
+
 import { useLoading } from "../utils/hooks/LoadingContext";
 //All comments are for page transition delay
 import { useRouter } from "next/router";
 
 export default function Header() {
-  const dispatch = DispatchCursor();
   const [opened, setOpened] = useState(false);
   const router = useRouter();
   const { setLoading } = useLoading();
@@ -77,9 +76,8 @@ export default function Header() {
         <div className={`wrapper ${styles.wrapper}`}>
           <div className={styles.leftNav}>
             <Link
+              data-cursor="pointer"
               onClick={handleClick}
-              onMouseEnter={() => CURSOR_COLOR("WHITE")}
-              onMouseLeave={() => CURSOR_COLOR("END")}
               className={styles.headerLink}
               href="/projects"
             >
@@ -88,20 +86,12 @@ export default function Header() {
             <Link
               href="/services"
               onClick={handleClick}
-              onMouseEnter={() => CURSOR_COLOR("WHITE")}
-              onMouseLeave={() => CURSOR_COLOR("END")}
               className={styles.headerLink}
             >
               Services
             </Link>
           </div>
-          <Link
-            href="/"
-            onMouseEnter={() => CURSOR_COLOR("WHITE")}
-            onMouseLeave={() => CURSOR_COLOR("END")}
-            className={styles.logo}
-            onClick={handleClick}
-          >
+          <Link href="/" className={styles.logo} onClick={handleClick}>
             <Image
               src="/logo.svg"
               alt="square43 logo"
@@ -123,8 +113,6 @@ export default function Header() {
             <Link
               onClick={handleClick}
               href="/inside"
-              onMouseEnter={() => CURSOR_COLOR("WHITE")}
-              onMouseLeave={() => CURSOR_COLOR("END")}
               className={styles.headerLink}
             >
               Inside
@@ -132,8 +120,6 @@ export default function Header() {
             <Link
               onClick={handleClick}
               href="/contact"
-              onMouseEnter={() => CURSOR_COLOR("WHITE")}
-              onMouseLeave={() => CURSOR_COLOR("END")}
               className={styles.headerLink}
             >
               Contact

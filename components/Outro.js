@@ -4,8 +4,6 @@ import Image from "next/image";
 
 import { getAllProjects } from "../utils/data/getData";
 
-import { CURSOR_COLOR } from "haspr-cursor";
-
 function Outro(props) {
   const [project, setProject] = useState([]);
   const [isLoading, setLoading] = useState(false);
@@ -33,12 +31,7 @@ function Outro(props) {
               <h2 className={styles.name}>{project.name}</h2>
               <p className={styles.slogan}>{project.slogan}</p>
 
-              <a
-                className={styles.arrowLink}
-                onMouseEnter={() => CURSOR_COLOR("WHITE")}
-                onMouseLeave={() => CURSOR_COLOR("END")}
-                href={`/projects/${project.id}`}
-              >
+              <a className={styles.arrowLink} href={`/projects/${project.id}`}>
                 <div className={styles.arrow}>
                   <Image
                     src="/images/outro-arrow.svg"
