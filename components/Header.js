@@ -76,7 +76,6 @@ export default function Header() {
         <div className={`wrapper ${styles.wrapper}`}>
           <div className={styles.leftNav}>
             <Link
-              data-cursor="pointer"
               onClick={handleClick}
               className={styles.headerLink}
               href="/projects"
