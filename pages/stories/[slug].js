@@ -1,11 +1,20 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { GraphQLClient, gql } from "graphql-request";
 import styles from "../../styles/BlogSingle.module.css";
+import { useLoading } from "../../utils/hooks/LoadingContext";
 
 const client = new GraphQLClient(process.env.NEXT_PUBLIC_HYGRAPH_URL);
 
 export default function Blog({ blog }) {
+  const { setLoading } = useLoading();
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
+
   return (
     <div className={styles.Blog + " container"}>
       <div className={styles.wrapper}>
