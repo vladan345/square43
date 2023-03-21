@@ -111,6 +111,15 @@ export default function Header() {
             />
           </Link>
           <div className={styles.rightNav}>
+            {/* <Link
+              href="/stories"
+              onClick={handleClick}
+              onMouseEnter={() => CURSOR_COLOR("WHITE")}
+              onMouseLeave={() => CURSOR_COLOR("END")}
+              className={styles.headerLink}
+            >
+              Stories
+            </Link> */}
             <Link
               onClick={handleClick}
               href="/inside"

@@ -1,0 +1,34 @@
+.Blog {
+  background: linear-gradient(#fff 0, #f8f8f8 40%);
+  padding: 180px 20px 120px 20px;
+}
+.wrapper {
+  max-width: 1360px;
+  position: static;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.title {
+  font-size: 120px;
+  margin: 25px 0 25px 0;
+  font-family: MatterBold, sans-serif;
+  letter-spacing: -4.8px;
+  line-height: 1;
+}
+.date {
+  font-size: 24px;
+  color: #909090;
+}
+.content {
+  margin-top: 80px;
+  max-width: 760px;
+}
+.content h2 {
+  font-family: MatterBold, sans-serif;
+  margin-bottom: 40px;
+  margin-top: 80px;
+}
+.content p {
+  font-size: 22px;
+  margin-bottom: 40px;
+}

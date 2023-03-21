@@ -1,0 +1,72 @@
+.Stories {
+  background: linear-gradient(#fff 0, #f8f8f8 40%);
+  padding: 180px 20px 120px 20px;
+}
+.title {
+  font-size: 120px;
+  margin: 0 0 25px 0;
+  font-family: MatterBold, sans-serif;
+  letter-spacing: -4.8px;
+  line-height: 1;
+}
+.subheading {
+  font-size: 28px;
+  font-family: MatterRegular, sans-serif;
+  line-height: 1.2;
+  max-width: 520px;
+  margin-bottom: 80px;
+}
+.wrapper {
+  max-width: 1360px;
+  position: static;
+  margin: 0 auto;
+}
+.stories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.featuredImage {
+  height: 300px;
+  position: relative;
+}
+.featuredImage img {
+  object-fit: cover;
+}
+.blogTitle {
+  font-size: 80px;
+  font-family: MatterBold;
+  margin-bottom: 20px;
+  display: inline-block;
+  letter-spacing: -3.2px;
+  line-height: 1;
+  margin: 40px 0;
+}
+.blogExcerpt {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+@media (max-width: 900px) {
+  .Stories {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+  .title {
+    font-size: 54px;
+    letter-spacing: normal;
+  }
+  .subheading {
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+  .section {
+    margin: 0 -10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    grid-template-columns: repeat(1, 1fr);
+    width: calc(100% + 20px);
+  }
+}
