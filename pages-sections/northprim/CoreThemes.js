@@ -1,10 +1,43 @@
-import React from "react";
-import { Parallax } from "react-scroll-parallax";
+import { useRef, useEffect } from "react";
 import Image from "next/image";
 
 import styles from "../../styles/section-css/northprim/CoreThemes.module.css";
 
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 function CoreThemes() {
+  const woman = useRef(null);
+
+  useEffect(() => {
+    gsap.fromTo(
+      woman.current,
+      {
+        scrollTrigger: {
+          trigger: woman.current,
+          start: "top bottom",
+          toggleActions: "restart none none none",
+          scrub: true,
+        },
+        y: 100,
+        ease: "power1",
+      },
+      {
+        scrollTrigger: {
+          trigger: woman.current,
+          start: "top bottom",
+          toggleActions: "restart none none none",
+          scrub: true,
+        },
+        y: -150,
+        ease: "power1",
+      }
+    );
+
+    // return () => tween.revert(); // <- cleanup!
+  }, []);
   return (
     <div className={styles.CoreThemes}>
       <div className="wrapper">
@@ -68,7 +101,7 @@ function CoreThemes() {
               </div>
             </div>
             <div className={styles.imageWrap}>
-              <Parallax speed={10} className={styles.keyboard}>
+              <div className={styles.keyboard} ref={woman}>
                 <Image
                   src="/images/northprim/S43_NP_Keyboard.png"
                   alt="Northprim woman with a keyboard"
@@ -78,7 +111,7 @@ function CoreThemes() {
               33vw"
                   style={{ objectFit: "contain" }}
                 />
-              </Parallax>
+              </div>
               <div className={styles.frame}>
                 <Image
                   src="/images/northprim/picture_frame.png"

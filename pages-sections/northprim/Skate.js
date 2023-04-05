@@ -2,62 +2,50 @@ import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import styles from "../../styles/section-css/northprim/Skate.module.css";
 
-import { useInView } from "react-intersection-observer";
-import { gsap } from "gsap";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Skate() {
-  const splash = useRef(null);
-  const skateF = useRef(null);
-  const skateM = useRef(null);
-  const { ref, inView } = useInView({ threshold: 0 });
+  const main = useRef(null);
 
   useEffect(() => {
-    if (inView) {
-      const el1 = splash.current;
-      const el2 = skateF.current;
-      const el3 = skateM.current;
-      gsap.fromTo(
-        el1,
-        {
-          scale: 0.5,
-          duration: 2,
-          ease: "power1",
+    let ctx = gsap.context(() => {
+      gsap.from(".splash", {
+        scrollTrigger: {
+          trigger: ".splash",
+          start: "top bottom",
+          toggleActions: "restart none none none",
+          scrub: true,
         },
-        {
-          scale: 1,
-          duration: 1,
-          ease: "power1",
-        }
-      );
-      gsap.fromTo(
-        el2,
-        {
-          scale: 0.4,
-          duration: 1.5,
-          ease: "power1",
+        scale: 0.5,
+        duration: 2,
+        ease: "power1",
+      });
+      gsap.from(".skateF", {
+        scrollTrigger: {
+          trigger: ".skateF",
+          toggleActions: "restart none none none",
+          start: "-240px bottom",
         },
-        {
-          scale: 1,
-          duration: 1,
-          ease: "power1",
-        }
-      );
-      gsap.fromTo(
-        el3,
-        {
-          scale: 0.3,
-          duration: 1,
-          delay: 3,
-          ease: "power1",
+        scale: 0.4,
+        duration: 1.5,
+        ease: "power1",
+      });
+      gsap.from(".skateM", {
+        scrollTrigger: {
+          trigger: ".skateM",
+          start: "-220px bottom",
+          toggleActions: "restart none none none",
         },
-        {
-          scale: 1,
-          duration: 1,
-          ease: "power1",
-        }
-      );
-    }
-  }, [inView]);
+        scale: 0.3,
+        duration: 1,
+        ease: "power1",
+      });
+    }, main.current);
+    return () => ctx.revert(); // <- cleanup!
+  }, []);
   return (
     <div className={styles.Skate}>
       <div className="wrapper">
@@ -70,8 +58,8 @@ function Skate() {
             <p className={styles.statement}>
               All that glitters isn&apos;t gold - so we went with neon!
             </p>
-            <div className={styles.skaters} ref={ref}>
-              <div className={styles.splash} ref={splash}>
+            <div className={styles.skaters} ref={main}>
+              <div className={`${styles.splash} splash`}>
                 <Image
                   src="/images/northprim/splash.svg"
                   alt="Spray splash Northprim"
@@ -82,7 +70,7 @@ function Skate() {
                   style={{ objectFit: "contain" }}
                 />
               </div>
-              <div className={styles.skateF} ref={skateF}>
+              <div className={`${styles.skateF} skateF`}>
                 <Image
                   src="/images/northprim/skateboarder-f-1.webp"
                   alt="Skateboarder femaile Northprim"
@@ -93,7 +81,7 @@ function Skate() {
                   style={{ objectFit: "contain" }}
                 />
               </div>
-              <div className={styles.skateM} ref={skateM}>
+              <div className={`${styles.skateM} skateM`}>
                 <Image
                   src="/images/northprim/skateboarder-m-1.webp"
                   alt="Skateboarder male Northprim"
