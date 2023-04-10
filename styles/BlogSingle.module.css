@@ -8,27 +8,50 @@
   margin: 0 auto;
   padding: 0 20px;
 }
-.title {
-  font-size: 120px;
-  margin: 25px 0 25px 0;
-  font-family: MatterBold, sans-serif;
-  letter-spacing: -4.8px;
-  line-height: 1;
-}
 .date {
-  font-size: 24px;
-  color: #909090;
+  display: block;
+  font-family: "MatterBold";
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.title {
+  font-size: 48px;
+  max-width: 720px;
+  font-family: MatterBold, sans-serif;
+  line-height: 1.1;
+  margin-bottom: 40px;
+}
+.excerpt {
+  font-size: 28px;
+  font-family: "MatterRegular";
+  max-width: 720px;
 }
 .content {
-  margin-top: 80px;
-  max-width: 760px;
+  margin-top: 40px;
+}
+.content p,
+.content h2 {
+  max-width: 720px;
 }
 .content h2 {
   font-family: MatterBold, sans-serif;
+  font-size: 36px;
   margin-bottom: 40px;
   margin-top: 80px;
 }
 .content p {
-  font-size: 22px;
+  font-size: 18px;
   margin-bottom: 40px;
+}
+.content img {
+  margin: 60px 40px;
+  margin-left: 0;
+  object-fit: cover;
+}
+@media (max-width: 900px) {
+  .content img {
+    margin-bottom: 0;
+    width: 100%;
+  }
 }
