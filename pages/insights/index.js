@@ -50,10 +50,10 @@ function Blog({ blogs }) {
           }}
           className={styles.title}
         >
-          Lorem ipsum dolor
+          Taking notes
         </h1>
         <p className={styles.subheading}>
-          Viverra blandit sed varius ante. Id diam ornare viverra diam nunc.
+          Think of this as our status updates.
         </p>
 
         <section className={styles.stories}>
