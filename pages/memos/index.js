@@ -119,11 +119,6 @@ function Blog({ blogs }) {
                   </div>
                 </div>
               </div>
-              <Image
-                src={blogs[0].featuredImage.url}
-                fill
-                alt={blogs[0].postTitle}
-              />
             </Link>
             {blogs &&
               blogs.slice(1).map((blog) => {

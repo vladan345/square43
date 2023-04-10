@@ -34,6 +34,9 @@
 .content h2 {
   max-width: 720px;
 }
+.content a {
+  text-decoration: underline;
+}
 .content h2 {
   font-family: MatterBold, sans-serif;
   font-size: 36px;
