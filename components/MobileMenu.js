@@ -51,7 +51,15 @@ function MobileMenu({ stateChange, ...props }) {
               Services
             </Link>
           </li>
-
+          <li className={styles.listItem}>
+            <Link
+              href="/insights"
+              className={styles.link}
+              onClick={handleClick}
+            >
+              Insights
+            </Link>
+          </li>
           <li className={styles.listItem}>
             <Link href="/inside" className={styles.link} onClick={handleClick}>
               Inside

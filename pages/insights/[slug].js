@@ -15,15 +15,29 @@ export default function Blog({ blog }) {
     }, 1000);
   }, []);
 
+  const month = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  const date = new Date(blog.blogDate);
+  const latestDate = `${date.getDate()} ${
+    month[date.getMonth()]
+  } ${date.getFullYear()}`;
+
   return (
     <div className={styles.Blog + " container"}>
       <div className={styles.wrapper}>
-        <Image
-          src={blog.featuredImage.url}
-          alt="blog 1 image"
-          width={800}
-          height={420}
-        />
+        <span className={styles.date}>{latestDate}</span>
         <h1
           style={{
             animation: `fadeInRight 1s forwards ease-in-out`,
@@ -33,7 +47,7 @@ export default function Blog({ blog }) {
         >
           {blog.postTitle}
         </h1>
-        <span className={styles.date}>{blog.blogDate}</span>
+        <p className={styles.excerpt}>{blog.excerpt}</p>
         <div
           className={styles.content}
           dangerouslySetInnerHTML={{ __html: blog.blogContent.html }}
@@ -53,9 +67,6 @@ export const getStaticProps = async ({ params }) => {
         blogDate
         postTitle
         id
-        featuredImage {
-          url
-        }
         blogContent {
           html
         }
