@@ -58,7 +58,7 @@ function Blog({ blogs }) {
 
         <section className={styles.stories}>
           <Link
-            href={`insights/${blogs[0].slug}`}
+            href={`memos/${blogs[0].slug}`}
             className={styles.latest}
             style={{
               background: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) center center no-repeat, url(${blogs[0].featuredImage.url}) center center no-repeat`,
@@ -104,7 +104,7 @@ function Blog({ blogs }) {
               return (
                 <Link
                   key={blog.id}
-                  href={`/insights/${blog.slug}`}
+                  href={`/memos/${blog.slug}`}
                   className={styles.singleBlog}
                   onClick={handleClick}
                   style={{

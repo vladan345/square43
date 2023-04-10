@@ -90,11 +90,11 @@ export default function Header() {
               Services
             </Link>
             <Link
-              href="/insights"
+              href="/memos"
               onClick={handleClick}
               className={styles.headerLink}
             >
-              Insights
+              Memos
             </Link>
           </div>
           <Link href="/" className={styles.logo} onClick={handleClick}>
