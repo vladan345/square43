@@ -12,6 +12,9 @@ export default function Blog({ blog }) {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
+      const video = document.querySelector(".video video");
+
+      video.muted = true;
     }, 1000);
   }, []);
 
@@ -36,6 +39,13 @@ export default function Blog({ blog }) {
 
   return (
     <div className={styles.Blog + " container"}>
+      <img
+        className={styles.featuredImage}
+        src={blog.featuredImage.url}
+        width={400}
+        height={400}
+        alt="featured Image"
+      />
       <div className={styles.wrapper}>
         <span className={styles.date}>{latestDate}</span>
         <h1
@@ -67,6 +77,9 @@ export const getStaticProps = async ({ params }) => {
         blogDate
         postTitle
         id
+        featuredImage {
+          url
+        }
         blogContent {
           html
         }

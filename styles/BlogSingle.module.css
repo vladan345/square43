@@ -4,10 +4,18 @@
 }
 .wrapper {
   max-width: 1360px;
-  position: static;
+  position: relative;
   margin: 0 auto;
-  padding: 0 20px;
 }
+.featuredImage {
+  position: absolute;
+  top: 110px;
+  right: 0;
+  width: 620px;
+  height: 620px;
+  object-fit: cover;
+}
+
 .date {
   display: block;
   font-family: "MatterBold";
@@ -52,9 +60,28 @@
   margin-left: 0;
   object-fit: cover;
 }
+.content video {
+  margin: 40px 0;
+  max-width: 720px;
+}
+@media (max-width: 1400px) {
+  .featuredImage {
+    position: static;
+    margin-bottom: 80px;
+  }
+}
 @media (max-width: 900px) {
   .content img {
     margin-bottom: 0;
     width: 100%;
+  }
+  .content video {
+    width: 100%;
+  }
+}
+@media (max-width: 660px) {
+  .featuredImage {
+    width: 90vw;
+    height: 90vw;
   }
 }
