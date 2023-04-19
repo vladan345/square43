@@ -1,0 +1,21 @@
+.slide1,
+.slide2 {
+  height: 100vh;
+}
+
+.slide1 {
+  background: pink;
+}
+
+.slide2 {
+  background: white;
+}
+
+.square {
+  width: 150px;
+  height: 300px;
+  background: fuchsia;
+}
+.red {
+  background: red;
+}

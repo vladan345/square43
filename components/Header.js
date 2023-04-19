@@ -114,6 +114,13 @@ export default function Header() {
             >
               Inside
             </Link>
+            {/* <Link
+              onClick={handleClick}
+              href="/career"
+              className={styles.headerLink}
+            >
+              Career
+            </Link> */}
             <Link
               onClick={handleClick}
               href="/contact"
