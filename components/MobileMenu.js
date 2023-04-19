@@ -61,11 +61,11 @@ function MobileMenu({ stateChange, ...props }) {
               Inside
             </Link>
           </li>
-          {/* <li className={styles.listItem}>
+          <li className={styles.listItem}>
             <Link href="/career" className={styles.link} onClick={handleClick}>
               Career
             </Link>
-          </li> */}
+          </li>
           <li className={styles.listItem}>
             <Link href="/contact" className={styles.link} onClick={handleClick}>
               Contact

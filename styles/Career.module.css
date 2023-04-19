@@ -1,21 +1,148 @@
 .slide1,
 .slide2 {
-  height: 100vh;
+  height: 150vh;
 }
 
-.slide1 {
-  background: pink;
+.heading1,
+.heading2 {
+  font-size: 120px;
+  font-family: "MatterBold";
+  letter-spacing: -4.8px;
+  line-height: 1;
+  transform: translateY(-50%);
+  opacity: 1;
+}
+.banner {
+  width: 100%;
+  height: auto;
 }
 
-.slide2 {
-  background: white;
+.positions {
+  margin-top: 120px;
+  background: #f8f8f8;
+  padding: 120px 0;
+}
+.positions .heading {
+  font-family: "MatterBold";
+  font-size: 80px;
+  letter-spacing: -3.2px;
+  line-height: 1.05;
+}
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.card {
+  padding: 40px;
+  background-color: transparent;
+  min-height: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #202020;
+  background: linear-gradient(#fff, #f8f8f8);
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  width: 0;
+  height: 0;
+  border-radius: 0;
+  transition: all 0.8s;
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle at 0 0, #7000ff, #0ff);
+}
+.top {
+  position: relative;
+  z-index: 3;
+  transition: 0.3s;
+}
+.title {
+  font-family: "MatterLight";
+  font-size: 48px;
+  line0height: 1.1;
+  font-weight: 300;
+  height: 2.5em;
+  margin-bottom: 25px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tag {
+  font-size: 16px;
+  ine-height: 1.2;
+  letter-spacing: 0.8px;
+  font-family: "MatterBold";
+  text-transform: uppercase;
+  margin-bottom: 45px;
+}
+.description {
+  font-size: 18px;
+  line-height: 1.4;
+}
+.link {
+  color: #202020;
+  letter-spacing: 0.8px;
+  font-family: MatterBold;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  transition: all 0.8s;
+}
+.icon {
+  filter: invert();
+  transition: 0.8s;
 }
 
-.square {
-  width: 150px;
-  height: 300px;
-  background: fuchsia;
+.card:hover .overlay {
+  width: 145%;
+  height: 145%;
 }
-.red {
-  background: red;
+.card:hover .top,
+.card:hover .link {
+  color: white;
+}
+.card:hover .icon {
+  filter: none;
+}
+
+@media (max-width: 1250px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 985px) {
+  .heading1,
+  .heading2 {
+    font-size: 60px;
+    letter-spacing: normal;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 900px) {
+  .list {
+    margin: 0 -10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .list {
+    grid-template-columns: repeat(1, 1fr);
+    width: calc(100% + 20px);
+  }
 }
