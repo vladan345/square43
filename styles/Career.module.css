@@ -12,11 +12,14 @@
   transform: translateY(-50%);
   opacity: 1;
 }
-.banner {
+.banner,
+.banner2 {
   width: 100%;
   height: auto;
 }
-
+.banner2 {
+  display: none;
+}
 .positions {
   margin-top: 120px;
   background: #f8f8f8;
@@ -137,6 +140,12 @@
 @media (max-width: 900px) {
   .list {
     margin: 0 -10px;
+  }
+  .banner {
+    display: none;
+  }
+  .banner2 {
+    display: block;
   }
 }
 

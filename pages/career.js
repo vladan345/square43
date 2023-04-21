@@ -123,6 +123,13 @@ function Career() {
             height={598}
             className={`${styles.banner} banner`}
           />
+          <Image
+            src="/images/career-banner-mobile.webp"
+            alt="Career banner image"
+            width={900}
+            height={1359}
+            className={`${styles.banner2} banner`}
+          />
         </div>
 
         <div className={styles.positions}>
@@ -133,7 +140,7 @@ function Career() {
                 positions.map((position, index) => {
                   return (
                     <Link
-                      href={`mailto:career@square43.com&subject=Submission for position - ${position.title}`}
+                      href={`mailto:studio@square43.com?subject=Submission for position - ${position.title}`}
                       key={index}
                       className={styles.card}
                     >
