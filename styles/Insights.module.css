@@ -44,6 +44,10 @@
   color: white;
   min-height: 430px;
   padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 .latest:hover .overlay {
   width: 100%;
@@ -59,19 +63,24 @@
   width: 100%;
   display: flex;
   gap: 40px;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 .latest .row:first-of-type {
   align-items: flex-start;
+}
+.latest .row:last-of-type {
+  align-items: center;
 }
 .latest .latestHeading {
   color: white;
   font-weight: 300;
   position: relative;
   z-index: 1;
+  width: 100%;
 }
 .latest .blogTitle {
   width: 50%;
+  margin-bottom: 0;
 }
 .latest .blogLink {
   width: 50%;

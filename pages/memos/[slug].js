@@ -9,15 +9,6 @@ const client = new GraphQLClient(process.env.NEXT_PUBLIC_HYGRAPH_URL);
 export default function Blog({ blog }) {
   const { setLoading } = useLoading();
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-      const video = document.querySelector(".video video");
-
-      video.muted = true;
-    }, 1000);
-  }, []);
-
   const month = [
     "January",
     "February",
