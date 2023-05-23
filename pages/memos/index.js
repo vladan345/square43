@@ -92,7 +92,7 @@ function Blog({ blogs }) {
               href={`memos/${blogs[0].slug}`}
               className={styles.latest}
               style={{
-                background: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) center center no-repeat, url(${blogs[0].featuredImage.url}) center center no-repeat`,
+                background: `url(${blogs[0].featuredImage.url}) center center no-repeat`,
                 backgroundSize: "cover",
               }}
             >
