@@ -1,0 +1,24 @@
+.Ecom {
+  margin-top: 180px;
+}
+.row {
+  display: flex;
+  gap: 80px;
+}
+.col:first-of-type {
+  width: 66%;
+}
+.col:last-of-type {
+  width: 33%;
+}
+.textBox h2 {
+  font-size: 48px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+.textBox p {
+  margin-bottom: 20px;
+}
+.textBox {
+  margin-bottom: 180px;
+}

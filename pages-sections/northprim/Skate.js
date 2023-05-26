@@ -64,9 +64,7 @@ function Skate() {
                   src="/images/northprim/splash.svg"
                   alt="Spray splash Northprim"
                   fill
-                  sizes="(max-width: 768px) 100vw,
-              (max-width: 1200px) 50vw,
-              33vw"
+                  sizes="100vw"
                   style={{ objectFit: "contain" }}
                 />
               </div>
@@ -75,9 +73,7 @@ function Skate() {
                   src="/images/northprim/skateboarder-f-1.webp"
                   alt="Skateboarder femaile Northprim"
                   fill
-                  sizes="(max-width: 768px) 100vw,
-              (max-width: 1200px) 50vw,
-              33vw"
+                  sizes="100vw"
                   style={{ objectFit: "contain" }}
                 />
               </div>
@@ -86,9 +82,7 @@ function Skate() {
                   src="/images/northprim/skateboarder-m-1.webp"
                   alt="Skateboarder male Northprim"
                   fill
-                  sizes="(max-width: 768px) 100vw,
-              (max-width: 1200px) 50vw,
-              33vw"
+                  sizes="100vw"
                   style={{ objectFit: "contain" }}
                 />
               </div>

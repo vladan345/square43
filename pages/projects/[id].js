@@ -6,6 +6,7 @@ import Joker from "../../pages-sections/projectMain/Joker";
 import DibTravel from "../../pages-sections/projectMain/DibTravel";
 import Imunoshop from "../../pages-sections/projectMain/Imunoshop";
 import Keiko from "../../pages-sections/projectMain/Keiko";
+import Glasstic from "../../pages-sections/projectMain/Glasstic";
 
 import Head from "next/head";
 import ProjectHero from "../../components/ProjectHero";
@@ -19,7 +20,7 @@ function Project({ project, projectId }) {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 1000);
   }, []);
 
   const renderPage = () => {
@@ -36,6 +37,8 @@ function Project({ project, projectId }) {
         return <Imunoshop />;
       case "keiko":
         return <Keiko />;
+      case "glasstic":
+        return <Glasstic />;
       default:
         return null;
     }

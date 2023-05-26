@@ -30,9 +30,7 @@ function ProjectCard(props) {
             src={props.project.heroImage}
             alt={`${props.project.name} hero`}
             fill={true}
-            sizes="(max-width: 768px) 100vw,
-              (max-width: 1200px) 50vw,
-              33vw"
+            sizes="100vw"
             priority
             className={styles.image}
           />
