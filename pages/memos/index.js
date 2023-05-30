@@ -134,7 +134,7 @@ function Blog({ blogs }) {
                     className={styles.singleBlog}
                     onClick={handleClick}
                     style={{
-                      background: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) center center no-repeat, url(${blog.featuredImage.url}) center center no-repeat`,
+                      background: `url(${blog.featuredImage.url}) center center no-repeat`,
                       backgroundSize: "cover",
                     }}
                   >
@@ -172,7 +172,7 @@ export default Blog;
 export const getStaticProps = async () => {
   const query = gql`
     query Blogs {
-      blogs {
+      blogs(orderBy: createdAt_DESC) {
         excerpt
         blogDate
         featuredImage {

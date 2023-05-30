@@ -64,6 +64,9 @@
   margin: 40px 0;
   max-width: 720px;
 }
+.liveProject {
+  margin-top: 80px;
+}
 @media (max-width: 1400px) {
   .featuredImage {
     position: static;

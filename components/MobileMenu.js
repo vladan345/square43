@@ -52,8 +52,8 @@ function MobileMenu({ stateChange, ...props }) {
             </Link>
           </li>
           <li className={styles.listItem}>
-            <Link href="/memos" className={styles.link} onClick={handleClick}>
-              Memos
+            <Link href="/career" className={styles.link} onClick={handleClick}>
+              Career
             </Link>
           </li>
           <li className={styles.listItem}>
@@ -62,8 +62,8 @@ function MobileMenu({ stateChange, ...props }) {
             </Link>
           </li>
           <li className={styles.listItem}>
-            <Link href="/career" className={styles.link} onClick={handleClick}>
-              Career
+            <Link href="/memos" className={styles.link} onClick={handleClick}>
+              Thoughts
             </Link>
           </li>
           <li className={styles.listItem}>

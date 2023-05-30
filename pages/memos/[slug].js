@@ -8,7 +8,9 @@ const client = new GraphQLClient(process.env.NEXT_PUBLIC_HYGRAPH_URL);
 
 export default function Blog({ blog }) {
   const { setLoading } = useLoading();
-
+  setTimeout(() => {
+    setLoading(false);
+  }, 1000);
   const month = [
     "January",
     "February",
@@ -32,9 +34,9 @@ export default function Blog({ blog }) {
     <div className={styles.Blog + " container"}>
       <img
         className={styles.featuredImage}
-        src={blog.featuredImage.url}
-        width={400}
-        height={400}
+        src={blog.previewImage.url}
+        width={620}
+        height={620}
         alt="featured Image"
       />
       <div className={styles.wrapper}>
@@ -53,6 +55,21 @@ export default function Blog({ blog }) {
           className={styles.content}
           dangerouslySetInnerHTML={{ __html: blog.blogContent.html }}
         />
+        <a
+          href={blog.projectLink}
+          className={`readMore ${styles.liveProject}`}
+          target="_blank"
+        >
+          View project
+          <div className="icon">
+            <Image
+              src="/images/arrow.svg"
+              alt="Arrow icon"
+              width={40}
+              height={40}
+            />
+          </div>
+        </a>
       </div>
     </div>
   );
@@ -68,12 +85,13 @@ export const getStaticProps = async ({ params }) => {
         blogDate
         postTitle
         id
-        featuredImage {
+        previewImage {
           url
         }
         blogContent {
           html
         }
+        projectLink
       }
     }
   `;
