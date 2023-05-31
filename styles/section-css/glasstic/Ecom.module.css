@@ -11,6 +11,10 @@
 .col:last-of-type {
   width: 33%;
 }
+.col img {
+  width: 100%;
+  height: auto;
+}
 .textBox h2 {
   font-size: 48px;
   font-weight: 300;
@@ -21,4 +25,42 @@
 }
 .textBox {
   margin-bottom: 180px;
+}
+@media (max-width: 950px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col:last-of-type {
+    width: 100%;
+    display: flex;
+    gap: 80px;
+  }
+  .textBox {
+    width: 50%;
+  }
+  .col:last-of-type img {
+    width: 50%;
+    display: flex;
+  }
+  .col:first-of-type {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .Ecom {
+    margin-top: 80px;
+  }
+  .col:last-of-type {
+    flex-direction: column;
+  }
+  .textBox {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .col:last-of-type img {
+    width: 100%;
+  }
+  .textBox h2 {
+    font-size: 32px;
+  }
 }

@@ -12,7 +12,10 @@ function Laptop() {
         <div className={styles.stripe}></div>
         <div className={styles.videoWrap}>
           <video playsInline autoPlay muted loop className={styles.video}>
-            <source src="/images/imunoshop/imunoLaptop.mp4" type="video/mp4" />
+            <source
+              src="/images/glasstic/glasstic-screen.mp4"
+              type="video/mp4"
+            />
           </video>
           <Image
             src="/images/imunoshop/laptop-mockup.webp"

@@ -19,7 +19,7 @@
   position: absolute;
   transform: translate(-50%, -50%);
   top: 49%;
-  left: 50%;
+  left: 49%;
 }
 .stripe {
   width: 100%;
@@ -50,8 +50,21 @@
     width: 581px;
     height: 385px;
   }
+  .textBox {
+    width: 50%;
+  }
 }
 @media (max-width: 900px) {
+  .Laptop {
+    margin-bottom: 40px;
+  }
+  .row {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .textBox {
+    width: 100%;
+  }
   .heading {
     margin: 60px 0;
   }

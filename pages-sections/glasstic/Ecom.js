@@ -13,21 +13,24 @@ function Ecom() {
 
   useEffect(() => {
     let ctx = gsap.context(() => {
-      gsap.to(".product", {
-        y: 200,
-        scrollTrigger: {
-          trigger: ".trigger",
-          scrub: 1,
-          start: "top bottom",
-        },
-      });
-      gsap.to(".cart", {
-        y: -140,
-        scrollTrigger: {
-          trigger: ".trigger",
-          scrub: true,
-          start: "top bottom",
-        },
+      let mm = gsap.matchMedia();
+      mm.add("(min-width: 950px)", () => {
+        gsap.to(".product", {
+          y: 200,
+          scrollTrigger: {
+            trigger: ".trigger",
+            scrub: 1,
+            start: "top bottom",
+          },
+        });
+        gsap.to(".cart", {
+          y: -140,
+          scrollTrigger: {
+            trigger: ".trigger",
+            scrub: true,
+            start: "top bottom",
+          },
+        });
       });
     }, main.current);
 

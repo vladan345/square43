@@ -35,7 +35,8 @@ function Blog({ blogs }) {
   const handleClick = (e) => {
     setLoading(true);
     e.preventDefault();
-    let link = e.currentTarget.attributes[2].value;
+    let link = e.currentTarget.attributes[1].value;
+    console.log(link);
     setTimeout(() => {
       router.push(link);
     }, 1000);
@@ -91,6 +92,7 @@ function Blog({ blogs }) {
             <Link
               href={`memos/${blogs[0].slug}`}
               className={styles.latest}
+              onClick={handleClick}
               style={{
                 background: `url(${blogs[0].featuredImage.url}) center center no-repeat`,
                 backgroundSize: "cover",

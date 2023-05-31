@@ -58,7 +58,8 @@
 .content img {
   margin: 60px 40px;
   margin-left: 0;
-  object-fit: cover;
+  width: 100%;
+  height: auto;
 }
 .content video {
   margin: 40px 0;
