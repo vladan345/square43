@@ -35,8 +35,10 @@ function Blog({ blogs }) {
   const handleClick = (e) => {
     setLoading(true);
     e.preventDefault();
-    let link = e.currentTarget.attributes[1].value;
-    console.log(link);
+
+    let link = e.currentTarget.getAttribute("href");
+
+    // console.log(link);
     setTimeout(() => {
       router.push(link);
     }, 1000);
