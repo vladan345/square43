@@ -1,0 +1,72 @@
+.circle {
+  width: 560px;
+  height: 560px;
+  border-radius: 50%;
+  background: #bea063;
+}
+.circleOverflow {
+  width: 560px;
+  height: 578px;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 0 0 280px 280px;
+  overflow: hidden;
+  position: relative;
+}
+.circleWrap {
+  position: relative;
+  margin-top: -80px;
+  z-index: 3;
+}
+.rowWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.body {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.arm {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.textBox {
+  max-width: 440px;
+}
+.textBox h2 {
+  margin-bottom: 40px;
+}
+.textBox p:first-of-type {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+  .circleWrap {
+    transform: scale(0.7);
+    margin-top: 0;
+    margin-left: -80px;
+  }
+  .rowWrap {
+    gap: 40px;
+  }
+}
+@media (max-width: 900px) {
+  .rowWrap {
+    flex-direction: column-reverse;
+    padding-top: 60px;
+  }
+  .circleWrap {
+    margin-left: 0;
+    margin-top: -60px;
+  }
+}
+@media (max-width: 550px) {
+  .circleWrap {
+    transform: scale(0.45);
+    margin-left: -90px;
+    margin-top: -120px;
+  }
+}

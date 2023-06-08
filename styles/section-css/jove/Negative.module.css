@@ -1,0 +1,33 @@
+.Negative {
+  margin-top: 200px;
+}
+.imageWrap {
+  display: grid;
+  grid-template-columns: 43% 50%;
+  gap: 60px;
+}
+.imageWrap img {
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transform: translateY(30px);
+}
+.Negative p {
+  max-width: 440px;
+  margin: 120px 0 180px;
+}
+@media (max-width: 1200px) {
+  .Negative {
+    margin-top: 120px;
+  }
+}
+@media (max-width: 900px) {
+  .imageWrap {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .Negative p {
+    margin-top: 60px;
+    margin-bottom: 120px;
+  }
+}

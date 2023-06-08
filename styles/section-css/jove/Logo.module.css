@@ -1,0 +1,47 @@
+.Logo {
+  margin-top: 200px;
+}
+.rowWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+.video {
+  width: 680px;
+  height: 520px;
+  overflow: hidden;
+  margin-right: -2px;
+}
+.textBox {
+  max-width: 440px;
+}
+.textBox h2 {
+  margin-bottom: 40px;
+}
+@media (max-width: 1200px) {
+  .Logo {
+    margin-top: 80px;
+  }
+  .rowWrap {
+    gap: 40px;
+  }
+  .video {
+    width: 50%;
+    height: auto;
+  }
+}
+@media (max-width: 900px) {
+  .rowWrap {
+    flex-direction: column;
+    gap: 120px;
+  }
+  .video {
+    width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  .Logo {
+    margin-top: 0;
+  }
+}

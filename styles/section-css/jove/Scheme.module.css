@@ -1,0 +1,26 @@
+.Scheme {
+  margin-top: -50px;
+  padding: 200px 0 100px;
+  background: #f4f0ea;
+}
+.Scheme img {
+  margin: 200px auto 0 auto;
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 908px;
+}
+@media (max-width: 1200px) {
+  .Scheme {
+    padding-top: 80px;
+  }
+  .Scheme img {
+    margin-top: 0;
+  }
+}
+@media (max-width: 900px) {
+  .Scheme {
+    margin-top: 0;
+    margin-bottom: 80px;
+  }
+}

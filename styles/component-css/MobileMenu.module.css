@@ -18,10 +18,10 @@
   font-family: MatterBold;
 }
 .listItem {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 .link {
-  font-size: 50px;
+  font-size: 40px;
   font-family: MatterLight;
   letter-spacing: -1.5px;
   color: white;
@@ -48,7 +48,7 @@
   max-width: 316px;
   display: flex;
   justify-content: space-between;
-  margin: 80px auto 0 auto;
+  margin: 60px auto 0 auto;
 }
 .socialLink {
   color: white;

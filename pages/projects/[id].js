@@ -7,6 +7,7 @@ import DibTravel from "../../pages-sections/projectMain/DibTravel";
 import Imunoshop from "../../pages-sections/projectMain/Imunoshop";
 import Keiko from "../../pages-sections/projectMain/Keiko";
 import Glasstic from "../../pages-sections/projectMain/Glasstic";
+import Jove from "../../pages-sections/projectMain/Jove";
 
 import Head from "next/head";
 import ProjectHero from "../../components/ProjectHero";
@@ -39,6 +40,8 @@ function Project({ project, projectId }) {
         return <Keiko />;
       case "glasstic":
         return <Glasstic />;
+      case "jove":
+        return <Jove />;
       default:
         return null;
     }

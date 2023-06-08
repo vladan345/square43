@@ -1,34 +1,40 @@
-import React, { useState } from "react"; // eslint-disable-line no-unused-vars
+import React, { useState, useRef } from "react"; // eslint-disable-line no-unused-vars
 import Link from "next/link";
 import styles from "../styles/component-css/ProjectHero.module.css";
 import Spinner from "../components/Spinner";
 import Image from "next/image";
 
 function ProjectHero(props) {
-  const [isLoading, setLoading] = useState(false); // eslint-disable-line no-unused-vars
-
+  const [isLoading, setLoading] = useState(false);
+  let hero = useRef(null);
   const {
     name,
     slogan,
     services,
-    color,
-    heroImage,
     heroVideo,
     heroArrow,
     missionShort,
     solutionShort,
     missionLong,
     solutionLong,
-    resultShort,
-    resultLong,
   } = props.project;
+
+  const handleClick = () => {
+    let heroHeight = hero.current;
+    let html = document.querySelector("html");
+    html.style.scrollBehavior = "smooth";
+    window.scrollTo(0, heroHeight.offsetHeight);
+    setTimeout(() => {
+      html.style.scrollBehavior = "auto";
+    }, 500);
+  };
 
   return (
     <div
       className={styles.ProjectHero}
       style={isLoading ? { height: "100vh" } : { height: "auto" }}
     >
-      <div className={styles.hero}>
+      <div className={styles.hero} ref={hero}>
         <video className={styles.heroVideo} playsInline autoPlay muted loop>
           <source src={heroVideo} type="video/mp4" />
         </video>
@@ -59,7 +65,7 @@ function ProjectHero(props) {
           </div>
           <div className={styles.arrow}>
             <div className={styles.iconOverlay}></div>
-            <div className={styles.icon}>
+            <div onClick={handleClick} className={styles.icon}>
               <Image
                 src={heroArrow}
                 width={40}

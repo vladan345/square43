@@ -1,0 +1,49 @@
+.Web {
+  background: #f4f0ea;
+  padding: 150px 0;
+}
+.tabletWrap img {
+  position: absolute;
+  right: 0;
+  top: -3px;
+  width: 122%;
+  height: auto;
+}
+.tabletWrap video {
+  width: 100%;
+  max-width: 860px;
+  max-height: 590px;
+  border-radius: 40px;
+}
+.tabletWrap {
+  position: relative;
+  max-width: 972px;
+  margin-left: 0;
+}
+.rowWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+.textBox {
+  max-width: 440px;
+}
+
+@media (max-width: 900px) {
+  .Web {
+    padding-top: 0;
+    padding-bottom: 80px;
+  }
+  .rowWrap {
+    flex-direction: column;
+  }
+  .tabletWrap img {
+    display: none;
+  }
+  .tabletWrap video {
+    width: 100vw;
+    border-radius: 0;
+    margin-bottom: 40px;
+  }
+}

@@ -194,6 +194,36 @@
         "link": "https://square43.com/projects/glasstic",
         "image": "https://square43.com/images/glasstic/heroGlasstic.webp"
       }
+    },
+    {
+      "id": "jove",
+      "name": "Jove",
+      "slogan": "Creating an entire lore behind a product is no easy task - but there is no greater thrill for us!",
+      "color": "#bea063",
+      "heroImage": "/images/jove/heroJove.webp",
+      "heroVideo": "/images/jove/heroJove.mp4",
+      "heroArrow": "/images/jove/joveArrow.svg",
+      "missionShort": "High-quality truffle products were ready - now they needed a proper identity. This included a logo, an original brand name (with an available domain) and a complete brand book. All of these, however. needed to be tied with a unique story that would set the brand apart from its competitors.",
+      "missionLong": "",
+      "solutionShort": "During our brainstorming sessions, we singled out several traits that the brand needed to embody: premium quality, reliability and an elaborate, convincing back story. That is how Jove came to be with new imagery, product label and website design.",
+      "solutionLong": "",
+      "resultShort": "Packaging that speaks for the product  with a <i>sleek and elegant</i> design.",
+      "resultLong": "Our forecast: we&apos;re looking at a complete <i>hit on the shelves.</i>",
+      "liveProject": "https://jove.ae",
+      "services": [
+        "branding",
+        "package-design",
+        "copywriting",
+        "web-design",
+        "web-development"
+      ],
+      "meta": {
+        "description": "Creating an entire lore behind a product is no easy task - but there is no greater thrill for us!",
+        "title": "Square43 Studio - Jove",
+        "pageTitle": "Square43 Studio | Jove",
+        "link": "https://square43.com/projects/jove",
+        "image": "https://square43.com/images/jove/heroJove.webp"
+      }
     }
   ],
   "services": [
@@ -201,8 +231,8 @@
       "id": "branding",
       "name": "Branding",
       "description": "Your true self - by us",
-      "list": ["Brand strategy", "Logo design", "Brand book design"],
-      "projects": ["northprim", "imunoshop", "dib-travel"]
+      "list": ["Brand strategy", "Logo design", "Naming", "Brand book design"],
+      "projects": ["northprim", "imunoshop", "dib-travel", "jove"]
     },
     {
       "id": "web-design",
@@ -214,7 +244,14 @@
         "Copywriting",
         "A/B testing"
       ],
-      "projects": ["northprim", "ownnew", "dib-travel", "imunoshop", "glasstic"]
+      "projects": [
+        "northprim",
+        "ownnew",
+        "dib-travel",
+        "imunoshop",
+        "glasstic",
+        "jove"
+      ]
     },
     {
       "id": "web-development",
@@ -226,7 +263,14 @@
         "Multilanguage",
         "Mobile optimization"
       ],
-      "projects": ["northprim", "ownnew", "dib-travel", "imunoshop", "glasstic"]
+      "projects": [
+        "northprim",
+        "ownnew",
+        "dib-travel",
+        "imunoshop",
+        "glasstic",
+        "jove"
+      ]
     },
     {
       "id": "social-media",
@@ -246,7 +290,7 @@
       "name": "Copywriting",
       "description": "Word it well",
       "list": ["Website copy", "Social Media copy"],
-      "projects": ["northprim", "dib-travel", "imunoshop"]
+      "projects": ["northprim", "dib-travel", "imunoshop", "jove"]
     },
     {
       "id": "e-commerce",
@@ -267,7 +311,7 @@
       "name": "Packaging",
       "description": "Packaging too speaks a thousand words",
       "list": ["Package design", "Product label"],
-      "projects": ["joker"]
+      "projects": ["joker", "jove"]
     },
     {
       "id": "motion-design",

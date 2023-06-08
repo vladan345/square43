@@ -37,6 +37,7 @@ h2 {
   line-height: 1.2;
   font-family: MatterLight;
   color: #202020;
+  font-weight: 300;
 }
 p {
   line-height: 1.4;
@@ -46,7 +47,7 @@ p {
   height: 100%;
 }
 .wrapper {
-  max-width: 1360px;
+  max-width: 1400px;
   height: 100%;
   margin: 0 auto;
   padding: 0 20px;
