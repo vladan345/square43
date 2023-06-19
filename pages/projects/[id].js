@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from "react";
-import { getCurrentProject } from "../../utils/data/getData";
-import Northprim from "../../pages-sections/projectMain/Northprim";
-import OwnNew from "../../pages-sections/projectMain/OwnNew";
-import Joker from "../../pages-sections/projectMain/Joker";
-import DibTravel from "../../pages-sections/projectMain/DibTravel";
-import Imunoshop from "../../pages-sections/projectMain/Imunoshop";
-import Keiko from "../../pages-sections/projectMain/Keiko";
-import Glasstic from "../../pages-sections/projectMain/Glasstic";
-import Jove from "../../pages-sections/projectMain/Jove";
+import { getCurrentProject } from "@/utils/data/getData";
+import Northprim from "@/pages-sections/projectMain/Northprim";
+import OwnNew from "@/pages-sections/projectMain/OwnNew";
+import Joker from "@/pages-sections/projectMain/Joker";
+import DibTravel from "@/pages-sections/projectMain/DibTravel";
+import Imunoshop from "@/pages-sections/projectMain/Imunoshop";
+import Keiko from "@/pages-sections/projectMain/Keiko";
+import Glasstic from "@/pages-sections/projectMain/Glasstic";
+import Jove from "@/pages-sections/projectMain/Jove";
+import Distributed from "@/pages-sections/projectMain/Distributed";
 
 import Head from "next/head";
-import ProjectHero from "../../components/ProjectHero";
-import Outro from "../../components/Outro";
-import Result from "../../components/Result";
-import { useLoading } from "../../utils/hooks/LoadingContext";
+import ProjectHero from "@/components/ProjectHero";
+import Outro from "@/components/Outro";
+import Result from "@/components/Result";
+import { useLoading } from "@/utils/hooks/LoadingContext";
 
 function Project({ project, projectId }) {
   const { setLoading } = useLoading();
@@ -42,6 +43,8 @@ function Project({ project, projectId }) {
         return <Glasstic />;
       case "jove":
         return <Jove />;
+      case "distributed-services":
+        return <Distributed />;
       default:
         return null;
     }
