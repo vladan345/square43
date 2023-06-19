@@ -224,6 +224,35 @@
         "link": "https://square43.com/projects/jove",
         "image": "https://square43.com/images/jove/heroJove.webp"
       }
+    },
+    {
+      "id": "distributed-services",
+      "name": "Distributed Services",
+      "slogan": "Lorem ipsum dolor sit amet consectetur. Augue sed vel congue donec turpis. Nunc nibh in mi diam.",
+      "color": "#304fe8",
+      "heroImage": "/images/distributed-services/heroDistributed.webp",
+      "heroVideo": "/images/distributed-services/heroDistributed.mp4",
+      "heroArrow": "/images/distributed-services/distributedArrow.svg",
+      "missionShort": "Lorem ipsum dolor sit amet consectetur. Sed pellentesque pellentesque neque sed. Pretium facilisi consequat felis senectus tristique sagittis in dictum leo. Nibh lectus arcu nullam mi id diam. Tellus tortor enim ultricies eu habitant in neque praesent cursus. Lacus ut egestas fermentum enim.",
+      "missionLong": "",
+      "solutionShort": "Lorem ipsum dolor sit amet consectetur. Sed pellentesque pellentesque neque sed. Pretium facilisi consequat felis senectus tristique sagittis in dictum leo. Nibh lectus arcu nullam mi id diam. Tellus tortor enim ultricies eu habitant in neque praesent cursus. Lacus ut egestas fermentum enim.",
+      "solutionLong": "",
+      "resultShort": "Lorem ipsum dolor sit amet consectetur. Viverra neque iaculis ut commodo iaculis neque.",
+      "resultLong": " Aenean suspendisse tempus nunc leo. Erat amet magna ut id convallis dictumst in placerat. Cras in augue adipiscing donec purus.",
+      "liveProject": "https://distributedservices.tech",
+      "services": [
+        "web-design",
+        "web-development",
+        "copywriting",
+        "motion-design"
+      ],
+      "meta": {
+        "description": "Creating an entire lore behind a product is no easy task - but there is no greater thrill for us!",
+        "title": "Square43 Studio - Distributed Services",
+        "pageTitle": "Square43 Studio | Distributed Services",
+        "link": "https://square43.com/projects/distributed-services",
+        "image": "https://square43.com/images/jove/heroJove.webp"
+      }
     }
   ],
   "services": [
