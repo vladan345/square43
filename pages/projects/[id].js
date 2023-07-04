@@ -92,6 +92,10 @@ export function getStaticPaths() {
       { params: { id: "joker" } },
       { params: { id: "imunoshop" } },
       { params: { id: "dib-travel" } },
+      { params: { id: "keiko" } },
+      { params: { id: "glasstic" } },
+      { params: { id: "jove" } },
+      { params: { id: "distributed-services" } },
     ],
     fallback: true,
   };
