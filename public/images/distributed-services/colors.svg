@@ -1,0 +1,18 @@
+<svg width="560" height="60" viewBox="0 0 560 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="60" height="60" rx="30" fill="url(#p8c0w0by9a)"/>
+    <rect x="100" width="60" height="60" rx="30" fill="#304FE8"/>
+    <rect x="200" width="60" height="60" rx="30" fill="#6882FF"/>
+    <rect x="300" width="60" height="60" rx="30" fill="url(#6uscorwe1b)"/>
+    <rect x="400" width="60" height="60" rx="30" fill="#48D18A"/>
+    <rect x="500" width="60" height="60" rx="30" fill="#00E66F"/>
+    <defs>
+        <linearGradient id="p8c0w0by9a" x1="7.125" y1="0" x2="64.638" y2="25.9" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#304FE8"/>
+            <stop offset="1" stop-color="#15319D"/>
+        </linearGradient>
+        <linearGradient id="6uscorwe1b" x1="318.408" y1="7.161" x2="344.535" y2="63.869" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#00EB71"/>
+            <stop offset="1" stop-color="#09895A"/>
+        </linearGradient>
+    </defs>
+</svg>
