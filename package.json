@@ -17,20 +17,16 @@
     "graphql": "^16.6.0",
     "graphql-request": "^5.2.0",
     "gsap": "^3.11.3",
-    "lottie-react": "^2.3.1",
-    "next": "^13.0.0",
+    "lottie-react": "^2.4.0",
+    "next": "^13.4.7",
     "next-sitemap": "^3.1.31",
     "react": "^18.2.0",
     "react-countup": "^6.3.2",
     "react-dom": "^18.2.0",
     "react-intersection-observer": "^9.4.0",
-    "react-motion-animate": "^1.0.5",
+    "react-motion-animate": "^1.0.6",
     "react-scroll-motion": "^0.3.0",
     "react-scroll-parallax": "^3.3.1",
     "splide-nextjs": "^2.4.23"
-  },
-  "devDependencies": {
-    "eslint": "8.25.0",
-    "eslint-config-next": "^13.0.0"
   }
 }

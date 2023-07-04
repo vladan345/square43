@@ -1,0 +1,98 @@
+.row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 840px;
+}
+.trigger {
+  position: relative;
+}
+.imageWrap {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 30vw;
+  min-height: 640px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  transform: translateY(-50%);
+  border-radius: 0 1000px 1000px 0;
+  background-image: linear-gradient(135deg, #304fe8 7%, #15319d 89%);
+}
+.imageWrap img,
+.imageWrap .lottie {
+  opacity: 0;
+}
+.trigger:last-of-type .imageWrap {
+  right: 0;
+  left: auto;
+  border-radius: 1000px 0 0 1000px;
+  justify-content: flex-start;
+  padding-left: 75px;
+}
+.trigger:last-of-type .row {
+  justify-content: flex-start;
+}
+.moon {
+  position: absolute;
+  top: 5%;
+  right: 30%;
+}
+.row:last-of-type .textBox {
+  margin-right: 0;
+}
+.textBox {
+  max-width: 440px;
+  margin-right: 160px;
+}
+.textBox h3,
+.secondText h3 {
+  font-size: 28px;
+  font-family: MatterLight;
+  margin-bottom: 50px;
+}
+.lottie {
+  height: 460px;
+  width: 100%;
+  max-width: 500px;
+  position: absolute;
+  left: 30px;
+}
+.DualMobile {
+  display: none;
+}
+@media (max-width: 900px) {
+  .Dual {
+    display: none;
+  }
+  .DualMobile {
+    display: block;
+    margin-top: 60px;
+  }
+  .column {
+    flex-direction: column;
+    display: flex;
+    gap: 80px;
+  }
+  .textBox {
+    width: 100%;
+  }
+  .pill {
+    background: linear-gradient(166deg, #304fe8 0%, #15319d 100%);
+    color: white;
+    border-radius: 50vw;
+  }
+  .secondText {
+    padding: 80px 0 100px;
+  }
+  .column img {
+    width: 100%;
+    height: auto;
+  }
+  .column .moon {
+    width: 40px;
+    height: 40px;
+    top: 0;
+  }
+}

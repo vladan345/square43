@@ -228,17 +228,17 @@
     {
       "id": "distributed-services",
       "name": "Distributed Services",
-      "slogan": "Lorem ipsum dolor sit amet consectetur. Augue sed vel congue donec turpis. Nunc nibh in mi diam.",
+      "slogan": "Same, same, but different: when a marketing agency revamps another.",
       "color": "#304fe8",
       "heroImage": "/images/distributed-services/heroDistributed.webp",
       "heroVideo": "/images/distributed-services/heroDistributed.mp4",
       "heroArrow": "/images/distributed-services/distributedArrow.svg",
-      "missionShort": "Lorem ipsum dolor sit amet consectetur. Sed pellentesque pellentesque neque sed. Pretium facilisi consequat felis senectus tristique sagittis in dictum leo. Nibh lectus arcu nullam mi id diam. Tellus tortor enim ultricies eu habitant in neque praesent cursus. Lacus ut egestas fermentum enim.",
-      "missionLong": "",
-      "solutionShort": "Lorem ipsum dolor sit amet consectetur. Sed pellentesque pellentesque neque sed. Pretium facilisi consequat felis senectus tristique sagittis in dictum leo. Nibh lectus arcu nullam mi id diam. Tellus tortor enim ultricies eu habitant in neque praesent cursus. Lacus ut egestas fermentum enim.",
-      "solutionLong": "",
-      "resultShort": "Lorem ipsum dolor sit amet consectetur. Viverra neque iaculis ut commodo iaculis neque.",
-      "resultLong": " Aenean suspendisse tempus nunc leo. Erat amet magna ut id convallis dictumst in placerat. Cras in augue adipiscing donec purus.",
+      "missionShort": "All that glitters is not gold - and not all clients of ours come from completely different industries! With a specific market in mind, Distributed Services approached us with a request that could, in simpler terms, be described as a complete makeover.",
+      "missionLong": "This entailed a complete rework of the brand, redesign of the existing website and complete implementation of the new outline with carefully thought out development, especially in terms of SEO and user experience.",
+      "solutionShort": "An innovative solution for a noteworthy online presence! Through our expertise in website design and development, we transformed the existing Distributed Services website with a cutting-edge redesign. Our team strategically introduced new sections, ensuring a seamless distribution of key selling points and a captivating showcase of their comprehensive range of services.",
+      "solutionLong": "By combining creativity and functionality, the new website offers an engaging user experience, enabling visitors to easily explore the breadth of Distributed Services as a service-provider. ",
+      "resultShort": "A completely new and refreshed image",
+      "resultLong": "Full UX/UI optimization with a sleek, user friendly design",
       "liveProject": "https://distributedservices.tech",
       "services": [
         "web-design",
@@ -247,7 +247,7 @@
         "motion-design"
       ],
       "meta": {
-        "description": "Creating an entire lore behind a product is no easy task - but there is no greater thrill for us!",
+        "description": "Same, same, but different: when a marketing agency revamps another.",
         "title": "Square43 Studio - Distributed Services",
         "pageTitle": "Square43 Studio | Distributed Services",
         "link": "https://square43.com/projects/distributed-services",

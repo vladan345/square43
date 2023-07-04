@@ -37,24 +37,28 @@
 }
 @media (max-width: 1200px) {
   .rowWrap {
-    flex-direction: column;
-    padding-top: 30%;
+    flex-direction: column-reverse;
+    padding-top: 0;
+    justify-content: flex-start;
   }
   .rowWrap img {
-    top: 18%;
+    position: static;
+    margin-top: 12%;
+    margin-left: 32.5vw;
+  }
+  .textBox {
+    margin-top: -15vw;
   }
 }
 @media (max-width: 900px) {
   .Packaging {
     margin-bottom: 0;
   }
-  .rowWrap {
-    padding-top: 75vw;
-    padding-bottom: 0px;
-  }
+
   .rowWrap img {
     width: 80vw;
-    top: 27%;
+    margin-top: 45%;
+    margin-left: 80vw;
   }
   .heading {
     font-size: 22vw;
