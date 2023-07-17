@@ -1,9 +1,31 @@
 .Taglines {
   padding-top: 160px;
 }
-.tagline {
+.stickyWrap {
   position: sticky;
-  top: 50%;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+}
+.stickyWrap section {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  transform: translateY(100px);
+  opacity: 0;
+}
+.stickyWrap section.first {
+  opacity: 1;
+  transform: translateY(0);
+}
+.tagline {
+  position: absolute;
+  top: 25%;
   font-size: 120px;
   transform: translateY(-50%);
   font-family: MatterBold;
