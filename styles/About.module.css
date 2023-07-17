@@ -17,6 +17,11 @@
   justify-content: center;
   align-items: flex-start;
   transform: translateY(100px);
+  opacity: 0;
+}
+.stickyWrap section.first {
+  opacity: 1;
+  transform: translateY(0);
 }
 .statement {
   position: absolute;

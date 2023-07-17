@@ -88,7 +88,10 @@ function About() {
         <div className={styles.About}>
           <div className="wrapper trigger">
             <div className={`${styles.stickyWrap} `}>
-              <section className="statementSection" style={{ height: "200vh" }}>
+              <section
+                className={`${styles.first} statementSection`}
+                style={{ height: "200vh" }}
+              >
                 <p className={styles.statement}>
                   <span className={styles.gradientText}>
                     Building is believing
