@@ -1,14 +1,29 @@
 .About {
-  padding: 160px 0 120px 0;
+  padding: 0;
 }
-
-.statement {
+.stickyWrap {
   position: sticky;
-  top: 50%;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+}
+.stickyWrap section {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  transform: translateY(100px);
+}
+.statement {
+  position: absolute;
+  top: 25%;
   font-size: 120px;
-  transform: translateY(-33%);
+  transform: translateY(-50%);
   font-family: MatterBold;
-  margin-bottom: 80px;
   letter-spacing: -4.8px;
   background: radial-gradient(circle at 0 0, #7000ff, #0ff);
   background-attachment: sticky;
@@ -48,5 +63,10 @@
   }
   .about {
     padding: 120px 0 120px 0;
+  }
+}
+@media (max-width: 400px) {
+  .statement {
+    font-size: 14vw;
   }
 }
