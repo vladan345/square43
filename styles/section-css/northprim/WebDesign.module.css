@@ -23,7 +23,7 @@
   width: 100%;
 }
 .wrapper {
-  width: 1360px;
+  max-width: 1360px;
 }
 .desktopWrap {
   overflow-x: hidden;
@@ -37,10 +37,13 @@
   width: 100%;
 }
 .mobile {
-  background: #efefef;
+  background: #ececec;
   display: flex;
   padding: 160px 0 120px 0;
   height: 570px;
+}
+.mobile .wrapper {
+  width: 100%;
 }
 .mobile .description {
   max-width: 360px;

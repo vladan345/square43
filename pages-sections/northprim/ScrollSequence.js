@@ -9,68 +9,47 @@ function ScrollSequence() {
   const trigger = useRef(null);
   useEffect(() => {
     const context = canvas.current.getContext("2d");
+    const width = window.innerWidth;
+    const height = (width / 16) * 9;
 
-    const width = trigger.current.offsetWidth;
-    const height = window.innerHeight;
+    canvas.current.width = width;
+    canvas.current.height = height;
 
-    const frameCount = 147;
-    trigger.current.style.height = `${frameCount * 5}vh`;
+    const frameCount = 301;
+    trigger.current.style.height = `${frameCount * 2}vh`;
 
-    const currentFrame = (index) =>
-      `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${(
-        index + 1
-      )
-        .toString()
-        .padStart(4, "0")}.jpg`;
     const images = [];
-    const airpods = {
+    const sequence = {
       frame: 0,
     };
     for (let i = 0; i < frameCount; i++) {
       const img = new Image();
-      img.src = currentFrame(i);
+      img.src = `/images/northprim-seq/${i + 1}.webp`;
       images.push(img);
     }
-    console.log(images);
-    gsap.to(airpods, {
+    gsap.to(sequence, {
       frame: frameCount - 1,
       snap: "frame",
       ease: "none",
       scrollTrigger: {
         trigger: ".trigger",
-        scrub: 0.5,
-        markers: true,
+        scrub: true,
+        start: `${window.innerHeight}px bottom`,
+        end: `bottom bottom`,
       },
       onUpdate: render, // use animation onUpdate instead of scrollTrigger's onUpdate
     });
 
     images[0].onload = render;
-
+    console.log(width / 2 - images[0].width / 2);
     function render() {
-      const imageAspect =
-        images[airpods.frame].width / images[airpods.frame].height;
-      const canvasAspect = canvas.current.width / canvas.current.height;
-      let scale, x, y;
-
-      if (imageAspect >= canvasAspect) {
-        // Image is wider than the canvas
-        scale = canvas.current.height / images[airpods.frame].height;
-        x = (canvas.current.width - images[airpods.frame].width * scale) / 2;
-        y = 0;
-      } else {
-        // Image is taller than the canvas
-        scale = canvas.current.width / images[airpods.frame].width;
-        x = 0;
-        y = (canvas.current.height - images[airpods.frame].height * scale) / 2;
-      }
-      console.log(images[airpods.frame].width);
       context.clearRect(0, 0, canvas.current.width, canvas.current.height);
       context.drawImage(
-        images[airpods.frame],
-        x,
-        y,
-        images[airpods.frame].width * scale,
-        images[airpods.frame].height * scale
+        images[sequence.frame],
+        canvas.current.width / 2 - width / 2,
+        canvas.current.height / 2 - height / 2,
+        width,
+        height
       );
     }
   }, []);
