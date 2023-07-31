@@ -31,7 +31,7 @@ function WebDesign() {
   // }, []);
 
   return (
-    <div className="WebDesign">
+    <div className={styles.WebDesign}>
       <div className={styles.desktop} id="wrapper">
         <div className={`${styles.wrapper} wrapper`}>
           <div className={styles.col}>
