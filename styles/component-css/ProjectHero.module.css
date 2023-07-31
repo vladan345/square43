@@ -180,7 +180,7 @@
     padding-top: 80px;
   }
   .heroVideo {
-    width: 100vw;
+    width: 100%;
     height: 100vw;
     position: relative;
     margin: 0 auto 30px auto;

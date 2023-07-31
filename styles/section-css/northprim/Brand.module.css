@@ -39,7 +39,9 @@
 }
 @media (max-width: 960px) {
   .logoScheme {
-    width: 330px;
+    max-width: 330px;
+    width: 100%;
+    height: auto;
     margin-left: 0;
   }
   .col:last-of-type {
@@ -67,5 +69,8 @@
   }
   .fonts {
     margin-top: 80px;
+  }
+  .fonts img {
+    width: 100%;
   }
 }
