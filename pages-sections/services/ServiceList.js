@@ -16,7 +16,7 @@ function ServiceList() {
   }, []);
 
   return (
-    <div className={styles.Services}>
+    <div className={`${styles.Services} serviceList`}>
       <div className={styles.wrapper}>
         <h1
           style={{

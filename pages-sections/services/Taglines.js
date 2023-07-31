@@ -11,55 +11,59 @@ function Taglines() {
   const main = useRef(null);
 
   useEffect(() => {
-    let ctx = gsap.context(() => {
-      let sections = gsap.utils.toArray("section");
-      const sectionPos = main.current.getBoundingClientRect();
-      gsap.set(".trigger", { height: sections.length * 200 + "vh" });
-      let currentSection;
-      currentSection = sections[0];
+    setTimeout(() => {
+      let ctx = gsap.context(() => {
+        let sections = gsap.utils.toArray("section.taglineSec");
 
-      sections.forEach((section, i) => {
-        var tl = gsap.timeline({
-          overwrite: true,
-          scrollTrigger: {
-            start: () => (i - 0.5) * innerHeight * 2 + sectionPos.top,
-            end: () => (i + 0.5) * innerHeight * 2 + sectionPos.top,
-            onToggle: (self) => {
-              return self.isActive && setSection(section);
+        const sectionPos = main.current.getBoundingClientRect();
+        console.log(sectionPos.top);
+        gsap.set(".taglineTrigger", { height: sections.length * 200 + "vh" });
+        let currentSection;
+        currentSection = sections[0];
+
+        sections.forEach((section, i) => {
+          var tl = gsap.timeline({
+            overwrite: true,
+            scrollTrigger: {
+              markers: true,
+              start: () => (i - 0.5) * innerHeight * 2 + sectionPos.top,
+              end: () => (i + 0.5) * innerHeight * 2 + sectionPos.top,
+              onToggle: (self) => {
+                return self.isActive && setSection(section);
+              },
             },
-          },
-        });
+          });
 
-        function setSection(newSection) {
-          if (newSection !== currentSection) {
-            var tl = gsap.timeline();
-            tl.to(currentSection, {
-              autoAlpha: 0,
-              y: 100,
-              duration: 0.5,
-              overwrite: true,
-            });
-            tl.to(newSection, {
-              autoAlpha: 1,
-              y: 0,
-              duration: 0.5,
-              overwrite: true,
-            });
+          function setSection(newSection) {
+            if (newSection !== currentSection) {
+              var tl = gsap.timeline();
+              tl.to(currentSection, {
+                autoAlpha: 0,
+                y: 100,
+                duration: 0.5,
+                overwrite: true,
+              });
+              tl.to(newSection, {
+                autoAlpha: 1,
+                y: 0,
+                duration: 0.5,
+                overwrite: true,
+              });
 
-            currentSection = newSection;
+              currentSection = newSection;
+            }
           }
-        }
-      }, main.current);
-    });
-
-    return () => ctx.revert();
+        }, main.current);
+      });
+      return () => ctx.revert();
+    }, 2000);
   }, []);
   return (
     <div className={styles.Taglines} ref={main}>
-      <div className="wrapper trigger">
+      <div className="wrapper taglineTrigger">
         <div className={`${styles.stickyWrap} `}>
           <section
-            className={styles.first}
+            className={`${styles.first} taglineSec`}
             style={{ height: "200vh", paddingTop: "100px" }}
           >
             <h2 className={styles.tagline}>
@@ -86,7 +90,7 @@ function Taglines() {
             </h2>
           </section>
 
-          <section style={{ height: "200vh" }}>
+          <section className="taglineSec" style={{ height: "200vh" }}>
             <h2 className={styles.tagline}>
               We developed over{" "}
               <span className={styles.gradientText}>
@@ -105,7 +109,7 @@ function Taglines() {
             </h2>
           </section>
 
-          <section style={{ height: "200vh" }}>
+          <section className="taglineSec" style={{ height: "200vh" }}>
             <h2 className={styles.tagline}>
               Authored over
               <br />
@@ -125,7 +129,7 @@ function Taglines() {
             </h2>
           </section>
 
-          <section style={{ height: "200vh" }}>
+          <section className="taglineSec" style={{ height: "200vh" }}>
             <h2 className={styles.tagline}>
               Make up to{" "}
               <span className={styles.gradientText}>
@@ -144,7 +148,7 @@ function Taglines() {
             </h2>
           </section>
 
-          <section style={{ height: "200vh" }}>
+          <section className="taglineSec" style={{ height: "200vh" }}>
             <h2 className={styles.tagline}>
               Digitally transformed over{" "}
               <span className={styles.gradientText}>
@@ -163,7 +167,7 @@ function Taglines() {
             </h2>
           </section>
 
-          <section style={{ height: "200vh" }}>
+          <section className="taglineSec" style={{ height: "200vh" }}>
             <h2 className={styles.tagline}>
               All done by using
               <br />
