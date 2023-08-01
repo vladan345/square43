@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "../../styles/section-css/imunoshop/Banner.module.css";
 import Image from "next/image";
 import { Parallax } from "react-scroll-parallax";

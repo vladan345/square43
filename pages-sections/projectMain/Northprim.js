@@ -1,4 +1,3 @@
-import React from "react";
 // import "./Northprim.css";
 import Head from "next/head";
 

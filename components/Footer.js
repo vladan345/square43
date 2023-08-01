@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -48,7 +47,7 @@ function Footer() {
               Linked In
             </a>
           </nav>
-          <p className={styles.copy}>&copy; 2022 Square43</p>
+          <p className={styles.copy}>&copy; 2023 Square43</p>
         </div>
       </div>
     </div>

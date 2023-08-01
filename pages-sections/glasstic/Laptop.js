@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "../../styles/section-css/glasstic/Laptop.module.css";
 import Image from "next/image";
 

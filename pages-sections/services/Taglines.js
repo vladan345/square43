@@ -25,7 +25,6 @@ function Taglines() {
           var tl = gsap.timeline({
             overwrite: true,
             scrollTrigger: {
-              markers: true,
               start: () => (i - 0.5) * innerHeight * 2 + sectionPos.top,
               end: () => (i + 0.5) * innerHeight * 2 + sectionPos.top,
               onToggle: (self) => {

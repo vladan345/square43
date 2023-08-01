@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "../../styles/section-css/services/Achievements.module.css";
 import Accordion from "../../components/Accordion";
 import Image from "next/image";

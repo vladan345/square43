@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "../../styles/section-css/keiko/Taglines.module.css";
 
 function Taglines() {

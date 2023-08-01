@@ -1,5 +1,3 @@
-import React from "react";
-
 import Taglines from "../dib-travel/Taglines";
 import Scooter from "../dib-travel/Scooter";
 import WebDesign from "../dib-travel/WebDesign";

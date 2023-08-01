@@ -1,7 +1,7 @@
 .Slider {
   background: #fff;
   position: relative;
-  max-width: 1920px;
+  max-width: 100%;
 }
 
 .stripe {
@@ -11,6 +11,11 @@
   position: absolute;
   transform: translateY(-50%);
   top: 50%;
+}
+@media (max-width: 1920px) {
+  .Slider {
+    max-width: 1920px;
+  }
 }
 @media (max-width: 1500px) {
   .shirt {

@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "../styles/component-css/MobileMenu.module.css";
 import Link from "next/link";
 import { useLoading } from "../utils/hooks/LoadingContext";

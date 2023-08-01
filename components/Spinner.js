@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "../styles/component-css/Spinner.module.css";
 import { useLoading } from "../utils/hooks/LoadingContext";
 

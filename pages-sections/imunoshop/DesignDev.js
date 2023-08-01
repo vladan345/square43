@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "../../styles/section-css/imunoshop/DesignDev.module.css";
 import Image from "next/image";
 

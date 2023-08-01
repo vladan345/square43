@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "../../styles/section-css/home/OurServices.module.css";
 import Square from "../../components/Square";
 import Link from "next/link";

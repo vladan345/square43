@@ -1,4 +1,3 @@
-import React from "react";
 import DesktopVideo from "../ownnew/DesktopVideo";
 import Components from "../ownnew/Components";
 import Mobile from "../ownnew/Mobile";

@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "../../styles/section-css/ownnew/DesktopVideo.module.css";
 function DesktopVideo() {
   return (

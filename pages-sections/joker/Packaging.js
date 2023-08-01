@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import styles from "../../styles/section-css/joker/Packaging.module.css";
 import { Parallax } from "react-scroll-parallax";

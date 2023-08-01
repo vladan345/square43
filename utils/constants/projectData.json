@@ -132,7 +132,8 @@
         "web-development",
         "social-media",
         "copywriting",
-        "motion-design"
+        "motion-design",
+        "e-commerce"
       ],
       "meta": {
         "description": "How to develop a new brand and a seamless online shop from scratch - the story of Imuno shop.",
@@ -186,9 +187,14 @@
       "resultShort": "Increased website visits by <i>25%</i>",
       "resultLong": "Improved user experience <br /> Website design <i>fully aligned</i> with the brand and product",
       "liveProject": "https://glasstic.rs",
-      "services": ["web-design", "web-development", "social-media"],
+      "services": [
+        "web-design",
+        "web-development",
+        "social-media",
+        "e-commerce"
+      ],
       "meta": {
-        "description": "Transparency itself: a promise of safety and practicality voiced by design",
+        "description": "Transparency itself: a promise of safety and practicality voiced by design.",
         "title": "Square43 Studio - Glasstic",
         "pageTitle": "Square43 Studio | Glasstic",
         "link": "https://square43.com/projects/glasstic",
@@ -215,7 +221,8 @@
         "package-design",
         "copywriting",
         "web-design",
-        "web-development"
+        "web-development",
+        "e-commerce"
       ],
       "meta": {
         "description": "Creating an entire lore behind a product is no easy task - but there is no greater thrill for us!",
@@ -285,7 +292,7 @@
     {
       "id": "web-development",
       "name": "Web Dev",
-      "description": "From web scratch",
+      "description": "From web scratch.",
       "list": [
         "Scroll sequences",
         "SEO optimization",
@@ -304,7 +311,7 @@
     {
       "id": "social-media",
       "name": "Social Media",
-      "description": "Get in touch with your audience",
+      "description": "Get in touch with your audience.",
       "list": [
         "Monthly planning",
         "Ad Campaigns for all formats",
@@ -317,14 +324,14 @@
     {
       "id": "copywriting",
       "name": "Copywriting",
-      "description": "Word it well",
+      "description": "Word it well.",
       "list": ["Website copy", "Social Media copy"],
       "projects": ["northprim", "dib-travel", "imunoshop", "jove"]
     },
     {
       "id": "e-commerce",
       "name": "E-Commerce",
-      "description": "Get your store online -  everyone's there already",
+      "description": "Get your store online -  everyone's there already.",
       "list": [
         "Web Shop development",
         "Payment integration",
@@ -338,21 +345,21 @@
     {
       "id": "package-design",
       "name": "Packaging",
-      "description": "Packaging too speaks a thousand words",
+      "description": "Packaging, too, speaks a thousand words.",
       "list": ["Package design", "Product label"],
       "projects": ["joker", "jove"]
     },
     {
       "id": "motion-design",
       "name": "Motion Design",
-      "description": "We like to move it move it",
+      "description": "We like to move it, move it!",
       "list": ["Multipurpose animations", "Video templates"],
       "projects": ["northprim", "dib-travel", "imunoshop"]
     },
     {
       "id": "print-design",
       "name": "Print Design",
-      "description": "Your brand made tangible",
+      "description": "Your brand made tangible.",
       "list": ["Merchandise", "Promo material", "Catalogues"],
       "projects": ["northprim"]
     }

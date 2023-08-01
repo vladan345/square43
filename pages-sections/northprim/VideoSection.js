@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "../../styles/section-css/northprim/VideoSection.module.css";
 function VideoSection() {
   return (

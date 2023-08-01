@@ -1,5 +1,3 @@
-import React from "react";
-
 import Packaging from "../joker/Packaging";
 import Video from "../joker/Video";
 import Logo from "../joker/Logo";

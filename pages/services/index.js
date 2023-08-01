@@ -1,5 +1,3 @@
-import React from "react";
-
 import Head from "next/head";
 import ServiceList from "../../pages-sections/services/ServiceList";
 import Taglines from "../../pages-sections/services/Taglines";

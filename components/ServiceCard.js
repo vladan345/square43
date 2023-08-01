@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 import styles from "../styles/component-css/ServiceCard.module.css";
 import Image from "next/image";

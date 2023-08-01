@@ -13,7 +13,7 @@ function Career() {
     {
       title: "3D artist",
       description:
-        "Is you are super skilled with 3D modelling we would love to meet you and talk about digital art.",
+        "If you are super skilled with 3D modelling we would love to meet you and talk about digital art.",
     },
     {
       title: "Motion Graphic Designer",
@@ -23,7 +23,7 @@ function Career() {
     {
       title: "Developers",
       description:
-        "There are many great developers out there, but we are looking for special one, who can join our team and bring more then we expect.",
+        "There are many great developers out there, but we are looking for a special one who can join our team and bring more then we expect.",
     },
   ];
 
