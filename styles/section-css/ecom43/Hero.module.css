@@ -83,3 +83,53 @@
   margin-top: 60px;
   margin-bottom: 80px;
 }
+.scrollWrap {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mouseWrap {
+  width: 42px;
+  height: 68px;
+  border-radius: 25px;
+  border: 1px solid #b5b5b5;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+.scrollWheel {
+  width: 8px;
+  height: 20px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.gradient {
+  animation: scroll 2s ease-in-out infinite;
+  width: 8px;
+  height: 80px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 255, 255, 1) 40%,
+    rgba(112, 0, 255, 1) 50%,
+    rgba(0, 255, 255, 1) 60%
+  );
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+@keyframes scroll {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: -60px;
+  }
+}

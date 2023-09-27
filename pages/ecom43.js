@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Head from "next/head";
 import { useLoading } from "@/utils/hooks/LoadingContext";
 import Hero from "@/pages-sections/ecom43/Hero";
+import Why from "@/pages-sections/ecom43/Why";
 
 function Ecom43() {
   const { setLoading } = useLoading();
@@ -46,6 +47,7 @@ function Ecom43() {
       </Head>
       <main>
         <Hero />
+        <Why />
       </main>
     </>
   );

@@ -35,7 +35,7 @@ function Hero() {
             ease: "power4.inOut",
           })
           .to(
-            ".pointer",
+            ".pointer, .text",
             {
               duration: 0.3,
               scale: 0.9,
@@ -43,7 +43,7 @@ function Hero() {
             3
           )
           .to(
-            ".pointer",
+            ".pointer, .text",
             {
               duration: 0.3,
               scale: 1,
@@ -83,25 +83,20 @@ function Hero() {
           <div className={styles.subWrap}>
             <p className={styles.subheading}>Powered by</p>
             <div className={`${styles.subButton} subbutton`}>
-              <span>Next.js</span>
+              <span className="text">Next.js</span>
             </div>
           </div>
           <p className={styles.subtext}>
             Grow your online shop with fully customizable{" "}
             <strong>Shopify</strong> solutions.
           </p>
-          <div className={styles.linkWrap}>
-            <Link href="/" className="readMore">
-              Get started
-              <div className="icon">
-                <Image
-                  src="/images/arrow.svg"
-                  alt="Arrow icon"
-                  width={40}
-                  height={40}
-                />
+
+          <div className={styles.scrollWrap}>
+            <div className={styles.mouseWrap}>
+              <div className={`${styles.scrollWheel}`}>
+                <div className={styles.gradient}></div>
               </div>
-            </Link>
+            </div>
           </div>
           <div className={`${styles.border} border`}>
             <Image
