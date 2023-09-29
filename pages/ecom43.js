@@ -3,6 +3,8 @@ import Head from "next/head";
 import { useLoading } from "@/utils/hooks/LoadingContext";
 import Hero from "@/pages-sections/ecom43/Hero";
 import Why from "@/pages-sections/ecom43/Why";
+import Fan from "@/pages-sections/ecom43/Fan";
+import Techs from "@/pages-sections/ecom43/Techs";
 
 function Ecom43() {
   const { setLoading } = useLoading();
@@ -48,6 +50,8 @@ function Ecom43() {
       <main>
         <Hero />
         <Why />
+        <Fan />
+        <Techs />
       </main>
     </>
   );

@@ -49,20 +49,23 @@ function Why() {
           {data &&
             data.map((card, index) => {
               return (
-                <div
-                  className={`${styles.card} ${
-                    index == data.length - 1 ? styles.last : null
-                  }`}
-                  key={index}
-                >
-                  <Image
-                    src={`/images/graphic${index + 1}.svg`}
-                    alt="graphic icon"
-                    width={176}
-                    height={96}
-                  />
-                  <h3>{card.title}</h3>
-                  <p>{card.text}</p>
+                <div className={styles.cardWrap} key={index}>
+                  <div className={styles.overlayT}></div>
+                  <div className={styles.overlayB}></div>
+                  <div
+                    className={`${styles.card} ${
+                      index == data.length - 1 ? styles.last : null
+                    }`}
+                  >
+                    <Image
+                      src={`/images/graphic${index + 1}.svg`}
+                      alt="graphic icon"
+                      width={176}
+                      height={96}
+                    />
+                    <h3>{card.title}</h3>
+                    <p>{card.text}</p>
+                  </div>
                 </div>
               );
             })}

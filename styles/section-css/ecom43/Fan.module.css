@@ -1,0 +1,113 @@
+/* Headings */
+.Fan h2 {
+  font-size: 100px;
+  font-weight: 700;
+  font-family: Matter-Bold;
+  letter-spacing: -2px;
+  line-height: 0.95;
+  text-align: center;
+  margin-bottom: 0;
+}
+.heading2 {
+  opacity: 0;
+}
+
+/* Container setup */
+.trigger {
+  height: 400vh;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding-top: 120px;
+}
+
+/* Fan */
+.fanWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+}
+.fan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: fanRotate 8s linear infinite;
+}
+.mesh,
+.cpu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* Animations */
+@keyframes fanRotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* Lines */
+.linesWrap {
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 0;
+  position: absolute;
+  z-index: 0;
+  height: 50vh;
+  width: 100%;
+}
+.lines {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.lines .line {
+  background: linear-gradient(135deg, #7000ff 0%, #0ff 100%);
+  position: relative;
+}
+.lineFill {
+  background: white;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+  position: absolute;
+}
+.lines .left {
+  width: 0;
+  height: 1px;
+  position: absolute;
+  right: 50%;
+}
+.lines .center {
+  width: 1px;
+  height: 0;
+  z-index: 2;
+}
+.lines .right {
+  width: 0;
+  height: 1px;
+  position: absolute;
+  left: 50%;
+}
+.left .lineFill {
+  bottom: 0;
+  right: 0;
+}
+.right .lineFill {
+  bottom: 0;
+}

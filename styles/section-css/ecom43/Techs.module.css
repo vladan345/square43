@@ -1,37 +1,30 @@
-.Why {
-  padding: 140px 0 160px;
-  position: relative;
-}
-.gradient {
-  width: 100%;
-  height: 100vh;
-  background: linear-gradient(180deg, #f8f8f8 0%, rgba(248, 248, 248, 0) 100%);
-
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-.Why h2 {
-  margin-bottom: 140px;
-  text-align: center;
-}
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.trigger {
+  display: flex;
   gap: 40px;
+  padding-bottom: 240px;
 }
 .cardWrap {
   position: relative;
-  border: 2px solid #e0e0e0;
   transition: 0.7s;
+  min-height: 338px;
+  width: calc(100% / 3);
 }
 .card {
   padding: 40px;
-  min-height: 420px;
+  height: 100%;
   background: white;
   position: relative;
   z-index: 1;
   transition: 0.7s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.card img {
+  width: auto;
+  height: auto;
+  max-height: 100px;
 }
 .overlayT,
 .overlayB {
@@ -40,7 +33,6 @@
   width: 0;
   height: 0;
   position: absolute;
-  transition: 0.7s all;
   z-index: 0;
 }
 .overlayT {
@@ -51,19 +43,10 @@
   bottom: -1px;
   right: -1px;
 }
-.cardWrap:hover .overlayT {
-  width: calc(100% + 2px);
-  height: calc(100% + 2px);
-}
-.cardWrap:hover .overlayB {
-  width: calc(100% + 2px);
-  height: calc(100% + 2px);
-}
-.cardWrap:hover {
-  border-color: transparent;
-}
+
 .card img {
   width: auto;
+  height: auto;
 }
 .card h3 {
   font-size: 34px;
@@ -79,8 +62,4 @@
   letter-spacing: -0.44px;
   line-height: 1.2;
   font-family: Matter-Light;
-}
-.last {
-  background: #202020;
-  color: white;
 }
