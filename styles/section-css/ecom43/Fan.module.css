@@ -136,7 +136,7 @@
   .fanWrap {
     width: 100%;
     max-width: 500px;
-    top: 40%;
+    top: 50%;
   }
   .fanWrap img {
     width: 100%;
@@ -149,7 +149,7 @@
     width: 73%;
   }
   .cpu {
-    top: 40%;
+    top: 50%;
     max-width: 300px;
     height: auto;
   }
