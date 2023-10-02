@@ -1,5 +1,6 @@
 .Hero {
   padding: 120px 0 200px;
+  overflow-x: hidden;
 }
 .wrap {
   display: flex;
