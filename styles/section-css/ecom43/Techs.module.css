@@ -1,0 +1,82 @@
+.trigger {
+  display: flex;
+  gap: 40px;
+  padding-bottom: 240px;
+}
+.cardWrap {
+  position: relative;
+  transition: 0.7s;
+  min-height: 338px;
+  width: calc(100% / 3);
+}
+.card {
+  padding: 40px;
+  height: 100%;
+  background: white;
+  position: relative;
+  z-index: 1;
+  transition: 0.7s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.card img {
+  width: auto;
+  height: auto;
+  max-height: 100px;
+}
+.overlayT,
+.overlayB {
+  background: linear-gradient(135deg, #7000ff 0%, #0ff 100%);
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  z-index: 0;
+}
+.overlayT {
+  top: -1px;
+  left: -1px;
+}
+.overlayB {
+  bottom: -1px;
+  right: -1px;
+}
+
+.card img {
+  width: auto;
+  height: auto;
+}
+.card h3 {
+  font-size: 34px;
+  font-weight: 600;
+  font-family: Matter-Bold;
+  letter-spacing: -0.68px;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+.card p {
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: -0.44px;
+  line-height: 1.2;
+  font-family: Matter-Light;
+}
+
+@media (max-width: 900px) {
+  .cardWrap {
+    min-height: 280px;
+    width: 100%;
+  }
+  .card h3 {
+    font-size: 26px;
+  }
+  .card p {
+    font-size: 18px;
+  }
+  .trigger {
+    flex-direction: column;
+    padding-bottom: 80px;
+  }
+}

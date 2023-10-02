@@ -67,6 +67,15 @@ export default function Header() {
   //********************* */
   return (
     <div className={styles.HeaderWrap}>
+      {/* <div className={styles.highlightWrap}>
+        <Link
+          onClick={handleClick}
+          href="/ecom43"
+          className={`${styles.headerLink} ${styles.highlight}`}
+        >
+          Ecom 43
+        </Link>
+      </div> */}
       {opened ? (
         <MobileMenu style={openedStyle} stateChange={setOpened} />
       ) : (
@@ -74,7 +83,7 @@ export default function Header() {
       )}
       <div className={`${styles.Header}`}>
         <div className={`wrapper ${styles.wrapper}`}>
-          <div className={styles.leftNav}>
+          <div className={`${styles.leftNav} ${styles.blend}`}>
             <Link
               onClick={handleClick}
               className={styles.headerLink}
@@ -128,6 +137,13 @@ export default function Header() {
               className={styles.headerLink}
             >
               Contact
+            </Link>
+            <Link
+              onClick={handleClick}
+              href="/ecom43"
+              className={`${styles.headerLink} ${styles.highlight}`}
+            >
+              Ecom 43
             </Link>
           </div>
           <div className={styles.hamNav} onClick={handleToggle} ref={elem}>

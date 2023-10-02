@@ -70,6 +70,11 @@ function MobileMenu({ stateChange, ...props }) {
               Contact
             </Link>
           </li>
+          <li className={styles.listItem}>
+            <Link href="/ecom43" className={styles.link} onClick={handleClick}>
+              ECOM43
+            </Link>
+          </li>
         </ul>
       </nav>
       <div className={styles.socials}>
