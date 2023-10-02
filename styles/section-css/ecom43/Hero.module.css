@@ -125,11 +125,95 @@
   bottom: 0;
   left: 0;
 }
+.hand {
+  display: none;
+}
 @keyframes scroll {
   from {
     bottom: 0;
   }
   to {
     bottom: -60px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .heading {
+    font-size: 80px;
+  }
+}
+@media (max-width: 900px) {
+  .heading {
+    font-size: 48px;
+  }
+  .wrap {
+    padding: 36px 14px;
+  }
+  .subWrap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subButton span,
+  .subheading {
+    font-size: 36px;
+  }
+  .subButton span {
+    text-align: center;
+    width: 100%;
+  }
+  .subtext {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  .pointer {
+    max-width: 36px;
+  }
+  .Hero {
+    padding: 110px 0 80px;
+  }
+  .mouseWrap {
+    border-color: transparent;
+  }
+  .scrollWheel {
+    height: 36px;
+  }
+  .scrollWheel:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(112, 0, 255, 0) 15%,
+      rgba(6, 242, 255, 0) 85%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+  .gradient {
+    height: 100px;
+  }
+  .hand {
+    display: block;
+    position: absolute;
+    left: 17px;
+    top: -8px;
+    animation: handSlide 1s 0.3s alternate infinite ease-in-out;
+  }
+}
+
+@keyframes handSlide {
+  0% {
+    top: -8px;
+  }
+  20% {
+    top: -8px;
+  }
+  to {
+    top: 20px;
   }
 }

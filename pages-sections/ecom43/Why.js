@@ -43,7 +43,7 @@ function Why() {
   return (
     <section className={styles.Why}>
       <div className={styles.gradient}></div>
-      <div className="wrapper">
+      <div className={`${styles.wrapper} wrapper`}>
         <h2>Why E-com43?</h2>
         <div className={styles.grid}>
           {data &&

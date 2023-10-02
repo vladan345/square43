@@ -37,7 +37,7 @@ function Techs() {
         scrollTrigger: {
           trigger: ".techTrigger",
           start: "-20% center",
-          end: "center center",
+          end: window.innerHeight < 900 ? "top center" : "center center",
           toggleActions: "restart none reverse none",
         },
       });

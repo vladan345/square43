@@ -4,7 +4,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export const fanAnimations = () => {
   gsap.to(".fanwrap", {
-    y: "-=170%",
+    y: window.innerWidth < 900 ? "-=230%" : "-=170%",
     scrollTrigger: {
       trigger: ".trigger",
       scrub: true,

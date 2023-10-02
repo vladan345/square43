@@ -21,6 +21,7 @@ function Fan() {
 
   return (
     <section className={styles.Fan} ref={main}>
+      <div className={styles.gradient}></div>
       <div className={`trigger ${styles.trigger}`}>
         <div className={styles.sticky}>
           <h2 className={`${styles.heading1} heading1`}>

@@ -96,6 +96,13 @@ function Hero() {
               <div className={`${styles.scrollWheel}`}>
                 <div className={styles.gradient}></div>
               </div>
+              <Image
+                src="/images/hand.svg"
+                alt="hand"
+                width={42}
+                height={49}
+                className={styles.hand}
+              />
             </div>
           </div>
           <div className={`${styles.border} border`}>
