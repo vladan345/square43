@@ -18,10 +18,10 @@
   font-family: MatterBold;
 }
 .listItem {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .link {
-  font-size: 40px;
+  font-size: 32px;
   font-family: MatterLight;
   letter-spacing: -1.5px;
   color: white;
