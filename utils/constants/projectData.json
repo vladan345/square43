@@ -33,6 +33,59 @@
       }
     },
     {
+      "id": "distributed-services",
+      "name": "Distributed Services",
+      "slogan": "Same, same, but different: when a marketing agency revamps another.",
+      "color": "#304fe8",
+      "heroImage": "/images/distributed-services/heroDistributed.webp",
+      "heroVideo": "/images/distributed-services/heroDistributed.mp4",
+      "heroArrow": "/images/distributed-services/distributedArrow.svg",
+      "missionShort": "All that glitters is not gold - and not all clients of ours come from completely different industries! With a specific market in mind, Distributed Services approached us with a request that could, in simpler terms, be described as a complete makeover.",
+      "missionLong": "This entailed a complete rework of the brand, redesign of the existing website and complete implementation of the new outline with carefully thought out development, especially in terms of SEO and user experience.",
+      "solutionShort": "An innovative solution for a noteworthy online presence! Through our expertise in website design and development, we transformed the existing Distributed Services website with a cutting-edge redesign. Our team strategically introduced new sections, ensuring a seamless distribution of key selling points and a captivating showcase of their comprehensive range of services.",
+      "solutionLong": "By combining creativity and functionality, the new website offers an engaging user experience, enabling visitors to easily explore the breadth of Distributed Services as a service-provider. ",
+      "resultShort": "A completely new and refreshed image",
+      "resultLong": "Full UX/UI optimization with a sleek, user friendly design",
+      "liveProject": "https://distributedservices.tech",
+      "services": [
+        "web-design",
+        "web-development",
+        "copywriting",
+        "motion-design"
+      ],
+      "meta": {
+        "description": "Same, same, but different: when a marketing agency revamps another.",
+        "title": "Square43 Studio - Distributed Services",
+        "pageTitle": "Square43 Studio | Distributed Services",
+        "link": "https://square43.com/projects/distributed-services",
+        "image": "https://square43.com/images/distributed-services/heroDistributed.webp"
+      }
+    },
+    {
+      "id": "zeder",
+      "name": "Zeder Canada",
+      "slogan": "",
+      "color": "#FF0043",
+      "heroImage": "/images/zeder/heroZeder.webp",
+      "heroVideo": "/images/zeder/heroZeder.mp4",
+      "heroArrow": "/images/zeder/zederArrow.svg",
+      "missionShort": "Enim vel ipsum nunc pharetra aliquet ut at eleifend. Eget volutpat nunc purus in scelerisque donec ultrices. Ligula varius faucibus ullamcorper phasellus imperdiet. Mi elit pretium tellus neque pellentesque enim eget ipsum maecenas. Orci euismod viverra facilisi eu mattis egestas. Arcu tellus urna ut pharetra.",
+      "missionLong": "",
+      "solutionShort": "Amet suscipit venenatis eu cras porttitor eget morbi in nunc. Dictum in ut odio porta enim. Massa morbi egestas rhoncus amet dui adipiscing sed. Nec justo quis volutpat tincidunt enim auctor nec. Dictum commodo dolor massa sed vulputate sed molestie sed.",
+      "solutionLong": "",
+      "resultShort": "Lorem ipsum dolor <i>sit amet</i>",
+      "resultLong": "  Adipiscing pretium <i>ut nulla</i> In facilisis ac mauris egestas dictumst.",
+      "liveProject": "https://zeder.ca",
+      "services": ["web-design", "web-development", "copywriting", "branding"],
+      "meta": {
+        "description": "",
+        "title": "Square43 Studio - Zeder",
+        "pageTitle": "Square43 Studio | Zeder",
+        "link": "https://square43.com/projects/zeder",
+        "image": "https://square43.com/images/zeder/heroDistributed.webp"
+      }
+    },
+    {
       "id": "ownnew",
       "name": "Own New",
       "slogan": "A fresh start-up project straight from London. See how we helped OwnNew make their market debut across the UK.",
@@ -231,35 +284,6 @@
         "link": "https://square43.com/projects/jove",
         "image": "https://square43.com/images/jove/heroJove.webp"
       }
-    },
-    {
-      "id": "distributed-services",
-      "name": "Distributed Services",
-      "slogan": "Same, same, but different: when a marketing agency revamps another.",
-      "color": "#304fe8",
-      "heroImage": "/images/distributed-services/heroDistributed.webp",
-      "heroVideo": "/images/distributed-services/heroDistributed.mp4",
-      "heroArrow": "/images/distributed-services/distributedArrow.svg",
-      "missionShort": "All that glitters is not gold - and not all clients of ours come from completely different industries! With a specific market in mind, Distributed Services approached us with a request that could, in simpler terms, be described as a complete makeover.",
-      "missionLong": "This entailed a complete rework of the brand, redesign of the existing website and complete implementation of the new outline with carefully thought out development, especially in terms of SEO and user experience.",
-      "solutionShort": "An innovative solution for a noteworthy online presence! Through our expertise in website design and development, we transformed the existing Distributed Services website with a cutting-edge redesign. Our team strategically introduced new sections, ensuring a seamless distribution of key selling points and a captivating showcase of their comprehensive range of services.",
-      "solutionLong": "By combining creativity and functionality, the new website offers an engaging user experience, enabling visitors to easily explore the breadth of Distributed Services as a service-provider. ",
-      "resultShort": "A completely new and refreshed image",
-      "resultLong": "Full UX/UI optimization with a sleek, user friendly design",
-      "liveProject": "https://distributedservices.tech",
-      "services": [
-        "web-design",
-        "web-development",
-        "copywriting",
-        "motion-design"
-      ],
-      "meta": {
-        "description": "Same, same, but different: when a marketing agency revamps another.",
-        "title": "Square43 Studio - Distributed Services",
-        "pageTitle": "Square43 Studio | Distributed Services",
-        "link": "https://square43.com/projects/distributed-services",
-        "image": "https://square43.com/images/distributed-services/heroDistributed.webp"
-      }
     }
   ],
   "services": [
@@ -268,7 +292,7 @@
       "name": "Branding",
       "description": "Your true self - by us",
       "list": ["Brand strategy", "Logo design", "Naming", "Brand book design"],
-      "projects": ["northprim", "imunoshop", "dib-travel", "jove"]
+      "projects": ["northprim", "imunoshop", "dib-travel", "jove", "zeder"]
     },
     {
       "id": "web-design",
@@ -286,7 +310,8 @@
         "dib-travel",
         "imunoshop",
         "glasstic",
-        "jove"
+        "jove",
+        "zeder"
       ]
     },
     {
@@ -305,7 +330,8 @@
         "dib-travel",
         "imunoshop",
         "glasstic",
-        "jove"
+        "jove",
+        "zeder"
       ]
     },
     {
@@ -326,7 +352,7 @@
       "name": "Copywriting",
       "description": "Word it well.",
       "list": ["Website copy", "Social Media copy"],
-      "projects": ["northprim", "dib-travel", "imunoshop", "jove"]
+      "projects": ["northprim", "dib-travel", "imunoshop", "jove", "zeder"]
     },
     {
       "id": "e-commerce",

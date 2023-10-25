@@ -84,6 +84,9 @@ export default function Header() {
       <div className={`${styles.Header}`}>
         <div className={`wrapper ${styles.wrapper}`}>
           <div className={`${styles.leftNav} ${styles.blend}`}>
+            {router.pathname.includes("/projects/") && (
+              <button onClick={() => router.back()}>BACK</button>
+            )}
             <Link
               onClick={handleClick}
               className={styles.headerLink}

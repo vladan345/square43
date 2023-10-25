@@ -1,0 +1,43 @@
+.Web {
+  background: #131314;
+  color: #f8f8f8;
+  position: relative;
+  height: 100vh;
+}
+.wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.Web h2 {
+  margin-bottom: 40px;
+  color: #f8f8f8;
+}
+.Web p {
+  max-width: 440px;
+}
+.Web .button {
+  margin-top: 60px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 1px;
+  padding: 12px 15px;
+  border: 2px solid #f8ea21;
+  border-radius: 8px;
+  font-style: italic;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 57vw;
+  height: 100%;
+}
+.background img {
+  object-fit: cover;
+}
