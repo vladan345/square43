@@ -50,10 +50,13 @@ function Packaging() {
           <div className={styles.textBox}>
             <h2>Packaging</h2>
             <p>
-              Vulputate cursus lobortis id dignissim a cras id. Enim tellus urna
-              tempus interdum ac. Magna egestas magna eu consectetur orci velit
-              praesent. Lectus faucibus rutrum penatibus id tristique at. Enim
-              massa sodales morbi amet aliquet.
+              Premium look. Exceptional products.
+              <br />
+              <br />
+              Our choice of the label's color palette adds to the luxurious look
+              and feel. Thanks to the elegant dark shade of the label paired
+              with golden lettering, buyers can rest assured that the product
+              inside the packaging is of unparalleled quality.
             </p>
           </div>
           <Image
