@@ -7,12 +7,10 @@ function Logo() {
       <div className="wrapper">
         <h2>Logo</h2>
         <p>
-          Ultrices sit diam a pharetra maecenas lacus in. Nulla consec tetur
-          volutpat at elit nisl lectus pulvinar cursus. Pretium porta enim eget
-          ultricies eu orci duis. Porttitor lacus euismod justo quam non
-          phasellus. Sollicitudin eget suspendisse morbi feugiat porttitor amet
-          luctus nec tempor. Malesuada elit aliquet felis volutpat. Maecenas in
-          viverra dolor tristique non a magnis.
+          The existing logo needed to be simplified both in terms of imagery and
+          copywriting, minimizing the amount of text for a more compelling
+          message. Compare the before and after below to see the next step of
+          Zeder's brand evolution.
         </p>
         <div className={styles.compare}>
           <div className={styles.col}>
@@ -87,9 +85,10 @@ function Logo() {
           />
         </div>
         <p>
-          Porttitor lacus euismod justo quam non phasellus. Sollicitudin eget
-          suspendisse morbi feugiat porttitor amet luctus nec tempor. Malesuada
-          elit aliquet felis volutpat. Maecenas in viverra dolor tristique.
+          Never forget your roots. We used Zeder's old logo and its traffic sign
+          imagery as the basis of the new logo. Reliability, urgency and
+          impenetrable safety are first communicated through the color palette
+          selection: red, yellow and black take center stage.
         </p>
       </div>
       <div className={styles.cars}>

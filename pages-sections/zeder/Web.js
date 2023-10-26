@@ -15,11 +15,10 @@ function Web() {
             <br />& Development
           </h2>
           <p>
-            Laoreet nulla ut sed tortor. In urna accumsan purus volutpat et
-            tellus parturient montes. Tincidunt consequat euismod et nisl sit
-            vel bibendum nunc est. Mauris proin vel ut lobortis condimentum
-            mollis. Nulla leo egestas lectus gravida suscipit ullamcorper id
-            fermentum duis. Mattis eu nisl a ut ultrices nec neque.
+            Our web design solution simply followed suit, though red and black
+            dominate the setting. On the other hand, web development allowed our
+            vision to come to life. Zeder's new website is fully optimized for
+            all formats: desktop, mobile and tablet!
           </p>
           <Link
             className={styles.button}
