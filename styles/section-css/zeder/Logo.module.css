@@ -32,6 +32,7 @@
 
 .caption {
   font-family: Matter-Bold;
+  font-weight: 700;
 }
 
 .process {
@@ -46,6 +47,9 @@
   height: auto;
   max-width: 212px;
   flex: 1;
+}
+.mobileArrow {
+  display: none;
 }
 .process + p {
   max-width: 440px;
@@ -67,4 +71,64 @@
 .cars img {
   width: 40vw;
   height: auto;
+}
+@media (max-width: 1150px) {
+  .process {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 80px;
+  }
+  .desktopArrow {
+    display: none;
+  }
+  .process .mobileArrow {
+    display: block;
+    max-width: 20px;
+    flex: 0;
+  }
+  .process + p {
+    margin-top: 80px;
+  }
+  .cars {
+    background: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 20px 0 100px 0;
+    gap: 60px;
+    overflow-x: hidden;
+  }
+  .cars img {
+    width: auto;
+  }
+  .cars img:first-of-type {
+    margin-left: -50%;
+  }
+  .cars img:last-of-type {
+    margin-left: 50%;
+  }
+}
+@media (max-width: 900px) {
+  .compare {
+    flex-direction: column;
+    margin-left: -20px;
+    margin-right: -20px;
+    gap: 60px;
+  }
+  .compare .col {
+    width: 100%;
+  }
+  .imageBackground {
+    height: 245px;
+  }
+  .imageBackground img {
+    transform: scale(0.6);
+  }
+  .Logo p {
+    margin-bottom: 60px;
+  }
+  .cars img {
+    max-width: 460px;
+  }
 }

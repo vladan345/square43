@@ -4,7 +4,7 @@ import styles from "@/styles/section-css/zeder/Videos.module.css";
 function Videos() {
   return (
     <section className={styles.Videos}>
-      <div className="wrapper">
+      <div className={`wrapper ${styles.wrapper}`}>
         <video autoPlay playsInline muted loop className={styles.video}>
           <source src="/images/zeder/video1.mp4" type="video/mp4" />
         </video>

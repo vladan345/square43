@@ -41,3 +41,23 @@
 .background img {
   object-fit: cover;
 }
+
+@media (max-width: 1150px) {
+  .Web {
+    height: auto;
+  }
+  .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 80px;
+  }
+  .background {
+    position: static;
+    width: 100%;
+    height: 550px;
+    margin-bottom: 60px;
+  }
+  .background img {
+    max-height: 550px;
+  }
+}

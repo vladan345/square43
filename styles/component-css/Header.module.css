@@ -118,6 +118,15 @@
   filter: invert();
   position: relative;
 }
+.backArrow {
+  display: none;
+  background: transparent;
+  border: none;
+  transform: rotate(180deg);
+  filter: brightness(100%);
+  align-items: center;
+  cursor: pointer;
+}
 .dot {
   width: 8px;
   height: 8px;
@@ -280,14 +289,14 @@
   .Header {
     height: 80px;
   }
-  .leftNav,
+  .leftNav a,
   .rightNav {
     display: none;
   }
   .hamNav {
     display: block;
   }
-  .wrapper {
-    justify-content: flex-end;
+  .backArrow {
+    display: flex;
   }
 }

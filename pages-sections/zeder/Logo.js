@@ -46,10 +46,18 @@ function Logo() {
             src="/images/zeder/stop.svg"
           />
           <Image
+            className={styles.desktopArrow}
             width={180}
             height={20}
             alt="arrow"
             src="/images/zeder/arrow.svg"
+          />
+          <Image
+            className={styles.mobileArrow}
+            width={20}
+            height={93}
+            alt="arrow"
+            src="/images/zeder/arrow-down.svg"
           />
           <Image
             width={212}
@@ -58,10 +66,18 @@ function Logo() {
             src="/images/zeder/deny.svg"
           />
           <Image
+            className={styles.desktopArrow}
             width={180}
             height={20}
             alt="arrow"
             src="/images/zeder/arrow.svg"
+          />
+          <Image
+            className={styles.mobileArrow}
+            width={20}
+            height={93}
+            alt="arrow"
+            src="/images/zeder/arrow-down.svg"
           />
           <Image
             width={212}
