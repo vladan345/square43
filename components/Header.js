@@ -84,6 +84,20 @@ export default function Header() {
       <div className={`${styles.Header}`}>
         <div className={`wrapper ${styles.wrapper}`}>
           <div className={`${styles.leftNav} ${styles.blend}`}>
+            {router.pathname.includes("/projects/") && (
+              <button
+                className={styles.backArrow}
+                onClick={() => router.back()}
+              >
+                <Image
+                  src="/images/arrow-white-r.svg"
+                  alt="square43 logo"
+                  width="30"
+                  height="30"
+                  priority
+                />
+              </button>
+            )}
             <Link
               onClick={handleClick}
               className={styles.headerLink}

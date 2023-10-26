@@ -9,6 +9,7 @@ import Keiko from "@/pages-sections/projectMain/Keiko";
 import Glasstic from "@/pages-sections/projectMain/Glasstic";
 import Jove from "@/pages-sections/projectMain/Jove";
 import Distributed from "@/pages-sections/projectMain/Distributed";
+import Zeder from "@/pages-sections/projectMain/Zeder";
 
 import Head from "next/head";
 import ProjectHero from "@/components/ProjectHero";
@@ -45,6 +46,8 @@ function Project({ project, projectId }) {
         return <Jove />;
       case "distributed-services":
         return <Distributed />;
+      case "zeder":
+        return <Zeder />;
       default:
         return null;
     }

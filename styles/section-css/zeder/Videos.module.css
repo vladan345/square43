@@ -1,0 +1,36 @@
+.video {
+  margin-top: 160px;
+  width: 100%;
+  position: relative;
+}
+.video video {
+  width: 100%;
+}
+.video img {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+}
+.video:last-of-type {
+  margin-top: 100px;
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    max-width: none;
+    width: 100%;
+    padding: 0 0;
+  }
+  .video {
+    margin-top: 0;
+  }
+  .Videos video.video {
+    margin-top: 0;
+  }
+  .video img {
+    max-width: 30px;
+    height: 30px;
+    bottom: 30px;
+    left: 30px;
+  }
+}
