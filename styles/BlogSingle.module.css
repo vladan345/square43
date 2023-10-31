@@ -39,7 +39,8 @@
   margin-top: 40px;
 }
 .content p,
-.content h2 {
+.content h2,
+.content img {
   max-width: 720px;
 }
 .content a {

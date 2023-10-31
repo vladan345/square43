@@ -3,6 +3,7 @@ import Image from "next/image";
 import { GraphQLClient, gql } from "graphql-request";
 import styles from "../../styles/BlogSingle.module.css";
 import { useLoading } from "../../utils/hooks/LoadingContext";
+import Head from "next/head";
 
 const client = new GraphQLClient(process.env.NEXT_PUBLIC_HYGRAPH_URL);
 
@@ -31,47 +32,70 @@ export default function Blog({ blog }) {
   } ${date.getFullYear()}`;
 
   return (
-    <div className={styles.Blog + " container"}>
-      <img
-        className={styles.featuredImage}
-        src={blog.previewImage.url}
-        width={620}
-        height={620}
-        alt="featured Image"
-      />
-      <div className={styles.wrapper}>
-        <span className={styles.date}>{latestDate}</span>
-        <h1
-          style={{
-            animation: `fadeInRight 1s forwards ease-in-out`,
-            opacity: 0,
-          }}
-          className={styles.title}
-        >
-          {blog.postTitle}
-        </h1>
-        <p className={styles.excerpt}>{blog.excerpt}</p>
-        <div
-          className={styles.content}
-          dangerouslySetInnerHTML={{ __html: blog.blogContent.html }}
+    <>
+      <Head>
+        <title>{blog?.postTitle}</title>
+
+        <meta name="description" content={blog?.excerpt} />
+
+        <meta name="title" content={blog?.postTitle} />
+
+        {/* <meta property="og:url" content={blog?.meta.link} /> */}
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={blog?.previewImage.url} />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="square43.com" />
+        {/* <meta property="twitter:url" content={blog?.meta.link} /> */}
+        <meta name="twitter:title" content={blog?.postTitle} />
+        <meta name="twitter:description" content={blog?.excerpt} />
+        <meta name="twitter:image" content={blog?.previewImage.url} />
+      </Head>
+
+      <div className={styles.Blog + " container"}>
+        <img
+          className={styles.featuredImage}
+          src={blog.previewImage.url}
+          width={620}
+          height={620}
+          alt="featured Image"
         />
-        <a
-          href={blog.projectLink}
-          className={`readMore ${styles.liveProject}`}
-          target="_blank"
-        >
-          View project
-          <div className="icon">
-            <Image
-              src="/images/arrow.svg"
-              alt="Arrow icon"
-              width={40}
-              height={40}
-            />
-          </div>
-        </a>
+        <div className={styles.wrapper}>
+          <span className={styles.date}>{latestDate}</span>
+          <h1
+            style={{
+              animation: `fadeInRight 1s forwards ease-in-out`,
+              opacity: 0,
+            }}
+            className={styles.title}
+          >
+            {blog.postTitle}
+          </h1>
+          <p className={styles.excerpt}>{blog.excerpt}</p>
+          <div
+            className={styles.content}
+            dangerouslySetInnerHTML={{ __html: blog.blogContent.html }}
+          />
+          {blog.projectLink && (
+            <a
+              href={blog.projectLink}
+              className={`readMore ${styles.liveProject}`}
+              target="_blank"
+            >
+              View project
+              <div className="icon">
+                <Image
+                  src="/images/arrow.svg"
+                  alt="Arrow icon"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </a>
+          )}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
