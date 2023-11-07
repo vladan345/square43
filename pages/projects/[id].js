@@ -10,6 +10,7 @@ import Glasstic from "@/pages-sections/projectMain/Glasstic";
 import Jove from "@/pages-sections/projectMain/Jove";
 import Distributed from "@/pages-sections/projectMain/Distributed";
 import Zeder from "@/pages-sections/projectMain/Zeder";
+import Klei from "@/pages-sections/projectMain/Klei";
 
 import Head from "next/head";
 import ProjectHero from "@/components/ProjectHero";
@@ -48,6 +49,8 @@ function Project({ project, projectId }) {
         return <Distributed />;
       case "zeder":
         return <Zeder />;
+      case "klei":
+        return <Klei />;
       default:
         return null;
     }
@@ -99,6 +102,8 @@ export function getStaticPaths() {
       { params: { id: "glasstic" } },
       { params: { id: "jove" } },
       { params: { id: "distributed-services" } },
+      { params: { id: "zeder" } },
+      { params: { id: "klei" } },
     ],
     fallback: true,
   };

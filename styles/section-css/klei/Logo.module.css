@@ -1,0 +1,52 @@
+.Logo {
+  position: relative;
+  height: 1000px;
+}
+.name {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+.textBox {
+  max-width: 480px;
+}
+.Logo .name + img {
+  max-width: 1080px;
+  width: 57vw;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.flex {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 120px;
+  margin-bottom: 280px;
+}
+.flex .imageWrap {
+  width: 56%;
+  max-width: 800px;
+}
+.subheading {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-family: Matter-Bold;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+.imageWrap img {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.
