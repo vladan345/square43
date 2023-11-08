@@ -18,6 +18,8 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  left: -100px;
+  opacity: 0;
 }
 
 .flex {
@@ -42,11 +44,38 @@
   width: 100%;
   height: auto;
   max-width: 800px;
+  opacity: 0;
+  transform: translateY(100px);
 }
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
-
-.
+.logo {
+  opacity: 0;
+}
+.subheading {
+  margin-top: 120px;
+}
+.row {
+  display: flex;
+  gap: 200px;
+}
+.row p {
+  max-width: 440px;
+}
+.waves {
+  margin-top: 180px;
+}
+.rowImages {
+  display: flex;
+  gap: 80px;
+}
+.rowImages:last-of-type {
+  align-items: flex-end;
+  margin-top: -50px;
+}
+.rowImages img {
+  opacity: 0;
+}

@@ -1,9 +1,61 @@
+import { useRef, useEffect } from "react";
 import Image from "next/image";
 import styles from "@/styles/section-css/klei/Logo.module.css";
 
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 export default function Logo() {
+  const main = useRef();
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.to(".glina", {
+        left: 0,
+        opacity: 1,
+        duration: 0.7,
+        scrollTrigger: {
+          trigger: ".wrapper",
+          start: "center bottom",
+        },
+      });
+      gsap.to(".structure", {
+        y: 0,
+        opacity: 1,
+        duration: 0.7,
+        scrollTrigger: {
+          trigger: ".branding",
+          start: "center bottom",
+        },
+      });
+
+      gsap.to(".logo", {
+        opacity: 1,
+        duration: 1,
+        stagger: 0.3,
+        scrollTrigger: {
+          trigger: ".grid",
+          start: "center bottom",
+        },
+      });
+      gsap.to(".waveImage", {
+        opacity: 1,
+        duration: 1,
+        stagger: 0.3,
+        scrollTrigger: {
+          trigger: ".waves",
+          start: "center bottom",
+        },
+      });
+    }, main.current);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <>
+    <div ref={main}>
       <section className={styles.Logo}>
         <div className={`wrapper ${styles.name}`}>
           <div className={styles.textBox}>
@@ -28,10 +80,11 @@ export default function Logo() {
           alt="Clay tools"
           width={1080}
           height={760}
+          className="glina"
         />
       </section>
       <section className={styles.Branding}>
-        <div className="wrapper">
+        <div className="wrapper branding">
           <div className={styles.flex}>
             <div className={styles.textBox}>
               <h2>Logo & Branding</h2>
@@ -52,48 +105,52 @@ export default function Logo() {
                 alt="Logo structure"
                 width={800}
                 height={525}
+                className="structure"
               />
             </div>
           </div>
         </div>
-        <div className="wrapper">
+        <div className="wrapper grid">
           <div className={styles.grid}>
             <Image
               src="/images/klei/logo1.svg"
               alt="Logo usage"
               width={680}
               height={360}
+              className={`${styles.logo} logo`}
             />
             <Image
               src="/images/klei/logo2.svg"
               alt="Logo usage"
               width={680}
               height={360}
+              className={`${styles.logo} logo`}
             />
             <Image
               src="/images/klei/logo3.svg"
               alt="Logo usage"
               width={680}
               height={360}
+              className={`${styles.logo} logo`}
             />
             <Image
               src="/images/klei/logo4.svg"
               alt="Logo usage"
               width={680}
               height={360}
+              className={`${styles.logo} logo`}
             />
           </div>
-          <div className={styles.row}>
-            <div className={styles.brandBox}>
-              <p className={styles.subheading}>branding application</p>
+          <div>
+            <p className={styles.subheading}>branding application</p>
+            <div className={styles.row}>
               <p>
                 Venenatis turpis augue sed viverra lectus ultrices. Consectetur
                 phasellus fringilla nunc libero sed. Amet pharetra gravida
                 viverra malesuada vestibulum volutpat. Nisl sed auctor a semper
                 lacinia in sem.
               </p>
-            </div>
-            <div className={styles.brandBox}>
+
               <p>
                 Mauris ac maecenas sit amet. Amet id tincidunt amet semper nulla
                 mus. Consectetur lorem lorem enim et. Varius donec ultricies
@@ -104,6 +161,42 @@ export default function Logo() {
           </div>
         </div>
       </section>
-    </>
+      <section className={`${styles.waves} waves`}>
+        <div className="wrapper">
+          <div className={styles.rowImages}>
+            <Image
+              src="/images/klei/grid1.webp"
+              alt="Mockup Klei"
+              width={720}
+              height={575}
+              className="waveImage"
+            />
+            <Image
+              src="/images/klei/grid2.webp"
+              alt="Mockup Klei"
+              width={560}
+              height={705}
+              className="waveImage"
+            />
+          </div>
+          <div className={styles.rowImages}>
+            <Image
+              src="/images/klei/grid3.webp"
+              alt="Mockup Klei"
+              width={640}
+              height={644}
+              className="waveImage"
+            />
+            <Image
+              src="/images/klei/grid4.webp"
+              alt="Mockup Klei"
+              width={640}
+              height={520}
+              className="waveImage"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }

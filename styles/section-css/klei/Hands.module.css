@@ -1,0 +1,35 @@
+.Hands {
+  background: white;
+  z-index: 1;
+  position: relative;
+  padding-top: 340px;
+}
+.wrapper {
+  max-width: 1300px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.blobWrap {
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.rightHand {
+  margin-top: -340px;
+  z-index: 0;
+}
+.leftHand {
+  position: relative;
+  z-index: 2;
+  margin-top: 100px;
+}
+.textImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

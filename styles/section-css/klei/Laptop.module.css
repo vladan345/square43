@@ -1,0 +1,39 @@
+.Laptop {
+  margin-top: 180px;
+  overflow-x: hidden;
+}
+.textRow {
+  display: flex;
+  gap: 120px;
+}
+.textRow p {
+  max-width: 440px;
+}
+
+.background {
+  position: relative;
+  height: 1000px;
+  margin-top: 350px;
+}
+.laptopBg {
+  object-fit: cover;
+  z-index: 0;
+}
+.laptopImage {
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  top: -200px;
+  transform: translateX(-50%);
+}
+.video {
+  position: absolute;
+  left: 50%;
+  top: -167px;
+  transform: translateX(-50%);
+  object-fit: cover;
+  height: 466px;
+  width: 100%;
+  max-width: 760px;
+  object-position: top center;
+}

@@ -1,0 +1,49 @@
+.Flowers {
+  position: relative;
+  height: 960px;
+}
+.back {
+  object-fit: cover;
+  max-height: 617px;
+  bottom: 0;
+  top: auto !important;
+}
+.front {
+  max-height: 212px;
+  bottom: 0;
+  top: auto !important;
+  object-fit: cover;
+}
+.row {
+  display: flex;
+}
+.col {
+  width: 50%;
+  position: relative;
+}
+.col p {
+  max-width: 440px;
+}
+.col p:last-of-type {
+  margin-top: 160px;
+}
+.col:first-of-type {
+  padding-top: 120px;
+}
+.circles {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.circles img {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.flower {
+  position: absolute;
+  bottom: -100px;
+  opacity: 0;
+}
