@@ -110,7 +110,7 @@ export default function Logo() {
             </div>
           </div>
         </div>
-        <div className="wrapper grid">
+        <div className={`wrapper grid ${styles.wrapperGrid}`}>
           <div className={styles.grid}>
             <Image
               src="/images/klei/logo1.svg"
@@ -141,7 +141,7 @@ export default function Logo() {
               className={`${styles.logo} logo`}
             />
           </div>
-          <div>
+          <div className={styles.gridText}>
             <p className={styles.subheading}>branding application</p>
             <div className={styles.row}>
               <p>
@@ -162,7 +162,37 @@ export default function Logo() {
         </div>
       </section>
       <section className={`${styles.waves} waves`}>
-        <div className="wrapper">
+        <div className={`${styles.waveWrapper} wrapper`}>
+          <div className={styles.mobileWave}>
+            <Image
+              src="/images/klei/mobileWave1.webp"
+              alt="Mockup Klei"
+              width={640}
+              height={513}
+              className="waveImage"
+            />
+            <Image
+              src="/images/klei/mobileWave2.webp"
+              alt="Mockup Klei"
+              width={640}
+              height={636}
+              className="waveImage"
+            />
+            <Image
+              src="/images/klei/mobileWave3.webp"
+              alt="Mockup Klei"
+              width={640}
+              height={671}
+              className="waveImage"
+            />
+            <Image
+              src="/images/klei/mobileWave4.webp"
+              alt="Mockup Klei"
+              width={640}
+              height={700}
+              className="waveImage"
+            />
+          </div>
           <div className={styles.rowImages}>
             <Image
               src="/images/klei/grid1.webp"

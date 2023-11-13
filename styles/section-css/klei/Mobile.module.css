@@ -20,8 +20,40 @@
 .row {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 100px;
 }
 .row p {
   max-width: 440px;
+}
+
+@media (max-width: 1600px) {
+  .imageWrap {
+    max-width: 560px;
+    min-width: 0;
+  }
+  .imageWrap img {
+    width: 60%;
+    height: auto;
+  }
+  .imageWrap img:nth-of-type(2) {
+    max-width: 55%;
+  }
+  .imageWrap img:nth-of-type(3) {
+    max-width: 50%;
+  }
+}
+@media (max-width: 1200px) {
+  .row p {
+    max-width: 30%;
+  }
+}
+@media (max-width: 900px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .row p {
+    width: 100%;
+    max-width: none;
+  }
 }

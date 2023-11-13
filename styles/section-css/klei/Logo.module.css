@@ -52,6 +52,10 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
+.grid img {
+  width: 100%;
+  height: auto;
+}
 .logo {
   opacity: 0;
 }
@@ -68,9 +72,14 @@
 .waves {
   margin-top: 180px;
 }
+
 .rowImages {
-  display: flex;
+  display: none;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
   gap: 80px;
+  overflow-x: hidden;
 }
 .rowImages:last-of-type {
   align-items: flex-end;
@@ -78,4 +87,79 @@
 }
 .rowImages img {
   opacity: 0;
+  width: 100%;
+  height: auto;
+}
+.mobileWave {
+  display: none;
+}
+@media (max-width: 1150px) {
+  .Logo {
+    height: 800px;
+  }
+  .Logo .name + img {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .Logo {
+    min-height: 800px;
+    margin-bottom: 100px;
+  }
+  .Logo .name + img {
+    width: 100%;
+    max-width: 390px;
+    top: 80px;
+    transform: translateY(0);
+  }
+  .name {
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .flex {
+    flex-direction: column-reverse;
+    margin-bottom: 80px;
+  }
+  .flex .imageWrap {
+    width: 100%;
+  }
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .wrapperGrid {
+    padding: 0;
+  }
+  .subheading {
+    margin-top: 80px;
+  }
+  .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .mobileWave {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .mobileWave img {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+  }
+  .gridText {
+    padding: 0 20px;
+  }
+  .waves {
+    margin-top: 80px;
+  }
+  .waveWrapper {
+    padding: 0;
+  }
+  .mobileWave img:nth-of-type(3) {
+    margin-top: 10px;
+  }
+  .mobileWave img:last-of-type {
+    margin-top: -20px;
+  }
 }

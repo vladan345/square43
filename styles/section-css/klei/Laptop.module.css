@@ -37,3 +37,50 @@
   max-width: 760px;
   object-position: top center;
 }
+
+@media (max-width: 1600px) {
+  .laptopImage {
+    transform: translateX(-50%) scale(0.8);
+  }
+  .video {
+    transform: translateX(-50%) scale(0.8);
+    top: -73px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .laptopImage {
+    transform: translateX(-50%) scale(0.6);
+  }
+  .video {
+    transform: translateX(-50%) scale(0.6);
+    top: -73px;
+  }
+}
+
+@media (max-width: 900px) {
+  .Laptop {
+    margin-top: 80px;
+  }
+  .textRow {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .background {
+    margin-top: 120px;
+    height: auto;
+  }
+  .laptopBg {
+    display: none;
+  }
+  .laptopImage {
+    display: none;
+  }
+  .video {
+    transform: translateX(0) scale(1);
+    position: static;
+    width: 100%;
+    max-width: none;
+    height: auto;
+  }
+}

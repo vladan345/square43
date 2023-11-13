@@ -13,7 +13,7 @@ export default function Mobile() {
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.to(".middlePhone", {
-        margin: "0 -140px",
+        margin: `0 ${window.innerWidth <= 900 ? "-120px" : "-140px"}`,
         duration: 1,
         scrollTrigger: {
           trigger: ".wrapper",
