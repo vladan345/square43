@@ -74,7 +74,7 @@
 }
 
 .rowImages {
-  display: none;
+  display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   width: 100%;
@@ -87,7 +87,6 @@
 }
 .rowImages img {
   opacity: 0;
-  width: 100%;
   height: auto;
 }
 .mobileWave {
@@ -99,6 +98,12 @@
   }
   .Logo .name + img {
     width: 50vw;
+  }
+  .rowImages {
+    gap: 2%;
+  }
+  .rowImages:last-of-type {
+    margin-top: -9%;
   }
 }
 
@@ -137,6 +142,9 @@
   .row {
     flex-direction: column;
     gap: 20px;
+  }
+  .rowImages {
+    display: none;
   }
   .mobileWave {
     display: grid;

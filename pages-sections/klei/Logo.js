@@ -200,6 +200,7 @@ export default function Logo() {
               width={720}
               height={575}
               className="waveImage"
+              style={{ maxWidth: "56%", width: "56%" }}
             />
             <Image
               src="/images/klei/grid2.webp"
@@ -207,6 +208,7 @@ export default function Logo() {
               width={560}
               height={705}
               className="waveImage"
+              style={{ maxWidth: "44%", width: "44%" }}
             />
           </div>
           <div className={styles.rowImages}>
@@ -216,6 +218,7 @@ export default function Logo() {
               width={640}
               height={644}
               className="waveImage"
+              style={{ maxWidth: "50%", width: "50%" }}
             />
             <Image
               src="/images/klei/grid4.webp"
@@ -223,6 +226,7 @@ export default function Logo() {
               width={640}
               height={520}
               className="waveImage"
+              style={{ maxWidth: "50%", width: "50%" }}
             />
           </div>
         </div>
