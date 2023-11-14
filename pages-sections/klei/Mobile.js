@@ -50,11 +50,14 @@ export default function Mobile() {
             />
           </div>
           <p>
-            Sagittis morbi molestie augue lacus at viverra dolor. Diam tristique
-            id pulvinar nisi quis dictum lacus magna adipiscing. Et venenatis
-            elementum nunc vestibulum id semper at. Vitae ac mollis imperdiet
-            tortor netus facilisis lorem. Tempus pharetra ornare eget enim purus
-            cras non. Sit turpis sapien curabitur tristique.
+            Leveraging cutting-edge design principles and employing a
+            mobile-first strategy, we seamlessly adapted the website's layout,
+            navigation, and functionality to cater to the unique demands of
+            mobile users. The result is a visually engaging and intuitively
+            navigable mobile version that not only mirrors the desktop
+            experience but also enhances accessibility, providing our client
+            with a competitive edge in reaching and engaging their target
+            audience on any device.
           </p>
         </div>
       </div>

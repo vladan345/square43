@@ -73,8 +73,13 @@
     width: 100%;
   }
   .col:last-of-type {
-    min-height: 560px;
+    min-height: 660px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .col p:last-of-type {
+    margin-top: 20px;
   }
   .back {
     max-height: 200px;
@@ -87,7 +92,14 @@
     height: auto;
   }
   .circles {
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
+    position: absolute;
+  }
+}
+
+@media (max-width: 485px) {
+  .col:last-of-type {
+    min-height: 120vw;
   }
 }

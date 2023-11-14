@@ -13,7 +13,7 @@ export default function Hands() {
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.to(".leftHand", {
-        y: -300,
+        y: `-${window.innerWidth / 4}px`,
         scrollTrigger: {
           trigger: ".handsWrap",
           scrub: true,
@@ -21,7 +21,7 @@ export default function Hands() {
         },
       });
       gsap.to(".rightHand", {
-        y: 300,
+        y: `${window.innerWidth / 4}px`,
         scrollTrigger: {
           trigger: ".handsWrap",
           scrub: true,
@@ -41,40 +41,38 @@ export default function Hands() {
     return () => ctx.revert();
   }, []);
   return (
-    <section className={styles.Hands}>
-      <div className={`handsWrap wrapper ${styles.wrapper}`}>
-        <div className={styles.row}>
+    <section className={styles.Hands} ref={main}>
+      <div className={`${styles.wrapper} handsWrap`}>
+        <Image
+          src="/images/klei/ruka2.webp"
+          width={286}
+          height={811}
+          alt="Left hand Klei"
+          className={`${styles.rightHand} rightHand`}
+        />
+        <div className={`${styles.blobWrap}`}>
           <Image
-            src="/images/klei/ruka1.webp"
-            alt="Hand Klei"
-            width={535}
-            height={934}
-            className={`${styles.leftHand} leftHand`}
+            src="/images/klei/blob.svg"
+            width={868}
+            height={829}
+            alt="Klei"
+            className={`${styles.blob} blob`}
           />
-          <div className={styles.blobWrap}>
-            <Image
-              src="/images/klei/blob.svg"
-              alt="Hand Klei"
-              width={868}
-              height={829}
-              className="blob"
-            />
-            <Image
-              src="/images/klei/text.svg"
-              alt="A movement, not a brand"
-              width={481}
-              height={131}
-              className={styles.textImage}
-            />
-          </div>
           <Image
-            src="/images/klei/ruka2.webp"
-            alt="Hand Klei"
-            width={286}
-            height={811}
-            className={`${styles.rightHand} rightHand`}
+            src="/images/klei/text.svg"
+            width={481}
+            height={131}
+            alt="A movement, not a brand."
+            className={styles.text}
           />
         </div>
+        <Image
+          src="/images/klei/ruka1.webp"
+          width={535}
+          height={934}
+          alt="Left hand Klei"
+          className={`${styles.leftHand} leftHand`}
+        />
       </div>
     </section>
   );

@@ -61,17 +61,17 @@ export default function Logo() {
           <div className={styles.textBox}>
             <h2>Name & Story</h2>
             <p>
-              Sit nunc gravida neque arcu iaculis morbi nisl. Turpis fringilla
-              cras nunc eleifend. Ante ornare pellentesque eu enim vehicula
-              donec. Nisl sed pretium non quam vitae. Urna est varius facilisis
-              morbi sed venenatis vitae dui. Quis facilisis quis et donec.
+              Though it's impossible to rank brand elements according to their
+              importance, we were well-aware that the name had to be the first
+              step, which would then set the tone for the rest of our creative
+              process.
             </p>
             <p>
-              Faucibus pharetra sodales urna porttitor ornare scelerisque.
-              Facilisis fringilla lacus semper at quam varius turpis. Dolor
-              tristique sit eget vulputate leo id. Amet turpis sem quis amet.
-              Leo tellus senectus egestas et nisl in risus. A eu pharetra ac id
-              pulvinar vitae a porttitor.
+              Klei - as a phonetic play on clay as the main building element -
+              immediately stood out as the founders' favorite and immediately
+              inspired the rest of our creative choices. The narrative behind
+              the brand flowed naturally as we placed special emphasis on the
+              celebration of nature, earth and the unique craft of pottery.
             </p>
           </div>
         </div>
@@ -90,13 +90,12 @@ export default function Logo() {
               <h2>Logo & Branding</h2>
               <p className={styles.subheading}>LOGO DESIGN</p>
               <p className={styles.paragraph}>
-                Auctor tincidunt in eros vitae. Laoreet dictum consectetur
-                bibendum cursus sed consectetur. Donec amet nulla velit tempus.
-                Sodales dui nulla sagittis odio vitae ac. Elementum ultrices
-                scelerisque quis sagittis faucibus phasellus sit eget. Euismod
-                suspendisse facilisi proin consequat amet tellus a pulvinar at.
-                Fusce enim urna vel ultricies lorem. Risus ultrices at duis
-                vitae at non non sapien. At rutrum.
+                We are incredibly proud of this one! In an optimal scenario, a
+                brand's logo should reflect its essence and, ideally, help users
+                make the right association regarding the brand's services or
+                products. By combining basic geometric shapes, which stand for
+                pottery items, Klei Works has a unique logo which is definitely
+                easily recognizable.
               </p>
             </div>
             <div className={styles.imageWrap}>
@@ -145,17 +144,19 @@ export default function Logo() {
             <p className={styles.subheading}>branding application</p>
             <div className={styles.row}>
               <p>
-                Venenatis turpis augue sed viverra lectus ultrices. Consectetur
-                phasellus fringilla nunc libero sed. Amet pharetra gravida
-                viverra malesuada vestibulum volutpat. Nisl sed auctor a semper
-                lacinia in sem.
+                While designing the logo, we made sure to anticipate its use,
+                beyond mere identification. The way we envisioned it, our logo
+                solution offers a diverse use in branding products as an
+                understated, but effective final touch to already invaluable
+                pottery creations.
               </p>
 
               <p>
-                Mauris ac maecenas sit amet. Amet id tincidunt amet semper nulla
-                mus. Consectetur lorem lorem enim et. Varius donec ultricies
-                venenatis ultrices sit ornare. Condimentum at amet aliquam
-                nulla. Cursus amet.
+                As shown in the picture above, we offered two different versions
+                of the logo, one of which contains the name and purpose of the
+                brand in writing. This allows for a wider array of applications
+                as the brand grows in the future: merchandise, printed materials
+                and similar.
               </p>
             </div>
           </div>

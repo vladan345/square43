@@ -11,17 +11,19 @@ export default function Laptop() {
         </h2>
         <div className={styles.textRow}>
           <p>
-            Lacus eu sed faucibus bibendum pulvinar. Est et tincidunt facilisi
-            dapibus laoreet turpis dolor. Vel mattis tellus scelerisque tortor
-            condimentum purus. Tortor vitae quam facilisis faucibus. Viverra
-            vitae purus lectus pharetra vel pharetra pharetra ultrices. Lacus
-            elementum ultrices enim arcu. Senectus.
+            Digital presence has become an indispensable step in the development
+            of a new brand. Returning to stage 1, we aimed to apply the ideal of
+            minimalism and all things artistic: grainy, even smudged textures,
+            breathtaking visuals of top-tier pottery - everything that is an
+            irreplaceable part of the pottery creation process.
           </p>
           <p>
-            At auctor amet purus suspendisse nec. Amet massa ultrices sed dis
-            vulputate arcu orci sed. Vitae id dui arcu enim interdum. Dui sit
-            enim odio duis eu. Ullamcorper sit egestas elit donec eget eget. Ut
-            id ut in gravida posuere vestibulum hendrerit venenatis scelerisque.
+            In terms of web development, we ensured that the website was
+            presented in all its glory and uniqueness for all device types.
+            Recognizing the critical importance of an adaptable interface in
+            today's dynamic online ecosystem, our team undertook a comprehensive
+            approach to ensure optimal user experience across various devices.
+            Klei Works is now available for desktop, tablet and mobile.
           </p>
         </div>
       </div>

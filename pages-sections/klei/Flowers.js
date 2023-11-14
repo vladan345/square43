@@ -59,16 +59,19 @@ export default function Flowers() {
             <br />& Philosophy
           </h2>
           <p>
-            Lacus eu sed faucibus bibendum pulvinar. Est et tincidunt facilisi
-            dapibus laoreet turpis dolor. Vel mattis tellus scelerisque tortor
-            condimentum purus. Tortor vitae quam facilisis faucibus. Viverra
-            vitae purus lectus pharetra vel pharetra pharetra ultrices. Lacus
-            elementum ultrices enim arcu. Senectus.
+            “There can be no single approach to art or beauty.”
+            <br />
+            <br />
+            The copywriting behind the brand aimed to explain that no two Klei
+            products are alike. Considering the multifaceted nature of beauty,
+            this brand transcends the mere act of production, embodying an
+            artistic and philosophical approach to craftsmanship. In fact, each
+            clay product is meticulously fashioned as an intimate dialogue
+            between the raw earth and artisans' vision.
           </p>
           <p>
-            Lacus eu sed faucibus bibendum pulvinar. Est et tincidunt facilisi
-            dapibus laoreet turpis dolor. Vel mattis tellus scelerisque tortor
-            condimentum purus. Tortor vitae quam facilisis faucibus.
+            Klei Works is a testament to the alchemy of clay, where artistry and
+            philosophy converge to mold objects that resonate with the soul.
           </p>
         </div>
         <div className={styles.col}>
