@@ -1,0 +1,84 @@
+.Hands {
+  padding-top: 300px;
+  background: white;
+  margin-top: -4px;
+  overflow: hidden;
+  z-index: 2;
+  position: relative;
+}
+.wrapper {
+  max-width: 1360px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  flex-direction: row-reverse;
+}
+.text {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.blobWrap {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 55%;
+}
+.rightHand {
+  margin-top: -200px;
+}
+
+@media (max-width: 1250px) {
+  .Hands {
+    padding-top: 120px;
+  }
+  .leftHand {
+    width: 300px;
+    height: 523px;
+    margin-top: 200px;
+  }
+  .rightHand {
+    width: 160px;
+    height: 453px;
+  }
+  .blobWrap {
+    width: 400px;
+  }
+  .blobWrap img {
+    width: 100%;
+    height: auto;
+  }
+  .blobWrap .text {
+    width: 200px;
+    height: auto;
+  }
+  .wrapper {
+    justify-content: center;
+    gap: 220px;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    gap: 120px;
+  }
+  .rightHand {
+    width: 75px;
+    height: 240px;
+    margin-top: 0;
+  }
+  .leftHand {
+    width: 150px;
+    height: 261px;
+    margin-top: 100px;
+  }
+  .blobWrap {
+    width: 280px;
+  }
+  .blobWrap .text {
+    width: 130px;
+    height: auto;
+  }
+}
