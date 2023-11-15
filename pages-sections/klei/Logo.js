@@ -40,6 +40,15 @@ export default function Logo() {
           start: "center bottom",
         },
       });
+      gsap.to(".waveImageM", {
+        opacity: 1,
+        duration: 1,
+        stagger: 0.3,
+        scrollTrigger: {
+          trigger: ".waves",
+          start: "center bottom",
+        },
+      });
       gsap.to(".waveImage", {
         opacity: 1,
         duration: 1,
@@ -170,28 +179,28 @@ export default function Logo() {
               alt="Mockup Klei"
               width={640}
               height={513}
-              className="waveImage"
+              className="waveImageM"
             />
             <Image
               src="/images/klei/mobileWave2.webp"
               alt="Mockup Klei"
               width={640}
               height={636}
-              className="waveImage"
+              className="waveImageM"
             />
             <Image
               src="/images/klei/mobileWave3.webp"
               alt="Mockup Klei"
               width={640}
               height={671}
-              className="waveImage"
+              className="waveImageM"
             />
             <Image
               src="/images/klei/mobileWave4.webp"
               alt="Mockup Klei"
               width={640}
               height={700}
-              className="waveImage"
+              className="waveImageM"
             />
           </div>
           <div className={styles.rowImages}>

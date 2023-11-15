@@ -1,5 +1,6 @@
 .Hands {
   padding-top: 300px;
+  padding-bottom: 120px;
   background: white;
   margin-top: -4px;
   overflow: hidden;
@@ -33,6 +34,7 @@
 @media (max-width: 1250px) {
   .Hands {
     padding-top: 120px;
+    padding-bottom: 0;
   }
   .leftHand {
     width: 300px;
@@ -80,5 +82,8 @@
   .blobWrap .text {
     width: 130px;
     height: auto;
+  }
+  .Hands {
+    padding-bottom: 120px;
   }
 }
