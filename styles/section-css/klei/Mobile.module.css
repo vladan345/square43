@@ -49,6 +49,9 @@
   }
 }
 @media (max-width: 900px) {
+  .Mobile {
+    overflow-x: hidden;
+  }
   .row {
     flex-direction: column-reverse;
   }
