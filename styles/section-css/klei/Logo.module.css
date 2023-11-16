@@ -36,9 +36,9 @@
 .subheading {
   margin-bottom: 40px;
   font-size: 16px;
-  font-family: Matter-Bold;
   letter-spacing: 0.8px;
   text-transform: uppercase;
+  font-weight: 700;
 }
 .imageWrap img {
   width: 100%;

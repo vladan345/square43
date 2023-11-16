@@ -3,14 +3,14 @@
 }
 .title {
   font-size: 120px;
-  font-family: MatterBold;
+  font-weight: 700;
   margin-bottom: 120px;
   letter-spacing: -4.8px;
   width: 1375px;
 }
 .titleLink {
   font-size: 80px;
-  font-family: MatterBold;
+  font-weight: 700;
   margin-bottom: 20px;
   display: inline-block;
   letter-spacing: -3.2px;
@@ -18,14 +18,14 @@
 }
 .preheading {
   font-size: 28px;
-  font-family: MatterRegular;
+  font-weight: 400;
   line-height: 1.2;
   margin-bottom: 10px;
 }
 
 .subheading {
   font-size: 80px;
-  font-family: MatterBold;
+  font-weight: 700;
   margin-bottom: 120px;
   letter-spacing: -3.2px;
   background: radial-gradient(circle at 0 0, #7000ff, #0ff);

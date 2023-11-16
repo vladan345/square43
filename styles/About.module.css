@@ -28,7 +28,7 @@
   top: 25%;
   font-size: 120px;
   transform: translateY(-50%);
-  font-family: MatterBold;
+  font-weight: 700;
   letter-spacing: -4.8px;
   background: radial-gradient(circle at 0 0, #7000ff, #0ff);
   background-attachment: sticky;

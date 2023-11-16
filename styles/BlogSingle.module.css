@@ -18,7 +18,7 @@
 
 .date {
   display: block;
-  font-family: "MatterBold";
+  font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;
   margin-bottom: 40px;
@@ -26,13 +26,13 @@
 .title {
   font-size: 48px;
   max-width: 720px;
-  font-family: MatterBold, sans-serif;
+  font-weight: 700;
   line-height: 1.1;
   margin-bottom: 40px;
 }
 .excerpt {
   font-size: 28px;
-  font-family: "MatterRegular";
+  font-weight: 400;
   max-width: 720px;
 }
 .content {
@@ -47,7 +47,7 @@
   text-decoration: underline;
 }
 .content h2 {
-  font-family: MatterBold, sans-serif;
+  font-weight: 700;
   font-size: 36px;
   margin-bottom: 40px;
   margin-top: 80px;

@@ -18,7 +18,7 @@
 }
 .textBox h3 {
   font-size: 28px;
-  font-family: MatterLight;
+  font-weight: 300;
   margin-bottom: 50px;
 }
 @media (max-width: 900px) {

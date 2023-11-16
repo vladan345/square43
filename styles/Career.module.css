@@ -6,7 +6,7 @@
 .heading1,
 .heading2 {
   font-size: 120px;
-  font-family: "MatterBold";
+  font-weight: 700;
   letter-spacing: -4.8px;
   line-height: 1;
   transform: translateY(-50%);
@@ -26,7 +26,7 @@
   padding: 120px 0;
 }
 .positions .heading {
-  font-family: "MatterBold";
+  font-weight: 700;
   font-size: 80px;
   letter-spacing: -3.2px;
   line-height: 1.05;
@@ -66,10 +66,9 @@
   transition: 0.3s;
 }
 .title {
-  font-family: "MatterLight";
+  font-weight: 300;
   font-size: 48px;
   line0height: 1.1;
-  font-weight: 300;
   height: 2.5em;
   margin-bottom: 25px;
   display: -webkit-box;
@@ -84,7 +83,7 @@
   font-size: 16px;
   ine-height: 1.2;
   letter-spacing: 0.8px;
-  font-family: "MatterBold";
+  font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 45px;
 }
@@ -95,10 +94,9 @@
 .link {
   color: #202020;
   letter-spacing: 0.8px;
-  font-family: MatterBold;
+  font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
-  font-weight: bold;
   margin-top: 30px;
   width: 100%;
   display: flex;

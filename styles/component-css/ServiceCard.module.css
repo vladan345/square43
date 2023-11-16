@@ -29,7 +29,7 @@
 .title {
   font-size: 48px;
   text-transform: capitalize;
-  font-family: MatterBold;
+  font-weight: 700;
   margin-bottom: 20px;
   color: #202020;
   transition: all 0.5s;
@@ -45,16 +45,15 @@
 .listItem {
   line-height: 1.7;
   font-size: 22px;
-  font-family: MatterRegular;
+  font-weight: 400;
   transition: 0.8s;
 }
 .link {
   color: #202020;
   letter-spacing: 0.8px;
-  font-family: MatterBold;
   text-transform: uppercase;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
   margin-top: 30px;
   width: 100%;
   display: flex;

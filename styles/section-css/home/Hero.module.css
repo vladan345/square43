@@ -22,7 +22,7 @@
   width: 100%;
   font-size: 80px;
   letter-spacing: -2.4px;
-  font-family: MatterLight;
+  font-weight: 300;
   text-transform: uppercase;
   position: relative;
   z-index: 3;
@@ -31,7 +31,7 @@
 }
 .stamp {
   font-size: 120px;
-  font-family: MatterBold;
+  font-weight: 700;
   position: relative;
   z-index: 3;
   overflow: hidden;

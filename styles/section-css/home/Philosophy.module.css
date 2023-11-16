@@ -21,12 +21,12 @@
 .tag {
   text-transform: uppercase;
   letter-spacing: 0.8px;
-  font-family: MatterBold;
+  font-weight: 700;
   margin-bottom: 40px;
 }
 .statement {
   font-size: 80px;
-  font-family: MatterBold;
+  font-weight: 700;
   max-width: 1050px;
   line-height: 1.05;
   letter-spacing: -3.2px;

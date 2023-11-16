@@ -19,7 +19,7 @@
 .tagline2 {
   font-size: 120px;
   line-height: 1;
-  font-family: MatterBold, sans-serif;
+  font-weight: 700;
   letter-spacing: -4.8px;
   padding: 120px 0;
   z-index: 1;

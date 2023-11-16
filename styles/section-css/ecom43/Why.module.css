@@ -67,8 +67,7 @@
 }
 .card h3 {
   font-size: 34px;
-  font-weight: 600;
-  font-family: Matter-Bold;
+  font-weight: 700;
   letter-spacing: -0.68px;
   margin-bottom: 40px;
   margin-top: 60px;
@@ -78,7 +77,6 @@
   font-weight: 300;
   letter-spacing: -0.44px;
   line-height: 1.2;
-  font-family: Matter-Light;
 }
 .last {
   background: #202020;

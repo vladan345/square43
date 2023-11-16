@@ -2,12 +2,12 @@
   font-size: 100px;
   line-height: 1;
   margin-bottom: 20px;
-  font-family: MatterBold;
+  font-weight: 700;
   width: 1380px;
 }
 .subheading {
   font-size: 28px;
-  font-family: Matterregular;
+  font-weight: 400;
   margin-bottom: 80px;
   max-width: 560px;
 }
@@ -41,7 +41,7 @@
 .lastitem .projectName {
   color: #202020;
   margin-bottom: 0;
-  font-family: MatterBold;
+  font-weight: 700;
   font-size: 48px;
 }
 .lastitem .subheading {

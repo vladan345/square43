@@ -16,13 +16,13 @@
   line-height: 1.1;
   font-size: 48px;
   margin-bottom: 20px;
-  font-family: MatterBold;
+  font-weight: 700;
 }
 .slogan {
   font-size: 48px;
   line-height: 1.1;
   color: #202020;
-  font-family: MatterLight;
+  font-weight: 300;
   max-width: 660px;
   margin-bottom: 100px;
   white-space: pre-wrap;
@@ -38,7 +38,7 @@
   margin-bottom: 40px;
   font-size: 16px;
   color: #202020;
-  font-family: MatterBold;
+  font-weight: 700;
   text-transform: uppercase;
   line-height: 1.2;
   letter-spacing: 0.8px;
@@ -108,8 +108,7 @@
 .heading {
   color: #000;
   font-size: 48px;
-  font-family: MatterLight;
-  font-weight: 600;
+  font-weight: 300;
   line-height: 1.2;
   margin-bottom: 40px;
 }

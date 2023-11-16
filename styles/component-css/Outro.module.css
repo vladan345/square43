@@ -18,7 +18,7 @@
   margin-bottom: 40px;
   font-size: 16px;
   color: #202020;
-  font-family: MatterBold;
+  font-weight: 700;
   text-transform: uppercase;
   line-height: 1.2;
   letter-spacing: 0.8px;
@@ -26,12 +26,12 @@
 .name {
   margin-bottom: 40px;
   font-size: 48px;
-  font-family: MatterBold;
+  font-weight: 700;
 }
 .slogan {
   font-size: 48px;
   line-height: 1.1;
-  font-family: MatterLight;
+  font-weight: 300;
   color: #202020;
   max-width: 760px;
 

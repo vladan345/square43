@@ -19,7 +19,7 @@
 }
 .title {
   font-size: 48px;
-  font-family: MatterBold;
+  font-weight: 700;
   color: black;
   background: radial-gradient(circle at 0 0, #7000ff, #0ff);
   background-position: center;

@@ -19,7 +19,7 @@
   text-transform: uppercase;
   color: #202020;
   margin-bottom: 40px;
-  font-family: MatterBold;
+  font-weight: 700;
 }
 .description {
   line-height: 1.5;

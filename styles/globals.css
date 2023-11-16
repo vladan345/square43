@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: MatterBold;
   src: url("../public/fonts/Matter-Bold.otf");
 }
@@ -9,7 +9,7 @@
 @font-face {
   font-family: MatterRegular;
   src: url("../public/fonts/Matter-Regular.otf");
-}
+} */
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +20,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: MatterRegular, sans-serif;
   background-color: #fff;
   color: #202020;
 }
@@ -35,7 +34,6 @@ h2 {
   font-size: 48px;
   margin-bottom: 80px;
   line-height: 1.2;
-  font-family: MatterLight;
   color: #202020;
   font-weight: 300;
 }
@@ -55,7 +53,7 @@ p {
 }
 .readMore {
   font-size: 16px;
-  font-family: MatterBold;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.8px;
   display: flex;

@@ -20,11 +20,11 @@
 .tag {
   text-transform: uppercase;
   letter-spacing: 0.8px;
-  font-family: MatterBold;
+  font-weight: 700;
   margin-bottom: 40px;
 }
 .title {
-  font-family: MatterBold;
+  font-weight: 700;
   font-size: 120px;
   letter-spacing: -4.8px;
   line-height: 0.4;

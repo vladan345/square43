@@ -15,14 +15,14 @@
   text-transform: uppercase;
   margin-bottom: 80px;
   letter-spacing: 0.8px;
-  font-family: MatterBold;
+  font-weight: 700;
 }
 .listItem {
   margin-bottom: 20px;
 }
 .link {
   font-size: 32px;
-  font-family: MatterLight;
+  font-weight: 300;
   letter-spacing: -1.5px;
   color: white;
   text-transform: uppercase;

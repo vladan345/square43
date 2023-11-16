@@ -5,13 +5,13 @@
 .title {
   font-size: 120px;
   margin: 0 0 25px 0;
-  font-family: MatterBold, sans-serif;
+  font-weight: 700;
   letter-spacing: -4.8px;
   line-height: 1;
 }
 .subheading {
   font-size: 28px;
-  font-family: MatterRegular, sans-serif;
+  font-weight: 400;
   line-height: 1.2;
   max-width: 520px;
   margin-bottom: 80px;
@@ -107,7 +107,7 @@
   height: 100%;
 }
 .date {
-  font-family: "MatterBold";
+  font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;
   margin-bottom: 45px;
@@ -118,7 +118,7 @@
   position: relative;
   z-index: 2;
   font-size: 28px;
-  font-family: MatterRegular;
+  font-weight: 400;
   margin-bottom: 25px;
 }
 .blogLink {

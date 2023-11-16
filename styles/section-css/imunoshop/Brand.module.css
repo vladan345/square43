@@ -17,7 +17,7 @@
   letter-spacing: 1.28px;
   text-transform: uppercase;
   margin-bottom: 40px;
-  font-family: MatterBold;
+  font-weight: 700;
 }
 .col:last-of-type {
   text-align: right;

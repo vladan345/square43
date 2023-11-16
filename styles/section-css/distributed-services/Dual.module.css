@@ -49,7 +49,7 @@
 .textBox h3,
 .secondText h3 {
   font-size: 28px;
-  font-family: MatterLight;
+  font-weight: 300;
   margin-bottom: 50px;
 }
 .lottie {

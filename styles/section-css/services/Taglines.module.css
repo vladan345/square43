@@ -28,7 +28,7 @@
   top: 25%;
   font-size: 120px;
   transform: translateY(-50%);
-  font-family: MatterBold;
+  font-weight: 700;
   line-height: 1.05;
   letter-spacing: -3.2px;
   background: radial-gradient(circle at 0 0, #7000ff, #0ff);

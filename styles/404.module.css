@@ -12,7 +12,7 @@
 .four {
   font-size: 263px;
   line-height: 185px;
-  font-family: MatterBold;
+  font-weight: 700;
   display: inline-block;
   position: absolute;
   bottom: -11px;
@@ -31,7 +31,7 @@
 }
 .subheading {
   font-size: 78px;
-  font-family: MatterBold;
+  font-weight: 700;
   text-align: center;
   letter-spacing: -3.9px;
   margin: 0;
@@ -40,7 +40,7 @@
 .lost {
   font-size: 46px;
   letter-spacing: -1.36px;
-  font-family: MatterLight;
+  font-weight: 300;
   text-align: center;
   margin-top: 15px;
   margin: 0;
