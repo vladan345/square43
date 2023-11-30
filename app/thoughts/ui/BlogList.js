@@ -44,7 +44,7 @@ export default function BlogList({ blogs }) {
   return (
     <section className={styles.stories}>
       <Link
-        href={`memos/${blogs[0].slug}`}
+        href={`thoughts/${blogs[0].slug}`}
         className={styles.latest}
         onClick={handleClick}
         style={{

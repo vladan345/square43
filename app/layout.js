@@ -1,18 +1,38 @@
 "use client";
 import { useEffect } from "react";
-import { matter } from "@/pages/_app";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { LoadingProvider } from "@/utils/hooks/LoadingContext";
 import { Cursor } from "@/components/cursor";
 import Spinner from "@/components/Spinner";
 import Lenis from "@studio-freight/lenis";
+import localFont from "next/font/local";
+import "@/styles/globals.css";
 
-export default function RootLayout({
-  // Layouts must accept a children prop.
-  // This will be populated with nested layouts or pages
-  children,
-}) {
+const matter = localFont({
+  src: [
+    {
+      path: "../public/fonts/Matter-Bold.otf",
+      weight: "700",
+      style: "normal",
+      fallback: ["system-ui", "arial"],
+    },
+    {
+      path: "../public/fonts/Matter-Regular.otf",
+      weight: "400",
+      style: "normal",
+      fallback: ["system-ui", "arial"],
+    },
+    {
+      path: "../public/fonts/Matter-Light.otf",
+      weight: "300",
+      style: "normal",
+      fallback: ["system-ui", "arial"],
+    },
+  ],
+});
+
+export default function RootLayout({ children }) {
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.2,
