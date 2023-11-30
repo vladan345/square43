@@ -1,7 +1,7 @@
 import Head from "next/head";
-import ServiceList from "../../pages-sections/services/ServiceList";
-import Taglines from "../../pages-sections/services/Taglines";
-import Achievements from "../../pages-sections/services/Achievements";
+import ServiceList from "../../app/services/ui/ServiceList";
+import Taglines from "../../app/services/ui/Taglines";
+import Achievements from "../../app/services/ui/Achievements";
 
 function Services() {
   return (

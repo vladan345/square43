@@ -1,22 +1,16 @@
+"use client";
 import React, { useEffect, useState } from "react";
 import styles from "../styles/component-css/Outro.module.css";
 import Image from "next/image";
 
+import { usePathname } from "next/navigation";
 import { getAllProjects } from "../utils/data/getData";
 
-function Outro(props) {
-  const [project, setProject] = useState([]);
+function Outro({ project }) {
+  const pathname = usePathname();
+  const projectId = pathname.split("/").pop();
+
   const [isLoading, setLoading] = useState(false);
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      let projects = getAllProjects();
-      let currentId = projects.findIndex((obj) => obj.id === props.projectId);
-      currentId === projects.length - 1 ? (currentId = 0) : (currentId += 1);
-      setProject(projects[currentId]);
-      setLoading(false);
-    }, 500);
-  }, [props.projectId]);
 
   return (
     <>

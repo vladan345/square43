@@ -6,7 +6,7 @@ export const getAllServices = () => {
   return getData.services;
 };
 
-export const getAllProjects = () => {
+export const getAllProjects = async () => {
   return getData.projects;
 };
 export const getAllProjectsExcept = (projectId) => {
@@ -26,4 +26,17 @@ export const getProjectsByService = (serviceId) => {
 export const getCurrentProject = (projectId) => {
   let [data] = getData.projects.filter((project) => project.id === projectId);
   return data;
+};
+
+export const getNextProject = async () => {
+  const path = require("path");
+  const pageName = path.dirname(__filename).split(path.sep).pop();
+
+  let projects = await getAllProjects();
+  let currentId = projects.findIndex((obj) => obj.id === pageName);
+
+  currentId === projects.length - 1 ? (currentId = 0) : (currentId += 1);
+  let project = projects[currentId];
+
+  return project;
 };

@@ -1,7 +1,7 @@
 import styles from "../styles/component-css/MobileMenu.module.css";
 import Link from "next/link";
 import { useLoading } from "../utils/hooks/LoadingContext";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 function MobileMenu({ stateChange, ...props }) {
   const { setLoading } = useLoading();
@@ -61,7 +61,11 @@ function MobileMenu({ stateChange, ...props }) {
             </Link>
           </li>
           <li className={styles.listItem}>
-            <Link href="/memos" className={styles.link} onClick={handleClick}>
+            <Link
+              href="/thoughts"
+              className={styles.link}
+              onClick={handleClick}
+            >
               Thoughts
             </Link>
           </li>

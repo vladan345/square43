@@ -1,4 +1,4 @@
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { useLoading } from "../../utils/hooks/LoadingContext";
 import { GraphQLClient, gql } from "graphql-request";
 import Image from "next/image";
@@ -55,7 +55,7 @@ function Blog({ blogs }) {
 
         <meta name="title" content="Square43 Studio - Memos" />
 
-        <meta property="og:url" content="https://square43.com/memos" />
+        <meta property="og:url" content="https://square43.com/thoughts" />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
@@ -64,8 +64,8 @@ function Blog({ blogs }) {
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="square43.com" />
-        <meta property="twitter:url" content="https://square43.com/memos" />
-        <meta name="twitter:title" content="Square43 Studio - Memos" />
+        <meta property="twitter:url" content="https://square43.com/thoughts" />
+        <meta name="twitter:title" content="Square43 Studio - Thoughts" />
         <meta
           name="twitter:description"
           content=" Think of this as our status updates."
@@ -134,7 +134,7 @@ function Blog({ blogs }) {
                 return (
                   <Link
                     key={blog.id}
-                    href={`/memos/${blog.slug}`}
+                    href={`/thoughts/${blog.slug}`}
                     className={styles.singleBlog}
                     onClick={handleClick}
                     style={{

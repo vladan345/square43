@@ -1,4 +1,6 @@
-import React, { useEffect, useState, useRef } from "react";
+"use client";
+
+import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import styles from "../styles/component-css/Header.module.css";
 import Image from "next/image";
@@ -6,11 +8,12 @@ import MobileMenu from "./MobileMenu";
 
 import { useLoading } from "../utils/hooks/LoadingContext";
 //All comments are for page transition delay
-import { useRouter } from "next/router";
+import { useRouter, usePathname } from "next/navigation";
 
 export default function Header() {
   const [opened, setOpened] = useState(false);
   const router = useRouter();
+  const pathname = usePathname();
   const { setLoading } = useLoading();
   const elem = useRef();
 
@@ -84,7 +87,7 @@ export default function Header() {
       <div className={`${styles.Header}`}>
         <div className={`wrapper ${styles.wrapper}`}>
           <div className={`${styles.leftNav} ${styles.blend}`}>
-            {router.pathname.includes("/projects/") && (
+            {pathname.includes("/projects/") && (
               <button
                 className={styles.backArrow}
                 onClick={() => router.back()}
@@ -139,7 +142,7 @@ export default function Header() {
             </Link>
 
             <Link
-              href="/memos"
+              href="/thoughts"
               onClick={handleClick}
               className={styles.headerLink}
             >

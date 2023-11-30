@@ -1,11 +1,18 @@
+"use client";
 import React, { useEffect } from "react";
-import styles from "../styles/component-css/Result.module.css";
+import styles from "@/styles/component-css/Result.module.css";
 import { useInView } from "react-intersection-observer";
 import { gsap } from "gsap";
 import Image from "next/image";
 import Link from "next/link";
 
-function Result(props) {
+import { getCurrentProject } from "@/utils/data/getData";
+import { usePathname } from "next/navigation";
+
+function Result() {
+  const pathname = usePathname();
+  const project = getCurrentProject(pathname.split("/").pop());
+
   const { ref, inView } = useInView();
   useEffect(() => {
     if (inView) {
@@ -26,15 +33,15 @@ function Result(props) {
         <p
           ref={ref}
           className={`${styles.description} resultText`}
-          dangerouslySetInnerHTML={{ __html: props.project.resultShort }}
+          dangerouslySetInnerHTML={{ __html: project.resultShort }}
         />
         <p
           className={`${styles.description} resultText`}
-          dangerouslySetInnerHTML={{ __html: props.project.resultLong }}
+          dangerouslySetInnerHTML={{ __html: project.resultLong }}
         />
-        {props.project.liveProject != "" && (
-          <a
-            href={props.project.liveProject}
+        {project.liveProject != "" && (
+          <Link
+            href={project.liveProject}
             className={`readMore ${styles.liveProject}`}
             target="_blank"
           >
@@ -47,7 +54,7 @@ function Result(props) {
                 height={40}
               />
             </div>
-          </a>
+          </Link>
         )}
       </div>
     </div>

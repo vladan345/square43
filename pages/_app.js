@@ -8,7 +8,7 @@ import { Cursor } from "../components/cursor";
 import Spinner from "../components/Spinner";
 import Lenis from "@studio-freight/lenis";
 
-const matter = localFont({
+export const matter = localFont({
   src: [
     {
       path: "../public/fonts/Matter-Bold.otf",

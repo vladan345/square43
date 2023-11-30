@@ -20,7 +20,6 @@ import { useLoading } from "@/utils/hooks/LoadingContext";
 
 function Project({ project, projectId }) {
   const { setLoading } = useLoading();
-  setLoading(false);
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
