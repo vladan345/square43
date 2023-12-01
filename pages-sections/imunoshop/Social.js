@@ -10,11 +10,13 @@ function Social() {
 
   useEffect(() => {
     if (inView) {
-      gsap.to(".phoneImage", {
-        marginRight: -60,
-        duration: 2,
-        ease: "power4",
-      });
+      if (window.innerWidth > 720) {
+        gsap.to(".phoneImage", {
+          marginRight: -60,
+          duration: 2,
+          ease: "power4",
+        });
+      }
     }
   }, [inView]);
   return (

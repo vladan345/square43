@@ -18,6 +18,9 @@
   margin-right: 80px;
 }
 @media (max-width: 900px) {
+  .Taglines {
+    overflow: hidden;
+  }
   .row {
     flex-direction: column;
   }

@@ -73,11 +73,15 @@
     margin-left: -15%;
   }
   .large img {
-    width: 400px;
+    width: 200px;
     height: auto;
   }
+  .large {
+    margin-left: -46px;
+  }
   .mid img {
-    width: 300px;
+    width: 150px;
     height: auto;
+    margin-left: 20px;
   }
 }

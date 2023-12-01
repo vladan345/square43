@@ -3,6 +3,9 @@
   height: 100%;
   margin-bottom: 120px;
 }
+.videoWrap {
+  overflow: hidden;
+}
 @media (max-width: 900px) {
   .video {
     width: 150%;

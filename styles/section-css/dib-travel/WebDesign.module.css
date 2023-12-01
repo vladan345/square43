@@ -28,6 +28,7 @@
   .wrapper {
     max-width: none;
     width: 100%;
+    overflow: hidden;
   }
   .videoWrap {
     width: calc(100% + 40px);
