@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
-import styles from "styles/section-css/distributed-services/DesktopVideo.module.css";
+import styles from "./styles/DesktopVideo.module.css";
 import Image from "next/image";
 
 import gsap from "gsap";

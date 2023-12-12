@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
-import styles from "styles/section-css/distributed-services/Dual.module.css";
+import styles from "./styles/Dual.module.css";
 import Lottie from "lottie-react";
 import nodes from "public/images/distributed-services/nodes.json";
 import Image from "next/image";

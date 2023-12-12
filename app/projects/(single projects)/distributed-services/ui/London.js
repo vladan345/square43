@@ -1,4 +1,4 @@
-import styles from "@/styles/section-css/distributed-services/London.module.css";
+import styles from "./styles/London.module.css";
 
 function London() {
   return (

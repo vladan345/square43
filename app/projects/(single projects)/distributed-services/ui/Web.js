@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
-import styles from "@/styles/section-css/distributed-services/Web.module.css";
+import styles from "./styles/Web.module.css";
 import Image from "next/image";
 
 import gsap from "gsap";

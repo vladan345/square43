@@ -1,4 +1,4 @@
-import styles from "styles/section-css/distributed-services/Highlights.module.css";
+import styles from "./styles/Highlights.module.css";
 
 function Highlights() {
   return (
