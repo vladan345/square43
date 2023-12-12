@@ -1,4 +1,4 @@
-import styles from "@/styles/section-css/imunoshop/Motions.module.css";
+import styles from "./styles/Motions.module.css";
 
 function Motions() {
   return (

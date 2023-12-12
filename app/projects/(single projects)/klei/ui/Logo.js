@@ -1,7 +1,7 @@
 "use client";
 import { useRef, useEffect } from "react";
 import Image from "next/image";
-import styles from "@/styles/section-css/klei/Logo.module.css";
+import styles from "./styles/Logo.module.css";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";

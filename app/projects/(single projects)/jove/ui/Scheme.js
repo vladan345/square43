@@ -1,4 +1,4 @@
-import styles from "@/styles/section-css/jove/Scheme.module.css";
+import styles from "./styles/Scheme.module.css";
 import Image from "next/image";
 
 function Scheme() {

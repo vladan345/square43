@@ -1,6 +1,6 @@
 "use client";
 import { useRef, useEffect } from "react";
-import styles from "@/styles/section-css/klei/Flowers.module.css";
+import styles from "./styles/Flowers.module.css";
 import Image from "next/image";
 
 import gsap from "gsap";

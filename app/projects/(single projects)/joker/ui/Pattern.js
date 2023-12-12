@@ -1,5 +1,5 @@
 "use client";
-import styles from "@/styles/section-css/joker/Pattern.module.css";
+import styles from "./styles/Pattern.module.css";
 import Image from "next/image";
 import { Parallax } from "react-scroll-parallax";
 

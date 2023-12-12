@@ -1,5 +1,5 @@
 "use client";
-import styles from "@/styles/section-css/ownnew/Mobile.module.css";
+import styles from "./styles/Mobile.module.css";
 import { Parallax } from "react-scroll-parallax";
 import Image from "next/image";
 

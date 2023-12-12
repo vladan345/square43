@@ -1,4 +1,4 @@
-import styles from "@/styles/section-css/services/Achievements.module.css";
+import styles from "./styles/Achievements.module.css";
 import Accordion from "@/components/Accordion";
 
 function Achievements() {

@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
-import styles from "@/styles/section-css/services/Taglines.module.css";
+import styles from "./styles/Taglines.module.css";
 import CountUp from "react-countup";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";

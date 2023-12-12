@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "../styles/component-css/ServiceCard.module.css";
+import styles from "./styles/ServiceCard.module.css";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useLoading } from "../utils/hooks/LoadingContext";

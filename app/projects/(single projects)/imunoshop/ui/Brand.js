@@ -1,4 +1,4 @@
-import styles from "@/styles/section-css/imunoshop/Brand.module.css";
+import styles from "./styles/Brand.module.css";
 import Image from "next/image";
 
 function Brand() {

@@ -1,4 +1,4 @@
-import styles from "@/styles/section-css/projects/Projects.module.css";
+import styles from "@/components/styles/Projects.module.css";
 import Head from "next/head";
 import ProjectList from "./ui/ProjectList";
 import { getAllProjects } from "@/utils/data/getData";

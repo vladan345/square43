@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import styles from "@/styles/section-css/northprim/ScrollSequence.module.css";
+import styles from "./styles/ScrollSequence.module.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 

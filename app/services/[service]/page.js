@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { getProjectsByService, getCurrentService } from "@/utils/data/getData";
 
 import ProjectCard from "@/components/ProjectCard";
-import styles from "@/styles/section-css/projects/Projects.module.css";
+import styles from "@/components/styles/Projects.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";

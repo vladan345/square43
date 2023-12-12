@@ -1,5 +1,5 @@
 "use client";
-import styles from "@/styles/section-css/joker/Colors.module.css";
+import styles from "./styles/Colors.module.css";
 import Image from "next/image";
 import { gsap } from "gsap";
 import { InView } from "react-intersection-observer";

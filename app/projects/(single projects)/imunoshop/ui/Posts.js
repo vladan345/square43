@@ -1,5 +1,5 @@
 "use client";
-import styles from "@/styles/section-css/imunoshop/Posts.module.css";
+import styles from "./styles/Posts.module.css";
 import Image from "next/image";
 
 import { InView } from "react-intersection-observer";

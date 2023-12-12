@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import styles from "../styles/component-css/ProjectCard.module.css";
+import styles from "./styles/ProjectCard.module.css";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useLoading } from "../utils/hooks/LoadingContext";

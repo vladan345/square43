@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 
-import styles from "@/styles/section-css/northprim/WebDevelopment.module.css";
+import styles from "./styles/WebDevelopment.module.css";
 
 function WebDevelopment() {
   return (

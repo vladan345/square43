@@ -3,7 +3,7 @@ import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-import styles from "@/styles/section-css/ecom43/Fan.module.css";
+import styles from "./styles/Fan.module.css";
 import { fanAnimations } from "@/utils/animations/fans";
 
 gsap.registerPlugin(ScrollTrigger);

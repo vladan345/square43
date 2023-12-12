@@ -1,5 +1,5 @@
 "use client";
-import styles from "@/styles/section-css/ownnew/DesktopVideo.module.css";
+import styles from "./styles/DesktopVideo.module.css";
 function DesktopVideo() {
   return (
     <div className={styles.DesktopVideo}>

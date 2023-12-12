@@ -1,4 +1,4 @@
-import styles from "@/styles/section-css/joker/Video.module.css";
+import styles from "./styles/Video.module.css";
 
 function Video() {
   return (

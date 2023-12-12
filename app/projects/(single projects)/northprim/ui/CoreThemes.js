@@ -2,7 +2,7 @@
 import { useRef, useEffect } from "react";
 import Image from "next/image";
 
-import styles from "@/styles/section-css/northprim/CoreThemes.module.css";
+import styles from "./styles/CoreThemes.module.css";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Square from "../../components/Square";
-import styles from "../../styles/section-css/home/Project.module.css";
+import styles from "./styles/Project.module.css";
 
 function Project() {
   return (

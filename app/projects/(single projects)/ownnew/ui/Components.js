@@ -1,5 +1,5 @@
 "use client";
-import styles from "@/styles/section-css/ownnew/Components.module.css";
+import styles from "./styles/Components.module.css";
 import Image from "next/image";
 
 function Components() {

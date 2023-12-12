@@ -1,8 +1,8 @@
-import styles from "@/styles/section-css/dib-travel/Taglines.module.css";
+import styles from "./styles/Taglines.module.css";
 
 function Taglines() {
   return (
-    <div>
+    <div className={styles.videoWrap}>
       <video autoPlay muted loop playsInline className={styles.video}>
         <source src="/images/dib-travel/tagline-video.mp4" type="video/mp4" />
       </video>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import styles from "../../styles/section-css/home/Hero.module.css";
+import styles from "./styles/Hero.module.css";
 import { gsap } from "gsap";
 
 export default function Hero() {

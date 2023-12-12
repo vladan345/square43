@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
-import styles from "@/styles/section-css/jove/Packaging.module.css";
+import styles from "./styles/Packaging.module.css";
 import Image from "next/image";
 
 import gsap from "gsap";

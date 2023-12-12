@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "@/styles/section-css/klei/Laptop.module.css";
+import styles from "./styles/Laptop.module.css";
 
 export default function Laptop() {
   return (

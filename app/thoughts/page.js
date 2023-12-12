@@ -1,7 +1,7 @@
 import { GraphQLClient, gql } from "graphql-request";
 import Head from "next/head";
 import BlogList from "./ui/BlogList";
-import styles from "@/styles/Insights.module.css";
+import styles from "./Insights.module.css";
 
 const client = new GraphQLClient(process.env.NEXT_PUBLIC_HYGRAPH_URL);
 

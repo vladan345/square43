@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "@/styles/section-css/ecom43/Hero.module.css";
+import styles from "./styles/Hero.module.css";
 
 import gsap from "gsap";
 

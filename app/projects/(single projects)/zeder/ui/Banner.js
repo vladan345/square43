@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "@/styles/section-css/zeder/Banner.module.css";
+import styles from "./styles/Banner.module.css";
 
 function Banner() {
   return (

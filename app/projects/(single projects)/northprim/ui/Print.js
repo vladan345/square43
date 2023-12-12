@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import styles from "@/styles/section-css/northprim/Print.module.css";
+import styles from "./styles/Print.module.css";
 
 function Print() {
   return (

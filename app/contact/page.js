@@ -1,4 +1,4 @@
-import styles from "@/styles/Contact.module.css";
+import styles from "./Contact.module.css";
 import Head from "next/head";
 
 function Page() {

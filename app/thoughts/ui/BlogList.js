@@ -4,7 +4,7 @@ import { useLoading } from "@/utils/hooks/LoadingContext";
 import Image from "next/image";
 import Link from "next/link";
 
-import styles from "@/styles/Insights.module.css";
+import styles from "../Insights.module.css";
 
 export default function BlogList({ blogs }) {
   const router = useRouter();

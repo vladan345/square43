@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef, useEffect, Suspense } from "react"; // eslint-disable-line no-unused-vars
 import Link from "next/link";
-import styles from "@/styles/component-css/ProjectHero.module.css";
+import styles from "./styles/ProjectHero.module.css";
 import Image from "next/image";
 import { getCurrentProject } from "@/utils/data/getData";
 import { usePathname } from "next/navigation";

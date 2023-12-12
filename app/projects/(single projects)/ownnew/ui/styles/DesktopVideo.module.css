@@ -48,6 +48,7 @@
 @media (max-width: 900px) {
   .DesktopVideo {
     padding: 0 0 80px 0;
+    overflow: hidden;
   }
   .background {
     display: none;

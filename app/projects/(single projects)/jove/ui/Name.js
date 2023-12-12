@@ -1,6 +1,6 @@
 "use client";
 import { useRef, useEffect } from "react";
-import styles from "@/styles/section-css/jove/Name.module.css";
+import styles from "./styles/Name.module.css";
 import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";

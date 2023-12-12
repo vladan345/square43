@@ -1,4 +1,4 @@
-import styles from "@/styles/section-css/imunoshop/DesignDev.module.css";
+import styles from "./styles/DesignDev.module.css";
 import Image from "next/image";
 
 function DesignDev() {

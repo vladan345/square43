@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
-import styles from "@/styles/section-css/dib-travel/SocialMedia.module.css";
+import styles from "./styles/SocialMedia.module.css";
 import { useInView } from "react-intersection-observer";
 import { gsap } from "gsap";
 import Image from "next/image";

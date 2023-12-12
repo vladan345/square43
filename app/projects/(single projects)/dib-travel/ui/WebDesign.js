@@ -1,4 +1,4 @@
-import styles from "@/styles/section-css/dib-travel/WebDesign.module.css";
+import styles from "./styles/WebDesign.module.css";
 
 function WebDesign() {
   return (

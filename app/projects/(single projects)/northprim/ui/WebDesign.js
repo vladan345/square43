@@ -4,7 +4,7 @@ import { Parallax } from "react-scroll-parallax";
 // import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 
-import styles from "@/styles/section-css/northprim/WebDesign.module.css";
+import styles from "./styles/WebDesign.module.css";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";

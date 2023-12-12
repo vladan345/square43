@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
-import styles from "@/styles/section-css/imunoshop/Social.module.css";
+import styles from "./styles/Social.module.css";
 import Image from "next/image";
 
 import { useInView } from "react-intersection-observer";
@@ -11,11 +11,13 @@ function Social() {
 
   useEffect(() => {
     if (inView) {
-      gsap.to(".phoneImage", {
-        marginRight: -60,
-        duration: 2,
-        ease: "power4",
-      });
+      if (window.innerWidth > 720) {
+        gsap.to(".phoneImage", {
+          marginRight: -60,
+          duration: 2,
+          ease: "power4",
+        });
+      }
     }
   }, [inView]);
   return (

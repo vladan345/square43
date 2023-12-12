@@ -2,7 +2,7 @@
 import { useEffect, useRef } from "react";
 
 import Image from "next/image";
-import styles from "@/styles/section-css/glasstic/Ecom.module.css";
+import styles from "./styles/Ecom.module.css";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";

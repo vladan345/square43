@@ -1,4 +1,4 @@
-import styles from "@/styles/section-css/keiko/Motions.module.css";
+import styles from "./styles/Motions.module.css";
 
 function Motions() {
   return (

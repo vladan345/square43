@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import styles from "../styles/component-css/Footer.module.css";
+import styles from "./styles/Footer.module.css";
 
 function Footer() {
   return (

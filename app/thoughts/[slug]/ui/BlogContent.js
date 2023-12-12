@@ -1,6 +1,6 @@
 "use client";
 import { useLoading } from "@/utils/hooks/LoadingContext";
-import styles from "@/styles/BlogSingle.module.css";
+import styles from "./BlogSingle.module.css";
 import Image from "next/image";
 import Link from "next/link";
 

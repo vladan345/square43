@@ -1,4 +1,4 @@
-import styles from "@/styles/section-css/keiko/Banner.module.css";
+import styles from "./styles/Banner.module.css";
 import Image from "next/image";
 
 function Banner() {

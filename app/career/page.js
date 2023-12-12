@@ -1,6 +1,6 @@
 "use client";
 import { useRef, useEffect } from "react";
-import styles from "@/styles/Career.module.css";
+import styles from "./Career.module.css";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";

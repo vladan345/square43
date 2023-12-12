@@ -1,6 +1,6 @@
 "use client";
 import { useRef, useEffect } from "react";
-import styles from "@/styles/section-css/northprim/Parallax.module.css";
+import styles from "./styles/Parallax.module.css";
 import Image from "next/image";
 
 import gsap from "gsap";

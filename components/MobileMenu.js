@@ -1,4 +1,4 @@
-import styles from "../styles/component-css/MobileMenu.module.css";
+import styles from "./styles/MobileMenu.module.css";
 import Link from "next/link";
 import { useLoading } from "../utils/hooks/LoadingContext";
 import { useRouter } from "next/navigation";

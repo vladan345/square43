@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
-import styles from "@/styles/section-css/keiko/Social.module.css";
+import styles from "./styles/Social.module.css";
 import Image from "next/image";
 
 import { useInView } from "react-intersection-observer";

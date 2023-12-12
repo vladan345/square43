@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ProjectCard from "@/components/ProjectCard";
 import { useLoading } from "@/utils/hooks/LoadingContext";
-import styles from "@/styles/section-css/projects/Projects.module.css";
+import styles from "@/components/styles/Projects.module.css";
 
 export default function ProjectList({ projects }) {
   const { setLoading } = useLoading();

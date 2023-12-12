@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "@/styles/section-css/zeder/Logo.module.css";
+import styles from "./styles/Logo.module.css";
 
 function Logo() {
   return (

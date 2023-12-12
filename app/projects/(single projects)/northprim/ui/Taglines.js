@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import styles from "@/styles/section-css/northprim/Taglines.module.css";
+import styles from "./styles/Taglines.module.css";
 
 function Taglines() {
   return (

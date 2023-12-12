@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import styles from "../styles/component-css/Outro.module.css";
+import styles from "./styles/Outro.module.css";
 import Image from "next/image";
 
 import { usePathname } from "next/navigation";

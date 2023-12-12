@@ -28,7 +28,8 @@
   transform: translateY(-50%);
 }
 .wrapper {
-  width: 1360px;
+  width: 100%;
+  max-width: 1360px;
   position: relative;
   height: 100%;
   margin: 0 auto;
@@ -77,6 +78,6 @@
     margin-bottom: 300px;
   }
   .bannerImage {
-    right: -120px;
+    right: 0;
   }
 }

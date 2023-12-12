@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
-import styles from "@/styles/section-css/dib-travel/NewClients.module.css";
+import styles from "./styles/NewClients.module.css";
 import Image from "next/image";
 
 import { useInView } from "react-intersection-observer";

@@ -1,5 +1,5 @@
 "use client";
-import styles from "@/styles/section-css/ownnew/Parallax.module.css";
+import styles from "./styles/Parallax.module.css";
 
 function Parallax() {
   return (

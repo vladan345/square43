@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import styles from "@/styles/component-css/Accordion.module.css";
+import styles from "./styles/Accordion.module.css";
 import Image from "next/image";
 
 function Accordion(props) {

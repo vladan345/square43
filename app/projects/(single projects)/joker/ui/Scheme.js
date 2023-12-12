@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "@/styles/section-css/joker/Scheme.module.css";
+import styles from "./styles/Scheme.module.css";
 
 function Scheme() {
   return (

@@ -3,7 +3,7 @@
 import React, { useEffect } from "react";
 import ServiceModule from "@/components/ServiceCard";
 import { useLoading } from "@/utils/hooks/LoadingContext";
-import styles from "@/styles/section-css/services/ServiceList.module.css";
+import styles from "./styles/ServiceList.module.css";
 
 export default function Page({ services }) {
   const { setLoading } = useLoading();

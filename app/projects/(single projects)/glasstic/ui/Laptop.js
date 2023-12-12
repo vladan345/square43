@@ -1,4 +1,4 @@
-import styles from "@/styles/section-css/glasstic/Laptop.module.css";
+import styles from "./styles/Laptop.module.css";
 import Image from "next/image";
 
 function Laptop() {

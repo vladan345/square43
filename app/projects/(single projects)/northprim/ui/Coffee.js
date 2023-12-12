@@ -1,5 +1,5 @@
 "use client";
-import styles from "@/styles/section-css/northprim/Coffee.module.css";
+import styles from "./styles/Coffee.module.css";
 import Image from "next/image";
 import { Parallax } from "react-scroll-parallax";
 

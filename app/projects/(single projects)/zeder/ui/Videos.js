@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "@/styles/section-css/zeder/Videos.module.css";
+import styles from "./styles/Videos.module.css";
 
 function Videos() {
   return (

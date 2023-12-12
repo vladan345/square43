@@ -10,7 +10,8 @@
   right: 0;
   bottom: 0;
   height: 720px;
-  background: #b5b5b5;
+  width: 720px;
+  background: #efefef;
 }
 .projectName {
   color: #2d2d2d;

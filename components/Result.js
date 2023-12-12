@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
-import styles from "@/styles/component-css/Result.module.css";
+import styles from "./styles/Result.module.css";
 import { useInView } from "react-intersection-observer";
 import { gsap } from "gsap";
 import Image from "next/image";

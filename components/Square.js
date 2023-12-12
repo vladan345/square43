@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
-import styles from "../styles/component-css/Square.module.css";
+import styles from "./styles/Square.module.css";
 
 function Square(props) {
   const square = useRef();

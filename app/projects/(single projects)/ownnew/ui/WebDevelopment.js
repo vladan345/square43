@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from "react";
 
-import styles from "@/styles/section-css/ownnew/WebDevelopment.module.css";
+import styles from "./styles/WebDevelopment.module.css";
 import Image from "next/legacy/image";
-import stylesScreen from "@/styles/section-css/ownnew/screen.module.css";
+import stylesScreen from "./styles/screen.module.css";
 
 import { inspectText } from "./inspectText";
 

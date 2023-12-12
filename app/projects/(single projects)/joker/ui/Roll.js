@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import styles from "@/styles/section-css/joker/Roll.module.css";
+import styles from "./styles/Roll.module.css";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import { gsap } from "gsap";

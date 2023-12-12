@@ -80,6 +80,7 @@
 @media (max-width: 500px) {
   .Packaging {
     padding-bottom: 520px;
+    overflow: hidden;
   }
   .contentWrap {
     max-width: 500px;

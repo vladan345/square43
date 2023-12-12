@@ -74,15 +74,39 @@
   }
 }
 @media (max-width: 720px) {
+  .phone {
+    margin-right: -60px;
+    width: 200px;
+  }
+  .phone:nth-of-type(1) img {
+    width: 90%;
+  }
   .mobiles {
-    transform: translateX(-50%);
+    left: auto;
+    overflow: hidden;
     left: 50%;
-    width: 100%;
+    transform: translateX(-50%);
+    width: 100vw;
   }
   .phone img {
     width: 100%;
   }
   .phone:nth-of-type(2) img {
     width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .mobiles {
+    left: calc(50% + 20px);
+    overflow: hidden;
+    width: 100%;
+  }
+  .phone {
+    margin-right: -60px;
+    width: 100%;
+  }
+  .phone:nth-of-type(1) img {
+    width: 90%;
   }
 }

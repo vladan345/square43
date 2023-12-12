@@ -3,7 +3,7 @@ import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-import styles from "@/styles/section-css/ecom43/Techs.module.css";
+import styles from "./styles/Techs.module.css";
 
 gsap.registerPlugin(ScrollTrigger);
 

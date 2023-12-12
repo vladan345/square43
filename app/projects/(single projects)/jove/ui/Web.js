@@ -1,4 +1,4 @@
-import styles from "@/styles/section-css/jove/Web.module.css";
+import styles from "./styles/Web.module.css";
 import Image from "next/image";
 
 function Web() {

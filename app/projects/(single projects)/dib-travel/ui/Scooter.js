@@ -1,5 +1,5 @@
 "use client";
-import styles from "@/styles/section-css/dib-travel/Scooter.module.css";
+import styles from "./styles/Scooter.module.css";
 import Image from "next/image";
 
 import { Splide, SplideSlide } from "@splidejs/react-splide";

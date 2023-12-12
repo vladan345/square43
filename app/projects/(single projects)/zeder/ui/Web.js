@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from "@/styles/section-css/zeder/Web.module.css";
+import styles from "./styles/Web.module.css";
 
 function Web() {
   return (

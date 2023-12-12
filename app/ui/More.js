@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { gsap } from "gsap";
-import styles from "../../styles/section-css/home/More.module.css";
+import styles from "./styles/More.module.css";
 
 function More() {
   const [index, setIndex] = useState(0);

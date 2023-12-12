@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import styles from "@/styles/section-css/joker/Packaging.module.css";
+import styles from "./styles/Packaging.module.css";
 import { Parallax } from "react-scroll-parallax";
 function Packaging() {
   return (

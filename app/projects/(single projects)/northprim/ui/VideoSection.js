@@ -1,4 +1,4 @@
-import styles from "@/styles/section-css/northprim/VideoSection.module.css";
+import styles from "./styles/VideoSection.module.css";
 function VideoSection() {
   return (
     <div className={styles.videoWrap}>

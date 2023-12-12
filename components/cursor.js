@@ -1,7 +1,7 @@
 import cn from "clsx";
 import gsap from "gsap";
 import { useCallback, useEffect, useRef, useState } from "react";
-import s from "../styles/component-css/cursor.module.css";
+import s from "./styles/cursor.module.css";
 
 function Cursor() {
   const cursor = useRef();

@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import styles from "@/styles/section-css/joker/Logo.module.css";
+import styles from "./styles/Logo.module.css";
 import { gsap } from "gsap";
 import { InView } from "react-intersection-observer";
 function Logo() {

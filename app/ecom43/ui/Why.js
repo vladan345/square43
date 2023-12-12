@@ -1,4 +1,4 @@
-import styles from "@/styles/section-css/ecom43/Why.module.css";
+import styles from "./styles/Why.module.css";
 import Image from "next/image";
 
 function Why() {

@@ -1,5 +1,4 @@
-import styles from "../../styles/section-css/home/OurServices.module.css";
-import Square from "../../components/Square";
+import styles from "./styles/OurServices.module.css";
 import Link from "next/link";
 import Image from "next/image";
 

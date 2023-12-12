@@ -1,4 +1,4 @@
-import styles from "@/styles/section-css/keiko/Taglines.module.css";
+import styles from "./styles/Taglines.module.css";
 
 function Taglines() {
   return (
