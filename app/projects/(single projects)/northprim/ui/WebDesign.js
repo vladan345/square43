@@ -1,40 +1,46 @@
 "use client";
 import { useEffect, useRef } from "react";
-import { Parallax } from "react-scroll-parallax";
-// import { useInView } from "react-intersection-observer";
 import Image from "next/image";
-
 import styles from "./styles/WebDesign.module.css";
-
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function WebDesign() {
-  // const main = useRef(null);
+  const main = useRef(null);
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.set(".mobileImage1", {
+        x: "30px",
+      });
+      gsap.set(".mobileImage2", {
+        x: "140px",
+      });
+      gsap.to(".mobileImage1", {
+        x: "-100px",
+        scrollTrigger: {
+          trigger: ".webDesignTrigger",
+          scrub: true,
+          markers: true,
+        },
+      });
+      gsap.to(".mobileImage2", {
+        x: "180px",
+        scrollTrigger: {
+          trigger: ".webDesignTrigger",
+          scrub: true,
+          markers: true,
+        },
+      });
+    }, main.current);
 
-  // useEffect(() => {
-  //   let ctx = gsap.context(() => {
-  //     gsap.to("#wrapper", {
-  //       scrollTrigger: {
-  //         target: "#wrapper",
-  //         toggleActions: "restart none none none",
-  //         markers: true,
-  //       },
-  //       x: 150,
-  //       y: 150,
-  //       duration: 3,
-  //       ease: "power1",
-  //     });
-  //   }, main.current);
-  //   return () => ctx.revert(); // <- cleanup!
-  // }, []);
-
+    return () => ctx.revert();
+  }, []);
   return (
     <div className={styles.WebDesign}>
       <div className={styles.desktop} id="wrapper">
-        <div className={`${styles.wrapper} wrapper`}>
+        <div className={`${styles.wrapper} wrapper webDesignTrigger`}>
           <div className={styles.col}>
             <h2>Web Design</h2>
             <p className={styles.description}>
@@ -61,28 +67,22 @@ function WebDesign() {
       <div className={styles.mobile}>
         <div className={`${styles.wrapper} wrapper`}>
           <div className={`${styles.col} ${styles.colImage}`}>
-            <Parallax
-              translateX={["30px", "-100px"]}
-              className={styles.mobileImage}
-            >
+            <div className={`${styles.mobileImage} mobileImage1`}>
               <Image
                 src="/images/northprim/web-design-mobile2.webp"
                 alt="Northprim mobile mockup 2"
                 width={414}
                 height={678}
               />
-            </Parallax>
-            <Parallax
-              translateX={["140px", "180px"]}
-              className={styles.mobileImage}
-            >
+            </div>
+            <div className={`${styles.mobileImage} mobileImage2`}>
               <Image
                 src="/images/northprim/web-design-mobile1.webp"
                 alt="Northprim mobile mockup 1"
                 width={414}
                 height={678}
               />
-            </Parallax>
+            </div>
           </div>
           <div className={styles.col}>
             <p className={styles.description}>

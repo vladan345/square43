@@ -1,30 +1,56 @@
 "use client";
+import { useEffect, useRef } from "react";
 import styles from "./styles/Mobile.module.css";
-import { Parallax } from "react-scroll-parallax";
 import Image from "next/image";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Mobile() {
+  const main = useRef(null);
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.to(".leftPhone", {
+        y: -75,
+        scrollTrigger: {
+          trigger: ".ownnewMobiles",
+          scrub: true,
+        },
+      });
+      gsap.to(".rightPhone", {
+        y: 75,
+        scrollTrigger: {
+          trigger: ".ownnewMobiles",
+          scrub: true,
+        },
+      });
+    }, main.current);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <div className={styles.Mobile}>
-      <div className="wrapper">
+    <div className={styles.Mobile} ref={main}>
+      <div className="wrapper ownnewMobiles">
         <div className={styles.phoneWrap}>
           <div className={styles.phones}>
-            <Parallax speed={5} className={styles.phone1}>
+            <div className={`${styles.phone1} leftPhone`}>
               <Image
                 src="/images/ownnew/phone1.webp"
                 alt="Ownnew phone mockup"
                 width={290}
                 height={687}
               />
-            </Parallax>
-            <Parallax speed={-5} className={styles.phone1}>
+            </div>
+            <div className={`${styles.phone1} rightPhone`}>
               <Image
                 src="/images/ownnew/phone2.webp"
                 alt="Ownnew phone mockup"
                 width={290}
                 height={687}
               />
-            </Parallax>
+            </div>
           </div>
           <div className={styles.textWrap}>
             <p className={styles.description}>

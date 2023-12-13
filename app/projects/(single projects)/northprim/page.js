@@ -33,14 +33,13 @@ export default async function Page() {
       <Skate />
       <CoreThemes />
       <Parallax />
-      {/* <WebDesign /> */}
+      <WebDesign />
       <ScrollSequence />
       <WebDevelopment />
-      {/* <SocialMedia /> */}
+      <SocialMedia />
       <Print />
       <Slider />
-      {/* <Coffee /> */}
-
+      <Coffee />
       {/* Content ends here */}
       <Result />
       <Outro project={project} />

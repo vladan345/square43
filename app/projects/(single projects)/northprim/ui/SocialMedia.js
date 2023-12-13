@@ -1,11 +1,36 @@
 "use client";
-import { Parallax } from "react-scroll-parallax";
 import Image from "next/image";
 import styles from "./styles/SocialMedia.module.css";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function SocialMedia() {
+  const main = useRef(null);
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.to(".leftSlide", {
+        y: 200,
+        scrollTrigger: {
+          trigger: ".socialTrigger",
+          scrub: true,
+        },
+      });
+      gsap.to(".rightSlide", {
+        y: -200,
+        scrollTrigger: {
+          trigger: ".socialTrigger",
+          scrub: true,
+        },
+      });
+    }, main.current);
+
+    return () => ctx.revert();
+  }, []);
   return (
-    <div className={styles.SocialMedia}>
+    <div className={`${styles.SocialMedia} socialTrigger`}>
       <div className={`${styles.wrapper} wrapper`}>
         <div className={styles.col}>
           <h2>Social Media</h2>
@@ -25,22 +50,22 @@ function SocialMedia() {
           </div>
         </div>
         <div className={styles.col}>
-          <Parallax speed={10} className={styles.secondSlide}>
+          <div className={`${styles.secondSlide} leftSlide`}>
             <Image
               src="/images/northprim/social-media-slide1.webp"
               alt="instagram feed northprim slide"
               width={289}
               height={1906}
             />
-          </Parallax>
-          <Parallax speed={-10} className={styles.secondSlide}>
+          </div>
+          <div className={`${styles.secondSlide} rightSlide`}>
             <Image
               src="/images/northprim/social-media-slide2.webp"
               alt="instagram feed northprim slide"
               width={289}
               height={1906}
             />
-          </Parallax>
+          </div>
         </div>
       </div>
       <div className={styles.socialSection}>

@@ -1,12 +1,32 @@
 "use client";
 import styles from "./styles/Pattern.module.css";
 import Image from "next/image";
-import { Parallax } from "react-scroll-parallax";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Pattern() {
+  const main = useRef(null);
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.to(".patternImage", {
+        y: -150,
+        scrollTrigger: {
+          trigger: ".patternTrigger",
+          scrub: true,
+          markers: true,
+        },
+      });
+    }, main.current);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <div>
-      <div className={`${styles.wrapper} wrapper`}>
+    <div className="Pattern" ref={main}>
+      <div className={`${styles.wrapper} wrapper patternTrigger`}>
         <div className={styles.patternFlex}>
           <div className={styles.content}>
             <p className={styles.description}>
@@ -17,14 +37,14 @@ function Pattern() {
           </div>
           <div className={styles.patternWrap}>
             <div className={styles.pattern}>
-              <Parallax speed={20}>
+              <div className="patternImage">
                 <Image
                   src="/images/joker/pattern.svg"
                   alt="Guarana joker blue color"
                   width={1080}
                   height={1080}
                 />
-              </Parallax>
+              </div>
             </div>
           </div>
         </div>

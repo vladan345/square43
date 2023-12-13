@@ -1,6 +1,6 @@
 import DesktopVideo from "./ui/DesktopVideo";
 import Components from "./ui/Components";
-// import Mobile from "./ui/Mobile";
+import Mobile from "./ui/Mobile";
 import Parallax from "./ui/Parallax";
 import WebDevelopment from "./ui/WebDevelopment";
 import ProjectHero from "@/components/ProjectHero";
@@ -19,7 +19,7 @@ export default async function Page() {
       {/* Content starts here */}
       <DesktopVideo />
       <Components />
-      {/* <Mobile /> */}
+      <Mobile />
       <Parallax />
       <WebDevelopment />
       {/* Content ends here */}

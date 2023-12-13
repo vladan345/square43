@@ -19,12 +19,12 @@ export default async function Page() {
     <div className="Joker">
       <ProjectHero />
       {/* Content starts here */}
-      {/* <Packaging /> */}
+      <Packaging />
       <Video />
       <Logo />
       <Colors />
       <Scheme />
-      {/* <Pattern /> */}
+      <Pattern />
       <Roll />
       {/* Content ends here */}
       <Result />

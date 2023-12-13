@@ -1,19 +1,55 @@
 "use client";
 import Image from "next/image";
 import styles from "./styles/Packaging.module.css";
-import { Parallax } from "react-scroll-parallax";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 function Packaging() {
+  const main = useRef(null);
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.to(".jokic", {
+        y: -230,
+        scrollTrigger: {
+          scrub: true,
+          markers: true,
+          trigger: ".packagingTrigger",
+        },
+      });
+      gsap.to(".leftCan", {
+        x: 100,
+        scrollTrigger: {
+          scrub: true,
+          markers: true,
+          trigger: ".packagingTrigger",
+        },
+      });
+      gsap.to(".rightCan", {
+        x: -100,
+        scrollTrigger: {
+          scrub: true,
+          markers: true,
+          trigger: ".packagingTrigger",
+        },
+      });
+    }, main.current);
+
+    return () => ctx.revert();
+  }, []);
   return (
-    <div className={styles.Packaging}>
-      <div className={styles.wrapper}>
-        <Parallax className={styles.jokic} speed={15}>
+    <div className={styles.Packaging} ref={main}>
+      <div className={`${styles.wrapper} packagingTrigger`}>
+        <div className={`${styles.jokic} jokic`}>
           <Image
             src="/images/joker/nikola-jokic.png"
             alt="Nikola Jokic Guarana Joker"
             width={560}
             height={781}
           />
-        </Parallax>
+        </div>
         <div className={styles.contentWrap}>
           <div className={styles.col}>
             <h2>Packaging Design</h2>
@@ -33,29 +69,23 @@ function Packaging() {
           </div>
           <div className={styles.col}>
             <div className={styles.canWrap}>
-              <Parallax
-                className={`${styles.can} ${styles.left}`}
-                translateX={["0px", "100px"]}
-                speed={5}
-              >
+              <div className={`${styles.can} leftCan ${styles.left}`}>
                 <Image
                   src="/images/joker/leva.webp"
                   alt="Guarana Joker can"
                   width={311}
                   height={648}
                 />
-              </Parallax>
-              <Parallax
-                className={`${styles.can} ${styles.right}`}
-                translateX={["0px", "-100px"]}
-              >
+              </div>
+
+              <div className={`${styles.can} rightCan ${styles.right}`}>
                 <Image
                   src="/images/joker/desna.webp"
                   alt="Guarana Joker can"
                   width={412}
                   height={679}
                 />
-              </Parallax>
+              </div>
             </div>
           </div>
         </div>
