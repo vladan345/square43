@@ -15,7 +15,6 @@ function Packaging() {
         y: -230,
         scrollTrigger: {
           scrub: true,
-          markers: true,
           trigger: ".packagingTrigger",
         },
       });
@@ -23,7 +22,6 @@ function Packaging() {
         x: 100,
         scrollTrigger: {
           scrub: true,
-          markers: true,
           trigger: ".packagingTrigger",
         },
       });
@@ -31,7 +29,6 @@ function Packaging() {
         x: -100,
         scrollTrigger: {
           scrub: true,
-          markers: true,
           trigger: ".packagingTrigger",
         },
       });

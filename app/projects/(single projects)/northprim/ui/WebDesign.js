@@ -22,7 +22,6 @@ function WebDesign() {
         scrollTrigger: {
           trigger: ".webDesignTrigger",
           scrub: true,
-          markers: true,
         },
       });
       gsap.to(".mobileImage2", {
@@ -30,7 +29,6 @@ function WebDesign() {
         scrollTrigger: {
           trigger: ".webDesignTrigger",
           scrub: true,
-          markers: true,
         },
       });
     }, main.current);

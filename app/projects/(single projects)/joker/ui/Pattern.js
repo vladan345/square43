@@ -16,7 +16,6 @@ function Pattern() {
         scrollTrigger: {
           trigger: ".patternTrigger",
           scrub: true,
-          markers: true,
         },
       });
     }, main.current);
