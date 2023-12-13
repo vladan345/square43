@@ -24,7 +24,6 @@
     "react-countup": "^6.5.0",
     "react-dom": "^18.2.0",
     "react-intersection-observer": "^9.5.3",
-    "react-scroll-motion": "^0.3.2",
     "react-scroll-parallax": "^3.4.5",
     "splide-nextjs": "^2.4.23"
   }

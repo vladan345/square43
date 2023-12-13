@@ -7,7 +7,9 @@ import PlaneAnimation from "./ui/PlaneAnimation";
 import ProjectHero from "@/components/ProjectHero";
 import Result from "@/components/Result";
 import Outro from "@/components/Outro";
-import { getNextProject } from "@/utils/data/getData";
+import { getNextProject, getProjectMeta } from "@/utils/data/getData";
+
+export const metadata = getProjectMeta("dib-travel");
 
 export default async function Page() {
   const project = await getNextProject();

@@ -71,6 +71,7 @@ export default function RootLayout({ children }) {
       })(window,document,'script','dataLayer','GTM-5S6TZ4F');`,
           }}
         />
+        <link rel="icon" href="/logo2.svg" sizes="any" />
       </head>
       <body>
         <div className={matter.className}>

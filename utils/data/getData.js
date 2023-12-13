@@ -40,3 +40,21 @@ export const getNextProject = async () => {
 
   return project;
 };
+
+export const getProjectMeta = (slug) => {
+  const [currentProject] = getData.projects.filter(
+    (project) => project.id === slug
+  );
+
+  return {
+    openGraph: {
+      title: `Square43 Studio | ${currentProject.name}`,
+      description: currentProject.slogan,
+      images: [{ url: "/images/Projects.png" }],
+      url: `https://square43.com/projects/${slug}`,
+    },
+    title: `Square43 Studio | ${currentProject.name}`,
+    description: currentProject.slogan,
+    metadataBase: new URL(`https://square43.com/projects/${slug}`),
+  };
+};

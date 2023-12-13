@@ -7,7 +7,9 @@ import Scheme from "./ui/Scheme";
 import ProjectHero from "@/components/ProjectHero";
 import Result from "@/components/Result";
 import Outro from "@/components/Outro";
-import { getNextProject } from "@/utils/data/getData";
+import { getNextProject, getProjectMeta } from "@/utils/data/getData";
+
+export const metadata = getProjectMeta("jove");
 
 export default async function Page() {
   const project = await getNextProject();
