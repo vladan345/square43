@@ -134,7 +134,7 @@
   .heroVideo {
     width: 500px;
     height: 500px;
-    position: static;
+    position: relative;
     margin: 0 auto 30px auto;
     display: block;
   }

@@ -33,9 +33,20 @@ function ProjectHero() {
       style={loading ? { height: "100vh" } : { height: "auto" }}
     >
       <div className={styles.hero} ref={hero}>
-        <video className={styles.heroVideo} playsInline autoPlay muted loop>
-          <source src={project.heroVideo} type="video/mp4" />
-        </video>
+        {project.heroVideo == "" ? (
+          <div className={styles.heroVideo}>
+            <Image
+              src={project.heroImage}
+              alt="fallback hero image"
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+          </div>
+        ) : (
+          <video className={styles.heroVideo} playsInline autoPlay muted loop>
+            <source src={project.heroVideo} type="video/mp4" />
+          </video>
+        )}
 
         <div className="wrapper">
           <h1 className={styles.projectName}>{project.name}</h1>
