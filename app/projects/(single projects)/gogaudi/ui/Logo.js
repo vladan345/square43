@@ -7,12 +7,10 @@ function Logo() {
       <div className="wrapper">
         <h2>Logo</h2>
         <p>
-          Ultrices sit diam a pharetra maecenas lacus in. Nulla consec tetur
-          volutpat at elit nisl lectus pulvinar cursus. Pretium porta enim eget
-          ultricies eu orci duis. Porttitor lacus euismod justo quam non
-          phasellus. Sollicitudin eget suspendisse morbi feugiat porttitor amet
-          luctus nec tempor. Malesuada elit aliquet felis volutpat. Maecenas in
-          viverra dolor tristique non a magnis.
+          Soft edges, clear, thick typography in a playful font - this was the
+          starting point of our design. Our solution includes the abbreviated
+          version which can come in hand for sections or merchandise with
+          limited space.
         </p>
         <div className={styles.compare}>
           <div className={styles.col}>

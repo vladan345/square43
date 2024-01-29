@@ -7,16 +7,21 @@ import Scheme from "./ui/Scheme";
 import ProjectHero from "@/components/ProjectHero";
 import Result from "@/components/Result";
 import Outro from "@/components/Outro";
-import { getNextProject, getProjectMeta } from "@/utils/data/getData";
+import {
+  getNextProject,
+  getProjectMeta,
+  getCurrentProject,
+} from "@/utils/data/getData";
 
 export const metadata = getProjectMeta("jove");
 
 export default async function Page() {
-  const project = await getNextProject();
+  const project = await getCurrentProject("jove");
+  const nextProject = await getNextProject();
 
   return (
     <div className="Joker">
-      <ProjectHero />
+      <ProjectHero project={project} />
       {/* Content starts here */}
       <Name />
       <Logo />
@@ -25,8 +30,8 @@ export default async function Page() {
       <Packaging />
       <Scheme />
       {/* Content ends here */}
-      <Result />
-      <Outro project={project} />
+      <Result project={project} />
+      <Outro project={nextProject} />
     </div>
   );
 }

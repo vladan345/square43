@@ -57,12 +57,9 @@ export default function Colors() {
           <div className={styles.col}>
             <h2>Colors</h2>
             <p>
-              Ultrices sit diam a pharetra maecenas lacus in. Nulla consec tetur
-              volutpat at elit nisl lectus pulvinar cursus. Pretium porta enim
-              eget ultricies eu orci duis. Porttitor lacus euismod justo quam
-              non phasellus. Sollicitudin eget suspendisse morbi feugiat
-              porttitor amet luctus nec tempor. Malesuada elit aliquet felis
-              volutpat. Maecenas in viverra dolor tristique non a magnis.
+              Happy-go-lucky, with special emphasis on happy! The new color
+              selection is bursting with a more open palette and rich colors
+              that are simultaneously easy on the eyes!
             </p>
           </div>
           <div className={styles.col}>

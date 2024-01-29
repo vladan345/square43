@@ -6,16 +6,21 @@ import Hands from "./ui/Hands";
 import ProjectHero from "@/components/ProjectHero";
 import Result from "@/components/Result";
 import Outro from "@/components/Outro";
-import { getNextProject, getProjectMeta } from "@/utils/data/getData";
+import {
+  getNextProject,
+  getProjectMeta,
+  getCurrentProject,
+} from "@/utils/data/getData";
 
 export const metadata = getProjectMeta("klei");
 
 export default async function Page() {
-  const project = await getNextProject();
+  const project = await getCurrentProject("klei");
+  const nextProject = await getNextProject();
 
   return (
     <div className="Klei">
-      <ProjectHero />
+      <ProjectHero project={project} />
       {/* Content starts here */}
       <Logo />
       <Laptop />
@@ -23,8 +28,8 @@ export default async function Page() {
       <Flowers />
       <Hands />
       {/* Content ends here */}
-      <Result />
-      <Outro project={project} />
+      <Result project={project} />
+      <Outro project={nextProject} />
     </div>
   );
 }

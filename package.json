@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sanity/client": "^6.12.1",
     "@splidejs/react-splide": "^0.7.12",
     "@studio-freight/lenis": "^1.0.34",
     "clsx": "^2.1.0",
@@ -23,6 +24,7 @@
     "react-countup": "^6.5.0",
     "react-dom": "^18.2.0",
     "react-intersection-observer": "^9.5.3",
+    "sanity": "^3.26.1",
     "splide-nextjs": "^2.4.23"
   }
 }

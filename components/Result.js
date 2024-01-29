@@ -6,13 +6,7 @@ import { gsap } from "gsap";
 import Image from "next/image";
 import Link from "next/link";
 
-import { getCurrentProject } from "@/utils/data/getData";
-import { usePathname } from "next/navigation";
-
-function Result() {
-  const pathname = usePathname();
-  const project = getCurrentProject(pathname.split("/").pop());
-
+function Result({ project }) {
   const { ref, inView } = useInView();
   useEffect(() => {
     if (inView) {
@@ -41,7 +35,7 @@ function Result() {
         />
         {project.liveProject != "" && (
           <Link
-            href={project.liveProject}
+            href={project?.liveProject}
             className={`readMore ${styles.liveProject}`}
             target="_blank"
           >

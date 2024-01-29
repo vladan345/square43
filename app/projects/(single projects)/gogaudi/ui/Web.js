@@ -28,13 +28,11 @@ export default function Web() {
           </div>
           <div className={styles.col}>
             <p>
-              Mi cras cras dictum nunc tincidunt gravida molestie dolor. Nunc
-              augue bibendum elementum euismod platea at adipiscing.
-            </p>
-            <p>
-              Orci felis suspendisse lectus felis. Nisi aliquam massa cras
-              adipiscing urna at cursus a diam. Suspendisse platea malesuada
-              odio a viverra blandit commodo eleifend interdum.
+              User experience was imperative. We had already established the
+              brand palette and had enough visual elements to work with - now
+              was the time to structure the website in such a way that visitors
+              (old and new!) had no issues with navigating the page and finding
+              the perfect deal.
             </p>
           </div>
         </div>

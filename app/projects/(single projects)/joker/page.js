@@ -8,16 +8,21 @@ import Roll from "./ui/Roll";
 import ProjectHero from "@/components/ProjectHero";
 import Result from "@/components/Result";
 import Outro from "@/components/Outro";
-import { getNextProject, getProjectMeta } from "@/utils/data/getData";
+import {
+  getNextProject,
+  getProjectMeta,
+  getCurrentProject,
+} from "@/utils/data/getData";
 
 export const metadata = getProjectMeta("joker");
 
 export default async function Page() {
-  const project = await getNextProject();
+  const project = await getCurrentProject("joker");
+  const nextProject = await getNextProject();
 
   return (
     <div className="Joker">
-      <ProjectHero />
+      <ProjectHero project={project} />
       {/* Content starts here */}
       <Packaging />
       <Video />
@@ -27,8 +32,8 @@ export default async function Page() {
       <Pattern />
       <Roll />
       {/* Content ends here */}
-      <Result />
-      <Outro project={project} />
+      <Result project={project} />
+      <Outro project={nextProject} />
     </div>
   );
 }

@@ -6,16 +6,21 @@ import WebDevelopment from "./ui/WebDevelopment";
 import ProjectHero from "@/components/ProjectHero";
 import Result from "@/components/Result";
 import Outro from "@/components/Outro";
-import { getNextProject, getProjectMeta } from "@/utils/data/getData";
+import {
+  getNextProject,
+  getProjectMeta,
+  getCurrentProject,
+} from "@/utils/data/getData";
 
 export const metadata = getProjectMeta("ownnew");
 
 export default async function Page() {
-  const project = await getNextProject();
+  const project = await getCurrentProject("ownnew");
+  const nextProject = await getNextProject();
 
   return (
     <div className="OwnNew">
-      <ProjectHero />
+      <ProjectHero project={project} />
       {/* Content starts here */}
       <DesktopVideo />
       <Components />
@@ -23,8 +28,8 @@ export default async function Page() {
       <Parallax />
       <WebDevelopment />
       {/* Content ends here */}
-      <Result />
-      <Outro project={project} />
+      <Result project={project} />
+      <Outro project={nextProject} />
     </div>
   );
 }

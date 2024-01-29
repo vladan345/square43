@@ -93,17 +93,15 @@ export default function Graphics() {
           <div className={styles.col}>
             <h2>Images and graphics</h2>
             <p>
-              Ultrices sit diam a pharetra maecenas lacus in. Nulla consec tetur
-              volutpat at elit nisl lectus pulvinar cursus. Pretium porta enim
-              eget ultricies eu orci duis. Porttitor lacus euismod justo quam
-              non phasellus. Sollicitudin eget suspendisse morbi feugiat
-              porttitor amet luctus nec tempor.
+              Clear imagery, high-quality visuals and a monochrome background in
+              brand colors - we've found the optimal combination that suits the
+              essence of GoGaudi! The brand's website is clad in cheerful colors
+              and positive visuals that inspire the user to associate the brand
+              with a fun time and excellent deals.
             </p>
             <p>
-              Nulla consec tetur volutpat at elit nisl lectus pulvinar cursus.
-              Pretium porta enim eget ultricies eu orci duis. Porttitor lacus
-              euismod justo quam non phasellus. Sollicitudin eget suspendisse
-              morbi
+              We made sure to add flexibility to the logo as well by introducing
+              its gradient alternative with a slight tilt - time to Go!
             </p>
           </div>
         </div>
