@@ -19,7 +19,6 @@ function Result({ project }) {
       });
     }
   }, [inView]);
-
   return (
     <div className={styles.Result}>
       <div className="wrapper">
@@ -33,9 +32,9 @@ function Result({ project }) {
           className={`${styles.description} resultText`}
           dangerouslySetInnerHTML={{ __html: project.resultLong }}
         />
-        {project.liveProject != "" && (
+        {typeof project.liveProject != "object" && (
           <Link
-            href={project?.liveProject}
+            href={project.liveProject}
             className={`readMore ${styles.liveProject}`}
             target="_blank"
           >
