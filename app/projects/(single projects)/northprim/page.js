@@ -15,16 +15,21 @@ import Coffee from "./ui/Coffee";
 import ProjectHero from "@/components/ProjectHero";
 import Result from "@/components/Result";
 import Outro from "@/components/Outro";
-import { getNextProject, getProjectMeta } from "@/utils/data/getData";
+import {
+  getNextProject,
+  getProjectMeta,
+  getCurrentProject,
+} from "@/utils/data/getData";
 
 export const metadata = getProjectMeta("northprim");
 
 export default async function Page() {
-  const project = await getNextProject();
+  const project = await getCurrentProject("northprim");
+  const nextProject = await getNextProject();
 
   return (
     <div className="Northprim">
-      <ProjectHero />
+      <ProjectHero project={project} />
       {/* Content starts here */}
       <VideoSection />
       <Brand />
@@ -41,8 +46,8 @@ export default async function Page() {
       <Slider />
       <Coffee />
       {/* Content ends here */}
-      <Result />
-      <Outro project={project} />
+      <Result project={project} />
+      <Outro project={nextProject} />
     </div>
   );
 }

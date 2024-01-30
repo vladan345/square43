@@ -1,21 +1,16 @@
 "use client";
-import React, { useRef, useEffect, Suspense } from "react"; // eslint-disable-line no-unused-vars
+import React, { useRef, useEffect } from "react"; // eslint-disable-line no-unused-vars
 import Link from "next/link";
 import styles from "./styles/ProjectHero.module.css";
 import Image from "next/image";
-import { getCurrentProject } from "@/utils/data/getData";
-import { usePathname } from "next/navigation";
 import { useLoading } from "@/utils/hooks/LoadingContext";
 
-function ProjectHero() {
+function ProjectHero({ project }) {
   const { loading, setLoading } = useLoading();
   let hero = useRef(null);
   useEffect(() => {
     setLoading(false);
   }, []);
-
-  const pathname = usePathname();
-  const project = getCurrentProject(pathname.split("/").pop());
 
   const handleClick = () => {
     let heroHeight = hero.current;
@@ -33,12 +28,23 @@ function ProjectHero() {
       style={loading ? { height: "100vh" } : { height: "auto" }}
     >
       <div className={styles.hero} ref={hero}>
-        <video className={styles.heroVideo} playsInline autoPlay muted loop>
-          <source src={project.heroVideo} type="video/mp4" />
-        </video>
+        {project.heroVideo == "" ? (
+          <div className={styles.heroVideo}>
+            <Image
+              src={project.heroImage}
+              alt="fallback hero image"
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+          </div>
+        ) : (
+          <video className={styles.heroVideo} playsInline autoPlay muted loop>
+            <source src={project.heroVideo} type="video/mp4" />
+          </video>
+        )}
 
         <div className="wrapper">
-          <h1 className={styles.projectName}>{project.name}</h1>
+          <h1 className={styles.projectName}>{project.title}</h1>
           <h2 className={styles.slogan}>{project.slogan}</h2>
 
           <p className={styles.serviceHead}>What we&apos;ve done </p>
@@ -48,7 +54,7 @@ function ProjectHero() {
               return (
                 <Link
                   key={key}
-                  href={"/services/" + service}
+                  href={`/services/${service.slug.current}`}
                   style={{
                     animation: `fadeIn 1s ${
                       counter * key + 500
@@ -57,7 +63,7 @@ function ProjectHero() {
                   }}
                   className={styles.serviceLink}
                 >
-                  {service.split("-").join(" ")}
+                  {service.name}
                 </Link>
               );
             })}

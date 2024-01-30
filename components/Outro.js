@@ -1,15 +1,9 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import styles from "./styles/Outro.module.css";
 import Image from "next/image";
 
-import { usePathname } from "next/navigation";
-import { getAllProjects } from "../utils/data/getData";
-
 function Outro({ project }) {
-  const pathname = usePathname();
-  const projectId = pathname.split("/").pop();
-
   const [isLoading, setLoading] = useState(false);
 
   return (
@@ -22,10 +16,16 @@ function Outro({ project }) {
             </video>
             <div className={styles.content}>
               <p className={styles.next}>Next project</p>
-              <h2 className={styles.name}>{project.name}</h2>
-              <p className={styles.slogan}>{project.slogan}</p>
+              <h2 className={styles.name}>{project.title}</h2>
+              <p
+                className={styles.slogan}
+                dangerouslySetInnerHTML={{ __html: project.slogan }}
+              />
 
-              <a className={styles.arrowLink} href={`/projects/${project.id}`}>
+              <a
+                className={styles.arrowLink}
+                href={`/projects/${project.slug.current}`}
+              >
                 <div className={styles.arrow}>
                   <Image
                     src="/images/outro-arrow.svg"

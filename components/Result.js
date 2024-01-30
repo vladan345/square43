@@ -6,13 +6,7 @@ import { gsap } from "gsap";
 import Image from "next/image";
 import Link from "next/link";
 
-import { getCurrentProject } from "@/utils/data/getData";
-import { usePathname } from "next/navigation";
-
-function Result() {
-  const pathname = usePathname();
-  const project = getCurrentProject(pathname.split("/").pop());
-
+function Result({ project }) {
   const { ref, inView } = useInView();
   useEffect(() => {
     if (inView) {
@@ -25,7 +19,6 @@ function Result() {
       });
     }
   }, [inView]);
-
   return (
     <div className={styles.Result}>
       <div className="wrapper">
@@ -39,7 +32,7 @@ function Result() {
           className={`${styles.description} resultText`}
           dangerouslySetInnerHTML={{ __html: project.resultLong }}
         />
-        {project.liveProject != "" && (
+        {typeof project.liveProject != "object" && (
           <Link
             href={project.liveProject}
             className={`readMore ${styles.liveProject}`}

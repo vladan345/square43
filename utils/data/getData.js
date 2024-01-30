@@ -1,60 +1,155 @@
 import projectData from "../constants/projectData.json";
+import client from "@/app/sanityClient";
 
 export const getData = projectData;
 
-export const getAllServices = () => {
-  return getData.services;
-};
+export async function getAllServices() {
+  const query = `
+    *[_type == "service"] {
+      _id,
+      name,
+      slug,
+      features,
+    }
+  `;
+  try {
+    const serviceData = await client.fetch(query);
+    return serviceData;
+  } catch (error) {
+    console.error("Error fetching projects data:", error.message);
+    return null;
+  }
+}
 
-export const getAllProjects = async () => {
-  return getData.projects;
-};
-export const getAllProjectsExcept = (projectId) => {
-  return getData.projects.filter((project) => project.id !== projectId);
-};
+export async function getAllProjects() {
+  const query = `
+    *[_type == "project"] {
+      _id,
+      title,
+      slug,
+      slogan,
+      heroImage,
+      heroVideo,
+      services[]-> {
+        _id,
+        name,
+      },
+    }
+  `;
+  try {
+    const projectsData = await client.fetch(query);
+    return projectsData;
+  } catch (error) {
+    console.error("Error fetching projects data:", error.message);
+    return null;
+  }
+}
+
 //Needs to be deconstructed
-export const getCurrentService = (serviceId) => {
-  let [data] = getData.services.filter((service) => service.id === serviceId);
-  return data;
-};
-export const getProjectsByService = (serviceId) => {
-  return getData.projects.filter((project) =>
-    project.services.includes(serviceId)
-  );
-};
+export async function getCurrentService(serviceId) {
+  const query = `
+    *[_type == "service" && slug.current == $slug][0] {
+      _id,
+      name,
+      slug,
+      description,
+      projects[]-> {
+        _id,
+        title,
+        slug,
+        heroImage
+      }
+    }
+  `;
+  const params = { slug: serviceId };
+
+  try {
+    const serviceData = await client.fetch(query, params);
+    return serviceData;
+  } catch (error) {
+    console.error("Error fetching projects data:", error.message);
+    return null;
+  }
+}
+
 // //Needs to be deconstructed
-export const getCurrentProject = (projectId) => {
-  let [data] = getData.projects.filter((project) => project.id === projectId);
-  return data;
-};
+export async function getCurrentProject(projectId) {
+  const query = `
+    *[_type == "project" && slug.current == $slug][0] {
+      _id,
+      title,
+      slug,
+      slogan,
+      heroImage,
+      heroVideo,
+      heroArrow,
+      missionShort,
+      missionLong,
+      solutionShort,
+      solutionLong,
+      resultShort,
+      resultLong,
+      liveProject,
+      services[]-> {
+        _id,
+        name,
+        slug
+      },
+    }
+  `;
+  const params = { slug: projectId };
+
+  try {
+    const projectData = await client.fetch(query, params);
+    return projectData;
+  } catch (error) {
+    console.error("Error fetching projects data:", error.message);
+    return null;
+  }
+}
 
 export const getNextProject = async () => {
   const path = require("path");
   const pageName = path.dirname(__filename).split(path.sep).pop();
-
   let projects = await getAllProjects();
-  let currentId = projects.findIndex((obj) => obj.id === pageName);
+
+  let currentId = projects.findIndex((obj) => obj.slug.current === pageName);
 
   currentId === projects.length - 1 ? (currentId = 0) : (currentId += 1);
   let project = projects[currentId];
-
   return project;
 };
 
-export const getProjectMeta = (slug) => {
-  const [currentProject] = getData.projects.filter(
-    (project) => project.id === slug
-  );
+export const getProjectMeta = async (projectId) => {
+  const query = `
+  *[_type == "project" && slug.current == $slug][0] {
+    _id,
+    title,
+    slug,
+    "metaTitle": seo.metaTitle,
+    "metaDescription": seo.metaDescription,
+    "pageTitle": seo.pageTitle,
+    "metaLink": seo.metaLink,
+    "metaImage": seo.metaImage
+  }
+`;
+  const params = { slug: projectId };
 
-  return {
-    openGraph: {
-      title: `Square43 Studio | ${currentProject.name}`,
-      description: currentProject.slogan,
-      images: [{ url: "/images/Projects.png" }],
-      url: `https://square43.com/projects/${slug}`,
-    },
-    title: `Square43 Studio | ${currentProject.name}`,
-    description: currentProject.slogan,
-    metadataBase: new URL(`https://square43.com/projects/${slug}`),
-  };
+  try {
+    const projectData = await client.fetch(query, params);
+    return {
+      openGraph: {
+        title: projectData.metaTitle,
+        description: projectData.metaDescription,
+        images: [{ url: projectData.metaImage }],
+        url: `https://square43.com/projects/${projectId}`,
+      },
+      title: projectData.pageTitle,
+      description: projectData.metaDescription,
+      metadataBase: new URL(`https://square43.com/projects/${projectId}`),
+    };
+  } catch (error) {
+    console.error("Error fetching projects data:", error.message);
+    return null;
+  }
 };

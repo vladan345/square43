@@ -7,7 +7,6 @@ import styles from "./styles/ServiceList.module.css";
 
 export default function Page({ services }) {
   const { setLoading } = useLoading();
-
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);

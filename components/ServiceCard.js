@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { useLoading } from "../utils/hooks/LoadingContext";
 import { InView } from "react-intersection-observer";
 
-function ServiceModule(props) {
+function ServiceModule({ service }) {
   const router = useRouter();
   const { setLoading } = useLoading();
 
@@ -24,16 +24,16 @@ function ServiceModule(props) {
           <div ref={ref}>
             <Link
               onClick={handleClick}
-              href={"/services/" + props.service.id}
+              href={"/services/" + service.slug.current}
               className={`${styles.ServiceModule} ${
                 inView && window.innerWidth < 900 ? styles.open : null
               }`}
             >
               <div className={styles.overlay}></div>
               <div className={styles.top}>
-                <h2 className={styles.title}>{props.service.name}</h2>
+                <h2 className={styles.title}>{service.name}</h2>
                 <ul className={styles.list}>
-                  {props.service.list.map((listItem, key) => (
+                  {service.features.map((listItem, key) => (
                     <li className={styles.listItem} key={key}>
                       {listItem}
                     </li>
@@ -41,7 +41,7 @@ function ServiceModule(props) {
                 </ul>
               </div>
               <div className={styles.link}>
-                view projects{" "}
+                view projects
                 <div className={styles.icon}>
                   <Image
                     src="/images/arrow-white-r.svg"

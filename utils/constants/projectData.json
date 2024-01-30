@@ -1,6 +1,30 @@
 {
   "projects": [
     {
+      "id": "gogaudi",
+      "name": "GoGaudi",
+      "slogan": "Est elementum suspendisse interdum adipiscing ultrices id lacinia. Augue magna tristique est.",
+      "color": "#5B24B2",
+      "heroImage": "/images/gogaudi/heroGogaudi.png",
+      "heroVideo": "",
+      "heroArrow": "/images/gogaudi/gogaudiArrow.svg",
+      "missionShort": "Enim vel ipsum nunc pharetra aliquet ut at eleifend. Eget volutpat nunc purus in scelerisque donec ultrices. Ligula varius faucibus ullamcorper phasellus imperdiet. Mi elit pretium tellus neque pellentesque enim eget ipsum maecenas. Orci euismod viverra facilisi eu mattis egestas. Arcu tellus urna ut pharetra.",
+      "missionLong": "",
+      "solutionShort": "Amet suscipit venenatis eu cras porttitor eget morbi in nunc. Dictum in ut odio porta enim. Massa morbi egestas rhoncus amet dui adipiscing sed. Nec justo quis volutpat tincidunt enim auctor nec. Dictum commodo dolor massa sed vulputate sed molestie sed.",
+      "solutionLong": "",
+      "resultShort": "Lorem ipsum dolor <i>sit amet</i>",
+      "resultLong": "Nec a feugiat odio vitae nunc.<br /><br />Adipiscing pretium <i>ut nulla</i> In facilisis ac mauris egestas dictumst.",
+      "liveProject": "https://gogaudi.de/",
+      "services": ["branding", "web-design", "web-development"],
+      "meta": {
+        "description": "Est elementum suspendisse interdum adipiscing ultrices id lacinia. Augue magna tristique est.",
+        "title": "Square43 Studio - GoGaudi",
+        "pageTitle": "Square43 Studio | GoGaudi",
+        "link": "https://square43.com/projects/gogaudi",
+        "image": "https://square43.com/images/gogaudi/heroGogaudi.png"
+      }
+    },
+    {
       "id": "northprim",
       "name": "Northprim",
       "slogan": "A Glow up in Neon: \nReinventing Northprim",
@@ -317,6 +341,7 @@
       "description": "Your true self - by us",
       "list": ["Brand strategy", "Logo design", "Naming", "Brand book design"],
       "projects": [
+        "gogaudi",
         "northprim",
         "imunoshop",
         "dib-travel",
@@ -336,6 +361,7 @@
         "A/B testing"
       ],
       "projects": [
+        "gogaudi",
         "northprim",
         "ownnew",
         "dib-travel",
@@ -357,6 +383,7 @@
         "Mobile optimization"
       ],
       "projects": [
+        "gogaudi",
         "northprim",
         "ownnew",
         "dib-travel",

@@ -7,16 +7,20 @@ import PlaneAnimation from "./ui/PlaneAnimation";
 import ProjectHero from "@/components/ProjectHero";
 import Result from "@/components/Result";
 import Outro from "@/components/Outro";
-import { getNextProject, getProjectMeta } from "@/utils/data/getData";
+import {
+  getCurrentProject,
+  getNextProject,
+  getProjectMeta,
+} from "@/utils/data/getData";
 
 export const metadata = getProjectMeta("dib-travel");
 
 export default async function Page() {
-  const project = await getNextProject();
-
+  const project = await getCurrentProject("dib-travel");
+  const nextProject = await getNextProject();
   return (
     <div className="DibTravel">
-      <ProjectHero />
+      <ProjectHero project={project} />
       {/* Content starts here */}
       <Taglines />
       <Scooter />
@@ -25,8 +29,8 @@ export default async function Page() {
       <NewClients />
       <PlaneAnimation />
       {/* Content ends here */}
-      <Result />
-      <Outro project={project} />
+      <Result project={project} />
+      <Outro project={nextProject} />
     </div>
   );
 }

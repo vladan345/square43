@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useLoading } from "../utils/hooks/LoadingContext";
 
-function ProjectCard(props) {
+function ProjectCard({ project }) {
   const router = useRouter();
   const { setLoading } = useLoading();
 
@@ -22,13 +22,13 @@ function ProjectCard(props) {
     <div className={styles.projectCard}>
       <Link
         onClick={handleClick}
-        href={`/projects/${props.project.id}`}
+        href={`/projects/${project.slug.current}`}
         className={styles.link}
       >
         <div className={styles.heroImage}>
           <Image
-            src={props.project.heroImage}
-            alt={`${props.project.name} hero`}
+            src={project.heroImage}
+            alt={`${project.title} hero`}
             fill={true}
             sizes="100vw"
             priority
@@ -37,7 +37,7 @@ function ProjectCard(props) {
           <div className={styles.overlay}></div>
         </div>
 
-        <h2 className={styles.projectName}>{props.project.name}</h2>
+        <h2 className={styles.projectName}>{project.title}</h2>
         <div className={styles.iconWrap}>
           <Image
             src="/images/arrow-white-r.svg"
