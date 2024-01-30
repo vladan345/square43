@@ -120,20 +120,36 @@ export const getNextProject = async () => {
   return project;
 };
 
-export const getProjectMeta = (slug) => {
-  const [currentProject] = getData.projects.filter(
-    (project) => project.id === slug
-  );
+export const getProjectMeta = async (projectId) => {
+  const query = `
+  *[_type == "project" && slug.current == $slug][0] {
+    _id,
+    title,
+    slug,
+    "metaTitle": seo.metaTitle,
+    "metaDescription": seo.metaDescription,
+    "pageTitle": seo.pageTitle,
+    "metaLink": seo.metaLink,
+    "metaImage": seo.metaImage
+  }
+`;
+  const params = { slug: projectId };
 
-  return {
-    openGraph: {
-      title: `Square43 Studio | ${currentProject.name}`,
-      description: currentProject.slogan,
-      images: [{ url: "/images/Projects.png" }],
-      url: `https://square43.com/projects/${slug}`,
-    },
-    title: `Square43 Studio | ${currentProject.name}`,
-    description: currentProject.slogan,
-    metadataBase: new URL(`https://square43.com/projects/${slug}`),
-  };
+  try {
+    const projectData = await client.fetch(query, params);
+    return {
+      openGraph: {
+        title: projectData.metaTitle,
+        description: projectData.metaDescription,
+        images: [{ url: projectData.metaImage }],
+        url: `https://square43.com/projects/${projectId}`,
+      },
+      title: projectData.pageTitle,
+      description: projectData.metaDescription,
+      metadataBase: new URL(`https://square43.com/projects/${projectId}`),
+    };
+  } catch (error) {
+    console.error("Error fetching projects data:", error.message);
+    return null;
+  }
 };

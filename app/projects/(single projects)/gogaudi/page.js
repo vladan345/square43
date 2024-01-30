@@ -3,6 +3,7 @@ import Result from "@/components/Result";
 import Outro from "@/components/Outro";
 import Logo from "./ui/Logo";
 import Colors from "./ui/Colors";
+import Videos from "./ui/Videos";
 import Graphics from "./ui/Graphics";
 import Visuals from "./ui/Visuals";
 import Web from "./ui/Web";
@@ -25,7 +26,7 @@ export default async function Page() {
       {/* Content starts here */}
       <Logo />
       <Colors />
-      {/* Placeholder video */}
+      <Videos />
       <Graphics />
       <Visuals />
       <Web />
