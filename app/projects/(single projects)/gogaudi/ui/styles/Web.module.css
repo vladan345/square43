@@ -21,7 +21,27 @@
   width: 100%;
   height: auto;
 }
-
+.mobile {
+  position: relative;
+  min-height: 890px;
+  background: transparent;
+}
+.mobile img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.mobile video {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 58px;
+  box-shadow: 0 20px 30px 5px #07000099;
+}
 @media (max-width: 1200px) {
   .row {
     gap: 40px;
@@ -41,5 +61,16 @@
   }
   .col {
     width: 100%;
+  }
+  .mobile {
+    min-height: 670px;
+    max-width: 320px;
+    width: 100%;
+  }
+  .mobile video {
+    box-shadow: 0 15px 19px 3px #07000099;
+  }
+  .col:nth-of-type(2) {
+    align-items: center;
   }
 }

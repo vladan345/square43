@@ -19,12 +19,26 @@ export default function Web() {
             </h2>
           </div>
           <div className={styles.col}>
-            <Image
-              src="/images/gogaudi/mobile-video.png"
-              alt="Video placeholder"
-              width={397}
-              height={855}
-            />
+            <div className={styles.mobile}>
+              <video
+                style={{ width: "95%", margin: "0 auto" }}
+                autoPlay
+                muted
+                loop
+                playsInline
+              >
+                <source
+                  src="/images/gogaudi/mobileShowcase.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <Image
+                src="/images/gogaudi/mobileMask.svg"
+                alt="Video placeholder"
+                width={404}
+                height={869}
+              />
+            </div>
           </div>
           <div className={styles.col}>
             <p>
