@@ -2,13 +2,46 @@
   overflow: hidden;
   height: 120vh;
   background: white;
+  padding: 0 20px;
+}
+.sliderWrap {
+  position: relative;
+  height: 100%;
 }
 .wrapper {
-  padding: 0 20px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
   max-width: 1360px;
   margin: 0 auto;
-  position: relative;
+  position: absolute;
   z-index: 3;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0;
+  pointer-events: none;
+}
+.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.video {
+  width: 500px;
+  height: 500px;
+  opacity: 0;
+  margin-right: -100px;
+  transition: 0.5s;
+  transition-delay: 0.2s;
+}
+.active .video {
+  margin-right: 0;
+  opacity: 1;
+}
+.video video {
+  width: 100%;
   height: 100%;
 }
 .projectWrap {
@@ -16,6 +49,13 @@
   flex-direction: column;
   justify-content: center;
   height: 100%;
+  margin-left: -100px;
+  transition: 0.5s;
+  opacity: 0;
+}
+.active .projectWrap {
+  margin-left: 0;
+  opacity: 1;
 }
 .tag {
   text-transform: uppercase;
@@ -37,21 +77,50 @@
 .linkWrapMobile {
   display: none;
 }
+
+.arrowWrap {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.prevArrow {
+  transform: rotate(180deg);
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #e0e0e0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.dotActive {
+  background: #202020;
+}
+
 @media (max-width: 900px) {
   .Project {
-    height: 100vh;
+    height: 150vh;
     padding-bottom: 40px;
-    padding-top: 120px;
   }
   .projectWrap {
     width: 100%;
     justify-content: flex-start;
+  }
+  .video {
+    width: 350px;
+    height: 350px;
   }
   .wrapper {
     display: flex;
     justify-content: space-between;
     flex-direction: column-reverse;
     align-items: center;
+    gap: 60px;
   }
   .title {
     font-size: 54px;
@@ -62,11 +131,18 @@
     font-size: 22px;
     letter-spacing: normal;
   }
-  .linkWrap {
-    display: none;
+  .arrowWrap {
+    bottom: 40px;
   }
   .linkWrapMobile {
     display: block;
     margin-top: 80px;
+  }
+}
+
+@media (max-width: 400px) {
+  .video {
+    width: 100vw;
+    height: 100vw;
   }
 }

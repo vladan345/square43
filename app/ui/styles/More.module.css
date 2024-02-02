@@ -41,7 +41,7 @@
 }
 @media (max-width: 900px) {
   .More {
-    height: 100vh;
+    height: 120vh;
     padding-bottom: 40px;
     padding-top: 120px;
   }

@@ -182,6 +182,7 @@ i {
 #step5 {
   right: 200px;
   transform: translate(0, -50%) rotateZ(0);
+  opacity: 0;
 }
 
 #step6 {
