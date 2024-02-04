@@ -1,4 +1,5 @@
 import HomeContent from "./ui/HomeContent";
+import { getLatestProjects } from "@/utils/data/getData";
 
 export const metadata = {
   openGraph: {
@@ -12,10 +13,11 @@ export const metadata = {
   metadataBase: new URL("https://square43.com"),
 };
 
-export default function Page() {
+export default async function Page() {
+  const projects = await getLatestProjects();
   return (
     <>
-      <HomeContent />
+      <HomeContent projects={projects} />
     </>
   );
 }

@@ -20,7 +20,7 @@ function OurServices() {
         },
       });
       gsap.to(".wrapper", {
-        paddingLeft: 0,
+        paddingLeft: "20px",
         scrollTrigger: {
           trigger: ".homeServices",
           scrub: true,

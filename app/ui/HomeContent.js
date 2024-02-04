@@ -14,7 +14,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function HomeContent() {
+export default function HomeContent({ projects }) {
   const [state, setState] = useState(1);
   const main = useRef();
   useEffect(() => {
@@ -50,7 +50,7 @@ export default function HomeContent() {
           <More />
         </div>
         <div className="section">
-          <Project />
+          <Project latestProjects={projects[0].projects} />
         </div>
         <div className="section">
           <Contact />

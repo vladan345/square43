@@ -1,7 +1,4 @@
-import projectData from "../constants/projectData.json";
 import client from "@/app/sanityClient";
-
-export const getData = projectData;
 
 export async function getAllServices() {
   const query = `
@@ -153,3 +150,27 @@ export const getProjectMeta = async (projectId) => {
     return null;
   }
 };
+
+export async function getLatestProjects() {
+  const query = `
+  *[_type == "lastest"] {
+    _id,
+    title,
+    projects[]-> {
+      _id,
+      title,
+      slogan,
+      slug,
+      heroVideo,
+    },
+  }
+  `;
+
+  try {
+    const projectsData = await client.fetch(query);
+    return projectsData;
+  } catch (error) {
+    console.error("Error fetching projects data:", error.message);
+    return null;
+  }
+}
