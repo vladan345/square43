@@ -35,7 +35,10 @@ function Project({ latestProjects }) {
                     dangerouslySetInnerHTML={{ __html: project.slogan }}
                   />
                   <div className={styles.linkWrap}>
-                    <Link href={project.slug.current} className="readMore">
+                    <Link
+                      href={`/projects/${project.slug.current}`}
+                      className="readMore"
+                    >
                       Project
                       <div className="icon">
                         <Image
