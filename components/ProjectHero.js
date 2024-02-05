@@ -45,7 +45,10 @@ function ProjectHero({ project }) {
 
         <div className="wrapper">
           <h1 className={styles.projectName}>{project.title}</h1>
-          <h2 className={styles.slogan}>{project.slogan}</h2>
+          <h2
+            className={styles.slogan}
+            dangerouslySetInnerHTML={{ __html: project.slogan }}
+          />
 
           <p className={styles.serviceHead}>What we&apos;ve done </p>
           <div className={styles.services}>

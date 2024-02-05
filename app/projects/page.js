@@ -18,7 +18,6 @@ export const metadata = {
 
 export default async function Page() {
   const projects = await getAllProjects();
-
   return (
     <>
       <main>
@@ -29,7 +28,7 @@ export default async function Page() {
               <p className={styles.subheading}>
                 Reliable and totally unbiased sources claim we got MOMA jealous.
               </p>
-              <ProjectList projects={projects} />
+              <ProjectList projects={projects.reverse()} />
             </div>
           </div>
         </div>
