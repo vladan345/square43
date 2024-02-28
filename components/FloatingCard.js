@@ -8,7 +8,12 @@ export default function FloatingCard(props) {
     <Link href={"/services" + props.service.link}>
       <div
         className={styles.main}
-        style={{ top: props.service.top, left: props.service.left }}
+        style={{
+          top: props.service.top,
+          left: props.service.left,
+          width: props.service.square,
+          height: props.service.square,
+        }}
       >
         <div className={styles.gradient}></div>
 

@@ -16,8 +16,8 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 .tag {
   text-transform: uppercase;
