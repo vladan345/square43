@@ -1,7 +1,7 @@
 .More {
   overflow: hidden;
   height: 120vh;
-  background: linear-gradient(#fff 75%, #f8f8f8 100%);
+  background: #e0e0e0;
 }
 .wrapper {
   padding: 0 20px;
@@ -14,8 +14,10 @@
 .moreWrap {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   height: 100%;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 .tag {
   text-transform: uppercase;
@@ -39,6 +41,7 @@
 .linkWrapMobile {
   display: none;
 }
+
 @media (max-width: 900px) {
   .More {
     height: 120vh;

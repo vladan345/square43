@@ -1,114 +1,103 @@
-import React, { useState, useEffect } from "react";
-import { gsap } from "gsap";
 import styles from "./styles/More.module.css";
+import FloatingCard from "../../components/FloatingCard";
+import Link from "next/link";
+import Image from "next/image";
 
 function More() {
-  const [index, setIndex] = useState(0);
-  const titles1 = ["More than a team", "More than a client"];
-  const titles2 = ["Less stress", "Less crap"];
-  const descriptions1 = [
-    "Though we are few, we are a movement.",
-    "We approach your project as our own, fair and square.",
+  const services = [
+    {
+      title: "Web Dev",
+      subservices: [
+        "Scroll sequences",
+        "SEO optimization",
+        "Multilanguage",
+        "Mobile optimization",
+      ],
+      link: "/web-development",
+      top: 250,
+      left: 50,
+    },
+    {
+      title: "Web Design",
+      subservices: [
+        "Wireframing",
+        "UX/UI optimization",
+        "Copywriting",
+        "A/B testing",
+      ],
+      link: "/web-design",
+      top: 550,
+      left: 400,
+    },
+    {
+      title: "E-Commerce",
+      subservices: [
+        "Web shop development",
+        "Payment integration",
+        "Store setup",
+        "SEO optimization",
+        "Email automation",
+        "Shipping integration",
+      ],
+      link: "/e-commerce",
+      top: 380,
+      left: 700,
+    },
+    {
+      title: "Copywriting",
+      subservices: ["Website copy", "Social media copy"],
+      link: "/copywriting",
+      top: 800,
+      left: 200,
+    },
+    {
+      title: "Social Media",
+      subservices: [
+        "Monthly planning",
+        "Ad campaigns for all formats",
+        "Copywriting",
+        "Blog posts",
+        "Communication management",
+      ],
+      link: "/social-media",
+      top: 1000,
+      left: 550,
+    },
+    {
+      title: "Branding",
+      subservices: [
+        "Brand strategy",
+        "Logo design",
+        "Naming",
+        "Brand book design",
+      ],
+      link: "/branding",
+      top: 800,
+      left: 750,
+    },
   ];
-  const descriptions2 = [
-    "We keep our deadlines neat and alive - you'll never wait for us.",
-    "We keep our communication clear and efficient: more time for greatness!",
-  ];
-
-  useEffect(() => {
-    fireAnimation();
-    const interval = setInterval(() => {
-      if (index > 0) {
-        setIndex(0);
-      } else {
-        setIndex(index + 1);
-      }
-    }, 6000);
-    return () => clearInterval(interval); //This is a cleanup function
-  }, [index]);
-
-  function fireAnimation() {
-    gsap.from(".more", {
-      skewX: -30,
-      duration: 1.5,
-      yPercent: 100,
-      ease: "power4",
-      stagger: 0.02,
-    });
-    gsap.to(".more", {
-      skewX: 0,
-      duration: 1.5,
-      yPercent: 0,
-      ease: "power4",
-      stagger: 0.02,
-    });
-    setTimeout(() => {
-      gsap.to(".more", {
-        duration: 1.5,
-        yPercent: 100,
-        ease: "power4",
-      });
-    }, 5000);
-  }
 
   return (
     <div className={styles.More}>
       <div className={styles.wrapper}>
-        {/* <Square image="/images/square3.webp" height={560} /> */}
         <div className={styles.moreWrap}>
-          <p className={styles.tag}>Behind our Drive</p>
-          <h2 className={styles.title}>
-            {titles1[index].split(/(\s+)/).map((word, key) => {
-              if (word == " ") {
-                return " ";
-              } else {
-                return (
-                  <span key={key} className="mask">
-                    <span className="more">{word}</span>
-                  </span>
-                );
-              }
-            })}
-          </h2>
-          <p className={styles.subheading}>
-            {descriptions1[index].split(/(\s+)/).map((word, key) => {
-              if (word == " ") {
-                return " ";
-              } else {
-                return (
-                  <span key={key} className="mask">
-                    <span className="more">{word}</span>
-                  </span>
-                );
-              }
-            })}
-          </p>
-          <h2 className={styles.title}>
-            {titles2[index].split(/(\s+)/).map((word, key) => {
-              if (word == " ") {
-                return " ";
-              } else {
-                return (
-                  <span key={key} className="mask">
-                    <span className="more">{word}</span>
-                  </span>
-                );
-              }
-            })}
-          </h2>
-          <p className={styles.subheading}>
-            {descriptions2[index].split(/(\s+)/).map((word, key) => {
-              if (word == " ") {
-                return " ";
-              } else {
-                return (
-                  <span key={key} className="mask">
-                    <span className="more">{word}</span>
-                  </span>
-                );
-              }
-            })}
-          </p>
+          <p className={styles.tag}>Services</p>
+          {services.map((service) => (
+            <FloatingCard service={service} key={service.title} />
+          ))}
+          <div className={styles.linkWrap}>
+            <Link href={"/services"} className="readMore">
+              ALL SERVICES
+              <div className="icon">
+                <Image
+                  src="/images/arrow.svg"
+                  alt="Arrow icon"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
