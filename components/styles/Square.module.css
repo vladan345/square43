@@ -14,13 +14,13 @@
   width: 100%;
   overflow: hidden;
   height: 100%;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 .video {
   height: 100%;
   object-fit: cover;
   width: 100%;
-  transition: 0.3s;
+  transition: 0.8s;
 }
 @media (max-width: 1350px) {
   .square {

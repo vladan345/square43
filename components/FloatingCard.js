@@ -5,14 +5,12 @@ import Link from "next/link";
 
 export default function FloatingCard(props) {
   return (
-    <Link href={"/services" + props.service.link}>
+    <div>
       <div
         className={styles.main}
         style={{
           top: props.service.top,
           left: props.service.left,
-          width: props.service.square,
-          height: props.service.square,
         }}
       >
         <div className={styles.gradient}></div>
@@ -28,7 +26,10 @@ export default function FloatingCard(props) {
                 <li key={subservice}>{subservice}</li>
               ))}
             </ul>
-            <div className={styles.projectsArrowWrapper}>
+            <Link
+              href={"/services" + props.service.link}
+              className={styles.projectsArrowWrapper}
+            >
               <div className={styles.viewProjects}>VIEW PROJECTS</div>
               <div className={styles.button}>
                 <Image
@@ -38,7 +39,7 @@ export default function FloatingCard(props) {
                   width={40}
                 />
               </div>
-            </div>
+            </Link>
             <div className={styles.buttonBox}>
               <Image
                 src="/images/expandsquare6.svg"
@@ -50,6 +51,6 @@ export default function FloatingCard(props) {
           </div>
         </div>
       </div>
-    </Link>
+    </div>
   );
 }

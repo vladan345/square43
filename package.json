@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.0",
     "@sanity/client": "^6.12.1",
     "@splidejs/react-splide": "^0.7.12",
     "@studio-freight/lenis": "^1.0.34",
@@ -25,6 +26,7 @@
     "react-dom": "^18.2.0",
     "react-intersection-observer": "^9.5.3",
     "sanity": "^3.26.1",
-    "splide-nextjs": "^2.4.23"
+    "splide-nextjs": "^2.4.23",
+    "split-type": "^0.3.4"
   }
 }

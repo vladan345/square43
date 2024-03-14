@@ -34,7 +34,7 @@ export default function Page() {
               <a className={styles.titleLink} href="tel:+381603339493">
                 +381 60 333 94 93
               </a>
-              <p className={styles.preheading}>Maybe drup us a line</p>
+              <p className={styles.preheading}>Maybe drop us a line</p>
               <a className={styles.titleLink} href="mailto:studio@square43.com">
                 studio@square43.com
               </a>
