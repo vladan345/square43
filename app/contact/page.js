@@ -30,10 +30,10 @@ export default function Page() {
           </p>
           <div className={styles.row}>
             <div className={styles.col}>
-              <p className={styles.preheading}>Call us</p>
+              {/* <p className={styles.preheading}>Call us</p>
               <a className={styles.titleLink} href="tel:+381603339493">
                 +381 60 333 94 93
-              </a>
+              </a> */}
               <p className={styles.preheading}>Maybe drop us a line</p>
               <a className={styles.titleLink} href="mailto:studio@square43.com">
                 studio@square43.com

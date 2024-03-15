@@ -220,18 +220,24 @@ export default function page() {
       "#digi",
       {
         x: 0,
+        opacity: 0,
         scrollTrigger: {
           trigger: "#digi",
           stagger: 1,
           scrub: true,
+          markers: true,
+          start: "top center",
+          end: "",
         },
       },
       {
-        x: -600,
+        x: -200,
+        opacity: 1,
         scrollTrigger: {
           trigger: "#digi",
           stagger: 1,
           scrub: true,
+          markers: true,
         },
       }
     );
