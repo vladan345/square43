@@ -1,0 +1,90 @@
+.section {
+  height: 200vh;
+  position: relative;
+  /* margin-bottom: -120px; */
+}
+.textWrap {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  padding: 0 20px;
+  top: 0;
+}
+.statement {
+  max-width: 1400px;
+  font-size: 120px;
+  font-weight: 700;
+  letter-spacing: -4.8px;
+  background: radial-gradient(circle at 0 0, #7000ff, #0ff);
+  background-attachment: sticky;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  line-height: 1;
+}
+.statement .gradientText {
+  -webkit-text-fill-color: transparent;
+}
+
+.main {
+  position: relative;
+}
+.dotsWrapper {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 110px;
+}
+.dots {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #e0e0e0;
+  position: relative;
+}
+.dot:after {
+  width: 100%;
+  height: var(--dot-height);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  background: black;
+}
+@media (max-width: 1600px) {
+  .dotsWrapper {
+    width: 100%;
+    left: 0;
+    right: auto;
+  }
+  .dots {
+    flex-direction: row;
+    align-items: flex-end;
+    padding-bottom: 120px;
+  }
+  .dot {
+    transform: rotate(-90deg);
+  }
+}
+@media (max-width: 985px) {
+  .statement {
+    font-size: 60px;
+    letter-spacing: normal;
+  }
+}
+@media (max-width: 400px) {
+  .statement {
+    font-size: 42px;
+  }
+}

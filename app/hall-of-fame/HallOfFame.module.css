@@ -44,13 +44,12 @@
 .clientsWrapper {
   width: 1360px;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  height: 600px;
+  height: 60vh;
   position: fixed;
 }
 
 .clients {
+  justify-self: end;
   align-self: end;
   text-align: end;
   font-size: 80px;

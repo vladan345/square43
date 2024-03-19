@@ -79,7 +79,7 @@ export default function page() {
             trigger: ".fifth",
             start: "20% bottom",
             end: "bottom 50%",
-            markers: true,
+          
           },
         });
 
@@ -116,7 +116,6 @@ export default function page() {
           scale: 0,
           scrollTrigger: {
             trigger: image,
-            markers: true,
             start: `${-imageHeight} bottom`,
             end: `bottom bottom`,
             ease: "ease",
@@ -140,7 +139,6 @@ export default function page() {
       scrollTrigger: {
         trigger: "#vid2",
         stagger: 1,
-        markers: true,
         start: "top bottom",
         end: "bottom top",
         scrub: true,
@@ -151,7 +149,6 @@ export default function page() {
       scrollTrigger: {
         trigger: "#vid2",
         stagger: 1,
-        markers: true,
         start: "top bottom",
         end: "bottom top",
         scrub: true,
@@ -162,7 +159,6 @@ export default function page() {
       scrollTrigger: {
         trigger: "#vid2",
         stagger: 1,
-        markers: true,
         start: "top bottom",
         end: "bottom top",
         scrub: true,
@@ -173,7 +169,6 @@ export default function page() {
       scrollTrigger: {
         trigger: "#vid2",
         stagger: 1,
-        markers: true,
         start: "top bottom",
         end: "bottom top",
         scrub: true,
@@ -186,7 +181,6 @@ export default function page() {
       scrollTrigger: {
         trigger: "#v1",
         stagger: 1,
-        markers: true,
         start: "top 60%",
         end: "top 20%",
         scrub: true,
@@ -198,7 +192,6 @@ export default function page() {
       scrollTrigger: {
         trigger: "#v2",
         stagger: 1,
-        markers: true,
         start: "top 60%",
         end: "top 20%",
         scrub: true,
@@ -210,7 +203,7 @@ export default function page() {
       scrollTrigger: {
         trigger: "#v3",
         stagger: 1,
-        markers: true,
+
         start: "top 60%",
         end: "top 20%",
         scrub: true,
@@ -220,24 +213,27 @@ export default function page() {
       "#digi",
       {
         x: 0,
+
         opacity: 0,
         scrollTrigger: {
-          trigger: "#digi",
+          trigger: "#vid1",
           stagger: 1,
           scrub: true,
-          markers: true,
-          start: "top center",
-          end: "",
+
+          start: "top 90%",
+          end: "bottom bottom",
         },
       },
       {
-        x: -200,
+        x: 1000,
+        y: 100,
+        color: "blue",
         opacity: 1,
         scrollTrigger: {
-          trigger: "#digi",
+          trigger: "#vid1",
+
           stagger: 1,
           scrub: true,
-          markers: true,
         },
       }
     );

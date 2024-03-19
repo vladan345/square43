@@ -17,6 +17,14 @@ export default function Header() {
   const { setLoading } = useLoading();
   const elem = useRef();
 
+  const linkList = [
+    { link: "Work", href: "/projects", position: "left" },
+    { link: "Services", href: "/services", position: "left" },
+    { link: "Career", href: "/career", position: "left" },
+    { link: "Studio", href: "/studio", position: "right" },
+    { link: "Thoughts", href: "/thoughts", position: "right" },
+    { link: "Contact", href: "/contact", position: "right" },
+  ];
   //Mobile menu
   useEffect(() => {
     if (opened) {
@@ -80,9 +88,13 @@ export default function Header() {
         </Link>
       </div> */}
       {opened ? (
-        <MobileMenu style={openedStyle} stateChange={setOpened} />
+        <MobileMenu
+          style={openedStyle}
+          stateChange={setOpened}
+          linkList={linkList}
+        />
       ) : (
-        <MobileMenu style={closedStyle} />
+        <MobileMenu style={closedStyle} linkList={linkList} />
       )}
       <div className={`${styles.Header}`}>
         <div className={`wrapper ${styles.wrapper}`}>
@@ -101,7 +113,7 @@ export default function Header() {
                 />
               </button>
             )}
-            <Link
+            {/* <Link
               onClick={handleClick}
               className={styles.headerLink}
               href="/projects"
@@ -121,7 +133,20 @@ export default function Header() {
               className={styles.headerLink}
             >
               Career
-            </Link>
+            </Link> */}
+            {linkList.map(
+              (element) =>
+                element.position === "left" && (
+                  <Link
+                    onClick={handleClick}
+                    href={`${element.href}`}
+                    className={styles.headerLink}
+                    key={element.link}
+                  >
+                    {element.link}
+                  </Link>
+                )
+            )}
           </div>
           <Link href="/" className={styles.logo} onClick={handleClick}>
             <Image
@@ -133,12 +158,12 @@ export default function Header() {
             />
           </Link>
           <div className={styles.rightNav}>
-            <Link
+            {/* <Link
               onClick={handleClick}
-              href="/inside"
+              href="/studio"
               className={styles.headerLink}
             >
-              Inside
+              Studio
             </Link>
 
             <Link
@@ -155,6 +180,26 @@ export default function Header() {
             >
               Contact
             </Link>
+            <Link
+              onClick={handleClick}
+              href="/ecom43"
+              className={`${styles.headerLink} ${styles.highlight}`}
+            >
+              Ecom 43
+            </Link> */}
+            {linkList.map(
+              (element) =>
+                element.position === "right" && (
+                  <Link
+                    onClick={handleClick}
+                    href={`${element.href}`}
+                    className={styles.headerLink}
+                    key={element.link}
+                  >
+                    {element.link}
+                  </Link>
+                )
+            )}
             <Link
               onClick={handleClick}
               href="/ecom43"

@@ -32,8 +32,20 @@ function MobileMenu({ stateChange, ...props }) {
       <p className={styles.name}>square43</p>
       <nav className={styles.nav}>
         <ul>
+          {props.linkList.map((element) => (
+            <li key={element.link} className={styles.listItem}>
+              <Link
+                onClick={handleClick}
+                href={`${element.href}`}
+                className={styles.link}
+              >
+                {element.link}
+              </Link>
+            </li>
+          ))}
+          {/*
           <li className={styles.listItem}>
-            <Link
+             <Link
               href="/projects"
               className={styles.link}
               onClick={handleClick}
@@ -73,7 +85,7 @@ function MobileMenu({ stateChange, ...props }) {
             <Link href="/contact" className={styles.link} onClick={handleClick}>
               Contact
             </Link>
-          </li>
+          </li> */}
           <li className={styles.listItem}>
             <Link href="/ecom43" className={styles.link} onClick={handleClick}>
               ECOM43
