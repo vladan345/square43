@@ -113,27 +113,7 @@ export default function Header() {
                 />
               </button>
             )}
-            {/* <Link
-              onClick={handleClick}
-              className={styles.headerLink}
-              href="/projects"
-            >
-              Work
-            </Link>
-            <Link
-              href="/services"
-              onClick={handleClick}
-              className={styles.headerLink}
-            >
-              Services
-            </Link>
-            <Link
-              onClick={handleClick}
-              href="/career"
-              className={styles.headerLink}
-            >
-              Career
-            </Link> */}
+
             {linkList.map(
               (element) =>
                 element.position === "left" && (
@@ -158,35 +138,6 @@ export default function Header() {
             />
           </Link>
           <div className={styles.rightNav}>
-            {/* <Link
-              onClick={handleClick}
-              href="/studio"
-              className={styles.headerLink}
-            >
-              Studio
-            </Link>
-
-            <Link
-              href="/thoughts"
-              onClick={handleClick}
-              className={styles.headerLink}
-            >
-              Thoughts
-            </Link>
-            <Link
-              onClick={handleClick}
-              href="/contact"
-              className={styles.headerLink}
-            >
-              Contact
-            </Link>
-            <Link
-              onClick={handleClick}
-              href="/ecom43"
-              className={`${styles.headerLink} ${styles.highlight}`}
-            >
-              Ecom 43
-            </Link> */}
             {linkList.map(
               (element) =>
                 element.position === "right" && (

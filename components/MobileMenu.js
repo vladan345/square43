@@ -43,49 +43,6 @@ function MobileMenu({ stateChange, ...props }) {
               </Link>
             </li>
           ))}
-          {/*
-          <li className={styles.listItem}>
-             <Link
-              href="/projects"
-              className={styles.link}
-              onClick={handleClick}
-            >
-              Work
-            </Link>
-          </li>
-          <li className={styles.listItem}>
-            <Link
-              href="/services"
-              className={styles.link}
-              onClick={handleClick}
-            >
-              Services
-            </Link>
-          </li>
-          <li className={styles.listItem}>
-            <Link href="/career" className={styles.link} onClick={handleClick}>
-              Career
-            </Link>
-          </li>
-          <li className={styles.listItem}>
-            <Link href="/inside" className={styles.link} onClick={handleClick}>
-              Inside
-            </Link>
-          </li>
-          <li className={styles.listItem}>
-            <Link
-              href="/thoughts"
-              className={styles.link}
-              onClick={handleClick}
-            >
-              Thoughts
-            </Link>
-          </li>
-          <li className={styles.listItem}>
-            <Link href="/contact" className={styles.link} onClick={handleClick}>
-              Contact
-            </Link>
-          </li> */}
           <li className={styles.listItem}>
             <Link href="/ecom43" className={styles.link} onClick={handleClick}>
               ECOM43
