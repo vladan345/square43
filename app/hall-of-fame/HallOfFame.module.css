@@ -46,12 +46,14 @@
   display: flex;
   height: 60vh;
   position: fixed;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .clients {
-  justify-self: end;
-  align-self: end;
-  text-align: end;
+  /* justify-self: end;
+  align-self: end; 
+  text-align: end;*/
   font-size: 80px;
   font-weight: 600;
   line-height: normal;

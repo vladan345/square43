@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.0",
+    "@mailchimp/mailchimp_marketing": "^3.0.80",
     "@sanity/client": "^6.12.1",
     "@splidejs/react-splide": "^0.7.12",
     "@studio-freight/lenis": "^1.0.34",

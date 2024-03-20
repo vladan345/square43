@@ -45,7 +45,15 @@
   display: flex;
   width: 1375px;
 }
-
+.row form {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 50%;
+}
+.row:last-of-type {
+  padding-bottom: 120px;
+}
 @media (max-width: 1440px) {
   .title {
     font-size: 8.3vw;
