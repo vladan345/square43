@@ -1,0 +1,173 @@
+.form {
+  position: relative;
+  margin-bottom: 120px;
+}
+.inputWrap {
+  width: 100%;
+  position: relative;
+  border-bottom: solid 4px black;
+  padding: 0 0 20px 0;
+}
+
+.inputWrap input:not([type="checkbox"]) {
+  border: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -3.2px;
+}
+.inputWrap input::placeholder {
+  color: #d0d0d0;
+  opacity: 1; /* Firefox */
+}
+
+.inputWrap input::-ms-input-placeholder {
+  /* Edge 12 -18 */
+  color: #d0d0d0;
+}
+.selectWrap {
+  position: absolute;
+  top: 75px;
+  left: 0;
+  background: #f8f8f8;
+  max-height: 400px;
+  width: 100%;
+  overflow: scroll;
+}
+.selectList {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+.selectList div {
+  font-size: 18px;
+  transition: 0.3s;
+  padding: 10px 10px;
+}
+.selectList div:hover {
+  background: white;
+}
+.countryInputWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.countryInputWrap img {
+  transition: 0.5s;
+}
+
+.submitBtn {
+  border: 0;
+  background: none;
+  margin-top: 40px;
+}
+
+.fieldHeading {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -3.2px;
+  margin-top: 40px;
+}
+.serviceWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.singleService input {
+  display: none;
+}
+.singleService label {
+  padding: 10px;
+  border: 3px solid black;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.singleService input:checked + label {
+  background: black;
+  color: white;
+}
+
+.budgetWrap {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.singleBudget {
+  width: calc(33% - 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+}
+.singleBudget input {
+  display: none;
+}
+.singleBudget label {
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.singleBudget input:checked + label {
+  background: black;
+  color: white;
+}
+
+.message {
+  display: block;
+  width: 100%;
+  font-family: "Matter-Bold";
+  padding: 20px 0;
+  font-size: 16px;
+  border: 0;
+  border-bottom: 3px solid black;
+  outline: none;
+}
+
+.response {
+  padding: 20px 10px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: -102px;
+}
+.success {
+  background: #55ff55;
+}
+.error {
+  background: #ff5555;
+  color: white;
+}
+@media (max-width: 900px) {
+  .inputWrap input:not([type="checkbox"]) {
+    font-size: 24px;
+    letter-spacing: -1px;
+  }
+  .inputWrap img {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .budgetWrap {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .singleBudget {
+    width: 100%;
+  }
+}

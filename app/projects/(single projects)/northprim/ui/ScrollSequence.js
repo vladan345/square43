@@ -42,7 +42,7 @@ function ScrollSequence() {
     });
 
     images[0].onload = render;
-    console.log(width / 2 - images[0].width / 2);
+    // console.log(width / 2 - images[0].width / 2);
     function render() {
       context.clearRect(0, 0, canvas.current.width, canvas.current.height);
       context.drawImage(

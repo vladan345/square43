@@ -61,7 +61,6 @@ function Posts() {
                   duration: 2,
                   ease: "power4",
                 });
-                console.log("Visible");
               }
             }}
           >
