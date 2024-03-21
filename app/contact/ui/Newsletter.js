@@ -40,6 +40,7 @@ export default function Newsletter() {
           return;
         } else {
           form.current.reset();
+          setCountry("Select country (optional)");
         }
       }}
     >

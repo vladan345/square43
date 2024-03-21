@@ -47,7 +47,9 @@ export async function subscribeToMailchimp(formData) {
     response.status = "success";
     return response;
   } catch (error) {
-    response.message = error;
+    // let text = JSON.parse(error.response.text);
+    // console.log(error.response.text.title);
+    response.message = "There has been a problem";
     response.status = "error";
     return response;
   }
