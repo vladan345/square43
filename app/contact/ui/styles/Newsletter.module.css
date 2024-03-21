@@ -1,3 +1,7 @@
+.form {
+  position: relative;
+  margin-bottom: 120px;
+}
 .inputWrap {
   width: 100%;
   position: relative;
@@ -111,7 +115,7 @@
   text-align: center;
   display: block;
   width: 100%;
-  padding: 40px 0;
+  padding: 10px 0;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
@@ -132,4 +136,38 @@
   border: 0;
   border-bottom: 3px solid black;
   outline: none;
+}
+
+.response {
+  padding: 20px 10px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: -102px;
+}
+.success {
+  background: #55ff55;
+}
+.error {
+  background: #ff5555;
+  color: white;
+}
+@media (max-width: 900px) {
+  .inputWrap input:not([type="checkbox"]) {
+    font-size: 24px;
+    letter-spacing: -1px;
+  }
+  .inputWrap img {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .budgetWrap {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .singleBudget {
+    width: 100%;
+  }
 }

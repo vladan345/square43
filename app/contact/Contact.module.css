@@ -49,7 +49,7 @@
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-  width: 50%;
+  width: 52.5%;
 }
 .row:last-of-type {
   padding-bottom: 120px;
@@ -82,6 +82,9 @@
   }
   .row {
     flex-direction: column;
+    width: 100%;
+  }
+  .row form {
     width: 100%;
   }
   .col:last-of-type {

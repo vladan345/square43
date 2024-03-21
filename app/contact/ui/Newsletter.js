@@ -4,6 +4,8 @@ import { countries } from "@/utils/data/countries";
 import { useState, useRef } from "react";
 import Image from "next/image";
 
+import { subscribeToMailchimp } from "@/actions/actions";
+
 export default function Newsletter() {
   const services = [
     "Web Development",
@@ -18,8 +20,9 @@ export default function Newsletter() {
   ];
   const [country, setCountry] = useState("Select country (optional)");
   const [isCountriesOpen, setIsCountriesOpen] = useState(false);
-
+  const [response, setResponse] = useState({});
   const select = useRef();
+  const form = useRef();
   const handleOptionSelect = (option) => {
     setCountry(option);
     // Set the value of the select element here
@@ -27,7 +30,28 @@ export default function Newsletter() {
     setIsCountriesOpen(false);
   };
   return (
-    <>
+    <form
+      className={styles.form}
+      ref={form}
+      action={async (formData) => {
+        const { message, status } = await subscribeToMailchimp(formData);
+        setResponse({ message, status });
+        if (status == "error") {
+          return;
+        } else {
+          form.current.reset();
+        }
+      }}
+    >
+      {response.status && (
+        <p
+          className={`${
+            response.status == "error" ? styles.error : styles.success
+          } ${styles.response}`}
+        >
+          {response.message}
+        </p>
+      )}
       <div className={styles.inputWrap}>
         <input
           type="text"
@@ -113,19 +137,19 @@ export default function Newsletter() {
           <input
             type="radio"
             name="budget"
-            id="10-20"
-            value="10k-20k"
+            id="10-30"
+            value="10k-30k"
             defaultChecked
           />
-          <label htmlFor="10-20">$10k-$20k</label>
+          <label htmlFor="10-30">$10k-$30k</label>
         </div>
         <div className={styles.singleBudget}>
-          <input type="radio" name="budget" id="20-30" value="20k-30k" />
-          <label htmlFor="20-30">$20k-$30k</label>
+          <input type="radio" name="budget" id="30-50" value="30k-50k" />
+          <label htmlFor="30-50">$30k-$50k</label>
         </div>
         <div className={styles.singleBudget}>
-          <input type="radio" name="budget" id="30+" value="30k+" />
-          <label htmlFor="30+">$30k+</label>
+          <input type="radio" name="budget" id="50k+" value="50k+" />
+          <label htmlFor="50k+">$50k+</label>
         </div>
       </div>
 
@@ -149,6 +173,6 @@ export default function Newsletter() {
           />
         </div>
       </button>
-    </>
+    </form>
   );
 }

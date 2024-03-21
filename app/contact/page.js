@@ -1,5 +1,5 @@
 import styles from "./Contact.module.css";
-import mailchimp from "@mailchimp/mailchimp_marketing";
+
 import Newsletter from "./ui/Newsletter";
 
 export const metadata = {
@@ -14,48 +14,7 @@ export const metadata = {
   metadataBase: new URL("https://square43.com/contact"),
 };
 
-mailchimp.setConfig({
-  apiKey: process.env.MAILCHIMP_API_KEY,
-  server: process.env.MAILCHIMP_API_SERVER, // e.g. us1
-});
-
 export default function Page() {
-  async function subscribeToMailchimp(formData) {
-    "use server";
-
-    const rawFormData = {
-      email: formData.get("email"),
-      firstName: formData.get("firstName"),
-      lastName: formData.get("lastName"),
-      country: formData.get("country"),
-      services: formData.getAll("service"),
-      budget: formData.get("budget"),
-      message: formData.get("message"),
-    };
-    rawFormData.services = rawFormData.services.join(", ");
-    console.log(rawFormData);
-    // mutate data
-    // revalidate cache
-    if (!rawFormData.email || !rawFormData.firstName || !rawFormData.services) {
-      throw new Error("Please fill in all the fields");
-    }
-
-    // try {
-    //   await mailchimp.lists.addListMember(process.env.MAILCHIMP_AUDIENCE_ID, {
-    //     email_address: rawFormData.email,
-    //     status: "subscribed",
-    //     merge_fields: {
-    //       FNAME: rawFormData.firstName,
-    //       LNAME: "Markovic",
-    //       SERVICE: "Web Development",
-    //       COUNTRY: rawFormData.country,
-    //     },
-    //   });
-    //   console.log("Success");
-    // } catch (error) {
-    //   console.log(error);
-    // }
-  }
   return (
     <main>
       <div className={styles.Contact}>
@@ -88,9 +47,7 @@ export default function Page() {
             </div>
           </div> */}
           <div className={styles.row}>
-            <form action={subscribeToMailchimp}>
-              <Newsletter />
-            </form>
+            <Newsletter />
           </div>
         </div>
       </div>

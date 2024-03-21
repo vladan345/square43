@@ -11,7 +11,6 @@ function Slider() {
   useEffect(() => {
     if (typeof window !== "undefined") {
       if (window.innerWidth <= 900) {
-        console.log("yes");
         setOptions({
           fixedWidth: "100%",
           speed: 2000,
