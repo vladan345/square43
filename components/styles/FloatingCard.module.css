@@ -1,17 +1,13 @@
 .main {
-  height: 250px;
-  width: 250px;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  height: 300px;
+  width: 300px;
+  background: linear-gradient(180deg, #fff 0%, #f8f8f8 100%);
   padding: 20px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  position: absolute;
   transition: 0.8s;
+  position: relative;
 }
 
 .button {
@@ -23,10 +19,11 @@
   position: absolute;
   bottom: 20px;
   right: 20px;
+  transition: 0.3s;
 }
 
 .main:hover .buttonBox {
-  display: none;
+  opacity: 0;
 }
 
 .title {
@@ -35,20 +32,16 @@
   font-weight: 700;
   margin-bottom: 20px;
   transition: all 0.8s;
-  word-break: break-all;
   z-index: 1;
   position: relative;
-  background: linear-gradient(to right, #000 0%, rgba(255, 255, 255, 0) 95%);
   display: inline;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  max-width: 260px;
 }
 
 .list {
   opacity: 0;
   pointer-events: none;
-  font-size: 22px;
+  font-size: 18px;
   position: relative;
   z-index: 1;
   transition: all 0.4s;
@@ -72,12 +65,14 @@
   background: radial-gradient(circle at 0 0, #7000ff, #0ff);
 }
 
-.main:hover .gradient,
 .main:hover {
-  width: 428px;
-  height: 428px;
-  padding: 40px;
+  height: 400px;
+  width: 400px;
   z-index: 3;
+}
+.main:hover .gradient {
+  width: 100%;
+  height: 100%;
 }
 
 .textbox {
@@ -104,11 +99,6 @@
   opacity: 0;
   pointer-events: none;
   transition: 0.4s all;
-}
-
-.main:hover .projectsArrowWrapper {
-  opacity: 1;
-  pointer-events: auto;
   display: flex;
   flex-direction: row;
   position: relative;
@@ -119,19 +109,22 @@
   justify-content: space-between;
 }
 
+.main:hover .projectsArrowWrapper {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .contentWrapper {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   height: 100%;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .viewProjects {
   font-size: 16px;
   font-weight: bold;
   align-self: center;
-}
-
-@media (max-width: 900px) {
 }
