@@ -13,7 +13,7 @@ export async function getAllServices() {
     const serviceData = await client.fetch(query);
     return serviceData;
   } catch (error) {
-    console.error("Error fetching projects data:", error.message);
+    console.error("Error fetching service data:", error.message);
     return null;
   }
 }

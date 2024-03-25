@@ -1,5 +1,5 @@
 import HomeContent from "./ui/HomeContent";
-import { getLatestProjects } from "@/utils/data/getData";
+import { getLatestProjects, getAllServices } from "@/utils/data/getData";
 
 export const metadata = {
   openGraph: {
@@ -15,9 +15,10 @@ export const metadata = {
 
 export default async function Page() {
   const projects = await getLatestProjects();
+  const services = await getAllServices();
   return (
     <>
-      <HomeContent projects={projects} />
+      <HomeContent projects={projects} services={services} />
     </>
   );
 }

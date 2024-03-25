@@ -5,6 +5,7 @@ import Hero from "./Hero";
 import Philosophy from "./Philosophy";
 import OurServices from "./OurServices";
 import More from "./More";
+import Services from "./Services";
 import Project from "./Project";
 import Contact from "./Contact";
 import Square from "@/components/Square";
@@ -14,7 +15,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function HomeContent({ projects }) {
+export default function HomeContent({ projects, services }) {
   const [state, setState] = useState(1);
   const main = useRef();
   useEffect(() => {
@@ -23,8 +24,8 @@ export default function HomeContent({ projects }) {
       sections.forEach((section, i) => {
         gsap.to(section, {
           scrollTrigger: {
-            start: "-30% top",
-            end: "70% top",
+            start: () => 0 - window.innerHeight * 0.3 + "top",
+            end: () => section.offsetHeight - window.innerHeight * 0.3 + "top",
             trigger: section,
             onToggle: (self) => self.isActive && setState(i + 1),
           },
@@ -47,7 +48,8 @@ export default function HomeContent({ projects }) {
           <OurServices />
         </div>
         <div className="section">
-          <More />
+          {/* <More /> */}
+          <Services services={services} />
         </div>
         <div className="section">
           <Project latestProjects={projects[0].projects} />

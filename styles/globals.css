@@ -284,6 +284,7 @@ i {
     height: 270px;
     right: auto !important;
     left: 50%;
+    opacity: 0;
     transform: translate(-50%, -50%) rotateZ(180deg);
   }
   #step5 {
