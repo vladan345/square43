@@ -16,7 +16,7 @@ export default function StudioContent() {
     `Word your <span class=${styles.gradientText}>copy well</span> 🔤
         - it speaks a thousand words.`,
     `Digital experience beyond your
-        <span className={styles.lineThrough}>expectations</span>
+        <span class=${styles.lineThrough}>expectations</span>
         <span class=${styles.gradientText}>imagination.</span> 💭`,
     `Socialize and get in
         <span class=${styles.gradientText}>touch</span> 👉👈 with your

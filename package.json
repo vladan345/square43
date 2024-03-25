@@ -16,6 +16,7 @@
     "@splidejs/react-splide": "^0.7.12",
     "@studio-freight/lenis": "^1.0.34",
     "clsx": "^2.1.0",
+    "googleapis": "^134.0.0",
     "graphql": "^16.8.1",
     "graphql-request": "^6.1.0",
     "gsap": "^3.12.5",
