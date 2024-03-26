@@ -46,7 +46,9 @@ export default function Page() {
               <p className={styles.titleLink}>Belgrade, Serbia</p>
             </div> */}
           </div>
-          <div className={styles.row}>{/* <Newsletter /> */}</div>
+          <div className={styles.row}>
+            <Newsletter />
+          </div>
         </div>
       </div>
     </main>

@@ -34,9 +34,10 @@ export async function subscribeToMailchimp(formData) {
 
   try {
     const auth = new google.auth.GoogleAuth({
-      credetials: {
+      credentials: {
+        projectId: "square43",
         client_email: process.env.GOOGLE_CLIENT_EMAIL,
-        private_key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, "\n"),
+        private_key: process.env.GOOGLE_PRIVATE_KEY,
       },
       scopes: [
         "https://www.googleapis.com/auth/drive",
@@ -68,6 +69,7 @@ export async function subscribeToMailchimp(formData) {
         ],
       },
     });
+
     // await mailchimp.lists.addListMember(process.env.MAILCHIMP_AUDIENCE_ID, {
     //   email_address: rawFormData.email,
     //   status: "subscribed",
