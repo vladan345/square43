@@ -1,0 +1,91 @@
+.studioExplanation {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding: 230px 0px;
+}
+
+.philosophy {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  justify-self: center;
+  gap: 100px;
+  padding-bottom: 180px;
+}
+
+.philosophyQuestion {
+  width: 50%;
+}
+
+.philosophyQuestion h3 {
+  font-size: 78px;
+  font-weight: bold;
+}
+
+.philosophyQuestion p {
+  font-size: 32px;
+  font-weight: 200;
+}
+
+.philosophyExplanation {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  row-gap: 40px;
+}
+
+.philosophyExplanation p {
+  font-size: 22px;
+  letter-spacing: -2%;
+  font-weight: 100;
+  color: #575757;
+}
+
+.credo {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 240px;
+}
+
+.credo h1 {
+  font-weight: bold;
+  font-size: 198px;
+}
+
+.ourCredo,
+.honesty,
+.perfection,
+.dedication,
+.teamwork {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.credo .ourCredo {
+  background: radial-gradient(at 10% top, #7000ff 10%, #0ff);
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.noshow {
+  background-clip: unset;
+  -webkit-background-clip: unset;
+  background: white;
+}
+
+.honesty,
+.perfection,
+.dedication,
+.teamwork {
+  background: linear-gradient(#7000ff, #0ff);
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 4px transparent;
+  color: white;
+}

@@ -20,7 +20,7 @@ export default function FloatingCard({ service }) {
             ))}
           </ul>
           <Link
-            href={"/services" + service.slug.current}
+            href={"/services/" + service.slug.current}
             className={styles.projectsArrowWrapper}
           >
             <div className={styles.viewProjects}>VIEW PROJECTS</div>

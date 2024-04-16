@@ -1,0 +1,34 @@
+.heroDescription {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 220px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.tagline {
+  /* position: fixed; */
+  top: 35%;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -3.2px;
+  background: radial-gradient(#7000ff 40%, #0ff);
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  width: 800px;
+  text-align: center;
+  z-index: 0;
+}
+.tagline .gradientText {
+  -webkit-text-fill-color: transparent;
+}
+
+.heroImage {
+  width: 100vw;
+  height: 100vh;
+  z-index: 4;
+  position: relative;
+}

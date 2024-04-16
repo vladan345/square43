@@ -1,11 +1,11 @@
 "use server";
-import mailchimp from "@mailchimp/mailchimp_marketing";
+// import mailchimp from "@mailchimp/mailchimp_marketing";
 import { google } from "googleapis";
 
-mailchimp.setConfig({
-  apiKey: process.env.MAILCHIMP_API_KEY,
-  server: process.env.MAILCHIMP_API_SERVER, // e.g. us1
-});
+// mailchimp.setConfig({
+//   apiKey: process.env.MAILCHIMP_API_KEY,
+//   server: process.env.MAILCHIMP_API_SERVER, // e.g. us1
+// });
 
 export async function subscribeToMailchimp(formData) {
   "use server";

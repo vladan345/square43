@@ -1,9 +1,4 @@
-import Hero from "./ui/Hero";
-import Brand from "./ui/Brand";
-import Buildings from "./ui/Buildings";
-import Studio from "./ui/Studio";
-import Members from "./ui/Members";
-import MembersCards from "./ui/MembersCards";
+import StudioContent from "./ui/StudioContent";
 
 export const metadata = {
   openGraph: {
@@ -22,12 +17,7 @@ export const metadata = {
 export default function Page() {
   return (
     <>
-      <Hero />
-      <Brand />
-      <Buildings />
-      <Studio />
-      <Members />
-      <MembersCards />
+      <StudioContent />
     </>
   );
 }

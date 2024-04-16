@@ -1,7 +1,7 @@
 .main {
   height: 300px;
   width: 300px;
-  background: linear-gradient(180deg, #fff 0%, #f8f8f8 100%);
+  background: linear-gradient(180deg, #c0bafa 0%, #ecbaf9 50%, #f8f8f8 100%);
   padding: 20px;
   display: flex;
   justify-content: space-between;
