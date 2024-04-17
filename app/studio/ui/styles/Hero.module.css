@@ -7,14 +7,14 @@
 }
 
 .tagline {
-  /* position: fixed; */
+  position: fixed;
   top: 35%;
   font-size: 100px;
   font-weight: 700;
-  line-height: 1.05;
+  line-height: 0.95;
   letter-spacing: -3.2px;
   background: radial-gradient(#7000ff 40%, #0ff);
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-position: center;
   background-clip: text;
   -webkit-background-clip: text;

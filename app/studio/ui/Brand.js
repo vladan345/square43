@@ -1,19 +1,70 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import styles from "./styles/Brand.module.css";
 import Image from "next/image";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Brand() {
+  const container = useRef();
+
+  useGSAP(
+    () => {
+      gsap.set(".borders", {
+        width: 0,
+        height: 0,
+      });
+      gsap.to(".borders", {
+        width: "calc(100% + 2px)",
+        height: "calc(100% + 2px)",
+        duration: 1,
+        scrollTrigger: {
+          trigger: ".techTrigger",
+          start: "-20% center",
+          end: window.innerHeight < 900 ? "top center" : "center center",
+          toggleActions: "restart none reverse none",
+        },
+      });
+
+      gsap.from("#brandNameContainer", {
+        x: -200,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: "#brandName",
+          start: "top center",
+          end: "top 30%",
+          scrub: true,
+          stagger: 1,
+        },
+      });
+
+      gsap.from("#brandContent", {
+        opacity: 0,
+        scrollTrigger: {
+          trigger: "#brandName",
+          start: "top 30%",
+          end: "bottom center",
+          scrub: true,
+          stagger: 1,
+        },
+      });
+    },
+    { scope: container.current }
+  );
+
   return (
-    <>
+    <div ref={container}>
       <div className={styles.brand}>
-        <div className={styles.brandName}>
-          <div className={styles.brandNameContainer}>
+        <div className={styles.brandName} id="brandName">
+          <div className={styles.brandNameContainer} id="brandNameContainer">
             <h3>Behind the Brand</h3>
             <p>Mistakes had been made</p>
           </div>
         </div>
-        <div className={styles.brandContent}>
+        <div className={styles.brandContent} id="brandContent">
           <p>
             In 2012, our founder NT opened an agency with a couple of his
             friends. With the right amount of peer pressure, he agreed to name
@@ -28,14 +79,22 @@ export default function Brand() {
 
       <div className={styles.squareVisualExplanation}>
         <div className={styles.squareContainerLeft}>
-          <div className={styles.inner}>
-            <div className={styles.innerGradient}></div>
+          <div className={` ${styles.inner} techTrigger`}>
+            <div className={`${styles.overlayT} borders`}></div>
+            <div className={`${styles.overlayB} borders`}></div>
+            <div className={styles.innerGradientContainer}>
+              <div className={styles.innerGradient}></div>
+            </div>
           </div>
           <div className={styles.horizontalLine}></div>
         </div>
         <div className={styles.squareContainerMiddle}>
-          <div className={styles.innerTop}>
-            <p>Why Square?</p>
+          <div className={` ${styles.innerTop} techTrigger`}>
+            <div className={`${styles.overlayT} borders`}></div>
+            <div className={`${styles.overlayB} borders`}></div>
+            <div className={styles.innerTopContainer}>
+              <p>Why Square?</p>
+            </div>
           </div>
           <div className={styles.verticalLine}></div>
           <div className={styles.innerMiddle}>
@@ -48,12 +107,20 @@ export default function Brand() {
           </div>
           <div className={styles.verticalLine}></div>
           <div className={styles.innerBottom}>
-            <p>Why 43?</p>
+            <div className={`${styles.overlayT} borders`}></div>
+            <div className={`${styles.overlayB} borders`}></div>
+            <div className={styles.innerBottomContainer}>
+              <p>Why 43?</p>
+            </div>
           </div>
         </div>
         <div className={styles.squareContainerRight}>
-          <div className={styles.inner}>
-            <p>43</p>
+          <div className={` ${styles.inner} techTrigger`}>
+            <div className={`${styles.overlayT} borders`}></div>
+            <div className={`${styles.overlayB} borders`}></div>
+            <div className={styles.innerGradientContainer}>
+              <p>43</p>
+            </div>
           </div>
           <div className={styles.horizontalLine}></div>
         </div>
@@ -89,6 +156,6 @@ export default function Brand() {
           alt="znak2"
         />
       </div>
-    </>
+    </div>
   );
 }

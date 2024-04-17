@@ -33,7 +33,14 @@ export default function Buildings() {
       <div className={styles.videoSection}>
         <div className={styles.vid}>
           <div className={styles.top}></div>
-          <div className={styles.middle}></div>
+          <div className={styles.middle}>
+            <Image
+              src="/images/Frame.svg"
+              width={330}
+              height={330}
+              alt="square43 logo"
+            />
+          </div>
           <div className={styles.bottom}></div>
           <video
             src={"/images/S43_Skies.mp4"}
@@ -48,13 +55,13 @@ export default function Buildings() {
             muted
           ></video>
         </div>
-        <div className={styles.buildingsConclusion}>
-          <h2>In that light, Square43 Studio became a meeting point...</h2>
-          <p>
-            ...where business meets creativity, as well as a meeting point for
-            all creatives of the world.
-          </p>
-        </div>
+      </div>
+      <div className={styles.buildingsConclusion}>
+        <h2>In that light, Square43 Studio became a meeting point...</h2>
+        <p>
+          ...where business meets creativity, as well as a meeting point for all
+          creatives of the world.
+        </p>
       </div>
     </>
   );
