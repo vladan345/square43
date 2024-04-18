@@ -3,44 +3,6 @@
   flex-direction: column;
   width: 100%;
   align-items: center;
-  padding: 230px 0px;
-}
-
-.philosophy {
-  display: flex;
-  flex-direction: row;
-  width: 1200px;
-  justify-self: center;
-  gap: 100px;
-  padding-bottom: 180px;
-}
-
-.philosophyQuestion {
-  width: 50%;
-}
-
-.philosophyQuestion h3 {
-  font-size: 78px;
-  font-weight: bold;
-}
-
-.philosophyQuestion p {
-  font-size: 32px;
-  font-weight: 200;
-}
-
-.philosophyExplanation {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  row-gap: 40px;
-}
-
-.philosophyExplanation p {
-  font-size: 22px;
-  letter-spacing: -2%;
-  font-weight: 100;
-  color: #575757;
 }
 
 .credo {

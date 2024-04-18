@@ -6,24 +6,6 @@ export default function Studio() {
   return (
     <>
       <div className={styles.studioExplanation}>
-        <div className={styles.philosophy}>
-          <div className={styles.philosophyQuestion}>
-            <h3>Why studio?</h3>
-            <p>A philosophical distinction.</p>
-          </div>
-          <div className={styles.philosophyExplanation}>
-            <p>
-              We feel that the term “Agency” carries bad legacy emotions. Every
-              agency out there has its purpose, but that is not our approach to
-              a creative industry. Agencies are here to please you by delivering
-              what you expect.
-            </p>
-            <p>
-              In a studio, the aim is not to please, but rather amaze with a
-              creative approach that ventures beyond what is already given.
-            </p>
-          </div>
-        </div>
         <div className={styles.credo}>
           <h1 className={styles.ourCredo}>
             <span>O</span>

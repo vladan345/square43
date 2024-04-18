@@ -13,6 +13,76 @@ export default function Brand() {
 
   useGSAP(
     () => {
+      gsap.from(".imageLeft", {
+        x: -200,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: ".imageLeft",
+          start: "top center",
+          end: "bottom center",
+          scrub: true,
+          stagger: 1,
+        },
+      });
+
+      gsap.from(".imageRight", {
+        x: 200,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: ".imageLeft",
+          start: "top center",
+          end: "bottom center",
+          scrub: true,
+          stagger: 1,
+        },
+      });
+
+      gsap.from(".brandLeftContainer", {
+        x: -200,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: ".brandLeft",
+          start: "top 80%",
+          end: "top center",
+          scrub: true,
+          stagger: 1,
+        },
+      });
+
+      gsap.from(".brandRight", {
+        opacity: 0,
+        scrollTrigger: {
+          trigger: ".brandLeft",
+          start: "top 60%",
+          end: "bottom center",
+          scrub: true,
+          stagger: 1,
+        },
+      });
+
+      gsap.from(".brandNameContainer", {
+        x: -200,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: ".brandName",
+          start: "top 80%",
+          end: "top center",
+          scrub: true,
+          stagger: 1,
+        },
+      });
+
+      gsap.from(".brandContent", {
+        opacity: 0,
+        scrollTrigger: {
+          trigger: ".brandName",
+          start: "top 60%",
+          end: "bottom center",
+          scrub: true,
+          stagger: 1,
+        },
+      });
+
       gsap.set(".borders", {
         width: 0,
         height: 0,
@@ -23,32 +93,55 @@ export default function Brand() {
         duration: 1,
         scrollTrigger: {
           trigger: ".techTrigger",
-          start: "-20% center",
+          start: "top center",
           end: window.innerHeight < 900 ? "top center" : "center center",
           toggleActions: "restart none reverse none",
         },
       });
 
-      gsap.from("#brandNameContainer", {
-        x: -200,
-        opacity: 0,
+      gsap.set(".verticalT", { height: 0 });
+      gsap.set(".verticalB", { height: 0 });
+      gsap.set(".horizontalL", { width: 0 });
+      gsap.set(".horizontalR", { width: 0 });
+
+      gsap.to(".verticalT", {
+        height: "100%",
+        duration: 1,
         scrollTrigger: {
-          trigger: "#brandName",
-          start: "top center",
-          end: "top 30%",
-          scrub: true,
-          stagger: 1,
+          trigger: ".techTrigger",
+          start: "-20% center",
+          end: window.innerHeight < 900 ? "top center" : "center center",
+          toggleActions: "restart none reverse none",
         },
       });
-
-      gsap.from("#brandContent", {
-        opacity: 0,
+      gsap.to(".verticalB", {
+        height: "100%",
+        duration: 1,
         scrollTrigger: {
-          trigger: "#brandName",
-          start: "top 30%",
-          end: "bottom center",
-          scrub: true,
-          stagger: 1,
+          trigger: ".techTrigger",
+          start: "-20% center",
+          end: window.innerHeight < 900 ? "top center" : "center center",
+          toggleActions: "restart none reverse none",
+        },
+      });
+      gsap.to(".horizontalL", {
+        width: "100%",
+        duration: 1,
+        scrollTrigger: {
+          trigger: ".techTrigger",
+          start: "-20% center",
+          end: window.innerHeight < 900 ? "top center" : "center center",
+          toggleActions: "restart none reverse none",
+        },
+      });
+      gsap.to(".horizontalR", {
+        width: "100%",
+        duration: 1,
+        scrollTrigger: {
+          trigger: ".techTrigger",
+          start: "-20% center",
+          end: window.innerHeight < 900 ? "top center" : "center center",
+          toggleActions: "restart none reverse none",
         },
       });
     },
@@ -58,13 +151,13 @@ export default function Brand() {
   return (
     <div ref={container}>
       <div className={styles.brand}>
-        <div className={styles.brandName} id="brandName">
-          <div className={styles.brandNameContainer} id="brandNameContainer">
+        <div className={` ${styles.brandName} brandName`}>
+          <div className={` ${styles.brandNameContainer} brandNameContainer`}>
             <h3>Behind the Brand</h3>
             <p>Mistakes had been made</p>
           </div>
         </div>
-        <div className={styles.brandContent} id="brandContent">
+        <div className={` ${styles.brandContent} brandContent`}>
           <p>
             In 2012, our founder NT opened an agency with a couple of his
             friends. With the right amount of peer pressure, he agreed to name
@@ -86,7 +179,7 @@ export default function Brand() {
               <div className={styles.innerGradient}></div>
             </div>
           </div>
-          <div className={styles.horizontalLine}></div>
+          <div className={`${styles.horizontalLine} horizontalL`}></div>
         </div>
         <div className={styles.squareContainerMiddle}>
           <div className={` ${styles.innerTop} techTrigger`}>
@@ -96,16 +189,21 @@ export default function Brand() {
               <p>Why Square?</p>
             </div>
           </div>
-          <div className={styles.verticalLine}></div>
-          <div className={styles.innerMiddle}>
-            <Image
-              src={"/images/43black.svg"}
-              width={400}
-              height={400}
-              alt="43"
-            />
+          <div className={`${styles.verticalLine} verticalT`}></div>
+          <div className={styles.innerMiddleContainer}>
+            <div className={`${styles.overlayT} borders`}></div>
+            <div className={`${styles.overlayB} borders`}></div>
+            <div className={styles.innerMiddle}>
+              <Image
+                src={"/images/43black.svg"}
+                width={400}
+                height={400}
+                alt="43"
+              />
+            </div>
           </div>
-          <div className={styles.verticalLine}></div>
+
+          <div className={` ${styles.verticalLine} verticalB`}></div>
           <div className={styles.innerBottom}>
             <div className={`${styles.overlayT} borders`}></div>
             <div className={`${styles.overlayB} borders`}></div>
@@ -122,18 +220,18 @@ export default function Brand() {
               <p>43</p>
             </div>
           </div>
-          <div className={styles.horizontalLine}></div>
+          <div className={` ${styles.horizontalLine} horizontalR`}></div>
         </div>
       </div>
 
       <div className={styles.brandOrigin}>
-        <div className={styles.brandLeft}>
-          <div className={styles.brandLeftContainer}>
+        <div className={` ${styles.brandLeft} brandLeft`}>
+          <div className={` ${styles.brandLeftContainer} brandLeftContainer`}>
             <p>Long story short: we saw a sign.</p>
             <p>Literally.</p>
           </div>
         </div>
-        <div className={styles.brandRight}>
+        <div className={` ${styles.brandRight} brandRight`}>
           <p>
             As we were leaving our office building afer another name
             brainstorming session, our gaze fell on a simple sign on the
@@ -148,12 +246,14 @@ export default function Brand() {
           width={980}
           height={257}
           alt="znak1"
+          className="imageLeft"
         />
         <Image
           src={"/images/Znak 1.png"}
           width={300}
           height={257}
           alt="znak2"
+          className="imageRight"
         />
       </div>
     </div>

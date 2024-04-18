@@ -1,14 +1,37 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import styles from "./styles/Buildings.module.css";
 import Image from "next/image";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Buildings() {
+  const container = useRef();
+
+  useGSAP(
+    () => {
+      gsap.from(".conclusion", {
+        opacity: 0,
+        scrollTrigger: {
+          trigger: ".conclusion",
+          start: "top 60%",
+          end: "bottom center",
+          stagger: 1,
+          scrub: true,
+        },
+      });
+    },
+    { scope: container.current }
+  );
+
   return (
-    <>
-      <div className={styles.conclusion}>
-        <h2>It suddenly made sense.</h2>
-        <p>
+    <div ref={container}>
+      <div className={` ${styles.conclusion} `}>
+        <h2 className="conclusion">It suddenly made sense.</h2>
+        <p className="conclusion">
           Squares or blocks of identical appearence are symbols of New Belgrade
         </p>
         <div className={styles.buildingWrapper}>
@@ -56,13 +79,6 @@ export default function Buildings() {
           ></video>
         </div>
       </div>
-      <div className={styles.buildingsConclusion}>
-        <h2>In that light, Square43 Studio became a meeting point...</h2>
-        <p>
-          ...where business meets creativity, as well as a meeting point for all
-          creatives of the world.
-        </p>
-      </div>
-    </>
+    </div>
   );
 }
