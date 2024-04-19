@@ -1,13 +1,90 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import styles from "./styles/Studio.module.css";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+
+// import SplitType from "split-type";
+
+gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(SplitType);
 
 export default function Studio() {
+  const container = useRef();
+
+  // const myText = new SplitType("#honesty");
+
+  useGSAP(
+    () => {
+      gsap.from(".ourCredo", {
+        opacity: 0,
+        scrollTrigger: {
+          trigger: ".ourCredo",
+          start: "top 60%",
+          end: "bottom 70%",
+          stagger: 1,
+          scrub: true,
+        },
+      });
+      gsap.from(".honesty", {
+        opacity: 0,
+        yPercent: 50,
+        duration: 1,
+        scrollTrigger: {
+          trigger: ".honesty",
+          start: "top 60%",
+          end: "bottom 70%",
+          stagger: 1,
+          scrub: true,
+        },
+      });
+      gsap.from(".perfection", {
+        opacity: 0,
+        yPercent: 50,
+        duration: 1,
+        scrollTrigger: {
+          trigger: ".perfection",
+          start: "top 60%",
+          end: "bottom 70%",
+          stagger: 1,
+          scrub: true,
+        },
+      });
+      gsap.from(".dedication", {
+        opacity: 0,
+        yPercent: 50,
+        duration: 1,
+        scrollTrigger: {
+          trigger: ".dedication",
+          start: "top 60%",
+          end: "bottom 70%",
+          stagger: 1,
+          scrub: true,
+        },
+      });
+      gsap.from(".teamwork", {
+        opacity: 0,
+        yPercent: 50,
+        duration: 1,
+        scrollTrigger: {
+          trigger: ".teamwork",
+          start: "top 60%",
+          end: "bottom 70%",
+          stagger: 1,
+          scrub: true,
+          markers: true,
+        },
+      });
+    },
+    { scope: container.current }
+  );
+
   return (
-    <>
+    <div ref={container}>
       <div className={styles.studioExplanation}>
-        <div className={styles.credo}>
-          <h1 className={styles.ourCredo}>
+        <div className={` ${styles.credo} credo`}>
+          <h1 className={` ${styles.ourCredo} ourCredo`}>
             <span>O</span>
             <span>U</span>
             <span>R</span>
@@ -18,7 +95,7 @@ export default function Studio() {
             <span>D</span>
             <span>O</span>
           </h1>
-          <h1 className={styles.honesty}>
+          <h1 className={` ${styles.honesty} honesty`}>
             <span>H</span>
             <span>O</span>
             <span>N</span>
@@ -27,7 +104,7 @@ export default function Studio() {
             <span>T</span>
             <span>Y</span>
           </h1>
-          <h1 className={styles.perfection}>
+          <h1 className={` ${styles.perfection} perfection`}>
             <span>P</span>
             <span>E</span>
             <span>R</span>
@@ -39,7 +116,7 @@ export default function Studio() {
             <span>O</span>
             <span>N</span>
           </h1>
-          <h1 className={styles.dedication}>
+          <h1 className={` ${styles.dedication} dedication`}>
             <span>D</span>
             <span>E</span>
             <span>D</span>
@@ -51,7 +128,7 @@ export default function Studio() {
             <span>O</span>
             <span>N</span>
           </h1>
-          <h1 className={styles.teamwork}>
+          <h1 className={` ${styles.teamwork} teamwork`}>
             <span>T</span>
             <span>E</span>
             <span>A</span>
@@ -63,6 +140,6 @@ export default function Studio() {
           </h1>
         </div>
       </div>
-    </>
+    </div>
   );
 }

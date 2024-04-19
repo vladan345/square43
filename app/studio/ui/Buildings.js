@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import styles from "./styles/Buildings.module.css";
 import Image from "next/image";
 import gsap from "gsap";
@@ -10,6 +10,20 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Buildings() {
   const container = useRef();
+
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const updateMousePosition = (ev) => {
+      setMousePosition({ x: ev.clientX, y: ev.clientY });
+    };
+
+    window.addEventListener("mousemove", updateMousePosition);
+
+    return () => {
+      window.removeEventListener("mousemove", updateMousePosition);
+    };
+  }, []);
 
   useGSAP(
     () => {
@@ -28,14 +42,19 @@ export default function Buildings() {
   );
 
   return (
-    <div ref={container}>
+    <div ref={container} className={styles.buildings}>
       <div className={` ${styles.conclusion} `}>
         <h2 className="conclusion">It suddenly made sense.</h2>
         <p className="conclusion">
           Squares or blocks of identical appearence are symbols of New Belgrade
         </p>
         <div className={styles.buildingGradientWrapper}>
-          <div className={styles.buildingWrapper}>
+          <div
+            className={styles.buildingWrapper}
+            style={{
+              background: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, #0ff, #7000ff, #353535 80%)`,
+            }}
+          >
             <Image
               src={"/images/Zgrada.png"}
               alt="zgrada"
@@ -72,7 +91,7 @@ export default function Buildings() {
             width={0}
             height={0}
             sizes="100vw"
-            style={{ width: "100vw", height: "100vh" }}
+            style={{ width: "100%", height: "100%" }}
             type="video/mp4"
             autoPlay
             loop

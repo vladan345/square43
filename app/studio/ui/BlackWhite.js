@@ -18,11 +18,10 @@ export default function BlackWhite() {
         scrollTrigger: {
           trigger: ".blackWhite",
           start: "top top",
-          end: "center top",
+          end: "30% top",
           stagger: 1,
           scrub: true,
           duration: 1,
-          markers: true,
         },
       });
       gsap.to(".h2", {
@@ -30,7 +29,7 @@ export default function BlackWhite() {
         scrollTrigger: {
           trigger: ".blackWhite",
           start: "top top",
-          end: "center top",
+          end: "30% top",
           stagger: 1,
           scrub: true,
           duration: 1,

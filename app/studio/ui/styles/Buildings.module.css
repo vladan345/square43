@@ -1,3 +1,8 @@
+.buildings {
+  height: 100%;
+  width: 100%;
+}
+
 .conclusion {
   height: auto;
   display: flex;
@@ -37,15 +42,6 @@
   bottom: 0px;
 }
 
-.buildingWrapper {
-  background: radial-gradient(
-    circle at center center,
-    #0ff,
-    #7000ff,
-    #353535 80%
-  );
-}
-
 .underBuildings {
   height: 430px;
   width: 100vw;
@@ -59,11 +55,16 @@
   margin-bottom: 0;
   color: white;
 }
+
+.videoSection {
+  position: relative;
+}
 .videoSection video {
   margin-bottom: -10px;
   position: absolute;
   z-index: 0;
   object-fit: cover;
+  top: 0;
 }
 
 .vid {

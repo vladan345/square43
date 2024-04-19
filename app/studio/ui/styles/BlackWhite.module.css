@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   background: #202020;
-  height: 110vh;
   color: #202020;
 }
 .buildingsConclusion {
@@ -43,7 +42,7 @@
   width: 1200px;
   justify-self: center;
   gap: 100px;
-  padding: 180px 0px 180px;
+  padding: 0px 0px 180px;
 }
 
 .philosophyQuestion {
