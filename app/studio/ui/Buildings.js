@@ -34,17 +34,19 @@ export default function Buildings() {
         <p className="conclusion">
           Squares or blocks of identical appearence are symbols of New Belgrade
         </p>
-        <div className={styles.buildingWrapper}>
-          <Image
-            src={"/images/Zgrada.png"}
-            alt="zgrada"
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{ width: "100vw", height: "auto" }}
-          />
+        <div className={styles.buildingGradientWrapper}>
+          <div className={styles.buildingWrapper}>
+            <Image
+              src={"/images/Zgrada.png"}
+              alt="zgrada"
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: "100vw", height: "auto" }}
+            />
+          </div>
+          <div className={styles.buildingGradient}></div>
         </div>
-        <div className={styles.buildingGradient}></div>
         <div className={styles.underBuildings}>
           <p>
             On top of that, a square is a meeting point of multiple cross-roads,

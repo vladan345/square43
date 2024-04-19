@@ -18,10 +18,11 @@ export default function BlackWhite() {
         scrollTrigger: {
           trigger: ".blackWhite",
           start: "top top",
-          end: "10% top",
+          end: "center top",
           stagger: 1,
           scrub: true,
-          duration: 3,
+          duration: 1,
+          markers: true,
         },
       });
       gsap.to(".h2", {
@@ -29,10 +30,10 @@ export default function BlackWhite() {
         scrollTrigger: {
           trigger: ".blackWhite",
           start: "top top",
-          end: "10% top",
+          end: "center top",
           stagger: 1,
           scrub: true,
-          duration: 3,
+          duration: 1,
         },
       });
     },
