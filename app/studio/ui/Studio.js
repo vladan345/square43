@@ -15,12 +15,42 @@ export default function Studio() {
       gsap.to("#honesty", {
         letterSpacing: "2.8rem",
         opacity: 1,
+        duration: 0.7,
         scrollTrigger: {
           trigger: ".honestyWrapper",
           start: "top center",
           end: "bottom center",
-          stagger: 1,
-          scrub: true,
+          toggleActions: "play none none none",
+        },
+      });
+      gsap.to("#perfection", {
+        letterSpacing: "3px",
+        opacity: 1,
+        scrollTrigger: {
+          trigger: "#perfection",
+          start: "top center",
+          end: "bottom center",
+          toggleActions: "play none none none",
+        },
+      });
+      gsap.to("#dedication", {
+        letterSpacing: "6px",
+        opacity: 1,
+        scrollTrigger: {
+          trigger: "#dedication",
+          start: "top center",
+          end: "bottom center",
+          toggleActions: "play none none none",
+        },
+      });
+      gsap.to("#teamwork", {
+        letterSpacing: "9px",
+        opacity: 1,
+        scrollTrigger: {
+          trigger: "#teamwork",
+          start: "top center",
+          end: "bottom center",
+          toggleActions: "play none none none",
         },
       });
     },
@@ -38,9 +68,15 @@ export default function Studio() {
               HONESTY
             </h1>
           </div>
-          <h1 className={` ${styles.perfection} perfection`}>PERFECTION</h1>
-          <h1 className={` ${styles.dedication} dedication`}>DEDICATION</h1>
-          <h1 className={` ${styles.teamwork} teamwork`}>TEAMWORK</h1>
+          <h1 className={` ${styles.perfection} perfection`} id="perfection">
+            PERFECTION
+          </h1>
+          <h1 className={` ${styles.dedication} dedication`} id="dedication">
+            DEDICATION
+          </h1>
+          <h1 className={` ${styles.teamwork} teamwork`} id="teamwork">
+            TEAMWORK
+          </h1>
         </div>
       </div>
     </div>

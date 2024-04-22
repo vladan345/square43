@@ -17,8 +17,8 @@ export default function BlackWhite() {
         color: "#202020",
         scrollTrigger: {
           trigger: ".blackWhite",
-          start: "top 70%",
-          end: "top 40%",
+          start: "30% center",
+          end: "50% center",
           stagger: 1,
           scrub: true,
           duration: 1,
@@ -29,8 +29,8 @@ export default function BlackWhite() {
         color: "#202020",
         scrollTrigger: {
           trigger: ".blackWhite",
-          start: "top 70%",
-          end: "top 40%",
+          start: "30% center",
+          end: "50% center",
           stagger: 1,
           scrub: true,
           duration: 1,
@@ -40,8 +40,8 @@ export default function BlackWhite() {
         color: "#202020",
         scrollTrigger: {
           trigger: ".blackWhite",
-          start: "top 70%",
-          end: "top 40%",
+          start: "30% center",
+          end: "50% center",
           stagger: 1,
           scrub: true,
           duration: 1,

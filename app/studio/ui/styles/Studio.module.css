@@ -27,15 +27,21 @@
 }
 
 .perfection {
-  letter-spacing: 3px;
+  letter-spacing: -50px;
+  opacity: 0;
+  text-align: left;
 }
 
 .dedication {
-  letter-spacing: 6px;
+  letter-spacing: -50px;
+  opacity: 0;
+  text-align: right;
 }
 
 .teamwork {
-  letter-spacing: 9px;
+  letter-spacing: -50px;
+  opacity: 0;
+  text-align: center;
 }
 
 .credo .ourCredo {
@@ -65,7 +71,6 @@
 }
 
 .honestyWrapper {
-  width: 1400;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
