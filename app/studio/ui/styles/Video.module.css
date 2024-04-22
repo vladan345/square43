@@ -1,0 +1,42 @@
+.videoSection {
+  position: relative;
+}
+.videoSection video {
+  margin-bottom: -10px;
+  position: absolute;
+  z-index: 0;
+  object-fit: cover;
+  top: 0;
+}
+
+.vid {
+  width: 100vw;
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top,
+.bottom {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(#202020, #20202000);
+  z-index: 10;
+}
+
+.middle {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -3%;
+}
+
+.bottom {
+  background: linear-gradient(#20202000, #202020);
+}

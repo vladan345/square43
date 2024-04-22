@@ -5,6 +5,7 @@ import Studio from "./ui/Studio";
 import Members from "./ui/Members";
 import MembersCards from "./ui/MembersCards";
 import BlackWhite from "./ui/BlackWhite";
+import Video from "./ui/Video";
 
 export const metadata = {
   openGraph: {
@@ -26,6 +27,7 @@ export default function Page() {
       <Hero />
       <Brand />
       <Buildings />
+      <Video />
       <BlackWhite />
       <Studio />
       <Members />

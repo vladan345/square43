@@ -17,19 +17,31 @@ export default function BlackWhite() {
         color: "#202020",
         scrollTrigger: {
           trigger: ".blackWhite",
-          start: "top top",
-          end: "30% top",
+          start: "top 70%",
+          end: "top 40%",
           stagger: 1,
           scrub: true,
           duration: 1,
+          markers: true,
         },
       });
       gsap.to(".h2", {
         color: "#202020",
         scrollTrigger: {
           trigger: ".blackWhite",
-          start: "top top",
-          end: "30% top",
+          start: "top 70%",
+          end: "top 40%",
+          stagger: 1,
+          scrub: true,
+          duration: 1,
+        },
+      });
+      gsap.to(".businessParagraph", {
+        color: "#202020",
+        scrollTrigger: {
+          trigger: ".blackWhite",
+          start: "top 70%",
+          end: "top 40%",
           stagger: 1,
           scrub: true,
           duration: 1,
@@ -44,7 +56,7 @@ export default function BlackWhite() {
         <h2 className="h2">
           In that light, Square43 Studio became a meeting point...
         </h2>
-        <p>
+        <p className="businessParagraph">
           ...where business meets creativity, as well as a meeting point for all
           creatives of the world.
         </p>

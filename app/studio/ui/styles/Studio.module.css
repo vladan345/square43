@@ -16,14 +16,26 @@
   font-size: 198px;
 }
 
-.ourCredo,
-.honesty,
-.perfection,
-.dedication,
+.ourCredo {
+  letter-spacing: 9px;
+}
+
+.honesty {
+  letter-spacing: -50px;
+  opacity: 0;
+  text-align: center;
+}
+
+.perfection {
+  letter-spacing: 3px;
+}
+
+.dedication {
+  letter-spacing: 6px;
+}
+
 .teamwork {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  letter-spacing: 9px;
 }
 
 .credo .ourCredo {
@@ -50,4 +62,10 @@
   -webkit-background-clip: text;
   -webkit-text-stroke: 4px transparent;
   color: white;
+}
+
+.honestyWrapper {
+  width: 1400;
+  display: flex;
+  justify-content: center;
 }
