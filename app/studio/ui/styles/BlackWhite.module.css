@@ -4,6 +4,8 @@
   align-items: center;
   background: #202020;
   color: #202020;
+  height: 115vh;
+  justify-content: center;
 }
 .buildingsConclusion {
   display: flex;
@@ -47,6 +49,7 @@
 
 .philosophyQuestion {
   width: 50%;
+  color: white;
 }
 
 .philosophyQuestion h3 {
@@ -64,10 +67,33 @@
   flex-direction: column;
   width: 50%;
   row-gap: 40px;
+  color: white;
 }
 
 .philosophyExplanation p {
   font-size: 22px;
   letter-spacing: -2%;
   font-weight: 100;
+}
+
+@media (max-width: 1250px) {
+  .buildingsConclusion h2 {
+    font-size: 78px;
+    font-weight: bold;
+    width: 900px;
+    letter-spacing: -3%;
+    margin-bottom: 40px;
+  }
+
+  .philosophy {
+    width: 900px;
+  }
+
+  .buildingsConclusion {
+    padding-bottom: 120px;
+  }
+
+  .blackWhite {
+    height: 140vh;
+  }
 }

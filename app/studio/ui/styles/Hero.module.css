@@ -31,4 +31,12 @@
   height: 100vh;
   z-index: 4;
   position: relative;
+  object-fit: cover;
+}
+
+@media (max-width: 1250px) {
+  .tagline {
+    font-size: 80px;
+    width: 620px;
+  }
 }

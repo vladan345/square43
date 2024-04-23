@@ -17,19 +17,18 @@ export default function BlackWhite() {
         color: "#202020",
         scrollTrigger: {
           trigger: ".blackWhite",
-          start: "30% center",
-          end: "50% center",
+          start: "50% center",
+          end: "60% center",
           stagger: 1,
           scrub: true,
           duration: 1,
-          markers: true,
         },
       });
       gsap.to(".h2", {
         color: "#202020",
         scrollTrigger: {
           trigger: ".blackWhite",
-          start: "30% center",
+          start: "45% center",
           end: "50% center",
           stagger: 1,
           scrub: true,
@@ -40,7 +39,43 @@ export default function BlackWhite() {
         color: "#202020",
         scrollTrigger: {
           trigger: ".blackWhite",
-          start: "30% center",
+          start: "45% center",
+          end: "50% center",
+          stagger: 1,
+          scrub: true,
+          duration: 1,
+        },
+      });
+
+      gsap.to(".philosophyExplanation", {
+        color: "#202020",
+        scrollTrigger: {
+          trigger: ".blackWhite",
+          start: "45% center",
+          end: "50% center",
+          stagger: 1,
+          scrub: true,
+          duration: 1,
+        },
+      });
+
+      gsap.to(".h3", {
+        color: "#202020",
+        scrollTrigger: {
+          trigger: ".blackWhite",
+          start: "45% center",
+          end: "50% center",
+          stagger: 1,
+          scrub: true,
+          duration: 1,
+        },
+      });
+
+      gsap.to(".p", {
+        color: "#202020",
+        scrollTrigger: {
+          trigger: ".blackWhite",
+          start: "45% center",
           end: "50% center",
           stagger: 1,
           scrub: true,
@@ -63,10 +98,12 @@ export default function BlackWhite() {
       </div>
       <div className={` ${styles.philosophy}`}>
         <div className={styles.philosophyQuestion}>
-          <h3>Why studio?</h3>
-          <p>A philosophical distinction.</p>
+          <h3 className="h3">Why studio?</h3>
+          <p className="p">A philosophical distinction.</p>
         </div>
-        <div className={styles.philosophyExplanation}>
+        <div
+          className={`${styles.philosophyExplanation} philosophyExplanation`}
+        >
           <p>
             We feel that the term “Agency” carries bad legacy emotions. Every
             agency out there has its purpose, but that is not our approach to a

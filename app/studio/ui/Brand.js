@@ -189,6 +189,16 @@ export default function Brand() {
               <p>Why Square?</p>
             </div>
           </div>
+          <div
+            className={`${styles.verticalLine} ${styles.verticalLineMobile} verticalT`}
+          ></div>
+          <div className={`${styles.mobile}`}>
+            <div className={`${styles.overlayT} borders`}></div>
+            <div className={`${styles.overlayB} borders`}></div>
+            <div className={styles.innerGradientContainer}>
+              <div className={styles.innerGradient}></div>
+            </div>
+          </div>
           <div className={`${styles.verticalLine} verticalT`}></div>
           <div className={styles.innerMiddleContainer}>
             <div className={`${styles.overlayT} borders`}></div>
@@ -199,10 +209,21 @@ export default function Brand() {
                 width={400}
                 height={400}
                 alt="43"
+                className={styles.logo}
               />
             </div>
           </div>
 
+          <div
+            className={` ${styles.verticalLine} ${styles.verticalLineMobile} verticalB`}
+          ></div>
+          <div className={`${styles.mobile}`}>
+            <div className={`${styles.overlayT} borders`}></div>
+            <div className={`${styles.overlayB} borders`}></div>
+            <div className={styles.innerGradientContainer}>
+              <p>43</p>
+            </div>
+          </div>
           <div className={` ${styles.verticalLine} verticalB`}></div>
           <div className={styles.innerBottom}>
             <div className={`${styles.overlayT} borders`}></div>
@@ -246,14 +267,14 @@ export default function Brand() {
           width={980}
           height={257}
           alt="znak1"
-          className="imageLeft"
+          className={`${styles.imageLeft} imageLeft`}
         />
         <Image
           src={"/images/Znak 1.png"}
           width={300}
           height={257}
           alt="znak2"
-          className="imageRight"
+          className={`${styles.imageRight} image`}
         />
       </div>
     </div>
