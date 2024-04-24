@@ -15,6 +15,9 @@
   margin-bottom: 40px;
   font-size: 78px;
   font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
 }
 
 .conclusion p {
@@ -22,8 +25,10 @@
   font-size: 36px;
   font-weight: lighter;
   color: #575757;
-  width: 685px;
+  width: 720px;
   text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .buildingGradientWrapper {
@@ -61,4 +66,46 @@
 .underBuildings p {
   margin-bottom: 0;
   color: white;
+}
+
+@media (max-width: 767px) {
+  .conclusion h2 {
+    margin-bottom: 40px;
+    font-size: 62px;
+  }
+
+  .conclusion p {
+    margin-bottom: 80px;
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .buildingGradientWrapper {
+    height: auto;
+  }
+
+  .underBuildings {
+    height: 260px;
+  }
+  .underBuildings p {
+    width: 80%;
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 425px) {
+  .conclusion h2 {
+    font-size: 40px;
+  }
+  .conclusion p {
+    margin-bottom: 100px;
+  }
+
+  .underBuildings p {
+    margin-bottom: 0px;
+  }
+
+  .buildingGradient {
+    height: 50px;
+  }
 }

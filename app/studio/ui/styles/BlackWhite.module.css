@@ -97,3 +97,49 @@
     height: 140vh;
   }
 }
+
+@media (max-width: 767px) {
+  .buildingsConclusion h2 {
+    font-size: 40px;
+    width: 100%;
+  }
+
+  .buildingsConclusion p {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .philosophy {
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
+    padding: 0px 20px 100px 20px;
+  }
+
+  .philosophyQuestion,
+  .philosophyExplanation {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .philosophyQuestion h3 {
+    font-size: 40px;
+  }
+
+  .philosophyQuestion p {
+    font-size: 22px;
+  }
+
+  .philosophyExplanation p {
+    font-size: 18px;
+  }
+
+  .buildingsConclusion {
+    padding: 80px 0px 80px;
+  }
+
+  .blackWhite {
+    height: 120vh;
+  }
+}

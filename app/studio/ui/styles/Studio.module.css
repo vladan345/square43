@@ -80,3 +80,20 @@
     font-size: 150px;
   }
 }
+
+@media (max-width: 767px) {
+  .credo h1 {
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 425px) {
+  .credo {
+    padding-bottom: 100px;
+    align-items: center;
+  }
+
+  .ourCredo {
+    letter-spacing: 2px;
+  }
+}

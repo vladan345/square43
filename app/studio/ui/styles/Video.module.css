@@ -40,3 +40,10 @@
 .bottom {
   background: linear-gradient(#20202000, #202020);
 }
+
+@media (max-width: 425px) {
+  .logoCenter {
+    width: 130px !important;
+    height: 130px !important;
+  }
+}

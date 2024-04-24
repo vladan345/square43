@@ -13,7 +13,7 @@ export default function Studio() {
   useGSAP(
     () => {
       gsap.to("#honesty", {
-        letterSpacing: "2.8rem",
+        letterSpacing: window.innerWidth > 767 ? "2.8rem" : "0.8rem",
         opacity: 1,
         duration: 0.7,
         scrollTrigger: {
@@ -24,7 +24,7 @@ export default function Studio() {
         },
       });
       gsap.to("#perfection", {
-        letterSpacing: "3px",
+        letterSpacing: window.innerWidth > 767 ? "3px" : "0px",
         opacity: 1,
         scrollTrigger: {
           trigger: "#perfection",
@@ -34,7 +34,7 @@ export default function Studio() {
         },
       });
       gsap.to("#dedication", {
-        letterSpacing: "6px",
+        letterSpacing: window.innerWidth > 767 ? "6px" : "1px",
         opacity: 1,
         scrollTrigger: {
           trigger: "#dedication",
@@ -44,7 +44,7 @@ export default function Studio() {
         },
       });
       gsap.to("#teamwork", {
-        letterSpacing: "9px",
+        letterSpacing: window.innerWidth > 767 ? "9px" : "2px",
         opacity: 1,
         scrollTrigger: {
           trigger: "#teamwork",

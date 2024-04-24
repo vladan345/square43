@@ -274,7 +274,7 @@ export default function Brand() {
           width={300}
           height={257}
           alt="znak2"
-          className={`${styles.imageRight} image`}
+          className={`${styles.imageRight} imageRight`}
         />
       </div>
     </div>

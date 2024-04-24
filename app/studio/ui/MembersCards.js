@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./styles/MembersCards.module.css";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 export default function MembersCards(id) {
   const employees = [
@@ -76,5 +77,40 @@ export default function MembersCards(id) {
         </p>
       </div>
     </div>
+
+    // <div className={styles.slider}>
+    //   <Splide
+    //     options={{
+    //       type: "loop",
+    //       perPage: 3,
+    //       focus: "center",
+    //     }}
+    //   >
+    //     <SplideSlide>
+    //       <Image
+    //         width={300}
+    //         height={300}
+    //         src="/images/vladimir.png"
+    //         alt="Shirt 1"
+    //       />
+    //     </SplideSlide>
+    //     <SplideSlide>
+    //       <Image
+    //         width={300}
+    //         height={300}
+    //         src="/images/vladimir.png"
+    //         alt="Shirt 1"
+    //       />
+    //     </SplideSlide>
+    //     <SplideSlide>
+    //       <Image
+    //         width={300}
+    //         height={300}
+    //         src="/images/vladimir.png"
+    //         alt="Shirt 1"
+    //       />
+    //     </SplideSlide>
+    //   </Splide>
+    // </div>
   );
 }

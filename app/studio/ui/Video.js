@@ -13,6 +13,7 @@ export default function Video() {
             width={330}
             height={330}
             alt="square43 logo"
+            className={styles.logoCenter}
           />
         </div>
         <div className={styles.bottom}></div>

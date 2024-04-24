@@ -40,3 +40,17 @@
     width: 620px;
   }
 }
+
+@media (max-width: 767px) {
+  .tagline {
+    font-size: 62px;
+    width: 450px;
+  }
+}
+
+@media (max-width: 425px) {
+  .tagline {
+    font-size: 48px;
+    width: 330px;
+  }
+}

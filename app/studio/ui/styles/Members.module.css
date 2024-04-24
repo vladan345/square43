@@ -13,6 +13,8 @@
   flex-direction: row;
   gap: 130px;
   padding-bottom: 160px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .descriptionLeft,
@@ -42,4 +44,47 @@
 
 .descriptionLeft {
   gap: 10px;
+}
+
+@media (max-width: 767px) {
+  .descriptionLeft {
+    gap: 0px;
+  }
+
+  .membersDescription {
+    width: 100%;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .descriptionLeft,
+  .descriptionRight {
+    width: 100%;
+  }
+
+  .membersDescription {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .membersDescription {
+    gap: 40px;
+  }
+
+  .members {
+    padding-top: 100px;
+  }
+
+  .descriptionLeft h3 {
+    font-size: 40px;
+  }
+
+  .descriptionLeft p {
+    font-size: 22px;
+  }
+
+  .descriptionRight p {
+    font-size: 18px;
+  }
 }
