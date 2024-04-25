@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import styles from "./styles/MembersCards.module.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/react-splide/css";
 
 export default function MembersCards(id) {
   const employees = [
@@ -50,24 +51,37 @@ export default function MembersCards(id) {
   ];
   return (
     <div className={styles.membersCards}>
-      <div className={styles.cardSection}>
-        {employees.map((element, i) => {
-          return (
-            <div className={styles.singleCard} key={i}>
-              <Image
-                src={element.img}
-                alt="employee"
-                width={370}
-                height={370}
-                className={styles.employeeImage}
-              />
-              <div className={styles.textContainer}>
-                <div className={styles.name}>{element.name}</div>
-                <div className={styles.title}>{element.title}</div>
-              </div>
-            </div>
-          );
-        })}
+      <div className={styles.slider} aria-label="Slides">
+        <Splide
+          options={{
+            type: "loop",
+            focus: "center",
+            autoWidth: true,
+            autoHeight: true,
+            speed: 1000,
+            arrows: true,
+            pagination: false,
+            gap: "-100px",
+          }}
+        >
+          {employees.map((element, i) => {
+            return (
+              <SplideSlide className={styles.singleCard} key={i}>
+                <Image
+                  src={element.img}
+                  alt="employee"
+                  width={370}
+                  height={370}
+                  className={styles.employeeImage}
+                />
+                <div className={styles.textContainer}>
+                  <div className={styles.name}>{element.name}</div>
+                  <div className={styles.title}>{element.title}</div>
+                </div>
+              </SplideSlide>
+            );
+          })}
+        </Splide>
       </div>
       <div className={styles.conclusion}>
         <h3>We do not cherish hierarchy.</h3>
@@ -77,40 +91,5 @@ export default function MembersCards(id) {
         </p>
       </div>
     </div>
-
-    // <div className={styles.slider}>
-    //   <Splide
-    //     options={{
-    //       type: "loop",
-    //       perPage: 3,
-    //       focus: "center",
-    //     }}
-    //   >
-    //     <SplideSlide>
-    //       <Image
-    //         width={300}
-    //         height={300}
-    //         src="/images/vladimir.png"
-    //         alt="Shirt 1"
-    //       />
-    //     </SplideSlide>
-    //     <SplideSlide>
-    //       <Image
-    //         width={300}
-    //         height={300}
-    //         src="/images/vladimir.png"
-    //         alt="Shirt 1"
-    //       />
-    //     </SplideSlide>
-    //     <SplideSlide>
-    //       <Image
-    //         width={300}
-    //         height={300}
-    //         src="/images/vladimir.png"
-    //         alt="Shirt 1"
-    //       />
-    //     </SplideSlide>
-    //   </Splide>
-    // </div>
   );
 }

@@ -1,6 +1,6 @@
 .members {
   width: 100%;
-  background: #f8f8f8;
+  background: linear-gradient(#f8f8f8, #f8f8f800);
   padding-top: 180px;
   display: flex;
   flex-direction: column;

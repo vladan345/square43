@@ -108,4 +108,14 @@
   .buildingGradient {
     height: 50px;
   }
+
+  .buildingGradientWrapper {
+    overflow: hidden;
+  }
+
+  .buildingpng {
+    height: 300px !important;
+    width: auto !important;
+    transform: translateX(-55%);
+  }
 }

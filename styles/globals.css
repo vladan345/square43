@@ -195,6 +195,21 @@ i {
 #outroSlider ul.splide__list li {
   background-color: #d9d9d9;
 }
+.splide__slide {
+  height: fit-content;
+}
+
+.splide__slide.is-active {
+  transition: 1s;
+  z-index: 5;
+  margin-top: -50px;
+}
+.splide__slide.is-prev,
+.splide__slide.is-next {
+  z-index: 4;
+  margin-top: 100px;
+  transition: 1s;
+}
 
 @keyframes fadeIn {
   from {

@@ -52,7 +52,7 @@ export default function Buildings() {
           <div
             className={styles.buildingWrapper}
             style={{
-              background: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, #0ff, #7000ff, #353535 80%)`,
+              background: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, #0ff, #7000ff 20%, #353535 30%)`,
             }}
           >
             <Image
@@ -62,6 +62,7 @@ export default function Buildings() {
               height={0}
               sizes="100vw"
               style={{ width: "100vw", height: "auto" }}
+              className={`${styles.buildingpng}`}
             />
           </div>
           <div className={styles.buildingGradient}></div>
