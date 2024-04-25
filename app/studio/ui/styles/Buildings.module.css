@@ -116,6 +116,6 @@
   .buildingpng {
     height: 300px !important;
     width: auto !important;
-    transform: translateX(-55%);
+    transform: translateX(-52%);
   }
 }

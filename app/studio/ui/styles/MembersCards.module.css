@@ -7,8 +7,25 @@
 }
 
 .slider {
-  width: 1600px;
+  width: 1400px;
   padding-top: 100px;
+  height: 700px;
+  position: relative;
+}
+
+.sliderGradient {
+  position: absolute;
+  height: 800px;
+  width: 100%;
+  z-index: 0;
+  background: linear-gradient(
+    90deg,
+    white,
+    #e0e0e000 20%,
+    #e0e0e000 80%,
+    white
+  );
+  top: 0;
 }
 
 .singleCard {

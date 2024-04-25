@@ -197,6 +197,8 @@ i {
 }
 .splide__slide {
   height: fit-content;
+  transition: 1s;
+  z-index: 0;
 }
 
 .splide__slide.is-active {
@@ -209,6 +211,10 @@ i {
   z-index: 4;
   margin-top: 100px;
   transition: 1s;
+}
+
+.splide__track {
+  padding-top: 50px;
 }
 
 @keyframes fadeIn {

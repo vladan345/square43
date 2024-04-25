@@ -58,10 +58,11 @@ export default function MembersCards(id) {
             focus: "center",
             autoWidth: true,
             autoHeight: true,
-            speed: 1000,
+            speed: 1500,
             arrows: true,
             pagination: false,
-            gap: "-100px",
+            gap: "-80px",
+            updateOnMove: true,
           }}
         >
           {employees.map((element, i) => {
@@ -82,6 +83,7 @@ export default function MembersCards(id) {
             );
           })}
         </Splide>
+        <div className={styles.sliderGradient}></div>
       </div>
       <div className={styles.conclusion}>
         <h3>We do not cherish hierarchy.</h3>
