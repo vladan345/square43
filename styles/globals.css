@@ -217,6 +217,10 @@ i {
   padding-top: 50px;
 }
 
+#splide01-track {
+  height: 650px;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

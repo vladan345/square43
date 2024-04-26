@@ -9,7 +9,7 @@
 .slider {
   width: 1400px;
   padding-top: 100px;
-  height: 700px;
+  height: auto;
   position: relative;
 }
 
@@ -26,6 +26,7 @@
     white
   );
   top: 0;
+  pointer-events: none;
 }
 
 .singleCard {
@@ -61,7 +62,7 @@
 }
 
 .conclusion h3 {
-  margin-top: 150px;
+  margin-top: 250px;
   font-size: 78px;
   font-weight: bold;
 }
@@ -72,6 +73,40 @@
   width: 820px;
   text-align: center;
   margin-bottom: 220px;
+}
+
+.arrowPrev {
+  transform: rotate(180deg);
+}
+
+.splide__arrows {
+  position: relative;
+  display: flex;
+  column-gap: 80px;
+  justify-content: center;
+  height: 150px;
+  width: 100%;
+}
+
+.splide__arrows button {
+  background: none;
+  left: auto;
+  right: auto;
+  position: relative;
+  z-index: 4;
+  width: 40px;
+  height: 40px;
+}
+
+.splide__arrows button img {
+  pointer-events: none;
+}
+
+.betweenArrows {
+  display: flex;
+  align-self: center;
+  font-size: 24px;
+  color: #575757;
 }
 
 @media (max-width: 767px) {
