@@ -18,13 +18,6 @@
   height: 800px;
   width: 100%;
   z-index: 0;
-  background: linear-gradient(
-    90deg,
-    white,
-    #e0e0e000 20%,
-    #e0e0e000 80%,
-    white
-  );
   top: 0;
   pointer-events: none;
 }
@@ -109,6 +102,22 @@
   color: #575757;
 }
 
+.mobileSlider {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .slider {
+    display: none;
+  }
+
+  .mobileSlider {
+    display: block;
+  }
+  .singleCard {
+    width: 50vw;
+  }
+}
+
 @media (max-width: 767px) {
   .cardSection {
     width: 100%;
@@ -141,5 +150,9 @@
   .conclusion {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .singleCard {
+    width: 90vw;
   }
 }

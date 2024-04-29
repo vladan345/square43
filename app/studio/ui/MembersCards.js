@@ -83,6 +83,11 @@ export default function MembersCards(id) {
       <div className={`${styles.slider}`} aria-label="Slides">
         <Splide
           options={{
+            breakpoints: {
+              640: {
+                destroy: true,
+              },
+            },
             type: "loop",
             focus: "center",
             autoWidth: true,
@@ -146,6 +151,26 @@ export default function MembersCards(id) {
             />
           </button>
         </div>
+      </div>
+
+      <div className={styles.mobileSlider}>
+        {employees.map((element, i) => {
+          return (
+            <div className={styles.singleCard} key={i}>
+              <Image
+                src={element.img}
+                alt="employee"
+                width={370}
+                height={370}
+                className={styles.employeeImage}
+              />
+              <div className={styles.textContainer}>
+                <div className={styles.name}>{element.name}</div>
+                <div className={styles.title}>{element.title}</div>
+              </div>
+            </div>
+          );
+        })}
       </div>
 
       <div className={styles.conclusion}>
