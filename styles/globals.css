@@ -206,10 +206,11 @@ i {
   z-index: 5;
   margin-top: -50px;
 }
+
 .splide__slide.is-prev,
 .splide__slide.is-next {
   z-index: 4;
-  margin-top: 100px;
+  margin-top: 70px;
   transition: 1s;
 }
 

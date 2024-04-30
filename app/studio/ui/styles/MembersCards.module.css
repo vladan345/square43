@@ -7,7 +7,7 @@
 }
 
 .slider {
-  width: 1400px;
+  width: 100%;
   padding-top: 100px;
   height: auto;
   position: relative;
@@ -23,7 +23,12 @@
 }
 
 .singleCard {
-  background: linear-gradient(#f8f8f8 40%, #e0e0e0 10%, #f8f8f8 20%);
+  background: linear-gradient(
+    #f8f8f8 0%,
+    #f8f8f8 50%,
+    #e0e0e0 81%,
+    #f8f8f8 100%
+  );
   padding: 25px 25px 0px 25px;
   width: 400px;
 }
@@ -34,7 +39,7 @@
 }
 
 .textContainer {
-  padding: 25px 30px 30px 30px;
+  padding: 25px 30px 30px 0px;
 }
 
 .name {
@@ -115,6 +120,7 @@
   }
   .singleCard {
     width: 50vw;
+    margin-bottom: 30px;
   }
 }
 
