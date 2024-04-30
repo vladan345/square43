@@ -37,10 +37,30 @@ export default function Hero() {
       </div>
 
       <div className={styles.heroImageContainer} id="heroImg">
+        <div className={styles.heroGridContainer}>
+          <div className={styles.heroGrid}>
+            <div className={styles.heroGridItem}></div>
+            <div className={styles.heroGridItem}></div>
+            <div className={styles.heroGridItem}></div>
+            <div className={styles.heroGridItem}></div>
+            <div className={styles.heroGridItem}></div>
+            <div className={styles.heroGridItem}></div>
+            <div className={styles.heroGridItem}></div>
+            <div className={styles.heroGridItem}></div>
+            <div className={styles.heroGridItem}></div>
+            <div className={styles.heroGridItem}></div>
+            <div className={styles.heroGridItem}></div>
+            <div className={styles.heroGridItem}></div>
+            <div className={styles.heroGridItem}></div>
+            <div className={styles.heroGridItem}></div>
+            <div className={styles.heroGridItem}></div>
+          </div>
+        </div>
+
         <Image
           className={styles.heroImage}
           alt="hero image"
-          src={"/images/Home.png"}
+          src={"/images/hero.png"}
           width={"400"}
           height={"100"}
         ></Image>
