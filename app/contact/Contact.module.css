@@ -1,11 +1,11 @@
 .Contact {
-  padding: 160px 0 120px 0;
+  padding: 160px 0 0 0;
 }
 .title {
-  font-size: 120px;
-  font-weight: 700;
-  margin-bottom: 120px;
-  letter-spacing: -4.8px;
+  font-size: 100px;
+  line-height: 1;
+  font-weight: 600;
+  margin-bottom: 80px;
   width: 1375px;
 }
 .titleLink {
@@ -24,35 +24,63 @@
 }
 
 .subheading {
-  font-size: 80px;
-  font-weight: 700;
-  margin-bottom: 120px;
-  letter-spacing: -3.2px;
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 100px;
   background: radial-gradient(circle at 0 0, #7000ff, #0ff);
   background-attachment: sticky;
   background-position: center;
   background-clip: text;
   -webkit-background-clip: text;
   line-height: 1;
+  max-width: 1000px;
 }
 .subheading .gradientText {
   -webkit-text-fill-color: transparent;
+}
+.formHeading {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 50px;
 }
 .col:first-of-type .titleLink:first-of-type {
   margin-bottom: 80px;
 }
 .row {
   display: flex;
-  width: 1375px;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1360px;
+  margin-bottom: 180px;
 }
-.row form {
+.col:first-of-type {
+  width: 55%;
+}
+.col:last-of-type {
+  width: 45%;
+
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  width: 52.5%;
+  justify-content: flex-end;
 }
-.row:last-of-type {
-  padding-bottom: 120px;
+.imageWrap {
+  max-width: 480px;
+  height: 100%;
+  position: relative;
+}
+.image {
+  position: sticky;
+  left: 0;
+  top: 25%;
+}
+
+@media (max-width: 1600px) {
+  .imageWrap {
+    max-width: 400px;
+  }
+  .imageWrap img {
+    width: 100%;
+    height: auto;
+  }
 }
 @media (max-width: 1440px) {
   .title {
@@ -69,27 +97,42 @@
     padding: 120px 0 80px 0;
   }
   .title {
-    font-size: 54px;
+    font-size: 48px;
     letter-spacing: normal;
     width: auto;
     margin-bottom: 40px;
     line-height: 1;
   }
   .subheading {
-    font-size: 30px;
+    font-size: 32px;
     letter-spacing: normal;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
+  }
+  .formHeading {
+    font-size: 28px;
   }
   .row {
     flex-direction: column;
     width: 100%;
+    margin-bottom: 0;
   }
   .row form {
     width: 100%;
   }
+  .col:first-of-type,
+  .col:last-of-type {
+    width: 100%;
+  }
+  .col:first-of-type {
+    padding-bottom: 80px;
+  }
   .col:last-of-type {
     margin-left: 0;
-    margin-top: 40px;
+    margin-top: 70px;
+    justify-content: flex-start;
+  }
+  .image {
+    position: static;
   }
   .preheading {
     font-size: 22px;

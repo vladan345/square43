@@ -54,53 +54,60 @@ export default function Newsletter() {
         </p>
       )}
       <div className={styles.inputWrap}>
+        <label htmlFor="firstName">First Name*</label>
         <input
           type="text"
           name="firstName"
           id="firstName"
           required
-          placeholder="First name*"
+          placeholder="Enter your first name here..."
         />
       </div>
       <div className={styles.inputWrap}>
+        <label htmlFor="lastName">Last Name*</label>
         <input
           type="text"
           name="lastName"
           id="lastName"
-          placeholder="Last name (optional)"
+          placeholder="Enter your last name here..."
         />
       </div>
       <div className={styles.inputWrap}>
+        <label htmlFor="email">E-mail*</label>
         <input
           type="email"
           name="email"
           id="email"
           required
-          placeholder="Email*"
+          placeholder="Enter your e-mail address..."
         />
       </div>
       <div className={`${styles.inputWrap} ${styles.countryInputWrap}`}>
-        <input
-          ref={select}
-          name="country"
-          id="country"
-          className={styles.countrySelect}
-          style={{
-            color: country == "Select country (optional)" ? "#d0d0d0" : "#000",
-          }}
-          defaultValue={country}
-          readOnly
-          onClick={() => setIsCountriesOpen(!isCountriesOpen)}
-        />
-        <Image
-          src="/images/arrow-down.svg"
-          alt="drop icon"
-          width={40}
-          height={40}
-          style={{
-            transform: isCountriesOpen ? "rotate(-180deg)" : "rotate(0)",
-          }}
-        />
+        <label htmlFor="country">Select Country</label>
+        <div className={styles.countryFieldWrap}>
+          <input
+            ref={select}
+            name="country"
+            id="country"
+            className={styles.countrySelect}
+            style={{
+              color:
+                country == "Select country (optional)" ? "#d0d0d0" : "#000",
+            }}
+            defaultValue={country}
+            readOnly
+            onClick={() => setIsCountriesOpen(!isCountriesOpen)}
+          />
+          <Image
+            src="/images/arrow-down.svg"
+            alt="drop icon"
+            width={28}
+            height={28}
+            style={{
+              transform: isCountriesOpen ? "rotate(-180deg)" : "rotate(0)",
+            }}
+          />
+        </div>
 
         {isCountriesOpen && (
           <div data-lenis-prevent className={styles.selectWrap}>
@@ -115,7 +122,7 @@ export default function Newsletter() {
         )}
       </div>
 
-      <p className={styles.fieldHeading}>Choose services*</p>
+      <p className={styles.fieldHeading}>Services you are looking for*</p>
       <div className={styles.serviceWrap}>
         {services.map((service) => (
           <div key={service} className={styles.singleService}>
@@ -154,13 +161,13 @@ export default function Newsletter() {
         </div>
       </div>
 
+      <p className={styles.fieldHeading}>Comment</p>
       <textarea
         className={styles.message}
         name="message"
         id="message"
         cols="30"
-        rows="3"
-        placeholder="Comment"
+        rows="4"
       ></textarea>
 
       <button type="submit" className={`readMore ${styles.submitBtn}`}>

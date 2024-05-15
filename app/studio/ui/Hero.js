@@ -13,14 +13,43 @@ export default function Hero() {
 
   useGSAP(
     () => {
-      gsap.to("#heroText", {
-        opacity: 0,
+      gsap.to(".tagline", {
+        // opacity: 0,
+        scale: 0.9,
+        scrollTrigger: {
+          trigger: "#heroText",
+          start: "top top",
+          end: "bottom top",
+          scrub: true,
+        },
+      });
+      gsap.to(".tagline", {
+        autoAlpha: 0,
         scrollTrigger: {
           trigger: "#heroImg",
           start: "top top",
-          end: "top bottom",
+          end: "top top",
+          toggleActions: "play none reverse none",
+        },
+      });
+
+      const gridTiles = gsap.utils.toArray(".heroGrid div");
+      gsap.to(gridTiles, {
+        boxShadow: "inset 0 0 0 5px rgb(255, 255, 255)",
+        scrollTrigger: {
+          trigger: ".heroImageContainer",
+          start: "top top",
+          end: "bottom bottom",
           scrub: true,
-          stagger: 1,
+        },
+      });
+      gsap.to(".heroImage", {
+        scale: 1,
+        scrollTrigger: {
+          trigger: ".heroImageContainer",
+          start: "top top",
+          end: "bottom bottom",
+          scrub: true,
         },
       });
     },
@@ -30,15 +59,29 @@ export default function Hero() {
   return (
     <div ref={container}>
       <div className={styles.heroDescription} id="heroText">
-        <h2 className={styles.tagline}>
+        <h2 className={`${styles.tagline} tagline`}>
           We are not an award-winning agency...{" "}
           <span className={styles.gradientText}>Yet!</span>
         </h2>
       </div>
 
-      <div className={styles.heroImageContainer} id="heroImg">
+      <div
+        className={`${styles.heroImageContainer} heroImageContainer`}
+        id="heroImg"
+      >
         <div className={styles.heroGridContainer}>
-          <div className={styles.heroGrid}>
+          <Image
+            className={`${styles.heroImage} heroImage`}
+            alt="hero image"
+            src={"/images/hero.png"}
+            width={1920}
+            height={1132}
+          ></Image>
+
+          <div className={`${styles.heroGrid} heroGrid`}>
+            <div className={styles.heroGridItem}></div>
+            <div className={styles.heroGridItem}></div>
+            <div className={styles.heroGridItem}></div>
             <div className={styles.heroGridItem}></div>
             <div className={styles.heroGridItem}></div>
             <div className={styles.heroGridItem}></div>
@@ -56,14 +99,6 @@ export default function Hero() {
             <div className={styles.heroGridItem}></div>
           </div>
         </div>
-
-        <Image
-          className={styles.heroImage}
-          alt="hero image"
-          src={"/images/hero.png"}
-          width={"400"}
-          height={"100"}
-        ></Image>
       </div>
     </div>
   );

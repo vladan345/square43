@@ -1,36 +1,61 @@
 .form {
   position: relative;
-  margin-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 .inputWrap {
   width: 100%;
   position: relative;
-  border-bottom: solid 4px black;
+  border-bottom: solid 1px black;
   padding: 0 0 20px 0;
 }
-
+.inputWrap label {
+  font-size: 43px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  display: block;
+  line-height: 0.8;
+}
 .inputWrap input:not([type="checkbox"]) {
   border: 0;
   display: block;
   width: 100%;
   height: 100%;
   outline: none;
-  font-size: 40px;
-  font-weight: 700;
-  letter-spacing: -3.2px;
+  font-size: 22px;
+  font-weight: 400;
 }
 .inputWrap input::placeholder {
-  color: #d0d0d0;
+  color: #b5b5b5;
   opacity: 1; /* Firefox */
 }
 
 .inputWrap input::-ms-input-placeholder {
   /* Edge 12 -18 */
-  color: #d0d0d0;
+  color: #b5b5b5;
+}
+
+.countryInputWrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.countryInputWrap img {
+  transition: 0.5s;
+}
+.countryInput {
+  display: block;
+  width: 100%;
+}
+.countryFieldWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .selectWrap {
   position: absolute;
-  top: 75px;
+  top: 105px;
   left: 0;
   background: #f8f8f8;
   max-height: 400px;
@@ -50,42 +75,35 @@
 .selectList div:hover {
   background: white;
 }
-.countryInputWrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.countryInputWrap img {
-  transition: 0.5s;
-}
 
 .submitBtn {
   border: 0;
   background: none;
   margin-top: 40px;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .fieldHeading {
-  font-size: 40px;
+  font-size: 48px;
   font-weight: 700;
-  letter-spacing: -3.2px;
-  margin-top: 40px;
+  letter-spacing: -1.44px;
+  margin-top: 20px;
+  line-height: 1;
 }
 .serviceWrap {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 15px;
 }
 .singleService input {
   display: none;
 }
 .singleService label {
   padding: 10px;
-  border: 3px solid black;
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
+  border: 1px solid black;
+  font-size: 24px;
+  font-weight: 100;
   display: block;
   transition: 0.3s;
   cursor: pointer;
@@ -106,7 +124,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid black;
+  border: 1px solid black;
 }
 .singleBudget input {
   display: none;
@@ -116,8 +134,8 @@
   display: block;
   width: 100%;
   padding: 10px 0;
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 100;
   text-transform: uppercase;
   transition: 0.3s;
   cursor: pointer;
@@ -130,12 +148,15 @@
 .message {
   display: block;
   width: 100%;
-  font-family: "Matter-Bold";
-  padding: 20px 0;
-  font-size: 16px;
+  padding-bottom: 20px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.2;
+  font-family: "Matter-Regular";
   border: 0;
-  border-bottom: 3px solid black;
+  border-bottom: 1px solid black;
   outline: none;
+  color: #858585;
 }
 
 .response {
@@ -154,20 +175,46 @@
   color: white;
 }
 @media (max-width: 900px) {
+  .inputWrap label {
+    font-size: 22px;
+  }
   .inputWrap input:not([type="checkbox"]) {
-    font-size: 24px;
-    letter-spacing: -1px;
+    font-size: 18px;
   }
-  .inputWrap img {
-    display: none;
+  .inputWrap {
+    padding: 0 0 10px 0;
   }
-}
-@media (max-width: 400px) {
+  .fieldHeading {
+    font-size: 28px;
+    letter-spacing: 0;
+    max-width: 215px;
+    margin-top: 0;
+  }
+  .singleService {
+    width: calc(50% - 7.5px);
+    flex-grow: 1;
+  }
+
+  .singleService label {
+    padding: 15px 0;
+    font-size: 18px;
+    text-align: center;
+  }
   .budgetWrap {
-    flex-direction: column;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
   }
   .singleBudget {
-    width: 100%;
+    width: calc(50% - 7.5px);
+    flex-grow: 1;
+  }
+  .singleBudget label {
+    font-size: 18px;
+    padding: 15px 0;
+  }
+  .message {
+    font-size: 18px;
+    letter-spacing: -0.36px;
+    height: 130px;
   }
 }

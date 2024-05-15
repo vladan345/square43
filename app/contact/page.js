@@ -1,5 +1,5 @@
 import styles from "./Contact.module.css";
-
+import Image from "next/image";
 import Newsletter from "./ui/Newsletter";
 
 export const metadata = {
@@ -26,28 +26,39 @@ export default function Page() {
             <span className={styles.gradientText}>food</span> or{" "}
             <span className={styles.gradientText}>drink</span> - it&apos;s your
             choice.
-            <br />
-            <br />
-            Let&apos;s get in touch.
           </p>
-          <div className={styles.row}>
+          {/* <div className={styles.row}>
             <div className={styles.col}>
-              {/* <p className={styles.preheading}>Call us</p>
+              <p className={styles.preheading}>Call us</p>
               <a className={styles.titleLink} href="tel:+381603339493">
                 +381 60 333 94 93
-              </a> */}
-              {/* <p className={styles.preheading}>Maybe drop us a line</p>
+              </a>
+              <p className={styles.preheading}>Maybe drop us a line</p>
               <a className={styles.titleLink} href="mailto:studio@square43.com">
                 studio@square43.com
-              </a> */}
+              </a>
             </div>
-            {/* <div className={styles.col}>
+            <div className={styles.col}>
               <p className={styles.preheading}>Or visit</p>
               <p className={styles.titleLink}>Belgrade, Serbia</p>
-            </div> */}
-          </div>
+            </div>
+          </div> */}
           <div className={styles.row}>
-            <Newsletter />
+            <div className={styles.col}>
+              <p className={styles.formHeading}> Let&apos;s get in touch.</p>
+              <Newsletter />
+            </div>
+            <div className={styles.col}>
+              <div className={styles.imageWrap}>
+                <Image
+                  src="/images/contact-square.svg"
+                  alt="Decorative object"
+                  width={480}
+                  height={480}
+                  className={styles.image}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
