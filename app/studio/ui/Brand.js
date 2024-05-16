@@ -248,8 +248,10 @@ export default function Brand() {
       <div className={styles.brandOrigin}>
         <div className={` ${styles.brandLeft} brandLeft`}>
           <div className={` ${styles.brandLeftContainer} brandLeftContainer`}>
-            <p>Long story short: we saw a sign.</p>
-            <p>Literally.</p>
+            <p>
+              Long story short: we saw a sign. <span>Literally.</span>
+            </p>
+            <p></p>
           </div>
         </div>
         <div className={` ${styles.brandRight} brandRight`}>

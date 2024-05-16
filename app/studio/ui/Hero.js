@@ -73,16 +73,16 @@ export default function Hero() {
           <Image
             className={`${styles.heroImage} heroImage md:hidden`}
             alt="hero image"
-            src={"/images/hero.png"}
-            width={1920}
-            height={1132}
+            src={"/images/square-office.webp"}
+            width={2500}
+            height={1667}
           />
           <Image
             className={`${styles.heroImage} heroImage md:block hidden`}
             alt="hero image"
-            src={"/images/studio-mobile.png"}
-            width={672}
-            height={740}
+            src={"/images/square-office-mobile.webp"}
+            width={900}
+            height={1350}
           />
           <div className={`${styles.heroGrid} heroGrid`}>
             {Array.from({ length: 18 }, () => null).map((_, index) => (

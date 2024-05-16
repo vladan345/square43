@@ -26,6 +26,7 @@
 .brandNameContainer h3 {
   font-size: 78px;
   font-weight: bold;
+  line-height: 1;
 }
 
 .brandNameContainer p {
@@ -239,7 +240,7 @@
 }
 
 .brandLeftContainer {
-  width: 680px;
+  max-width: 680px;
 }
 
 .brandLeftContainer p {
@@ -248,13 +249,12 @@
   line-height: 100%;
 }
 
-.brandLeftContainer :first-child {
-  font-size: 48px;
+.brandLeftContainer p span {
   font-weight: 100;
 }
 
 .brandOrigin .brandRight {
-  width: 445px;
+  max-width: 445px;
   font-size: 22px;
   font-weight: lighter;
 }
