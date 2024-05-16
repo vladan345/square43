@@ -31,5 +31,10 @@
     "sanity": "^3.26.1",
     "splide-nextjs": "^2.4.23",
     "split-type": "^0.3.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3"
   }
 }

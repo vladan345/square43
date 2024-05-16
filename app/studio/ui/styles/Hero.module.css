@@ -95,6 +95,7 @@
 @media (max-width: 767px) {
   .tagline {
     font-size: 62px;
+    letter-spacing: -1px;
     width: 450px;
   }
 }
@@ -102,10 +103,7 @@
 @media (max-width: 425px) {
   .tagline {
     font-size: 48px;
+    letter-spacing: -0.4px;
     width: 330px;
-  }
-  .heroGrid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
   }
 }

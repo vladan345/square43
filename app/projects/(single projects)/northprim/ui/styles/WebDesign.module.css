@@ -2,7 +2,7 @@
   overflow: hidden;
 }
 .desktop {
-  background: #fff;
+  background: var(--white);
   padding: 120px 0 300px 0;
   position: relative;
 }
@@ -10,7 +10,7 @@
   display: flex;
 }
 .description {
-  color: #202020;
+  color: var(--black);
   max-width: 480px;
   margin-bottom: 40px;
 }

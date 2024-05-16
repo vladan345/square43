@@ -4,7 +4,7 @@
   left: 0;
   height: 100vh;
   width: 100%;
-  background: #202020;
+  background: var(--black);
   z-index: 11111;
   transition: 1s;
   overflow: hidden;

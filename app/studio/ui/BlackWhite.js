@@ -14,7 +14,7 @@ export default function BlackWhite() {
     () => {
       gsap.to(".blackWhite", {
         background: "white",
-        color: "#202020",
+        color: "var(--black)",
         scrollTrigger: {
           trigger: ".blackWhite",
           start: "50% center",
@@ -25,7 +25,7 @@ export default function BlackWhite() {
         },
       });
       gsap.to(".h2", {
-        color: "#202020",
+        color: "var(--black)",
         scrollTrigger: {
           trigger: ".blackWhite",
           start: "45% center",
@@ -36,7 +36,7 @@ export default function BlackWhite() {
         },
       });
       gsap.to(".businessParagraph", {
-        color: "#202020",
+        color: "var(--black)",
         scrollTrigger: {
           trigger: ".blackWhite",
           start: "45% center",
@@ -48,7 +48,7 @@ export default function BlackWhite() {
       });
 
       gsap.to(".philosophyExplanation", {
-        color: "#202020",
+        color: "var(--black)",
         scrollTrigger: {
           trigger: ".blackWhite",
           start: "45% center",
@@ -60,7 +60,7 @@ export default function BlackWhite() {
       });
 
       gsap.to(".h3", {
-        color: "#202020",
+        color: "var(--black)",
         scrollTrigger: {
           trigger: ".blackWhite",
           start: "45% center",
@@ -72,7 +72,7 @@ export default function BlackWhite() {
       });
 
       gsap.to(".p", {
-        color: "#202020",
+        color: "var(--black)",
         scrollTrigger: {
           trigger: ".blackWhite",
           start: "45% center",

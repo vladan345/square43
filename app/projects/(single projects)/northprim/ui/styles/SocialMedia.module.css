@@ -1,5 +1,5 @@
 .SocialMedia {
-  background-color: #fff;
+  background-color: var(--white);
   padding-top: 120px;
 }
 .wrapper {
@@ -11,7 +11,7 @@
   width: 50%;
 }
 .description {
-  color: #202020;
+  color: var(--black);
   margin-bottom: 40px;
   max-width: 380px;
 }
@@ -32,7 +32,7 @@
   margin-top: -10px;
   width: 100%;
   padding: 120px 0 190px 0;
-  background: #202020;
+  background: var(--black);
 }
 .socialSection .description {
   color: #f8f8f8;

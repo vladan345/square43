@@ -50,14 +50,14 @@
 .buildingGradient {
   width: 100vw;
   height: 130px;
-  background: linear-gradient(rgba(0, 0, 0, 0), #202020);
+  background: linear-gradient(rgba(0, 0, 0, 0), var(--black));
   z-index: 2;
 }
 
 .underBuildings {
   height: 430px;
   width: 100vw;
-  background-color: #202020;
+  background-color: var(--black);
   align-items: center;
   display: flex;
   justify-content: center;
@@ -93,7 +93,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 480px) {
   .conclusion h2 {
     font-size: 40px;
   }
@@ -116,6 +116,7 @@
   .buildingpng {
     height: 300px !important;
     width: auto !important;
-    transform: translateX(-52%);
+    object-fit: cover;
+    object-position: 58% 0;
   }
 }

@@ -79,7 +79,7 @@
   line-height: 1.2;
 }
 .last {
-  background: #202020;
+  background: var(--black);
   color: white;
 }
 @media (max-width: 900px) {

@@ -1,5 +1,5 @@
 .Coffee {
-  background: #fff;
+  background: var(--white);
   min-height: 800px;
   padding-top: 200px;
   padding-bottom: 140px;
@@ -29,7 +29,7 @@
   width: 560px;
 }
 .description {
-  color: #202020;
+  color: var(--black);
   max-width: 440px;
   margin-bottom: 20px;
   font-size: 18px;

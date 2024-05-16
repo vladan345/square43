@@ -99,7 +99,7 @@
   transition: 0.5s;
 }
 .dotActive {
-  background: #202020;
+  background: var(--black);
 }
 
 @media (max-width: 900px) {

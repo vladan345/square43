@@ -17,7 +17,7 @@
 .title {
   font-size: 16px;
   text-transform: uppercase;
-  color: #202020;
+  color: var(--black);
   margin-bottom: 40px;
   font-weight: 700;
 }

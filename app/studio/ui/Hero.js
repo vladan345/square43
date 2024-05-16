@@ -66,37 +66,28 @@ export default function Hero() {
       </div>
 
       <div
-        className={`${styles.heroImageContainer} heroImageContainer`}
+        className={`${styles.heroImageContainer} heroImageContainer border-x-[5px] border-x-white`}
         id="heroImg"
       >
         <div className={styles.heroGridContainer}>
           <Image
-            className={`${styles.heroImage} heroImage`}
+            className={`${styles.heroImage} heroImage md:hidden`}
             alt="hero image"
             src={"/images/hero.png"}
             width={1920}
             height={1132}
-          ></Image>
-
+          />
+          <Image
+            className={`${styles.heroImage} heroImage md:block hidden`}
+            alt="hero image"
+            src={"/images/studio-mobile.png"}
+            width={672}
+            height={740}
+          />
           <div className={`${styles.heroGrid} heroGrid`}>
-            <div className={styles.heroGridItem}></div>
-            <div className={styles.heroGridItem}></div>
-            <div className={styles.heroGridItem}></div>
-            <div className={styles.heroGridItem}></div>
-            <div className={styles.heroGridItem}></div>
-            <div className={styles.heroGridItem}></div>
-            <div className={styles.heroGridItem}></div>
-            <div className={styles.heroGridItem}></div>
-            <div className={styles.heroGridItem}></div>
-            <div className={styles.heroGridItem}></div>
-            <div className={styles.heroGridItem}></div>
-            <div className={styles.heroGridItem}></div>
-            <div className={styles.heroGridItem}></div>
-            <div className={styles.heroGridItem}></div>
-            <div className={styles.heroGridItem}></div>
-            <div className={styles.heroGridItem}></div>
-            <div className={styles.heroGridItem}></div>
-            <div className={styles.heroGridItem}></div>
+            {Array.from({ length: 18 }, () => null).map((_, index) => (
+              <div key={index} className={styles.heroGridItem}></div>
+            ))}
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 .CoreThemes {
-  background-color: #fff;
-  color: #202020;
+  background-color: var(--white);
+  color: var(--black);
   padding: 280px 0 180px 0;
 }
 .heading {

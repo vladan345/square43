@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: #202020;
+  color: var(--black);
   background: linear-gradient(#fff, #f8f8f8);
   position: relative;
   overflow: hidden;
@@ -31,7 +31,7 @@
   text-transform: capitalize;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #202020;
+  color: var(--black);
   transition: all 0.5s;
 }
 .description {
@@ -49,7 +49,7 @@
   transition: 0.8s;
 }
 .link {
-  color: #202020;
+  color: var(--black);
   letter-spacing: 0.8px;
   text-transform: uppercase;
   font-size: 16px;

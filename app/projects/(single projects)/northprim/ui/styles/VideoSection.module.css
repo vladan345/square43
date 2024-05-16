@@ -1,6 +1,6 @@
 .videoWrap {
   height: 600px;
-  background-color: #202020;
+  background-color: var(--black);
 }
 .video {
   width: 100%;

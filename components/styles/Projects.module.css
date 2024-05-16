@@ -39,7 +39,7 @@
   padding: 40px 60px;
 }
 .lastitem .projectName {
-  color: #202020;
+  color: var(--black);
   margin-bottom: 0;
   font-weight: 700;
   font-size: 48px;

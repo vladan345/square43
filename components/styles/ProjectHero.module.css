@@ -23,7 +23,7 @@
 .slogan {
   font-size: 48px;
   line-height: 1.1;
-  color: #202020;
+  color: var(--black);
   font-weight: 300;
   max-width: 660px;
   margin-bottom: 100px;
@@ -39,7 +39,7 @@
 .serviceHead {
   margin-bottom: 40px;
   font-size: 16px;
-  color: #202020;
+  color: var(--black);
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.2;

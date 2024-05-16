@@ -1,7 +1,7 @@
 .Skate {
-  background: #202020;
+  background: var(--black);
   padding: 120px 0;
-  color: #fff;
+  color: var(--white);
 }
 .row {
   display: flex;

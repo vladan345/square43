@@ -43,7 +43,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: #202020;
+  color: var(--black);
   background: linear-gradient(#fff, #f8f8f8);
   position: relative;
   overflow: hidden;
@@ -92,7 +92,7 @@
   line-height: 1.4;
 }
 .link {
-  color: #202020;
+  color: var(--black);
   letter-spacing: 0.8px;
   font-weight: 700;
   text-transform: uppercase;

@@ -17,9 +17,11 @@ export const metadata = {
 export default function Page() {
   return (
     <main>
-      <div className={styles.Contact}>
+      <div className="pt-[160px] lg:pt-[120px] lg:pb-[80px]">
         <div className="wrapper">
-          <h1 className={styles.title}>We can&apos;t wait to meet you.</h1>
+          <h1 className="text-[100px] font-semibold max-w-[1375px] mb-[80px] leading-none 1xl:text-[7.2vw] lg:text-[48px]">
+            We can&apos;t wait to meet you.
+          </h1>
           <p className={styles.subheading}>
             Meet us over email, live{" "}
             <span className={styles.gradientText}>meeting</span>,{" "}

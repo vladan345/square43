@@ -1,5 +1,5 @@
 .WebDevelopment {
-  background-color: #fff;
+  background-color: var(--white);
   color: #33454f;
   position: relative;
   padding-bottom: 240px;

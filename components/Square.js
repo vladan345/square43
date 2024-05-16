@@ -48,9 +48,9 @@ function Square(props) {
         </video>
       </div>
       <div className={`${styles.videoWrap} video4`}>
-        <video autoPlay playsInline muted loop className={styles.video}>
+        {/* <video autoPlay playsInline muted loop className={styles.video}>
           <source src="/images/square4.mp4" type="video/mp4" />
-        </video>
+        </video> */}
       </div>
       <div className={`${styles.videoWrap} video5`}>
         {/* <video autoPlay playsInline muted loop className={styles.video}>

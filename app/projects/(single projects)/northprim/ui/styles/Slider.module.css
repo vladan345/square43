@@ -1,5 +1,5 @@
 .Slider {
-  background: #fff;
+  background: var(--white);
   position: relative;
   max-width: 100%;
 }

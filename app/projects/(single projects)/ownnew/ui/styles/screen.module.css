@@ -162,7 +162,7 @@
 }
 .code {
   width: 25%;
-  background-color: #fff;
+  background-color: var(--white);
   margin-left: 20px;
   border-radius: 10px;
   border: 2px solid #33454f;

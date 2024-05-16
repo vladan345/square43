@@ -1,7 +1,7 @@
 .Footer {
   width: 100%;
   min-height: 288px;
-  background: #202020;
+  background: var(--black);
   padding-bottom: 40px;
 }
 .row {

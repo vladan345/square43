@@ -1,12 +1,12 @@
 .Print {
-  background: #fff;
+  background: var(--white);
   padding: 120px 0 0 0;
 }
 .paragraphs {
   max-width: 560px;
 }
 .description {
-  color: #202020;
+  color: var(--black);
   font-size: 18px;
   margin-bottom: 40px;
   max-width: 360px;

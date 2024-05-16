@@ -1,6 +1,6 @@
 .Brand {
   padding: 120px 0 100px 0;
-  background-color: #fff;
+  background-color: var(--white);
 }
 .logoScheme {
   margin-left: -45px;
@@ -20,7 +20,7 @@
   margin-left: 60px;
 }
 .paragraphs {
-  color: #202020;
+  color: var(--black);
   max-width: 400px;
   line-height: 1.4;
 }

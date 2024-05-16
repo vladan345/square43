@@ -10,18 +10,21 @@
   font-family: MatterRegular;
   src: url("../public/fonts/Matter-Regular.otf");
 } */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --white: #fff;
+  --black: #202020;
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
-  background-color: #fff;
-  color: #202020;
+  background-color: var(--white);
+  color: var(--black);
 }
 body {
   position: relative;
@@ -34,7 +37,6 @@ h2 {
   font-size: 48px;
   margin-bottom: 80px;
   line-height: 1.2;
-  color: #202020;
   font-weight: 300;
 }
 p {
@@ -178,11 +180,15 @@ i {
   height: 400px;
   right: 100px;
   transform: translate(0, -50%) rotateZ(180deg);
+  opacity: 0;
+  pointer-events: none;
 }
 #step5 {
   right: 200px;
   transform: translate(0, -50%) rotateZ(0);
   opacity: 0;
+  pointer-events: none;
+  z-index: -10;
 }
 
 #step6 {
