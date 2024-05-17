@@ -17,6 +17,7 @@
 :root {
   --white: #fff;
   --black: #202020;
+  --transparent: #00000000;
 }
 
 html,

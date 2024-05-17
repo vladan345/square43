@@ -22,7 +22,7 @@
 .bottom {
   width: 100%;
   height: 300px;
-  background: linear-gradient(var(--black), var(--black) 00);
+  background: linear-gradient(var(--black), var(--transparent));
   z-index: 10;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .bottom {
-  background: linear-gradient(var(--black) 00, var(--black));
+  background: linear-gradient(var(--transparent), var(--black));
 }
 
 @media (max-width: 425px) {

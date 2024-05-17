@@ -10,17 +10,17 @@ export default function MembersCards() {
   const employees = [
     {
       name: "Nikola Tomović",
-      img: "/images/vladimir.png",
+      img: "/images/dzoni.png",
       title: "CEO & Founder",
     },
     {
       name: "Vidan Dojčinović",
-      img: "/images/vladimir.png",
+      img: "/images/vidan.png",
       title: "Marketing Director",
     },
     {
       name: "Marko Živanović",
-      img: "/images/vladimir.png",
+      img: "/images/marko.png",
       title: "Art Director",
     },
     {
@@ -30,28 +30,33 @@ export default function MembersCards() {
     },
     {
       name: "Ilija Vidaković",
-      img: "/images/vladimir.png",
+      img: "/images/ilija.png",
       title: "Graphic & Motion Designer",
     },
     {
       name: "Nina Đukić",
-      img: "/images/vladimir.png",
+      img: "/images/nina.png",
       title: "Senior Content Writer",
     },
     {
       name: "Vladan Marković",
-      img: "/images/vladimir.png",
+      img: "/images/vladan.png",
       title: "Lead Frontend Developer",
     },
     {
       name: "Đulian Bogdan",
-      img: "/images/vladimir.png",
+      img: "/images/julian.png",
       title: "Frontend Developer",
     },
     {
       name: "Natalija Jevtić",
-      img: "/images/vladimir.png",
+      img: "/images/natalija.png",
       title: "PR Little",
+    },
+    {
+      name: "Mlađana Crnković",
+      img: "/images/maya.png",
+      title: "Boss/Artist",
     },
   ];
 
@@ -119,7 +124,7 @@ export default function MembersCards() {
           <button
             onClick={() => {
               handlePrevSlide();
-              setCurrent(current === 1 ? 9 : current - 1);
+              setCurrent(current === 1 ? 10 : current - 1);
             }}
             className="splide__arrow splide__arrow--prev"
           >

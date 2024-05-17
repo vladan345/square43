@@ -17,8 +17,8 @@ export default function BlackWhite() {
         color: "var(--black)",
         scrollTrigger: {
           trigger: ".blackWhite",
-          start: "50% center",
-          end: "60% center",
+          start: "40% center",
+          end: "65% center",
           stagger: 1,
           scrub: true,
           duration: 1,
@@ -28,18 +28,19 @@ export default function BlackWhite() {
         color: "var(--black)",
         scrollTrigger: {
           trigger: ".blackWhite",
-          start: "45% center",
+          start: "40% center",
           end: "50% center",
           stagger: 1,
           scrub: true,
           duration: 1,
+          markers: true,
         },
       });
       gsap.to(".businessParagraph", {
         color: "var(--black)",
         scrollTrigger: {
           trigger: ".blackWhite",
-          start: "45% center",
+          start: "40% center",
           end: "50% center",
           stagger: 1,
           scrub: true,
@@ -51,7 +52,7 @@ export default function BlackWhite() {
         color: "var(--black)",
         scrollTrigger: {
           trigger: ".blackWhite",
-          start: "45% center",
+          start: "40% center",
           end: "50% center",
           stagger: 1,
           scrub: true,
@@ -63,7 +64,7 @@ export default function BlackWhite() {
         color: "var(--black)",
         scrollTrigger: {
           trigger: ".blackWhite",
-          start: "45% center",
+          start: "40% center",
           end: "50% center",
           stagger: 1,
           scrub: true,
@@ -75,7 +76,7 @@ export default function BlackWhite() {
         color: "var(--black)",
         scrollTrigger: {
           trigger: ".blackWhite",
-          start: "45% center",
+          start: "40% center",
           end: "50% center",
           stagger: 1,
           scrub: true,
