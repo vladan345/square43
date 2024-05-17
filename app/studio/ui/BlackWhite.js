@@ -33,7 +33,6 @@ export default function BlackWhite() {
           stagger: 1,
           scrub: true,
           duration: 1,
-          markers: true,
         },
       });
       gsap.to(".businessParagraph", {
