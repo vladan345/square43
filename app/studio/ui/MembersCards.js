@@ -142,7 +142,7 @@ export default function MembersCards() {
           <button
             onClick={() => {
               handleNextSlide();
-              setCurrent(current === 9 ? 1 : current + 1);
+              setCurrent(current === 10 ? 1 : current + 1);
             }}
             className="splide__arrow splide__arrow--next"
           >
