@@ -21,7 +21,7 @@ export default function Header() {
     { link: "Work", href: "/projects", position: "left" },
     { link: "Services", href: "/services", position: "left" },
     { link: "Career", href: "/career", position: "left" },
-    // { link: "Studio", href: "/studio", position: "right" },
+    { link: "Studio", href: "/studio", position: "right" },
     { link: "Thoughts", href: "/thoughts", position: "right" },
     { link: "Contact", href: "/contact", position: "right" },
   ];
