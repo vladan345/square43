@@ -36,7 +36,7 @@ export async function generateMetadata({ params }, parent) {
     },
     title: blog.postTitle,
     description: blog.excerpt,
-    metadataBase: new URL(`https://square43.com/thoughts/${slug}`),
+    metadataBase: new URL(`https://square43.com/`),
   };
 }
 

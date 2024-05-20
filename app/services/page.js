@@ -14,7 +14,7 @@ export const metadata = {
   title: "Square43 Studio | Services",
   description:
     "Let us paint you a picture - Our services range from all things digital to artistry you can feel",
-  metadataBase: new URL("https://square43.com/services"),
+  metadataBase: new URL("https://square43.com/"),
 };
 
 export default async function Page() {

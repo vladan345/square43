@@ -13,7 +13,7 @@ export const metadata = {
   },
   title: "Square43 Studio | Memos",
   description: "Think of this as our status updates.",
-  metadataBase: new URL("https://square43.com/thoughts"),
+  metadataBase: new URL("https://square43.com/"),
 };
 
 export default async function Page() {

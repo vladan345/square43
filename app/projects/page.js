@@ -13,7 +13,7 @@ export const metadata = {
   title: "Square43 Studio | Work",
   description:
     "Not a portfolio - an exhibition. Reliable and totally unbiased sources claim we got MOMA jealous.",
-  metadataBase: new URL("https://square43.com/projects"),
+  metadataBase: new URL("https://square43.com/"),
 };
 
 export default async function Page() {

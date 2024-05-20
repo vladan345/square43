@@ -11,7 +11,7 @@ export const metadata = {
   },
   title: "Square43 Studio | Contact",
   description: "We can't wait to meet you",
-  metadataBase: new URL("https://square43.com/contact"),
+  metadataBase: new URL("https://square43.com/"),
 };
 
 export default function Page() {
