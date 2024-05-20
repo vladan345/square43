@@ -9,13 +9,13 @@ import Video from "./ui/Video";
 
 export const metadata = {
   openGraph: {
-    title: "Square43 Studio | About",
+    title: "Square43 Studio | Studio",
     description:
       "Building is believing - and we'll build a bright future in front of you.",
     images: [{ url: "/images/About.png" }],
     url: "https://square43.com/studio",
   },
-  title: "Square43 Studio | About",
+  title: "Square43 Studio | Studio",
   description:
     "Building is believing - and we'll build a bright future in front of you.",
   metadataBase: new URL("https://square43.com/studio"),

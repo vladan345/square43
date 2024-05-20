@@ -47,7 +47,7 @@ function Footer() {
               Linked In
             </a>
           </nav>
-          <p className={styles.copy}>&copy; 2023 Square43</p>
+          <p className={styles.copy}>&copy; 2024 Square43</p>
         </div>
       </div>
     </div>

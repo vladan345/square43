@@ -12,6 +12,8 @@
   color: white;
   font-weight: 700;
   line-height: 1;
+  display: flex;
+  align-items: center;
 }
 .contactLink:hover .icon {
   margin-left: 60px;

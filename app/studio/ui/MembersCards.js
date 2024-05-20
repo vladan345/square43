@@ -105,8 +105,8 @@ export default function MembersCards() {
                 <Image
                   src={element.img}
                   alt="employee"
-                  width={370}
-                  height={370}
+                  width={310}
+                  height={310}
                   className={styles.employeeImage}
                 />
                 <div className={styles.textContainer}>
