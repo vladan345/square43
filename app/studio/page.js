@@ -12,7 +12,7 @@ export const metadata = {
     title: "Square43 Studio | Studio",
     description:
       "Building is believing - and we'll build a bright future in front of you.",
-    images: [{ url: "/images/About.png" }],
+    images: [{ url: "/images/zgradethumbnail.png" }],
     url: "https://square43.com/studio",
   },
   title: "Square43 Studio | Studio",
