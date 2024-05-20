@@ -9,7 +9,7 @@ export const metadata = {
   },
   title: "Square43 Studio | Career",
   description: "If you are the one show us what you got",
-  metadataBase: new URL("https://square43.com/career"),
+  metadataBase: new URL("https://square43.com/"),
 };
 
 export default function Page() {
