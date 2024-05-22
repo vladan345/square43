@@ -1,4 +1,5 @@
 import CareerContent from "./ui/CareerContent";
+import Links from "./ui/Links";
 
 export const metadata = {
   openGraph: {
@@ -16,6 +17,7 @@ export default function Page() {
   return (
     <>
       <CareerContent />
+      <Links />
     </>
   );
 }

@@ -1,6 +1,7 @@
 import { GraphQLClient, gql } from "graphql-request";
 import BlogList from "./ui/BlogList";
 import styles from "./Insights.module.css";
+import Links from "./ui/Links";
 
 const client = new GraphQLClient(process.env.NEXT_PUBLIC_HYGRAPH_URL);
 
@@ -54,6 +55,7 @@ export default async function Page() {
           Think of this as our status updates.
         </p>
         <BlogList blogs={blogs} />
+        <Links />
       </div>
     </div>
   );

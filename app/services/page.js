@@ -1,6 +1,7 @@
 import ServiceList from "./ui/ServiceList";
 import Taglines from "./ui/Taglines";
 import Achievements from "./ui/Achievements";
+import Links from "./ui/Links";
 import { getAllServices } from "@/utils/data/getData";
 
 export const metadata = {
@@ -25,6 +26,7 @@ export default async function Page() {
         <ServiceList services={services} />
         <Taglines />
         <Achievements />
+        <Links />
       </main>
     </div>
   );

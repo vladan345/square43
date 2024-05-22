@@ -30,17 +30,50 @@ export default function ProjectList({ projects }) {
           If you like what you see, contact us and enter our project hall of
           fame!
         </p>
-        <Link href="/contact" className="readMore">
-          Contact us
-          <div className="icon">
-            <Image
-              src="/images/arrow.svg"
-              alt="Arrow icon"
-              width={40}
-              height={40}
-            />
-          </div>
-        </Link>
+        <div className="flex flex-col gap-[20px] w-[300px]">
+          <Link
+            href="/contact"
+            className="readMore flex flex-row justify-between"
+          >
+            Contact us
+            <div className="icon">
+              <Image
+                src="/images/arrow.svg"
+                alt="Arrow icon"
+                width={40}
+                height={40}
+              />
+            </div>
+          </Link>
+          <Link
+            href="/career"
+            className="readMore flex flex-row justify-between"
+          >
+            Join us
+            <div className="icon">
+              <Image
+                src="/images/arrow.svg"
+                alt="Arrow icon"
+                width={40}
+                height={40}
+              />
+            </div>
+          </Link>
+          <Link
+            href="/thoughts"
+            className="readMore flex flex-row justify-between"
+          >
+            Blog
+            <div className="icon">
+              <Image
+                src="/images/arrow.svg"
+                alt="Arrow icon"
+                width={40}
+                height={40}
+              />
+            </div>
+          </Link>
+        </div>
       </div>
     </section>
   );
