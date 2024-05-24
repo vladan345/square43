@@ -1,4 +1,5 @@
 import { GraphQLClient, gql } from "graphql-request";
+import { getBlog } from "@/utils/data/getData";
 
 import BlogContent from "./ui/BlogContent";
 
@@ -42,27 +43,7 @@ export async function generateMetadata({ params }, parent) {
 
 export default async function Blog({ params }) {
   const slug = params.slug;
-
-  const query = gql`
-    query Blogs($slug: String!) {
-      blog(where: { slug: $slug }) {
-        excerpt
-        blogDate
-        postTitle
-        id
-        previewImage {
-          url
-        }
-        blogContent {
-          html
-        }
-        projectLink
-      }
-    }
-  `;
-
-  const { blog } = await client.request(query, { slug });
-
+  const blog = await getBlog(slug);
   return (
     <>
       <BlogContent blog={blog} />

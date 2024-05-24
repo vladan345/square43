@@ -56,7 +56,7 @@ export default function MembersCards() {
     {
       name: "Mlađana Crnković",
       img: "/images/maya.png",
-      title: "Boss/Artist",
+      title: "German Quality Management",
     },
   ];
 

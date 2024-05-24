@@ -36,19 +36,19 @@ export default function BlogList({ blogs }) {
     "December",
   ];
 
-  const date = new Date(blogs[0].blogDate);
+  const date = new Date(blogs[0].date);
   const latestDate = `${date.getDate()} ${
     month[date.getMonth()]
   } ${date.getFullYear()}`;
-
+  console.log(blogs);
   return (
     <section className={styles.stories}>
       <Link
-        href={`thoughts/${blogs[0].slug}`}
+        href={`thoughts/${blogs[0].slug.current}`}
         className={styles.latest}
         onClick={handleClick}
         style={{
-          background: `url(${blogs[0].featuredImage.url}) center center no-repeat`,
+          background: `url(${blogs[0].cardimage.asset?.url}) center center no-repeat`,
           backgroundSize: "cover",
         }}
       >
@@ -58,10 +58,10 @@ export default function BlogList({ blogs }) {
         <div className={styles.row}>
           <p className={styles.date}>{latestDate}</p>
           <p className={styles.excerpt}>{blogs[0].excerpt}</p>
-          <h3 className={styles.blogTitle}>{blogs[0].postTitle}</h3>
+          <h3 className={styles.blogTitle}>{blogs[0].title}</h3>
         </div>
         <div className={styles.row}>
-          <h3 className={styles.blogTitle}>{blogs[0].postTitle}</h3>
+          <h3 className={styles.blogTitle}>{blogs[0].title}</h3>
           <p className={styles.excerpt}>{blogs[0].excerpt}</p>
           <div className={`${styles.blogLink} readMore`}>
             Read insight
@@ -78,19 +78,19 @@ export default function BlogList({ blogs }) {
       </Link>
       {blogs &&
         blogs.slice(1).map((blog) => {
-          const dateObj = new Date(blog.blogDate);
+          const dateObj = new Date(blog.date);
           const dateString = `${dateObj.getDate()} ${
             month[dateObj.getMonth()]
           } ${dateObj.getFullYear()}`;
 
           return (
             <Link
-              key={blog.id}
-              href={`/thoughts/${blog.slug}`}
+              key={blog._id}
+              href={`/thoughts/${blog.slug.current}`}
               className={styles.singleBlog}
               onClick={handleClick}
               style={{
-                background: `url(${blog.featuredImage.url}) center center no-repeat`,
+                background: `url(${blog.cardimage.asset?.url}) center center no-repeat`,
                 backgroundSize: "cover",
               }}
             >

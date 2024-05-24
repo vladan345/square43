@@ -3,6 +3,29 @@ import { useLoading } from "@/utils/hooks/LoadingContext";
 import styles from "./BlogSingle.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import { PortableText } from "@portabletext/react";
+import client from "../../../sanityClient";
+import imageUrlBuilder from "@sanity/image-url";
+
+const builder = imageUrlBuilder(client);
+function urlFor(source) {
+  return builder.image(source);
+}
+
+const components = {
+  types: {
+    image: ({ value, isInline }) => (
+      <img
+        src={urlFor(value)
+          .width(isInline ? 100 : 800)
+          .fit("max")
+          .auto("format")
+          .url()}
+        className="rounded-[40px]"
+      />
+    ),
+  },
+};
 
 export default function BlogContent({ blog }) {
   const month = [
@@ -19,7 +42,7 @@ export default function BlogContent({ blog }) {
     "November",
     "December",
   ];
-  const date = new Date(blog.blogDate);
+  const date = new Date(blog.date);
 
   const latestDate = `${date.getDate()} ${
     month[date.getMonth()]
@@ -29,11 +52,14 @@ export default function BlogContent({ blog }) {
   setTimeout(() => {
     setLoading(false);
   }, 1000);
+
+  const content = blog.content;
+
   return (
     <div className={styles.Blog + " container"}>
       <img
         className={styles.featuredImage}
-        src={blog.previewImage.url}
+        src={blog.heroimage.asset?.url}
         width={620}
         height={620}
         alt="featured Image"
@@ -47,14 +73,14 @@ export default function BlogContent({ blog }) {
           }}
           className={styles.title}
         >
-          {blog.postTitle}
+          {blog.title}
         </h1>
         <p className={styles.excerpt}>{blog.excerpt}</p>
-        <div
-          className={styles.content}
-          dangerouslySetInnerHTML={{ __html: blog.blogContent.html }}
-        />
-        {blog.projectLink && (
+        <div className={styles.content}>
+          <PortableText value={content} components={components} />
+        </div>
+
+        {/* {blog.projectLink && (
           <a
             href={blog.projectLink}
             className={`readMore ${styles.liveProject}`}
@@ -70,7 +96,7 @@ export default function BlogContent({ blog }) {
               />
             </div>
           </a>
-        )}
+        )} */}
       </div>
     </div>
   );

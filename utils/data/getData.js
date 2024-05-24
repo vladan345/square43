@@ -174,3 +174,52 @@ export async function getLatestProjects() {
     return null;
   }
 }
+
+export async function getAllBlogs() {
+  const query = `
+  *[_type == "blog"] {
+    _id,
+    title,
+    slug, 
+    date, 
+    excerpt,  
+    cardimage {
+      asset->{
+        url
+      }
+    },
+  }
+  `;
+  try {
+    const blogData = await client.fetch(query, { next: { revalidate: 60 } });
+    return blogData;
+  } catch (error) {
+    console.error("Error fetching blog data:", error.message);
+    return null;
+  }
+}
+
+export async function getBlog(slug) {
+  const query = `
+  *[_type == "blog" && slug.current == $slug] {
+    _id,
+    title,
+    slug, 
+    date, 
+    excerpt,
+    content,  
+    heroimage {
+      asset->{
+        url
+      }
+    },
+  }[0]
+  `;
+  try {
+    const blogData = await client.fetch(query, { slug });
+    return blogData;
+  } catch (error) {
+    console.error("Error fetching blog data:", error.message);
+    return null;
+  }
+}
