@@ -40,7 +40,7 @@ export default function BlogList({ blogs }) {
   const latestDate = `${date.getDate()} ${
     month[date.getMonth()]
   } ${date.getFullYear()}`;
-  console.log(blogs);
+
   return (
     <section className={styles.stories}>
       <Link
