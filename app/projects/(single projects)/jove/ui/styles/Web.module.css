@@ -8,6 +8,7 @@
   top: -3px;
   width: 122%;
   height: auto;
+  max-width: none;
 }
 .tabletWrap video {
   width: 100%;

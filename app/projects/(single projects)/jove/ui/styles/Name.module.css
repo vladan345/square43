@@ -27,11 +27,13 @@
   position: absolute;
   top: 0;
   left: 0;
+  max-width: none;
 }
 .arm {
   position: absolute;
   top: 0;
   left: 0;
+  max-width: none;
 }
 .textBox {
   max-width: 440px;
