@@ -1,9 +1,10 @@
 "use client";
-import styles from "./styles/Newsletter.module.css";
-import { countries } from "@/utils/data/countries";
-import { useState, useRef } from "react";
-import Image from "next/image";
 
+import { useState, useRef, useEffect } from "react";
+import styles from "./styles/Newsletter.module.css";
+import Image from "next/image";
+import Script from "next/script";
+import { countries } from "@/utils/data/countries";
 import { subscribeToMailchimp } from "@/actions/actions";
 
 export default function Newsletter() {
@@ -21,33 +22,82 @@ export default function Newsletter() {
   const [country, setCountry] = useState("Select country (optional)");
   const [isCountriesOpen, setIsCountriesOpen] = useState(false);
   const [response, setResponse] = useState({});
+  const [captchaToken, setCaptchaToken] = useState(null);
   const select = useRef();
   const form = useRef();
+
   const handleOptionSelect = (option) => {
     setCountry(option);
-    // Set the value of the select element here
     select.current.value = option;
     setIsCountriesOpen(false);
   };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const { message, status } = await subscribeToMailchimp(
+      new FormData(form.current)
+    );
+    const rawFormData = {
+      email: form.current.email.value,
+      firstName: form.current.firstName.value,
+      lastName: form.current.lastName.value,
+      country: form.current.country.value,
+      services: Array.from(form.current.service)
+        .filter((checkbox) => checkbox.checked)
+        .map((checkbox) => checkbox.value),
+      budget: form.current.budget.value,
+      message: form.current.message.value,
+    };
+
+    const res = await fetch("/api/send-email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ ...rawFormData, captchaToken }),
+    });
+
+    const result = await res.json();
+
+    if (result.success) {
+      console.log("Email sent successfully!");
+    } else {
+      console.log("Email not sent, but submission may be stored");
+    }
+    setResponse({ message, status });
+    if (status === "error") {
+      return;
+    } else {
+      form.current.reset();
+      setCountry("Select country (optional)");
+    }
+  };
+
+  useEffect(() => {
+    const loadReCaptcha = () => {
+      grecaptcha.ready(() => {
+        grecaptcha
+          .execute(process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY, {
+            action: "submit",
+          })
+          .then((token) => {
+            setCaptchaToken(token);
+          });
+      });
+    };
+
+    if (typeof grecaptcha !== "undefined") {
+      loadReCaptcha();
+    }
+  }, []);
+
   return (
-    <form
-      className={styles.form}
-      ref={form}
-      action={async (formData) => {
-        const { message, status } = await subscribeToMailchimp(formData);
-        setResponse({ message, status });
-        if (status == "error") {
-          return;
-        } else {
-          form.current.reset();
-          setCountry("Select country (optional)");
-        }
-      }}
-    >
+    <form className={styles.form} ref={form} onSubmit={handleSubmit}>
       {response.status && (
         <p
           className={`${
-            response.status == "error" ? styles.error : styles.success
+            response.status === "error" ? styles.error : styles.success
           } ${styles.response}`}
         >
           {response.message}
@@ -92,7 +142,7 @@ export default function Newsletter() {
             className={styles.countrySelect}
             style={{
               color:
-                country == "Select country (optional)" ? "#d0d0d0" : "#000",
+                country === "Select country (optional)" ? "#d0d0d0" : "#000",
             }}
             defaultValue={country}
             readOnly
@@ -108,7 +158,6 @@ export default function Newsletter() {
             }}
           />
         </div>
-
         {isCountriesOpen && (
           <div data-lenis-prevent className={styles.selectWrap}>
             <div className={styles.selectList}>
@@ -121,7 +170,6 @@ export default function Newsletter() {
           </div>
         )}
       </div>
-
       <p className={styles.fieldHeading}>Services you are looking for*</p>
       <div className={styles.serviceWrap}>
         {services.map((service) => (
@@ -138,7 +186,6 @@ export default function Newsletter() {
           </div>
         ))}
       </div>
-
       <p className={styles.fieldHeading}>Choose budget*</p>
       <div className={styles.budgetWrap}>
         <div className={styles.singleBudget}>
@@ -160,7 +207,6 @@ export default function Newsletter() {
           <label htmlFor="50k+">$50k+</label>
         </div>
       </div>
-
       <p className={styles.fieldHeading}>Comment</p>
       <textarea
         className={styles.message}
@@ -169,7 +215,6 @@ export default function Newsletter() {
         cols="30"
         rows="4"
       ></textarea>
-
       <button type="submit" className={`readMore ${styles.submitBtn}`}>
         Submit
         <div className="icon">
@@ -181,6 +226,21 @@ export default function Newsletter() {
           />
         </div>
       </button>
+      <Script
+        src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`}
+        strategy="lazyOnload"
+        onLoad={() => {
+          grecaptcha.ready(() => {
+            grecaptcha
+              .execute(process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY, {
+                action: "submit",
+              })
+              .then((token) => {
+                setCaptchaToken(token);
+              });
+          });
+        }}
+      />
     </form>
   );
 }

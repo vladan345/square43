@@ -51,9 +51,24 @@ export async function subscribeToMailchimp(formData) {
       version: "v4",
     });
 
+    function getCurrentDateTimeString() {
+      const now = new Date();
+
+      // Adjust for Belgrade timezone, which is UTC+2 or UTC+1 depending on DST
+      const belgradeOffset = 2; // UTC+2 in standard time, UTC+1 in DST
+      const utc = now.getTime() + now.getTimezoneOffset() * 60000;
+      const belgradeTime = new Date(utc + 3600000 * belgradeOffset);
+
+      // Format date and time as string (e.g., "2024-06-20 15:30:00")
+      const dateString = belgradeTime.toISOString().split("T")[0];
+      const timeString = belgradeTime.toTimeString().split(" ")[0];
+
+      return `${dateString} ${timeString}`;
+    }
+
     const googleResponse = await sheets.spreadsheets.values.append({
       spreadsheetId: process.env.GOOGLE_SHEET_ID,
-      range: "A1:G1",
+      range: "A1:H1",
       valueInputOption: "USER_ENTERED",
       requestBody: {
         values: [
@@ -65,6 +80,7 @@ export async function subscribeToMailchimp(formData) {
             rawFormData.services,
             rawFormData.budget,
             rawFormData.message,
+            getCurrentDateTimeString(),
           ],
         ],
       },
