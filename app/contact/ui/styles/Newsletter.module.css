@@ -218,3 +218,54 @@
     height: 130px;
   }
 }
+
+.loader {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  position: relative;
+  color: #000;
+  border: 1px solid;
+  box-sizing: border-box;
+  animation: fill 3s ease-in-out infinite;
+}
+.spinner {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  animation: spinner 3s infinite ease-in-out;
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(360deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  75% {
+    transform: rotate(720deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+@keyframes fill {
+  0% {
+    box-shadow: 0 0 inset;
+  }
+  25% {
+    box-shadow: 0 0 inset;
+  }
+  50% {
+    box-shadow: 0 -48px inset;
+  }
+  75% {
+    box-shadow: 0 -48px inset;
+  }
+  100% {
+    box-shadow: 0 0 inset;
+  }
+}

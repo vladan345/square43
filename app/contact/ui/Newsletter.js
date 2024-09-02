@@ -23,6 +23,7 @@ export default function Newsletter() {
   const [isCountriesOpen, setIsCountriesOpen] = useState(false);
   const [response, setResponse] = useState({});
   const [captchaToken, setCaptchaToken] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
   const select = useRef();
   const form = useRef();
 
@@ -34,7 +35,7 @@ export default function Newsletter() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    setIsLoading(true);
     const { message, status } = await subscribeToMailchimp(
       new FormData(form.current)
     );
@@ -70,6 +71,7 @@ export default function Newsletter() {
       return;
     } else {
       form.current.reset();
+      setIsLoading(false);
       setCountry("Select country (optional)");
     }
   };
@@ -224,17 +226,23 @@ export default function Newsletter() {
         cols="30"
         rows="4"
       ></textarea>
-      <button type="submit" className={`readMore ${styles.submitBtn}`}>
-        Submit
-        <div className="icon">
-          <Image
-            src="/images/arrow.svg"
-            alt="Arrow icon"
-            width={40}
-            height={40}
-          />
-        </div>
-      </button>
+      {!isLoading ? (
+        <button type="submit" className={`readMore ${styles.submitBtn}`}>
+          Submit
+          <div className="icon">
+            <Image
+              src="/images/arrow.svg"
+              alt="Arrow icon"
+              width={40}
+              height={40}
+            />
+          </div>
+        </button>
+      ) : (
+        <span className={styles.spinner}>
+          <span className={styles.loader}></span>
+        </span>
+      )}
       <Script
         src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`}
         strategy="lazyOnload"
