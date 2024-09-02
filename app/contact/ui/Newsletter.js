@@ -83,12 +83,21 @@ export default function Newsletter() {
           })
           .then((token) => {
             setCaptchaToken(token);
+          })
+          .catch((error) => {
+            console.error("Error executing reCAPTCHA", error);
           });
       });
     };
 
     if (typeof grecaptcha !== "undefined") {
       loadReCaptcha();
+    } else {
+      const script = document.createElement("script");
+      script.src = `https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`;
+      script.async = true;
+      script.onload = loadReCaptcha;
+      document.head.appendChild(script);
     }
   }, []);
 

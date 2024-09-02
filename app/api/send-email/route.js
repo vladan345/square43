@@ -12,7 +12,6 @@ export async function POST(req) {
     budget,
     captchaToken,
   } = await req.json();
-
   // Validate reCAPTCHA token
   const captchaRes = await fetch(
     `https://www.google.com/recaptcha/api/siteverify`,
