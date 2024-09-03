@@ -27,6 +27,7 @@ export async function getAllProjects() {
       slogan,
       heroImage,
       heroVideo,
+      published,
       services[]-> {
         _id,
         name,

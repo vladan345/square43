@@ -25,7 +25,7 @@ function ScrollSequence() {
     };
     for (let i = 0; i < frameCount; i++) {
       const img = new Image();
-      img.src = `/images/northprim-seq/${i + 1}.webp`;
+      img.src = `/images/northprim/northprim-seq/${i + 1}.webp`;
       images.push(img);
     }
     gsap.to(sequence, {

@@ -3,7 +3,7 @@ import { createClient } from "@sanity/client/stega";
 const client = createClient({
   projectId: "twwfkpqa",
   dataset: "production",
-  useCdn: false,
+  useCdn: process.env.NODE_ENV === "production",
   apiVersion: "2024-01-16",
 });
 

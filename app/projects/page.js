@@ -28,7 +28,15 @@ export default async function Page() {
               <p className={styles.subheading}>
                 Reliable and totally unbiased sources claim we got MOMA jealous.
               </p>
-              <ProjectList projects={projects.reverse()} />
+              <ProjectList
+                projects={
+                  process.env.NODE_ENV == "development"
+                    ? projects.reverse()
+                    : projects
+                        .reverse()
+                        .filter((project) => project.published == true)
+                }
+              />
             </div>
           </div>
         </div>
