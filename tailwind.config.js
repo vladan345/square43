@@ -9,7 +9,13 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        white: "#ffffff",
+        black: "#202020",
+        black2: "#202020",
+      },
+    },
     screens: {
       // "3xl": { max: "1600px" },
       "2xl": { max: "1600px" },
@@ -18,11 +24,6 @@ module.exports = {
       lg: { max: "1050px" },
       md: { max: "900px" },
       sm: { max: "480px" },
-    },
-    colors: {
-      white: "#ffffff",
-      black: "#202020",
-      black2: "#202020",
     },
   },
   plugins: [],
