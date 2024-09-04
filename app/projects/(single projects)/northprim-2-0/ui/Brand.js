@@ -10,7 +10,43 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Brand() {
   const main = useRef(null);
 
-  useGSAP(() => {}, { scope: main });
+  useGSAP(
+    () => {
+      gsap.from(".elements", {
+        left: "50%",
+        top: "50%",
+        duration: 1.2,
+        ease: "power1.inOut",
+        scrollTrigger: {
+          trigger: ".trigger",
+          start: "top center",
+          end: "bottom center",
+        },
+      });
+      gsap.from(".logo", {
+        autoAlpha: 0,
+        duration: 1.2,
+        ease: "power1.inOut",
+        scrollTrigger: {
+          trigger: ".trigger",
+          start: "top center",
+          end: "bottom center",
+        },
+      });
+      gsap.from(".arrow", {
+        left: "3%",
+        top: "20%",
+        duration: 2,
+        ease: "power1.inOut",
+        scrollTrigger: {
+          trigger: ".trigger",
+          start: "top center",
+          end: "bottom center",
+        },
+      });
+    },
+    { scope: main }
+  );
 
   return (
     <section ref={main} className="relative z-[3]">
@@ -19,11 +55,11 @@ export default function Brand() {
         alt="Decorative background"
         width={290}
         height={286}
-        className="absolute left-[40%] z-[1] -translate-y-1/2"
+        className="absolute left-[40%] z-[1] -translate-y-1/2 arrow"
       />
-      <div className="flex w-[100vw] justify-center overflow-hidden relative z-0">
+      <div className="flex w-[100vw] justify-center overflow-hidden relative z-0 trigger">
         <Image
-          src="/images/northprim2/blur1.svg"
+          src="/images/northprim2/blur1.webp"
           alt="Decorative background"
           width={2493}
           height={1998}
@@ -38,6 +74,13 @@ export default function Brand() {
         />
 
         <Image
+          src="/images/northprim2/northprim-logo.svg"
+          alt="Decorative object"
+          width={616}
+          height={123}
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 logo"
+        />
+        <Image
           src="/images/northprim2/path2.svg"
           alt="Decorative object"
           width={764}
@@ -50,7 +93,7 @@ export default function Brand() {
           alt="Decorative object"
           width={304}
           height={304}
-          className="absolute top-[10%] right-[30%]"
+          className="absolute top-[10%] right-[30%] elements"
         />
 
         <Image
@@ -58,21 +101,42 @@ export default function Brand() {
           alt="Decorative object"
           width={490}
           height={424}
-          className="absolute top-[40%] left-[-150px] -translate-y-1/2"
+          className="absolute top-[40%] left-[-150px] -translate-y-1/2 elements"
+        />
+        <Image
+          src="/images/northprim2/path1.svg"
+          alt="Decorative object"
+          width={630}
+          height={720}
+          className="absolute top-[60px] right-0"
         />
         <Image
           src="/images/northprim2/sheets.png"
           alt="Decorative object"
           width={464}
           height={416}
-          className="absolute top-[180px] right-[-150px]"
+          className="absolute top-[180px] right-[-150px] elements"
         />
         <Image
           src="/images/northprim2/ball1.png"
           alt="Decorative object"
           width={164}
           height={157}
-          className="absolute top-[35%] -translate-y-1/2 right-[10%]"
+          className="absolute top-[35%] -translate-y-1/2 right-[10%] elements"
+        />
+        <Image
+          src="/images/northprim2/moon.png"
+          alt="Decorative object"
+          width={166}
+          height={164}
+          className="absolute top-2/3 left-[20%]"
+        />
+        <Image
+          src="/images/northprim2/pyramid.png"
+          alt="Decorative object"
+          width={248}
+          height={248}
+          className="absolute top-2/3 right-[20%]"
         />
       </div>
       <div className="absolute top-0 left-0 w-screen z-[1]">
