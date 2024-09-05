@@ -16,23 +16,25 @@ export default function WebDesign() {
         ease: "power4.inOut",
         scrollTrigger: {
           trigger: ".trigger",
-          start: "top 30%",
         },
       });
     },
-    { scope: main }
+    { scope: main },
   );
   return (
-    <section ref={main} className="WebDesign mt-[280px] relative z-[1]">
-      <div className="wrapper trigger">
-        <h2>Web Design</h2>
+    <section
+      ref={main}
+      className="WebDesign relative z-[1] mt-[280px] md:mt-[80px]"
+    >
+      <div className="wrapper trigger md:!px-0">
+        <h2 className="md:mx-[20px] md:!mb-[60px]">Web Design</h2>
         <div className="videoWrap relative">
           <video autoPlay muted loop playsInline className="w-full">
             <source src="/images/northprim2/video1.mp4" type="video/mp4" />
           </video>
-          <div className="bg-white block absolute bottom-0 left-0 w-full h-full videoReveal"></div>
+          <div className="videoReveal absolute bottom-0 left-0 block h-full w-full bg-white"></div>
         </div>
-        <p className="max-w-[880px] text-[48px] mt-[80px]">
+        <p className="mt-[80px] max-w-[880px] text-[48px] md:mx-[20px] md:mt-[60px] md:text-[32px]">
           New color palette, new logo, totally new look and feel.
         </p>
       </div>

@@ -2,19 +2,19 @@ import Image from "next/image";
 
 export default function WebDev() {
   return (
-    <section className="WebDev mt-[60px] relative">
-      <div className="wrapper relative z-[1]">
-        <h2 className="!mb-[40px]">Web Development</h2>
-        <p className="max-w-[520px]">
+    <section className="WebDev relative mt-[60px] overflow-x-clip md:pb-[220px]">
+      <div className="wrapper relative z-[1] md:!px-0">
+        <h2 className="!mb-[40px] md:mx-[20px]">Web Development</h2>
+        <p className="max-w-[520px] md:mx-[20px]">
           This was our Studio's very first encounter with building a 3D section
           on a website from scratch.
         </p>
-        <div className="videoWrap relative mt-[80px]">
+        <div className="videoWrap relative mt-[80px] md:mt-[60px]">
           <video autoPlay muted loop playsInline className="w-full">
             <source src="/images/northprim2/video2.mp4" type="video/mp4" />
           </video>
         </div>
-        <div className="flex gap-[120px] mt-[120px]">
+        <div className="mt-[120px] flex gap-[120px] md:mt-[60px] md:flex-col md:gap-[60px] md:px-[20px]">
           <p className="max-w-[520px]">
             To create the custom 3D elements for the website, our team utilized
             industry-leading 3D modeling software - Blender. This powerful tool
@@ -39,7 +39,7 @@ export default function WebDev() {
         alt="Decorative background"
         width={936}
         height={1692}
-        className="absolute left-0 top-[60%] -translate-y-1/2 max-w-none w-[936px]"
+        className="absolute left-0 top-[60%] w-[936px] max-w-none -translate-y-1/2 md:top-[50%] md:max-w-[700px]"
       />
     </section>
   );

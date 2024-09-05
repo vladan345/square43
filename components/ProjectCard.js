@@ -30,7 +30,7 @@ function ProjectCard({ project }) {
             src={project.heroImage}
             alt={`${project.title} hero`}
             fill={true}
-            sizes="100vw"
+            sizes="50vw, max-width(767px) 100vw"
             priority
             className={styles.image}
           />

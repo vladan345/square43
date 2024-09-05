@@ -84,27 +84,11 @@ function ProjectHero({ project }) {
           </div>
         </div>
       </div>
-      <div
-        className={styles.missionSolution}
-        style={{
-          backgroundColor:
-            project.slug.current == "northprim-2-0" && "#27006D !important",
-          color: project.slug.current == "northprim-2-0" && "#fff !important",
-        }}
-      >
+      <div className={styles.missionSolution}>
         <div className="wrapper">
           <div className={styles.missionWrap}>
             <div className={styles.content}>
-              <h3
-                className={styles.heading}
-                style={{
-                  color:
-                    project.slug.current == "northprim-2-0" &&
-                    "#fff !important",
-                }}
-              >
-                Mission
-              </h3>
+              <h3 className={styles.heading}>Mission</h3>
               <p className={styles.description}>{project.missionShort}</p>
               <p className={styles.description}>{project.missionLong}</p>
             </div>

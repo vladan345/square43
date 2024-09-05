@@ -335,3 +335,60 @@ i {
     transform: translate(-50%, -50%) rotateZ(-180deg);
   }
 }
+
+.float {
+  animation: float 12s infinite ease-in-out;
+}
+.float2 {
+  animation: float2 15s infinite ease-in-out;
+}
+.float3 {
+  animation: float3 10s infinite ease-in-out;
+}
+.float4 {
+  animation: float4 6s infinite ease-in-out;
+}
+@keyframes float {
+  0% {
+    transform: translateY(35px) rotate(0);
+  }
+  50% {
+    transform: translateY(-35px) rotate(10deg);
+  }
+  100% {
+    transform: translateY(35px) rotate(0);
+  }
+}
+@keyframes float2 {
+  0% {
+    transform: translateY(-25px) rotate(0);
+  }
+  50% {
+    transform: translateY(25px) rotate(-10deg);
+  }
+  100% {
+    transform: translateY(-25px) rotate(0);
+  }
+}
+@keyframes float3 {
+  0% {
+    transform: translateY(-10px) rotate(0);
+  }
+  50% {
+    transform: translateY(10px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(-10px) rotate(0);
+  }
+}
+@keyframes float4 {
+  0% {
+    transform: translateY(-10px) rotate(0);
+  }
+  50% {
+    transform: translateY(10px) rotate(0);
+  }
+  100% {
+    transform: translateY(-10px) rotate(0);
+  }
+}

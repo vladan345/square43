@@ -42,14 +42,14 @@ export default async function Page() {
           alt="Decorative background"
           width={1080}
           height={2151}
-          className="max-w-none w-[1080px] absolute right-0 bottom-[40%] translate-y-1/2"
+          className="absolute bottom-[40%] right-0 w-[1080px] max-w-none translate-y-1/2 xl:bottom-[25%] xl:max-w-[750px] md:max-w-[400px]"
         />
         <Image
           src="/images/northprim2/saturn2.webp"
           alt="Decorative background"
           width={298}
           height={174}
-          className="absolute right-[170px] top-0"
+          className="float3 absolute right-[170px] top-[80px] xl:max-w-[200px] md:left-1/2 md:right-auto md:top-[-140px] md:max-w-[150px] md:-translate-x-1/2"
         />
         <Result project={project} />
       </div>
