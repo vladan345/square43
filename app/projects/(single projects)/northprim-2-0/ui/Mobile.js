@@ -33,12 +33,24 @@ export default function Mobile() {
             gravity look and feel.
           </p>
         </div>
-        <Image
-          src="/images/northprim2/phone.png"
-          alt="Phone Mockup"
-          width={455}
-          height={870}
-        />
+        <div className="relative max-w-[370px] md:max-w-[340px]">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute left-1/2 top-1/2 h-[calc(100%-10px)] w-[calc(100%-10px)] -translate-x-1/2 -translate-y-1/2 rounded-[12%] object-cover drop-shadow-[0_10px_30px_rgba(7,0,0,0.40)]"
+          >
+            <source src="/images/northprim2/phone.mp4" type="video/mp4" />
+          </video>
+          <Image
+            src="/images/northprim2/phone.png"
+            alt="Phone Mockup"
+            width={395}
+            height={810}
+            className="relative"
+          />
+        </div>
       </div>
       <Image
         src="/images/northprim2/web1.webp"

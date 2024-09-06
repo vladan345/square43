@@ -10,8 +10,23 @@ export default function WebDev() {
           on a website from scratch.
         </p>
         <div className="videoWrap relative mt-[80px] md:mt-[60px]">
-          <video autoPlay muted loop playsInline className="w-full">
-            <source src="/images/northprim2/video2.mp4" type="video/mp4" />
+          <video autoPlay muted loop playsInline className="w-full md:hidden">
+            <source
+              src="/images/northprim2/behind-the-scenes.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="hidden w-full md:block"
+          >
+            <source
+              src="/images/northprim2/behind-the-scenes-mobile.mp4"
+              type="video/mp4"
+            />
           </video>
         </div>
         <div className="mt-[120px] flex gap-[120px] md:mt-[60px] md:flex-col md:gap-[60px] md:px-[20px]">
