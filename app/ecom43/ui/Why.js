@@ -5,11 +5,11 @@ function Why() {
   const data = [
     {
       title: "Custom design",
-      text: "Why stay within the limits of Shopify templates? Customize every aspect of your online shop.",
+      text: "Make your online shop stand out with fully customizable Shopify solutions!",
     },
     {
       title: "3D graphics",
-      text: "Your shop can enter the 3rd dimension with enabled interactive 3D graphics",
+      text: "Would you like some accessories with your custom tailored suit? Your shop can enter the 3rd dimension with enabled interactive 3D graphics.",
     },
     {
       title: "Lightning speed",
@@ -21,7 +21,7 @@ function Why() {
     },
     {
       title: "Keep your data",
-      text: "Already have a Shopify store? No worries, we connect your data through Shopify's API.",
+      text: "In case you already have a Shopify store, we guarantee a seamless transfer by connecting your data through Shopify's API.",
     },
     {
       title: "Support 24/7",
