@@ -33,7 +33,7 @@ function Why() {
     },
     {
       title: "Keep your data",
-      text: "Already have a Shopify store? No worries, we connect your data through Shopify&apos;s API.",
+      text: "Already have a Shopify store? No worries, we connect your data through Shopify's API.",
     },
     {
       title: "Seeing is believing",
