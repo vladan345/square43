@@ -1,0 +1,34 @@
+.table {
+  width: 100%;
+}
+.table th {
+  width: 33%;
+  text-align: left;
+}
+.table td {
+  width: 33%;
+  text-align: left;
+}
+
+.gradientBorder {
+  position: relative;
+  height: 90px;
+}
+
+.gradientBorder::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  background: linear-gradient(140deg, #7000ff, #00ffff) border-box;
+  mask:
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+}
+.highlight {
+  background: linear-gradient(140deg, #7000ff, #00ffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

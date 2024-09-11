@@ -5,6 +5,8 @@ import Hero from "./Hero";
 import Why from "./Why";
 import Fan from "./Fan";
 import Techs from "./Techs";
+import Table from "./Table";
+import Phones from "./Phones";
 
 export default function EcomContent() {
   const { setLoading } = useLoading();
@@ -17,8 +19,10 @@ export default function EcomContent() {
     <main>
       <Hero />
       <Why />
+      <Phones />
       <Fan />
       <Techs />
+      <Table />
     </main>
   );
 }

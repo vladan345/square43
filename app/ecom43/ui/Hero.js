@@ -40,7 +40,7 @@ function Hero() {
               duration: 0.3,
               scale: 0.9,
             },
-            3
+            3,
           )
           .to(
             ".pointer, .text",
@@ -48,7 +48,7 @@ function Hero() {
               duration: 0.3,
               scale: 1,
             },
-            3.3
+            3.3,
           )
           .to(".pointer", {
             duration: 2,
@@ -77,8 +77,9 @@ function Hero() {
       <div className="wrapper">
         <div className={styles.wrap}>
           <h1 className={styles.heading}>
-            The best <span className={styles.highlight}>custom e-com</span>{" "}
-            solution on the web!
+            Shopify solution
+            <br />
+            <span className={styles.highlight}>tailored</span> just for you
           </h1>
           <div className={styles.subWrap}>
             <p className={styles.subheading}>Powered by</p>
@@ -87,8 +88,10 @@ function Hero() {
             </div>
           </div>
           <p className={styles.subtext}>
-            Grow your online shop with fully customizable{" "}
-            <strong>Shopify</strong> solutions.
+            We're in the business of turning{" "}
+            <span className={styles.italic}>meh</span> into{" "}
+            <span className={styles.highlight}>wow</span> - ready for a taste of
+            something exceptional?
           </p>
 
           <div className={styles.scrollWrap}>

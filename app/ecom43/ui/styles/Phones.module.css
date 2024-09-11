@@ -1,0 +1,11 @@
+.highlight {
+  background: radial-gradient(200% 200% at 200% 50%, #7000ff 0%, #0ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.buttonGradient {
+  transition: 0.7s;
+}
+.button:hover .buttonGradient {
+  transform: translate(0, 0);
+}

@@ -76,12 +76,20 @@
 }
 .subtext {
   font-size: 32px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1;
   letter-spacing: -0.64px;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 40px;
   margin-bottom: 80px;
+  max-width: 800px;
+}
+.subtext .italic {
+  font-weight: 400;
+  font-style: italic;
+}
+.subtext .highlight {
+  font-weight: 600;
 }
 .scrollWrap {
   position: absolute;
@@ -120,7 +128,6 @@
     rgba(112, 0, 255, 1) 50%,
     rgba(0, 255, 255, 1) 60%
   );
-
   position: absolute;
   bottom: 0;
   left: 0;
