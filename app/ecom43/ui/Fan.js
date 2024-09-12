@@ -20,7 +20,7 @@ function Fan() {
           scrollTrigger: {
             trigger: ".trigger",
             scrub: true,
-            markers: true,
+
             start: "25% bottom",
             end: "40% top",
           },
@@ -31,7 +31,7 @@ function Fan() {
           scrollTrigger: {
             trigger: ".trigger",
             scrub: true,
-            markers: true,
+
             start: "25% bottom",
             end: "40% top",
           },
