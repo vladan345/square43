@@ -5,7 +5,32 @@ import Image from "next/image";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { useRef } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
+
 export default function Phones() {
+  const main = useRef(null);
+
+  useGSAP(
+    () => {
+      gsap.from(".phone", {
+        y: "+=30",
+        autoAlpha: 0,
+        duration: 0.7,
+        stagger: 0.1,
+        scrollTrigger: {
+          trigger: ".trigger",
+          start: "top 70%",
+        },
+      });
+    },
+    { scope: main },
+  );
+
   const [sliderRef, instanceRef] = useKeenSlider({
     slides: {
       number: 3,
@@ -15,9 +40,9 @@ export default function Phones() {
     loop: false,
   });
   return (
-    <section className="bg-black py-[140px] md:py-[80px]">
-      <div className="wrapper flex flex-col items-center">
-        <h2 className="text-center text-[60px] font-normal text-white md:text-[36px]">
+    <section className="bg-black py-[140px] md:py-[80px]" ref={main}>
+      <div className="wrapper trigger flex flex-col items-center">
+        <h2 className="phone text-center text-[60px] font-normal text-white md:text-[36px]">
           Why imitate when you can{" "}
           <span className={styles.highlight}> innovate?</span>
         </h2>
@@ -28,21 +53,21 @@ export default function Phones() {
             alt="Ecom phone"
             width={514}
             height={1090}
-            className="w-1/3"
+            className="phone h-auto w-1/3"
           />
           <Image
             src="/images/phone2.png"
             alt="Ecom phone"
             width={514}
             height={1090}
-            className="w-1/3"
+            className="phone h-auto w-1/3"
           />
           <Image
             src="/images/phone3.png"
             alt="Ecom phone"
             width={514}
             height={1090}
-            className="w-1/3"
+            className="phone h-auto w-1/3"
           />
         </div>
       </div>
@@ -57,19 +82,20 @@ export default function Phones() {
               alt="Ecom phone"
               width={514}
               height={1090}
+              className="phone"
             />
           </div>
         ))}
       </div>
       <div className="wrapper flex flex-col items-center">
-        <p className="mt-[-80px] text-center text-[34px] font-semibold text-white">
+        <p className="phone mt-[-80px] text-center text-[34px] font-semibold text-white">
           You bring the product, we will provide{" "}
           <span className={styles.highlight}>the vision.</span>
         </p>
         <Link
           href="https://ecom.square43.com"
           target="_blank"
-          className={`relative mt-[80px] md:mt-[50px] ${styles.button} overflow-hidden sm:w-full`}
+          className={`phone relative mt-[80px] md:mt-[50px] ${styles.button} overflow-hidden sm:w-full`}
         >
           <div
             className={`absolute left-0 top-0 h-[200%] w-[200%] -translate-x-1/2 -translate-y-1/2 bg-[radial-gradient(circle,rgba(112,0,255,1)_0%,rgba(0,255,255,1)_100%)] ${styles.buttonGradient}`}

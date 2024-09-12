@@ -10,52 +10,50 @@ function Hero() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      setTimeout(() => {
-        const tl = gsap.timeline();
-        tl.to(".border", {
+      const tl = gsap.timeline();
+      tl.to(".border", {
+        duration: 1.5,
+        width: "100%",
+        height: "100%",
+        ease: "back.inOut(1.7)",
+      })
+        .to(".pointer", {
           duration: 1.5,
-          width: "100%",
-          height: "100%",
-          ease: "back.inOut(1.7)",
+          top: "45%",
+          right: "40%",
+          ease: "power4.inOut",
         })
-          .to(".pointer", {
-            duration: 1.5,
-            top: "45%",
-            right: "40%",
-            ease: "power4.inOut",
-          })
-          .set(".subbutton", {
-            background: "transparent",
-          })
-          .to(".subbutton", {
-            duration: 0.7,
-            background:
-              "radial-gradient(141.42% 141.42% at 0% 0%, #7000ffff 0%, #00ffffff 100%)",
-            ease: "power4.inOut",
-          })
-          .to(
-            ".pointer, .text",
-            {
-              duration: 0.3,
-              scale: 0.9,
-            },
-            3,
-          )
-          .to(
-            ".pointer, .text",
-            {
-              duration: 0.3,
-              scale: 1,
-            },
-            3.3,
-          )
-          .to(".pointer", {
-            duration: 2,
-            top: "65%",
-            right: "10%",
-            ease: "power4.inOut",
-          });
-      }, 1000);
+        .set(".subbutton", {
+          background: "transparent",
+        })
+        .to(".subbutton", {
+          duration: 0.7,
+          background:
+            "radial-gradient(141.42% 141.42% at 0% 0%, #7000ffff 0%, #00ffffff 100%)",
+          ease: "power4.inOut",
+        })
+        .to(
+          ".pointer, .text",
+          {
+            duration: 0.3,
+            scale: 0.9,
+          },
+          3,
+        )
+        .to(
+          ".pointer, .text",
+          {
+            duration: 0.3,
+            scale: 1,
+          },
+          3.3,
+        )
+        .to(".pointer", {
+          duration: 2,
+          top: "65%",
+          right: "10%",
+          ease: "power4.inOut",
+        });
 
       setTimeout(() => {
         pointer.current.addEventListener("mouseover", () => {

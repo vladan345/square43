@@ -178,7 +178,7 @@ export async function getLatestProjects() {
 
 export async function getAllBlogs() {
   const query = `
-  *[_type == "blog"] {
+  *[_type == "blog"] | order(_createdAt desc) {
     _id,
     title,
     slug, 

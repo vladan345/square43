@@ -5,7 +5,7 @@ function Why() {
   const data = [
     {
       title: "Custom design",
-      text: "Make your online shop stand out with fully customizable Shopify solutions!",
+      text: "Why stay confined by the limits of Shopify templates when you can have something tailored just for you?",
     },
     {
       title: "3D graphics",
@@ -34,25 +34,24 @@ function Why() {
       <div className={`${styles.wrapper} wrapper`}>
         <h2>What do we bring to the table?</h2>
         <div className={styles.grid}>
-          {data &&
-            data.map((card, index) => {
-              return (
-                <div className={styles.cardWrap} key={index}>
-                  <div className={styles.overlayT}></div>
-                  <div className={styles.overlayB}></div>
-                  <div className={`${styles.card}`}>
-                    <Image
-                      src={`/images/graphic${index + 1}.svg`}
-                      alt="graphic icon"
-                      width={176}
-                      height={96}
-                    />
-                    <h3>{card.title}</h3>
-                    <p>{card.text}</p>
-                  </div>
+          {data.map((card, index) => {
+            return (
+              <div className={styles.cardWrap} key={index}>
+                <div className={styles.overlayT}></div>
+                <div className={styles.overlayB}></div>
+                <div className={`${styles.card}`}>
+                  <img
+                    src={`/images/graphic${index + 1}.svg`}
+                    alt="graphic icon"
+                    // width={176}
+                    // height={96}
+                  />
+                  <h3>{card.title}</h3>
+                  <p>{card.text}</p>
                 </div>
-              );
-            })}
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

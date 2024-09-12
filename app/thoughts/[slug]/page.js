@@ -1,41 +1,20 @@
-import { GraphQLClient, gql } from "graphql-request";
 import { getBlog } from "@/utils/data/getData";
 
 import BlogContent from "./ui/BlogContent";
-
-const client = new GraphQLClient(process.env.NEXT_PUBLIC_HYGRAPH_URL);
 
 export async function generateMetadata({ params }, parent) {
   // read route params
   const slug = params.slug;
 
-  const query = gql`
-    query Blogs($slug: String!) {
-      blog(where: { slug: $slug }) {
-        excerpt
-        blogDate
-        postTitle
-        id
-        previewImage {
-          url
-        }
-        blogContent {
-          html
-        }
-        projectLink
-      }
-    }
-  `;
-
-  const { blog } = await client.request(query, { slug });
+  const blog = await getBlog(slug);
   return {
     openGraph: {
-      title: blog.postTitle,
+      title: blog.title,
       description: blog.excerpt,
-      images: [{ url: blog.previewImage.url }],
-      url: `https://square43.com/thoughts/${slug}`,
+      images: [{ url: blog.heroimage.asset.url }],
+      url: `https://square43.com/thoughts/${slug.current}`,
     },
-    title: blog.postTitle,
+    title: blog.title,
     description: blog.excerpt,
     metadataBase: new URL(`https://square43.com/`),
   };

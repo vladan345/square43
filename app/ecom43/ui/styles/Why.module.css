@@ -62,9 +62,7 @@
 .cardWrap:hover {
   border-color: transparent;
 }
-.card img {
-  width: auto;
-}
+
 .card h3 {
   font-size: 34px;
   font-weight: 700;
