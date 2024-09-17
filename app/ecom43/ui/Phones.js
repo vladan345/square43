@@ -47,27 +47,27 @@ export default function Phones() {
           <span className={styles.highlight}> innovate?</span>
         </h2>
 
-        <div className="flex justify-center md:hidden">
+        <div className="flex min-h-[962px] justify-center md:hidden">
           <Image
             src="/images/phone1.png"
             alt="Ecom phone"
             width={514}
             height={1090}
-            className="phone h-auto w-1/3"
+            className="phone h-auto w-1/3 object-contain"
           />
           <Image
             src="/images/phone2.png"
             alt="Ecom phone"
             width={514}
             height={1090}
-            className="phone h-auto w-1/3"
+            className="phone h-auto w-1/3 object-contain"
           />
           <Image
             src="/images/phone3.png"
             alt="Ecom phone"
             width={514}
             height={1090}
-            className="phone h-auto w-1/3"
+            className="phone h-auto w-1/3 object-contain"
           />
         </div>
       </div>
