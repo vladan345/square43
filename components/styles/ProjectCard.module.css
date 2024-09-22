@@ -11,10 +11,16 @@
   left: 0;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 .image {
   object-fit: cover;
+  transition: 0.7s;
 }
+.heroImage:hover .image {
+  transform: scale(1.1);
+}
+
 .overlay {
   width: 100%;
   height: 100%;
