@@ -16,7 +16,7 @@ export default function Elements2() {
           <p className="max-w-[520px]">
             At the very beginning of this creative process, before moving to 3D
             modeling, we set off on a quest for inspiration. The essence of the
-            brand lay in the words change and evolution, so the 3D narrative
+            brand lies in the words change and evolution, so the 3D narrative
             needed to follow suit. Each 3D room was to represent a different
             stage in the evolution of both human existence and discovery: from
             the Big Bang and the industrial revolution, to the concept of
