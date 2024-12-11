@@ -15,6 +15,15 @@ module.exports = {
         black: "#202020",
         black2: "#202020",
       },
+      keyframes: {
+        rotateBackAndForth: {
+          "0%, 100%": { transform: "rotate(0deg)" }, // Start and end at 0 degrees
+          "50%": { transform: "rotate(10deg)" }, // Rotate 10 degrees at midpoint
+        },
+      },
+      animation: {
+        rotateBackAndForth: "rotateBackAndForth 2s ease-in-out infinite", // Loop animation
+      },
     },
     screens: {
       // "3xl": { max: "1600px" },

@@ -44,15 +44,15 @@ export default function Paid() {
             className="object-cover"
           />
         </div>
-        <div className="luxury absolute top-[10%] z-[1] flex w-[100%] justify-center">
-          <h1 className="font-['Ivy-Presto'] text-[160px] font-[100] text-[#fff]">
+        <div className="luxury absolute top-[50px] z-[1] flex w-[100%] justify-center">
+          <h1 className="font-['IvyPresto_Headline'] text-[160px] font-[100] text-[#fff]">
             LUXURY EVERLASTING
           </h1>
         </div>
-        <div className="absolute bottom-[0px] z-[2] h-[743px] w-[100%]">
+        <div className="absolute bottom-[0px] z-[2] h-[960px] w-[100%]">
           <Image
             fill
-            src="/images/turaquadra/background2.png"
+            src="/images/turaquadra/BWOverlay.png"
             alt="Turaquadra"
             className="object-cover"
           />

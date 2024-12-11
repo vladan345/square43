@@ -25,7 +25,25 @@ export default function Mobiles() {
     { scope: main },
   );
   return (
-    <section className="Mobiles md:mb-[80px]" ref={main}>
+    <section
+      className="Mobiles relative bg-gradient-to-t from-[#E2DBD5] pb-[300px] md:mb-[80px]"
+      ref={main}
+    >
+      <div className="absolute bottom-[-300px] flex w-[100%] justify-center">
+        <Image
+          src="/images/turaquadra/Vector.png"
+          alt="tqu"
+          width={600}
+          height={600}
+          className="w-[45%]"
+        />
+      </div>
+      <div className="flex justify-center">
+        <h1 className="sticky mt-[200px] max-w-[1400px] text-center font-['IvyPresto_Headline'] text-[160px] font-[100] text-[#000]">
+          ELEGANT SOLUTIONS FOR BOLD RESULTS
+        </h1>
+      </div>
+
       <div className="wrapper flex justify-between gap-[40px] md:flex-col md:items-center md:gap-[60px]">
         <Image
           src="/images/turaquadra/phone1.png"
