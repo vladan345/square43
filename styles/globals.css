@@ -1,15 +1,3 @@
-/* @font-face {
-  font-family: MatterBold;
-  src: url("../public/fonts/Matter-Bold.otf");
-}
-@font-face {
-  font-family: MatterLight;
-  src: url("../public/fonts/Matter-Light.otf");
-}
-@font-face {
-  font-family: MatterRegular;
-  src: url("../public/fonts/Matter-Regular.otf");
-} */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

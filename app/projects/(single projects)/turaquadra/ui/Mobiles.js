@@ -11,25 +11,53 @@ export default function Mobiles() {
   const main = useRef();
   useGSAP(
     () => {
-      gsap.from(".image", {
+      gsap.from(".image1", {
         scrollTrigger: {
           trigger: ".wrapper",
-          start: "top 70%",
+          start: "top top",
+          scrub: true,
         },
-        y: 50,
-        autoAlpha: 0,
-        duration: 1.2,
-        stagger: 0.2,
+        y: 100,
+        duration: 2,
+      });
+      gsap.from(".image2", {
+        scrollTrigger: {
+          trigger: ".wrapper",
+          start: "top top",
+          scrub: true,
+        },
+        y: 300,
+        duration: 2,
+      });
+      gsap.from(".image3", {
+        scrollTrigger: {
+          trigger: ".wrapper",
+          start: "top top",
+          scrub: true,
+        },
+        y: 200,
+        duration: 2,
+      });
+      gsap.from(".tuqimage", {
+        scrollTrigger: {
+          trigger: ".wrapper",
+          start: "top 80%",
+          end: "bottom top",
+          scrub: true,
+          markers: true,
+        },
+        y: 400,
+        duration: 2,
       });
     },
     { scope: main },
   );
   return (
     <section
-      className="Mobiles relative bg-gradient-to-t from-[#E2DBD5] pb-[300px] md:mb-[80px]"
+      className="Mobiles relative bg-gradient-to-t from-[#E2DBD5] pb-[20%] md:mb-[80px]"
       ref={main}
     >
-      <div className="absolute bottom-[-300px] flex w-[100%] justify-center">
+      <div className="tuqimage absolute bottom-[-15%] flex w-[100%] justify-center">
         <Image
           src="/images/turaquadra/Vector.png"
           alt="tqu"
@@ -39,7 +67,7 @@ export default function Mobiles() {
         />
       </div>
       <div className="flex justify-center">
-        <h1 className="sticky mt-[200px] max-w-[1400px] text-center font-['IvyPresto_Headline'] text-[160px] font-[100] text-[#000]">
+        <h1 className="font-ivy sticky mt-[200px] max-w-[1430px] text-center text-[160px] font-[100] text-[#000]">
           ELEGANT SOLUTIONS FOR BOLD RESULTS
         </h1>
       </div>
@@ -50,9 +78,9 @@ export default function Mobiles() {
           alt="Phone 1"
           width={395}
           height={810}
-          className="image"
+          className="image1"
         />
-        <div className="image relative">
+        <div className="image2 relative">
           <Image
             src="/images/turaquadra/phone-frame.png"
             alt="Phone 2"
@@ -74,7 +102,7 @@ export default function Mobiles() {
           alt="Phone 3"
           width={395}
           height={810}
-          className="image"
+          className="image3"
         />
       </div>
     </section>

@@ -32,6 +32,11 @@ const matter = localFont({
   ],
 });
 
+const ivy = localFont({
+  src: "../public/fonts/IvyPrestoHeadline-Thin.otf",
+  variable: "--font-ivy",
+});
+
 export default function RootLayout({ children }) {
   useEffect(() => {
     const lenis = new Lenis({
@@ -74,7 +79,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/logo2.svg" sizes="any" />
       </head>
       <body>
-        <div className={matter.className}>
+        <div className={`${matter.className} ${ivy.variable}`}>
           <LoadingProvider>
             <Cursor />
             <Spinner />

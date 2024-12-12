@@ -24,6 +24,9 @@ module.exports = {
       animation: {
         rotateBackAndForth: "rotateBackAndForth 2s ease-in-out infinite", // Loop animation
       },
+      fontFamily: {
+        ivy: "var(--font-ivy)",
+      },
     },
     screens: {
       // "3xl": { max: "1600px" },

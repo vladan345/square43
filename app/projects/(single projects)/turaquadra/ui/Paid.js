@@ -45,7 +45,7 @@ export default function Paid() {
           />
         </div>
         <div className="luxury absolute top-[50px] z-[1] flex w-[100%] justify-center">
-          <h1 className="font-['IvyPresto_Headline'] text-[160px] font-[100] text-[#fff]">
+          <h1 className="font-ivy text-[160px] font-[100] text-[#fff]">
             LUXURY EVERLASTING
           </h1>
         </div>

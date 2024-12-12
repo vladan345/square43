@@ -23,7 +23,6 @@ export default function Motion() {
 
           end: () =>
             `+=${document.querySelector(".horizontal").offsetWidth * 0.5}`,
-          markers: true,
         },
       });
     },
@@ -35,10 +34,16 @@ export default function Motion() {
       <div className="relative mt-[-88px] w-screen overflow-hidden">
         <div className="horizontal relative flex h-[1530px] w-[200%] flex-nowrap">
           <div className="absolute left-[0] top-[0] flex h-screen w-screen flex-col items-center justify-center bg-gradient-to-b from-[#E2DBD5] text-center">
-            <h1 className="sticky font-['IvyPresto_Headline'] text-[160px] font-[100] text-[#000]">
+            <Image
+              src="/images/turaquadra/instagramPosts/Vector.svg"
+              width="150"
+              height="150"
+              className="mt-[-5%] pb-[5%]"
+            />
+            <h1 className="font-ivy sticky text-[160px] font-[100] text-[#000]">
               DESIGN. PRESTIGE.
             </h1>
-            <h1 className="sticky font-['IvyPresto_Headline'] text-[160px] font-[100] text-[#000]">
+            <h1 className="font-ivy sticky text-[160px] font-[100] text-[#000]">
               PERFECTLY SQUARED
             </h1>
           </div>
