@@ -45,7 +45,7 @@ export default function Paid() {
           />
         </div>
         <div className="luxury absolute top-[50px] z-[1] flex w-[100%] justify-center">
-          <h1 className="font-ivy text-[160px] font-[100] text-[#fff]">
+          <h1 className="font-ivy text-[160px] font-[100] text-[#fff] 2xl:text-[120px] xl:text-[90px]">
             LUXURY EVERLASTING
           </h1>
         </div>
@@ -58,9 +58,11 @@ export default function Paid() {
           />
         </div>
       </div>
-      <div className="paid relative z-[5] mt-[-300px] flex w-1/2 justify-end">
-        <div className="w-[600px] rounded-[20px] bg-[#202B3F] px-[40px] py-[60px]">
-          <h2 className="mb-[60px] text-[#fff]">Paid Advertisement</h2>
+      <div className="paid relative z-[5] mt-[-300px] flex w-1/2 justify-end xl:pl-[20px]">
+        <div className="w-[600px] rounded-[20px] bg-[#202B3F] px-[40px] py-[60px] xl:px-[20px] xl:py-[40px]">
+          <h2 className="mb-[60px] text-[#fff] xl:mb-[20px]">
+            Paid Advertisement
+          </h2>
           <p className="text-[#fff]">
             Mastering the right tools goes a long way when it comes to sponsored
             content. Setting up the right parameters in terms of age range,

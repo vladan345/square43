@@ -11,44 +11,46 @@ export default function Mobiles() {
   const main = useRef();
   useGSAP(
     () => {
-      gsap.from(".image1", {
-        scrollTrigger: {
-          trigger: ".wrapper",
-          start: "top top",
-          scrub: true,
-        },
-        y: 100,
-        duration: 2,
-      });
-      gsap.from(".image2", {
-        scrollTrigger: {
-          trigger: ".wrapper",
-          start: "top top",
-          scrub: true,
-        },
-        y: 300,
-        duration: 2,
-      });
-      gsap.from(".image3", {
-        scrollTrigger: {
-          trigger: ".wrapper",
-          start: "top top",
-          scrub: true,
-        },
-        y: 200,
-        duration: 2,
-      });
       gsap.from(".tuqimage", {
         scrollTrigger: {
           trigger: ".wrapper",
-          start: "top 80%",
-          end: "bottom top",
+          start: "70% 60%",
           scrub: true,
-          markers: true,
         },
         y: 400,
-        duration: 2,
+        duration: 3,
       });
+      const mm = gsap.matchMedia();
+      mm.add("(min-width: 901px)", () => {
+        gsap.from(".image1", {
+          scrollTrigger: {
+            trigger: ".wrapper",
+            start: "top 50%",
+            scrub: true,
+          },
+          y: 100,
+          duration: 2,
+        });
+        gsap.from(".image2", {
+          scrollTrigger: {
+            trigger: ".wrapper",
+            start: "top 50%",
+            scrub: true,
+          },
+          y: 300,
+          duration: 2,
+        });
+        gsap.from(".image3", {
+          scrollTrigger: {
+            trigger: ".wrapper",
+            start: "top 50%",
+            scrub: true,
+          },
+          y: 200,
+          duration: 2,
+        });
+      });
+      return () => mm.kill();
     },
     { scope: main },
   );
@@ -57,7 +59,7 @@ export default function Mobiles() {
       className="Mobiles relative bg-gradient-to-t from-[#E2DBD5] pb-[20%] md:mb-[80px]"
       ref={main}
     >
-      <div className="tuqimage absolute bottom-[-15%] flex w-[100%] justify-center">
+      <div className="tuqimage absolute bottom-[-15%] flex w-[100%] justify-center 2xl:bottom-[-10%]">
         <Image
           src="/images/turaquadra/Vector.png"
           alt="tqu"
@@ -67,7 +69,7 @@ export default function Mobiles() {
         />
       </div>
       <div className="flex justify-center">
-        <h1 className="font-ivy sticky mt-[200px] max-w-[1430px] text-center text-[160px] font-[100] text-[#000]">
+        <h1 className="sticky mt-[200px] max-w-[1430px] text-center font-ivy text-[160px] font-[100] text-[#000] 2xl:max-w-[1100px] 2xl:text-[120px] xl:text-[90px] lg:mt-[100px] lg:max-w-[900px]">
           ELEGANT SOLUTIONS FOR BOLD RESULTS
         </h1>
       </div>
