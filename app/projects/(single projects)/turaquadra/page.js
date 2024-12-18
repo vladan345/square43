@@ -9,6 +9,7 @@ import {
 import Paid from "./ui/Paid";
 import Motion from "./ui/Motion";
 import Mobiles from "./ui/Mobiles";
+import MotionMobile from "./ui/MotionMobile";
 
 export const metadata = getProjectMeta("turaquadra");
 
@@ -22,6 +23,7 @@ export default async function Page() {
       {/* Content starts here */}
       <Paid />
       <Motion />
+      <MotionMobile />
       <Mobiles />
       {/* Content ends here */}
       <Result project={project} />

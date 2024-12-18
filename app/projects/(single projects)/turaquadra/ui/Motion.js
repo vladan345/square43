@@ -30,7 +30,7 @@ export default function Motion() {
   );
 
   return (
-    <section ref={main}>
+    <section ref={main} className="sm:hidden">
       <div className="relative mt-[-88px] w-screen overflow-hidden">
         <div className="horizontal relative flex h-screen w-[200%] flex-nowrap">
           <div className="absolute left-[0] top-[0] flex h-screen w-screen flex-col items-center justify-center bg-gradient-to-b from-[#E2DBD5] text-center">
@@ -40,59 +40,59 @@ export default function Motion() {
               height="150"
               className="mt-[-5%] pb-[5%]"
             />
-            <h1 className="sticky font-ivy text-[160px] font-[100] text-[#000] 2xl:text-[120px] xl:text-[90px]">
+            <h1 className="sticky font-ivy text-[160px] font-[100] leading-none text-[#000] 2xl:text-[120px] xl:text-[90px] lg:text-[54px]">
               DESIGN. PRESTIGE.
             </h1>
-            <h1 className="sticky font-ivy text-[160px] font-[100] text-[#000] 2xl:text-[120px] xl:text-[90px]">
+            <h1 className="sticky font-ivy text-[160px] font-[100] leading-none text-[#000] 2xl:text-[120px] xl:text-[90px] lg:text-[54px]">
               PERFECTLY SQUARED
             </h1>
           </div>
           <div className="panel flex h-screen w-[50%] justify-center">
             <Image
               src="/images/turaquadra/instagramPosts/Instagram Post-1.png"
-              className="absolute left-[2%] top-[3%] h-auto w-1/5"
+              className="absolute left-[2%] top-[3%] h-auto w-1/5 md:w-1/3"
               width="200"
               height="200"
               unoptimized
             />
             <Image
               src="/images/turaquadra/instagramPosts/Instagram Post-2.png"
-              className="absolute left-[24%] top-[15%] h-auto w-1/5"
+              className="absolute left-[24%] top-[15%] h-auto w-1/5 md:w-1/3"
               width="200"
               height="200"
               unoptimized
             />
             <Image
               src="/images/turaquadra/instagramPosts/Instagram Post-3.png"
-              className="absolute left-[53%] top-[10%] h-auto w-1/5"
+              className="absolute left-[53%] top-[10%] h-auto w-1/5 md:w-1/3"
               width="200"
               height="200"
               unoptimized
             />
             <Image
               src="/images/turaquadra/instagramPosts/Instagram Post-4.png"
-              className="absolute bottom-[-10%] left-[11%] h-auto w-1/5"
+              className="absolute bottom-[-10%] left-[11%] h-auto w-1/5 md:w-1/3"
               width="200"
               height="200"
               unoptimized
             />
             <Image
               src="/images/turaquadra/instagramPosts/Instagram Post-5.png"
-              className="absolute bottom-[5%] right-[45%] h-auto w-1/5"
+              className="absolute bottom-[5%] right-[45%] h-auto w-1/5 md:w-1/3"
               width="200"
               height="200"
               unoptimized
             />
             <Image
               src="/images/turaquadra/instagramPosts/Instagram Post-6.png"
-              className="absolute right-[8%] top-[3%] h-auto w-1/5"
+              className="absolute right-[8%] top-[3%] h-auto w-1/5 md:w-1/3"
               width="200"
               height="200"
               unoptimized
             />
             <Image
               src="/images/turaquadra/instagramPosts/Instagram Post-8.png"
-              className="absolute bottom-[-3%] right-[18%] h-auto w-1/5"
+              className="absolute bottom-[-3%] right-[18%] h-auto w-1/5 md:w-1/3"
               width="200"
               height="200"
               unoptimized
@@ -101,49 +101,49 @@ export default function Motion() {
           <div className="panel flex h-screen w-[50%] justify-center">
             <Image
               src="/images/turaquadra/instagramPosts/Instagram Post-7.png"
-              className="absolute right-[43%] top-[8%] h-auto w-1/5"
+              className="absolute right-[43%] top-[8%] h-auto w-1/5 md:w-1/3"
               width="200"
               height="200"
               unoptimized
             />
             <Image
               src="/images/turaquadra/instagramPosts/Instagram Post-9.png"
-              className="absolute bottom-[20%] left-[-11%] h-auto w-1/5"
+              className="absolute bottom-[20%] left-[-11%] h-auto w-1/5 md:w-1/3"
               width="200"
               height="200"
               unoptimized
             />
             <Image
               src="/images/turaquadra/instagramPosts/Instagram Post-10.png"
-              className="absolute bottom-[5%] left-[19%] h-auto w-1/5"
+              className="absolute bottom-[5%] left-[19%] h-auto w-1/5 md:w-1/3"
               width="200"
               height="200"
               unoptimized
             />
             <Image
               src="/images/turaquadra/instagramPosts/Instagram Post-11.png"
-              className="absolute left-[13%] top-[0%] h-auto w-1/5"
+              className="absolute left-[13%] top-[0%] h-auto w-1/5 md:w-1/3"
               width="200"
               height="200"
               unoptimized
             />
             <Image
               src="/images/turaquadra/instagramPosts/Instagram Post-12.png"
-              className="absolute right-[20%] top-[3%] h-auto w-1/5"
+              className="absolute right-[20%] top-[3%] h-auto w-1/5 md:w-1/3"
               width="200"
               height="200"
               unoptimized
             />
             <Image
               src="/images/turaquadra/instagramPosts/Instagram Post-13.png"
-              className="absolute bottom-[10%] right-[6%] h-auto w-1/5"
+              className="absolute bottom-[10%] right-[6%] h-auto w-1/5 md:w-1/3"
               width="200"
               height="200"
               unoptimized
             />
             <Image
               src="/images/turaquadra/instagramPosts/Instagram Post-14.png"
-              className="absolute bottom-[-2%] right-[32%] h-auto w-1/5"
+              className="absolute bottom-[-2%] right-[32%] h-auto w-1/5 md:w-1/3"
               width="200"
               height="200"
               unoptimized

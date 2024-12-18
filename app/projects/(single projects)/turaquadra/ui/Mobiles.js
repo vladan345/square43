@@ -69,7 +69,7 @@ export default function Mobiles() {
         />
       </div>
       <div className="flex justify-center">
-        <h1 className="sticky mt-[200px] max-w-[1430px] text-center font-ivy text-[160px] font-[100] text-[#000] 2xl:max-w-[1100px] 2xl:text-[120px] xl:text-[90px] lg:mt-[100px] lg:max-w-[900px]">
+        <h1 className="sticky mt-[200px] max-w-[1430px] text-center font-ivy text-[160px] font-[100] leading-none text-[#000] 2xl:max-w-[1100px] 2xl:text-[120px] xl:text-[90px] lg:mt-[100px] lg:max-w-[900px] lg:text-[54px]">
           ELEGANT SOLUTIONS FOR BOLD RESULTS
         </h1>
       </div>
