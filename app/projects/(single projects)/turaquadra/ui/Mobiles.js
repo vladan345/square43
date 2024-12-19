@@ -68,13 +68,13 @@ export default function Mobiles() {
           className="w-[45%]"
         />
       </div>
-      <div className="flex justify-center">
-        <h1 className="sticky mt-[200px] max-w-[1430px] text-center font-ivy text-[160px] font-[100] leading-none text-[#000] 2xl:max-w-[1100px] 2xl:text-[120px] xl:text-[90px] lg:mt-[100px] lg:max-w-[900px] lg:text-[54px]">
+      <div className="flex h-screen justify-center md:h-[150vh] md:flex-wrap md:content-center">
+        <h1 className="sticky mt-[200px] max-w-[1430px] text-center font-ivy text-[160px] font-[100] leading-none text-[#000] 2xl:max-w-[1100px] 2xl:text-[120px] xl:text-[90px] lg:mt-[100px] lg:max-w-[900px] lg:text-[54px] md:sticky md:top-[50%] md:w-[45%] sm:w-2/3">
           ELEGANT SOLUTIONS FOR BOLD RESULTS
         </h1>
       </div>
 
-      <div className="wrapper flex justify-between gap-[40px] md:flex-col md:items-center md:gap-[60px]">
+      <div className="wrapper flex justify-between gap-[40px] md:mt-[-70%] md:flex-col md:items-center md:gap-[60px]">
         <Image
           src="/images/turaquadra/phone1.png"
           alt="Phone 1"

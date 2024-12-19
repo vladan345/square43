@@ -38,7 +38,7 @@ export default function Motion() {
               src="/images/turaquadra/instagramPosts/Vector.svg"
               width="150"
               height="150"
-              className="mt-[-5%] pb-[5%]"
+              className="mt-[-5%] pb-[5%] md:mt-[-25%]"
             />
             <h1 className="sticky font-ivy text-[160px] font-[100] leading-none text-[#000] 2xl:text-[120px] xl:text-[90px] lg:text-[54px]">
               DESIGN. PRESTIGE.
@@ -50,49 +50,49 @@ export default function Motion() {
           <div className="panel flex h-screen w-[50%] justify-center">
             <Image
               src="/images/turaquadra/instagramPosts/Instagram Post-1.png"
-              className="absolute left-[2%] top-[3%] h-auto w-1/5 md:w-1/3"
+              className="absolute left-[2%] top-[3%] h-auto w-1/5 lg:w-1/4 md:w-1/3"
               width="200"
               height="200"
               unoptimized
             />
             <Image
               src="/images/turaquadra/instagramPosts/Instagram Post-2.png"
-              className="absolute left-[24%] top-[15%] h-auto w-1/5 md:w-1/3"
+              className="absolute left-[24%] top-[15%] h-auto w-1/5 lg:w-1/4 md:w-1/3"
               width="200"
               height="200"
               unoptimized
             />
             <Image
               src="/images/turaquadra/instagramPosts/Instagram Post-3.png"
-              className="absolute left-[53%] top-[10%] h-auto w-1/5 md:w-1/3"
+              className="absolute left-[53%] top-[10%] h-auto w-1/5 lg:w-1/4 md:hidden"
               width="200"
               height="200"
               unoptimized
             />
             <Image
               src="/images/turaquadra/instagramPosts/Instagram Post-4.png"
-              className="absolute bottom-[-10%] left-[11%] h-auto w-1/5 md:w-1/3"
+              className="absolute bottom-[-10%] left-[11%] h-auto w-1/5 lg:w-1/4 md:w-1/3"
               width="200"
               height="200"
               unoptimized
             />
             <Image
               src="/images/turaquadra/instagramPosts/Instagram Post-5.png"
-              className="absolute bottom-[5%] right-[45%] h-auto w-1/5 md:w-1/3"
+              className="absolute bottom-[5%] right-[45%] h-auto w-1/5 lg:w-1/4 md:w-1/3"
               width="200"
               height="200"
               unoptimized
             />
             <Image
               src="/images/turaquadra/instagramPosts/Instagram Post-6.png"
-              className="absolute right-[8%] top-[3%] h-auto w-1/5 md:w-1/3"
+              className="absolute right-[8%] top-[3%] h-auto w-1/5 lg:w-1/4 md:w-1/3"
               width="200"
               height="200"
               unoptimized
             />
             <Image
               src="/images/turaquadra/instagramPosts/Instagram Post-8.png"
-              className="absolute bottom-[-3%] right-[18%] h-auto w-1/5 md:w-1/3"
+              className="absolute bottom-[-3%] right-[18%] h-auto w-1/5 lg:w-1/4 md:w-1/3"
               width="200"
               height="200"
               unoptimized
@@ -101,49 +101,49 @@ export default function Motion() {
           <div className="panel flex h-screen w-[50%] justify-center">
             <Image
               src="/images/turaquadra/instagramPosts/Instagram Post-7.png"
-              className="absolute right-[43%] top-[8%] h-auto w-1/5 md:w-1/3"
+              className="absolute right-[43%] top-[8%] h-auto w-1/5 lg:w-1/4 md:hidden"
               width="200"
               height="200"
               unoptimized
             />
             <Image
               src="/images/turaquadra/instagramPosts/Instagram Post-9.png"
-              className="absolute bottom-[20%] left-[-11%] h-auto w-1/5 md:w-1/3"
+              className="absolute bottom-[20%] left-[-11%] h-auto w-1/5 lg:w-1/4 md:w-1/3"
               width="200"
               height="200"
               unoptimized
             />
             <Image
               src="/images/turaquadra/instagramPosts/Instagram Post-10.png"
-              className="absolute bottom-[5%] left-[19%] h-auto w-1/5 md:w-1/3"
+              className="absolute bottom-[5%] left-[19%] h-auto w-1/5 lg:w-1/4 md:w-1/3"
               width="200"
               height="200"
               unoptimized
             />
             <Image
               src="/images/turaquadra/instagramPosts/Instagram Post-11.png"
-              className="absolute left-[13%] top-[0%] h-auto w-1/5 md:w-1/3"
+              className="absolute left-[13%] top-[0%] h-auto w-1/5 lg:w-1/4 md:w-1/3"
               width="200"
               height="200"
               unoptimized
             />
             <Image
               src="/images/turaquadra/instagramPosts/Instagram Post-12.png"
-              className="absolute right-[20%] top-[3%] h-auto w-1/5 md:w-1/3"
+              className="absolute right-[20%] top-[3%] h-auto w-1/5 lg:w-1/4 md:w-1/3"
               width="200"
               height="200"
               unoptimized
             />
             <Image
               src="/images/turaquadra/instagramPosts/Instagram Post-13.png"
-              className="absolute bottom-[10%] right-[6%] h-auto w-1/5 md:w-1/3"
+              className="absolute bottom-[10%] right-[6%] h-auto w-1/5 lg:w-1/4 md:w-1/3"
               width="200"
               height="200"
               unoptimized
             />
             <Image
               src="/images/turaquadra/instagramPosts/Instagram Post-14.png"
-              className="absolute bottom-[-2%] right-[32%] h-auto w-1/5 md:w-1/3"
+              className="absolute bottom-[-2%] right-[32%] h-auto w-1/5 lg:w-1/4 md:hidden"
               width="200"
               height="200"
               unoptimized
@@ -151,9 +151,9 @@ export default function Motion() {
           </div>
         </div>
       </div>
-      <div className="relative flex flex-row overflow-hidden">
-        <div className="flex w-1/2 flex-wrap content-center justify-center lg:pl-[20px] lg:pr-[50px]">
-          <div className="w-[520px] border-b-[2px] border-t-[2px] border-solid border-[#C08239] pb-[40px] pt-[40px]">
+      <div className="relative flex flex-row overflow-hidden md:flex-col md:flex-wrap md:content-end">
+        <div className="flex w-1/2 flex-wrap content-center justify-center lg:pl-[20px] lg:pr-[50px] md:w-full">
+          <div className="w-[520px] border-b-[2px] border-t-[2px] border-solid border-[#C08239] pb-[40px] pt-[40px] md:mb-[75px]">
             <h2>Motion Graphics</h2>
             <p>
               Static visuals have already been surpassed by short-format videos
@@ -168,7 +168,7 @@ export default function Motion() {
             </p>
           </div>
         </div>
-        <div className="relative w-1/2">
+        <div className="relative w-1/2 md:w-2/3 md:self-end">
           <Image
             src="/images/turaquadra/hand.png"
             width={0}
