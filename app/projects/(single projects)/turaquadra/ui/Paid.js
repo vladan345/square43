@@ -45,7 +45,7 @@ export default function Paid() {
             unoptimized
           />
         </div>
-        <div className="luxury absolute top-[50px] z-[1] flex w-[100%] justify-center">
+        <div className="luxury absolute top-[10%] z-[1] flex w-[100%] justify-center">
           <h1 className="text-center font-ivy text-[160px] font-[100] leading-none text-[#fff] 2xl:text-[120px] xl:text-[90px] lg:text-[54px]">
             LUXURY EVERLASTING
           </h1>
