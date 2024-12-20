@@ -11,6 +11,10 @@ export async function getAllServices() {
   `;
   try {
     const serviceData = await client.fetch(query);
+    const [budget] = serviceData.splice(serviceData.indexOf("Branding"), 1);
+    console.log(budget);
+    const newArr = serviceData.unshift(budget);
+    console.log(newArr);
     return serviceData;
   } catch (error) {
     console.error("Error fetching service data:", error.message);

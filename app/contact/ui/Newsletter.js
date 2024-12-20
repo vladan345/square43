@@ -37,7 +37,7 @@ export default function Newsletter() {
     e.preventDefault();
     setIsLoading(true);
     const { message, status } = await subscribeToMailchimp(
-      new FormData(form.current)
+      new FormData(form.current),
     );
     const rawFormData = {
       email: form.current.email.value,
@@ -47,7 +47,7 @@ export default function Newsletter() {
       services: Array.from(form.current.service)
         .filter((checkbox) => checkbox.checked)
         .map((checkbox) => checkbox.value),
-      budget: form.current.budget.value,
+      // budget: form.current.budget.value,
       message: form.current.message.value,
     };
 
@@ -197,7 +197,7 @@ export default function Newsletter() {
           </div>
         ))}
       </div>
-      <p className={styles.fieldHeading}>Choose budget*</p>
+      {/* <p className={styles.fieldHeading}>Choose budget*</p>
       <div className={styles.budgetWrap}>
         <div className={styles.singleBudget}>
           <input
@@ -217,7 +217,7 @@ export default function Newsletter() {
           <input type="radio" name="budget" id="50k+" value="50k+" />
           <label htmlFor="50k+">$50k+</label>
         </div>
-      </div>
+      </div> */}
       <p className={styles.fieldHeading}>Comment</p>
       <textarea
         className={styles.message}

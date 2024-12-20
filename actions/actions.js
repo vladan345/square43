@@ -19,7 +19,7 @@ export async function subscribeToMailchimp(formData) {
     lastName: formData.get("lastName"),
     country: formData.get("country"),
     services: formData.getAll("service"),
-    budget: formData.get("budget"),
+    //  budget: formData.get("budget"),
     message: formData.get("message"),
   };
   rawFormData.services = rawFormData.services.join(", ");
@@ -78,7 +78,7 @@ export async function subscribeToMailchimp(formData) {
             rawFormData.email,
             rawFormData.country,
             rawFormData.services,
-            rawFormData.budget,
+            // rawFormData.budget,
             rawFormData.message,
             getCurrentDateTimeString(),
           ],

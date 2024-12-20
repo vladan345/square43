@@ -9,7 +9,7 @@ export async function POST(req) {
     lastName,
     country,
     services,
-    budget,
+    //  budget,
     captchaToken,
   } = await req.json();
   // Validate reCAPTCHA token
@@ -21,7 +21,7 @@ export async function POST(req) {
         "Content-Type": "application/x-www-form-urlencoded",
       },
       body: `secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${captchaToken}`,
-    }
+    },
   );
   const captchaData = await captchaRes.json();
 
@@ -31,7 +31,7 @@ export async function POST(req) {
       JSON.stringify({ success: false, error: "reCAPTCHA validation failed" }),
       {
         status: 400,
-      }
+      },
     );
   }
 
@@ -48,7 +48,7 @@ export async function POST(req) {
     to: process.env.NOTIFICATION_EMAIL,
     cc: "nikola@nulapps.nl",
     subject: "Square43 Form Submission",
-    text: `Name: ${firstName}\nLast name: ${lastName}\nEmail: ${email}\nMessage: ${message}\nCountry: ${country}\nServices: ${services}\nBudget: ${budget}`,
+    text: `Name: ${firstName}\nLast name: ${lastName}\nEmail: ${email}\nMessage: ${message}\nCountry: ${country}\nServices: ${services}\n`,
   };
 
   try {
@@ -58,7 +58,7 @@ export async function POST(req) {
     console.error(error);
     return new Response(
       JSON.stringify({ success: false, error: error.message }),
-      { status: 500 }
+      { status: 500 },
     );
   }
 }
