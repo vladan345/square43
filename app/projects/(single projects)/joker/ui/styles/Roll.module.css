@@ -6,7 +6,6 @@
   position: relative;
   height: 200px;
   width: 200px;
-  transform: translateX(-300px);
 }
 .rollWrap {
   display: flex;
@@ -24,6 +23,7 @@
 }
 .mid {
   margin-bottom: -70px;
+  margin-left: -60px;
 }
 .large {
   margin-bottom: -70px;
@@ -70,7 +70,7 @@
 }
 @media (max-width: 500px) {
   .rollWrap {
-    margin-left: -15%;
+    margin-left: 0;
   }
   .large img {
     width: 200px;

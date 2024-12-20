@@ -96,5 +96,8 @@
   .videoWrapper {
     width: 100%;
     max-width: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
   }
 }

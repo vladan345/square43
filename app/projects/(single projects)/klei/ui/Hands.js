@@ -14,7 +14,7 @@ export default function Hands() {
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.to(".leftHand", {
-        y: `-${window.innerWidth / 4}px`,
+        y: `-=300px`,
         scrollTrigger: {
           trigger: ".handsWrap",
           scrub: true,
@@ -22,7 +22,7 @@ export default function Hands() {
         },
       });
       gsap.to(".rightHand", {
-        y: `${window.innerWidth / 4}px`,
+        y: `+=300px`,
         scrollTrigger: {
           trigger: ".handsWrap",
           scrub: true,
@@ -46,10 +46,10 @@ export default function Hands() {
       <div className={`${styles.wrapper} handsWrap`}>
         <Image
           src="/images/klei/ruka2.webp"
-          width={286}
-          height={811}
+          width={314}
+          height={285}
           alt="Left hand Klei"
-          className={`${styles.rightHand} rightHand`}
+          className={`${styles.rightHand} rightHand h-auto max-w-none translate-y-[-200px]`}
         />
         <div className={`${styles.blobWrap}`}>
           <Image
@@ -69,10 +69,10 @@ export default function Hands() {
         </div>
         <Image
           src="/images/klei/ruka1.webp"
-          width={535}
-          height={934}
+          width={567}
+          height={992}
           alt="Left hand Klei"
-          className={`${styles.leftHand} leftHand`}
+          className={`${styles.leftHand} leftHand translate-y-[100px]`}
         />
       </div>
     </section>

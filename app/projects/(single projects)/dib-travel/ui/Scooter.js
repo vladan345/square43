@@ -84,6 +84,7 @@ function Scooter() {
               alt="Scooter rocket"
               width={640}
               height={640}
+              className="max-w-none"
             />
           </div>
         </div>

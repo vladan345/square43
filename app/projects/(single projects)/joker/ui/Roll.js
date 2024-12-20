@@ -14,8 +14,8 @@ function Roll() {
   useEffect(() => {
     if (inView && count === 0) {
       const el = rollingCan.current;
-      gsap.to(el, {
-        x: 10,
+      gsap.from(el, {
+        x: -400,
         duration: 3,
         ease: "linear",
         onComplete: () => {

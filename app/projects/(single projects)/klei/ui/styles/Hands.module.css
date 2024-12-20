@@ -26,9 +26,14 @@
   transform: translate(-50%, -50%);
   top: 50%;
   left: 55%;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
 }
-.rightHand {
-  margin-top: -200px;
+.blob {
+  width: 100%;
+  height: auto;
 }
 
 @media (max-width: 1250px) {

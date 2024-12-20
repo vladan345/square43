@@ -70,6 +70,9 @@
     margin-bottom: 40px;
     margin-top: 40px;
   }
+  .category {
+    margin-bottom: 40px;
+  }
   .fontDesc {
     display: none;
   }
@@ -94,9 +97,7 @@
   .fonts {
     display: none;
   }
-  .category:last-of-type {
-    margin-bottom: -10px;
-  }
+
   .description:last-of-type {
     margin: 0;
   }

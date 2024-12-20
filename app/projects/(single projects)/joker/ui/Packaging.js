@@ -18,20 +18,22 @@ function Packaging() {
           trigger: ".packagingTrigger",
         },
       });
-      gsap.to(".leftCan", {
-        x: 100,
-        scrollTrigger: {
-          scrub: true,
-          trigger: ".packagingTrigger",
-        },
-      });
-      gsap.to(".rightCan", {
-        x: -100,
-        scrollTrigger: {
-          scrub: true,
-          trigger: ".packagingTrigger",
-        },
-      });
+      if (window?.innerWidth > 900) {
+        gsap.from(".leftCan", {
+          x: -100,
+          scrollTrigger: {
+            scrub: true,
+            trigger: ".packagingTrigger",
+          },
+        });
+        gsap.from(".rightCan", {
+          x: 100,
+          scrollTrigger: {
+            scrub: true,
+            trigger: ".packagingTrigger",
+          },
+        });
+      }
     }, main.current);
 
     return () => ctx.revert();
@@ -65,8 +67,10 @@ function Packaging() {
             </p>
           </div>
           <div className={styles.col}>
-            <div className={styles.canWrap}>
-              <div className={`${styles.can} leftCan ${styles.left}`}>
+            <div className="relative flex justify-end">
+              <div
+                className={`leftCan absolute left-[-20%] top-[-10%] ${styles.can}`}
+              >
                 <Image
                   src="/images/joker/leva.webp"
                   alt="Guarana Joker can"
@@ -75,12 +79,13 @@ function Packaging() {
                 />
               </div>
 
-              <div className={`${styles.can} rightCan ${styles.right}`}>
+              <div className={`rightCan relative z-[1] ${styles.can}`}>
                 <Image
                   src="/images/joker/desna.webp"
                   alt="Guarana Joker can"
                   width={412}
                   height={679}
+                  className="md:min-w-[240px] md:max-w-none"
                 />
               </div>
             </div>

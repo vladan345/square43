@@ -191,31 +191,27 @@ i {
 #outroSlider ul.splide__list li {
   background-color: #d9d9d9;
 }
-.splide__slide {
+#members .splide__slide {
   height: fit-content;
   transition: 1s;
   z-index: 0;
 }
 
-.splide__slide.is-active {
+#members .splide__slide.is-active {
   transition: 1s;
   z-index: 5;
   margin-top: -50px;
 }
 
-.splide__slide.is-prev,
-.splide__slide.is-next {
+#members .splide__slide.is-prev,
+#members .splide__slide.is-next {
   z-index: 4;
   margin-top: 70px;
   transition: 1s;
 }
 
-.splide__track {
+#members .splide__track {
   padding-top: 50px;
-}
-
-#splide01-track {
-  height: 650px;
 }
 
 @keyframes fadeIn {

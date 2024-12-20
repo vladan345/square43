@@ -79,6 +79,7 @@ export default function MembersCards() {
     <div className={styles.membersCards}>
       <div className={`${styles.slider}`} aria-label="Slides">
         <Splide
+          id="members"
           options={{
             breakpoints: {
               640: {
