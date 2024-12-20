@@ -14,11 +14,12 @@ export default function Mobiles() {
       gsap.from(".tquimage", {
         scrollTrigger: {
           trigger: ".tquimage",
-          start: "top center",
-          end: "bottom center",
+          start: "top 60%",
+          end: "bottom 60%",
           scrub: true,
+          markers: true,
         },
-        y: 600,
+        y: 400,
         duration: 2,
       });
       const mm = gsap.matchMedia();

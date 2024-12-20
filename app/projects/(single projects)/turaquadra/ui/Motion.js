@@ -85,7 +85,7 @@ export default function Motion() {
             />
             <Image
               src="/images/turaquadra/instagramPosts/Instagram Post-6.png"
-              className="absolute right-[8%] top-[3%] h-auto w-1/5 lg:w-1/4 md:w-1/3"
+              className="absolute right-[8%] top-[12%] h-auto w-1/5 lg:w-1/4 md:w-1/3"
               width="200"
               height="200"
               unoptimized
@@ -122,14 +122,14 @@ export default function Motion() {
             />
             <Image
               src="/images/turaquadra/instagramPosts/Instagram Post-11.png"
-              className="absolute left-[13%] top-[0%] h-auto w-1/5 lg:w-1/4 md:w-1/3"
+              className="absolute left-[13%] top-[10%] h-auto w-1/5 lg:w-1/4 md:w-1/3"
               width="200"
               height="200"
               unoptimized
             />
             <Image
               src="/images/turaquadra/instagramPosts/Instagram Post-12.png"
-              className="absolute right-[20%] top-[3%] h-auto w-1/5 lg:w-1/4 md:w-1/3"
+              className="absolute right-[20%] top-[12%] h-auto w-1/5 lg:w-1/4 md:w-1/3"
               width="200"
               height="200"
               unoptimized
