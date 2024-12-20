@@ -17,7 +17,6 @@ export default function Mobiles() {
           start: "top 60%",
           end: "bottom 60%",
           scrub: true,
-          markers: true,
         },
         y: 400,
         duration: 2,
