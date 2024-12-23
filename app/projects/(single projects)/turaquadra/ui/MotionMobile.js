@@ -187,7 +187,7 @@ export default function MotionMobile() {
           </p>
         </div>
       </div>
-      <div className="relative w-1/2 md:w-2/3 md:self-end">
+      <div className="relative w-1/2 md:w-2/3 md:self-end md:overflow-hidden">
         <Image
           src="/images/turaquadra/hand.png"
           width={0}
