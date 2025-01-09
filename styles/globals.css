@@ -213,7 +213,11 @@ i {
 #members .splide__track {
   padding-top: 50px;
 }
-
+.positionDesc a {
+  font-weight: 700;
+  display: block;
+  margin-top: 20px;
+}
 @keyframes fadeIn {
   from {
     opacity: 0;

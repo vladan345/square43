@@ -16,9 +16,8 @@ export default function CareerContent() {
         "If you are super skilled with 3D modelling we would love to meet you and talk about digital art.",
     },
     {
-      title: "Motion Graphic Designer",
-      description:
-        "We are all in motions. If you want to jump to the next level, send us your work. We would be happy to meet you.",
+      title: "Performance Marketing Manager",
+      description: `If you are experienced in digital marketing and are proficient in Google Ads campaigns as well as Google Analytics, join our team and start to achieve new levels of success. <a href="https://www.linkedin.com/jobs/view/4117121893/" target="_blank" >Click here to find out more.</a>`,
     },
     {
       title: "Developers",
@@ -108,19 +107,26 @@ export default function CareerContent() {
             {positions &&
               positions.map((position, index) => {
                 return (
-                  <Link
-                    href={`mailto:studio@square43.com?subject=Submission for position - ${position.title}`}
-                    key={index}
-                    className={styles.card}
-                  >
+                  <div key={index} className={styles.card}>
                     <div className={styles.overlay}></div>
                     <div className={styles.top}>
                       <p className={styles.tag}>positions</p>
-                      <h3 className={styles.title}>{position.title}</h3>
-                      <p className={styles.description}>
-                        {position.description}
-                      </p>
-                      <div className={styles.link}>
+                      <h3
+                        className={`${styles.title} !text-[32px] leading-[1.2]`}
+                      >
+                        {position.title}
+                      </h3>
+                      <p
+                        className={`${styles.description} positionDesc`}
+                        dangerouslySetInnerHTML={{
+                          __html: position.description,
+                        }}
+                      />
+
+                      <Link
+                        href={`mailto:studio@square43.com?subject=Submission for position - ${position.title}`}
+                        className={styles.link}
+                      >
                         apply{" "}
                         <div className={styles.icon}>
                           <Image
@@ -130,9 +136,9 @@ export default function CareerContent() {
                             height={40}
                           />
                         </div>
-                      </div>
+                      </Link>
                     </div>
-                  </Link>
+                  </div>
                 );
               })}
           </div>
