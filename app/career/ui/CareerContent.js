@@ -22,7 +22,7 @@ export default function CareerContent() {
     {
       title: "Developers",
       description:
-        "There are many great developers out there, but we are looking for a special one who can join our team and bring more then we expect.",
+        "There are many great developers out there, but we are looking for a special one who can join our team and bring more than we expect.",
     },
   ];
 
