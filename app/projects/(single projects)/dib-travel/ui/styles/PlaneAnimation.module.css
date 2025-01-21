@@ -17,7 +17,7 @@
   position: absolute;
   left: 0;
   transform: translateX(-100%);
-  top: 100px;
+  top: 40%;
   animation: planePass 7s infinite linear;
   width: 100%;
 }
@@ -34,13 +34,13 @@
 
 @keyframes planePass {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-100%) translateY(-50%);
   }
   70% {
-    transform: translateX(100%);
+    transform: translateX(100%) translateY(-50%);
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(100%) translateY(-50%);
   }
 }
 @keyframes suitcaseLoop {
@@ -66,7 +66,7 @@
     height: auto;
   }
   .plane {
-    top: 80px;
+    top: 50px;
   }
   .plane img {
     width: 450px;
